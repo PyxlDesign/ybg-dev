@@ -13,8 +13,6 @@
         {% for product in collections.customizer.products %}
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
-            window._collection.products[{{ product.id }}].metafields.product.cushion_large_src = {{ product.metafields.product.cushion_large | file_url }};
-            window._collection.products[{{ product.id }}].metafields.product.cushion_large_thumbnail = {{ product.metafields.product.cushion_thumbnail | file_url }};
         {% endfor %}
     {% endpaginate %%}
 
