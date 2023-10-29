@@ -12,18 +12,7 @@
         {% for product in collections.customizer.products %}
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
-
-            {% if product.metafields.product.cushion_large %}
-
-                window._collection.products[{{ product.id }}].metafields.cushion_large = {{ product.metafields.product.cushion_large | file_url }};
-
-            {% endif %}
-
-            {% if product.metafields.product.cushion_thumbnail %}
-
-                window._collection.products[{{ product.id }}].metafields.cushion_thumbnail = {{ product.metafields.product.cushion_thumbnail | file_url }};
-
-            {% endif %}
+            window._collection.products[{{ product.id }}].metafields.cushion_large = {{ product.metafields.product.cushion_large }};
 
         {% endfor %}
     {% endpaginate %%}
