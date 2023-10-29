@@ -15,7 +15,6 @@
             {% if product.metafields.product.cushion_large %}
                 console.log("has cushion large")
                 window.cushion_large = {{ product.metafields.product.cushion_large | file_url }};
-                console.log("Prodcut Cushion", {{ product.metafields.product.cushion_large | file_url }})   
             {% endif %}
         {% endfor %}
     {% endpaginate %%}
