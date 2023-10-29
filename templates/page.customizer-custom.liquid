@@ -12,12 +12,14 @@
         {% for product in collections.customizer.products %}
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
+            console.log(window._collection.products[{{ product.id }}].metafields)
             {% if product.metafields.product.cushion_large? %}
-                window.cushion_large = {{ product.metafields.product.cushion_large }};
+                window.cushion_large = {{ product.metafields.product.cushion_large | file_url }};
             {% endif %}
         {% endfor %}
     {% endpaginate %%}
-
+                
+    console.log(window.cushion_large)
 </script> 
 <div id="customizer-app">
 {{ 'customizer.min.js' | asset_url | script_tag }}
