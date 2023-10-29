@@ -1,0 +1,384 @@
+{%- if
+    settings.social_twitter_link != blank
+    or settings.social_facebook_link != blank
+    or settings.social_pinterest_link != blank
+    or settings.social_instagram_link != blank
+    or settings.social_tumblr_link != blank
+    or settings.social_snapchat_link != blank
+    or settings.social_youtube_link != blank
+    or settings.social_vimeo_link != blank
+  -%}
+    {%- assign social_icons = true -%}
+  {%- endif -%}
+
+  {% assign s  = section.settings %}
+  {% assign footer_background = s.footer_background %}
+  {% assign link_color = s.link_color %}
+  {% assign link_hover_color = s.link_hover_color %}
+  {% assign heading_color = s.heading_color %}
+  {% assign text_color = s.text_color %}
+  {% for block in section.blocks %}
+      {% if block.type == 'newsletter' %}
+          {% assign has_newsletter = true %}
+      {% else %}
+      {% assign has_newsletter = false %}
+      {% endif %}
+  {% endfor %}
+  <style>
+      #shopify-section-{{ section.id }} .site-footer {
+          background-color: {{ footer_background }};
+      }
+      #shopify-section-{{ section.id }} a{
+          color: {{link_color}};
+      }
+      #shopify-section-{{ section.id }} a:hover{
+          color: {{link_hover_color}};
+      }
+      #shopify-section-{{ section.id }} .footer-title{
+          color: {{ heading_color }}
+      }
+      #shopify-section-{{ section.id }} p, #shopify-section-{{ section.id }} span{
+        color: {{ text_color }}
+      }
+  </style>
+<footer class="site-footer text-white">
+    <div class="container">
+        <div class="row">
+            <div class="cell {% if has_newsletter %}col-lg-7{%else%} col-lg-12 {% endif %}">
+                <div class="row">
+            {% for block in section.blocks %}
+            {% assign block_type = block.type %}
+            {% if block_type == 'menu' %}
+            {% assign bs = block.settings %}
+            {% assign menu = linklists[bs.menu] %}
+            {% assign heading = bs.heading %}
+                    <div class="cell col-md-4">
+                        <div class="site-footer__links-block pb-5 pb-md-0">
+                            <h4 class="footer-title text-white mb-3">{% if heading == blank %}{{ menu.title }}{%else%}{{heading}}{% endif %}</h4>
+                            {% if menu.links.size > 0 %}
+                            <ul class="ml-0">
+                                {% for link in menu.links %}
+                                <li><a href="{{link.url}}" title="{{ link.title }}">{{ link.title }}</a></li>    
+                                {% endfor %}
+                                
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+        {% if has_newsletter %}
+        <div class="cell col-lg-5">
+            {% for block in section.blocks %}
+            {% assign block_type = block.type %}
+            {% if block_type == 'newsletter' %}
+            {% assign bs = block.settings %}
+            {% assign social_links = bs.social_links %}
+            {% assign facebook_share = bs.facebook_share %}
+            {% assign newsletter_heading = bs.newsletter_heading %}
+            {% if social_links %}
+            <div class="site-footer__social-links-block pt-medium-7">
+                <h4 class="footer-title text-white mb-3">Stay Connected </h4>
+                <div class="social-links">
+                    <ul class="social-icons ml-0">
+                        {% if social_icons %}
+                        {% if settings.social_facebook_link != blank %}
+                        <li>
+                            <a href="{{ settings.social_facebook_link }}" class="facebook" title="Facebook" target="_blank">
+                                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if settings.social_instagram_link != blank %}
+                        <li>
+                            <a href="{{ settings.social_instagram_link }}" class="instagram" title="Instagram" target="_blank">
+                                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {%endif%}
+                        {% if settings.social_pinterest_link != blank %}
+                        <li>
+                            <a href="{{ settings.social_pinterest_link }}" class="pinterest" title="Pinterest" target="_blank">
+                                <i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li> 
+                        {% endif %}
+                        {% if settings.social_youtube_link != blank %}
+                        <li>
+                            <a href="{{ settings.social_youtube_link }}" class="youtube" title="Youtube" target="_blank">
+                                <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% endif %}
+                        
+                    </ul>
+                    {% if facebook_share %}
+                    <div class="facebook-like-code">
+                        <span>LIKE US on FACEBOOK</span>
+                        <div id="fb-root" class=" fb_reset">
+                            <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                                <div></div>
+                            </div>
+                        </div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-like fb_iframe_widget"
+                            data-href="{{ settings.social_facebook_link }}"
+                            data-layout="button_count" data-action="like" data-show-faces="true"
+                            data-share="true" fb-xfbml-state="rendered"
+                            fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=120&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHalothemes-Premium-Magento-Themes%2F469058089834105&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
+                            <span style="vertical-align: bottom; width: 150px; height: 28px;">
+                                <iframe name="f24d91d0c08533c" width="1000px" height="1000px"
+                                    data-testid="fb:like Facebook Social Plugin"
+                                    title="fb:like Facebook Social Plugin" frameborder="0"
+                                    allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                    allow="encrypted-media"
+                                    src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df19ac209d2c6608%26domain%3Dwww.yeahbabygoods.com%26origin%3Dhttps%253A%252F%252Fwww.yeahbabygoods.com%252Ff24090dbde94dcc%26relation%3Dparent.parent&amp;container_width=120&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHalothemes-Premium-Magento-Themes%2F469058089834105&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"
+                                    style="border: none; visibility: visible; width: 150px; height: 28px;"
+                                    class="">
+                                </iframe>
+                            </span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>        
+            {% endif %}
+            <div class="site-footer__newsletter-block">
+                <h4 class="footer-title text-white mb-3">{{ newsletter_heading }}</h4>
+                {% form 'customer', id: formId, novalidate: 'novalidate',class: 'input-group'%}
+                {%- if form.posted_successfully? -%}
+                    <p class="form-message form-message--success" tabindex="-1" data-form-status>
+                    {{ 'general.newsletter_form.confirmation' | t }}
+                    </p>
+                {%- endif -%}
+                    <input class="input-group__field" type="email" name="contact[email]"
+                        aria-label="Email Address" placeholder="enter your email address" required="required">
+                    <input class="submit-btn" type="submit" value="Submit">
+                {% if form.errors contains 'email' %}
+                    <span id="{{ formId }}-email-error" class="input-error-message">
+                    <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                    {% include 'icon-error' %}
+                    <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                    </span>
+                {% endif %}
+                {% endform %}
+            </div>
+
+            {% endif %}
+            {% endfor %}
+            
+        </div>
+        {% endif %}
+            {%- comment -%}
+            <div class="cell large-7">
+                <div class="grid-x">
+                    <div class="cell medium-4">
+                        <div class="site-footer__links-block pb-small-7">
+                            <h4 class="footer-title text-white mb-3">shop</h4>
+                            <ul class="ml-0">
+                                <li><a href="#" title="All-Products">All Products</a></li>
+                                <li><a href="#" title="Highchair-Accessories">Highchair Accessories</a></li>
+                                <li><a href="#" title="Eating-Accessories">Eating Accessories</a></li>
+                                <li><a href="#" title="SALE">SALE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="site-footer__links-block pb-small-7">
+                            <h4 class="footer-title text-white mb-3">Learn More</h4>
+                            <ul class="ml-0">
+                                <li><a href="#" title="Our-Product-Line">Our Product Line</a></li>
+                                <li><a href="#" title="About-Us">About Us</a></li>
+                                <li><a href="#" title="Care-Instructions">Care Instructions</a></li>
+                                <li><a href="#" title="Return-and-Exchanges">Return and Exchanges</a></li>
+                                <li><a href="#" title="Shipping-and-Handling">Shipping and Handling</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="site-footer__links-block pb-small-7">
+                            <h4 class="footer-title text-white mb-3">Connect</h4>
+                            <ul class="ml-0">
+                                <li><a href="#" title="Contact-Us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell large-5">
+                <div class="site-footer__social-links-block pt-medium-7">
+                    <h4 class="footer-title text-white mb-3">Stay Connected </h3>
+                        <div class="social-links">
+                            <ul class="social-icons ml-0">
+                                <li>
+                                    <a href="#" class="facebook" title="Facebook" target="_blank">
+                                        <svg id="Bold" enable-background="new 0 0 24 24" height="14"
+                                            viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="instagram" title="Instagram" target="_blank">
+                                        <svg height="14" viewBox="0 0 511 511.9" width="14"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+                                            <path
+                                                d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+                                            <path
+                                                d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pinterest" title="Pinterest" target="_blank">
+                                        <svg id="Bold" enable-background="new 0 0 24 24" height="14"
+                                            viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m12.326 0c-6.579.001-10.076 4.216-10.076 8.812 0 2.131 1.191 4.79 3.098 5.633.544.245.472-.054.94-1.844.037-.149.018-.278-.102-.417-2.726-3.153-.532-9.635 5.751-9.635 9.093 0 7.394 12.582 1.582 12.582-1.498 0-2.614-1.176-2.261-2.631.428-1.733 1.266-3.596 1.266-4.845 0-3.148-4.69-2.681-4.69 1.49 0 1.289.456 2.159.456 2.159s-1.509 6.096-1.789 7.235c-.474 1.928.064 5.049.111 5.318.029.148.195.195.288.073.149-.195 1.973-2.797 2.484-4.678.186-.685.949-3.465.949-3.465.503.908 1.953 1.668 3.498 1.668 4.596 0 7.918-4.04 7.918-9.053-.016-4.806-4.129-8.402-9.423-8.402z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="facebook-like-code">
+                                <span>LIKE US on FACEBOOK</span>
+                                <div id="fb-root" class=" fb_reset">
+                                    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-like fb_iframe_widget"
+                                    data-href="https://www.facebook.com/pages/Halothemes-Premium-Magento-Themes/469058089834105"
+                                    data-layout="button_count" data-action="like" data-show-faces="true"
+                                    data-share="true" fb-xfbml-state="rendered"
+                                    fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=120&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHalothemes-Premium-Magento-Themes%2F469058089834105&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
+                                    <span style="vertical-align: bottom; width: 150px; height: 28px;">
+                                        <iframe name="f24d91d0c08533c" width="1000px" height="1000px"
+                                            data-testid="fb:like Facebook Social Plugin"
+                                            title="fb:like Facebook Social Plugin" frameborder="0"
+                                            allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                            allow="encrypted-media"
+                                            src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df19ac209d2c6608%26domain%3Dwww.yeahbabygoods.com%26origin%3Dhttps%253A%252F%252Fwww.yeahbabygoods.com%252Ff24090dbde94dcc%26relation%3Dparent.parent&amp;container_width=120&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHalothemes-Premium-Magento-Themes%2F469058089834105&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"
+                                            style="border: none; visibility: visible; width: 150px; height: 28px;"
+                                            class="">
+                                        </iframe>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="site-footer__newsletter-block">
+                    <h4 class="footer-title text-white mb-3">Sign up for our Newsletter</h4>
+                    <form method="post" action="/contact" id="contact_form" accept-charset="UTF-8"
+                        class="input-group">
+                        <input class="input-group__field" type="email" name="contact[email]"
+                            aria-label="Email Address" placeholder="enter your email address" required="required">
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            {%- endcomment -%}
+        </div>
+    </div>
+</footer>
+{% schema %}
+{
+    "name": "Footer",
+    "class": "footer-custom-secction",
+    "max_blocks": 4,
+    "settings": [
+        {
+            "type": "color",
+            "id": "footer_background",
+            "label": "Footer Background"
+        },
+        {
+            "type": "color",
+            "id": "link_color",
+            "label": "Link Color"
+        },
+        {
+            "type": "color",
+            "id": "link_hover_color",
+            "label": "Link Hover Color"
+        },
+        {
+            "type": "color",
+            "id": "heading_color",
+            "label": "Heading Color"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "menu",
+            "name": "Menu",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Menu Header"
+                },
+                {
+                    "type": "link_list",
+                    "id": "menu",
+                    "label": "Menu"
+                }
+            ]
+        },
+        {
+            "type": "newsletter",
+            "name": "Newsletter",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "social_links",
+                    "label": "Social Links",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "facebook_share",
+                    "label": "Facebook Share Button",
+                    "default": true
+                },
+                {
+                    "type": "text",
+                    "id": "newsletter_heading",
+                    "label": "Heading",
+                    "default": "Sign up for our newsletter"
+                }
+            ]
+        }
+    ]
+
+}
+{% endschema %}

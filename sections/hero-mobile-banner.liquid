@@ -1,0 +1,292 @@
+{% assign s = section.settings %}
+{% assign custom_class = s.custom_class %}
+{% assign title = s.hero_title %}
+{% assign caption = s.hero_caption %}
+{% if s.hero_background != blank %}
+{% assign background = s.hero_background %}
+{% else %}
+{% assign background = 'placeholder.svg' | asset_url %}
+{% endif %}
+{% assign title_size = s.title_size %}
+{% assign image_link = s.image_link %}
+{% assign caption_size = s.caption_size %}
+{% assign title_color = s.title_color %}
+{% assign caption_color = s.caption_color %}
+{% assign cta_url = s.cta_url %}
+{% assign cta_text = s.cta_text %}
+{% assign cta_type = s.cta_type %}
+{% assign text_alignment = s.text_alignment %}
+{% assign justify_content = s.justify_content %}
+{% assign align_content = s.align_content %}
+{% assign btn_color = s.btn_color %}
+{% assign btn_hover_color = s.btn_hover_color %}
+<style>
+    #shopify-section-{{section.id}} .hero{
+        {% if s.hero_background != blank %}
+        background: url({{ background | img_url : "master" }});
+        {%else%}
+        background: url({{ background }})
+        {% endif %}
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #shopify-section-{{section.id}} .hero .flex-container{
+        min-height: 812px;
+    }
+    #shopify-section-{{section.id}} .hero-caption h1 {
+        font-size: {{ title_size }}px !important;
+        color: {{title_color}} !important;
+    }
+    #shopify-section-{{section.id}} .hero-caption p {
+        font-size: {{ caption_size }}px !important;
+        color: {{caption_color}} !important;
+    }
+    #shopify-section-{{section.id}} .curve-bg{
+        background: url({{ 'curve-bg.png' | asset_img_url: "master" | split: "?" | first }});
+        position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #shopify-section-{{section.id}} .hero-caption{
+        {% case justify_content %}
+            {%when 'left'%}
+            margin-right: auto; 
+            {%when 'center'%}
+            margin: 0 auto;
+            {%when 'right'%}
+            margin-left: auto;
+        {% endcase %}
+    }
+    #shopify-section-{{section.id}} .hero-caption .button{
+        background-color: {{ btn_color }} !important;
+    }
+    #shopify-section-{{section.id}} .hero-caption .button:hover{
+        background-color: {{ btn_hover_color }} !important;
+    }
+
+    @media (max-width:767px) {
+        #shopify-section-{{section.id}} .hero-caption h1 {
+        font-size: 32px !important;
+        }
+    }
+</style>
+<section class="hero d-flex {{ align_content }} {{ custom_class }} 11">
+    {% if cta_url == blank and cta_text == blank %}
+    <a href="{{image_link}}">
+    {% endif %}
+        <div class="container">
+            <div class="hero-caption text-white {{ text_alignment }}">
+                {% if title != blank %}<h1 class="text-white">{{ title }}</h1>{% endif %}
+                {% if caption != blank %}<p class="copy-lg">{{ caption }}</p>{% endif %}
+                {% if cta_url != blank %}
+                <div class="button-wrapper">
+                    <a href="{{cta_url}}" class="button {% if cta_type == 'outline'%}
+                        {{ cta_type }} {% else %} secondary
+                    {% endif %} large">{{cta_text}}</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    {% if cta_url == blank and cta_text == blank %}
+    </a>
+   {% endif %}
+</section>
+{% if s.curved_bottom %}
+<div class="curve-bg"></div>
+{% endif %}
+{% schema %}
+{
+    "name": "Hero Mobile Banner",
+    "class": "hero-banner-custom",
+    "settings": [
+        {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class"
+        },
+        {
+            "type": "image_picker",
+            "id": "hero_background",
+            "label": "Background",
+            "info": "Selected Image will set as background to this section"
+        },
+        {
+           "type":"url",
+           "id":"image_link",
+           "label":"Image Link",
+           "info":"Image link will work when both button text and link are empty"
+        },
+        {
+            "type": "header",
+            "content": "Title Settings"
+        },
+        {
+            "type": "text",
+            "id": "hero_title",
+            "label": "Title",
+            "default": "Level up your IKEA highchair, oh yeah.",
+            "info": "This will set the text for Heading"
+        },
+        {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color",
+            "default": "#fff",
+            "info": "This will set color to Hero Title"
+        },
+        {
+            "type": "range",
+            "id": "title_size",
+            "label": "Title Font Size",
+            "min": 20,
+            "max": 70,
+            "step": 2,
+            "default": 60
+        },
+        {
+            "type": "header",
+            "content": "Caption settings"
+        },
+        {
+            "type": "textarea",
+            "id": "hero_caption",
+            "label": "Caption",
+            "default": "Style. Function. Affordability. Customization at last.",
+            "info": "This will set text for Caption"
+        },
+        {
+            "type": "color",
+            "id": "caption_color",
+            "label": "Caption Color",
+            "default": "#fff",
+            "info": "This will set color to Hero caption"
+        },
+        {
+            "type": "range",
+            "id": "caption_size",
+            "label": "Caption Font Size",
+            "min": 16,
+            "max": 30,
+            "step": 1,
+            "default": 22
+        },
+        {
+            "type": "header",
+            "content": "CTA settings"
+        },
+        {
+            "type": "url",
+            "id": "cta_url",
+            "label": "URL",
+            "info": "Remaining empty will disable the CTA button"
+        },
+        {
+            "type": "text",
+            "id": "cta_text",
+            "label": "Text",
+            "default": "Shop Now"
+        },
+        {
+            "type": "select",
+            "id": "cta_type",
+            "label": "Button Type",
+            "options": [
+                {
+                    "value": "primary",
+                    "label": "Primary"
+                },
+                {
+                    "value": "outline",
+                    "label": "Secondary"
+                }
+            ],
+            "default": "outline"
+        },
+        {
+            "type": "header",
+            "content": "Styling"
+        },
+        {
+            "type": "checkbox",
+            "id": "curved_bottom",
+            "label": "Enable Curve On Bottom",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Align Text",
+            "options": [
+                {
+                    "value": "text-left",
+                    "label": "Left"
+                },
+                {
+                    "value": "text-center",
+                    "label": "Center"
+                },
+                {
+                    "value": "text-right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "justify_content",
+            "label": "Horizontal Alignment",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "align_content",
+            "label": "Vertical Alignment",
+            "options": [
+                {
+                    "value": "align-items-start",
+                    "label": "Top"
+                },
+                {
+                    "value": "align-items-center",
+                    "label": "Middle"
+                },
+                {
+                    "value": "align-items-end",
+                    "label": "Bottom"
+                }
+            ]
+        },
+        {
+            "type": "color",
+            "id": "btn_color",
+            "label": "Button Color"
+        },
+        {
+            "type": "color",
+            "id": "btn_hover_color",
+            "label": "Button Color on Hover"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero Mobile Banner",
+            "category": "Image"
+        }
+    ]
+}
+{% endschema %}

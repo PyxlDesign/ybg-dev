@@ -1,0 +1,11 @@
+.container {
+  width: 260px;
+  height: 30px;
+  z-index: 6;
+  position: absolute;
+  top: 307px;
+  right: 177px;
+  @media (max-width: 767px) {
+    right: 53px;
+  }
+}

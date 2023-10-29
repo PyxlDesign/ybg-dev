@@ -1,0 +1,136 @@
+{% liquid 
+    assign s = section.settings
+    assign prefix = s.prefix
+    assign section_heading = s.section_heading
+    assign section_paragraph = s.section_paragraph
+    assign product_image = s.product_image
+    assign features_1_heading = s.features_1_heading
+    assign features_2_heading = s.features_2_heading
+    assign features_1 = s.features_1
+    assign features_2 = s.features_2
+    assign cta_text = s.cta_text
+    assign cta_url = s.cta_url 
+    %}
+<section class="start-step-one">
+    <div class="container-md">
+        <div class="start-step-one__header text-center">
+            {% if prefix != blank %}
+            <h2 class="mb-6">{{ prefix }}</h2>
+            {% endif %}
+            {% if section_heading != blank %}
+            <h2 class="h1 text-bronze-2">{{ section_heading }}</h2>
+            {% endif %}
+            {% if section_paragraph != blank %}
+            <p class="font-karla copy-xl">{{ section_paragraph }}</p>
+            {% endif %}
+        </div>
+        <div class="start-step-one__showcase">
+            <div class="col-left  content-box">
+                {% if features_1_heading != blank %}
+                <h2 class="text-bronze-2">{{ features_1_heading }}</h2>
+                {% endif %}
+                <ul>
+                    {% assign features_1_array = features_1 | split: '_' %}
+                    {% for feature in features_1_array %}
+                    <li>{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-showcase">
+                <div class="image-ratio image-ratio--square image-ratio--contain">
+                    {{ product_image | img_url:'master' | img_tag }}
+                </div>
+            </div>
+            <div class="col-right content-box">
+                {% if features_2_heading != blank %}
+                <h2 class="text-bronze-2">{{ features_2_heading }}</h2>
+                {% endif %}
+                <ul>
+                    {% assign features_2_array = features_2 | split: '_' %}
+                    {% for feature in features_2_array %}
+                    <li>{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% if cta_url != blank %}
+        <div class="btn-wrapper text-center">
+            <a href="{{ cta_url }}" target="blank" class="button">{{ cta_text }}</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Ikea Product",
+    "class": "ikea-product-section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section Header"
+        },
+        {
+            "type": "text",
+            "id": "prefix",
+            "label": "Heading prefix",
+            "default": "Heading prefix goes here"
+        },
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Section heading",
+            "default": "Section heading goes here"
+        },
+        {
+            "type": "textarea",
+            "id": "section_paragraph",
+            "label": "Section paragraph",
+            "default": "Section paragraph goes here"
+        },
+        {
+            "type": "header",
+            "content": "Section content"
+        },
+        {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Product Image"
+        },
+        {
+            "type": "text",
+            "id": "features_1_heading",
+            "label": "Features block 1 heading",
+            "default": "Feature block heading"
+        },
+        {
+            "type": "textarea",
+            "id": "features_1",
+            "label": "Features Block 1",
+            "info": "Please add each feature with underscore '_' at the end"
+        },
+        {
+            "type": "text",
+            "id": "features_2_heading",
+            "label": "Features block 2 heading",
+            "default": "Feature block heading"
+        },
+        {
+            "type": "textarea",
+            "id": "features_2",
+            "label": "Features Block 2",
+            "info": "Please add each feature with underscore '_' at the end"
+        },
+        {
+            "type": "text",
+            "id": "cta_text",
+            "label": "Button text",
+            "default": "Order On IKEA.COM"
+        },
+        {
+            "type": "url",
+            "id": "cta_url",
+            "label": "Button URL"
+        }
+    ]
+}
+{% endschema %}

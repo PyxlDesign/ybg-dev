@@ -1,0 +1,129 @@
+<div class="video-tutorials">
+    <div class="container-md">
+        {% for block in section.blocks %}
+            {% liquid 
+            assign bs = block.settings
+            assign prefix = bs.prefix
+            assign title = bs.title
+            assign content = bs.content
+            assign video_url = bs.video_url
+            assign video_thumbnail = bs.video_thumbnail
+            %}
+            <div class="video-tutorials__block"> 
+                {% if block.type == "heading" %}
+                {% assign header_count = header_count | plus: 1 %}
+                    {% if block.settings.heading != blank %}
+                        <h2 class="text-gray-2 mb-4 faq-header" id="{{ block.settings.nav_reference }}">{{ block.settings.heading }}</h2>
+                    {% endif %}
+                {% endif %}
+                {% if block.type == "tutorial" %}
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="block-caption bg-light-beige h-100 text-gray-2 text-center">
+                            <div class="block-caption__inner">
+                                {% if prefix != blank %}
+                                    <h5 class="font-karla">{{ prefix }}</h5>
+                                {% endif %}
+                                {% if title != blank %}
+                                    <h3 class="font-karla">{{ title }}</h3>
+                                {% endif %}
+                                {% if content != blank %}
+                                    <p>{{ content }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        {% if video_url != blank %}
+                            <div class="video-wrapper">
+                                <div class="image-ratio image-ratio--16-9">
+                                    {% if video_thumbnail != blank %}
+                                        {{ video_thumbnail | img_url:'master' | img_tag }}
+                                    {% endif %}
+                                    <a href="{{ video_url }}" class="popup-youtube absolute-center adjust-icon video-cta">
+                                        <svg fill="none" height="70" viewbox="0 0 70 70" width="70" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35" fill="white" r="35"/>
+                                            <path d="M48 35L28.5 46.2583L28.5 23.7417L48 35Z" fill="#DD9864"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Video tutorials",
+    "class": "video-tutorials-section",
+    "settings": [
+    ],
+    "blocks": [
+        {
+            "type" : "heading",
+            "name" : "Heading",
+            "settings":[
+                {
+                    "type": "text",
+                    "id": "nav_reference",
+                    "label": "Navigation reference id",
+                    "info": "This field is related to Video tutorials navigation links. please paste same text as 'Reference' field in video tutorials navigation section"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum"
+                }
+            ]
+        },
+        {
+            "name": "Video tutorial",
+            "type": "tutorial",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Content settings"
+                },
+                {
+                    "type": "text",
+                    "id": "prefix",
+                    "label": "Prefix",
+                    "default": "Prefix"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Video Tutorial"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Content",
+                    "default": "Content paragraph goes here"
+                },
+                {
+                    "type": "header",
+                    "content": "Video settings"
+                },
+                {
+                    "type": "text",
+                    "id": "video_url",
+                    "label": "Video Url",
+                    "default": "http://www.youtube.com/watch?v=0O2aH4XLbto"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "video_thumbnail",
+                    "label": "Thumbnail"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

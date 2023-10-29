@@ -1,0 +1,79 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+html,
+body {
+  padding: 0;
+  /* margin: 20px; */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-gallery-thumbnail + .image-gallery-thumbnail {
+  margin-left: -15px;
+}
+
+.image-gallery .image-gallery-content,
+.QxmxJRGbqqDXYGV_dZcc .image-gallery-content {
+  margin: 0px !important;
+}
+
+.image-gallery-thumbnail,
+.image-gallery-thumbnail:focus {
+  border: 2px solid white;
+}
+
+:hover .image-gallery-thumbnail,
+.image-gallery-thumbnail:focus {
+  border: 2px solid white;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 2px solid white;
+}
+
+.image-gallery-thumbnail {
+  padding: 0;
+  margin: 0 4px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.active.image-gallery-thumbnail {
+  border-radius: 50%;
+  outline-offset: 0;
+}
+
+.image-gallery-thumbnails-container {
+  max-width: 325px;
+}
+
+.image-gallery-content {
+  /* width: 90%; */
+  margin: 0 30px;
+}
+
+.demo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.active .thumbnail {
+  border: 2px solid #dd9864;
+}
+
+.active .cropped {
+  border: 2px solid #dd9864;
+}

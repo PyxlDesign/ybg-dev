@@ -1,0 +1,64 @@
+{% liquid 
+    assign s = section.settings
+    assign title = s.title
+    assign background_image = s.background_image
+    assign title_color = s.title_color
+    assign color_alpha = title_color | color_extract: 'alpha'
+    %}
+    {% if background_image != blank %}
+    <style>
+        #shopify-section-{{ section.id }} .hero-about-us{
+            background-image: url("{{ background_image | img_url:'master' }}");
+        }
+    </style>
+    {% endif %}
+    {% if color_alpha > 0 %}
+    <style>
+        #shopify-section-{{ section.id }} .hero-about-us .hero-about-us__caption h1{
+            color: {{ title_color }}
+        }
+        </style>
+    {% endif %}
+
+<section class="hero-about-us flex-v-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7"></div>
+            <div class="col-lg-5">
+                {% if title != blank %}
+                <div class="hero-about-us__caption text-center">
+                    <h1>{{ title }}</h1>
+                </div>
+                {% else %}
+                <div class="hero-about-us__caption text-center">
+                    <h1>{{ page.title }}</h1>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Page Title",
+    "class": "page-title-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Page Title",
+            "default": "Page"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+        },
+        {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title color"
+        }
+    ]
+}
+{% endschema %}

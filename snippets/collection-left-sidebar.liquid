@@ -1,0 +1,39 @@
+
+<div class="collection-template collection-template-no-sidebar">
+    <div class="container">
+        {% render 'breadcrumb' %}
+    </div>
+
+    <div class="halo-collection-content">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="page-header text-center text-md-left">
+                            <h1>
+                                {% render 'multilang' with collection.title %}
+                            </h1>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-12 justify-content-end">
+                            <div class="col-description text-md-left text-center d-none d-md-block">
+                                {{ collection.description }}
+                            </div>
+                        </div>
+                </div>
+            </div>            
+        </div>
+
+        <!-- <div class="bg-filter">
+            <div class="container">
+                {% section 'filter-no-sidebar' %}   
+            </div>
+        </div> -->
+
+        <div class="container">
+            {% section 'collection-template-left-sidebar' %}
+            
+            {% section 'recently-viewed-products' %}
+        </div>        
+    </div>
+</div>

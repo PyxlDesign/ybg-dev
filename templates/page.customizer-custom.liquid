@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://use.typekit.net/mmq5nyf.css">
+<script>
+    window._collection = {
+		products: {},
+		collection: {{ collections.customizer | json }}
+	}
+
+    window._collection.collection.metafields = {};
+    window._collection.collection.metafields.global = {{ collection.metafields.global | json }};
+    
+    {% paginate collections.customizer.products by 1000 %}
+        {% for product in collections.customizer.products %}
+            window._collection.products[{{ product.id }}] = {{ product | json }};
+            window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
+        {% endfor %}
+        {% endpaginate %%}
+
+</script> 
+<div id="customizer-app">
+{{ 'customizer.min.js' | asset_url | script_tag }}

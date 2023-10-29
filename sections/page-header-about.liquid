@@ -1,0 +1,21 @@
+{% if section.settings.paragraph != blank %}
+<section class="our-mission">
+    <div class="container-md">
+        <h2 class="text-bronze-2 text-center">{{ section.settings.paragraph }}</h2>
+    </div>
+</section>
+{% endif %}
+{% schema %}
+{
+    "name": "Page Header",
+    "class": "page-header-section",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "paragraph",
+            "label": "Header paragraph",
+            "default": "Header content goes here"
+        }
+    ]
+}
+{% endschema %}

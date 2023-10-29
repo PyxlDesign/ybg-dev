@@ -1,0 +1,92 @@
+{% liquid 
+    assign s = section.settings
+    assign heading = s.heading
+    assign paragraph = s.paragraph
+    assign blocks = section.blocks
+    assign block_size = blocks | size
+    %}
+<section class="additional-tips">
+    <div class="container">
+        {% if heading != blank %}
+        <h2 class="text-gray-2 text-center mb-5">{{ heading }}</h2>
+        {% endif %}
+        {% if paragraph != blank %}
+        <div class="text-center">{{ paragraph }}</div>
+        {% endif %}
+        <div class="row mt-90">
+            {% if block_size > 0 %}
+                {% for block in blocks %}
+                {% assign article = articles[block.settings.article]  %}
+                {% assign image = block.settings.image %}
+                {% assign title = block.settings.title %}
+                <div class="col-md-4 py-3 py-md-0">
+                    <a href="{{ article.url }}" class="additional-tips__card">
+                        {% if image != blank %}
+                        <div class="card-thumbnail">
+                          <div class="image-ratio image-ratio--square">
+                            {{ image | img_url: "master" | img_tag }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        {% if title != blank %}
+                        <div class="card-meta">
+                            <p class="copy-lg">{{ title }}</p>
+                        </div>
+                        {% endif %}
+                    </a>
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Additional tips",
+    "class": "additional-tips-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Section heading goes here"
+        },
+        {
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "Paregraph",
+            "default": "<p>Text paragraph goes here</p>"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Tip block",
+            "type": "tip",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Tip title goes here"
+                },
+                {
+                    "type": "article",
+                    "id": "article",
+                    "label": "Article link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "Blog",
+            "name":"Article"
+        }
+    ]
+}
+{% endschema %}

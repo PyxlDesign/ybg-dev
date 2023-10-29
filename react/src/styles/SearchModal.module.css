@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  margin: 0 12px;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 290px;
+  width: 300px;
+  min-height: 300px;
+  overflow: scroll;
+  max-height: 500px;
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  z-index: 7;
+}
+.modalCont {
+  padding-left: 10px;
+}
+.spacer {
+  width: 19px;
+  height: 19px;
+}
+.searchInput {
+  color: #31484d;
+  font-size: 18px;
+  font-family: 'halyard-display';
+  padding: 5px;
+}
+
+.tagListCont {
+  padding: 5px;
+}
+
+.tagName {
+  color: #31484d;
+  font-size: 18px;
+  font-family: 'halyard-display';
+}
+.tagCount {
+  color: grey;
+  font-family: 'halyard-display';
+  font-size: 14px;
+}
+
+.tagListItem {
+  margin: 3px 0;
+  padding-left: 10px;
+}
+
+.tagListItem:hover {
+  background-color: #df9764;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.container {
+  max-width: 400px;
+  max-height: 400px;
+  margin-right: 10px;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  @media (max-width: 767px) {
+    max-height: 600px;
+    height: 570px;
+    overflow: hidden;
+  }
+}
+
+.chair {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  right: 0;
+  @media (max-width: 767px) {
+    right: -125px;
+  }
+}

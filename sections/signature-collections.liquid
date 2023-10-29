@@ -1,0 +1,129 @@
+<section class="signature-products">
+    <div class="container-md">
+        {% if section.settings.heading != blank %}
+        <h2 class="text-bronze-2 signature-products__title">{{ section.settings.heading }}</h2>
+        {% endif %}
+
+        <div class="carousel-wrapper">
+            <div class="signature-products__carousel"
+                data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false, "pageDots": false, "watchCSS": true }'>
+                {% if section.blocks != blank %}
+                {% for block in section.blocks %}
+                <div class="carousel-cell">
+                    <div class="image-wrapper">
+                        <div class="image-ratio image-ratio--square">
+                            {% assign collection_image = block.settings.collection_image %}
+                            {% if collection_image != blank %}
+                            {{ collection_image | img_url:'master' | img_tag }}
+                            {% else %}
+                            {{ block.settings.featured_collection.image | img_url:'master' | img_tag }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="cell-meta">
+                        <h2 class=""><a href="{{ block.settings.featured_collection.url }}">{{ block.settings.featured_collection.title }}</a> 
+                            <!-- <span class="h5 text-bronze-2 product-price font-karla">$34.00</span> -->
+                        </h2>
+                        <div class="row font-karla">
+                            <div class="col-lg-6">
+                                {% assign total_products = block.settings.featured_collection.products | size %}
+                                <p> {{ total_products }} Styles Available</p>
+                                {%- comment -%}
+                                <div class="ratings">
+                                    <div class="rating-stars">
+                                        <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                    fill="#DD9864" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                    fill="#DD9864" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                    fill="#DD9864" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                    fill="#DD9864" />
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                    fill="#E3E8E1" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="text-bronze-2">1,374 Reviews</span>
+                                </div>
+                                {%- endcomment -%}
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <p>{{ block.settings.col_description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "signature Collections",
+    "class": "signature-collections-sections",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Our Signature Products"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Collection",
+            "type": "collection",
+            "settings": [
+                {
+                    "type": "collection",
+                    "id": "featured_collection",
+                    "label": "Collection"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "collection_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "textarea",
+                    "id": "col_description",
+                    "label": "Description",
+                    "default": "Includeds lorem ipsum set amet lorem conectitur"
+                }
+            ]
+        }
+    ],
+    "max_blocks": 4
+}
+{% endschema %}

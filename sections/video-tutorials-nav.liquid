@@ -1,0 +1,60 @@
+{% if section.settings.enable == true %}
+<div class="video-tutorials-nav">
+    <ul class="d-flex justify-content-center">
+        <!-- <li>
+            <a href="#videoTutorial1" smooth-scroll>Link 1</a>
+        </li>
+        <li><span class="dot"></span></li>
+        <li>
+            <a href="#videoTutorial2" smooth-scroll>Link 2</a>
+        </li>
+        <li><span class="dot"></span></li>
+        <li>
+            <a href="#videoTutorial3" smooth-scroll>Link 3</a>
+        </li> -->
+        
+        {% for block in section.blocks %} 
+        <li>
+            <a href="#{{ block.settings.reference }}" smooth-scroll>{{ block.settings.title }}</a>
+        </li>
+        {% unless forloop.last %}
+        <li><span class="dot"></span></li>
+        {% endunless %}
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% schema %}
+    {
+        "name": "Video tutorials nav",
+        "class": "tutorials-navigation-section",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "enable",
+                "label": "Enable navigation",
+                "default": true
+            }
+        ],
+        "blocks": [
+            {
+                "type": "link",
+                "name": "Link",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Link title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "reference",
+                        "label": "Section reference",
+                        "info": "please copy this field and paste it in tutorials section heading block settings"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}

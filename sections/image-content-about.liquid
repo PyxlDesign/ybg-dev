@@ -1,0 +1,86 @@
+<section class="image-with-content">
+    <div class="container">
+        {% for block in section.blocks %}
+            {% liquid 
+                assign bs = block.settings
+                assign row_reverse = bs.row_reverse
+                assign image = bs.image
+                assign rounded_top = bs.rounded_top
+                assign heading = bs.heading
+                assign paragraph = bs.paragraph
+                %}
+                <div class="row align-items-center {% if row_reverse == true %} flex-row-reverse{% endif %} image-with-content__row">
+                    <div class="col-lg-6">
+                        {% if image != blank %}
+                        <div class="image-wrapper {% if rounded_top == true %}image-wrapper--round{% endif %}">
+                            {{ image | img_url:'master' | img_tag }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-box">
+                            {% if heading != blank %}
+                            <h3 class="font-karla mb-15 font-demi">{{ heading }}</h3>
+                            {% endif %}
+                            {% if paragraph != blank %}
+                            <p>{{ paragraph }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+        {% endfor %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Image with content",
+    "class": "image-content-section",
+    "settings": [
+    ],
+    "blocks":[
+        {
+            "name": "Content Row",
+            "type": "image-content",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "row_reverse",
+                    "label": "Invert row?",
+                    "default": false
+                },
+                {
+                    "type": "header",
+                    "content": "Image settings"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "rounded_top",
+                    "label": "Rounded top?",
+                    "default": true
+                },
+                {
+                    "type": "header",
+                    "content": "Content settings"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Content heading goes here"
+                },
+                {
+                    "type": "textarea",
+                    "id": "paragraph",
+                    "label": "Paragraph",
+                    "default": "Content paragraph goes here"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

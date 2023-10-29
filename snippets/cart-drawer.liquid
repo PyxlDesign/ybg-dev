@@ -1,0 +1,232 @@
+<div class="modal fade modal--shopping-cart" id="modalShoppingCart" tabindex="-1"
+        aria-labelledby="modalShoppingCartLabel" aria-hidden="true">
+        <div class="modal-dialog modal--shopping-cart__modal-dialog">
+            <button type="button" class="js-ajax-cart-close close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.6679 15.3536L29.2929 26.9786L26.9786 29.2929L15.3536 17.6679L15 17.3143L14.6464 17.6679L3.02143 29.2929L0.707107 26.9786L12.3321 15.3536L12.6857 15L12.3321 14.6464L0.707107 3.02143L3.02143 0.707107L14.6464 12.3321L15 12.6857L15.3536 12.3321L26.9786 0.707107L29.2929 3.02143L17.6679 14.6464L17.3143 15L17.6679 15.3536Z"
+                            fill="black" stroke="white" />
+                    </svg>
+                </span>
+            </button>
+            <div class="modal-content modal-content--shopping-cart">
+                <div class="modal-content__inner">
+                    <div class="modal-header">
+                        <div class="modal-header__intro w-100 border-bottom">
+                            <div class="cart-title ">
+                                <h2>YOUR CART</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        {% if settings.upsell_product_check %}
+                        {% assign product = all_products[settings.upsell_product] %}
+                        {% if product != blank %}
+                        <div class="upsell-product">
+                            <div class="upsell-product__intro">
+                                <p>Customers usually also buy this prouduct</p>
+                            </div>
+                            <div class="upsell-product__block white-bg">
+                                {% include 'product-item-price' , product%}
+                                <div class="product-item d-flex align-items-md-center">
+                                    <div class="cart-product bg-dark">
+                                        <a href="{{ product.url | within: collection }}">
+                                            <img src="{{ product_image | img_url: 'master' }}" alt=""
+                                                class="product-img image-fill">
+                                        </a>
+                                    </div>
+                                    <div class="product-meta">
+                                        <a href="{{ product.url | within: collection }}">
+                                            <p class="copy-sm"><strong>{{ product.title }}</strong>
+                                                {{ item.product.type }}</p>
+                                        </a>
+                                        <span class="font-bold price">{{ money_price }}</span>
+                                    </div> 
+                                </div>
+                                <div class="btn-wrapper d-flex flex-h-center">
+                                    <a href="javascript:void(0)" class="btn btn-outline-secondary btn--quick-view" data-toggle="modal"
+                                        data-target="#qvm-generac_inverter_product-{{ product.id }}-{{ section_id }}">QUICK VIEW</a>
+                                    {% assign form_id = "add-to-cart-" | append: product.id %}
+                                    {% form 'product', product, class: "js-form-product", id:form_id  %}
+                                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                    <input min="1" type="number" id="quantity" hidden name="quantity" value="1" />
+                                    <!-- <input type="submit" class="btn btn-primary" data-id="add-to-cart-{{product.id}}" onclick="" value="Add to cart" class="btn"/> -->
+                                    <a href="javascript:void(0)" class="btn btn-primary" data-id="add-to-cart-{{product.id}}"
+                                        onclick="addItem('add-to-cart-{{product.id}}');" class="btn"
+                                        {% unless variant.available %}disabled{% endunless %}>Add to cart</a>
+                                    <!-- <a href="#" >ADD TO CART</a> -->
+                                    {% endform %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+                        <div class="cart-wrapper">
+                            <!-- <div class="cart-block border-bottom">
+                                <a href="#" class="btn-close">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor"
+                                            d="M8.83394 7.67678L14.6464 13.4893L13.4893 14.6464L7.67678 8.83394L7.5 8.65716L7.32322 8.83394L1.51071 14.6464L0.353554 13.4893L6.16606 7.67678L6.34284 7.5L6.16606 7.32322L0.353553 1.51071L1.51071 0.353553L7.32322 6.16606L7.5 6.34284L7.67678 6.16606L13.4893 0.353554L14.6464 1.51071L8.83394 7.32322L8.65716 7.5L8.83394 7.67678Z"
+                                            stroke="white" stroke-width="0.5"></path>
+                                    </svg>
+                                </a>
+                                <div class="product-item d-flex align-items-md-center">
+                                    <div class="cart-product bg-dark">
+                                        <a href="#">
+                                            <img src="assets/tool-box-2.png" alt="" class="product-img image-fill">
+                                        </a>
+                                    </div>
+                                    <div class="product-meta">
+                                        <a href="#">
+                                            <p class="copy-sm"><strong>GENERADOR PORTATIL INVERTER</strong>
+                                                GP2200I 2200-1700W</p>
+                                        </a>
+                                        <div class="product-quantity-block">
+                                            <div class="input-group">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="minus" data-field="quant[1]">
+                                                    <span class="btn-action-minus">
+                                                        <svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 1.6H0V0H12V1.6Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <input type="text" name="quant[1]" class="input-number mx-1" value="1"
+                                                    min="1" max="1000">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="plus" data-field="quant[1]">
+                                                    <span class="btn-action-plus">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12 6.85714H6.85714V12H5.14286V6.85714H0V5.14286H5.14286V0H6.85714V5.14286H12V6.85714Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <span class="text-danger font-bold price">$599.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-block border-bottom">
+                                <a href="#" class="btn-close">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor"
+                                            d="M8.83394 7.67678L14.6464 13.4893L13.4893 14.6464L7.67678 8.83394L7.5 8.65716L7.32322 8.83394L1.51071 14.6464L0.353554 13.4893L6.16606 7.67678L6.34284 7.5L6.16606 7.32322L0.353553 1.51071L1.51071 0.353553L7.32322 6.16606L7.5 6.34284L7.67678 6.16606L13.4893 0.353554L14.6464 1.51071L8.83394 7.32322L8.65716 7.5L8.83394 7.67678Z"
+                                            stroke="white" stroke-width="0.5"></path>
+                                    </svg>
+                                </a>
+                                <div class="product-item d-flex align-items-md-center">
+                                    <div class="cart-product bg-dark">
+                                        <a href="#">
+                                            <img src="assets/tool-box-2.png" alt="" class="product-img image-fill">
+                                        </a>
+                                    </div>
+                                    <div class="product-meta">
+                                        <a href="#">
+                                            <p class="copy-sm"><strong>GENERADOR PORTATIL INVERTER</strong>
+                                                GP2200I 2200-1700W</p>
+                                        </a>
+                                        <div class="product-quantity-block">
+                                            <div class="input-group">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="minus" data-field="quant[2]">
+                                                    <span class="btn-action-minus">
+                                                        <svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 1.6H0V0H12V1.6Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <input type="text" name="quant[2]" class="input-number mx-1" value="1"
+                                                    min="1" max="1000">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="plus" data-field="quant[2]">
+                                                    <span class="btn-action-plus">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12 6.85714H6.85714V12H5.14286V6.85714H0V5.14286H5.14286V0H6.85714V5.14286H12V6.85714Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <span class="font-bold price">$599.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-block border-bottom">
+                                <a href="#" class="btn-close">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor"
+                                            d="M8.83394 7.67678L14.6464 13.4893L13.4893 14.6464L7.67678 8.83394L7.5 8.65716L7.32322 8.83394L1.51071 14.6464L0.353554 13.4893L6.16606 7.67678L6.34284 7.5L6.16606 7.32322L0.353553 1.51071L1.51071 0.353553L7.32322 6.16606L7.5 6.34284L7.67678 6.16606L13.4893 0.353554L14.6464 1.51071L8.83394 7.32322L8.65716 7.5L8.83394 7.67678Z"
+                                            stroke="white" stroke-width="0.5"></path>
+                                    </svg>
+                                </a>
+                                <div class="product-item d-flex align-items-md-center">
+                                    <div class="cart-product bg-dark">
+                                        <a href="#">
+                                            <img src="assets/tool-box-2.png" alt="" class="product-img image-fill">
+                                        </a>
+                                    </div>
+                                    <div class="product-meta">
+                                        <a href="#">
+                                            <p class="copy-sm"><strong>GENERADOR PORTATIL INVERTER</strong>
+                                                GP2200I 2200-1700W</p>
+                                        </a>
+                                        <div class="product-quantity-block">
+                                            <div class="input-group">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="minus" data-field="quant[3]">
+                                                    <span class="btn-action-minus">
+                                                        <svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 1.6H0V0H12V1.6Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <input type="text" name="quant[3]" class="input-number mx-1" value="1"
+                                                    min="1" max="1000">
+                                                <button type="button" class="btn-number btn btn-outline-secondary"
+                                                    data-type="plus" data-field="quant[3]">
+                                                    <span class="btn-action-plus">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12 6.85714H6.85714V12H5.14286V6.85714H0V5.14286H5.14286V0H6.85714V5.14286H12V6.85714Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <span class="font-bold price">$599.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="amount-wrapper w-100">
+                            <div class="subtotal-block d-flex align-items-center justify-content-between">
+                                <h4>Subtotal</h4>
+                                <span class="drawer-subtotal-price price"></span>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="/cart" class="btn btn-checkout btn_cart btn-lg w-100">VIEW CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

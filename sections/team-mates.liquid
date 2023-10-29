@@ -1,0 +1,84 @@
+{% liquid 
+    assign s = section.settings
+    assign blocks = section.blocks
+    assign section_heading = s.section_heading
+    %}
+<section class="level-up-product">
+    <div class="container-md">
+        {% if section_heading != blank %}
+        <h2 class="section-title section-title--has-border text-center">{{ section_heading }}</h2>
+        {% endif %}
+
+        <div class="row">
+            {% for block in blocks %}
+                {%liquid
+                    assign bs = block.settings
+                    assign title = bs.title
+                    assign image = bs.image
+                    assign by_liner = bs.by_liner
+                    assign details = bs.details
+                    %}
+            <div class="cell col-lg-4 flex-column align--center">
+                <div class="cell-thumbnail">
+                    <div class="image-ratio image-ratio--square">
+                        {% if image != blank %}
+                        {{ image | img_url:'master' | img_tag }}  
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="cell-meta text-center">
+                    <h2 class="mb-0">{{ title }}</h2>
+                    {% if by_liner != blank %}
+                    <span class="by-liner mb-5 d-block">{{ by_liner }}</span>
+                    {% endif %}
+                    <div class="font-karla">{{ details }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Our team",
+    "class": "teams-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Section title",
+            "default": "Section Title Goes Here"
+        }
+    ],
+    "blocks":[
+        {
+            "type": "member",
+            "name": "Member",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Name"
+                },
+                {
+                    "type": "text",
+                    "id": "by_liner",
+                    "label": "By Liner",
+                    "default": "Team member"
+                },
+                {
+                    "type": "richtext",
+                    "id": "details",
+                    "label": "Details",
+                    "default": "<p>member details go here</p>"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Member image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,59 @@
+<li class="blog-item">
+  <h2 class="text-center text-gray-2">
+    <a href="{{ article.url }}">
+      {% render 'multilang' with article.title %}
+    </a>
+  </h2>
+
+  <div class="copy-lg mb-10 text-bronze-2">
+    {% if section.settings.blog_show_author %}
+    <span class="article__author">
+     by {{ article.author }}
+    </span>
+    {% endif %}
+    
+    {% if section.settings.blog_show_date %}
+    <span class="article__date">
+      on {{ article.published_at | time_tag: format: 'month_day_year' }}
+    </span>
+    {% endif %}
+    
+    {% if blog.comments_enabled? %}
+    <a class="blog-comment" href="{{ article.url }}#comments"{% if settings.enable_multilang %} data-translate="blogs.comments.comments_with_count|count:{{article.comments_count}}"{%endif%}>
+      {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
+    </a>      
+    {% endif %}   
+  </div> 
+
+  <div class="article-details">
+    {% if article.image %}
+    {% assign image_alt = article.title | escape %}
+    <div class="article-img">
+      {{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image' | link_to: article.url | replace: '<a', '<a class="animate-scale"' }}
+    </div>
+    {% endif %}
+
+    <div class="rte article-excerpt">
+      <div class="des">
+        {% if settings.enable_multilang and article.excerpt_or_content contains '[lang2]' %}
+        <div class="lang1">
+          {{ article.excerpt_or_content | strip_html | truncatewords: 64 | split: "[lang2]" | first | split: "|" | first}}
+        </div>
+        <div class="lang2">
+          {{ article.excerpt_or_content | strip_html | truncatewords: 64 | split:"[lang2]" | last | split: "|" | last }}
+        </div>
+        {% else %}
+        {{ article.excerpt_or_content | strip_html | truncatewords: 64  | split:"[lang2]" | first | split: "|" | first }}
+        {% endif %}
+      </div>
+
+      <div class="actions">
+        <h5 class="text-capitalize text-bronze-2">
+            <a href="{{ article.url }}" class="flex-v-center d-inline-flex" {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}>
+            {{ 'blogs.article.read_more' | t }}
+            <svg class="ml-2" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8H21M21 8L13.9397 1M21 8L13.9397 15" stroke="currentColor" stroke-width="2"/></svg></a>
+        </h5>
+      </div>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,98 @@
+{% assign s = section.settings %}
+{% assign head_title = s.mega_head %}
+{% assign section_id = section.id %}
+{% assign blocks = section.blocks %}
+
+<ul class="menu dropdown-menu dropdown-mega-menu mega-{{section_id}}"  data-rel="{{head_title | handleize}}" id="mega-menu-mega_menu_{{head_title | handleize}}">
+    <div class="mega-menu-content"> 
+        <ul class="mega-blocks-list">
+            {% for block in section.blocks %}
+            {% liquid 
+                assign bs = block.settings
+                assign image = bs.image
+                assign title = bs.title
+                assign description = bs.description
+                assign cta_url = bs.cta_url
+                assign cta_text = bs.cta_text
+                %}
+            <li>
+                <a href="{{ cta_url }}">
+                <div class="dropdown-block">
+                    <div class="block-thumbnail">
+                        <div class="image-wrapper">
+                            {% if image != blank %}
+                            <div class="image-ratio image-ratio--square">
+                                {{ image | img_url:"master" | img_tag }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        {% if title != blank %}
+                        <h5>{{ title | escape }}</h5>
+                        {% endif %}
+                        {% if description != blank %}
+                        <p>{{ description }}</p>
+                        {% endif %}
+                        {% if cta_url %}
+                        <span class="as-link">{{ cta_text }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</ul>
+
+{% schema %}
+{
+    "name": "Mega Menu 1",
+    "settings": [
+        {
+            "type": "text",
+            "id": "mega_head",
+            "label": "Head Title",
+            "info": "Please write menu title under which you like to place this mega menu"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title goes here"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Description paragraph goes here"
+                },
+                {
+                    "type": "text",
+                    "id": "cta_text",
+                    "label": "Button text",
+                    "default": "Shop now"
+                },
+                {
+                    "type": "url",
+                    "id": "cta_url",
+                    "label": "Button Url"
+                }
+
+            ]
+        }
+    ]
+}
+{% endschema %}

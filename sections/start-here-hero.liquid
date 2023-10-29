@@ -1,0 +1,81 @@
+{% liquid
+    assign s = section.settings
+    assign section_heading = s.section_heading
+    assign image = s.image
+    assign heading = s.heading
+    assign paragraph = s.paragraph
+    %}
+<section class="hero-start">
+    <div class="container">
+        {% if section_heading != blank %}
+        <div class="row">
+            <div class="cell col-lg-6">
+                <div class="content-box-left">
+                    <h1>{{ section_heading }}</h1>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row align-middle">
+            {% if image != blank %}
+            <div class="cell col-lg-6">
+                <div class="content-box-left">
+                    <div class="image-wrapper">
+                        {{ image | img_url:'master' | img_tag }}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div class="cell col-lg-6 pl-md-10">
+                <div class="content-box-right">
+                    {% if heading != blank %}
+                    <h2>{{ heading }}</h2>
+                    <div class="separator-dots">
+                        <span class="bg-bronze-1"></span>
+                        <span class="bg-bronze-2"></span>
+                        <span class="bg-bronze-3"></span>
+                    </div>
+                    {% endif %}
+                    {% if paragraph != blank %}
+                    <p>{{ paragraph }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Hero",
+    "class": "start-here-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Section title",
+            "default": "Section Title Goes Here"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Section Image"
+        },
+        {
+            "type": "header",
+            "content": "Content Settings"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Your heading goes here"
+        },
+        {
+            "type": "textarea",
+            "id": "paragraph",
+            "label": "Paragraph",
+            "default": "Text content paragraph will go here"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding: 20px;
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
+}
+.notification {
+  display: flex;
+  justify-content: right;
+  padding-top: 10px;
+  font-size: 12px;
+  margin-right: 15px;
+  @media (max-width: 760px) {
+    justify-content: start;
+    padding-top: 10px;
+    margin-left: 35px;
+  }
+}

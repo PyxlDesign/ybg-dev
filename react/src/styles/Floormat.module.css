@@ -1,0 +1,26 @@
+.container {
+  z-index: 3;
+  position: absolute;
+  top: -97px;
+  right: -68px;
+  width: 750px;
+  /* overflow: hidden; */
+  @media (max-width: 767px) {
+    right: -193px;
+  }
+}
+
+.shadow {
+  z-index: 3;
+  position: absolute;
+  top: 469px;
+  right: 59px;
+  width: 500px;
+}
+
+.floormat {
+  position: absolute;
+  top: -6px;
+  right: -48px;
+  width: 780px;
+}

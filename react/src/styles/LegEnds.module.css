@@ -1,0 +1,20 @@
+.container {
+  width: 597px;
+  z-index: 5;
+  position: absolute;
+  top: 271px;
+  right: 1.8px;
+  @media (max-width: 767px) {
+    right: -123px;
+  }
+}
+.nullCont {
+  width: 600px;
+  z-index: 5;
+  position: absolute;
+  top: 271px;
+  right: 0px;
+  @media (max-width: 767px) {
+    right: -125px;
+  }
+}

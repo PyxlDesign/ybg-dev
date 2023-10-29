@@ -1,0 +1,44 @@
+{% for block in section.blocks %}
+<div class="widget sidebar-tags filter-color">
+    {% if block.settings.title != blank %}
+    <div class="widget-title">
+        <h3 class="sidebar-title">
+            {% render 'multilang' with block.settings.title %}
+
+            <a href="javascript:void(0)" class="clear text-hover" style="display:none" {% if settings.enable_multilang %}data-translate="collections.sidebar.clear"{% endif %}>
+            {{ 'collections.sidebar.clear' | t }}
+            </a>
+        </h3>
+    </div>
+    {% endif %}
+
+    <div class="widget-content">
+        <ul class="list-tags">
+            {% for i in (1..20) %}
+            {% capture color_text %}color_text_{{ i }}{% endcapture %}
+            {% capture color %}color_img_{{ i }}{% endcapture %}
+
+            {% if block.settings[color] != blank %}
+            {%- assign img_url = block.settings[color] | img_url: '30x30' -%}
+            {% else %}
+            {%- assign img_url = '' -%}
+            {% endif %}
+
+            {% if color_text != blank %}
+            {% assign tag = block.settings[color_text] | strip %}
+            {% if collection.tags contains tag %} 
+            <li>
+                {% assign tag_value = tag | handleize %}
+                <input type="checkbox" value="{{ tag_value }}" {% if current_tags contains tag %}checked{% endif %}/>
+
+                <a href="javascript:void(0)" {% if current_tags contains tag %}class="active"{% endif %} title="{{tag}}">
+                    <img src="{{ img_url }}" alt="">
+                </a>
+            </li>
+            {% endif %}
+            {% endif %}      
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endfor %}

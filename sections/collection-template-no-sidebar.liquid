@@ -1,0 +1,877 @@
+{% paginate collection.products by 1000 %}
+{% case section.settings.collection_results_per_row %}
+    {% when '1' %}
+        {%- assign grid_item_width = 'col-12' -%}
+        {%- assign rows = 'products-list' -%}
+    {% when '2' %}
+        {%- assign grid_item_width = 'col-6' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '3' %}
+        {%- assign grid_item_width = 'col-6 col-md-4' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '4' %}
+        {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '5' %}
+        {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3 col5' -%}
+        {%- assign rows = 'products-grid' -%}
+{% endcase %}
+{% capture productCards %}
+    {% for product in collection.products %}
+        {% assign _tags = "" %}
+        {% assign tags_size = _tags | size %}
+        
+        {% assign filter_titles = "" %}
+        {% for tag in product.tags %}
+            {% if tag contains '/' %}
+                {% assign _tag = tag | split: '/' | last | handleize %}
+                {% assign _filterTitle = tag | split: '/' | first %}
+                {% if forloop.index == 1 %}
+                {% assign _tags = _tag %}
+                {% assign filter_titles = _filterTitle %}
+                {% else %}
+                {% assign _tags = _tags | append: ',' | append: _tag %}
+                {% assign filter_titles = filter_titles | append: ',' | append: _filterTitle %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        <div class="grid-item {{ grid_item_width }} {% if settings.product_image_border %}grid-item-border {% endif %}">
+          {% render 'product-grid-item-2' with product as product, _tags: _tags, filter_titles: filter_titles %}
+        </div>
+
+        {% assign allTags = allTags | append: product.tags %}
+        {% assign _allTags = allTags | uniq | sort %}
+        {% assign _filter_titles = _filter_titles | append: ',' | append: filter_titles %}
+    {% endfor %}
+{% endcapture %}
+{% endpaginate %}
+
+{% if cart.attributes.pagination != blank and cart.attributes.pagination %}
+    {% assign product_per_page = cart.attributes.pagination %}
+{% else %}
+    {% assign product_per_page = section.settings.collection_results_per_page %}
+{% endif %}
+{% paginate collection.products by product_per_page %}
+{% case section.settings.collection_results_per_row %}
+    {% when '1' %}
+        {%- assign grid_item_width = 'col-12' -%}
+        {%- assign rows = 'products-list' -%}
+    {% when '2' %}
+        {%- assign grid_item_width = 'col-6' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '3' %}
+        {%- assign grid_item_width = 'col-6 col-md-4' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '4' %}
+        {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
+        {%- assign rows = 'products-grid' -%}
+    {% when '5' %}
+        {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3 col5' -%}
+        {%- assign rows = 'products-grid' -%}
+{% endcase %}
+<div data-section-id="{{ section.id }}" data-section-type="collection-template">
+    {% render 'toolbar' %}
+    <div class="row">
+      <div class="grid-item col-md-3">
+        <div class="sidebar-wrapper sidebar-filter">
+          {% comment %} {% render 'left-sidebar' %} {% endcomment %}
+          <div class="mat-color-wrapper sidebar-tags">
+            <h5>View All Covers with this Placemat Color</h5>
+            <select>
+              <option value="" selected>Select Your Color</option>
+              <option value="">Blushing Beige</option>
+              <option value="">Boho Brown</option>
+              <option value="">Cinder Black</option>
+              <option value="">Coastal Greige </option>
+              <option value="">Coconut Cream</option>
+              <option value="">Desert Sage</option>
+              <option value="">Dusty Rose</option>
+              <option value="">Faded Jade</option>
+              <option value="">Glazed Ginger</option>
+              <option value="">Lemon Meringue</option>
+              <option value="">Organic Eggplant</option>
+              <option value="">Perfectly Peach</option>
+              <option value="">Rustic Red</option>
+              <option value="">Urban Olive</option>
+              <option value="">Pale Terracotta</option>
+              <option value="">Peachy Pink</option>
+              <option value="">Soft Mint</option>
+              <option value="">Stone Grey</option>
+              <option value="">Vintage Blue </option>
+              <option value="">Seaside Blue </option>
+              <option value="">Vanilla Latte</option>
+            </select>
+          </div>
+          <div id="accordion">
+            {% assign title_flag = "" %}
+            {% for tag in collection.tags %}
+              {% if tag contains '/' %}
+                {% assign _filterTitle = tag | split: '/' | first %}
+                {% if title_flag contains _filterTitle %}
+                  {% else %}
+                  {% assign title_flag = title_flag | append: ',' | append: _filterTitle %}
+                  {% endif %}
+              {% endif %}
+            {% endfor %}
+            {% assign titles = title_flag | split: ',' | sort: 'decending' %}
+            {% for title in titles %}
+              {% unless title == '' %}
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5>
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse_{{ forloop.index }}__{{title | handleize}}" aria-expanded="true" aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}">
+                      {{ title }}
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse_{{ forloop.index }}__{{title | handleize}}" class="collapse show" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    <div class="themes-wrapper sidebar-tags {% if title == 'Color' %}
+                    color-filter
+                    {% endif %}">
+                    {% if forloop.index == 1 %}
+                    <input type="text" value="" placeholder="Search options">
+                    {% endif %}
+                      <div class="widget-content">
+                        <div class="scroll-content">
+                            <ul {% if title != 'Color' %}class="list-tags"{% endif %}>
+                              {% assign collection_tags = collection.tags | sort | uniq %}
+                              {% for tag in collection_tags %}
+                              {% unless tag == '' %}
+                              {% if tag contains title %}
+                              <li>
+                                {% assign _tag = tag | split: '/' | last %}
+                                {% assign file_axtention = '.png' %}
+                                {% assign file_name = _tag | append: file_axtention %}
+                                {% assign file = file_name | file_url %}
+                                  <input type="checkbox" name="tags" id="checkbox_{{ forloop.index }}__{{ tag }}" value="{{ tag }}" class="filterInput">
+                                  <label for ="checkbox_{{ forloop.index }}__{{ tag }}" {% if title =='Color' %}
+                                  style="background-color: {{tag}}; background-image: url({{ file }})"
+                                  {% endif %}>
+                                  {% unless title == 'Color' %}
+                                    {{ _tag }}
+                                    {% assign count = 0 %}
+                                    {% for product in collections[collection.handle].products %}
+                                      {% for Tag in product.tags %}
+                                        {% if Tag contains '/' %}
+                                        {% assign col_tag = Tag | split: '/' | last %}
+                                          {% if col_tag contains _tag %}
+                                            {% assign count = count | plus: 1 %}
+                                          {% endif %}
+                                        {% endif %}
+                                      {% endfor %}
+                                    {% endfor %}
+                                    <span>( {{ count }} )</span>
+                                    {% endunless %}
+                                  </label>
+                              </li>
+                              {% endif %}
+                              {% endunless %}
+                              
+                              {% endfor %}
+                              {%- comment -%}
+                                <li>
+                                    <input type="checkbox" value="blue">
+                                    <label>
+                                      Cartier
+                                      <span>( 2 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="brown">
+                                    <label>
+                                      Chanel
+                                      <span>( 1 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="green">
+                                    <label>
+                                      Converse
+                                      <span>( 3 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="grey">
+                                    <label>
+                                      Dior
+                                      <span>( 4 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="peach">
+                                    <label>
+                                      Fendi
+                                      <span>( 6 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="pink">
+                                    <label>
+                                      Gucci
+                                      <span>( 3 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="grey">
+                                    <label>
+                                      Dior
+                                      <span>( 2 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="peach">
+                                    <label>
+                                      Fendi
+                                      <span>( 3 )</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="pink">
+                                    <label>
+                                      Gucci
+                                      <span>( 8 )</span>
+                                    </label>
+                                </li>
+                                {%- endcomment -%}
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endunless %}
+            {% endfor %}
+            {%- comment -%}
+            {% for tag in allTags %}
+            {% if tag contains '/' %}
+                {% assign _tag = tag | split: '/' | last | handleize %}
+                {% assign _filterTitle = tag | split: '/' | first %}
+                {% if tags_size == 0 %}
+                {% assign _tags = _tag %}
+                {% assign filter_titles = _filterTitle %}
+                {% else %}
+                {% assign _tags = _tags | append: ',' | append: _tag %}
+                {% assign filter_titles = filter_titles | append: ',' | append: _filterTitle %}
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% assign _filterTitles = filter_titles | split: ',' %}
+            {% for title in _filterTitles %}
+            {% unless title == '' %}
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse_{{ forloop.index }}__{{title | handleize}}" aria-expanded="true" aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}">
+                    {{ title }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse_{{ forloop.index }}__{{title | handleize}}" class="collapse show" aria-labelledby="headingOne">
+                <div class="card-body">
+                  <div class="themes-wrapper sidebar-tags {% if title == 'Color' %}
+                  color-filter
+                  {% endif %}">
+                  {% if forloop.index == 1 %}
+                  <input type="text" value="" placeholder="Search options">
+                  {% endif %}
+                    <div class="widget-content">
+                      <div class="scroll-content">
+                          <ul {% if title != 'Color' %}class="list-tags"{% endif %}>
+                            {% assign all_Tags = _allTags | split: ',' %}
+                            {% for tag in all_Tags %}
+                            {% unless tag == '' %}
+                            <li>
+                              {% assign _tag = tag | capitalize | prepend: '/' | prepend: title %}
+                                <input type="checkbox" id="checkbox_{{ forloop.index }}__{{ tag }}" value="{{ _tag }}">
+                                <label for ="checkbox_{{ forloop.index }}__{{ tag }}" {% if title =='Color' %}
+                                style="background-color: {{tag}};"
+                                {% endif %}>
+                                {% unless title == 'Color' %}
+                                  {{ tag }}
+                                  {% assign count = 0 %}
+                                  {% for tag in collections[collection.handle].all_tags %}
+                                    {% if _tag contains tag %}
+                                      {% assign count = count | plus: 1 %}
+                                    {% endif %}
+                                  {% endfor %}
+                                  <span>( {{ count }} )</span>
+                                  {% endunless %}
+                                </label>
+                            </li>
+                            {% endunless %}
+                            
+                            {% endfor %}
+                              <li>
+                                  <input type="checkbox" value="blue">
+                                  <label>
+                                    Cartier
+                                    <span>( 2 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="brown">
+                                  <label>
+                                    Chanel
+                                    <span>( 1 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="green">
+                                  <label>
+                                    Converse
+                                    <span>( 3 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="grey">
+                                  <label>
+                                    Dior
+                                    <span>( 4 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="peach">
+                                  <label>
+                                    Fendi
+                                    <span>( 6 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="pink">
+                                  <label>
+                                    Gucci
+                                    <span>( 3 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="grey">
+                                  <label>
+                                    Dior
+                                    <span>( 2 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="peach">
+                                  <label>
+                                    Fendi
+                                    <span>( 3 )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="pink">
+                                  <label>
+                                    Gucci
+                                    <span>( 8 )</span>
+                                  </label>
+                              </li>
+                              
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endunless %}
+            {% endfor %}
+            
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Color
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <div class="themes-wrapper sidebar-tags color-filter">
+                    
+                    <div class="widget-content">
+                      <ul>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #C09B71;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #ECDFD7;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #5E533E;;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #F4E0DF;;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #AE7346;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #DAA696;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #1B1B1B;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #C09B71;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #ECDFD7;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #5E533E;;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #F4E0DF;;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #AE7346;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #DAA696;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                        <li class="custom-checkbox">
+                          <label for="" style="background-color: #1B1B1B;"></label>
+                          <input type="checkbox" value="">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5>
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Expiring Soon
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <div class="themes-wrapper sidebar-tags no-border">
+                    <div class="widget-content">
+                      <div class="scroll-content">
+                          <ul class="list-tags">
+                              <li>
+                                  <input type="checkbox" value="grey">
+                                  <label>
+                                    On Sale
+                                    
+                                    <span>( {{ collections['sale'].all_products_count }} )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="peach">
+                                  <label>
+                                    Retiring Soon
+                                    <span>( {{ collections['retiring-soon'].all_products_count }} )</span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" value="pink">
+                                  <label>
+                                    Low Inventory
+                                    <span>( {{ collections['low-inventory'].all_products_count }} )</span>
+                                  </label>
+                              </li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+      <div class="grid-item col-md-9">
+        <div class="product-collection {{ rows }} row">
+            {% if collection.products_count > 0 %}
+            {{ productCards }}
+            {%- comment -%}
+            {% for product in collection.products %}
+            <div class="grid-item {{ grid_item_width }} {% if settings.product_image_border%}grid-item-border {% endif %}">
+                {% render 'product-grid-item-2' with product as product %}
+            </div>
+            {% endfor %}
+            {%- endcomment -%}
+            {% else %}
+            <p class="col-12 text-center" {% if settings.enable_multilang %}data-translate="collections.general.no_matches"{% endif %}>
+                {{ 'collections.general.no_matches' | t }}
+            </p>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+    {% if paginate.pages > 1 %}
+    <div class="padding">
+        {% render 'pagination-page' paginate: paginate %}
+    </div>
+    {% endif %}
+</div>
+{% endpaginate %}
+{% schema %}
+  {
+    "name": "Collection No Sidebar",
+    "class": "col-no-sidebar",
+    "blocks": [
+            {
+                "type": "filter_color",
+                "name": "Filter Color",
+                "settings": [
+                    {
+                        "type": "checkbox",
+                        "id": "enable",
+                        "label": "Enable",
+                        "default": true
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Filter Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_1",
+                        "label": "Color text 1",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_1",
+                        "label": "Color image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_2",
+                        "label": "Color text 2",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_2",
+                        "label": "Color image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_3",
+                        "label": "Color text 3",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_3",
+                        "label": "Color image 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_4",
+                        "label": "Color text 4",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_4",
+                        "label": "Color image 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_5",
+                        "label": "Color text 5",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_5",
+                        "label": "Color image 5"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_6",
+                        "label": "Color text 6",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_6",
+                        "label": "Color image 6"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_7",
+                        "label": "Color text 7",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_7",
+                        "label": "Color image 7"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_8",
+                        "label": "Color text 8",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_8",
+                        "label": "Color image 8"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_9",
+                        "label": "Color text 9",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_9",
+                        "label": "Color image 9"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_10",
+                        "label": "Color text 10",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_10",
+                        "label": "Color image 10"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_11",
+                        "label": "Color text 11",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_11",
+                        "label": "Color image 11"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_12",
+                        "label": "Color text 12",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_12",
+                        "label": "Color image 12"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_13",
+                        "label": "Color text 13",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_13",
+                        "label": "Color image 13"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_14",
+                        "label": "Color text 14",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_14",
+                        "label": "Color image 14"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_15",
+                        "label": "Color text 15",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_15",
+                        "label": "Color image 15"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_16",
+                        "label": "Color text 16",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_16",
+                        "label": "Color image 16"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_17",
+                        "label": "Color text 17",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_17",
+                        "label": "Color image 17"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_18",
+                        "label": "Color text 18",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_18",
+                        "label": "Color image 18"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_19",
+                        "label": "Color text 19",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_19",
+                        "label": "Color image 19"
+                    },
+                    {
+                        "type": "text",
+                        "id": "color_text_20",
+                        "label": "Color text 20",
+                        "info": "i.e \"Red\"."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "color_img_20",
+                        "label": "Color image 20"
+                    }
+                ]
+            },
+            {
+                "type": "filter_text",
+                "name": "Filter Text",
+                "settings": [
+                    {
+                        "type": "checkbox",
+                        "id": "enable",
+                        "label": "Enable",
+                        "default": true
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Filter Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "list_tags",
+                        "label": "List Tags",
+                        "info": "Separate by a comma, i.e \"Dincidunteros, Nectellus, Solutmades\"."
+                    }
+                ]
+            }                      
+        ],
+    "settings": [
+	  {
+        "type": "checkbox",
+        "id": "limited_view",
+        "label": "Enable Limited View",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "view_as_enable",
+        "label": "Enable View As",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "sort_enable",
+        "label": "Enable sorting",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "collection_results_per_row",
+        "label": "Products per row (grid only)",
+        "default": "4",
+        "options": [
+            {
+                "value": "1",
+                "label": "List"
+            },
+            {
+                "value": "2",
+                "label": "2"
+            },
+            {
+                "value": "3",
+                "label": "3"
+            },
+            {
+                "value": "4",
+                "label": "4"
+            },
+            {
+                "value": "5",
+                "label": "5"
+            }
+        ]
+      },
+	  {
+        "type": "select",
+        "id": "collection_results_per_page",
+        "label": "Products per page",
+        "default": "16",
+        "options": [
+		  {
+            "value": "12",
+            "label": "12"
+          },
+          {
+            "value": "16",
+            "label": "16"
+          },
+          {
+            "value": "20",
+            "label": "20"
+          },
+          {
+            "value": "24",
+            "label": "24"
+          },
+          {
+            "value": "30",
+            "label": "30"
+          },
+	      {
+            "value": "50",
+            "label": "50"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

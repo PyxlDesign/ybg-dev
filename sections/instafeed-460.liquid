@@ -1,0 +1,46 @@
+{% if section.settings.enable_embed_code %}
+    <div class="widget-title not-before mb-0 instaFeed-padding">
+        {% if section.settings.title != blank %}
+        <h2 class="section-title section-title--has-border text-center">{{ section.settings.title }}</h2>
+        {% endif %}
+    </div>
+    <div class="instaFeed-foursixty">
+        {% if section.settings.embed_code != blank %}
+            {{ section.settings.embed_code }}
+        {% endif %}
+        
+    </div>
+{% endif %}
+{% schema %}
+
+{
+        "name": "Insta Feed 460",
+        "class": "insta-feed--460-section",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "enable_embed_code",
+                "label": "Enable Four Sixty Embed Code",
+                "default": true
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Heading",
+                "default": "Section Title"
+            },
+            {
+                "type": "html",
+                "id": "embed_code",
+                "label": "Embed code",
+                "info": "Please paste the embed code given by the instafeed appliation interface, Note: embed code should be in html form"
+            }
+        ],
+        "presets": [
+            {
+                "category": "Social",
+                "name":"Instafeed 460"
+            }
+        ]
+    }
+{% endschema %}

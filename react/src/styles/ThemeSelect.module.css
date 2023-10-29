@@ -1,0 +1,20 @@
+.dropdown {
+  width: 60%;
+  margin: 10px 10px 10px 40px;
+  font-family: Halyard Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #30494d;
+  padding: 7px;
+  border: 1px solid #c4c4c4;
+}
+
+.option {
+}
+
+.filterTitle {
+  font-family: 'halyard-display';
+}

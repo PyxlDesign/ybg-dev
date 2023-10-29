@@ -1,0 +1,121 @@
+{% liquid 
+    assign s = section.settings
+    assign section_heading = s.section_heading
+    assign blocks = section.blocks
+    %}
+<section class="expert-advice">
+    <div class="container-md">
+        {% if section_heading != blank %}
+        <h3 class="section-title--has-border section-title--has-border--left text-uppercase font-karla">{{ section_heading }}</h3>
+        {% endif %}
+
+        <div class="expert-advice__blocks">
+            {% for block in blocks %}
+            {% liquid 
+                assign bs = block.settings
+                assign title = bs.title
+                assign content = bs.content
+                assign author_img = bs.author_img
+                assign name = bs.name
+                assign by_liner = bs.by_liner
+                assign _article = articles[bs.article]
+                %}
+            <div class="advice__block">
+                <div class="row">
+                    <div class="col-lg-7">
+                        {% if title != blank %}
+                        <h2 class="h1 text-bronze-2 mb-4">{{ title }}</h2>
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-5 text-gray-2">
+                        {% if content != blank %}
+                        <p class="copy-lg">{{ content }}</p>
+                        {% endif %}
+                        {% if _article != blank %}
+                        <div class="link-wrapper my-3 text-right">
+                            <a href="{{ _article.url }}" class="flex-v-center d-inline-flex">Read more
+                            <svg class="ml-2" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8H21M21 8L13.9397 1M21 8L13.9397 15" stroke="currentColor" stroke-width="2"></path></svg>
+                        </a>
+                        </div>
+                        {% endif %}
+                        <div class="author-meta">
+                            <div class="author-thumbnail">
+                                <div class="image-ratio image-ratio--square">
+                                    {{ author_img | img_url:'master' | img_tag }}
+                                </div>
+                            </div>
+                            <div class="author-meta__inner">
+                                <h5 class="font-karla">{{ name }}</h5>
+                                {% if by_liner != blank %}
+                                <p class="copy-small">{{ by_liner }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Testimonials",
+    "class": "safe-eating-testimonials",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Heading",
+            "default": "Section heading goes here"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks": [
+        {
+            "name": "Testimonial",
+            "type": "testimonial",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title goes here"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Content",
+                    "default": "Content paragraph goes here"
+                },
+                {
+                    "type": "header",
+                    "content": "Author settings"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "author_img",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Name",
+                    "default": "John Doe"
+                },
+                {
+                    "type": "textarea",
+                    "id": "by_liner",
+                    "label": "By Liner",
+                    "default": "Book Author"
+                },
+                {
+                    "type": "article",
+                    "id": "article",
+                    "label": "Article link"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

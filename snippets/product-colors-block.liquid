@@ -1,0 +1,54 @@
+<div class="product-color-block mt-md-5 mt-4">
+        <div class="product-colors">
+            <div class="title-block h6 font-light">
+                Preview with Placemat Color:
+                <span class="font-bold" id="prview_color">
+                    <!-- Name of Color -->
+                </span>
+            </div>
+            <div class="product-colors__choice d-flex flex-wrap">
+            {% if product.type == 'Floor Mat' %}
+            {% for tag in product.tags %}
+            {% assign _tag = tag | split: '/' | last %}
+            {% unless tag == '' %}
+            {% if tag contains 'color' or tag contains 'Color' or tag contains 'Colour' or tag contains 'colour' %}
+            {% assign index = forloop.index %}
+            {% assign background_rgb = '' %}
+                {% for rbg in color_bgs %}
+                {% assign rgb_color = rbg | split: '/' | first %}
+                {% assign rbg_val = rbg | split: '/' | last %}
+                {% assign filter_color = _tag %}
+                {% if rgb_color == filter_color %}
+                    {% assign background_rgb = rbg_val %}
+                    <div class="product-colors__choice__control">
+                        <input type="radio" data-color-handle = "{{ rgb_color | handleize }}" data-name="{{ rgb_color | replace: '-', ' ' }}" name="productColorChoice" value="{{ background_rgb }}" id="productColorChoice__{{ index }}_{{ rgb_color }}">
+                        <label title="{{ rgb_color | replace: '-', ' ' }}" for="productColorChoice__{{ index }}_{{ rgb_color }}" style="color: rgba({{ background_rgb }});">
+                        </label>
+                    </div>
+                    {% break %}
+                {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% endunless %}
+            {% endfor %}
+            {% else %}
+
+
+            {% assign color_bgs = settings.color_rgbs | split: '||' %}
+            {% assign background_rgb = '' %}
+            {% for rbg in color_bgs %}
+            {% assign rgb_color = rbg | split: '/' | first %}
+            {% assign rbg_val = rbg | split: '/' | last %}
+            {% assign swatchImage  = rgb_color | handleize | append : ".jpg" %}
+            {% assign filter_color = _tag %}
+                {% assign background_rgb = rbg_val %}
+                <div class="product-colors__choice__control">
+                    <input type="radio" data-color-handle = "{{ rgb_color | handleize }}" data-name="{{ rgb_color | replace: '-', ' ' }}" name="productColorChoice" value="{{ background_rgb }}" id="productColorChoice__{{ index }}_{{ rgb_color }}">
+                    <label title="{{ rgb_color | replace: '-', ' ' }}" for="productColorChoice__{{ index }}_{{ rgb_color }}" style="  background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;">
+                    </label>
+                </div>
+            {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+</div>

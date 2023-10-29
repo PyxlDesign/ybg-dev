@@ -1,0 +1,29 @@
+.container {
+  max-width: 500px;
+}
+
+.title {
+  /* font-family: Avalanche; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  color: #30494d;
+  margin-top: 0;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.body {
+  font-family: Halyard Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #30494d;
+}

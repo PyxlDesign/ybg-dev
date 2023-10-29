@@ -1,0 +1,113 @@
+.container {
+  /* background-color: #efefef; */
+  background-color: #f1e3d7;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  bottom: -1px;
+  position: sticky;
+  min-height: 110px;
+  @media (max-width: 760px) {
+    position: static;
+    flex-direction: column;
+  }
+}
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  color: #30494d;
+  margin-top: 0;
+  text-align: center;
+}
+
+.button {
+  background: #df9764;
+  border-radius: 5px;
+  border: #df9764;
+  width: 250px;
+  height: 56px;
+  margin: 10px 20px;
+  color: white;
+  font-family: 'halyard-display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: -10px;
+  @media (max-width: 767px) {
+    margin-top: 40px;
+    z-index: 2;
+  }
+}
+.cushionButton {
+  cursor: pointer;
+  font-family: 'halyard-display';
+  color: #637175;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.productTypeCont {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 10px;
+  width: 20%;
+  @media (max-width: 760px) {
+    width: 90%;
+  }
+}
+
+.productType {
+  font-family: 'halyard-display';
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #637174;
+}
+
+.productName {
+  font-family: 'halyard-display';
+  color: #637175;
+}

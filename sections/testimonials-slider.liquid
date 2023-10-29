@@ -1,0 +1,83 @@
+<section class="product-showcase d-none">
+    {% comment %} <div class="product-panel">
+        <div class="product-panel__title">
+            <h2 class="h1 text-center">Make it <span class="typer-anim" data-rotate='[ "Unique.", "safer.", "cuter." ]'></span></h2>
+            <p class="copy-lg">Transform the look of your highchair with stylish cushion covers, colorful placemats, sturdy footrests and premium leg wraps. </p>
+        </div>
+    </div> {% endcomment %}
+    {% comment %} {%liquid
+        assign s = section.settings
+        assign section_header = s.section_header
+        assign paragraph = s.paragraph
+        %}
+    <div class="product-panel__title text-center">
+        {% if section_header != blank %}
+        <h2 class="h1">{{ section_header }}</h2>
+        {% endif %}
+        {% if paragraph %}
+        <div class="copy-lg">{{ paragraph }}</div>
+        {% endif %}
+    </div>
+    <div class="product-panel text-center" data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": true, "autoPlay": 5000, "prevNextButtons": false, "adaptiveHeight": true }'>
+        {% assign block_size = section.blocks | size %}
+        {% if block_size > 0 %}
+        {% for block in section.blocks %}
+        {%liquid
+            assign bs = block.settings
+            assign heading = bs.heading
+            assign subtext = bs.subtext
+            %}
+        <div class="carousel-cell">
+            <div class="product-panel__title">
+                {% if heading != blank %}
+                <h2 class="h1">{{ heading }}</h2>
+                {% endif %}
+                {% if subtext != blank %}
+                <div class="copy-lg">{{ subtext }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %} 
+        {% endif %}
+    </div> {% endcomment %}
+</section>
+{% schema %}
+{
+    "name": "Testimonials slider",
+    "class": "testimonials-slider-section container",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_header",
+            "label": "Heading",
+            "default": "Your Heading Goes here"
+        },
+        {
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "Paragraph",
+            "default": "<p>Please add section information here</p>"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Your heading goes here"
+                },
+                {
+                    "type": "richtext",
+                    "id": "subtext",
+                    "label": "Sub text",
+                    "default": "<p>Your text goes here</p>"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

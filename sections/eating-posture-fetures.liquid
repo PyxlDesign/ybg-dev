@@ -1,0 +1,186 @@
+{% liquid 
+    assign s = section.settings
+    assign section_heading = s.section_heading
+    assign section_paragraph = s.section_paragraph
+    assign section_image = s.section_image
+    assign blocks = section.blocks
+    %}
+<section class="product-qualities bg-light-beige">
+    <div class="container d-md-none">
+        <div class="row">
+            <div class="col-12 mb-5">
+                {% if section_image != blank %}
+                    <div class="image-wrapper">
+                        {{ section_image | img_url:'master' | img_tag }}
+                    </div>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="section-header">
+        {% if section_heading != blank %}
+        <h2>{{ section_heading }}</h2>
+        {% endif %}
+        {% if section_paragraph != blank %}
+        <p class="copy-xl text-gray-2">{{ section_paragraph }}</p>
+        {% endif %}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-md-18">
+                <div class="content-block mx-auto">
+                {% liquid 
+                    assign bs = blocks[0].settings
+                    assign prefix = bs.prefix
+                    assign heading = bs.heading
+                    assign content = bs.content
+                    %}
+                    {% if prefix != blank %}
+                    <h3 class="font-karla text-gray-2 font-demi">{{ prefix }}</h3>
+                    {% endif %}
+                    {% if heading != blank %}
+                    <h2 class="text-bronze-2">{{ heading }}</h2>
+                    {% endif %}
+                    {% if content != blank %}
+                    <p class="font-karla">{{ content }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="content-block mx-auto ml-lg-0">
+                    {% liquid 
+                        assign bs = blocks[1].settings
+                        assign prefix = bs.prefix
+                        assign heading = bs.heading
+                        assign content = bs.content
+                        %}
+                        {% if prefix != blank %}
+                        <h3 class="font-karla text-gray-2 font-demi">{{ prefix }}</h3>
+                        {% endif %}
+                        {% if heading != blank %}
+                        <h2 class="text-bronze-2">{{ heading }}</h2>
+                        {% endif %}
+                        {% if content != blank %}
+                        <p class="font-karla">{{ content }}</p>
+                        {% endif %}
+                </div>
+                <div class="content-block mx-auto ml-lg-0">
+                    {% liquid 
+                        assign bs = blocks[2].settings
+                        assign prefix = bs.prefix
+                        assign heading = bs.heading
+                        assign content = bs.content
+                        %}
+                        {% if prefix != blank %}
+                        <h3 class="font-karla text-gray-2 font-demi">{{ prefix }}</h3>
+                        {% endif %}
+                        {% if heading != blank %}
+                        <h2 class="text-bronze-2">{{ heading }}</h2>
+                        {% endif %}
+                        {% if content != blank %}
+                        <p class="font-karla">{{ content }}</p>
+                        {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-md-flex align-items-end my-5 my-lg-0">
+                {% if section_image != blank %}
+                <div class="image-wrapper">
+                    {{ section_image | img_url:'master' | img_tag }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="col-lg-3">
+                <div class="content-block mx-auto mr-lg-0">
+                    {% liquid 
+                        assign bs = blocks[3].settings
+                        assign prefix = bs.prefix
+                        assign heading = bs.heading
+                        assign content = bs.content
+                        %}
+                        {% if prefix != blank %}
+                        <h3 class="font-karla text-gray-2 font-demi">{{ prefix }}</h3>
+                        {% endif %}
+                        {% if heading != blank %}
+                        <h2 class="text-bronze-2">{{ heading }}</h2>
+                        {% endif %}
+                        {% if content != blank %}
+                        <p class="font-karla">{{ content }}</p>
+                        {% endif %}
+                </div>
+                <div class="content-block mx-auto mr-lg-0">
+                    {% liquid 
+                        assign bs = blocks[4].settings
+                        assign prefix = bs.prefix
+                        assign heading = bs.heading
+                        assign content = bs.content
+                        %}
+                        {% if prefix != blank %}
+                        <h3 class="font-karla text-gray-2 font-demi">{{ prefix }}</h3>
+                        {% endif %}
+                        {% if heading != blank %}
+                        <h2 class="text-bronze-2">{{ heading }}</h2>
+                        {% endif %}
+                        {% if content != blank %}
+                        <p class="font-karla">{{ content }}</p>
+                        {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Product Features",
+    "class": "eating-posture-features-section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section header"
+        },
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Heading",
+            "default": "Section heading goes here"
+        },
+        {
+            "type": "textarea",
+            "id": "section_paragraph",
+            "label": "Paragraph",
+            "default": "Paragraph content goes here"
+        },
+        {
+            "type": "image_picker",
+            "id": "section_image",
+            "label": "Image"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks":[
+        {
+            "name": "Feature",
+            "type": "feature",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "prefix",
+                    "label": "Heading prefix",
+                    "default": "Prefix"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Feature heading"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Paragraph",
+                    "default": "Feature details goes here"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
