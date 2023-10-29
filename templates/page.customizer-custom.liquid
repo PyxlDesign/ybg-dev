@@ -13,7 +13,7 @@
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
             {% if product.metafields.product.cushion_large %}
-                window.cushion_large = {{ product.metafields.product.cushion_large }};
+                window.cushion_large = {{ product.metafields.product.cushion_large | json}};
             {% endif %}
         {% endfor %}
     {% endpaginate %%}
