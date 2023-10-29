@@ -19,6 +19,12 @@
 
             {% endif %}
 
+            {% if product.metafields.product.cushion_thumbnail %}
+
+                window._collection.products[{{ product.id }}].metafields.cushion_thumbnail_src = {{ product.metafields.product.cushion_thumbnail | file_url }};
+
+            {% endif %}
+
         {% endfor %}
     {% endpaginate %%}
 
