@@ -12,9 +12,6 @@
         {% for product in collections.customizer.products %}
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
-            {% if product.metafields.product.cushion_large %}
-                window._collection.products[{{ product.id }}].metafields.cushion_large = {{ product.metafields.product.cushion_large }};
-            {% endif %}
         {% endfor %}
     {% endpaginate %%}
 
