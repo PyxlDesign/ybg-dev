@@ -14,12 +14,13 @@
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
             {% if product.metafields.product.cushion_large %}
                 window.cushion_large = {{ product.metafields.product.cushion_large | file_url }};
-                console.log({{ product.metafields.product.cushion_large | file_url }})   
+                console.log("Prodcut Cushion", {{ product.metafields.product.cushion_large | file_url }})   
+                
             {% endif %}
         {% endfor %}
     {% endpaginate %%}
                 
-    console.log(window.cushion_large)
+    console.log("Cushion Large", window.cushion_large)
 </script> 
 <div id="customizer-app">
 {{ 'customizer.min.js' | asset_url | script_tag }}
