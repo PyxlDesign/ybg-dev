@@ -15,13 +15,13 @@
 
             {% if product.metafields.product.cushion_large %}
 
-                window._collection.products[{{ product.id }}].metafields.cushion_large_src = {{ product.metafields.product.cushion_large | file_url }};
+                window._collection.products[{{ product.id }}].metafields.cushion_large = {{ product.metafields.product.cushion_large | file_url }};
 
             {% endif %}
 
             {% if product.metafields.product.cushion_thumbnail %}
 
-                window._collection.products[{{ product.id }}].metafields.cushion_thumbnail_src = {{ product.metafields.product.cushion_thumbnail | file_url }};
+                window._collection.products[{{ product.id }}].metafields.cushion_thumbnail = {{ product.metafields.product.cushion_thumbnail | file_url }};
 
             {% endif %}
 
