@@ -13,7 +13,7 @@
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json}};
         {% endfor %}
-        {% endpaginate %%}
+    {% endpaginate %%}
 
 </script> 
 <div id="customizer-app">
