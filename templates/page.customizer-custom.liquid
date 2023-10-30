@@ -14,8 +14,8 @@
             {% else %}
                 console.log("Cushion Large", {{ product.metafields.product.cushion_large | file_url }});
             {% endif %}
-            window._collection.products[{{ product.id }}] = {{ product | json }};
-            window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json }};
+            // window._collection.products[{{ product.id }}] = {{ product | json }};
+            // window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json }};
         {% endfor %}
     {% endpaginate %%}
                 
