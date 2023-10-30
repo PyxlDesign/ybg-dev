@@ -10,10 +10,16 @@
     
     {% paginate collections.customizer.products by 1000 %}
         {% for product in collections.customizer.products %}
-            {% if product.metafields.product.cushion_large == blank %}
-            {% else %}
+            {% if product.metafields.product.cushion_large %}
                 console.log("Cushion Large", {{ product.metafields.product.cushion_large | file_url }});
             {% endif %}
+        {% endfor %}
+    {% endpaginate %%}
+
+    {% paginate collections.customizer.products by 1000 %}
+        {% for product in collections.customizer.products %}
+            window._collection.products[{{ product.id }}] = {{ product | json }};
+            window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json }};
         {% endfor %}
     {% endpaginate %%}
                 
