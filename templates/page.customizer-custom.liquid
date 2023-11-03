@@ -11,7 +11,6 @@
 
     {% paginate collections.customizer.products by 1000 %}
         {% for product in collections.customizer.products %}
-            console.log("{{ product.title }}")
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json }};
             window._collection.products[{{ product.id }}].metafields.cushion_large_src = "{{ product.metafields.product.cushion_large | file_url }}";
