@@ -3076,21 +3076,21 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
-          "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
+          "hero_background": "shopify:\/\/shop_images\/Labor_Day_Hero_Image_Desktop.jpg",
+          "hero_title": "Veterans Day<br>Sale",
           "title_color": "#ffffff",
           "title_size": 60,
-          "hero_caption": "Cuter. Safer. Complete customization.",
+          "hero_caption": "20% OFF SITEWIDE",
           "caption_color": "#30494d",
           "caption_size": 22,
-          "cta_url": "shopify:\/\/pages\/start-here",
-          "cta_text": "LEARN MORE",
+          "cta_url": "shopify:\/\/pages\/collections",
+          "cta_text": "SHOP NOW",
           "cta_type": "primary",
           "curved_bottom": false,
           "text_alignment": "text-left",
           "justify_content": "left",
           "align_content": "align-items-start",
-          "btn_color": "#df9764",
+          "btn_color": "#30494d",
           "btn_hover_color": "#637175"
         }
       },
@@ -3958,7 +3958,8 @@
           "f0ec9f74-fade-4304-8120-4f0274e16830",
           "9f2c9525-3c7f-471d-b7cd-0597a90248e1"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "care-instructions": {
         "type": "care-instructions",
@@ -4106,7 +4107,8 @@
           "67f4df91-af83-4b3a-8496-5c59382ecdee",
           "8288f22d-6c0f-4bf6-aacf-3f8638734651"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about-us-blog": {
         "type": "about-us-blog",
@@ -5922,7 +5924,8 @@
       "18228966181090706294": {
         "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
