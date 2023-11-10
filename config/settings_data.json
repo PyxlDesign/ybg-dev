@@ -5886,22 +5886,22 @@
         "type": "hero-mobile-banner",
         "settings": {
           "custom_class": "hero-mobile-banner",
-          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
+          "hero_background": "shopify:\/\/shop_images\/4th_of_July_Hero_Image_Mobile.jpg",
           "image_link": "",
-          "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
+          "hero_title": "Veterans Day<br>Sale",
           "title_color": "#ffffff",
           "title_size": 70,
-          "hero_caption": "Cuter. Safer. <br>Complete<br> customization.",
+          "hero_caption": "20% OFF SITEWIDE",
           "caption_color": "#30494d",
           "caption_size": 22,
-          "cta_url": "shopify:\/\/pages\/start-here",
-          "cta_text": "LEARN MORE",
+          "cta_url": "shopify:\/\/pages\/collections",
+          "cta_text": "SHOP NOW",
           "cta_type": "primary",
           "curved_bottom": false,
           "text_alignment": "text-left",
           "justify_content": "left",
           "align_content": "align-items-start",
-          "btn_color": "#df9764",
+          "btn_color": "#30494d",
           "btn_hover_color": "#637175"
         }
       }
