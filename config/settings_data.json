@@ -3076,7 +3076,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/Labor_Day_Hero_Image_Desktop.jpg",
+          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3090,7 +3090,7 @@
           "text_alignment": "text-left",
           "justify_content": "left",
           "align_content": "align-items-start",
-          "btn_color": "#30494d",
+          "btn_color": "#df9764",
           "btn_hover_color": "#637175"
         }
       },
