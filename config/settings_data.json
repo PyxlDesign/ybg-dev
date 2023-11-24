@@ -3080,7 +3080,7 @@
           "hero_title": "Biggest<br>Sale<br>Ever",
           "title_color": "#df9764",
           "title_size": 60,
-          "hero_caption": "30% Off Sitewide",
+          "hero_caption": "30% Off Sitewide<br>Discount taken at checkout",
           "caption_color": "#fffcf8",
           "caption_size": 22,
           "cta_url": "shopify:\/\/pages\/collections",
