@@ -3076,9 +3076,9 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/BF_Hero__desktop2.jpg",
+          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
-          "title_color": "#df9764",
+          "title_color": "#fffcf8",
           "title_size": 60,
           "hero_caption": "Cuter. Safer. Complete customization.",
           "caption_color": "#fffcf8",
@@ -3089,7 +3089,7 @@
           "curved_bottom": false,
           "text_alignment": "text-left",
           "justify_content": "left",
-          "align_content": "align-items-start",
+          "align_content": "align-items-end",
           "btn_color": "#df9764",
           "btn_hover_color": "#637175"
         }
