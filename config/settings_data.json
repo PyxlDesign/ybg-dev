@@ -3076,7 +3076,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop.jpg",
+          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop2.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#fffcf8",
           "title_size": 60,
@@ -3087,8 +3087,8 @@
           "cta_text": "SHOP NOW",
           "cta_type": "primary",
           "curved_bottom": false,
-          "text_alignment": "text-right",
-          "justify_content": "right",
+          "text_alignment": "text-left",
+          "justify_content": "left",
           "align_content": "align-items-end",
           "btn_color": "#df9764",
           "btn_hover_color": "#637175"
