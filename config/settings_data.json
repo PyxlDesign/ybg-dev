@@ -3076,22 +3076,22 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop4.jpg",
-          "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
+          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop_2.jpg",
+          "hero_title": "",
           "title_color": "#fffcf8",
           "title_size": 60,
-          "hero_caption": "Cuter. Safer. Complete customization.",
+          "hero_caption": "",
           "caption_color": "#fffcf8",
           "caption_size": 22,
           "cta_url": "shopify:\/\/pages\/collections",
-          "cta_text": "SHOP NOW",
+          "cta_text": "",
           "cta_type": "primary",
           "curved_bottom": false,
           "text_alignment": "text-left",
           "justify_content": "left",
           "align_content": "align-items-end",
-          "btn_color": "#df9764",
-          "btn_hover_color": "#637175"
+          "btn_color": "rgba(0,0,0,0)",
+          "btn_hover_color": "rgba(0,0,0,0)"
         }
       },
       "1620412486d542719c": {
