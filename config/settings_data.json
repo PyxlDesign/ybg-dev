@@ -986,9 +986,9 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "display_recently_viewed_products": false,
+          "display_recently_viewed_products": true,
           "recently_viewed_products_title": "Recently Viewed Products",
-          "number_of_recently_viewed_products": "10"
+          "number_of_recently_viewed_products": "4"
         }
       },
       "blog-template": {
