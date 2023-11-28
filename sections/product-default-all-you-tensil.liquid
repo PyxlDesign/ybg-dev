@@ -146,7 +146,7 @@
                 </div>
                 {% endif %}
                 {% if section.settings.left_products == true %}
-                {% comment %} {% if current_variant.inventory_quantity <= 10 %}{% endif %} {% endcomment %}
+                {% comment %} {% if current_variant.inventory_quantity <= 10 %} {% endif %}{% endcomment %}
                 <p class="text-left text-warning mb-3"> {{ current_variant.inventory_quantity }} left </p>
 
                 {% endif %}
@@ -546,6 +546,7 @@
                         {% endif %}
                     </div>
                 {% endif %}
+
                 {% endform %}
                 {% render 'da-restock' %}
                 {% render 'zoorix-product-main' %}
