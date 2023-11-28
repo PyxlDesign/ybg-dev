@@ -5894,13 +5894,13 @@
           "hero_caption": "",
           "caption_color": "#fffcf8",
           "caption_size": 22,
-          "cta_url": "",
-          "cta_text": "",
+          "cta_url": "shopify:\/\/pages\/collections",
+          "cta_text": "Shop Now",
           "cta_type": "primary",
           "curved_bottom": false,
-          "text_alignment": "text-left",
-          "justify_content": "left",
-          "align_content": "align-items-start",
+          "text_alignment": "text-center",
+          "justify_content": "center",
+          "align_content": "align-items-end",
           "btn_color": "rgba(0,0,0,0)",
           "btn_hover_color": "rgba(0,0,0,0)"
         }
