@@ -114,7 +114,7 @@
     "popup_newsletter_text_note": "No, thanks",
     "newssletter_success_text": "You have successfully subscribed!",
     "display_popup_social": true,
-    "enable_wishlist": true,
+    "enable_wishlist": false,
     "image_swap": true,
     "product_image_border": false,
     "product_image_border_color": "#e6e6e6",
@@ -3068,7 +3068,7 @@
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55  <br\/>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
           "color_bg": "rgba(0,0,0,0)",
           "color_text": "#637175",
-          "wishlist": true,
+          "wishlist": false,
           "wishlist_url": "shopify:\/\/pages\/wish-list"
         }
       },
