@@ -4396,13 +4396,13 @@
           "display_trust_img": false,
           "show_tab": "vertical",
           "display_product_detail_description": true,
-          "product_description_title": "Benefits",
-          "description": "<p>Did you know that what goes into your infant or toddler's mouth can have an impact on oral structure and function? The All You-Tensil was designed by a feeding specialist to support and facilitate overall feeding development. Each feature is intended to meet babies where they are, so they can practice the skills they'll eventually need for independence.<\/p>\n<ul>\n<li>Perfect for self-feeding and parent-led feeding<\/li>\n<li>Can be used for developmental mouthing and teething prior to starting solids<\/li>\n<li>Supports oral sensory motor development, fine motor development and overall feeding development <br>\n<\/li>\n<li>100% food-grade, FDA compliant silicone - BPA, PVC, phthalate and latex free<\/li>\n<li>Dishwasher safe<\/li>\n<\/ul>",
+          "product_description_title": "Description",
+          "description": "<p>Extra-large, multi-purpose silicone mat can be used under the highchair or for any messy activity!<\/p>\n<ul>\n<li>100% FDA food-grade silicone<\/li>\n<li>100 cm x 100 cm (39 in x 39 in)<\/li>\n<li>Wipeable<\/li>\n<li>Flexible so you can roll or fold when not in use<\/li>\n<\/ul>\n<p><i>Please note, while we have done our best to accurately represent the color, the mat will look different in various lighting.<\/i><\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Safety",
-          "shipping_returns_content": "<p><i>Our All You-Tensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC). <\/i><\/p>",
+          "shipping_returns_title": "Uses",
+          "shipping_returns_content": "<ul>\n<li>Under the highchair<\/li>\n<li>Messy activities like clay, paint or glue<\/li>\n<li>Assembling models, jewelry or legos<\/li>\n<li>Baking mat<\/li>\n<li>Under sensory table<\/li>\n<li>Puzzles<\/li>\n<\/ul>\n<p><em>Please note: Silicone is durable but not cut-proof, so do not use as a cutting surface. Some craft items like permanent marker may not wash off.<\/em><\/p> ",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
@@ -5414,19 +5414,20 @@
           "a3d88d5e-174b-498a-9d93-51ffd82e27df": {
             "type": "review",
             "settings": {
-              "title": "Supports Oral Development",
-              "content": "Mouthing BEFORE babies start solids allows them to practice oral motor skills"
+              "title": "Under Highchair",
+              "content": "Non-skid silicone keeps the mat in place and the highchair from sliding."
             }
           },
           "a86d828b-fcb8-40a4-ae71-7dd9c7c9dbf8": {
             "type": "review",
             "settings": {
-              "title": "Versatile",
-              "content": "Can be used for self-feeding or parent-led feeding with purees"
+              "title": "Years of Use",
+              "content": "Can be used for messy activities and crafts long after babies outgrow their highchair."
             }
           },
           "dcfb5800-51eb-4c57-926e-60e9aa7ece1a": {
             "type": "review",
+            "disabled": true,
             "settings": {
               "title": "testing",
               "content": "Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success."
@@ -5440,7 +5441,7 @@
         ],
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/YBG-20_245d79f4-499c-4424-9d2e-3f1782471dc4.jpg",
-          "heading": "Why All You-Tensils?"
+          "heading": "Why Floor Mats?"
         }
       },
       "restaurant-bags-reasons-to-buy": {
@@ -5793,7 +5794,7 @@
             "settings": {
               "author": "",
               "author_color": "",
-              "message": "As an SLP, I’m so glad you guys made this! It’s so easy for my daughter to use. We bought two sets, but I probably should have gotten more!",
+              "message": "This mat is so convenient for playtime! The mess is contained!",
               "message_color": "",
               "by_line": "",
               "by_line_color": "",
@@ -5805,7 +5806,7 @@
             "settings": {
               "author": "",
               "author_color": "",
-              "message": "We have a BUNCH of baby spoons and my 16-month-old still prefers yours.",
+              "message": "I have two - I keep one with her highchair and one for sensory play or to take with us when we travel.",
               "message_color": "",
               "by_line": "",
               "by_line_color": "",
