@@ -20,14 +20,13 @@
     #shopify-section-{{section.id}} .site-header .notification-bar p {
         color: {{s.color_text}};
         text-align:center;
-         font-family: 'Karla';
+         font-family: 'Karla';git 
     }
 </style>
 <header class="site-header header-default is-fixed">
     {% if s.message_text != blank %}
     <div class="notification-bar">
         <div class="container d-flex justify-content-center align-items-center">
-            {{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}
             <p class="copy-small">{{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}</p>
         </div>
     </div>
