@@ -27,6 +27,7 @@
     {% if s.message_text != blank %}
     <div class="notification-bar">
         <div class="container d-flex justify-content-center align-items-center">
+            {{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}
             <p class="copy-small">{{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}</p>
         </div>
     </div>
