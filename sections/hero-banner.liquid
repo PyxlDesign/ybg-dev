@@ -16,7 +16,7 @@
 {% assign cta_type = s.cta_type %}
 {% assign text_alignment = s.text_alignment %}
 {% assign justify_content = s.justify_content %}
-
+{% assign align_content = s.align_content %}
 {% assign btn_color = s.btn_color %}
 {% assign btn_hover_color = s.btn_hover_color %}
 <style>
@@ -248,25 +248,6 @@
         {
           "value": "right",
           "label": "Right"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "align_content",
-      "label": "Vertical Alignment",
-      "options": [
-        {
-          "value": "align-items-start",
-          "label": "Top"
-        },
-        {
-          "value": "align-items-center",
-          "label": "Middle"
-        },
-        {
-          "value": "align-items-end",
-          "label": "Bottom"
         }
       ]
     },
