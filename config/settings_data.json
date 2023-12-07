@@ -5901,8 +5901,8 @@
           "text_alignment": "text-left",
           "justify_content": "left",
           "align_content": "align-items-start",
-          "btn_color": "#df9764",
-          "btn_hover_color": "#637175"
+          "btn_color": "rgba(0,0,0,0)",
+          "btn_hover_color": "rgba(0,0,0,0)"
         }
       },
       "all-you-tensil-reasons-to-buy": {
