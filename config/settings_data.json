@@ -3076,7 +3076,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop_2.jpg",
+          "hero_background": "shopify:\/\/shop_images\/Winter_Hero_desktop2.jpg",
           "hero_title": "20% Off Everything",
           "title_color": "#ffffff",
           "title_size": 60,
