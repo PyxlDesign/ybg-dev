@@ -3087,8 +3087,8 @@
           "cta_text": "Learn More",
           "cta_type": "primary",
           "curved_bottom": false,
-          "text_alignment": "text-left",
-          "justify_content": "left",
+          "text_alignment": "text-right",
+          "justify_content": "right",
           "align_content": "align-items-start",
           "btn_color": "#df9764",
           "btn_hover_color": "#637175"
