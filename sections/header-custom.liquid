@@ -51,6 +51,7 @@
                 function slickAnnouncements() {
                     // Count the P tags if there is only one then return
                     if( $('#announcement').find('p').length <= 1 ) {
+                        $('#announcement').css('opacity', '1');
                         return;
                     }
                     // Make sure that slick is loaded
@@ -72,7 +73,7 @@
                         pauseOnHover: true,
                         pauseOnFocus: false,
                         adaptiveHeight: true
-                    });
+                    }).css('opacity', '1');
                 }
                 slickAnnouncements();
             </script>
