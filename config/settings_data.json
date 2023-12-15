@@ -3062,10 +3062,10 @@
         "settings": {
           "header_bg": "#ffffff",
           "logo_max_width": 315,
-          "left_linklist": "left-menu",
-          "right_linklist": "right-menu",
-          "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55  <br\/>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
+          "left_linklist": "",
+          "right_linklist": "",
+          "mobile_linklist": "",
+          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF <\/strong><a href=\"\/collections\/all\" title=\"All products\"><strong>Shop Now<\/strong><\/a><\/p>",
           "color_bg": "rgba(0,0,0,0)",
           "color_text": "#637175",
           "wishlist": true,
@@ -3076,7 +3076,6 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3146,36 +3145,31 @@
           "1348b1e8-f464-46c5-a185-be87842cd2e5": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#bac8b6",
-              "product_image": "shopify:\/\/shop_images\/home-001.png"
+              "color_swatch": "#bac8b6"
             }
           },
           "99789124-04e3-422f-9fe4-ad8bda53c97a": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#637175",
-              "product_image": "shopify:\/\/shop_images\/home-003.png"
+              "color_swatch": "#637175"
             }
           },
           "a4e15931-b8eb-4a78-ae24-036f1add7a84": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#df9764",
-              "product_image": "shopify:\/\/shop_images\/home-005_c73bdc58-398a-4f7e-8c7c-347ebce12074.png"
+              "color_swatch": "#df9764"
             }
           },
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#d79a80",
-              "product_image": "shopify:\/\/shop_images\/home-004.png"
+              "color_swatch": "#d79a80"
             }
           },
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#e7b99d",
-              "product_image": "shopify:\/\/shop_images\/home-002.png"
+              "color_swatch": "#e7b99d"
             }
           }
         },
@@ -3260,8 +3254,7 @@
           "caption_color": "#ffffff",
           "caption_size": 22,
           "cta_url": "shopify:\/\/pages\/inspirations",
-          "cta_text": "Explore our lookbook",
-          "image": "shopify:\/\/shop_images\/rainbow_274cbcfa-3277-4e27-b17d-1fb373078447.png"
+          "cta_text": "Explore our lookbook"
         }
       },
       "1620416895faf4570f": {
@@ -3373,25 +3366,21 @@
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify:\/\/shop_images\/babylist2.png"
             }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify:\/\/shop_images\/Todays_Parent2.png"
             }
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify:\/\/shop_images\/domino2.png"
             }
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify:\/\/shop_images\/solids_starts.png"
             }
           }
         },
@@ -3411,7 +3400,6 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-secondary",
-          "hero_background": "shopify:\/\/shop_images\/Kruithof-Family-2020-248_KRK.jpg",
           "hero_title": "Meet the<br>Yeah Baby Goods<br>Team",
           "title_color": "#ffffff",
           "title_size": 56,
@@ -3436,7 +3424,7 @@
             "type": "menu",
             "settings": {
               "heading": "Shop",
-              "menu": "shop-menu"
+              "menu": ""
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
@@ -3450,7 +3438,7 @@
             "type": "menu",
             "settings": {
               "heading": "",
-              "menu": "connect"
+              "menu": ""
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -3482,25 +3470,21 @@
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ybgg.jpg"
             }
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brown_butter_full.jpg"
             }
           },
           "42a7df21-d27f-45b2-aec5-a15f5d77c7dc": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/y-10.jpg"
             }
           },
           "0cc1a2eb-c408-499a-be14-f56bab07e5a0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/restaurantbags-26.jpg"
             }
           },
           "ac4574ce-dff0-4dca-9d51-7bf15f895288": {
@@ -3518,13 +3502,11 @@
           "e6a8ace4-b50c-4489-9801-42b37a06e710": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/vintage_blue_uphighchair.jpg"
             }
           },
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/y-6.jpg"
             }
           }
         },
@@ -3958,7 +3940,8 @@
           "f0ec9f74-fade-4304-8120-4f0274e16830",
           "9f2c9525-3c7f-471d-b7cd-0597a90248e1"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "care-instructions": {
         "type": "care-instructions",
@@ -4106,7 +4089,8 @@
           "67f4df91-af83-4b3a-8496-5c59382ecdee",
           "8288f22d-6c0f-4bf6-aacf-3f8638734651"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about-us-blog": {
         "type": "about-us-blog",
@@ -4145,7 +4129,6 @@
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/yeahbabygoods-65.jpg",
               "title": "Pattern Cushion Covers",
               "description": "Cushions for support, covers keep your home stylish",
               "cta_text": "Shop now",
@@ -4155,7 +4138,6 @@
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/QY5A7630-Edit_square.jpg",
               "title": "Vegan Leather Cushion Covers",
               "description": "Wipeable covers for your support cushion",
               "cta_text": "Shop now",
@@ -4165,7 +4147,6 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/mashta_fam_24_square2.jpg",
               "title": "Highchair Placemats",
               "description": "FDA food grade silicone fits in tray and makes clean-up a breeze",
               "cta_text": "Shop now",
@@ -4175,7 +4156,6 @@
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/yeahbabygoods-5_f9031d4c-4baf-4745-af48-f44226db268e.jpg",
               "title": "Highchair Footrests",
               "description": "Makes meal times safer and more comfortable",
               "cta_text": "Shop now",
@@ -4195,7 +4175,6 @@
           "3210f823-b119-46f3-bc70-9f844926c34e": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/vintage_blue_uphighchair_af3963a5-f8b1-4bd5-9874-5c1918acf208.jpg",
               "title": "Floor Mats",
               "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "cta_text": "Shop now",
@@ -4205,7 +4184,6 @@
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
               "title": "Restaurant Bags",
               "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
               "cta_text": "Shop now",
@@ -4215,7 +4193,6 @@
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ybgg.jpg",
               "title": "Feeding Essentials",
               "description": "Improve mealtimes with our thoughtfully-designed collection of placemats, utensils and more",
               "cta_text": "Shop now",
@@ -5883,8 +5860,8 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "settings": {
+          "testing_field": "",
           "custom_class": "hero-mobile-banner",
-          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "image_link": "",
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
@@ -5917,14 +5894,7 @@
       "1629747261e1ca35b0",
       "1620417742f3c060ce",
       "162990068233f26fb0"
-    ],
-    "blocks": {
-      "18228966181090706294": {
-        "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {
