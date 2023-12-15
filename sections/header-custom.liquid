@@ -22,6 +22,18 @@
         text-align:center;
          font-family: 'Karla';git 
     }
+    .slick-arrow-small {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .slick-arrow-small .fa {
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
 <header class="site-header header-default is-fixed">
     {% if s.message_text != blank %}
@@ -40,8 +52,8 @@
                         autoplay: true,
                         autoplaySpeed: 5000,
                         arrows: true,
-                        nextArrow: "<i class='fa fa-angle-right slick-next slick-arrow'></i>",
-                        nextArrow: "<i class='fa fa-angle-left slick-next slick-arrow'></i>",
+                        nextArrow: "<button class='slick-next slick-arrow slick-arrow-small'><i class='fa fa-angle-right'></i><span class='sr-only'>Next annoucement</span></button>",
+                        prevArrow: "<button class='slick-next slick-arrow slick-arrow-small'><i class='fa fa-angle-left'></i><span class='sr-only'>Previous annoucement</span></button>",
                         pauseOnHover: true,
                         pauseOnFocus: false,
                         adaptiveHeight: true
