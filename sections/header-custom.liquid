@@ -43,6 +43,10 @@
             <div id="announcement" class="copy-small">{{ s.message_text }}</div>
             <script defer>
                 function slickAnnouncements() {
+                    if( typeof $('#announcement').slick !== 'function' ) {
+                        setTimeout(slickAnnouncements, 100);
+                        return;
+                    }
                     $('#announcement').slick({
                         dots: false,
                         infinite: true,
