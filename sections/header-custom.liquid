@@ -47,15 +47,20 @@
             <div id="announcement" class="copy-small">{{ s.message_text }}</div>
             <script defer>
                 function slickAnnouncements() {
+                    // Count the P tags if there is only one then return
+                    if( $('#announcement').find('p').length <= 1 ) {
+                        return;
+                    }
+                    // Make sure that slick is loaded
                     if( typeof $('#announcement').slick !== 'function' ) {
                         setTimeout(slickAnnouncements, 100);
                         return;
                     }
+                    // Init slick
                     $('#announcement').slick({
                         dots: false,
                         infinite: true,
                         speed: 500,
-                        fade: true,
                         cssEase: 'linear',
                         autoplay: true,
                         autoplaySpeed: 5000,
