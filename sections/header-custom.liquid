@@ -29,6 +29,26 @@
         <div class="container d-flex justify-content-center align-items-center">
             {% comment %} <p class="copy-small">{{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}</p> {% endcomment %}
             <div id="announcement" class="copy-small">{{ s.message_text }}</div>
+            <script defer>
+                function slickAnnouncements() {
+                    $('#announcement').slick({
+                        dots: false,
+                        infinite: true,
+                        speed: 500,
+                        fade: true,
+                        cssEase: 'linear',
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                        arrows: true,
+                        nextArrow: "<i class='fa fa-angle-right slick-next slick-arrow'></i>",
+                        nextArrow: "<i class='fa fa-angle-left slick-next slick-arrow'></i>",
+                        pauseOnHover: true,
+                        pauseOnFocus: false,
+                        adaptiveHeight: true
+                    });
+                }
+                slickAnnouncements();
+            </script>
         </div>
     </div>
     {% endif %}
