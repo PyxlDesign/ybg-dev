@@ -3076,7 +3076,6 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify:\/\/shop_images\/winter-hero-desktop.webp",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 56,
