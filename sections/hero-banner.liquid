@@ -146,33 +146,6 @@
     },
     {
       "type": "header",
-      "content": "Caption settings"
-    },
-    {
-      "type": "textarea",
-      "id": "hero_caption",
-      "label": "Caption",
-      "default": "Style. Function. Affordability. Customization at last.",
-      "info": "This will set text for Caption"
-    },
-    {
-      "type": "color",
-      "id": "caption_color",
-      "label": "Caption Color",
-      "default": "#fff",
-      "info": "This will set color to Hero caption"
-    },
-    {
-      "type": "range",
-      "id": "caption_size",
-      "label": "Caption Font Size",
-      "min": 16,
-      "max": 30,
-      "step": 1,
-      "default": 22
-    },
-    {
-      "type": "header",
       "content": "Slides"
     },
     {
@@ -204,6 +177,142 @@
       "type": "text",
       "id": "slide_3_url",
       "label": "Slide 3 URL"
+    }
+    {
+      "type": "header",
+      "content": "Caption settings"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_caption",
+      "label": "Caption",
+      "default": "Style. Function. Affordability. Customization at last.",
+      "info": "This will set text for Caption"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#fff",
+      "info": "This will set color to Hero caption"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "label": "Caption Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "header",
+      "content": "CTA settings"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "URL",
+      "info": "Remaining empty will disable the CTA button"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "select",
+      "id": "cta_type",
+      "label": "Button Type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "outline",
+          "label": "Secondary"
+        }
+      ],
+      "default": "outline"
+    },
+    {
+      "type": "header",
+      "content": "Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "curved_bottom",
+      "label": "Enable Curve On Bottom",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Align Text",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "justify_content",
+      "label": "Horizontal Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_content",
+      "label": "Vertical Alignment",
+      "options": [
+        {
+          "value": "align-items-start",
+          "label": "Top"
+        },
+        {
+          "value": "align-items-center",
+          "label": "Middle"
+        },
+        {
+          "value": "align-items-end",
+          "label": "Bottom"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Button Color"
+    },
+    {
+      "type": "color",
+      "id": "btn_hover_color",
+      "label": "Button Color on Hover"
     }
   ],
   "presets": [
