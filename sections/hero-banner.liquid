@@ -1,6 +1,12 @@
 {% assign s = section.settings %}
 {% assign custom_class = s.custom_class %}
 {% assign title = s.hero_title %}
+{% assign slide_1_image = s.slide_1_image %}
+{% assign slide_1_url = s.slide_1_url %}
+{% assign slide_2_image = s.slide_2_image %}
+{% assign slide_2_url = s.slide_2_url %}
+{% assign slide_3_image = s.slide_3_image %}
+{% assign slide_3_url = s.slide_3_url %}
 {% assign caption = s.hero_caption %}
 {% if s.hero_background != blank -%}
   {% assign background = s.hero_background %}
@@ -81,7 +87,7 @@
       {% if slide_1_image != blank %}
         {% if slide_1_url != blank %}
           <a class="hero-slide" href="{{ slide_1_url }}">
-            <img src="{{ slide_1_image | img_url: 'master' }}" alt="{{ slide_1_image.alt }}">
+            {{ slide_1_image | image_url: width: 1500 | image_tag }}
           </a>
         {% endif %}
       {% endif %}
