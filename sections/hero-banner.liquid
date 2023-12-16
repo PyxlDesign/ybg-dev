@@ -118,6 +118,21 @@
         {% endif %}
       {% endif %}
     </div>
+    <script defer>
+      $(document).ready(function () {
+        // check if there is more than 1 img in the #hero-slider
+        if ($('#hero-slider img').length > 1) {
+            $('#hero-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false,
+            });
+        }
+    </script>
   {% endif %}
   {% if cta_url != blank %}
     <div class="container">
