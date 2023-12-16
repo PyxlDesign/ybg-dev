@@ -42,6 +42,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    opacity: 0;
   }
   #shopify-section-{{section.id}} .hero-slide {
     display: block;
@@ -119,19 +120,31 @@
       {% endif %}
     </div>
     <script defer>
-      $(document).ready(function () {
-        // check if there is more than 1 img in the #hero-slider
-        if ($('#hero-slider img').length > 1) {
-            $('#hero-slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                cssEase: 'linear',
-                autoplay: true,
-                autoplaySpeed: 5000,
-                arrows: false,
-            });
+      function slickHeroSlides() {
+        if ($('#hero-slider').find('img').length <= 1) {
+          $('#announcement').css('opacity', '1');
+          return;
         }
+        if (typeof $('#hero-slider').slick !== 'function') {
+          setTimeout(slickAnnouncements, 100);
+          return;
+        }
+        $('#hero-slider')
+          .slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: true,
+            pauseOnHover: true,
+            pauseOnFocus: false,
+            adaptiveHeight: true,
+          })
+          .css('opacity', '1');
+      }
+      slickHeroSlides();
     </script>
   {% endif %}
   {% if cta_url != blank %}
