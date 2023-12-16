@@ -73,15 +73,29 @@
 </style>
 
 <section class="hero d-flex {{ align_content }} {{ custom_class }}">
-  <div class="container">
-    <div class="hero-caption text-white {{ text_alignment }}">
+  {% if title != blank %}
+    <div id="hero-slider">
       {% if title != blank %}
-        <h1 class="text-white">{{ title }}</h1>
+        <h1 class="text-white sr-only">{{ title }}</h1>
       {% endif %}
-      {% if caption != blank %}
-        <p class="copy-lg">{{ caption }}</p>
+      {% if slide_1_image != blank %}
+        {% if slide_1_url != blank %}
+          <a class="hero-slide" href="{{ slide_1_url }}">
+            <img src="{{ slide_1_image | img_url: 'master' }}" alt="{{ slide_1_image.alt }}">
+          </a>
+        {% endif %}
       {% endif %}
-      {% if cta_url != blank %}
+    </div>
+  {% endif %}
+  {% if cta_url != blank %}
+    <div class="container">
+      <div class="hero-caption text-white {{ text_alignment }}">
+        {% if title != blank %}
+          <h1 class="text-white">{{ title }}</h1>
+        {% endif %}
+        {% if caption != blank %}
+          <p class="copy-lg">{{ caption }}</p>
+        {% endif %}
         <div class="button-wrapper">
           <a
             href="{{cta_url}}"
@@ -94,9 +108,9 @@
             {{- cta_text -}}
           </a>
         </div>
-      {% endif %}
+      </div>
     </div>
-  </div>
+  {% endif %}
 </section>
 {% if s.curved_bottom %}
   <div class="curve-bg"></div>
