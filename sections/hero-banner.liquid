@@ -109,7 +109,7 @@
         {% assign slide_url = block.settings.hero_slide_url %}
         {% if slide_image != blank and slide_url != blank %}
           <a class="hero-slide" href="{{ slide_url }}">
-            {{ slide_image | image_url: 'master' | image_tag }}
+            {{ slide_image | img_url: 'master' | img_tag }}
           </a>
         {% endif %}
       {% endfor %}
