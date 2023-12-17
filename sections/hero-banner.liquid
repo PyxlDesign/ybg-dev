@@ -123,6 +123,13 @@
           </a>
         {% endif %}
       {% endif %}
+      {% if slide_3_image != blank %}
+        {% if slide_3_url != blank %}
+          <a class="hero-slide" href="{{ slide_3_url }}">
+            {{ slide_3_image | image_url: width: 1500 | image_tag }}
+          </a>
+        {% endif %}
+      {% endif %}
     </div>
     <script defer>
       function slickHeroSliders() {
