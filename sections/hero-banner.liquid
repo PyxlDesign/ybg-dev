@@ -109,26 +109,20 @@
       <h1 class="text-white sr-only">{{ title }}</h1>
     {% endif %}
     <div id="hero-slider">
-      {% if slide_1_image != blank %}
-        {% if slide_1_url != blank %}
-          <a class="hero-slide" href="{{ slide_1_url }}">
-            {{ slide_1_image | image_url: width: 1500 | image_tag }}
-          </a>
-        {% endif %}
+      {% if slide_1_image != blank and slide_1_url != blank %}
+        <a class="hero-slide" href="{{ slide_1_url }}">
+          {{ slide_1_image | image_url: width: 1500 | image_tag }}
+        </a>
       {% endif %}
-      {% if slide_2_image != blank %}
-        {% if slide_2_url != blank %}
-          <a class="hero-slide" href="{{ slide_2_url }}">
-            {{ slide_2_image | image_url: width: 1500 | image_tag }}
-          </a>
-        {% endif %}
+      {% if slide_2_image != blank and slide_2_url != blank %}
+        <a class="hero-slide" href="{{ slide_2_url }}">
+          {{ slide_2_image | image_url: width: 1500 | image_tag }}
+        </a>
       {% endif %}
-      {% if slide_3_image != blank %}
-        {% if slide_3_url != blank %}
-          <a class="hero-slide" href="{{ slide_3_url }}">
-            {{ slide_3_image | image_url: width: 1500 | image_tag }}
-          </a>
-        {% endif %}
+      {% if slide_3_image != blank and slide_3_url != blank %}
+        <a class="hero-slide" href="{{ slide_3_url }}">
+          {{ slide_3_image | image_url: width: 1500 | image_tag }}
+        </a>
       {% endif %}
     </div>
     <script defer>
