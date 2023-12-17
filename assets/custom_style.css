@@ -343,6 +343,27 @@
     /* display: inline-block; */
 }
 
+/* Add to cart */
+.add-to-cart-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.add-to-cart-group #product-add-to-cart {
+    background: #df9764;
+    color: #fff;
+    border-color: #0000;
+    padding: 12px 15px 10px;
+    line-height: 21px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.add-to-cart-group .quantity {
+    margin: 0;
+}
+
 .product-shop .groups-btn #product-add-to-cart,
 .product-shop .groups-btn .product-add-to-cart {
     border-radius: 5px;
