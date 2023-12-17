@@ -13194,7 +13194,6 @@ div#dd-restock-notification-container #dd-restock-notification-msg {
     margin-bottom: 15px;
     font-size: 32px !important;
     line-height: normal !important;
-    text-transform: capitalize !important;
     letter-spacing: -.02em !important;
     font-weight: 400 !important;
 }
