@@ -108,7 +108,7 @@
         {% assign slide_image = block.settings.hero_slide_image %}
         {% assign slide_url = block.settings.hero_slide_url %}
         {% if slide_image != blank and slide_url != blank %}
-          <a class="hero-slide" href="{{ slide_url }}">
+          <a class="hero-mobile-slide" href="{{ slide_url }}">
             {{ slide_image | image_url: width: 1500 | image_tag }}
           </a>
         {% endif %}
@@ -239,36 +239,6 @@
       "type": "checkbox",
       "id": "use_hero_slider",
       "label": "Use Hero Slider"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_1_image",
-      "label": "Slide 1 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_1_url",
-      "label": "Slide 1 URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_2_image",
-      "label": "Slide 2 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_2_url",
-      "label": "Slide 2 URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_3_image",
-      "label": "Slide 3 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_3_url",
-      "label": "Slide 3 URL"
     },
     {
       "type": "header",
