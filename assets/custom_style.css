@@ -345,6 +345,7 @@
 
 /* Add to cart */
 .add-to-cart-group {
+    align-items: center;
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
