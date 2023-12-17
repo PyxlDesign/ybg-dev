@@ -22,19 +22,19 @@
             {% if heading != blank %}
               <h2>{{ heading }}</h2>
             {% endif %}
-            <div class="review-blocks">
+            <div class="reason-blocks">
               {% for block in blocks %}
                 {% liquid
                   assign bs = block.settings
                   assign title = bs.title
                   assign content = bs.content
                 %}
-                <div class="review-block">
+                <div class="reason-block">
                   {% if title != blank %}
                     <h3 class="text-bronze-2 font-karla">{{ title }}</h3>
                   {% endif %}
                   {% if content != blank %}
-                    <p>{{ content }}</p>
+                    {{ content }}
                   {% endif %}
                 </div>
               {% endfor %}
@@ -60,64 +60,24 @@
       "id": "heading",
       "label": "Heading",
       "default": "Heading goes here"
-    },
-    {
-      "type": "header",
-      "content": "Reasons"
-    },
-    {
-      "type": "text",
-      "id": "reason_1_title",
-      "label": "Reason 1 Title",
-      "default": "HAPPIER BABY"
-    },
-    {
-      "type": "richtext",
-      "id": "reason_1_text",
-      "label": "Reason 1 Text",
-      "default": "Dangling feet can lead to frussing, shorter mealtimes, a lack of interest in eating."
-    },
-    {
-      "type": "text",
-      "id": "reason_2_title",
-      "label": "Reason 2 Title",
-      "default": "HAPPIER BABY"
-    },
-    {
-      "type": "richtext",
-      "id": "reason_2_text",
-      "label": "Reason 2 Text",
-      "default": "Dangling feet can lead to frussing, shorter mealtimes, a lack of interest in eating."
-    },
-    {
-      "type": "text",
-      "id": "reason_3_title",
-      "label": "Reason 3 Title",
-      "default": "HAPPIER BABY"
-    },
-    {
-      "type": "richtext",
-      "id": "reason_3_text",
-      "label": "Reason 3 Text",
-      "default": "Dangling feet can lead to frussing, shorter mealtimes, a lack of interest in eating."
     }
   ],
   "blocks": [
     {
-      "name": "Review",
-      "type": "review",
+      "name": "Reason",
+      "type": "reason",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "label": "Title",
-          "default": "90/90/90 rule"
+          "default": "HAPPIER BABY"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "content",
           "label": "Content",
-          "default": "Review content goes here"
+          "default": "Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating."
         }
       ]
     }
