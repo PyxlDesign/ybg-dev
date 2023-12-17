@@ -113,21 +113,6 @@
           </a>
         {% endif %}
       {% endfor %}
-      {% if slide_1_image != blank and slide_1_url != blank %}
-        <a class="hero-slide" href="{{ slide_1_url }}">
-          {{ slide_1_image | image_url: width: 1500 | image_tag }}
-        </a>
-      {% endif %}
-      {% if slide_2_image != blank and slide_2_url != blank %}
-        <a class="hero-slide" href="{{ slide_2_url }}">
-          {{ slide_2_image | image_url: width: 1500 | image_tag }}
-        </a>
-      {% endif %}
-      {% if slide_3_image != blank and slide_3_url != blank %}
-        <a class="hero-slide" href="{{ slide_3_url }}">
-          {{ slide_3_image | image_url: width: 1500 | image_tag }}
-        </a>
-      {% endif %}
     </div>
     <script defer>
       function slickHeroSliders() {
@@ -376,6 +361,12 @@
     {
       "name": "Hero Banner",
       "category": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Hero Slider",
+      "type": "hero_slide"
     }
   ]
 }
