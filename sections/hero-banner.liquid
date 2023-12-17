@@ -2,12 +2,7 @@
 {% assign custom_class = s.custom_class %}
 {% assign title = s.hero_title %}
 {% assign use_hero_slider = s.use_hero_slider %}
-{% assign slide_1_image = s.slide_1_image %}
-{% assign slide_1_url = s.slide_1_url %}
-{% assign slide_2_image = s.slide_2_image %}
-{% assign slide_2_url = s.slide_2_url %}
-{% assign slide_3_image = s.slide_3_image %}
-{% assign slide_3_url = s.slide_3_url %}
+{% assign blocks = section.blocks %}
 {% assign caption = s.hero_caption %}
 {% if s.hero_background != blank -%}
   {% assign background = s.hero_background %}
@@ -109,6 +104,15 @@
       <h1 class="text-white sr-only">{{ title }}</h1>
     {% endif %}
     <div id="hero-slider">
+      {% for block in blocks %}
+        {% assign slide_image = block.settings.hero_slide_image %}
+        {% assign slide_url = block.settings.hero_slide_url %}
+        {% if slide_image != blank and slide_url != blank %}
+          <a class="hero-slide" href="{{ slide_url }}">
+            {{ slide_image | image_url: width: 'master' | image_tag }}
+          </a>
+        {% endif %}
+      {% endfor %}
       {% if slide_1_image != blank and slide_1_url != blank %}
         <a class="hero-slide" href="{{ slide_1_url }}">
           {{ slide_1_image | image_url: width: 1500 | image_tag }}
@@ -230,36 +234,6 @@
       "type": "checkbox",
       "id": "use_hero_slider",
       "label": "Use Hero Slider"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_1_image",
-      "label": "Slide 1 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_1_url",
-      "label": "Slide 1 URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_2_image",
-      "label": "Slide 2 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_2_url",
-      "label": "Slide 2 URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "slide_3_image",
-      "label": "Slide 3 Image"
-    },
-    {
-      "type": "url",
-      "id": "slide_3_url",
-      "label": "Slide 3 URL"
     },
     {
       "type": "header",
