@@ -710,3 +710,20 @@ span.placemat_img span {
 .modal--shopping-cart__modal-dialog .modal-content .modal-footer .amount-wrapper .subtotal-block .price {
     color: #637175;
 }
+
+
+@media (max-width: 767px) {
+    .testimonials .testimonial-block-outer .testimoinal-block .content-box,
+    .testimonials .testimoinal-block .content-box {
+        padding: 20px;
+    }
+    .testimonials .testimonial-block-outer .testimoinal-block .content-box .blockqupte,
+    .testimonials .testimoinal-block .content-box .blockquote {
+        margin-bottom: 16px;
+    }
+    .testimonials .testimonial-block-outer .testimoinal-block .content-box .h2,
+    .testimonials .testimoinal-block .content-box .h2 {
+        font-size: 18px !important;
+        line-height: 20px;
+    }
+}

@@ -11878,21 +11878,6 @@ body.is-scrolling-down .site-header {
     }
 }
 
-@media (max-width: 767px) {
-    .testimonials .testimonial-block-outer .testimoinal-block .content-box,
-    .testimonials .testimoinal-block .content-box {
-        padding: 20px;
-    }
-    .testimonials .testimonial-block-outer .testimoinal-block .content-box .blockqupte,
-    .testimonials .testimoinal-block .content-box .blockquote {
-        margin-bottom: 16px;
-    }
-    .testimonials .testimonial-block-outer .testimoinal-block .content-box .h2,
-    .testimonials .testimoinal-block .content-box .h2 {
-        font-size: 18px !important;
-        line-height: 20px;
-    }
-}
 
 .testimonials .testimoinal-block .content-box p {
     letter-spacing: 0.2em;
