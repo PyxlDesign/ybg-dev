@@ -49,9 +49,6 @@
                     #testimonial-{{ block.id }} .content-box p{
                         color: {{ by_line_color }};
                     } 
-                    #testimonial-{{ block.id }} .content-box p .author-meta{
-                        color: {{ author_color }};
-                    } 
                 </style>           
                         <div id="testimonial-{{ block.id }}" class="testimoinal-block text-white">
                             <div class="content-box">
@@ -59,7 +56,6 @@
                                     {% render 'comma-icon' %}
                                 </div>
                                 <h2 class="h2 text-white">{{ message }}</h2>
-                                <p class="copy-small mt-15"><span class="author-meta">{{ author }}</span> {{ by_line }}
                                 </p>
                             </div>
                         </div>
@@ -92,9 +88,6 @@
                     #testimonial-{{ block.id }} .content-box p{
                         color: {{ by_line_color }};
                     } 
-                    #testimonial-{{ block.id }} .content-box p .author-meta{
-                        color: {{ author_color }};
-                    } 
                 </style>
                 <div id="testimonial-{{ block.id }}" class="testimonial-block-outer p-3 cell col-lg-4">
                     <div class="testimoinal-block text-white">
@@ -103,8 +96,6 @@
                                 {% render 'comma-icon' %}
                             </div>
                             <h2 class="h2 text-white">{{ message }}</h2>
-                            <p class="copy-small mt-8"><span class="author-meta"> {{ author }} </span> {{ by_line }}
-                            </p>
                         </div>
                     </div>
                 </div>
