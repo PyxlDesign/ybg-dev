@@ -1,13 +1,13 @@
 <div class="product-template product-template-default">
   <div class="container">
     {% if collection %}
-    <div class="next_prev-groups">
-      {% render 'breadcrumb' %}
-      {% render 'next-prev-product' %}
-    </div>
+      <div class="next_prev-groups">
+        {% render 'breadcrumb' %}
+        {% render 'next-prev-product' %}
+      </div>
 
     {% else %}
-    {% render 'breadcrumb' %}
+      {% render 'breadcrumb' %}
     {% endif %}
 
     <div class="halo-product-content">
@@ -17,7 +17,7 @@
         {% section 'product-recommendations' %}
         {% section 'instafeed-460-pdp' %}
         {% section 'testimonials-slider-cushions-1' %}
-        {% section 'cushions-reasons-to-buy-1' %}
+        {% section 'cushions-reasons-to-buy-3' %}
       </div>
 
       {% section 'recently-viewed-products' %}
