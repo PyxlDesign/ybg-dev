@@ -1,185 +1,204 @@
 <section class="product-showcase">
-    {%liquid
-        assign s = section.settings
-        assign section_header = s.section_header
-        assign paragraph = s.paragraph
-        assign btn_text = s.btn_text
-        assign btn_url = s.btn_url
-        %}
-    <div class="product-panel text-center">
-        <div class="product-panel__title">
-            {% assign wordsArray = '' %}
-            {% for block in section.blocks %}
-                {% if block.type == 'heading_words' %}
-                    {% assign word = block.settings.title | prepend: ', "' | append: '"' %}
-                {% else %}
-                    {% continue %}
-                {% endif %}
+  {% liquid
+    assign s = section.settings
+    assign section_header = s.section_header
+    assign paragraph = s.paragraph
+    assign btn_text = s.btn_text
+    assign btn_url = s.btn_url
+  %}
+  <div class="product-panel text-center">
+    <div class="product-panel__title">
+      {% assign wordsArray = '' %}
+      {% for block in section.blocks %}
+        {% if block.type == 'heading_words' %}
+          {% assign word = block.settings.title | prepend: ', "' | append: '"' %}
+        {% else %}
+          {% continue %}
+        {% endif %}
 
-                {% assign wordsArray = wordsArray | append: word %}
-            {% endfor %}
-            <h2 class="h1 text-center">{{ section_header }} <span class="typer-anim" data-rotate='[{{ wordsArray | remove_first: ',' }}]'></span></h2>
+        {% assign wordsArray = wordsArray | append: word %}
+      {% endfor %}
+      <h2 class="h1 text-center">
+        {{ section_header }}
+        <span class="typer-anim" data-rotate="[{{ wordsArray | remove_first: ',' }}]"></span>
+      </h2>
 
-            {% if paragraph %}
-                <p class="copy-lg font-weight-normal"> {{ paragraph }}</p>
-            {% endif %}
-        </div>
-
-        <div class="product-panel__content">
-            <div class="product-showcase__carousel__nav">
-                <div class="carousel-init">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'product_images' %}
-                            <div class="carousel-cell">
-                                <div class="color-swatch" style="background-color: {{ block.settings.color_swatch }};"></div>
-                            </div>
-                        {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-
-            {% comment %} Images {% endcomment %}
-            <div class="product-panel__content--showcase">
-                <div class="product-showcase__carousel__main">
-                    <div class="carousel-init">
-                        {% for block in section.blocks %}
-                            {% if block.type == 'product_images' %}
-                                <div class="carousel-cell">
-                                    <div class="image-wrapper">
-                                        <img src="{{ block.settings.product_image | img_url: 'master' }}" alt="featured image">
-                                    </div>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-
-                {% for block in section.blocks %}
-                    {% if block.type == 'feature' %}
-                        {% assign position = block.settings.position %}
-                        <div class="product-feature-box {{ position }}">
-                            <h3>
-                                {{ block.settings.feature_text }}
-                            </h3>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-
-            {% if btn_url != blank %}
-                <div class="button-wrapper">
-                    <a href="{{ btn_url }}" class="button">{{ btn_text }}</a>
-                </div>
-            {% endif %}
-        </div>
+      {% if paragraph %}
+        <p class="copy-lg font-weight-normal">{{ paragraph }}</p>
+      {% endif %}
     </div>
+
+    <div class="product-panel__content">
+      <div class="product-showcase__carousel__nav">
+        <div class="carousel-init">
+          {% for block in section.blocks %}
+            {% if block.type == 'product_images' %}
+              <div class="carousel-cell">
+                <div class="color-swatch" style="background-color: {{ block.settings.color_swatch }};"></div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      {% comment %} Images {% endcomment %}
+      <div class="product-panel__content--showcase">
+        <div class="product-showcase__carousel__main">
+          <div class="carousel-init">
+            {% for block in section.blocks %}
+              {% if block.type == 'product_images' %}
+                <div class="carousel-cell">
+                  <div class="image-wrapper">
+                    <img src="{{ block.settings.product_image | img_url: 'master' }}" alt="featured image">
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' %}
+            {% assign position = block.settings.position %}
+            <div class="product-feature-box {{ position }}">
+              <h3>
+                {{ block.settings.feature_text }}
+              </h3>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if btn_url != blank %}
+        <div class="button-wrapper">
+          <a href="{{ btn_url }}" class="button">{{ btn_text }}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
 </section>
 {% schema %}
 {
-    "name": "Featured Product",
-    "class": "featured-product-custom-section",
-    "settings": [
+  "name": "Featured Product",
+  "class": "featured-product-custom-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_header",
+      "label": "Heading",
+      "default": "Heading Goes here"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Please add section information here"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Label",
+      "default": "Make it yours"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading_words",
+      "name": "Words",
+      "settings": [
         {
-            "type": "text",
-            "id": "section_header",
-            "label": "Heading",
-            "default": "Heading Goes here"
-        },
-        {
-            "type": "textarea",
-            "id": "paragraph",
-            "label": "Paragraph",
-            "default": "Please add section information here"
-        },
-        {
-            "type": "text",
-            "id": "btn_text",
-            "label": "Button Label",
-            "default": "Make it yours"
-        },
-        {
-            "type": "url",
-            "id": "btn_url",
-            "label": "Button Link"
+          "type": "text",
+          "id": "title",
+          "label": "Word",
+          "default": "word",
+          "info": "Add word or phrase here. Copy entered here would reveal one after other.",
+          "placeholder": "text"
         }
-    ],
-    "blocks":[
+      ]
+    },
+    {
+      "type": "hero_slide",
+      "name": "Hero Slide",
+      "settings": [
         {
-            "type": "heading_words",
-            "name": "Words",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Word",
-                    "default": "word",
-                    "info": "Add word or phrase here. Copy entered here would reveal one after other.",
-                    "placeholder": "text"
-                }
-            ]
+          "type": "image_picker",
+          "id": "hero_slide_image",
+          "label": "Hero Slide Image"
         },
         {
-            "type": "product_images",
-            "name": "Product Images",
-            "settings": [
-                {
-                    "type": "color",
-                    "id": "color_swatch",
-                    "label": "Color Swatch",
-                    "default": "#fff",
-                    "info": "Select color for product variant"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "product_image",
-                    "label": "Select product image"
-                }
-            ]
+          "type": "url",
+          "id": "hero_slide_url",
+          "label": "Hero Slide Link"
+        }
+      ]
+    },
+    {
+      "type": "product_images",
+      "name": "Product Images",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color_swatch",
+          "label": "Color Swatch",
+          "default": "#fff",
+          "info": "Select color for product variant"
         },
         {
-            "type": "feature",
-            "name": "Feature",
-            "limit": 4,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "feature_text",
-                    "label": "Feature Text",
-                    "default": "Feature"
-                },
-                {
-                    "type": "select",
-                    "id": "position",
-                    "label": "Position",
-                    "options": [
-                        {
-                            "value": "left-top",
-                            "label": "Left top"
-                        },
-                        {
-                            "value": "left-bottom",
-                            "label": "Left bottom"
-                        },
-                        {
-                            "value": "right-top",
-                            "label": "Right top"
-                        },
-                        {
-                            "value": "right-bottom",
-                            "label": "Right bottom"
-                        }
-                    ],
-                    "default": "left-top",
-                    "info": "Select location for the feature to display with image."
-                }
-            ]
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Select product image"
         }
-    ],
-    "presets":[
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Feature",
+      "limit": 4,
+      "settings": [
         {
-            "name": "Featured Product Custom",
-            "category": "Product"
+          "type": "text",
+          "id": "feature_text",
+          "label": "Feature Text",
+          "default": "Feature"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Position",
+          "options": [
+            {
+              "value": "left-top",
+              "label": "Left top"
+            },
+            {
+              "value": "left-bottom",
+              "label": "Left bottom"
+            },
+            {
+              "value": "right-top",
+              "label": "Right top"
+            },
+            {
+              "value": "right-bottom",
+              "label": "Right bottom"
+            }
+          ],
+          "default": "left-top",
+          "info": "Select location for the feature to display with image."
         }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Product Custom",
+      "category": "Product"
+    }
+  ]
 }
 {% endschema %}
