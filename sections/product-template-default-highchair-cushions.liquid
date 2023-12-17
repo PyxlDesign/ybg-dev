@@ -494,6 +494,70 @@
                   class="plus button padding-horizontal-1  border-right-0 border-top-0 border-bottom-0"
                 ></a>
               </div>
+
+              {% if current_variant.inventory_management %}
+                {% assign first_inventory = current_variant.inventory_quantity %}
+
+                {% if first_inventory > 0 %}
+                  <a
+                    name="add"
+                    href="javascript:void(0)"
+                    onclick="addItem('add-to-cart-form');"
+                    class="btn"
+                    {% if settings.enable_multilang %}
+                      data-translate="products.product.add_to_cart"
+                    {% endif %}
+                    id="product-add-to-cart"
+                    data-form-id="#add-to-cart-form"
+                  >
+                    {{- 'products.product.add_to_cart' | t -}}
+                  </a>
+                {% else %}
+                  <a
+                    name="add"
+                    href="javascript:void(0)"
+                    onclick="addItem('add-to-cart-form');"
+                    class="btn"
+                    {% if settings.enable_multilang %}
+                      data-translate="products.product.pre_order"
+                    {% endif %}
+                    id="product-add-to-cart"
+                    data-form-id="#add-to-cart-form"
+                  >
+                    {{- 'products.product.pre_order' | t -}}
+                  </a>
+                {% endif %}
+
+              {% else %}
+                <a
+                  name="add"
+                  href="javascript:void(0)"
+                  onclick="addItem('add-to-cart-form');"
+                  class="btn"
+                  {% if settings.enable_multilang %}
+                    data-translate="products.product.add_to_cart"
+                  {% endif %}
+                  id="product-add-to-cart"
+                  data-form-id="#add-to-cart-form"
+                >
+                  {{- 'products.product.add_to_cart' | t -}}
+                </a>
+              {% endif %}
+          {% else %}
+            <a
+              name="add"
+              href="javascript:void(0)"
+              onclick="addItem('add-to-cart-form');"
+              class="btn"
+              {% if settings.enable_multilang %}
+                data-translate="products.product.unavailable"
+              {% endif %}
+              id="product-add-to-cart"
+              disabled
+            >
+              {{- 'products.product.unavailable' | t -}}
+            </a>
+
             </div>
           {% endif %}
 
@@ -588,72 +652,6 @@
             </div>
           {% else %}
             <div class="groups-btn">
-              {% if current_variant.available %}
-                {% if current_variant.inventory_management %}
-                  {% assign first_inventory = current_variant.inventory_quantity %}
-
-                  {% if first_inventory > 0 %}
-                    <a
-                      name="add"
-                      href="javascript:void(0)"
-                      onclick="addItem('add-to-cart-form');"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.add_to_cart"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      data-form-id="#add-to-cart-form"
-                    >
-                      {{- 'products.product.add_to_cart' | t -}}
-                    </a>
-                  {% else %}
-                    <a
-                      name="add"
-                      href="javascript:void(0)"
-                      onclick="addItem('add-to-cart-form');"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.pre_order"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      data-form-id="#add-to-cart-form"
-                    >
-                      {{- 'products.product.pre_order' | t -}}
-                    </a>
-                  {% endif %}
-
-                {% else %}
-                  <a
-                    name="add"
-                    href="javascript:void(0)"
-                    onclick="addItem('add-to-cart-form');"
-                    class="btn"
-                    {% if settings.enable_multilang %}
-                      data-translate="products.product.add_to_cart"
-                    {% endif %}
-                    id="product-add-to-cart"
-                    data-form-id="#add-to-cart-form"
-                  >
-                    {{- 'products.product.add_to_cart' | t -}}
-                  </a>
-                {% endif %}
-
-              {% else %}
-                <a
-                  name="add"
-                  href="javascript:void(0)"
-                  onclick="addItem('add-to-cart-form');"
-                  class="btn"
-                  {% if settings.enable_multilang %}
-                    data-translate="products.product.unavailable"
-                  {% endif %}
-                  id="product-add-to-cart"
-                  disabled
-                >
-                  {{- 'products.product.unavailable' | t -}}
-                </a>
-              {% endif %}
-
               {%- comment -%}
                  {% if first_inventory > 0 %}
                  <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
