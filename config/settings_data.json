@@ -3081,10 +3081,18 @@
               "hero_slide_image": "shopify:\/\/shop_images\/winter-hero-desktop.webp",
               "hero_slide_url": "shopify:\/\/collections\/all"
             }
+          },
+          "751d43e0-2356-41df-a204-9775343c91c4": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+              "hero_slide_url": "shopify:\/\/pages\/customizer"
+            }
           }
         },
         "block_order": [
-          "2ab9b55b-bbf3-45b9-a14b-417d4adadb3b"
+          "2ab9b55b-bbf3-45b9-a14b-417d4adadb3b",
+          "751d43e0-2356-41df-a204-9775343c91c4"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
