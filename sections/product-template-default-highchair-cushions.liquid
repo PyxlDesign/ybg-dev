@@ -542,18 +542,6 @@
                   data-form-id="#add-to-cart-form"
                 >
               {% endif %}
-          {% else %}
-            <input
-              type="submit"
-              name="add"
-              class="btn"
-              {% if settings.enable_multilang %}
-                data-translate="products.product.unavailable"
-              {% endif %}
-              id="product-add-to-cart"
-              disabled
-              value="{{ 'products.product.unavailable' | t }}"
-            >
             </div>
           {% endif %}
 
