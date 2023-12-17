@@ -11882,9 +11882,12 @@ body.is-scrolling-down .site-header {
     .testimonials .testimoinal-block .content-box {
         padding: 20px;
     }
+    .testimonials .testimoinal-block .content-box .blockquote {
+        margin-bottom: 16px;
+    }
     .testimonials .testimoinal-block .content-box .h2 {
-        font-size: 22px;
-        line-height: 27px
+        font-size: 18px !important;
+        line-height: 20px;
     }
 }
 
