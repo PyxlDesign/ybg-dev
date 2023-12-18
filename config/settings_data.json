@@ -1287,6 +1287,19 @@
               "answer_faqs": "Yes! If you have the older style legs, we recommend installing with the legs off the highchair, starting at the bottom. If you install starting at the top of the leg, you will just need to trim the excess at the bottom with an exacto knife after installation. Alternatively, you can cut half a centimeter off the leg wrap before installing."
             }
           },
+          "fd4c5372-46a4-4cb1-8361-d0bac4b2c65b": {
+            "type": "heading",
+            "settings": {
+              "heading": "dinnerware"
+            }
+          },
+          "2e31fb79-3e21-4696-aeee-60527be75086": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "Why does food on my silicone taste like soap all the sudden?",
+              "answer_faqs": "If your silicone starts tasting like soap, most likely the dish soap or detergent you are using has caused an oil residue to build up on the surface. White spots after washing is another indicator of oil residue. To avoid this issue, use an oil and fragrance free soap. Soaps that contain essential oils, antibacterial agents or moisturizers all have oils that can stick to silicone and cause an unpleasant taste. \n\nIf you have silicone that already tastes like soap, here’s a few ways you can fix it:\n\n1. Rub a fresh lemon all over the silicone and let sit for 10-15 minutes. Rinse and air dry.\n2. Soak overnight with white vinegar\n3. Boil in water for 10 minutes \n4. Bake silicone products in the oven at 250°F for one hour\n\nIf boiling or baking, please be careful when removing! 😊"
+            }
+          },
           "193383ce-a8fe-4dda-beae-3ba5348a58a8": {
             "type": "heading",
             "settings": {
@@ -1324,6 +1337,8 @@
           "cc4642c5-f905-4e4e-92ce-2a805e040548",
           "ad5a01f8-dbce-4392-af9b-0043eddc8b49",
           "b16e19b9-c018-4188-a304-9e499af83a7e",
+          "fd4c5372-46a4-4cb1-8361-d0bac4b2c65b",
+          "2e31fb79-3e21-4696-aeee-60527be75086",
           "193383ce-a8fe-4dda-beae-3ba5348a58a8",
           "04b0919a-2ab6-4109-b9c4-907d2593a896",
           "f0f808d2-5a51-4298-86af-2c27ce7e8490"
