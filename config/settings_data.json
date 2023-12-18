@@ -342,16 +342,6 @@
               "link_to": "shopify:\/\/collections\/precut-leg-wraps"
             }
           },
-          "1558324939452": {
-            "type": "images",
-            "settings": {
-              "categories": "Highchair;Feeding",
-              "thumbernail": "shopify:\/\/shop_images\/Floor_Mats3.jpg",
-              "title": "Floor Mats",
-              "subtitle": "Large, multi-purpose silicone mat can be used under the highchair or for messy activities.",
-              "link_to": "shopify:\/\/collections\/floor-mats"
-            }
-          },
           "4e71a3c8-e78a-4e6d-8445-68fb1260d84e": {
             "type": "images",
             "settings": {
@@ -380,6 +370,16 @@
               "title": "Table Placemats",
               "subtitle": "Silicone placemats perfect for mealtimes, messy crafts and even under pet bowls.",
               "link_to": "shopify:\/\/collections\/table-placemats"
+            }
+          },
+          "1558324939452": {
+            "type": "images",
+            "settings": {
+              "categories": "Highchair;Feeding",
+              "thumbernail": "shopify:\/\/shop_images\/Floor_Mats3.jpg",
+              "title": "Floor Mats",
+              "subtitle": "Large, multi-purpose silicone mat can be used under the highchair or for messy activities.",
+              "link_to": "shopify:\/\/collections\/floor-mats"
             }
           },
           "1558325577740": {
@@ -419,10 +419,10 @@
           "1558324568762",
           "1558324515012",
           "1558324658499",
-          "1558324939452",
           "4e71a3c8-e78a-4e6d-8445-68fb1260d84e",
           "1558325626778",
           "835477a4-df9e-4e66-ba09-dfb5e36d3baa",
+          "1558324939452",
           "1558325577740",
           "9f9bea6a-14c2-482f-82ae-2b05a15ba6f5",
           "757907eb-d71e-44fa-97cc-c79835382604"
