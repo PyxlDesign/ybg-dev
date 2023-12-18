@@ -352,14 +352,14 @@
               "link_to": "shopify:\/\/collections\/floor-mats"
             }
           },
-          "1558325577740": {
+          "4e71a3c8-e78a-4e6d-8445-68fb1260d84e": {
             "type": "images",
             "settings": {
-              "categories": "Feeding",
-              "thumbernail": "shopify:\/\/shop_images\/Restaurant_Bags3.jpg",
-              "title": "Restaurant Bags",
-              "subtitle": "Whether eating out or at home, our restaurant bags make mealtime prep and clean-up easier.",
-              "link_to": "shopify:\/\/collections\/restaurant-bags-1"
+              "categories": "Feeding;Dinnerware",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-14_KRK.jpg",
+              "title": "Dinnerware",
+              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
+              "link_to": "shopify:\/\/collections\/dinnerware"
             }
           },
           "1558325626778": {
@@ -382,6 +382,16 @@
               "link_to": "shopify:\/\/collections\/table-placemats"
             }
           },
+          "1558325577740": {
+            "type": "images",
+            "settings": {
+              "categories": "Feeding",
+              "thumbernail": "shopify:\/\/shop_images\/Restaurant_Bags3.jpg",
+              "title": "Restaurant Bags",
+              "subtitle": "Whether eating out or at home, our restaurant bags make mealtime prep and clean-up easier.",
+              "link_to": "shopify:\/\/collections\/restaurant-bags-1"
+            }
+          },
           "9f9bea6a-14c2-482f-82ae-2b05a15ba6f5": {
             "type": "images",
             "settings": {
@@ -401,16 +411,6 @@
               "subtitle": "Not sure what to give? A Yeah Baby Goods gift card is always a good idea!",
               "link_to": "shopify:\/\/products\/gift-card"
             }
-          },
-          "4e71a3c8-e78a-4e6d-8445-68fb1260d84e": {
-            "type": "images",
-            "settings": {
-              "categories": "Feeding;Dinnerware",
-              "thumbernail": "shopify:\/\/shop_images\/YBG-14_KRK.jpg",
-              "title": "Dinnerware",
-              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
-              "link_to": "shopify:\/\/collections\/dinnerware"
-            }
           }
         },
         "block_order": [
@@ -420,12 +420,12 @@
           "1558324515012",
           "1558324658499",
           "1558324939452",
-          "1558325577740",
+          "4e71a3c8-e78a-4e6d-8445-68fb1260d84e",
           "1558325626778",
           "835477a4-df9e-4e66-ba09-dfb5e36d3baa",
+          "1558325577740",
           "9f9bea6a-14c2-482f-82ae-2b05a15ba6f5",
-          "757907eb-d71e-44fa-97cc-c79835382604",
-          "4e71a3c8-e78a-4e6d-8445-68fb1260d84e"
+          "757907eb-d71e-44fa-97cc-c79835382604"
         ],
         "settings": {
           "background": "shopify:\/\/shop_images\/y-39.jpg",
