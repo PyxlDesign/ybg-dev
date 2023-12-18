@@ -5888,11 +5888,6 @@
           "title_color": "#ffffff",
           "title_size": 70,
           "use_hero_slider": true,
-          "slide_1_image": "shopify:\/\/shop_images\/Winter_Hero_mobile.webp",
-          "slide_1_url": "shopify:\/\/collections",
-          "slide_2_image": "shopify:\/\/shop_images\/busy-hands-playing-with-white-dough.jpg",
-          "slide_2_url": "shopify:\/\/collections\/all",
-          "slide_3_url": "",
           "hero_caption": "Cuter. Safer. <br>Complete<br> customization.",
           "caption_color": "#30494d",
           "caption_size": 22,
@@ -5905,6 +5900,40 @@
           "align_content": "align-items-start",
           "btn_color": "#df9764",
           "btn_hover_color": "#637175"
+        }
+      },
+      "reasons-to-buy": {
+        "type": "reasons-to-buy",
+        "blocks": {
+          "7f74544f-83c0-465c-95a5-680d72e6a623": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
+          },
+          "f102d54c-7542-4c88-8525-6567a4ec2747": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
+          },
+          "c98c0adf-a22f-43eb-9a24-841b8fad7285": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "7f74544f-83c0-465c-95a5-680d72e6a623",
+          "f102d54c-7542-4c88-8525-6567a4ec2747",
+          "c98c0adf-a22f-43eb-9a24-841b8fad7285"
+        ],
+        "settings": {
+          "heading": "Heading goes here"
         }
       }
     },
