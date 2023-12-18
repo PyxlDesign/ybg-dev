@@ -5911,10 +5911,26 @@
               "title": "HAPPIER BABY",
               "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
             }
+          },
+          "2b38e9bd-c9b5-417e-baf5-f3052273e14b": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
+          },
+          "ba55c6a2-e321-44b1-a96c-30d004a5e20b": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
           }
         },
         "block_order": [
-          "7f74544f-83c0-465c-95a5-680d72e6a623"
+          "7f74544f-83c0-465c-95a5-680d72e6a623",
+          "2b38e9bd-c9b5-417e-baf5-f3052273e14b",
+          "ba55c6a2-e321-44b1-a96c-30d004a5e20b"
         ],
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/Winter_Hero_mobile.webp",
