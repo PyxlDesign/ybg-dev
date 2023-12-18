@@ -4,42 +4,104 @@
   assign heading = s.heading
   assign blocks = section.blocks
 %}
+<style>
+  .reasons-to-buy {
+    display: block;
+    width: 100%;
+  }
+  .reasons-to-buy-section {
+    display: block;
+    width: 100%;
+  }
+  .reasons-to-buy-left {
+    height: 100%;
+    width: 100%;
+  }
+  .reasons-to-buy-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  .reasons-to-buy-right {
+    background: #fffcf8;
+    border: 1px solid #cc6b3a;
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+    padding: 60px 30px !important;
+  }
+  .reasons-to-buy-title {
+    text-align: center;
+  }
+  .reason-blocks {
+    display: grid;
+    gap: 50px;
+    max-width: 500px;
+  }
+  .reason-block {
+    algin-items: center;
+    display: flex;
+    gap: 30px;
+  }
+  .reason-block-content {
+    color: #30494d;
+    flex: 1;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .reason-block-number {
+    align-items: center;
+    background-color: #cc6b3a;
+    border-radius: 100%;
+    color: #fffcf8;
+    display: flex;
+    font-family: 'Avalanche', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+      Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    line-height: 1;
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+  }
+</style>
 <section class="reasons-to-buy-section">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-lg-6">
+      <div class="col-lg-6 reasons-to-buy-left">
         {% if image != blank %}
-          <div class="image-wrapper pr-large-7">
-            <div class="image-ratio image-ratio--square">
-              {{ image | img_url: 'master' | img_tag }}
-            </div>
+          <div class="reasons-to-buy-image">
+            {{ image | img_url: 'master' | img_tag }}
           </div>
         {% endif %}
       </div>
-      <div class="col-lg-6">
-        <div class="content-box text-center h-100 flex-center">
-          <div class="inner">
-            {% if heading != blank %}
-              <h2>{{ heading }}</h2>
-            {% endif %}
-            <div class="reason-blocks">
-              {% for block in blocks %}
-                {% liquid
-                  assign bs = block.settings
-                  assign title = bs.title
-                  assign content = bs.content
-                %}
-                <div class="reason-block">
-                  {% if title != blank %}
-                    <h3 class="text-bronze-2 font-karla">{{ title }}</h3>
-                  {% endif %}
-                  {% if content != blank %}
-                    {{ content }}
-                  {% endif %}
-                </div>
-              {% endfor %}
+      <div class="col-lg-6 reasons-to-buy-right">
+        {% if heading != blank %}
+          <h2 class="reasons-to-buy-title">{{ heading }}</h2>
+        {% endif %}
+        <div class="reason-blocks">
+          {% for block in blocks %}
+            {% liquid
+              assign bs = block.settings
+              assign title = bs.title
+              assign content = bs.content
+              assign index = forloop.index
+            %}
+            <div class="reason-block">
+              <div class="reason-block-number">
+                <span>{{ index }}</span>
+              </div>
+              <div class="reason-block-content">
+                {% if title != blank %}
+                  <h3 class="text-bronze-2 font-karla">{{ title }}</h3>
+                {% endif %}
+                {% if content != blank %}
+                  {{ content }}
+                {% endif %}
+              </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
