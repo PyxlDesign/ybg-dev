@@ -1293,6 +1293,13 @@
               "heading": "dinnerware"
             }
           },
+          "b6448390-83ad-4957-af47-bdbf083f0c50": {
+            "type": "question",
+            "settings": {
+              "question_faqs": "How should I clean my silicone dinnerware?",
+              "answer_faqs": "Our dinnerware is dishwasher safe. Whether washing in the dishwasher or by hand, use an oil and fragrance free soap. Soaps that contain essential oils, antibacterial agents or moisturizers have oils that can stick to silicone and cause an unpleasant taste."
+            }
+          },
           "2e31fb79-3e21-4696-aeee-60527be75086": {
             "type": "question",
             "settings": {
@@ -1338,6 +1345,7 @@
           "ad5a01f8-dbce-4392-af9b-0043eddc8b49",
           "b16e19b9-c018-4188-a304-9e499af83a7e",
           "fd4c5372-46a4-4cb1-8361-d0bac4b2c65b",
+          "b6448390-83ad-4957-af47-bdbf083f0c50",
           "2e31fb79-3e21-4696-aeee-60527be75086",
           "193383ce-a8fe-4dda-beae-3ba5348a58a8",
           "04b0919a-2ab6-4109-b9c4-907d2593a896",
