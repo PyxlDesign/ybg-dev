@@ -13,13 +13,20 @@
     display: block;
     width: 100%;
   }
-  .reasons-to-buy-left {
-    height: 100%;
-    width: 100%;
-  }
   .reasons-to-buy-image {
+    display: block;
+    height: calc(100vh + 5px);
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+  }
+  .reasons-to-buy-image img {
+    display: block;
     height: 100%;
+    left: 0;
     object-fit: cover;
+    position: absolute;
+    top: 0;
     width: 100%;
   }
   .reasons-to-buy-right {
@@ -65,6 +72,28 @@
     height: 100px;
     width: 100px;
   }
+  @media (max-width: 992px) {
+    .reasons-to-buy-image {
+      position: relative;
+      height: auto;
+    }
+    .reasons-to-buy-image img {
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    .reason-blocks {
+      gap: 30px;
+    }
+    .reason-block-content {
+      font-size: 20px;
+    }
+    .reason-block-number {
+      font-size: 40px;
+      height: 80px;
+      width: 80px;
+    }
+  }
 </style>
 <section class="reasons-to-buy-section">
   <div class="container">
@@ -72,7 +101,7 @@
       <div class="col-lg-6 reasons-to-buy-left">
         {% if image != blank %}
           <div class="reasons-to-buy-image">
-            {{ image | img_url: 'master' | img_tag }}
+            {{ image | image_url: width: '800px' | image_tag }}
           </div>
         {% endif %}
       </div>
