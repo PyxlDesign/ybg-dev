@@ -4236,6 +4236,16 @@
               "cta_url": "shopify:\/\/collections\/precut-leg-wraps"
             }
           },
+          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ybgg.jpg",
+              "title": "Feeding Essentials",
+              "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
+              "cta_text": "Shop now",
+              "cta_url": "shopify:\/\/pages\/feeding-essentials"
+            }
+          },
           "3210f823-b119-46f3-bc70-9f844926c34e": {
             "type": "image",
             "settings": {
@@ -4255,16 +4265,6 @@
               "cta_text": "Shop now",
               "cta_url": "shopify:\/\/collections\/restaurant-bags-1"
             }
-          },
-          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/ybgg.jpg",
-              "title": "Feeding Essentials",
-              "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
-              "cta_text": "Shop now",
-              "cta_url": "shopify:\/\/pages\/feeding-essentials"
-            }
           }
         },
         "block_order": [
@@ -4273,9 +4273,9 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5",
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c",
           "5ab2538c-ac11-416c-8557-bbdb671aa87e",
+          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2",
           "3210f823-b119-46f3-bc70-9f844926c34e",
-          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
-          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2"
+          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8"
         ],
         "settings": {
           "mega_head": "Shop All"
