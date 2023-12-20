@@ -658,9 +658,10 @@
 }
 
 .product-shop .shopify-product-form .placemat-label {
+    color: #637175;
     font-weight: 600;
     font-family: Karla, sans-serif;
-    background-color: #315D7C;
+    background-color: #f2e2d7 !important;
 }
 
 #launchtip_upsell_wrapper .cushion-inserts .add-to-cart {

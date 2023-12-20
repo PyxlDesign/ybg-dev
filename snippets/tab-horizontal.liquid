@@ -7,6 +7,9 @@
     {% endif %}
 {% endif %}
 
+{% assign designer_avatar = product.metafields.product.designer_avatar %}
+{% assign designer_bio = product.metafields.product.designer_bio %}
+
 {% if section.settings.display_product_detail_description or  section.settings.display_product_reviews or section.settings.display_shipping_returns or show_custom_tab %}
 <div class="tabs__product-page horizontal-tabs{% if section.settings.show_tab == 'horizontal_center' %} horizontal-tabs-center{% endif %}">
     {% if section.settings.display_product_detail_description == false and section.settings.display_product_reviews == true %}
@@ -45,6 +48,13 @@
         <li class="tab-title">
             <a href="#" data-tapTop data-target="#collapse-tab4" class="tab-links {% if tab4_active%}active{% endif %}">
                 {% render 'multilang' with section.settings.custom_tab_title %}
+            </a>
+        </li>
+        {% endif %}
+        {% if designer_bio != null %}
+        <li class="tab-title">
+            <a href="#" data-tapTop data-target="#collapse-tab5" class="tab-links {% if tab5_active%}active{% endif %}">
+                Meet the Designer
             </a>
         </li>
         {% endif %}
@@ -167,6 +177,56 @@
             {% endif %}
         </div>
         {% endif %}
+
+        {% if designer_bio != null %}
+        <div class="tab-title">
+            <a href="#" data-tapTop data-target="#collapse-tab5" class="tab-links {% if tab5active%}active{% endif %}">
+                Meet the Designer
+                <span class="icon-dropdown">
+                <i class="fa fa-angle-down"></i>
+                </span>
+            </a>
+        </div>
+        
+        <div class="tab-content {% if tab5_active%}active{% endif %}" data-TabContent id="collapse-tab5">
+            <div class="designer-bio{% if designer_avatar != null %} has-avatar{% endif %}">
+                {% if designer_avatar != null %}
+                <div class="designer-avatar">
+                    {{ designer_avatar | image_url: width: "100px" | image_tag }}
+                </div>
+                {% endif %}
+                <div class="designer-content">
+                    {{ designer_bio }}
+                </div>
+            </div>
+        </div>
+        {% endif %}
     </div>
     {% endif %}
+
+
 </div>
+
+
+<script defer>
+    // on document ready check the head of the .tab-content if the height is over 100px add the class .show-more
+    $(document).ready(function() {
+        console.log('Tab Content');
+        $('.tab-content').each(function() {
+            if ($(this).height() > 125) {
+                $(this).addClass('show-more');
+                // add the show more button
+                $(this).append('<div class="show-more-btn-wrapper"><button class="show-more-btn">Read More</button></div>');
+            }
+        });
+        // .show-more-btn click event
+        $('.show-more-btn').click(function() {
+            // toggle the .show-more class on the parent .tab-content
+            $(this).parents('.tab-content').toggleClass('show-more-open');
+            // toggle the text of the .show-more-btn
+            $(this).text(function(i, text) {
+                return text === "Read More" ? "Read Less" : "Read More";
+            })
+        });
+    });
+</script>

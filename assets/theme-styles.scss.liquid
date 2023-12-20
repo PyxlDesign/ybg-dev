@@ -6302,6 +6302,100 @@ table {
     }
 }
 
+/*--------- Reasons to buy ---------*/
+
+.reasons-to-buy {
+    display: block;
+    width: 100%;
+  }
+  .reasons-to-buy-section {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .reasons-to-buy-image {
+    display: block;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    
+    img {
+        display: block;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+  }
+  .reasons-to-buy-right {
+    background: #fffcf8;
+    border: 1px solid #cc6b3a;
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+    padding: 60px 30px !important;
+  }
+  .reasons-to-buy-title {
+    text-align: center;
+  }
+  .reason-blocks {
+    display: grid;
+    gap: 50px;
+    max-width: 500px;
+  }
+  .reason-block {
+    algin-items: center;
+    display: flex;
+    gap: 30px;
+  }
+  .reason-block-content {
+    color: #30494d;
+    flex: 1;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .reason-block-number {
+    align-items: center;
+    background-color: #cc6b3a;
+    border-radius: 100%;
+    color: #fffcf8;
+    display: flex;
+    font-family: 'Avalanche', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+      Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    line-height: 1;
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  @media (max-width: 992px) {
+    .reasons-to-buy-image {
+      position: relative;
+      height: auto;
+    }
+    .reasons-to-buy-image img {
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    .reason-blocks {
+      gap: 30px;
+    }
+    .reason-block-content {
+      font-size: 20px;
+    }
+    .reason-block-number {
+      font-size: 40px;
+      height: 80px;
+      width: 80px;
+    }
+  }
+
 .product-shop {
     .product-title {
         font-size: $font_size + 8;
@@ -9218,6 +9312,115 @@ table {
         margin-bottom: 2rem;
     }
 }
+
+/* ----- Horizontal Tabs ------- */
+.tabs__product-page.horizontal-tabs {
+    position: relative;
+    padding: 40px 0;
+
+    .list-tabs,
+    .wrapper-tab-content {
+        position: relative;
+    }
+
+    .list-tabs {
+        border-bottom: 0 solid transparent;
+        display: flex;
+        gap: 20px;
+        line-height: 1;
+
+        .tab-links {
+            background: transparent;
+            color: #df9764;
+            border: 1px solid #df9764;
+            font-weight: 400;
+            padding: 15px 40px;
+            text-transform: uppercase;
+
+            &.active {
+                background: #df9764;
+                color: #fff;
+            }
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .wrapper-tab-content {
+        .tab-content {
+            position: relative;
+            max-width: 800px;
+
+            &.show-more {
+                max-height: 125px;
+                overflow: clip;
+            }
+            &.show-more-open {
+                max-height: unset;
+                
+                .show-more-btn-wrapper {
+                    height: auto;
+                }
+            }
+            .show-more-btn { 
+                background: transparent;
+                border: none;
+                color: #df9764;
+                font-family: "Avalanche", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                font-weight: 300;
+                cursor: pointer;
+            }
+
+            .show-more-btn-wrapper {
+                background: linear-gradient(to top, #F8F1EB 0%, #F8F1EB 30%, rgba(223, 151, 100, 0) 100%);
+                border-bottom: 1px solid #df9764;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                height: 60px;
+                width: 100%;
+            }
+        }
+    }
+
+    &:before {
+        background: #F8F1EB;
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+
+}
+
+    
+/** Meet the Designer **/
+.designer-bio {
+    display: flex;
+    gap: 20px;
+}
+
+.designer-avatar {
+    flex-shrink: 1;
+    min-width: 80px;
+}
+    
+.designer-avatar img {
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.designer-content {
+    max-width: 800px;
+}
+
 
 /* ----- Brands Page ------- */
 .brands-page {
