@@ -5879,6 +5879,18 @@
       },
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
+        "blocks": {
+          "b0fb5302-8c80-49d6-8081-d880644968b4": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/creamy-cold-drink-sits-on-a-wooden-table.jpg",
+              "hero_slide_url": "shopify:\/\/collections\/customizer"
+            }
+          }
+        },
+        "block_order": [
+          "b0fb5302-8c80-49d6-8081-d880644968b4"
+        ],
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
