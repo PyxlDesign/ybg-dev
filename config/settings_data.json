@@ -4031,7 +4031,7 @@
             "type": "question",
             "settings": {
               "question_faqs": "Placemats",
-              "answer_faqs": "FDA grade silicone is highly resistant to staining. In order to avoid temporary discoloration, wash immediately after use. To clean, simply rinse with warm soapy water. You can also place in the top rack of the dishwasher, just make sure it isn't too close to the heating element. If you do notice staining, continue using and washing for a few days. Typically the discoloration completely disappears on its own. Please note, fading may occur if silicone is left in direct sunlight over an extended period of time.<br><br>\nPro Tip: We recommend putting the placemat back on the tray while wet then letting it air dry before the next meal. This trick gives it a little extra stick!"
+              "answer_faqs": "FDA food-grade silicone is highly resistant to staining, but may get temporarily discolored with a red or orange sauce, especially if it's not washed right after use.  If you notice discoloration, continue using and washing for a few days. Typically the discoloration will disappear on its own. Soaking in water overnight may speed up the process. You can also soak in hydrogen peroxide or leave in the sun if needed, but note that prolonged sun exposure may fade the color.\n<br><br>\nPro Tip: We recommend putting the placemat back on the tray while wet then letting it air dry before the next meal. This trick gives it a little extra stick!"
             }
           },
           "4a3fb2e0-c8a1-4a1e-b6ac-2c6477219361": {
@@ -4055,11 +4055,11 @@
               "answer_faqs": "Scissors can be hand-washed or put in the dishwasher. Dry thoroughly to avoid rusting.\n<br><br>\nReusable food bag is machine washable. Air dry for best results.\n<br><br>\nSilicone placemats can be rinsed with warm soapy water. They are also dishwasher safe, just make sure the mat isn't too close to the dishwasher's heating element."
             }
           },
-          "0e9143c6-effc-4876-a713-6f3508ad72d6": {
-            "type": "heading",
-            "disabled": true,
+          "868e440c-d1b3-47b2-bd8a-776dc8af2a52": {
+            "type": "question",
             "settings": {
-              "heading": "dolor sit amet"
+              "question_faqs": "Dinnerware",
+              "answer_faqs": "Wash in the dishwasher or by hand with an oil and fragrance free dish soap. Soaps that contain essential oils, antibacterial agents or moisturizers all have oils that can stick to silicone and cause an unpleasant, soapy taste. \n<br><br>\nFDA food-grade silicone is highly resistant to staining, but may get temporarily discolored with a red or orange sauce, especially if it's not washed right after use.  If you notice discoloration, continue using and washing for a few days. Typically the discoloration will disappear on its own. Soaking silicone in water overnight may speed up the process. You can also soak in hydrogen peroxide or leave in the sun if needed, but note that prolonged sun exposure may fade the color."
             }
           }
         },
@@ -4071,7 +4071,7 @@
           "4a3fb2e0-c8a1-4a1e-b6ac-2c6477219361",
           "7104fefd-5a90-4130-ab6f-f9f728b0cfeb",
           "b417ce5e-a7bb-4595-b13e-ac86b1963d3e",
-          "0e9143c6-effc-4876-a713-6f3508ad72d6"
+          "868e440c-d1b3-47b2-bd8a-776dc8af2a52"
         ],
         "settings": {
           "des_faqs": "",
