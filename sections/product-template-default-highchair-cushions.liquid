@@ -473,12 +473,6 @@
 
           {% render 'new-add-to-cart' %}
 
-              {% if section.settings.enable_payment_button and current_variant.available %}
-                {{ form | payment_button }}
-              {% endif %}
-            </div>
-          {% endif %}
-
           <div class="mat-selector-wrapper mt-3">
             <p class="line-item-property__field d-none flex-handle">
               <!-- <input type="hidden" name="properties[Add selected placemat]" value="No"> -->
