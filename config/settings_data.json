@@ -4006,13 +4006,6 @@
       "care-instructions": {
         "type": "care-instructions",
         "blocks": {
-          "70cf0c62-dd74-495f-8357-b3a2e40928bc": {
-            "type": "heading",
-            "disabled": true,
-            "settings": {
-              "heading": "cushion covers"
-            }
-          },
           "7365d0eb-ab92-4457-9d66-f64ef1271f4b": {
             "type": "question",
             "settings": {
@@ -4031,7 +4024,7 @@
             "type": "question",
             "settings": {
               "question_faqs": "Placemats",
-              "answer_faqs": "FDA food-grade silicone is highly resistant to staining, but may get temporarily discolored with a red or orange sauce, especially if it's not washed right after use.  If you notice discoloration, continue using and washing for a few days. Typically the discoloration will disappear on its own. Soaking in water overnight may speed up the process. You can also soak in hydrogen peroxide or leave in the sun if needed, but note that prolonged sun exposure may fade the color.\n<br><br>\nPro Tip: We recommend putting the placemat back on the tray while wet then letting it air dry before the next meal. This trick gives it a little extra stick!"
+              "answer_faqs": "Wash in the dishwasher or by hand with an oil and fragrance free dish soap. Soaps that contain essential oils, antibacterial agents or moisturizers all have oils that can stick to silicone and cause an unpleasant soapy taste. \n<br><br>\nFDA food-grade silicone is highly resistant to staining, but may get temporarily discolored with a red or orange sauce, especially if it's not washed right after use.  If you notice discoloration, continue using and washing for a few days. Typically the discoloration will disappear on its own. Soaking in water overnight may speed up the process. You can also soak in hydrogen peroxide or leave in the sun if needed, but note that prolonged sun exposure may fade the color.\n<br><br>\nPro Tip: We recommend putting the placemat back on the tray while wet then letting it air dry before the next meal. This trick gives it a little extra stick!"
             }
           },
           "4a3fb2e0-c8a1-4a1e-b6ac-2c6477219361": {
@@ -4064,7 +4057,6 @@
           }
         },
         "block_order": [
-          "70cf0c62-dd74-495f-8357-b3a2e40928bc",
           "7365d0eb-ab92-4457-9d66-f64ef1271f4b",
           "68d96b15-48e8-4e99-805e-bdc4c51bf9be",
           "5c1bddfd-6e1e-45a7-8d04-6908b2e81705",
