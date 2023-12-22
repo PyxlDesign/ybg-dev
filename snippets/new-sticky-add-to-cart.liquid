@@ -1,5 +1,11 @@
 <div class="sticky-add-to-cart-group">
-  <div class="container">
+  <div class="d-flex align-items-center justify-content-between">
+    <div class="sticky-add-to-cart-left">
+      {{ product.featured_image | image_url: width: '150' | image_tag }}
+      <h2>
+        {{ product.title }}
+      </h2>
+    </div>
     {% if current_variant.inventory_management %}
       {% assign first_inventory = current_variant.inventory_quantity %}
 
@@ -32,7 +38,7 @@
       {% endif %}
 
     {% else %}
-      <input
+      <button
         data-btn-addToCart
         type="submit"
         name="add"
@@ -41,9 +47,11 @@
           data-translate="products.product.add_to_cart"
         {% endif %}
         id="sticky-product-add-to-cart"
-        value="{{ 'products.product.add_to_cart' | t }}"
         data-form-id="#add-to-cart-form"
       >
+        {{ 'products.product.add_to_cart' | t -}}
+        <span>&bull;</span> {{ product.price | money }}
+      </button>
     {% endif %}
   </div>
 </div>

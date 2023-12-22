@@ -1762,7 +1762,8 @@ table {
     margin-bottom: 25px;
 
     .box-title {
-        color: $page_title_color;
+        // color: $page_title_color;
+        color: rgb(48, 73, 77);
         font-size: $font_size + 8;
         letter-spacing: .05em;
         font-weight: 700;
@@ -9319,20 +9320,48 @@ table {
     bottom: 0;
     display: none;
     left:0;
+    padding-right: 32px;
     position: fixed;
     right:0;
     width: 100%;
     z-index: 1000;
-    padding: 15px 0;
     border-top: 1px solid #df9764;
 
-    &.show {
+    img {
+        height: 80px;
+        width: 80px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    h2 {
+        display: none;
+        font-size: 1.5rem;
+        line-height: 1.25;
+
+        @media screen and (min-width: 993px) {
+            display: block;
+        }
     }
     
     .btn {
         background-color: #df9764;
         color: #fff;
+        border-radius: 5px;
+        white-space: nowrap;
+
+        span {
+            margin: 0 2px 0 8px;
+        }
     }
+}
+
+.sticky-add-to-cart-left {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
 }
 
 /* ----- Horizontal Tabs ------- */
