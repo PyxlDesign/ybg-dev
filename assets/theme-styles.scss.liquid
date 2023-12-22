@@ -5306,14 +5306,22 @@ table {
 
 .recently-viewed-products,
 .related-products {
-    border-top: 1px solid $border_bt_sidebar;
+    // border-top: 1px solid $border_bt_sidebar;
 
     .widget-title {
         text-align: left;
         padding-top: 27px;
 
         .box-title {
-            font-size: $font_size + 2;
+            font-size: 24px;
+            line-height: normal;
+            text-transform: none;
+            letter-spacing: -.02em;
+            font-weight: normal;
+            
+            @media screen and (min-width: 992px) {
+                font-size: 32px;
+            }
         }
 
         .title {
@@ -5333,7 +5341,6 @@ table {
 }
 
 .related-products {
-    margin-top: 50px;
     margin-bottom: 10px;
     .inner-top{
         .product-details{
@@ -9314,6 +9321,33 @@ table {
     }
 }
 
+/* ----- Related/Recomended Products ------- */
+.widget-product {
+
+    .products-grid {
+
+        .grid-item {
+
+            .product-bottom {
+                text-align: left;
+            }
+
+            .product-title {
+                color: #df9764;
+                font-size: 18px;
+                font-family: "Avalanche", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+            .price-regular {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+
 /* ----- Sticky Add to Cart ------- */
 .sticky-add-to-cart-group {
     background: #F8F1EB;
@@ -9416,6 +9450,7 @@ table {
                 }
             }
             .show-more-btn { 
+                align-items: end;
                 background: transparent;
                 border: none;
                 color: #df9764;

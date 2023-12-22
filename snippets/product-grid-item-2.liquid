@@ -3,15 +3,25 @@
   {% assign on_sale = true %}
 {% endif %}
 {% assign sold_out = true %}
-{% if product.available  %}
+{% if product.available %}
   {% assign sold_out = false %}
 {% endif %}
 {% assign current_variant = product.selected_or_first_available_variant %}
-<div class="inner product-block product-item{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" data-filter-title="{{ filter_titles }}" data-inventory="{{ product.variants.first.inventory_quantity }}" data-product-id="product-{{ product.id }}" data-tags="{{ _tags }}">
+<div
+  class="inner product-block product-item{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}"
+  data-filter-title="{{ filter_titles }}"
+  data-inventory="{{ product.variants.first.inventory_quantity }}"
+  data-product-id="product-{{ product.id }}"
+  data-tags="{{ _tags }}"
+>
   <div class="inner-top">
     <div class="product-top">
       <div class=" product-image{% if product.images.size > 1 and settings.image_swap %} image-swap{% endif %}">
-        <a href="{{ product.url | within: collection }}" class="product-grid-image" data-collections-related="{{ routes.collections_url }}/{{collection.handle}}?view=related">
+        <a
+          href="{{ product.url | within: collection }}"
+          class="product-grid-image"
+          data-collections-related="{{ routes.collections_url }}/{{collection.handle}}?view=related"
+        >
           {%- assign img_pr = product.featured_image.src | product_img_url: '800x' -%}
           {%- assign img_pr_1 = product.featured_image.src | product_img_url: '300x' -%}
           {%- assign img_pr_2 = product.featured_image.src | product_img_url: '400x' -%}
@@ -25,111 +35,121 @@
           {%- assign img_12 = product.images[1].src | product_img_url: '400x' -%}
 
           {% if product.images.size > 1 and settings.image_swap %}
-          <img alt="{{ product.images[0].alt | escape }}"
-               class="images-one lazyload"
-               data-srcset="{{ img_0 }}"
-               data-srcie="{{ img_01 }}"
-               data-srcief="{{ img_02 }}"
-               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-               data-aspectratio="{{ product.featured_image.aspect_ratio }}"
-               data-sizes="auto">
+            <img
+              alt="{{ product.images[0].alt | escape }}"
+              class="images-one lazyload"
+              data-srcset="{{ img_0 }}"
+              data-srcie="{{ img_01 }}"
+              data-srcief="{{ img_02 }}"
+              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+              data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+              data-sizes="auto"
+            >
 
-          <span class="images-two">
-            <img alt="{{ product.images[1].alt | escape }}"
-                 class="lazyload"
-                 data-srcset="{{ img_1 }}"
-                 data-srcie="{{ img_11 }}"
-                 data-srcief="{{ img_12 }}"
-                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                 data-aspectratio="{{ product.featured_image.aspect_ratio }}"
-                 data-sizes="auto">
-
-          </span>
+            <span class="images-two">
+              <img
+                alt="{{ product.images[1].alt | escape }}"
+                class="lazyload"
+                data-srcset="{{ img_1 }}"
+                data-srcie="{{ img_11 }}"
+                data-srcief="{{ img_12 }}"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                data-sizes="auto"
+              >
+            </span>
           {% else %}
-          <img alt="{{ product.featured_image.alt | escape }}"
-               data-srcset="{{ img_pr }}"
-               data-srcie="{{ img_pr_1 }}"
-               data-srcief="{{ img_pr_2 }}"
-               class="lazyload"
-               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-               data-aspectratio="{{ product.featured_image.aspect_ratio }}"
-               data-sizes="auto">
+            <img
+              alt="{{ product.featured_image.alt | escape }}"
+              data-srcset="{{ img_pr }}"
+              data-srcie="{{ img_pr_1 }}"
+              data-srcief="{{ img_pr_2 }}"
+              class="lazyload"
+              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+              data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+              data-sizes="auto"
+            >
           {% endif %}
-          {% if collection.handle == 'ikea-highchair-cushion-covers' and product.handle != 'cushion-insert'%}
-          <span class="svg-fillColor" style="color:transparent" >
-            <svg viewBox="0 0 3200 3200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          {% if collection.handle == 'ikea-highchair-cushion-covers' and product.handle != 'cushion-insert' %}
+            <span class="svg-fillColor" style="color:transparent">
+              <svg
+                viewBox="0 0 3200 3200"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
                 <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <path d="M2460.735,1303.079 C2466.563,1302.802 2470.482,1302.456 2474.4,1302.453 C2531.392,1302.417 2588.384,1302.345 2645.376,1302.468 C2666.734,1302.514 2666.697,1302.751 2675.546,1321.524 C2772.693,1527.61 2869.853,1733.691 2967.003,1939.776 C2969.092,1944.207 2971.101,1948.676 2973.621,1954.155 C2058.74,1954.155 1145.361,1954.155 230.531,1954.155 C232.223,1950.165 233.478,1946.898 234.965,1943.741 C293.592,1819.291 352.237,1694.851 410.885,1570.411 C450.504,1486.347 490.13,1402.286 529.754,1318.225 C530.89,1315.815 532.031,1313.407 533.199,1311.013 C535.596,1306.101 539.503,1303.389 544.986,1303.063 C548.976,1302.826 552.969,1302.478 556.961,1302.475 C614.619,1302.443 672.278,1302.446 729.936,1302.498 C733.803,1302.502 737.669,1302.96 742.646,1303.277 C741.053,1307.844 739.96,1311.226 738.702,1314.545 C720.284,1363.125 701.72,1411.651 683.557,1460.326 C681.169,1466.726 679.39,1473.968 679.801,1480.668 C680.602,1493.699 677.992,1505.586 673.107,1517.513 C665.968,1534.944 668.818,1543.916 684.113,1555.098 C697.743,1565.062 713.336,1570.978 729.294,1575.901 C760.944,1585.665 793.503,1590.714 826.365,1594.053 C865.876,1598.067 905.509,1598.607 945.188,1598.6 C1389.458,1598.521 1833.729,1598.541 2277.999,1598.558 C2330.072,1598.56 2381.912,1595.735 2433.188,1586.018 C2454.821,1581.919 2476.172,1576.658 2496.409,1567.789 C2503.699,1564.594 2510.87,1560.857 2517.46,1556.423 C2522.332,1553.144 2526.698,1548.745 2530.345,1544.103 C2535.109,1538.039 2536.67,1530.991 2533.037,1523.504 C2532.023,1521.414 2531.45,1519.114 2530.489,1516.995 C2525.312,1505.576 2523.16,1493.819 2523.955,1481.124 C2524.375,1474.42 2522.685,1467.164 2520.3,1460.771 C2502.136,1412.095 2483.564,1363.572 2465.126,1314.999 C2463.849,1311.629 2462.634,1308.237 2460.735,1303.079 Z" id="Path" fill="currentColor" fill-rule="nonzero"></path>
                 </g>
-            </svg>
-            <div class="Confetti-Layer d-none"> 
-              <img src="{{ 'Confetti_Layer_1.svg' | asset_url }}"  class="pattern-layers" >
-              <img src="{{ 'Confetti_Layer_2.svg' | asset_url }}"  class="pattern-layers" >
-              <img src="{{ 'Confetti_Layer_3.svg' | asset_url }}"  class="pattern-layers" >
-              <img src="{{ 'Confetti_Layer_4.svg' | asset_url }}"  class="pattern-layers" >
-              <img src ="{{ 'Confetti_Layer_5.svg' | asset_url }}" class="patter-overlay"> 
-          </div>                           
-          <div class="Speckle_Brown d-none">
-            <img src="{{ 'Speckle_Brown_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Speckle_Brown_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Speckle_Brown_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Speckle_Brown_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-            <img src ="{{ 'Speckle_Brown_Layer_5.svg' | asset_url }}" class="patter-overlay">
-          </div>        
-          <div class="Sprinkle-layer d-none">
-              <img src="{{ 'Sprinkle_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Sprinkle_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Sprinkle_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Sprinkle_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-              <img src ="{{ 'Sprinkle_Layer_5.svg' | asset_url }}" class="patter-overlay">
-            </div>                
-          <div class="Terrazzo_Midnight_Layer d-none">
-            <img src="{{ 'Terrazzo_Midnight_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Terrazzo_Midnight_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Terrazzo_Midnight_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Terrazzo_Midnight_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-            <img src="{{ 'Terrazzo_Midnight_Layer_5.svg' | asset_url }}" class="patter-overlay" >
-          </div> 
-          <div class="Terrazzo_Stone_Layer d-none">
-              <img src="{{ 'Terrazzo_Stone_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Terrazzo_Stone_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Terrazzo_Stone_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Terrazzo_Stone_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-              <img src="{{ 'Terrazzo_Stone_Layer_5.svg' | asset_url }}" class="patter-overlay" >
-            </div> 
-        <div class="Terrazzo_BeachGlass_Layer d-none">
-          <img src="{{ 'Terrazzo_BeachGlass_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_BeachGlass_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_BeachGlass_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_BeachGlass_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_BeachGlass_Layer_5.svg' | asset_url }}" class="patter-overlay" >
-      </div> 
-        <div class="Terrazzo_Jade_Layer d-none">
-          <img src="{{ 'Terrazzo_Jade_Layer_1.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_Jade_Layer_2.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_Jade_Layer_3.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_Jade_Layer_4.svg' | asset_url }}" class="pattern-layers" >
-          <img src="{{ 'Terrazzo_Jade_Layer_5.svg' | asset_url }}" class="patter-overlay" >
-        </div>
-        <div class="Terrazzo_milk_Layer d-none">
-          <img src="{{ 'Terrazzo_milk_Layer_1.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_milk_Layer_2.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_milk_Layer_3.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_milk_Layer_4.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_milk_Layer_5.svg' | asset_url }}" class="patter-overlay">
-        </div>
-        <div class="Terrazzo_seafoam_Layer d-none">
-          <img src="{{ 'Terrazzo_seafoam_Layer_1.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_seafoam_Layer_2.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_seafoam_Layer_3.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_seafoam_Layer_4.svg' | asset_url }}" class="pattern-layers">
-          <img src="{{ 'Terrazzo_seafoam_Layer_5.svg' | asset_url }}" class="patter-overlay">
-        </div>
-            <img src="{{ 'Mat_CushionAngle_Shadow.png' | asset_url }}" alt="" title="" class="shadow-image d-none"  /> 
-          </span>
+              </svg>
+              <div class="Confetti-Layer d-none">
+                <img src="{{ 'Confetti_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Confetti_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Confetti_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Confetti_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Confetti_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Speckle_Brown d-none">
+                <img src="{{ 'Speckle_Brown_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Speckle_Brown_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Speckle_Brown_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Speckle_Brown_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Speckle_Brown_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Sprinkle-layer d-none">
+                <img src="{{ 'Sprinkle_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Sprinkle_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Sprinkle_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Sprinkle_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Sprinkle_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_Midnight_Layer d-none">
+                <img src="{{ 'Terrazzo_Midnight_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Midnight_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Midnight_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Midnight_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Midnight_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_Stone_Layer d-none">
+                <img src="{{ 'Terrazzo_Stone_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Stone_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Stone_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Stone_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Stone_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_BeachGlass_Layer d-none">
+                <img src="{{ 'Terrazzo_BeachGlass_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_BeachGlass_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_BeachGlass_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_BeachGlass_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_BeachGlass_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_Jade_Layer d-none">
+                <img src="{{ 'Terrazzo_Jade_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Jade_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Jade_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Jade_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_Jade_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_milk_Layer d-none">
+                <img src="{{ 'Terrazzo_milk_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_milk_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_milk_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_milk_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_milk_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <div class="Terrazzo_seafoam_Layer d-none">
+                <img src="{{ 'Terrazzo_seafoam_Layer_1.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_seafoam_Layer_2.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_seafoam_Layer_3.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_seafoam_Layer_4.svg' | asset_url }}" class="pattern-layers">
+                <img src="{{ 'Terrazzo_seafoam_Layer_5.svg' | asset_url }}" class="patter-overlay">
+              </div>
+              <img src="{{ 'Mat_CushionAngle_Shadow.png' | asset_url }}" alt="" title="" class="shadow-image d-none">
+            </span>
           {% endif %}
         </a>
-      </div> 
+      </div>
 
       {% render 'product-label' with product as product %}
 
@@ -138,124 +158,151 @@
         {% render 'wishlist-product' with product as product %}
 
         {% if settings.display_button %}
-        <div class="action">
-          {% render 'add-to-cart-form', product: product, sold_out: sold_out, id: 'grid-product-form-' %}
-        </div>
+          <div class="action">
+            {% render 'add-to-cart-form', product: product, sold_out: sold_out, id: 'grid-product-form-' %}
+          </div>
         {% endif %}
 
         {% if settings.display_product_reviews %}
-        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+          <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
         {% endif %}
       </div>
 
       {% if settings.display_item_size or settings.enable_quick_view %}
-      <div class="product-des abs-bottom">
-        {% if settings.display_item_size %}
-        {% render 'items-size' with product as product %}
-        {% endif %}
+        <div class="product-des abs-bottom">
+          {% if settings.display_item_size %}
+            {% render 'items-size' with product as product %}
+          {% endif %}
 
-        {% if settings.enable_quick_view %}
-        <a class="quickview-button" href="javascript:void(0)" id="{{ product.handle }}" title="{{ 'products.product.quick_view' | t }}" {% if settings.enable_multilang %}data-translate="products.product.quick_view" translate-item="title"{% endif %}>
-          <span {% if settings.enable_multilang %}data-translate="products.product.quick_view"{% endif %}>
-            {{ 'products.product.quick_view' | t }}
-          </span>
-        </a>
-        {% endif %}
-      </div>
+          {% if settings.enable_quick_view %}
+            <a
+              class="quickview-button"
+              href="javascript:void(0)"
+              id="{{ product.handle }}"
+              title="{{ 'products.product.quick_view' | t }}"
+              {% if settings.enable_multilang %}
+                data-translate="products.product.quick_view" translate-item="title"
+              {% endif %}
+            >
+              <span
+                {% if settings.enable_multilang %}
+                  data-translate="products.product.quick_view"
+                {% endif %}
+              >
+                {{ 'products.product.quick_view' | t }}
+              </span>
+            </a>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
 
     {% comment %} Use for productGrid {% endcomment %}
     <div class="product-bottom">
       {% if settings.show_vendor %}
-      <div class="product-vendor">
-        {{ product.vendor | link_to_vendor }}
-      </div>
+        <div class="product-vendor">
+          {{ product.vendor | link_to_vendor }}
+        </div>
       {% endif %}
 
       <a class="product-title" href="{{ product.url | within: collection }}">
         {% render 'multilang' with product.title %}
       </a>
-      
+
       <div class="price-box">
         {% if on_sale %}
-        <div class="price-sale">
-          <span class="old-price">{{ product.compare_at_price_min | money }}</span>
-          <span class="special-price">{% if product.price_varies %}{% render 'varies_from' %}{% endif %}{{ product.price_min | money }}</span>
-        </div>
+          <div class="price-sale">
+            <span class="old-price">{{ product.compare_at_price_min | money }}</span>
+            <span class="special-price">
+              {%- if product.price_varies %}{% render 'varies_from' %}{% endif -%}
+              {{- product.price_min | money -}}
+            </span>
+          </div>
         {% else %}
-        <div class="price-regular">
-          <span>{% if product.price_varies %}{% render 'varies_from' %}{% endif %}{{ product.price_min | money }}</span>
-        </div>
-        
+          <div class="price-regular">
+            <span>
+              {%- if product.price_varies %}{% render 'varies_from' %}{% endif -%}
+              {{- product.price_min | money -}}
+            </span>
+          </div>
         {% endif %}
       </div>
       {% if current_variant.inventory_quantity <= 10 %}
-      <p class="text-center text-warning"> Only {{ current_variant.inventory_quantity }} left </p>
+        <p class="text-center text-warning">Only {{ current_variant.inventory_quantity }} left</p>
       {% endif %}
       {% if settings.display_item_swatch %}
-      {% render 'item-swatch' with product as product %}
+        {% render 'item-swatch' with product as product %}
       {% endif %}
     </div>
 
     {% comment %} Use for productList {% endcomment %}
     <div class="product-details">
       {% if settings.show_vendor %}
-      <div class="product-vendor">
-        {{ product.vendor | link_to_vendor }}
-      </div>
+        <div class="product-vendor">
+          {{ product.vendor | link_to_vendor }}
+        </div>
       {% endif %}
 
       <a class="product-title" href="{{ product.url | within: collection }}">
         {% render 'multilang' with product.title %}
       </a>
-      
+
       {% if settings.display_product_reviews %}
-      <span class="shopify-product-reviews-badge" data-id="{{ product.id }}" style="min-height: 20px; display: block; margin-bottom: 9px;"></span>
+        <span
+          class="shopify-product-reviews-badge"
+          data-id="{{ product.id }}"
+          style="min-height: 20px; display: block; margin-bottom: 9px;"
+        ></span>
       {% endif %}
 
       <div class="short-description">
         {% if product.description contains '[countdown]' %}
-        {% assign des = product.description | split:'[/countdown]' | last %}
+          {% assign des = product.description | split: '[/countdown]' | last %}
         {% else %}
-        {% assign des = product.description %}
+          {% assign des = product.description %}
         {% endif %}
 
         {% if settings.enable_multilang and des contains '[lang2]' %}
-        <div class="lang1">
-          {{ des | split: '[lang2]' | first | strip_html | truncatewords: 40 }}
-        </div>
-        <div class="lang2">
-          {{ des | split: '[lang2]' | last | strip_html | truncatewords: 40 }}
-        </div>
+          <div class="lang1">
+            {{ des | split: '[lang2]' | first | strip_html | truncatewords: 40 }}
+          </div>
+          <div class="lang2">
+            {{ des | split: '[lang2]' | last | strip_html | truncatewords: 40 }}
+          </div>
         {% else %}
-        <div>
-          {{ des | split: '[lang2]' | first | strip_html | truncatewords: 40 }}
-        </div>
+          <div>
+            {{ des | split: '[lang2]' | first | strip_html | truncatewords: 40 }}
+          </div>
         {% endif %}
       </div>
-      
+
       <div class="price-box">
         {% if on_sale %}
-        <div class="price-sale">
-          <span class="old-price">{{ product.compare_at_price_min | money }}</span>
-          <span class="special-price">{% if product.price_varies %}{% render 'varies_from' %}{% endif %}{{ product.price_min | money }}</span>
-        </div>
+          <div class="price-sale">
+            <span class="old-price">{{ product.compare_at_price_min | money }}</span>
+            <span class="special-price">
+              {%- if product.price_varies %}{% render 'varies_from' %}{% endif -%}
+              {{- product.price_min | money -}}
+            </span>
+          </div>
         {% else %}
-        <div class="price-regular">
-          <span>{% if product.price_varies %}{% render 'varies_from' %}{% endif %}{{ product.price_min | money }}</span>
-        </div>
+          <div class="price-regular">
+            <span>
+              {%- if product.price_varies %}{% render 'varies_from' %}{% endif -%}
+              {{- product.price_min | money -}}
+            </span>
+          </div>
         {% endif %}
       </div>
 
       {% if settings.display_item_swatch %}
-      {% render 'item-swatch' with product as product %}
+        {% render 'item-swatch' with product as product %}
       {% endif %}
 
       {% if settings.display_button %}
-      <div class="action">
-        {% render 'add-to-cart-form', product: product, sold_out: sold_out, id: 'list-product-form' %}
-      </div>
+        <div class="action">
+          {% render 'add-to-cart-form', product: product, sold_out: sold_out, id: 'list-product-form' %}
+        </div>
       {% endif %}
 
       {% render 'wishlist-product' with product as product %}
