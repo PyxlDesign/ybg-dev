@@ -152,25 +152,12 @@
         {% endif %}
       </div>
 
-      <button
-        data-btn-addToCart
-        type="submit"
-        name="add"
-        class="btn"
-        {% if settings.enable_multilang %}
-          data-translate="products.product.add_to_cart"
-        {% endif %}
-        id="sticky-product-add-to-cart"
-        data-form-id="#add-to-cart-form"
-      >
-        {{ 'products.product.add_to_cart' | t -}}
-      </button>
-
       {% if settings.display_item_swatch %}
         {% render 'item-swatch' with product as product %}
       {% endif %}
     </div>
 
+    {% render 'add-to-cart-form', product: product, sold_out: sold_out, id: 'list-product-form' %}
     {% comment %} Use for productList {% endcomment %}
     <div class="product-details">
       {% if settings.show_vendor %}
