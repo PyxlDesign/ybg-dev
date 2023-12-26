@@ -8183,6 +8183,47 @@ table {
     }
 }
 
+.widget-title {
+
+    &:has(.slider-arrow-container) {
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    .slider-arrow-container {
+        display: flex;
+        gap: 10px;
+    
+        .slick-next,
+        .slick-prev {
+            height: 46px;
+            width: 46px;
+            color: #df9764;
+            border-color: #df9764;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            position: relative;
+            right: 0;
+            top: 0;
+            transform: none;
+
+        }
+        
+        .slick-arrow .fa {
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+}
+
+
 .account-page {
     .page-header {
         margin-top: 30px;

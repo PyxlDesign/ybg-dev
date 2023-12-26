@@ -460,6 +460,9 @@
                     hasRightSidebar = $('.halo-product-content .pro-page [data-has-right-sidebar]');
 
                 if(productGrid.not('.slick-initialized')) {
+
+                    productGrid.parent().siblings('.widget-title').append(`<div class="slider-arrow-container"></div>`);
+
                     productGrid.slick({
                         get slidesToShow () {
                             if(hasRightSidebar.length) {
@@ -495,7 +498,7 @@
                                 return this.dots = false;
                             };
                         },
-
+                        appendArrows: productGrid.parent().siblings(".widget-title").find('.slider-arrow-container'),
                         nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
                         prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
                         responsive: [
@@ -570,8 +573,8 @@
                             {
                                 breakpoint: 992,
                                 settings: {
-                                    dots: true,
-                                    arrows: false,
+                                    dots: false,
+                                    arrows: true,
                                     vertical: false,
                                     get slidesToShow () {
                                         if(gridItemWidth >= 3) {
@@ -594,9 +597,9 @@
                                 settings: {
                                     slidesToShow: 2,
                                     slidesToScroll: 2,
-                                    arrows: false,
+                                    arrows: true,
                                     vertical: false,
-                                    dots: true
+                                    dots: false
                                 }
                             }
                         ]
