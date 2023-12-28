@@ -38,6 +38,14 @@
             max-width: 660px;
         }
     }
+    #announcement a {
+        color: {{s.color_link}} !important;
+    }
+    #announcement .slick-arrow {
+        background-color: transparent;
+        border-color: {{s.color_text}};
+        color: {{s.color_text}};
+    }
     .slick-arrow-small {
         height: 1.5rem;
         width: 1.5rem;
@@ -474,6 +482,12 @@
 "zh-TW": "文字"
 },
 "default": "#ffffff"
+},
+{
+"type": "color",
+"id": "color_link",
+"label": "Link Color",
+"default": "#d69a81"
 },
 {
 "type": "checkbox",
