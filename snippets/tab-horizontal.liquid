@@ -211,12 +211,11 @@
 <script defer>
     // on document ready check the head of the .tab-content if the height is over 100px add the class .show-more
     $(document).ready(function() {
-        console.log('Tab Content');
         $('.tab-content').each(function() {
-            if ($(this).height() > 125) {
+            if ($(this).height() > 200) {
                 $(this).addClass('show-more');
                 // add the show more button
-                $(this).append('<div class="show-more-btn-wrapper"><button class="show-more-btn">Read More</button></div>');
+                $(this).append('<div class="show-more-btn-wrapper"><button class="show-more-btn">READ MORE <span class="fa fa-chevron-down"></span></button></div>');
             }
         });
         // .show-more-btn click event
@@ -224,8 +223,8 @@
             // toggle the .show-more class on the parent .tab-content
             $(this).parents('.tab-content').toggleClass('show-more-open');
             // toggle the text of the .show-more-btn
-            $(this).text(function(i, text) {
-                return text === "Read More" ? "Read Less" : "Read More";
+            $(this).html(function(i, text) {
+                return text === 'READ MORE <span class="fa fa-chevron-down"></span>' ? 'READ LESS <span class="fa fa-chevron-down"></span>' : 'READ MORE <span class="fa fa-chevron-down"></span>';
             })
         });
     });

@@ -6345,7 +6345,7 @@ table {
   }
   .reasons-to-buy-right {
     background: #fffcf8;
-    border: 1px solid #cc6b3a;
+    border: 1px solid #df9764;
     display: grid;
     gap: 24px;
     justify-content: center;
@@ -6373,7 +6373,7 @@ table {
   }
   .reason-block-number {
     align-items: center;
-    background-color: #cc6b3a;
+    background-color: #df9764;
     border-radius: 100%;
     color: #fffcf8;
     display: flex;
@@ -9470,8 +9470,9 @@ table {
             text-transform: uppercase;
 
             &.active {
-                background: #df9764;
-                color: #fff;
+                // background: #df9764;
+                background: #FFF;
+                color: #df9764;
             }
 
             &:before,
@@ -9484,10 +9485,12 @@ table {
         .tab-content {
             position: relative;
             max-width: 800px;
+            color: #637175;
 
             &.show-more {
-                max-height: 125px;
+                max-height: 200px;
                 overflow: hidden;
+                font-family: 'Karla', sans-serif;
             }
             &.show-more-open {
                 max-height: unset;
@@ -9501,19 +9504,17 @@ table {
                 background: transparent;
                 border: none;
                 color: #df9764;
-                font-family: "Avalanche", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-                font-weight: 300;
+                font-weight: 600;
                 cursor: pointer;
             }
 
             .show-more-btn-wrapper {
-                background: linear-gradient(to top, #F8F1EB 0%, #F8F1EB 30%, rgba(223, 151, 100, 0) 100%);
-                border-bottom: 1px solid #df9764;
+                background: #F8F1EB;
                 bottom: 0;
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 position: absolute;
-                height: 60px;
+                height: 30px;
                 width: 100%;
             }
         }
