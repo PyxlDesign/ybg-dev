@@ -3066,9 +3066,9 @@
           "right_linklist": "",
           "mobile_linklist": "",
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF <\/strong><a href=\"\/collections\/all\" title=\"All products\"><strong>Shop Now<\/strong><\/a><\/p><p>This is another Slide<\/p>",
-          "color_bg": "#d0f43e",
-          "color_text": "#ea3636",
-          "color_link": "#30494d",
+          "color_bg": "rgba(0,0,0,0)",
+          "color_text": "#30494d",
+          "color_link": "#cb6b3a",
           "wishlist": true,
           "wishlist_url": "shopify:\/\/pages\/wish-list"
         }
