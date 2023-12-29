@@ -1580,7 +1580,7 @@ $color_slick_arrow: #323232;
 
     .horizontal-tabs {
         .list-tabs {
-            display: none !important;
+            // display: none !important;
         }
     }
 
@@ -1632,7 +1632,23 @@ $color_slick_arrow: #323232;
     }
 
     .horizontal-tabs {
+
+        .list-tabs {
+            overflow: scroll;
+            padding-bottom: 10px;
+
+            .tab-links {
+                padding: 12px 20px !important;
+                white-space: nowrap;
+            }
+        }
         .wrapper-tab-content {
+            .tab-content {
+                display: none !important;
+                &.active {
+                    display: block !important;
+                }
+            }
             .tab-title {
                 &:first-child {
                     &+.tab-content {
