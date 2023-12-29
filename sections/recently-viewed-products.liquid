@@ -365,7 +365,7 @@
                             settings: {
                                 slidesToShow: 4,
                                 slidesToScroll: 4,
-                                arrows:false,
+                                arrows:true,
                                 dots: true              
                             }
                             },
@@ -374,7 +374,7 @@
                             settings: {
                                 slidesToShow: 3,
                                 slidesToScroll: 3,
-                                arrows:false,
+                                arrows:true,
                                 dots: true              	
                             }
                             },
@@ -383,13 +383,13 @@
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
-                                arrows:false,
+                                arrows:true,
                                 dots: true
                             }
                             }
                         ]
                         });
-                    };     
+                    };
 
                     if($('.spr-badge').length > 0) {
                     return window.SPR.registerCallbacks(), window.SPR.initRatingHandler(), window.SPR.initDomEls(), window.SPR.loadProducts(), window.SPR.loadBadges();
