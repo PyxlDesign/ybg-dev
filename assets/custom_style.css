@@ -383,6 +383,9 @@
     left: 0;
     right: 0;
 }
+.product-shop .shopify-payment-button__more-options {
+    position: relative;
+}
 
 #paypal-btn {
     width: 100%;
