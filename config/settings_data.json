@@ -445,7 +445,7 @@
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify:\/\/shop_images\/untitled-240_square.jpg",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-61_KRK.jpg",
               "title": "Shop All",
               "subtitle": "Shop all our feeding essentials",
               "link_to": "shopify:\/\/collections\/feeding-accessories"
@@ -455,7 +455,7 @@
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify:\/\/shop_images\/YBG4-16_KRK_noutensil.jpg",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-41_KRK.jpg",
               "title": "Dinnerware",
               "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
               "link_to": "shopify:\/\/collections\/dinnerware"
@@ -465,10 +465,20 @@
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify:\/\/shop_images\/y-14.jpg",
-              "title": "All You-Tensil",
-              "subtitle": "Designed by a feeding specialist to support both baby self-feeding and parent-led feeding with purees",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-78_KRK.jpg",
+              "title": "Utensils",
+              "subtitle": "Designed by a feeding specialist to support baby's feeding, motor and oral development",
               "link_to": "shopify:\/\/collections\/utensils"
+            }
+          },
+          "1558323239997": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
+              "title": "Silicone Bibs",
+              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "link_to": "shopify:\/\/collections\/silicone-bibs"
             }
           },
           "1558322304470": {
@@ -499,16 +509,6 @@
               "title": "Floor Mats",
               "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "link_to": "shopify:\/\/collections\/floor-mats"
-            }
-          },
-          "1558323239997": {
-            "type": "images",
-            "disabled": true,
-            "settings": {
-              "categories": "",
-              "title": "Habitasse Molateas",
-              "subtitle": "Dosuere an morci lobortis scelerisque blandit cosmopolis.",
-              "link_to": "shopify:\/\/collections\/all"
             }
           },
           "1558323352604": {
@@ -566,10 +566,10 @@
           "1558322835166",
           "1558323108644",
           "1558322256428",
+          "1558323239997",
           "1558322304470",
           "1558322736925",
           "1558322991365",
-          "1558323239997",
           "1558323352604",
           "1558323495084",
           "1558323581180",
