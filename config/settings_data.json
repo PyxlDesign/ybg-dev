@@ -481,16 +481,6 @@
               "link_to": "shopify:\/\/collections\/silicone-bibs"
             }
           },
-          "1558322304470": {
-            "type": "images",
-            "settings": {
-              "categories": "",
-              "thumbernail": "shopify:\/\/shop_images\/YBG-20_square.jpg",
-              "title": "Silicone Table Placemats",
-              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
-              "link_to": "shopify:\/\/collections\/table-placemats"
-            }
-          },
           "1558322736925": {
             "type": "images",
             "settings": {
@@ -499,6 +489,16 @@
               "title": "Eating Out Essentials",
               "subtitle": "Improve on-the-go mealtimes with restaurant bags, food scissors and reusable food bags",
               "link_to": "shopify:\/\/collections\/eating-out-essentials"
+            }
+          },
+          "1558322304470": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-20_square.jpg",
+              "title": "Silicone Table Placemats",
+              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
+              "link_to": "shopify:\/\/collections\/table-placemats"
             }
           },
           "1558322991365": {
@@ -567,8 +567,8 @@
           "1558323108644",
           "1558322256428",
           "1558323239997",
-          "1558322304470",
           "1558322736925",
+          "1558322304470",
           "1558322991365",
           "1558323352604",
           "1558323495084",
