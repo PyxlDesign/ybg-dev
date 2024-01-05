@@ -352,6 +352,16 @@
               "link_to": "shopify:\/\/collections\/dinnerware"
             }
           },
+          "295fb363-18a1-4a2f-8ec2-1995a8ec4cba": {
+            "type": "images",
+            "settings": {
+              "categories": "Feeding;Dinnerware",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-78_KRK.jpg",
+              "title": "Utensils",
+              "subtitle": "Thoughtfully designed to support your child's feeding, motor and oral development.",
+              "link_to": "shopify:\/\/collections\/utensils-1"
+            }
+          },
           "1558325626778": {
             "type": "images",
             "settings": {
@@ -430,6 +440,7 @@
           "1558324515012",
           "1558324658499",
           "4e71a3c8-e78a-4e6d-8445-68fb1260d84e",
+          "295fb363-18a1-4a2f-8ec2-1995a8ec4cba",
           "1558325626778",
           "57e78f8e-17ca-4532-b250-72aa240ceee3",
           "835477a4-df9e-4e66-ba09-dfb5e36d3baa",
