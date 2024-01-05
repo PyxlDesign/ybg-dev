@@ -358,8 +358,18 @@
               "categories": "Feeding;Dinnerware",
               "thumbernail": "shopify:\/\/shop_images\/ybgg_d8399204-9667-414b-b72f-bdaeffc2294e.jpg",
               "title": "All You-Tensils",
-              "subtitle": "Designed by a feeding specialist to support and facilitate overall feeding development.",
+              "subtitle": "Double-sided spoon and dipper was designed by a feeding specialist to support early feeding development",
               "link_to": "shopify:\/\/collections\/utensils"
+            }
+          },
+          "57e78f8e-17ca-4532-b250-72aa240ceee3": {
+            "type": "images",
+            "settings": {
+              "categories": "Feeding",
+              "thumbernail": "shopify:\/\/shop_images\/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
+              "title": "Silicone Bibs",
+              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "link_to": "shopify:\/\/collections\/silicone-bibs"
             }
           },
           "835477a4-df9e-4e66-ba09-dfb5e36d3baa": {
@@ -421,6 +431,7 @@
           "1558324658499",
           "4e71a3c8-e78a-4e6d-8445-68fb1260d84e",
           "1558325626778",
+          "57e78f8e-17ca-4532-b250-72aa240ceee3",
           "835477a4-df9e-4e66-ba09-dfb5e36d3baa",
           "1558324939452",
           "1558325577740",
