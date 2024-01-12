@@ -6130,8 +6130,37 @@
       },
       "reasons-to-buy": {
         "type": "reasons-to-buy",
+        "blocks": {
+          "reason_EERe9W": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFE POSITIONING",
+              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position.<\/p>"
+            }
+          },
+          "reason_jznGxp": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS GAP",
+              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!).<\/p>"
+            }
+          },
+          "reason_UmPfq4": {
+            "type": "reason",
+            "settings": {
+              "title": "KEEPS MOM HAPPY",
+              "content": "<p>Match your home decor or switch covers for holidays and special occasions!<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_EERe9W",
+          "reason_jznGxp",
+          "reason_UmPfq4"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
+          "heading": "Why Cushions?"
         }
       }
     },
