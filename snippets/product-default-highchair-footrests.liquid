@@ -1,13 +1,13 @@
 <div class="product-template product-template-default">
   <div class="container">
     {% if collection %}
-    <div class="next_prev-groups">
-      {% render 'breadcrumb' %}
-      {% render 'next-prev-product' %}
-    </div>
+      <div class="next_prev-groups">
+        {% render 'breadcrumb' %}
+        {% render 'next-prev-product' %}
+      </div>
 
     {% else %}
-    {% render 'breadcrumb' %}
+      {% render 'breadcrumb' %}
     {% endif %}
 
     <div class="halo-product-content">
@@ -15,8 +15,8 @@
         {% section 'sidebar-section' %}
         {% section 'product-template-default-highchair-footrests' %}
         {% section 'instafeed-460-pdp' %}
+        {% section 'reasons-to-buy-footrest' %}
         {% section 'testimonials-slider-footrests-1' %}
-        {% section 'footrests-reasons-to-buy' %}
       </div>
 
       {% section 'product-recommendations' %}

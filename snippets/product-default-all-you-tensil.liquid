@@ -1,13 +1,13 @@
 <div class="product-template product-template-default">
   <div class="container">
     {% if collection %}
-    <div class="next_prev-groups">
-      {% render 'breadcrumb' %}
-      {% render 'next-prev-product' %}
-    </div>
+      <div class="next_prev-groups">
+        {% render 'breadcrumb' %}
+        {% render 'next-prev-product' %}
+      </div>
 
     {% else %}
-    {% render 'breadcrumb' %}
+      {% render 'breadcrumb' %}
     {% endif %}
 
     <div class="halo-product-content">
@@ -15,8 +15,8 @@
         {% section 'sidebar-section' %}
         {% section 'product-template-default-all-you-tensil' %}
         {% section 'instafeed-460-pdp' %}
+        {% section 'reasons-to-buy-all-you-tensil' %}
         {% section 'testimonials-slider-all-you-tensil-1' %}
-        {% section 'all-you-tensil-reasons-to-buy' %}
       </div>
 
       {% section 'product-recommendations' %}
