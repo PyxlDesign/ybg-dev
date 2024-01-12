@@ -26,7 +26,7 @@
   {% endif %}
 {% endif %}
 {% if section.settings.display_related_products %}
-  <div id="product-recommendations-alt">
+  <div id="product-recommendations">
     <div class="container">
       <div
         class="related-products page-width product-recommendations js-product-recomendation"
@@ -44,8 +44,8 @@
                 <span class="title">
                   {% if product.type contains 'Cushion Cover' %}
                     {% assign section_title = 'Recommended Placemat Pairings' %}
-                  {% elsif product.type contains 'Placemat' %}
-                    {% assign section_title = 'Related Products' %}
+                  {% elsif product.type contains 'IKEA Placemat' %}
+                    {% assign section_title = 'Recommended Cushion Covers' %}
                   {% else %}
                     {% assign section_title = section.settings.related_products_title %}
                   {% endif %}
