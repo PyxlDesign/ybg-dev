@@ -6162,6 +6162,33 @@
           "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
           "heading": "Why Cushions?"
         }
+      },
+      "reasons-to-buy-floormat": {
+        "type": "reasons-to-buy-floormat",
+        "blocks": {
+          "reason_3CMCf4": {
+            "type": "reason",
+            "settings": {
+              "title": "UNDER HIGHCHAIR",
+              "content": "<p>Non-skid silicone keeps the mat in place and the highchair from sliding.<\/p>"
+            }
+          },
+          "reason_bTHnfi": {
+            "type": "reason",
+            "settings": {
+              "title": "YEARS OF USE",
+              "content": "<p>Can be used for messy activities and crafts long after babies outgrow their highchair.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_3CMCf4",
+          "reason_bTHnfi"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/floormats-258.jpg",
+          "heading": "Why Floor Mats?"
+        }
       }
     },
     "content_for_index": [
