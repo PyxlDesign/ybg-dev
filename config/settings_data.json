@@ -4380,7 +4380,7 @@
           "display_product_detail_share": false,
           "share_text": "Share",
           "display_trust_img": false,
-          "show_tab": "vertical",
+          "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
           "description": "<p><b>Whether eating out or at home, our restaurant bags are designed to make mealtime prep and clean-up easier. It’s an absolute must-have for every diaper bag. Perfect baby shower gift!<\/b><\/p>\n<p> Have more than one child? You can buy additional <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/restaurant-bags-1\/products\/silicone-table-placemat-1\">Travel Placemats<\/a><\/strong> and fit 2-3 in the bag. Just stack and roll!<\/p>\n<p>To use: Place placemat on table and cut food on it. After baby is done eating, wipe mat with a napkin or wipe, roll up, and stick it in the zipper tote. When you get home, rinse with warm soapy water or place in the top rack of the dishwasher.<\/p>",
@@ -6198,6 +6198,12 @@
       },
       "reasons-to-buy-leg-wraps": {
         "type": "reasons-to-buy-leg-wraps",
+        "settings": {
+          "heading": "Heading goes here"
+        }
+      },
+      "reasons-to-buy-bags": {
+        "type": "reasons-to-buy-bags",
         "settings": {
           "heading": "Heading goes here"
         }
