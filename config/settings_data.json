@@ -6192,8 +6192,37 @@
       },
       "reasons-to-buy-footrest": {
         "type": "reasons-to-buy-footrest",
+        "blocks": {
+          "reason_wXPf6C": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.<\/p>"
+            }
+          },
+          "reason_9PfJXJ": {
+            "type": "reason",
+            "settings": {
+              "title": "IMPROVES FINE MOTOR SKILLS",
+              "content": "<p>Stable babies can focus on fine motor skills like picking up food, chewing and swallowing.<\/p>"
+            }
+          },
+          "reason_Lke7Q9": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFER SWALLOW",
+              "content": "<p>Foot support and trunk stability help facilitate a safe swallow.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_wXPf6C",
+          "reason_9PfJXJ",
+          "reason_Lke7Q9"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/ybgg-39.jpg",
+          "heading": "Why Footrests?"
         }
       },
       "reasons-to-buy-leg-wraps": {
