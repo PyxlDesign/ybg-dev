@@ -517,225 +517,228 @@
             </div>
           {% endif %}
 
-          {% if current_variant.available %}
-            <div class="quantity">
-              <label
-                for="quantity"
-                {% if settings.enable_multilang %}
-                  data-translate="cart.label.quantity"
-                {% endif %}
-              >
-                {{ 'cart.label.quantity' | t }}:
-              </label>
-              <div class="qty-group">
-                <a
-                  href="#"
-                  data-minus-qtt
-                  class="minus button padding-horizontal-1 border-left-0 border-top-0 border-bottom-0"
-                ></a>
-                <input type="text" data-qtt-id="quantity__{{ product.id }}" name="quantity" value="1">
-                <a
-                  href="#"
-                  data-plus-qtt
-                  class="plus button padding-horizontal-1  border-right-0 border-top-0 border-bottom-0"
-                ></a>
-              </div>
-              {% comment %}
-                <div class="mat-selector-wrapper mt-3">
-                    <!-- <p class="line-item-property__field">
-                        <input type="hidden" name="properties[Add selected placemat]" value="No">
-                        <input id="selected_mat" type="checkbox" name="properties[Selected Placemat]" value="None">
-                        <label for="add-selected-mat">Add selected placemat</label>
-                      </p> -->
-                      <p class="line-item-property__field d-none">
-                        <!-- <input type="hidden" name="properties[Add selected placemat]" value="No"> -->
-                        <span class="placemat_img py-3 mr-3"><img src="" alt="selected placemat" width="80px"></span>
-                        <input id="add-selected-mat" type="checkbox" data-product name="properties[Selected Placemat]" value="None">
-                        <label for="add-selected-mat">Add selected placemat</label>
-                      </p>
-                </div>
-              {% endcomment %}
-            </div>
-          {% endif %}
+          {% render 'new-add-to-cart' %}
 
-          {% if section.settings.display_subtotal and current_variant.available %}
-            <div class="total-price">
-              <label
-                {% if settings.enable_multilang %}
-                  data-translate="cart.general.subtotal"
-                {% endif %}
-              >
-                {{ 'cart.general.subtotal' | t }}:
-              </label>
-              <span class="total-money">
-                {{ current_variant.price | money }}
-              </span>
-            </div>
-          {% endif %}
-
-          {% if settings.enable_checkbox %}
-            <div class="groups-btn">
-              {% if current_variant.available %}
-                {% if current_variant.inventory_management %}
-                  {% assign first_inventory = current_variant.inventory_quantity %}
-
-                  {% if first_inventory > 0 %}
-                    <input
-                      data-btn-addToCart
-                      type="submit"
-                      name="add"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.add_to_cart"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      value="{{ 'products.product.add_to_cart' | t }}"
-                      data-form-id="#add-to-cart-form"
-                    >
-                  {% else %}
-                    <input
-                      data-btn-addToCart
-                      type="submit"
-                      name="add"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.pre_order"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      value="{{ 'products.product.pre_order' | t }}"
-                      data-form-id="#add-to-cart-form"
-                    >
-                  {% endif %}
-
-                {% else %}
-                  <input
-                    data-btn-addToCart
-                    type="submit"
-                    name="add"
-                    class="btn"
-                    {% if settings.enable_multilang %}
-                      data-translate="products.product.add_to_cart"
-                    {% endif %}
-                    id="product-add-to-cart"
-                    value="{{ 'products.product.add_to_cart' | t }}"
-                    data-form-id="#add-to-cart-form"
-                  >
-                {% endif %}
-
-              {% else %}
-                <input
-                  type="submit"
-                  name="add"
-                  class="btn"
+          {% comment %}
+            {% if current_variant.available %}
+              <div class="quantity">
+                <label
+                  for="quantity"
                   {% if settings.enable_multilang %}
-                    data-translate="products.product.unavailable"
+                    data-translate="cart.label.quantity"
                   {% endif %}
-                  id="product-add-to-cart"
-                  disabled
-                  value="{{ 'products.product.unavailable' | t }}"
                 >
-              {% endif %}
-
-              {% render 'wishlist-product' %}
-              <div class="checkbox-group">
-                <input class="conditions" type="checkbox" name="conditions">
-                <label>{% render 'multilang' with settings.checkbox_text %}</label>
-              </div>
-              <div class="btn-checkout show">
-                {% if section.settings.enable_payment_button and current_variant.available %}
-                  {{ form | payment_button }}
-                {% endif %}
-              </div>
-            </div>
-          {% else %}
-            <div class="groups-btn">
-              {% if current_variant.available %}
-                {% if current_variant.inventory_management %}
-                  {% assign first_inventory = current_variant.inventory_quantity %}
-
-                  {% if first_inventory > 0 %}
-                    <a
-                      name="add"
-                      href="javascript:void(0)"
-                      onclick="addItem('add-to-cart-form');"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.add_to_cart"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      data-form-id="#add-to-cart-form"
-                    >
-                      {{- 'products.product.add_to_cart' | t -}}
-                    </a>
-                  {% else %}
-                    <a
-                      name="add"
-                      href="javascript:void(0)"
-                      onclick="addItem('add-to-cart-form');"
-                      class="btn"
-                      {% if settings.enable_multilang %}
-                        data-translate="products.product.pre_order"
-                      {% endif %}
-                      id="product-add-to-cart"
-                      data-form-id="#add-to-cart-form"
-                    >
-                      {{- 'products.product.pre_order' | t -}}
-                    </a>
-                  {% endif %}
-
-                {% else %}
+                  {{ 'cart.label.quantity' | t }}:
+                </label>
+                <div class="qty-group">
                   <a
-                    name="add"
-                    href="javascript:void(0)"
-                    onclick="addItem('add-to-cart-form');"
-                    class="btn"
+                    href="#"
+                    data-minus-qtt
+                    class="minus button padding-horizontal-1 border-left-0 border-top-0 border-bottom-0"
+                  ></a>
+                  <input type="text" data-qtt-id="quantity__{{ product.id }}" name="quantity" value="1">
+                  <a
+                    href="#"
+                    data-plus-qtt
+                    class="plus button padding-horizontal-1  border-right-0 border-top-0 border-bottom-0"
+                  ></a>
+                </div>
+                {% comment %}
+                  <div class="mat-selector-wrapper mt-3">
+                      <!-- <p class="line-item-property__field">
+                          <input type="hidden" name="properties[Add selected placemat]" value="No">
+                          <input id="selected_mat" type="checkbox" name="properties[Selected Placemat]" value="None">
+                          <label for="add-selected-mat">Add selected placemat</label>
+                        </p> -->
+                        <p class="line-item-property__field d-none">
+                          <!-- <input type="hidden" name="properties[Add selected placemat]" value="No"> -->
+                          <span class="placemat_img py-3 mr-3"><img src="" alt="selected placemat" width="80px"></span>
+                          <input id="add-selected-mat" type="checkbox" data-product name="properties[Selected Placemat]" value="None">
+                          <label for="add-selected-mat">Add selected placemat</label>
+                        </p>
+                  </div>
+                {% endcomment %}
+              </div>
+            {% endif %}
+              {% if section.settings.display_subtotal and current_variant.available %}
+                <div class="total-price">
+                  <label
                     {% if settings.enable_multilang %}
-                      data-translate="products.product.add_to_cart"
+                      data-translate="cart.general.subtotal"
                     {% endif %}
-                    id="product-add-to-cart"
-                    data-form-id="#add-to-cart-form"
                   >
-                    {{- 'products.product.add_to_cart' | t -}}
-                  </a>
-                {% endif %}
+                    {{ 'cart.general.subtotal' | t }}:
+                  </label>
+                  <span class="total-money">
+                    {{ current_variant.price | money }}
+                  </span>
+                </div>
+              {% endif %}
 
-              {% else %}
-                <a
-                  name="add"
-                  href="javascript:void(0)"
-                  onclick="addItem('add-to-cart-form');"
-                  class="btn"
-                  {% if settings.enable_multilang %}
-                    data-translate="products.product.unavailable"
+              {% if settings.enable_checkbox %}
+                <div class="groups-btn">
+                  {% if current_variant.available %}
+                    {% if current_variant.inventory_management %}
+                      {% assign first_inventory = current_variant.inventory_quantity %}
+
+                      {% if first_inventory > 0 %}
+                        <input
+                          data-btn-addToCart
+                          type="submit"
+                          name="add"
+                          class="btn"
+                          {% if settings.enable_multilang %}
+                            data-translate="products.product.add_to_cart"
+                          {% endif %}
+                          id="product-add-to-cart"
+                          value="{{ 'products.product.add_to_cart' | t }}"
+                          data-form-id="#add-to-cart-form"
+                        >
+                      {% else %}
+                        <input
+                          data-btn-addToCart
+                          type="submit"
+                          name="add"
+                          class="btn"
+                          {% if settings.enable_multilang %}
+                            data-translate="products.product.pre_order"
+                          {% endif %}
+                          id="product-add-to-cart"
+                          value="{{ 'products.product.pre_order' | t }}"
+                          data-form-id="#add-to-cart-form"
+                        >
+                      {% endif %}
+
+                    {% else %}
+                      <input
+                        data-btn-addToCart
+                        type="submit"
+                        name="add"
+                        class="btn"
+                        {% if settings.enable_multilang %}
+                          data-translate="products.product.add_to_cart"
+                        {% endif %}
+                        id="product-add-to-cart"
+                        value="{{ 'products.product.add_to_cart' | t }}"
+                        data-form-id="#add-to-cart-form"
+                      >
+                    {% endif %}
+
+                  {% else %}
+                    <input
+                      type="submit"
+                      name="add"
+                      class="btn"
+                      {% if settings.enable_multilang %}
+                        data-translate="products.product.unavailable"
+                      {% endif %}
+                      id="product-add-to-cart"
+                      disabled
+                      value="{{ 'products.product.unavailable' | t }}"
+                    >
                   {% endif %}
-                  id="product-add-to-cart"
-                  disabled
-                >
-                  {{- 'products.product.unavailable' | t -}}
-                </a>
+
+                  {% render 'wishlist-product' %}
+                  <div class="checkbox-group">
+                    <input class="conditions" type="checkbox" name="conditions">
+                    <label>{% render 'multilang' with settings.checkbox_text %}</label>
+                  </div>
+                  <div class="btn-checkout show">
+                    {% if section.settings.enable_payment_button and current_variant.available %}
+                      {{ form | payment_button }}
+                    {% endif %}
+                  </div>
+                </div>
+              {% else %}
+                <div class="groups-btn">
+                  {% if current_variant.available %}
+                    {% if current_variant.inventory_management %}
+                      {% assign first_inventory = current_variant.inventory_quantity %}
+
+                      {% if first_inventory > 0 %}
+                        <a
+                          name="add"
+                          href="javascript:void(0)"
+                          onclick="addItem('add-to-cart-form');"
+                          class="btn"
+                          {% if settings.enable_multilang %}
+                            data-translate="products.product.add_to_cart"
+                          {% endif %}
+                          id="product-add-to-cart"
+                          data-form-id="#add-to-cart-form"
+                        >
+                          {{- 'products.product.add_to_cart' | t -}}
+                        </a>
+                      {% else %}
+                        <a
+                          name="add"
+                          href="javascript:void(0)"
+                          onclick="addItem('add-to-cart-form');"
+                          class="btn"
+                          {% if settings.enable_multilang %}
+                            data-translate="products.product.pre_order"
+                          {% endif %}
+                          id="product-add-to-cart"
+                          data-form-id="#add-to-cart-form"
+                        >
+                          {{- 'products.product.pre_order' | t -}}
+                        </a>
+                      {% endif %}
+
+                    {% else %}
+                      <a
+                        name="add"
+                        href="javascript:void(0)"
+                        onclick="addItem('add-to-cart-form');"
+                        class="btn"
+                        {% if settings.enable_multilang %}
+                          data-translate="products.product.add_to_cart"
+                        {% endif %}
+                        id="product-add-to-cart"
+                        data-form-id="#add-to-cart-form"
+                      >
+                        {{- 'products.product.add_to_cart' | t -}}
+                      </a>
+                    {% endif %}
+
+                  {% else %}
+                    <a
+                      name="add"
+                      href="javascript:void(0)"
+                      onclick="addItem('add-to-cart-form');"
+                      class="btn"
+                      {% if settings.enable_multilang %}
+                        data-translate="products.product.unavailable"
+                      {% endif %}
+                      id="product-add-to-cart"
+                      disabled
+                    >
+                      {{- 'products.product.unavailable' | t -}}
+                    </a>
+                  {% endif %}
+
+                  {%- comment -%}
+                     {% if first_inventory > 0 %}
+                     <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
+                     {% else %}
+                     <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.pre_order"{%endif%} id="product-add-to-cart" value="{{ 'products.product.pre_order' | t }}" data-form-id="#add-to-cart-form">
+                     {% endif %}
+                    {% else %}
+                     <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
+                    {% endif %}
+
+                     {% else %}
+                     <input type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}" >
+                     {% endif %}
+                  {%- endcomment -%}
+                  {% render 'wishlist-product' %}
+
+                  {% if section.settings.enable_payment_button and current_variant.available %}
+                    {{ form | payment_button }}
+                  {% endif %}
+                </div>
               {% endif %}
-
-              {%- comment -%}
-                 {% if first_inventory > 0 %}
-                 <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
-                 {% else %}
-                 <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.pre_order"{%endif%} id="product-add-to-cart" value="{{ 'products.product.pre_order' | t }}" data-form-id="#add-to-cart-form">
-                 {% endif %}
-                {% else %}
-                 <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
-                {% endif %}
-
-                 {% else %}
-                 <input type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}" >
-                 {% endif %}
-              {%- endcomment -%}
-              {% render 'wishlist-product' %}
-
-              {% if section.settings.enable_payment_button and current_variant.available %}
-                {{ form | payment_button }}
-              {% endif %}
-            </div>
-          {% endif %}
+          {% endcomment %}
         {% endform %}
         {% render 'da-restock' %}
         {% render 'zoorix-product-main' %}

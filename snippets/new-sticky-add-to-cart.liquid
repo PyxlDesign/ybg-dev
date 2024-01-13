@@ -56,19 +56,64 @@
   </div>
 </div>
 
+<style>
+  #smile-ui-lite-launcher-frame-container {
+    bottom: 20px;
+    transition: bottom 0.5s ease-in-out;
+  }
+  #smile-ui-lite-launcher-frame-container.shift-up {
+    bottom: 90px !important;
+  }
+</style>
+
 <script defer>
   function stickyAddToCart() {
     const stickyAddToCart = $('.sticky-add-to-cart-group');
     const productAddToCart = $('#product-add-to-cart');
     const productAddToCartOffset = productAddToCart.offset().top + 100;
+    // Move smile-ui up when active
+    const smileUI = $('#smile-ui-lite-launcher-frame-container');
+
+    // Check if smileUI is on the page
+    if (!smileUI.length) {
+      checkSmileUI();
+    }
 
     $(window).on('scroll', function () {
       if (window.pageYOffset > productAddToCartOffset) {
         stickyAddToCart.addClass('show').slideDown();
+        shiftSmileUI();
       } else {
         stickyAddToCart.removeClass('show').slideUp();
+        shiftSmileUI();
       }
     });
+  }
+
+  // Checks if smileUI is on the page every 100ms for 5 seconds
+  function checkSmileUI() {
+    let counter = 0;
+    const interval = setInterval(function () {
+      const smileUI = $('#smile-ui-lite-launcher-frame-container');
+      if (smileUI.length) {
+        clearInterval(interval);
+        shiftSmileUI();
+      } else if (counter >= 50) {
+        clearInterval(interval);
+      }
+      counter++;
+    }, 100);
+  }
+
+  function shiftSmileUI() {
+    const smileUI = $('#smile-ui-lite-launcher-frame-container');
+    const stickyAddToCart = $('.sticky-add-to-cart-group');
+
+    if (stickyAddToCart.hasClass('show')) {
+      smileUI.addClass('shift-up');
+    } else {
+      smileUI.removeClass('shift-up');
+    }
   }
 
   $(document).ready(function () {
