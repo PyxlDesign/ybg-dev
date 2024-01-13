@@ -80,17 +80,23 @@
         </div>
 
         <div class="tab-content active" data-TabContent id="collapse-tab1">
-            {% if settings.enable_multilang and des contains '[lang2]' %}
-            <div class="lang1">
-                {{ des | split: '[lang2]' | first }}
-            </div>
-            <div class="lang2">
-                {{ des | split: '[lang2]' | last }}
-            </div>
+            {% if section.settings.description != blank %}
+              <div class="custom-description">
+                {{ section.settings.description }}
+              </div>
             {% else %}
-            <div>
+              {% if settings.enable_multilang and des contains '[lang2]' %}
+              <div class="lang1">
                 {{ des | split: '[lang2]' | first }}
-            </div>
+              </div>
+              <div class="lang2">
+                {{ des | split: '[lang2]' | last }}
+              </div>
+              {% else %}
+              <div>
+                {{ des | split: '[lang2]' | first }}
+              </div>
+              {% endif %}
             {% endif %}
 
             {% render 'product-detail-gallery_lookbook', product: product %}
