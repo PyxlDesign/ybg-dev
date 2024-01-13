@@ -6227,8 +6227,36 @@
       },
       "reasons-to-buy-leg-wraps": {
         "type": "reasons-to-buy-leg-wraps",
+        "blocks": {
+          "reason_y6yaDM": {
+            "type": "reason",
+            "settings": {
+              "title": "INSTANT UPGRADE",
+              "content": "<p>Looks like a high-end highchair without breaking the bank.<\/p>"
+            }
+          },
+          "reason_qzydRp": {
+            "type": "reason",
+            "settings": {
+              "title": "REMOVE THE GUESSWORK",
+              "content": "<p>Pre-cut strips so you don't have to measure or cut.<\/p>"
+            }
+          },
+          "reason_bmJnTw": {
+            "type": "reason",
+            "settings": {
+              "title": "THICKER AND MORE DURABLE",
+              "content": "<p>High-quality vinyl doesn't bubble or tear as easily as contact paper.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_y6yaDM",
+          "reason_qzydRp",
+          "reason_bmJnTw"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "heading": "Why Leg Wraps?"
         }
       },
       "reasons-to-buy-bags": {
