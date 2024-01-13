@@ -128,7 +128,7 @@
 <script defer>
   function moveUpSellApp(time) {
     const upSellApp = $('lb-upsell-product-page-addon');
-    const timer = time || 500;
+    const timer = time || 100;
 
     // If we have exceeded 5 seconds, stop trying to move the upSellApp
     if (timer > 5000) {
@@ -137,9 +137,9 @@
 
     // Check if upSellApp is loaded
     if (upSellApp.length === 0 && timer <= 5000) {
-      // Check again in 500ms
+      // Check again in 100ms
       setTimeout(() => {
-        moveUpSellApp(timer + 500);
+        moveUpSellApp(timer + 100);
       }, timer);
       return;
     }
