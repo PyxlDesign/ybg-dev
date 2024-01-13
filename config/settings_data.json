@@ -6294,6 +6294,12 @@
           "featured_image": "shopify:\/\/shop_images\/restaurantbags-37_51707b93-8f07-49e6-a4eb-ea664abd2f35.jpg",
           "heading": "Why Restaurant Bags?"
         }
+      },
+      "reasons-to-buy-all-you-tensil": {
+        "type": "reasons-to-buy-all-you-tensil",
+        "settings": {
+          "heading": ""
+        }
       }
     },
     "content_for_index": [
