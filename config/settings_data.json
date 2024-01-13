@@ -4874,12 +4874,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a> \nfor your baby, scoot baby closer to the tray and <a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<p> \n<\/p><ul>\n<li> Handsewn in the US <\/li>\n<li> Patterns designed by indie artists who directly benefit from each sale <\/li>\n<li> Machine washable <\/li>\n<li> Zipper closure <\/li>\n<li> Cover can be used with our <a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a> or the IKEA Antilop support cushion (insert sold separately)<\/li>\n<\/ul><p>\n<i>Please note: While we have done our best to accurately represent the color, position, and scale of this design, the finished product may be slightly different than appears in the preview. <\/i><\/p>",
+          "description": "Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a> \nfor your baby, scoot baby closer to the tray and <a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<p> \n<\/p><ul>\n<li> Handsewn in the US <\/li>\n<li> Patterns designed by indie artists who directly benefit from each sale <\/li>\n<li> Machine washable <\/li>\n<li> Zipper closure <\/li>\n<li> Cover can be used with our <a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a> or the IKEA Antilop support cushion (insert sold separately)<\/li>\n<\/ul>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Materials",
-          "shipping_returns_content": "<ul>\n    <li> 100% natural cotton <\/li>\n    <li> Front side design is printed with eco-friendly, wash-safe inks <\/li>\n<li> Back side is solid grey Kona Cotton <\/li>\n<\/ul>",
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n    <li> 100% natural cotton <\/li>\n    <li> Front side design is printed with eco-friendly, wash-safe inks <\/li>\n<li> Back side is solid grey Kona Cotton <\/li>\n<\/ul>\n<p><i>Please note: While we have done our best to accurately represent the color, position, and scale of this design, the finished product may be slightly different than appears in the preview. <\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "all",
@@ -6192,20 +6192,107 @@
       },
       "reasons-to-buy-footrest": {
         "type": "reasons-to-buy-footrest",
+        "blocks": {
+          "reason_wXPf6C": {
+            "type": "reason",
+            "settings": {
+              "title": "HAPPIER BABY",
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, and a lack of interest in eating.<\/p>"
+            }
+          },
+          "reason_9PfJXJ": {
+            "type": "reason",
+            "settings": {
+              "title": "IMPROVES FINE MOTOR SKILLS",
+              "content": "<p>Stable babies can focus on fine motor skills like picking up food, chewing and swallowing.<\/p>"
+            }
+          },
+          "reason_Lke7Q9": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFER SWALLOW",
+              "content": "<p>Foot support and trunk stability help facilitate a safe swallow.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_wXPf6C",
+          "reason_9PfJXJ",
+          "reason_Lke7Q9"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/YBG.2-24_KRK_34765414-9253-4ed2-8c8a-c76b3d153462.jpg",
+          "heading": "Why Footrests?"
         }
       },
       "reasons-to-buy-leg-wraps": {
         "type": "reasons-to-buy-leg-wraps",
+        "blocks": {
+          "reason_y6yaDM": {
+            "type": "reason",
+            "settings": {
+              "title": "INSTANT UPGRADE",
+              "content": "<p>Looks like a high-end highchair without breaking the bank.<\/p>"
+            }
+          },
+          "reason_qzydRp": {
+            "type": "reason",
+            "settings": {
+              "title": "REMOVE THE GUESSWORK",
+              "content": "<p>Pre-cut strips so you don't have to measure or cut.<\/p>"
+            }
+          },
+          "reason_bmJnTw": {
+            "type": "reason",
+            "settings": {
+              "title": "THICKER AND MORE DURABLE",
+              "content": "<p>High-quality vinyl doesn't bubble or tear as easily as contact paper.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_y6yaDM",
+          "reason_qzydRp",
+          "reason_bmJnTw"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-276.jpg",
+          "heading": "Why Leg Wraps?"
         }
       },
       "reasons-to-buy-bags": {
         "type": "reasons-to-buy-bags",
+        "blocks": {
+          "reason_E3w8qi": {
+            "type": "reason",
+            "settings": {
+              "title": "FOOD SCISSORS",
+              "content": "<p>Quickly cut food into bite-sized pieces (which also helps it cool faster!)<\/p>"
+            }
+          },
+          "reason_PMDtTc": {
+            "type": "reason",
+            "settings": {
+              "title": "SILICONE PLACEMAT",
+              "content": "<p>FDA food-grade silicone placemats are a safe place to lay your little one’s food in public spaces<\/p>"
+            }
+          },
+          "reason_FkhzzW": {
+            "type": "reason",
+            "settings": {
+              "title": "ZIPPER TOTE",
+              "content": "<p>Wipeable interior is perfect for messy bibs, extra snacks or sanitizing wipes<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_E3w8qi",
+          "reason_PMDtTc",
+          "reason_FkhzzW"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/restaurantbags-37_51707b93-8f07-49e6-a4eb-ea664abd2f35.jpg",
+          "heading": "Why Restaurant Bags?"
         }
       }
     },
