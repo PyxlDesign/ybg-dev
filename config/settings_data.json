@@ -6297,8 +6297,37 @@
       },
       "reasons-to-buy-all-you-tensil": {
         "type": "reasons-to-buy-all-you-tensil",
+        "blocks": {
+          "reason_9aBwXL": {
+            "type": "reason",
+            "settings": {
+              "title": "SETS BABY UP FOR SUCCESS",
+              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills<\/p>"
+            }
+          },
+          "reason_VTjnEA": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Can be used for self-feeding or parent-led feeding with purees<\/p>"
+            }
+          },
+          "reason_9mitEH": {
+            "type": "reason",
+            "settings": {
+              "title": "HELPS DEVELOP NEW SKILLS",
+              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_9aBwXL",
+          "reason_VTjnEA",
+          "reason_9mitEH"
+        ],
         "settings": {
-          "heading": ""
+          "featured_image": "shopify:\/\/shop_images\/YBG-20_245d79f4-499c-4424-9d2e-3f1782471dc4.jpg",
+          "heading": "Why All You-Tensils?"
         }
       }
     },
