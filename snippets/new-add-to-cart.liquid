@@ -124,3 +124,34 @@
     {% endif %}
   </div>
 {% endif %}
+
+<script defer>
+  function moveUpSellApp(time) {
+    const upSellApp = $('lb-upsell-product-page-addon');
+    const timer = time || 500;
+
+    // If we have exceeded 5 seconds, stop trying to move the upSellApp
+    if (timer > 5000) {
+      return;
+    }
+
+    // Check if upSellApp is loaded
+    if (upSellApp.length === 0 && timer <= 5000) {
+      // Check again in 500ms
+      setTimeout(() => {
+        moveUpSellApp(timer + 500);
+      }, timer);
+      return;
+    }
+
+    // Check if the upSellApp is inside #add-to-cart-form
+    if (!upSellApp.closest('#add-to-cart-form')) {
+      // Move the upSellApp inside #add-to-cart-form
+      upSellApp.insertAfter('.add-to-cart-group');
+    } else if (upSellApp.closest('.add-to-cart-group')) {
+      // Move the upSellApp outside .add-to-cart-group
+      upSellApp.insertAfter('.add-to-cart-group');
+    }
+  }
+  moveUpSellApp();
+</script>
