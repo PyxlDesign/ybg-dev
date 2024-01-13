@@ -83,7 +83,7 @@
       if (window.pageYOffset > productAddToCartOffset) {
         stickyAddToCart.addClass('show').slideDown();
         shiftSmileUI();
-    } else {
+      } else {
         stickyAddToCart.removeClass('show').slideUp();
         shiftSmileUI();
       }
@@ -91,19 +91,19 @@
   }
 
   // Checks if smileUI is on the page every 100ms for 5 seconds
-    function checkSmileUI() {
-        let counter = 0;
-        const interval = setInterval(function () {
-            const smileUI = $('#smile-ui-lite-launcher-frame-container');
-            if (smileUI.length) {
-                clearInterval(interval);
-                shiftSmileUI();
-            } else if (counter >= 50) {
-                clearInterval(interval);
-            }
-            counter++;
-        }, 100);
-    }
+  function checkSmileUI() {
+    let counter = 0;
+    const interval = setInterval(function () {
+      const smileUI = $('#smile-ui-lite-launcher-frame-container');
+      if (smileUI.length) {
+        clearInterval(interval);
+        shiftSmileUI();
+      } else if (counter >= 50) {
+        clearInterval(interval);
+      }
+      counter++;
+    }, 100);
+  }
 
   function shiftSmileUI() {
     const smileUI = $('#smile-ui-lite-launcher-frame-container');
@@ -113,6 +113,7 @@
     } else {
       smileUI.removeClass('shift-up');
     }
+  }
 
   $(document).ready(function () {
     stickyAddToCart();
