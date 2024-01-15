@@ -5108,60 +5108,6 @@
           "caption_size": 22
         }
       },
-      "testimonials-slider-cushions-2": {
-        "type": "testimonials-slider-cushions-2",
-        "blocks": {
-          "3f7276d1-d636-45f6-bdca-09df9aeb73fc": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#cc6b3a"
-            }
-          },
-          "33627f94-6895-4382-b782-c7ec1e3ad83b": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "When I tell you I am OBSESSED with these covers…it’s all I use. Clean up is so easy I could cry.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": ""
-            }
-          },
-          "fc84d6bd-8b6b-49b6-9d42-216b48b141ed": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "The vegan leather covers are SO GOOD! My whole YBG highchair set up is so fast and easy to clean up which is what I dreaded about my first highchair.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#bac8b6"
-            }
-          }
-        },
-        "block_order": [
-          "3f7276d1-d636-45f6-bdca-09df9aeb73fc",
-          "33627f94-6895-4382-b782-c7ec1e3ad83b",
-          "fc84d6bd-8b6b-49b6-9d42-216b48b141ed"
-        ],
-        "settings": {
-          "section_title": "Your Section title goes here",
-          "title_color": "#ffffff",
-          "title_size": 60,
-          "section_caption": "Your caption goes here",
-          "caption_color": "#ffffff",
-          "caption_size": 22
-        }
-      },
       "testimonials-slider-cushions-1": {
         "type": "testimonials-slider-cushions-1",
         "blocks": {
@@ -5341,60 +5287,6 @@
           "choose_options": "Choose Options | Wählen Sie Optionen",
           "enable_bundle_discount": false,
           "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
-        }
-      },
-      "testimonials-slider-placemats-2": {
-        "type": "testimonials-slider-placemats-2",
-        "blocks": {
-          "3f200699-0a49-4221-a851-5570c8aa8fe8": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "You know it's good when your husband points out, 'Man, this was a great purchase.' Makes clean up so much easier since the IKEA tray is so hard to remove.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#cc6b3a"
-            }
-          },
-          "053d7314-5740-497a-86ce-cd2e297e01cc": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "BUY THIS PLACEMAT! I literally say to myself at least twice a day, 'Man I love this thing.' Honestly best invention ever!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": ""
-            }
-          },
-          "e721fe3e-de68-4139-84c2-ee8aee6d37fe": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "I bought the  cushion cover first and didn't buy the  placemat because I thought, 'Eehh, I don't really need that.'  Do yourself a favor, buy the  placemat. It's amazing. It makes messes a MILLION  times easier to clean!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#bac8b6"
-            }
-          }
-        },
-        "block_order": [
-          "3f200699-0a49-4221-a851-5570c8aa8fe8",
-          "053d7314-5740-497a-86ce-cd2e297e01cc",
-          "e721fe3e-de68-4139-84c2-ee8aee6d37fe"
-        ],
-        "settings": {
-          "section_title": "",
-          "title_color": "#ffffff",
-          "title_size": 60,
-          "section_caption": "",
-          "caption_color": "#ffffff",
-          "caption_size": 22
         }
       },
       "placemats-reasons-to-buy-1": {
@@ -6128,41 +6020,6 @@
           "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
         }
       },
-      "reasons-to-buy": {
-        "type": "reasons-to-buy",
-        "blocks": {
-          "reason_EERe9W": {
-            "type": "reason",
-            "settings": {
-              "title": "SAFE POSITIONING",
-              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position.<\/p>"
-            }
-          },
-          "reason_jznGxp": {
-            "type": "reason",
-            "settings": {
-              "title": "LESS GAP",
-              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!).<\/p>"
-            }
-          },
-          "reason_UmPfq4": {
-            "type": "reason",
-            "settings": {
-              "title": "KEEPS MOM HAPPY",
-              "content": "<p>Match your home decor or switch covers for holidays and special occasions!<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "reason_EERe9W",
-          "reason_jznGxp",
-          "reason_UmPfq4"
-        ],
-        "settings": {
-          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
-          "heading": "Why Cushions?"
-        }
-      },
       "reasons-to-buy-floormat": {
         "type": "reasons-to-buy-floormat",
         "blocks": {
@@ -6328,6 +6185,41 @@
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/YBG-20_245d79f4-499c-4424-9d2e-3f1782471dc4.jpg",
           "heading": "Why All You-Tensils?"
+        }
+      },
+      "reasons-to-buy-cushions": {
+        "type": "reasons-to-buy-cushions",
+        "blocks": {
+          "reason_J6HWrx": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFE POSITIONING",
+              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position.<\/p>"
+            }
+          },
+          "reason_J7mnTf": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS GAP",
+              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!).<\/p>"
+            }
+          },
+          "reason_m86dbW": {
+            "type": "reason",
+            "settings": {
+              "title": "ADDS JOY TO HOME",
+              "content": "<p>Match your home decor or switch covers for holidays and special occasions!<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_J6HWrx",
+          "reason_J7mnTf",
+          "reason_m86dbW"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
+          "heading": "Why Cushions?"
         }
       }
     },
