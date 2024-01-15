@@ -6310,6 +6310,41 @@
           "caption_color": "#fff",
           "caption_size": 22
         }
+      },
+      "reasons-to-buy-placemats": {
+        "type": "reasons-to-buy-placemats",
+        "blocks": {
+          "reason_Dt9RBB": {
+            "type": "reason",
+            "settings": {
+              "title": "EASY CLEAN UP",
+              "content": "<p>Quick and easy clean up without having to remove the highchair tray.<\/p>"
+            }
+          },
+          "reason_YWc7HA": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFETY TESTED",
+              "content": "<p>Unlike plastic or lower-grade silicones, food-grade silicone contains no lead, phthalates, BPAs or other harsh chemicals<\/p>"
+            }
+          },
+          "reason_PP8frJ": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS SLIP",
+              "content": "<p>Slip-resistant silicone makes it easier for fingers to pick up food.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_Dt9RBB",
+          "reason_YWc7HA",
+          "reason_PP8frJ"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/untitled-89b_5d55cae1-85e6-4f25-a39d-7ddccfc93955.jpg",
+          "heading": "Why Placemats?"
+        }
       }
     },
     "content_for_index": [
