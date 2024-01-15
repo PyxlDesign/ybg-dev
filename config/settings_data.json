@@ -6221,6 +6221,95 @@
           "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
           "heading": "Why Cushions?"
         }
+      },
+      "reasons-to-buy-vegan-cushions": {
+        "type": "reasons-to-buy-vegan-cushions",
+        "blocks": {
+          "reason_U9CfmB": {
+            "type": "reason",
+            "settings": {
+              "title": "WIPEABLE",
+              "content": "<p>Easy to clean, just wipe after meals.<\/p>"
+            }
+          },
+          "reason_YgHJxE": {
+            "type": "reason",
+            "settings": {
+              "title": "SOLID COLORS",
+              "content": "<p>Minimal solid colors pair especially well with our specialty placemats.<\/p>"
+            }
+          },
+          "reason_hc9KLT": {
+            "type": "reason",
+            "settings": {
+              "title": "MATCHING BACK SIDE",
+              "content": "<p>Front and back are the same wipeable vegan leather so you can use either side.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_U9CfmB",
+          "reason_YgHJxE",
+          "reason_hc9KLT"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/QY5A7630-Edit.jpg",
+          "heading": "Why Vegan Leather Covers?"
+        }
+      },
+      "testimonials-slider-vegan-cushions": {
+        "type": "testimonials-slider-vegan-cushions",
+        "blocks": {
+          "testimonial_FYi7mR": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cc6b3a"
+            }
+          },
+          "testimonial_Je8KxT": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "When I tell you I am OBSESSED with these covers…it’s all I use. Clean up is so easy I could cry.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_AnK8zU": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "The vegan leather covers are SO GOOD! My whole YBG highchair set up is so fast and easy to clean up which is what I dreaded about my first highchair.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_FYi7mR",
+          "testimonial_Je8KxT",
+          "testimonial_AnK8zU"
+        ],
+        "settings": {
+          "section_title": "Your Section title goes here",
+          "title_color": "#fff",
+          "title_size": 60,
+          "section_caption": "Your caption goes here",
+          "caption_color": "#fff",
+          "caption_size": 22
+        }
       }
     },
     "content_for_index": [
