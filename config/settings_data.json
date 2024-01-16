@@ -4456,7 +4456,7 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<p>Extra-large, multi-purpose silicone mat can be used under the highchair or for a multitude of activities! Wipeable and slip-resistant, perfect for messy crafts, playdoh, puzzles, baking, legos, or sensory activities.<\/p>",
+          "description": "<p>Highchair floor mat and so much more! Our extra-large silicone mat was designed to sit under highchairs during mealtimes, but there are so many creative ways to use it. Wipeable and slip-resistant, perfect for messy crafts, playdoh, puzzles, baking, legos, or sensory activities.<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
@@ -6027,20 +6027,28 @@
             "type": "reason",
             "settings": {
               "title": "UNDER HIGHCHAIR",
-              "content": "<p>Non-skid silicone keeps the mat in place and the highchair from sliding.<\/p>"
+              "content": "<p>Non-skid silicone keeps the mat in place and the highchair from sliding<\/p>"
             }
           },
           "reason_bTHnfi": {
             "type": "reason",
             "settings": {
               "title": "YEARS OF USE",
-              "content": "<p>Can be used for messy activities and crafts long after babies outgrow their highchair.<\/p>"
+              "content": "<p>Can be used for messy activities and crafts long after babies outgrow their highchair<\/p>"
+            }
+          },
+          "reason_FM4zCh": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Non-stick, non-slip, heat-resistant...from baking to crafting, let your creativity go wild!<\/p>"
             }
           }
         },
         "block_order": [
           "reason_3CMCf4",
-          "reason_bTHnfi"
+          "reason_bTHnfi",
+          "reason_FM4zCh"
         ],
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/floormats-258.jpg",
