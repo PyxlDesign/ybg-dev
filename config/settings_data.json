@@ -3129,7 +3129,7 @@
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55  <br\/>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
+          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
           "color_bg": "rgba(0,0,0,0)",
           "color_text": "#637175",
           "color_link": "#d69a81",
