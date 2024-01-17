@@ -1,6 +1,8 @@
-{% if settings.product_layout == "product-default-gift-card" %}
+{% render 'product-default-gift-card' %}
 
-{% render 'product-default' %}
+{%- comment -%}
+{% if settings.product_layout == "default" %}
+
 
 {% elsif settings.product_layout == "grouped" %}
 
@@ -19,6 +21,7 @@
 {% render 'product-full-width' %}
 
 {% endif %}
+{%- endcomment -%}
 
 
 
