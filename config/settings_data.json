@@ -3130,8 +3130,8 @@
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
-          "color_bg": "rgba(0,0,0,0)",
-          "color_text": "#637175",
+          "color_bg": "#637175",
+          "color_text": "#fffcf8",
           "color_link": "#d69a81",
           "wishlist": false,
           "wishlist_url": "shopify:\/\/pages\/wish-list"
