@@ -33,7 +33,9 @@ body.is-scrolling-down .site-header {
 }
 
 .site-header .notification-bar {
-    padding: 5px 0;
+    padding: 6px 0;
+    position: relative;
+    top: -6px;
 }
 
 .site-header .notification-bar p {
