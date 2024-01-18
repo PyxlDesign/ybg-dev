@@ -3143,7 +3143,7 @@
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Desktop_Hero.jpg",
+              "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Desktop_Hero_e33e2da2-c170-4ad3-a73e-40a9eced1d25.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
             }
           },
@@ -5855,6 +5855,26 @@
       },
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
+        "blocks": {
+          "hero_slide_FzXpjh": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
+            }
+          },
+          "hero_slide_V3BgWL": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
+            }
+          }
+        },
+        "block_order": [
+          "hero_slide_FzXpjh",
+          "hero_slide_V3BgWL"
+        ],
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
