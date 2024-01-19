@@ -725,6 +725,8 @@ span.placemat_img span {
     .testimonials .testimoinal-block .content-box .blockquote {
         margin-bottom: 16px;
     }
+    
+    .testimonials .testimoinal-block .content-box .h1,
     .testimonials .testimonial-block-outer .testimoinal-block .content-box .h2,
     .testimonials .testimoinal-block .content-box .h2 {
         font-size: 18px !important;
