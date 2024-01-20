@@ -7085,6 +7085,10 @@ table {
         border-bottom: 1px solid $border_bt_sidebar;
         @include flexbox();
 
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+
         .tab-title {
             margin: 0 -1px 0 0;
         }
@@ -9466,10 +9470,6 @@ table {
         display: flex;
         gap: 20px;
         line-height: 1;
-
-        @media screen and (max-width: 767) {
-            margin-bottom: 15px;
-        }
 
         .tab-links {
             background: transparent;
