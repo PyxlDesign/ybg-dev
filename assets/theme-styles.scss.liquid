@@ -9467,6 +9467,10 @@ table {
         gap: 20px;
         line-height: 1;
 
+        @media screen and (max-width: 767) {
+            margin-bottom: 15px;
+        }
+
         .tab-links {
             background: transparent;
             color: #df9764;
@@ -9495,6 +9499,11 @@ table {
             position: relative;
             max-width: 800px;
             color: #637175;
+            
+            a {
+                color: #e9ae86;
+                text-decoration: underline !important;
+            }
 
             &.show-more {
                 max-height: 200px;
