@@ -3144,7 +3144,7 @@
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
-          "use_hero_slider": true,
+          "use_hero_slider": false,
           "hero_caption": "Cuter. Safer. Complete customization.",
           "caption_color": "#30494d",
           "caption_size": 22,
