@@ -23,14 +23,17 @@
 {% assign btn_hover_color = s.btn_hover_color %}
 <style>
   #shopify-section-{{section.id}} .hero{
-      {% if s.hero_background != blank -%}
-      background: url({{ background | img_url : "master" }});
-      {%else%}
-      background: url({{ background }})
-      {% endif %}
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+        {% if s.hero_background != blank -%}
+        background: url({{ background | img_url : "master" }});
+        {%else%}
+        background: url({{ background }})
+        {% endif %}
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        {% if !use_hero_slider %}
+        min-height: 812px;
+        {% endif %}
   }
   #shopify-section-{{section.id}} #hero-slider {
     position: relative;
@@ -53,7 +56,6 @@
     object-fit: cover;
     object-position: center;
     width: auto;
-    min-height: 812px;
   }
   #shopify-section-{{section.id}} .hero .flex-container{
       min-height: 812px;
@@ -131,7 +133,7 @@
             cssEase: 'linear',
             autoplay: true,
             arrows: false,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 7500,
             pauseOnHover: false,
             pauseOnFocus: false,
           })

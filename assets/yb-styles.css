@@ -11122,7 +11122,6 @@ body.is-scrolling-down .site-header {
     background: url(hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 812px
 }
 
 @media (max-width: 767px) {
