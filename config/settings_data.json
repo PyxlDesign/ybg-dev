@@ -5883,7 +5883,7 @@
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
           "title_size": 70,
-          "use_hero_slider": false,
+          "use_hero_slider": true,
           "hero_caption": "Cuter. Safer. <br>Complete<br> customization.",
           "caption_color": "#30494d",
           "caption_size": 22,
