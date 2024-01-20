@@ -32,7 +32,14 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-  }
+    }
+    {% if !use_hero_slider %}
+        @media (max-width: 767px) {
+            #shopify-section-{{section.id}} .hero {
+                min-height: 70vh;
+            }
+        }
+    {% endif %}
   #shopify-section-{{section.id}} #hero-slider {
     height: 100%;
     opcity: 0;
