@@ -33,7 +33,7 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    {% if !use_hero_slider %}
+    {% if use_hero_slider == false %}
         @media (max-width: 767px) {
             #shopify-section-{{section.id}} .hero {
                 min-height: 70vh;
