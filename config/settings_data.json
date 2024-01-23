@@ -6504,6 +6504,49 @@
       },
       "testimonials-slider-dinnerware": {
         "type": "testimonials-slider-dinnerware",
+        "blocks": {
+          "testimonial_ECK3kB": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Love that they're flexible while still having structure. They're just the right size, and the colors are precious!! Perfect for both our 15mo and 3yo!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_UfzQpw": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Holy. Smokes. Just got two full sets of dishes + silverware, and my mouth is truly open. It is SO beautiful! I can’t stop staring. From the top to the bottom, I am SO impressed.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_ingURK": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "It’s not only aesthetically pleasing and matches my decor, but also indestructible by these little mischievous hands that have broken way too many of my ceramics!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_ECK3kB",
+          "testimonial_UfzQpw",
+          "testimonial_ingURK"
+        ],
         "settings": {
           "section_title": "Your Section title goes here",
           "title_color": "#fff",
