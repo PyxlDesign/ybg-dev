@@ -6469,8 +6469,36 @@
       },
       "reasons-to-buy-dinnerware": {
         "type": "reasons-to-buy-dinnerware",
+        "blocks": {
+          "reason_7MhYfC": {
+            "type": "reason",
+            "settings": {
+              "title": "INTENTIONAL",
+              "content": "<p>Supports next steps in your child's feeding journey<\/p>"
+            }
+          },
+          "reason_8zznFb": {
+            "type": "reason",
+            "settings": {
+              "title": "NON-SUCTION",
+              "content": "<p>Silicone dinnerware that can be used for kids of all ages<\/p>"
+            }
+          },
+          "reason_PNBar7": {
+            "type": "reason",
+            "settings": {
+              "title": "INSPIRED DESIGN",
+              "content": "<p>Original design was inspired by trailblazing products in other categories and trend forecasting<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_7MhYfC",
+          "reason_8zznFb",
+          "reason_PNBar7"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "heading": "Why YBG Dinnerware?"
         }
       },
       "testimonials-slider-dinnerware": {
