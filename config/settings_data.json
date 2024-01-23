@@ -6631,8 +6631,37 @@
       },
       "reasons-to-buy-fork-spoon": {
         "type": "reasons-to-buy-fork-spoon",
+        "blocks": {
+          "reason_jCb6cx": {
+            "type": "reason",
+            "settings": {
+              "title": "SUPPORTS DEVELOPMENT",
+              "content": "<p>Designed to encourage new fine motor skills like scooping and piercing<\/p>"
+            }
+          },
+          "reason_WXedp6": {
+            "type": "reason",
+            "settings": {
+              "title": "ENCOURAGE SELF-FEEDING",
+              "content": "<p>Short, wide handles are easy to hold and manipulate<\/p>"
+            }
+          },
+          "reason_tHgqir": {
+            "type": "reason",
+            "settings": {
+              "title": "SIZED RIGHT",
+              "content": "<p>Utensil heads are shaped to fit toddlers' mouths so they can easily clear food<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_jCb6cx",
+          "reason_WXedp6",
+          "reason_tHgqir"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/YBG-74_f1b9f4ef-56a7-4303-b3d3-6924cad23cd9.jpg",
+          "heading": "Why YBG Utensils?"
         }
       },
       "testimonials-slider-fork-spoon": {
