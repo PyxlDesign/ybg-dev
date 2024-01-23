@@ -6488,7 +6488,7 @@
             "type": "reason",
             "settings": {
               "title": "INSPIRED DESIGN",
-              "content": "<p>Original design was inspired by trailblazing products in other categories and trend forecasting<\/p>"
+              "content": "<p>Original design inspired by trailblazing products in other categories and trend forecasting<\/p>"
             }
           }
         },
@@ -6498,6 +6498,7 @@
           "reason_PNBar7"
         ],
         "settings": {
+          "featured_image": "shopify:\/\/shop_images\/YBG-16_64b90cd4-84cd-40d3-a527-e6fb0205dccf.jpg",
           "heading": "Why YBG Dinnerware?"
         }
       },
