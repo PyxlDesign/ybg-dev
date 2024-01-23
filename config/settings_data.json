@@ -6608,7 +6608,7 @@
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
           "shipping_returns_title": "Details",
-          "shipping_returns_content": "<ul>\n<li>Stainless steel and food-grade, FDA compliant silicone – BPA, PVC, phthalate and latex free\n<\/li>\n<li> Dishwasher safe\n<\/li>\n<\/ul><p>\n<i>Our utensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).<\/i><\/p>",
+          "shipping_returns_content": "<ul>\n<li>Stainless steel and food-grade, FDA compliant silicone\n<\/li>\n<li>BPA, PVC, phthalate and latex free\n<\/li>\n<li>Dishwasher safe\n<\/li>\n<\/ul><p>\n<i>Our utensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).<\/i><\/p>",
           "display_custom_tab": true,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
