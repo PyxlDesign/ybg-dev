@@ -6548,11 +6548,11 @@
           "testimonial_ingURK"
         ],
         "settings": {
-          "section_title": "Your Section title goes here",
-          "title_color": "#fff",
+          "section_title": "",
+          "title_color": "#ffffff",
           "title_size": 60,
           "section_caption": "Your caption goes here",
-          "caption_color": "#fff",
+          "caption_color": "#ffffff",
           "caption_size": 22
         }
       }
