@@ -6666,8 +6666,51 @@
       },
       "testimonials-slider-fork-spoon": {
         "type": "testimonials-slider-fork-spoon",
+        "blocks": {
+          "testimonial_Q7V9QL": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "My baby is 10 months old and the spoon is perfect for feeding him. Has the perfect curve for holding the food and fitting in his mouth. Not too small and not too big!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_KnTqgJ": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "The shape of the spoon is different than others we have and it seems to fit my baby's mouth better.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_E9rX9F": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "We got some other utensils (with a paci type blocker) as a gift and HATE THEM. Yours are FAR superior. My baby handles these so much better!”",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_Q7V9QL",
+          "testimonial_KnTqgJ",
+          "testimonial_E9rX9F"
+        ],
         "settings": {
-          "section_title": "Your Section title goes here",
+          "section_title": "",
           "title_color": "#fff",
           "title_size": 60,
           "section_caption": "Your caption goes here",
