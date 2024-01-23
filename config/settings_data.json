@@ -6447,7 +6447,7 @@
           "display_shipping_returns": true,
           "shipping_returns_title": "Details",
           "shipping_returns_content": "<p><i> Our dinnerware has been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).\n<\/i><\/p>",
-          "display_custom_tab": true,
+          "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
           "custom_tab_content": "",
@@ -6463,7 +6463,7 @@
           "grouped_title": "Frequently Bought Together",
           "grouped_choose_options_text": "Please choose options for all selected products",
           "choose_options": "Choose Options",
-          "enable_bundle_discount": true,
+          "enable_bundle_discount": false,
           "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
         }
       },
