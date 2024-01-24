@@ -6793,14 +6793,86 @@
       },
       "reasons-to-buy-bib": {
         "type": "reasons-to-buy-bib",
+        "blocks": {
+          "reason_3zzgDn": {
+            "type": "reason",
+            "settings": {
+              "title": "GREATER RANGE OF MOTION",
+              "content": "<p>Thin straps won't restrict arm movement<\/p>"
+            }
+          },
+          "reason_RCWTrj": {
+            "type": "reason",
+            "settings": {
+              "title": "NARROW DESIGN",
+              "content": "<p>Less bulky than the standard silicone bib<\/p>"
+            }
+          },
+          "reason_JNi8bt": {
+            "type": "reason",
+            "settings": {
+              "title": "BETTER FIT",
+              "content": "<p>Neckline can be faster smaller for petite babies, then adjusted as the child grows<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_3zzgDn",
+          "reason_RCWTrj",
+          "reason_JNi8bt"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "featured_image": "shopify:\/\/shop_images\/YBG.2-39_KRK.jpg",
+          "heading": "Why YBG Bibs?"
         }
       },
       "testimonials-slider-bib": {
         "type": "testimonials-slider-bib",
+        "blocks": {
+          "testimonial_DjWPC4": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Omg literally the perfect fit and they can grab food without reaching around and getting caught in the bib. Genius!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_nDTDmF": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "These definitely fit better and are less bulky than others. I'm very impressed with how soft they are and easy to clean!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_eb6he9": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "We have two of these bibs and I love them so much. My baby doesn't try to rip them off as much.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_DjWPC4",
+          "testimonial_nDTDmF",
+          "testimonial_eb6he9"
+        ],
         "settings": {
-          "section_title": "Your Section title goes here",
+          "section_title": "",
           "title_color": "#fff",
           "title_size": 60,
           "section_caption": "Your caption goes here",
