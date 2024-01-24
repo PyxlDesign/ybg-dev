@@ -1,6 +1,7 @@
+{% render 'product-default-bib' %}
+{%- comment -%}
 {% if settings.product_layout == "default" %}
 
-{% render 'product-default' %}
 
 {% elsif settings.product_layout == "grouped" %}
 
@@ -19,6 +20,7 @@
 {% render 'product-full-width' %}
 
 {% endif %}
+{%- endcomment -%}
 
 
 
