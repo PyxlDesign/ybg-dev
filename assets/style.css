@@ -10358,7 +10358,7 @@ body.is-scrolling-down .site-header {
 }
 
 .hero {
-  background: url(hero-bg.jpg);
+  /* background: url(hero-bg.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 812px
