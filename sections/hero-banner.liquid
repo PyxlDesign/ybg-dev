@@ -23,10 +23,12 @@
 {% assign btn_hover_color = s.btn_hover_color %}
 <style>
   #shopify-section-{{section.id}} .hero{
-        {% if s.hero_background != blank -%}
-        background: url({{ background | img_url : "master" }});
-        {%else%}
-        background: url({{ background }})
+        {% if use_hero_slider == false %}
+            {% if s.hero_background != blank  -%} 
+            background: url({{ background | img_url : "master" }});
+            {%else%}
+            background: url({{ background }})
+            {% endif %}
         {% endif %}
         background-position: center center;
         background-repeat: no-repeat;
