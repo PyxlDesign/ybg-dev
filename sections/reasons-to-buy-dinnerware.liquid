@@ -1,0 +1,88 @@
+{% liquid
+  assign s = section.settings
+  assign image = s.featured_image
+  assign heading = s.heading
+  assign blocks = section.blocks
+%}
+
+<section class="reasons-to-buy-section">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-6 reasons-to-buy-left">
+        {% if image != blank %}
+          <div class="reasons-to-buy-image">
+            {{ image | image_url: width: '800px' | image_tag }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-lg-6 reasons-to-buy-right">
+        {% if heading != blank %}
+          <h2 class="reasons-to-buy-title">{{ heading }}</h2>
+        {% endif %}
+        <div class="reason-blocks">
+          {% for block in blocks %}
+            {% liquid
+              assign bs = block.settings
+              assign title = bs.title
+              assign content = bs.content
+              assign index = forloop.index
+            %}
+            <div class="reason-block">
+              <div class="reason-block-number">
+                <span>{{ index }}</span>
+              </div>
+              <div class="reason-block-content">
+                {% if title != blank %}
+                  <h3 class="text-bronze-2 font-karla">{{ title }}</h3>
+                {% endif %}
+                {% if content != blank %}
+                  {{ content }}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Reasons to buy placemats",
+  "class": "reasons-to-buy-placemats col-12",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "featured_image",
+      "label": "Featured Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading goes here"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Reason",
+      "type": "reason",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "HAPPIER BABY"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Dangling feet can lead to fussing, shorter meal times, a lack of interst in eating.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3
+}
+{% endschema %}

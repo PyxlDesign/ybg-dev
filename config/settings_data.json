@@ -3126,12 +3126,12 @@
         "settings": {
           "header_bg": "#ffffff",
           "logo_max_width": 315,
-          "left_linklist": "",
-          "right_linklist": "",
-          "mobile_linklist": "",
-          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55  <br\/>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
-          "color_bg": "rgba(0,0,0,0)",
-          "color_text": "#637175",
+          "left_linklist": "left-menu",
+          "right_linklist": "right-menu",
+          "mobile_linklist": "mobile-navigation",
+          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
+          "color_bg": "#637175",
+          "color_text": "#fffcf8",
           "color_link": "#d69a81",
           "wishlist": false,
           "wishlist_url": "shopify:\/\/pages\/wish-list"
@@ -3139,8 +3139,29 @@
       },
       "1620411795d72a40ce": {
         "type": "hero-banner",
+        "blocks": {
+          "hero_slide_bQjNr4": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
+            }
+          },
+          "hero_slide_fmUcph": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
+            }
+          }
+        },
+        "block_order": [
+          "hero_slide_bQjNr4",
+          "hero_slide_fmUcph"
+        ],
         "settings": {
           "custom_class": "hero-desktop-banner",
+          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3211,31 +3232,36 @@
           "1348b1e8-f464-46c5-a185-be87842cd2e5": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#bac8b6"
+              "color_swatch": "#bac8b6",
+              "product_image": "shopify:\/\/shop_images\/home-001.png"
             }
           },
           "99789124-04e3-422f-9fe4-ad8bda53c97a": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#637175"
+              "color_swatch": "#637175",
+              "product_image": "shopify:\/\/shop_images\/home-003.png"
             }
           },
           "a4e15931-b8eb-4a78-ae24-036f1add7a84": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#df9764"
+              "color_swatch": "#df9764",
+              "product_image": "shopify:\/\/shop_images\/home-005_c73bdc58-398a-4f7e-8c7c-347ebce12074.png"
             }
           },
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#d79a80"
+              "color_swatch": "#d79a80",
+              "product_image": "shopify:\/\/shop_images\/home-004.png"
             }
           },
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#e7b99d"
+              "color_swatch": "#e7b99d",
+              "product_image": "shopify:\/\/shop_images\/home-002.png"
             }
           }
         },
@@ -3320,7 +3346,8 @@
           "caption_color": "#ffffff",
           "caption_size": 22,
           "cta_url": "shopify:\/\/pages\/inspirations",
-          "cta_text": "Explore our lookbook"
+          "cta_text": "Explore our lookbook",
+          "image": "shopify:\/\/shop_images\/rainbow_274cbcfa-3277-4e27-b17d-1fb373078447.png"
         }
       },
       "1620416895faf4570f": {
@@ -3432,21 +3459,25 @@
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
             "settings": {
+              "brand_image": "shopify:\/\/shop_images\/babylist2.png"
             }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
             "settings": {
+              "brand_image": "shopify:\/\/shop_images\/Todays_Parent2.png"
             }
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
             "settings": {
+              "brand_image": "shopify:\/\/shop_images\/domino2.png"
             }
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
             "settings": {
+              "brand_image": "shopify:\/\/shop_images\/solids_starts.png"
             }
           }
         },
@@ -3466,6 +3497,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-secondary",
+          "hero_background": "shopify:\/\/shop_images\/Kruithof-Family-2020-248_KRK.jpg",
           "hero_title": "Meet the<br>Yeah Baby Goods<br>Team",
           "title_color": "#ffffff",
           "title_size": 56,
@@ -3491,7 +3523,7 @@
             "type": "menu",
             "settings": {
               "heading": "Shop",
-              "menu": ""
+              "menu": "shop-menu"
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
@@ -3505,7 +3537,7 @@
             "type": "menu",
             "settings": {
               "heading": "",
-              "menu": ""
+              "menu": "connect"
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -3537,21 +3569,25 @@
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/ybgg.jpg"
             }
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/brown_butter_full.jpg"
             }
           },
           "42a7df21-d27f-45b2-aec5-a15f5d77c7dc": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/y-10.jpg"
             }
           },
           "0cc1a2eb-c408-499a-be14-f56bab07e5a0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/restaurantbags-26.jpg"
             }
           },
           "ac4574ce-dff0-4dca-9d51-7bf15f895288": {
@@ -3569,11 +3605,13 @@
           "e6a8ace4-b50c-4489-9801-42b37a06e710": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/vintage_blue_uphighchair.jpg"
             }
           },
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/y-6.jpg"
             }
           }
         },
@@ -4188,6 +4226,7 @@
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/yeahbabygoods-65.jpg",
               "title": "Pattern Cushion Covers",
               "description": "Cushions for support, covers keep your home stylish",
               "cta_text": "Shop now",
@@ -4197,6 +4236,7 @@
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/QY5A7630-Edit_square.jpg",
               "title": "Vegan Leather Cushion Covers",
               "description": "Wipeable covers for your support cushion",
               "cta_text": "Shop now",
@@ -4206,6 +4246,7 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/mashta_fam_24_square2.jpg",
               "title": "Highchair Placemats",
               "description": "FDA food grade silicone fits in tray and makes clean-up a breeze",
               "cta_text": "Shop now",
@@ -4215,6 +4256,7 @@
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/yeahbabygoods-5_f9031d4c-4baf-4745-af48-f44226db268e.jpg",
               "title": "Highchair Footrests",
               "description": "Makes meal times safer and more comfortable",
               "cta_text": "Shop now",
@@ -4234,6 +4276,7 @@
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/ybgg.jpg",
               "title": "Feeding Essentials",
               "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
               "cta_text": "Shop now",
@@ -4243,6 +4286,7 @@
           "3210f823-b119-46f3-bc70-9f844926c34e": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/vintage_blue_uphighchair_af3963a5-f8b1-4bd5-9874-5c1918acf208.jpg",
               "title": "Floor Mats",
               "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "cta_text": "Shop now",
@@ -4252,6 +4296,7 @@
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
               "title": "Restaurant Bags",
               "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
               "cta_text": "Shop now",
@@ -4358,7 +4403,7 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<p><b>Whether eating out or at home, our restaurant bags are designed to make mealtime prep and clean-up easier. It’s an absolute must-have for every diaper bag. Perfect baby shower gift!<\/b><\/p>\n<p> Have more than one child? You can buy additional <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/restaurant-bags-1\/products\/silicone-table-placemat-1\">Travel Placemats<\/a><\/strong> and fit 2-3 in the bag. Just stack and roll!<\/p>\n<p>To use: Place placemat on table and cut food on it. After baby is done eating, wipe mat with a napkin or wipe, roll up, and stick it in the zipper tote. When you get home, rinse with warm soapy water or place in the top rack of the dishwasher.<\/p>",
+          "description": "<p><b>Whether eating out or at home, our restaurant bags are designed to make mealtime prep and clean-up easier. It’s an absolute must-have for every diaper bag. Perfect baby shower gift!<\/b><\/p>\n<p> Have more than one child? You can buy additional <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/restaurant-bags-1\/products\/silicone-table-placemat-1\">Travel Placemats<\/a><\/strong> and fit 2-3 in the bag. Just stack and roll!<\/p>\n<p>To use: Place placemat on table and use scissors to cut food onto it. After baby is done eating, wipe mat with a napkin or wipe, roll up, and stick it in the zipper tote. When you get home, rinse with warm soapy water or place in the top rack of the dishwasher.<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
@@ -4431,12 +4476,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<p>Extra-large, multi-purpose silicone mat can be used under the highchair or for any messy activity!<\/p>\n<ul>\n<li>100% FDA food-grade silicone<\/li>\n<li>100 cm x 100 cm (39 in x 39 in)<\/li>\n<li>Wipeable<\/li>\n<li>Flexible so you can roll or fold when not in use<\/li>\n<\/ul>\n<p><i>Please note, while we have done our best to accurately represent the color, the mat will look different in various lighting.<\/i><\/p>",
+          "description": "<p>Highchair floor mat and so much more! Our extra-large silicone mat was designed to sit under highchairs during mealtimes, but there are so many creative ways to use it. Wipeable and slip-resistant, perfect for messy crafts, playdoh, puzzles, baking, legos, or sensory activities.<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Uses",
-          "shipping_returns_content": "<ul>\n<li>Under the highchair<\/li>\n<li>Messy activities like clay, paint or glue<\/li>\n<li>Assembling models, jewelry or legos<\/li>\n<li>Baking mat<\/li>\n<li>Under sensory table<\/li>\n<li>Puzzles<\/li>\n<\/ul>\n<p><em>Please note: Silicone is durable but not cut-proof, so do not use as a cutting surface. Some craft items like permanent marker may not wash off.<\/em><\/p> ",
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n<li>100% FDA food-grade silicone<\/li>\n<li>100 cm x 100 cm (39 in x 39 in)<\/li>\n<li>Wipeable<\/li>\n<li>Flexible so you can roll or fold when not in use<\/li>\n<\/ul>\n<p><i>Please note: Silicone is durable but not cut-proof, so do not use as a cutting surface. Some craft items like permanent marker may not wash off.<\/i><\/p> \n<p><i>Please note, while we have done our best to accurately represent the color, the mat will look different in various lighting.<\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
@@ -4504,12 +4549,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<b>Upgrade your IKEA highchair legs for a more customized look!<\/b><p>\n<\/p><ul>\n<li> 4 pre-cut strips <\/li>\n<li> Adhesive backing for easy installation <\/li>  \n<\/ul>\n<i>Please note, our leg wraps are made of a vinyl material with consistent coloring, whereas our footrests are made from real wood in which the hue, saturation and darkness varies. We designed our leg wraps to match the most common color tones of each wood type, but they may not be an exact match with every footrest.<\/i> <p><\/p>",
+          "description": "<p>Upgrade your IKEA highchair legs for a more custom look! Includes four pre-cut strips with adhesive backing for easy <strong><a href=\"https:\/\/www.youtube.com\/watch?v=EAJZarWy2xA\" target=\"_blank\">installation<\/a><\/strong>.<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Installation",
-          "shipping_returns_content": "IKEA highchair legs are not all the same length. For this reason, we recommend starting at the bottom of the leg and working your way up. It is possible to install the leg wraps with the legs still attached to the highchair, but we find it easier to take the legs off the highchair first, as shown in this <a href=\"https:\/\/www.youtube.com\/watch?v=EAJZarWy2xA\" target=\"_blank\">installation video<\/a>. <br>",
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<p> INSTALLATION: IKEA highchair legs are not all the same length. For this reason, we recommend starting at the bottom of the leg and working your way up. It is possible to install the leg wraps with the legs still attached to the highchair, but we find it easier to take the legs off the highchair first, as shown in this <strong><a href=\"https:\/\/www.youtube.com\/watch?v=EAJZarWy2xA\" target=\"_blank\">installation video<\/a><\/strong>.<\/p>\n<p><i>Please note, our leg wraps are made of a vinyl material with consistent coloring, whereas our footrests are made from real wood in which the hue, saturation and darkness varies. We designed our leg wraps to match the most common color tones of each wood type, but they may not be an exact match with every footrest.<\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
@@ -4577,12 +4622,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "Our patented adjustable highchair footrests provide an option for people who love the inexpensive and minimal IKEA highchair, but also want to give their babies the <a href=\"https:\/\/www.yeahbabygoods.com\/blogs\/the-blog\/why-babies-need-a-footrest\" target=\"_blank\">foot support they need<\/a>. Like all our highchair accessories, it was designed with functionality and aesthetics in mind.<p>\n<\/p><ul>\n<li> Easy to wipe clean <\/li>\n<li> Adjust as your baby grows - no tools needed <\/li>\n<li> Sloped cut-outs on the underside of the footrest hide the support clamps and allow the footrest to sit at a 90-degree angle to the seat base.<\/li>\n<li> Quick and simple <a href=\"https:\/\/www.youtube.com\/watch?v=uS-MiG7nQV8\" target=\"_blank\">installation<\/a>\n<\/li>\n<\/ul>\n<p><i>Wood naturally varies in hue, saturation and darkness; therefore, these same variances may occur in our footrests. For this reason, some footrests might not be an exact match with our vinyl leg wraps. Footrests may also have a seam where the color and grain vary.<\/i><\/p> \n<p>U.S. Patent No. D964,759<\/p>",
+          "description": "<p>Our patented adjustable highchair footrests provide an option for people who love the inexpensive and minimal IKEA highchair, but also want to give their babies the <strong><a href=\"https:\/\/www.yeahbabygoods.com\/blogs\/the-blog\/why-babies-need-a-footrest\" target=\"_blank\">foot support they need<\/a><\/strong>. Like all our highchair accessories, it was designed with functionality and aesthetics in mind.<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "What's Included",
-          "shipping_returns_content": "<ul>\n<li> Sturdy wooden footrest <\/li>\n<li> Two white support clamps for extra stability<\/li>\n<\/ul>",
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n<li> Easy to wipe clean <\/li>\n<li> Adjust as your baby grows - no tools needed <\/li>\n<li> Sloped cut-outs on the underside of the footrest hide the support clamps and allow the footrest to sit at a 90-degree angle to the seat base.<\/li>\n<li> Quick and simple <strong><a href=\"https:\/\/www.youtube.com\/watch?v=uS-MiG7nQV8\" target=\"_blank\">installation<\/a><\/strong>\n<\/li>\n<\/ul>\n<p><i>WARNING: Foot support is important for safe feeding posture. However, footrests inherently make it easier for children to push themselves up and out of the seat. Therefore, the footrest should be used with the child’s safety harness fastened \ntight. Do not leave your child unattended in the highchair.<\/i><\/p> \n<p><i>Wood naturally varies in hue, saturation and darkness; therefore, these same variances may occur in our footrests. For this reason, some footrests might not be an exact match with our vinyl leg wraps. Footrests may also have a seam where the color and grain vary.<\/i><\/p> \n<p>U.S. Patent No. D964,759<\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "all",
@@ -4776,12 +4821,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a> \nfor your baby, scoot baby closer to the tray and <a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<p> \n<\/p><ul>\n<li> Wipeable vegan leather <\/li>\n<li> Handsewn in the US<\/li>\n<li> Zipper closure <\/li>\n<li> Cover can be used with our <a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a> or the IKEA Antilop support cushion (insert sold separately)<\/li>\n<\/ul><p>\n<i>Please note: While we have done our best to accurately represent colors, the calibration of computer monitors can vary considerably. These photographs are a close representation of the actual color, but the finished product may be slightly different than it appears on your screen. <\/i><\/p>",
+          "description": "<p>Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <strong><a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a><\/strong>\nfor your baby, scoot baby closer to the tray and <strong><a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a><\/strong>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<\/p><p><\/p>\n<p>Cover can be used with our <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a><\/strong> or the IKEA Antilop support cushion (insert sold separately).<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Materials",
-          "shipping_returns_content": "<ul>\n    <li> Soft vegan leather (See our <a href=\"https:\/\/www.yeahbabygoods.com\/pages\/care-instructions-1\">care instructions page<\/a> for how to clean) <\/li>\n<\/ul><p>\n<i>Our vegan leather has independently tested and certified as free of lead, phthalates and other toxins.<\/i><\/p>",
+          "shipping_returns_title": "DETAILS",
+          "shipping_returns_content": "<ul>\n    <li>Wipeable, soft vegan leather<\/li>\n    <li>Handsewn in the US<\/li>\n    <li>Zipper closure<\/li>\n    <li> See our <strong><a href=\"https:\/\/www.yeahbabygoods.com\/pages\/care-instructions-1\">care instructions page<\/a><\/strong> for how to clean<\/li>\n<\/ul><p>\n<i>Our vegan leather has independently tested and certified as free of lead, phthalates and other toxins.<\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "",
           "custom_tab_type": "all",
@@ -4849,12 +4894,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a> \nfor your baby, scoot baby closer to the tray and <a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<p> \n<\/p><ul>\n<li> Handsewn in the US <\/li>\n<li> Patterns designed by indie artists who directly benefit from each sale <\/li>\n<li> Machine washable <\/li>\n<li> Zipper closure <\/li>\n<li> Cover can be used with our <a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a> or the IKEA Antilop support cushion (insert sold separately)<\/li>\n<\/ul>",
+          "description": "<p>Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <strong><a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a><\/strong>\nfor your baby, scoot baby closer to the tray and <strong><a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a><\/strong>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<\/p>\n<p>Cover can be used with our <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a><\/strong> or the IKEA Antilop support cushion (insert sold separately).<\/p>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
           "shipping_returns_title": "Details",
-          "shipping_returns_content": "<ul>\n    <li> 100% natural cotton <\/li>\n    <li> Front side design is printed with eco-friendly, wash-safe inks <\/li>\n<li> Back side is solid grey Kona Cotton <\/li>\n<\/ul>\n<p><i>Please note: While we have done our best to accurately represent the color, position, and scale of this design, the finished product may be slightly different than appears in the preview. <\/i><\/p>",
+          "shipping_returns_content": "<ul>\n    <li>100% natural cotton<\/li>\n    <li>Handsewn in the US<\/li>\n    <li>Patterns designed by indie artists who directly benefit from each sale<\/li>\n    <li>Front side design is printed with eco-friendly, wash-safe inks; back side is solid grey Kona Cotton<\/li>\n    <li>Machine washable<\/li>\n    <li>Zipper closure<\/li>\n<\/ul><p>\n<i>Please note: While we have done our best to accurately represent the color, position, and scale of this design, the finished product may be slightly different than appears in the preview.<\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "all",
@@ -5083,60 +5128,6 @@
           "caption_size": 22
         }
       },
-      "testimonials-slider-cushions-2": {
-        "type": "testimonials-slider-cushions-2",
-        "blocks": {
-          "3f7276d1-d636-45f6-bdca-09df9aeb73fc": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#cc6b3a"
-            }
-          },
-          "33627f94-6895-4382-b782-c7ec1e3ad83b": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "When I tell you I am OBSESSED with these covers…it’s all I use. Clean up is so easy I could cry.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": ""
-            }
-          },
-          "fc84d6bd-8b6b-49b6-9d42-216b48b141ed": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "The vegan leather covers are SO GOOD! My whole YBG highchair set up is so fast and easy to clean up which is what I dreaded about my first highchair.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#bac8b6"
-            }
-          }
-        },
-        "block_order": [
-          "3f7276d1-d636-45f6-bdca-09df9aeb73fc",
-          "33627f94-6895-4382-b782-c7ec1e3ad83b",
-          "fc84d6bd-8b6b-49b6-9d42-216b48b141ed"
-        ],
-        "settings": {
-          "section_title": "Your Section title goes here",
-          "title_color": "#ffffff",
-          "title_size": 60,
-          "section_caption": "Your caption goes here",
-          "caption_color": "#ffffff",
-          "caption_size": 22
-        }
-      },
       "testimonials-slider-cushions-1": {
         "type": "testimonials-slider-cushions-1",
         "blocks": {
@@ -5223,7 +5214,7 @@
             "settings": {
               "author": "",
               "author_color": "",
-              "message": "I bought the highchair cushion cover first and didn't buy the silicone placemat because I thought, Eehh, I don't really need that.'  Do yourself a favor, buy the  placemat. It's amazing. It makes messes a MILLION  times easier to clean!",
+              "message": "I bought the highchair cushion cover first and didn't buy the silicone placemat because I thought, 'Eehh, I don't really need that.'  Do yourself a favor, buy the  placemat. It's amazing. It makes messes a MILLION  times easier to clean!",
               "message_color": "",
               "by_line": "",
               "by_line_color": "",
@@ -5292,11 +5283,11 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<b>The original FDA food-grade silicone placemat fits perfectly inside the IKEA Antilop highchair tray and makes clean-up a breeze.<\/b><p>\n<\/p><ul>\n<li>Easy clean up - Just lift the mess, rinse in the sink and replace on the tray!\n<\/li>\n<li>Slip-resistant material keeps plates in place and helps little fingers pick up food\n<\/li>\n<\/ul><p>\n<\/p>",
+          "description": "<b>The original FDA food-grade silicone placemat fits perfectly inside the IKEA Antilop highchair tray and makes clean-up a breeze.<\/b><p>\n<\/p><ul>\n<li>Easy clean up - Just lift the mess, rinse in the sink and replace on the tray!\n<\/li>\n<li>Slip-resistant material keeps plates in place and helps little fingers pick up food\n<\/li>\n<\/ul>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Materials",
+          "shipping_returns_title": "Details",
           "shipping_returns_content": "<ul>\n<li>100% Food-grade, FDA compliant silicone – no lead, phthalates, BPAs, or other harsh chemicals found in plastic and lower-grade silicones\n<\/li>\n<\/ul><p>\n<i>Our placemats have been tested by SGS, an independent leader in testing and certification of juvenile products.  You can find a summary of the testing performed on our website’s <a href=\"https:\/\/www.yeahbabygoods.com\/pages\/faq\">FAQ page.<\/a>  <\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
@@ -5316,60 +5307,6 @@
           "choose_options": "Choose Options | Wählen Sie Optionen",
           "enable_bundle_discount": false,
           "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
-        }
-      },
-      "testimonials-slider-placemats-2": {
-        "type": "testimonials-slider-placemats-2",
-        "blocks": {
-          "3f200699-0a49-4221-a851-5570c8aa8fe8": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "You know it's good when your husband points out, 'Man, this was a great purchase.' Makes clean up so much easier since the IKEA tray is so hard to remove.",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#cc6b3a"
-            }
-          },
-          "053d7314-5740-497a-86ce-cd2e297e01cc": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "BUY THIS PLACEMAT! I literally say to myself at least twice a day, 'Man I love this thing.' Honestly best invention ever!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": ""
-            }
-          },
-          "e721fe3e-de68-4139-84c2-ee8aee6d37fe": {
-            "type": "testimonial",
-            "settings": {
-              "author": "",
-              "author_color": "",
-              "message": "I bought the  cushion cover first and didn't buy the  placemat because I thought, 'Eehh, I don't really need that.'  Do yourself a favor, buy the  placemat. It's amazing. It makes messes a MILLION  times easier to clean!",
-              "message_color": "",
-              "by_line": "",
-              "by_line_color": "",
-              "block_background": "#bac8b6"
-            }
-          }
-        },
-        "block_order": [
-          "3f200699-0a49-4221-a851-5570c8aa8fe8",
-          "053d7314-5740-497a-86ce-cd2e297e01cc",
-          "e721fe3e-de68-4139-84c2-ee8aee6d37fe"
-        ],
-        "settings": {
-          "section_title": "",
-          "title_color": "#ffffff",
-          "title_size": 60,
-          "section_caption": "",
-          "caption_color": "#ffffff",
-          "caption_size": 22
         }
       },
       "placemats-reasons-to-buy-1": {
@@ -5698,7 +5635,7 @@
               "title": "Pfeiffer",
               "by_liner": "EMOTIONAL SUPPORT",
               "details": "<p>The sweetest 6-year-old you'll ever meet! When she was a baby, FiFi tried every footrest prototype until we nailed our innovative design. She brings so much beauty and joy to our home!<\/p>",
-              "image": "shopify:\/\/shop_images\/owner_picture_pfeiffer5.jpg"
+              "image": "shopify:\/\/shop_images\/owner_picture_pfeiffer6.jpg"
             }
           },
           "b437931e-c8ec-4de9-87b7-f08e4847eb62": {
@@ -5918,14 +5855,35 @@
       },
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
+        "blocks": {
+          "hero_slide_FzXpjh": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
+            }
+          },
+          "hero_slide_V3BgWL": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
+            }
+          }
+        },
+        "block_order": [
+          "hero_slide_FzXpjh",
+          "hero_slide_V3BgWL"
+        ],
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
+          "hero_background": "shopify:\/\/shop_images\/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "image_link": "shopify:\/\/pages\/collections",
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
           "title_size": 70,
-          "use_hero_slider": false,
+          "use_hero_slider": true,
           "hero_caption": "Cuter. Safer. <br>Complete<br> customization.",
           "caption_color": "#30494d",
           "caption_size": 22,
@@ -6021,7 +5979,7 @@
           "bc72dc8f-d61a-4084-b542-b74f173b533f"
         ],
         "settings": {
-          "section_title": "Your Section title goes here",
+          "section_title": "",
           "title_color": "#ffffff",
           "title_size": 60,
           "section_caption": "Your caption goes here",
@@ -6076,12 +6034,12 @@
           "show_tab": "horizontal",
           "display_product_detail_description": true,
           "product_description_title": "Description",
-          "description": "<p>Did you know that what goes into your infant or toddler's mouth can have an impact on oral structure and function? The All You-Tensil was designed by a feeding specialist to support and facilitate overall feeding development. Each feature is intended to meet babies where they are, so they can practice the skills they'll eventually need for independence.<\/p>\n<ul>\n<li>Perfect for self-feeding and parent-led feeding<\/li>\n<li>Can be used for developmental mouthing and teething prior to starting solids<\/li>\n<li>Supports oral sensory motor development, fine motor development and overall feeding development <br>\n<\/li>\n<li>100% food-grade, FDA compliant silicone - BPA, PVC, phthalate and latex free<\/li>\n<li>Dishwasher safe<\/li>\n<\/ul>",
+          "description": "<b><\/b><p>The All You-Tensil was designed by a pediatric feeding specialist to support fine motor development, oral sensory motor development and overall feeding development. Each feature is intended to meet babies where they are, so they can practice the skills they'll eventually need for independence.<\/p>\n<ul>\n<li>Perfect for self-feeding and parent-led feeding<\/li>\n<li>Can be used for <strong><a href=\"https:\/\/www.yeahbabygoods.com\/blogs\/the-blog\/a-parents-guide-to-mouthing\">developmental mouthing<\/a><\/strong> and teething prior to starting solids<\/li>\n<\/ul>",
           "display_product_reviews": false,
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
-          "shipping_returns_title": "Safety",
-          "shipping_returns_content": "<p><i>Our All You-Tensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC). <\/i><\/p>",
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n<li>100% food-grade, FDA compliant silicone - BPA, PVC, phthalate and latex free<\/li>\n<li>Dishwasher safe<\/li>\n<\/ul>\n<p><i>Our All You-Tensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC). <\/i><\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "specified",
@@ -6102,41 +6060,6 @@
           "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
         }
       },
-      "reasons-to-buy": {
-        "type": "reasons-to-buy",
-        "blocks": {
-          "reason_EERe9W": {
-            "type": "reason",
-            "settings": {
-              "title": "SAFE POSITIONING",
-              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position.<\/p>"
-            }
-          },
-          "reason_jznGxp": {
-            "type": "reason",
-            "settings": {
-              "title": "LESS GAP",
-              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!).<\/p>"
-            }
-          },
-          "reason_UmPfq4": {
-            "type": "reason",
-            "settings": {
-              "title": "KEEPS MOM HAPPY",
-              "content": "<p>Match your home decor or switch covers for holidays and special occasions!<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "reason_EERe9W",
-          "reason_jznGxp",
-          "reason_UmPfq4"
-        ],
-        "settings": {
-          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
-          "heading": "Why Cushions?"
-        }
-      },
       "reasons-to-buy-floormat": {
         "type": "reasons-to-buy-floormat",
         "blocks": {
@@ -6144,20 +6067,28 @@
             "type": "reason",
             "settings": {
               "title": "UNDER HIGHCHAIR",
-              "content": "<p>Non-skid silicone keeps the mat in place and the highchair from sliding.<\/p>"
+              "content": "<p>Non-skid silicone keeps the mat in place and the highchair from sliding<\/p>"
             }
           },
           "reason_bTHnfi": {
             "type": "reason",
             "settings": {
               "title": "YEARS OF USE",
-              "content": "<p>Can be used for messy activities and crafts long after babies outgrow their highchair.<\/p>"
+              "content": "<p>Can be used for messy activities and crafts long after babies outgrow their highchair<\/p>"
+            }
+          },
+          "reason_FM4zCh": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Non-stick, non-slip, heat-resistant...from baking to crafting, let your creativity go wild!<\/p>"
             }
           }
         },
         "block_order": [
           "reason_3CMCf4",
-          "reason_bTHnfi"
+          "reason_bTHnfi",
+          "reason_FM4zCh"
         ],
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/floormats-258.jpg",
@@ -6171,21 +6102,21 @@
             "type": "reason",
             "settings": {
               "title": "HAPPIER BABY",
-              "content": "<p>Dangling feet can lead to fussing, shorter meal times, and a lack of interest in eating.<\/p>"
+              "content": "<p>Dangling feet can lead to fussing, shorter meal times, and a lack of interest in eating<\/p>"
             }
           },
           "reason_9PfJXJ": {
             "type": "reason",
             "settings": {
               "title": "IMPROVES FINE MOTOR SKILLS",
-              "content": "<p>Stable babies can focus on fine motor skills like picking up food, chewing and swallowing.<\/p>"
+              "content": "<p>Stable babies can focus on fine motor skills like picking up food, chewing and swallowing<\/p>"
             }
           },
           "reason_Lke7Q9": {
             "type": "reason",
             "settings": {
               "title": "SAFER SWALLOW",
-              "content": "<p>Foot support and trunk stability help facilitate a safe swallow.<\/p>"
+              "content": "<p>Foot support and trunk stability help facilitate a safe swallow<\/p>"
             }
           }
         },
@@ -6206,21 +6137,21 @@
             "type": "reason",
             "settings": {
               "title": "INSTANT UPGRADE",
-              "content": "<p>Looks like a high-end highchair without breaking the bank.<\/p>"
+              "content": "<p>Looks like a high-end highchair without breaking the bank<\/p>"
             }
           },
           "reason_qzydRp": {
             "type": "reason",
             "settings": {
               "title": "REMOVE THE GUESSWORK",
-              "content": "<p>Pre-cut strips so you don't have to measure or cut.<\/p>"
+              "content": "<p>Pre-cut strips so you don't have to measure or cut<\/p>"
             }
           },
           "reason_bmJnTw": {
             "type": "reason",
             "settings": {
               "title": "THICKER AND MORE DURABLE",
-              "content": "<p>High-quality vinyl doesn't bubble or tear as easily as contact paper.<\/p>"
+              "content": "<p>High-quality vinyl doesn't bubble or tear as easily as contact paper<\/p>"
             }
           }
         },
@@ -6267,6 +6198,686 @@
         "settings": {
           "featured_image": "shopify:\/\/shop_images\/restaurantbags-37_51707b93-8f07-49e6-a4eb-ea664abd2f35.jpg",
           "heading": "Why Restaurant Bags?"
+        }
+      },
+      "reasons-to-buy-all-you-tensil": {
+        "type": "reasons-to-buy-all-you-tensil",
+        "blocks": {
+          "reason_9aBwXL": {
+            "type": "reason",
+            "settings": {
+              "title": "SETS BABY UP FOR SUCCESS",
+              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills<\/p>"
+            }
+          },
+          "reason_VTjnEA": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Can be used for self-feeding or parent-led feeding with purees<\/p>"
+            }
+          },
+          "reason_9mitEH": {
+            "type": "reason",
+            "settings": {
+              "title": "HELPS DEVELOP NEW SKILLS",
+              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_9aBwXL",
+          "reason_VTjnEA",
+          "reason_9mitEH"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/YBG-34.jpg",
+          "heading": "Why All You-Tensils?"
+        }
+      },
+      "reasons-to-buy-cushions": {
+        "type": "reasons-to-buy-cushions",
+        "blocks": {
+          "reason_J6HWrx": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFE POSITIONING",
+              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position<\/p>"
+            }
+          },
+          "reason_J7mnTf": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS GAP",
+              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!)<\/p>"
+            }
+          },
+          "reason_m86dbW": {
+            "type": "reason",
+            "settings": {
+              "title": "ADDS JOY TO HOME",
+              "content": "<p>Match your home decor or switch covers for holidays and special occasions<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_J6HWrx",
+          "reason_J7mnTf",
+          "reason_m86dbW"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/yeahbabygoods-46c_6916d55d-e8d1-44d9-865c-a422801a0690.jpg",
+          "heading": "Why Cushions?"
+        }
+      },
+      "reasons-to-buy-vegan-cushions": {
+        "type": "reasons-to-buy-vegan-cushions",
+        "blocks": {
+          "reason_U9CfmB": {
+            "type": "reason",
+            "settings": {
+              "title": "WIPEABLE",
+              "content": "<p>Easy to clean, just wipe after meals<\/p>"
+            }
+          },
+          "reason_YgHJxE": {
+            "type": "reason",
+            "settings": {
+              "title": "SOLID COLORS",
+              "content": "<p>Minimal solid colors pair especially well with our specialty placemats<\/p>"
+            }
+          },
+          "reason_hc9KLT": {
+            "type": "reason",
+            "settings": {
+              "title": "MATCHING BACK SIDE",
+              "content": "<p>Front and back are the same wipeable vegan leather so you can use either side<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_U9CfmB",
+          "reason_YgHJxE",
+          "reason_hc9KLT"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/QY5A7630-Edit_square.jpg",
+          "heading": "Why Vegan Leather Covers?"
+        }
+      },
+      "testimonials-slider-vegan-cushions": {
+        "type": "testimonials-slider-vegan-cushions",
+        "blocks": {
+          "testimonial_FYi7mR": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cc6b3a"
+            }
+          },
+          "testimonial_Je8KxT": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "When I tell you I am OBSESSED with these covers…it’s all I use. Clean up is so easy I could cry.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_AnK8zU": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "The vegan leather covers are SO GOOD! My whole YBG highchair set up is so fast and easy to clean up which is what I dreaded about my first highchair.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_FYi7mR",
+          "testimonial_Je8KxT",
+          "testimonial_AnK8zU"
+        ],
+        "settings": {
+          "section_title": "",
+          "title_color": "#ffffff",
+          "title_size": 60,
+          "section_caption": "Your caption goes here",
+          "caption_color": "#ffffff",
+          "caption_size": 22
+        }
+      },
+      "reasons-to-buy-placemats": {
+        "type": "reasons-to-buy-placemats",
+        "blocks": {
+          "reason_Dt9RBB": {
+            "type": "reason",
+            "settings": {
+              "title": "EASY CLEAN UP",
+              "content": "<p>Quick and easy clean up without having to remove the highchair tray<\/p>"
+            }
+          },
+          "reason_YWc7HA": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFETY TESTED",
+              "content": "<p>Unlike plastic or lower-grade silicones, food-grade silicone contains no lead, phthalates, BPAs or other harsh chemicals<\/p>"
+            }
+          },
+          "reason_PP8frJ": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS SLIP",
+              "content": "<p>Slip-resistant silicone makes it easier for fingers to pick up food<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_Dt9RBB",
+          "reason_YWc7HA",
+          "reason_PP8frJ"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/untitled-89b_5d55cae1-85e6-4f25-a39d-7ddccfc93955.jpg",
+          "heading": "Why Placemats?"
+        }
+      },
+      "product-template-default-dinnerware": {
+        "type": "product-template-default-dinnerware",
+        "settings": {
+          "style_moreview": "horizontal",
+          "enable_zoom_image": false,
+          "video_product": true,
+          "video_product_icon": "#c1c1c1",
+          "enable_payment_button": false,
+          "left_products": true,
+          "show_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "display_vendor": false,
+          "text_vendor": "Vendor:",
+          "display_product_sku": false,
+          "text_product_sku": "SKU:",
+          "display_availability": false,
+          "text_availability": "Availability:",
+          "display_product_type": false,
+          "text_product_type": "Product Type:",
+          "enable_countdown": false,
+          "countdown": "countdown_1",
+          "text_countdown": "Limited-Time Offers, End in:",
+          "option_countdown": "all_product",
+          "count_down_timer": "2020-12-25 22:11:00",
+          "custombox_text": "",
+          "progressbar_1": "Please hurry, only",
+          "progressbar_2": "left in stock",
+          "total_items": "100",
+          "min_items_left": "8",
+          "max_items_left": "26",
+          "progressbar_color": "#f5f5f5",
+          "progressbar_active_color": "#69c69c",
+          "dpl_customers_view": false,
+          "title_view": "customers are viewing this product",
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "show_desc": "no-show",
+          "display_subtotal": false,
+          "display_product_detail_tag": false,
+          "display_product_detail_share": false,
+          "share_text": "Share",
+          "display_trust_img": false,
+          "show_tab": "horizontal",
+          "display_product_detail_description": true,
+          "product_description_title": "Description",
+          "description": "<b> Children's dinnerware you won't want to hide in the kids' drawer. This 5-piece set of coordinating mealtime essentials makes the perfect gift! *$50 value*<\/b><p>\n<\/p><ul>\n<li>Includes one plate, bowl, mug, fork and spoon\n<\/li>\n<li>Food-grade, FDA compliant silicone - BPA, PVC, phthalate and latex free\n<\/li>\n<li>Dishwasher safe\n<\/li>\n<\/ul>",
+          "display_product_reviews": false,
+          "product_review_title": "Customer Reviews",
+          "display_shipping_returns": true,
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<p><i> Our dinnerware has been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).\n<\/i><\/p>",
+          "display_custom_tab": false,
+          "custom_tab_title": "Custom Product Tab",
+          "custom_tab_type": "specified",
+          "custom_tab_content": "",
+          "dpl_lookbook_description": true,
+          "style_lookbook_description": "all_product",
+          "quote_title": "",
+          "quote_des": "",
+          "quote_title_2": "",
+          "quote_des_2": "",
+          "dpl_gallery_lookbook": true,
+          "style_lookbook_gallery": "all_product",
+          "dpl_grouped_product": true,
+          "grouped_title": "Frequently Bought Together",
+          "grouped_choose_options_text": "Please choose options for all selected products",
+          "choose_options": "Choose Options",
+          "enable_bundle_discount": false,
+          "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
+        }
+      },
+      "reasons-to-buy-dinnerware": {
+        "type": "reasons-to-buy-dinnerware",
+        "blocks": {
+          "reason_7MhYfC": {
+            "type": "reason",
+            "settings": {
+              "title": "INTENTIONAL",
+              "content": "<p>Supports next steps in your child's feeding journey<\/p>"
+            }
+          },
+          "reason_8zznFb": {
+            "type": "reason",
+            "settings": {
+              "title": "NON-SUCTION",
+              "content": "<p>Silicone dinnerware that can be used for kids of all ages<\/p>"
+            }
+          },
+          "reason_PNBar7": {
+            "type": "reason",
+            "settings": {
+              "title": "AESTHETIC DESIGN",
+              "content": "<p>Designed with trend forecasting, taking inspiration from trailblazing products in other categories<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_7MhYfC",
+          "reason_8zznFb",
+          "reason_PNBar7"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/YBG-16_64b90cd4-84cd-40d3-a527-e6fb0205dccf.jpg",
+          "heading": "Why YBG Dinnerware?"
+        }
+      },
+      "testimonials-slider-dinnerware": {
+        "type": "testimonials-slider-dinnerware",
+        "blocks": {
+          "testimonial_ECK3kB": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Love that they're flexible while still having structure. They're just the right size, and the colors are precious!! Perfect for both our 15mo and 3yo!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_UfzQpw": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Holy. Smokes. Just got two full sets of dishes + silverware, and my mouth is truly open. It is SO beautiful! I can’t stop staring. From the top to the bottom, I am SO impressed.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_ingURK": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Officially chucked the rest of the kids eating gear haha. These are the absolute best. I love that they don’t slide on the table as easily as regular plates.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_ECK3kB",
+          "testimonial_UfzQpw",
+          "testimonial_ingURK"
+        ],
+        "settings": {
+          "section_title": "",
+          "title_color": "#ffffff",
+          "title_size": 60,
+          "section_caption": "Your caption goes here",
+          "caption_color": "#ffffff",
+          "caption_size": 22
+        }
+      },
+      "product-template-default-fork-spoon": {
+        "type": "product-template-default-fork-spoon",
+        "settings": {
+          "style_moreview": "horizontal",
+          "enable_zoom_image": false,
+          "video_product": true,
+          "video_product_icon": "#c1c1c1",
+          "enable_payment_button": false,
+          "left_products": true,
+          "show_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "display_vendor": false,
+          "text_vendor": "Vendor:",
+          "display_product_sku": false,
+          "text_product_sku": "SKU:",
+          "display_availability": false,
+          "text_availability": "Availability:",
+          "display_product_type": false,
+          "text_product_type": "Product Type:",
+          "enable_countdown": false,
+          "countdown": "countdown_1",
+          "text_countdown": "Limited-Time Offers, End in:",
+          "option_countdown": "all_product",
+          "count_down_timer": "2020-12-25 22:11:00",
+          "custombox_text": "",
+          "progressbar_1": "Please hurry, only",
+          "progressbar_2": "left in stock",
+          "total_items": "100",
+          "min_items_left": "8",
+          "max_items_left": "26",
+          "progressbar_color": "#f5f5f5",
+          "progressbar_active_color": "#69c69c",
+          "dpl_customers_view": false,
+          "title_view": "customers are viewing this product",
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "show_desc": "no-show",
+          "display_subtotal": false,
+          "display_product_detail_tag": false,
+          "display_product_detail_share": false,
+          "share_text": "Share",
+          "display_trust_img": false,
+          "show_tab": "horizontal",
+          "display_product_detail_description": true,
+          "product_description_title": "Description",
+          "description": "<b> Thoughtfully designed to support your child's feeding journey. Our fork and spoon set encourage next steps in fine motor and oral development.<\/b><p>\n<\/p><ul>\n<li>Food-grade silicone is soft and non-slip to support self-feeding\n<\/li>\n<li>Wide handle is easy to hold and manipulate as toddlers practice fine motor skills likes scooping and piercing\n<\/li>\n<li>Stainless steel heads are shaped to fit toddlers' mouths\n<\/li>\n<li>Spoon's size and depth help little ones easily clear food and practice lip closure, a crucial skill for chewing, swallowing and speech<\/li>\n<\/ul>",
+          "display_product_reviews": false,
+          "product_review_title": "Customer Reviews",
+          "display_shipping_returns": true,
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n<li>Stainless steel and food-grade, FDA compliant silicone\n<\/li>\n<li>BPA, PVC, phthalate and latex free\n<\/li>\n<li>Dishwasher safe\n<\/li>\n<\/ul><p>\n<i>Our utensils have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).<\/i><\/p>",
+          "display_custom_tab": true,
+          "custom_tab_title": "Custom Product Tab",
+          "custom_tab_type": "specified",
+          "custom_tab_content": "",
+          "dpl_lookbook_description": true,
+          "style_lookbook_description": "all_product",
+          "quote_title": "",
+          "quote_des": "",
+          "quote_title_2": "",
+          "quote_des_2": "",
+          "dpl_gallery_lookbook": true,
+          "style_lookbook_gallery": "all_product",
+          "dpl_grouped_product": true,
+          "grouped_title": "Frequently Bought Together",
+          "grouped_choose_options_text": "Please choose options for all selected products",
+          "choose_options": "Choose Options",
+          "enable_bundle_discount": true,
+          "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
+        }
+      },
+      "reasons-to-buy-fork-spoon": {
+        "type": "reasons-to-buy-fork-spoon",
+        "blocks": {
+          "reason_jCb6cx": {
+            "type": "reason",
+            "settings": {
+              "title": "SUPPORTS DEVELOPMENT",
+              "content": "<p>Designed to encourage new fine motor skills like scooping and piercing<\/p>"
+            }
+          },
+          "reason_WXedp6": {
+            "type": "reason",
+            "settings": {
+              "title": "ENCOURAGE SELF-FEEDING",
+              "content": "<p>Short, wide handles are easy to hold and manipulate<\/p>"
+            }
+          },
+          "reason_tHgqir": {
+            "type": "reason",
+            "settings": {
+              "title": "SIZED RIGHT",
+              "content": "<p>Utensil heads are shaped to fit toddlers' mouths so they can easily clear food<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_jCb6cx",
+          "reason_WXedp6",
+          "reason_tHgqir"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/YBG-74_f1b9f4ef-56a7-4303-b3d3-6924cad23cd9.jpg",
+          "heading": "Why YBG Utensils?"
+        }
+      },
+      "testimonials-slider-fork-spoon": {
+        "type": "testimonials-slider-fork-spoon",
+        "blocks": {
+          "testimonial_Q7V9QL": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "My baby is 10 months old and the spoon is perfect for feeding him. Has the perfect curve for holding the food and fitting in his mouth. Not too small and not too big!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_KnTqgJ": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "The shape of the spoon is different than others we have and it seems to fit my baby's mouth better.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_E9rX9F": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "We got some other utensils (with a paci type blocker) as a gift and HATE THEM. Yours are FAR superior. My baby handles these so much better!”",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_Q7V9QL",
+          "testimonial_KnTqgJ",
+          "testimonial_E9rX9F"
+        ],
+        "settings": {
+          "section_title": "",
+          "title_color": "#fff",
+          "title_size": 60,
+          "section_caption": "Your caption goes here",
+          "caption_color": "#fff",
+          "caption_size": 22
+        }
+      },
+      "product-template-default-bib": {
+        "type": "product-template-default-bib",
+        "settings": {
+          "style_moreview": "horizontal",
+          "enable_zoom_image": false,
+          "video_product": true,
+          "video_product_icon": "#c1c1c1",
+          "enable_payment_button": false,
+          "left_products": true,
+          "show_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "display_vendor": false,
+          "text_vendor": "Vendor:",
+          "display_product_sku": false,
+          "text_product_sku": "SKU:",
+          "display_availability": false,
+          "text_availability": "Availability:",
+          "display_product_type": false,
+          "text_product_type": "Product Type:",
+          "enable_countdown": false,
+          "countdown": "countdown_1",
+          "text_countdown": "Limited-Time Offers, End in:",
+          "option_countdown": "all_product",
+          "count_down_timer": "2020-12-25 22:11:00",
+          "custombox_text": "",
+          "progressbar_1": "Please hurry, only",
+          "progressbar_2": "left in stock",
+          "total_items": "100",
+          "min_items_left": "8",
+          "max_items_left": "26",
+          "progressbar_color": "#f5f5f5",
+          "progressbar_active_color": "#69c69c",
+          "dpl_customers_view": false,
+          "title_view": "customers are viewing this product",
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "show_desc": "no-show",
+          "display_subtotal": false,
+          "display_product_detail_tag": false,
+          "display_product_detail_share": false,
+          "share_text": "Share",
+          "display_trust_img": false,
+          "show_tab": "horizontal",
+          "display_product_detail_description": true,
+          "product_description_title": "Description",
+          "description": "<b>Tired of bulky bibs that restrict arm movement and don't fit well in the highchair? Our narrow design fits the littlest eaters better, and stays comfy as your child grows.<\/b><p>\n<\/p><ul>\n<li>Narrow design and thinner neckline give arms a greater range of motion\n<\/li>\n<li>Fasteners create a closer fit for little ones and can be adjusted as your baby grows\n<\/li>\n<\/ul>",
+          "display_product_reviews": false,
+          "product_review_title": "Customer Reviews",
+          "display_shipping_returns": true,
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n<li>100% food-grade, FDA compliant silicone - BPA, PVC, phthalate and latex free\n<\/li>\n<\/ul><p>\n<i>Our bibs have been tested by SGS in compliance with FDA, CA Prop 65 and the Consumer Product Safety Commission (CPSC).<\/i><\/p>",
+          "display_custom_tab": false,
+          "custom_tab_title": "Custom Product Tab",
+          "custom_tab_type": "all",
+          "custom_tab_content": "",
+          "dpl_lookbook_description": false,
+          "style_lookbook_description": "all_product",
+          "quote_title": "",
+          "quote_des": "",
+          "quote_title_2": "",
+          "quote_des_2": "",
+          "dpl_gallery_lookbook": true,
+          "style_lookbook_gallery": "all_product",
+          "dpl_grouped_product": true,
+          "grouped_title": "Frequently Bought Together",
+          "grouped_choose_options_text": "Please choose options for all selected products",
+          "choose_options": "Choose Options",
+          "enable_bundle_discount": false,
+          "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
+        }
+      },
+      "reasons-to-buy-bib": {
+        "type": "reasons-to-buy-bib",
+        "blocks": {
+          "reason_3zzgDn": {
+            "type": "reason",
+            "settings": {
+              "title": "GREATER RANGE OF MOTION",
+              "content": "<p>Thin straps won't restrict arm movement<\/p>"
+            }
+          },
+          "reason_RCWTrj": {
+            "type": "reason",
+            "settings": {
+              "title": "NARROW DESIGN",
+              "content": "<p>Less bulky than the standard silicone bib<\/p>"
+            }
+          },
+          "reason_JNi8bt": {
+            "type": "reason",
+            "settings": {
+              "title": "BETTER FIT",
+              "content": "<p>Neckline can be faster smaller for petite babies, then adjusted as the child grows<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_3zzgDn",
+          "reason_RCWTrj",
+          "reason_JNi8bt"
+        ],
+        "settings": {
+          "featured_image": "shopify:\/\/shop_images\/YBG.2-39_KRK.jpg",
+          "heading": "Why YBG Bibs?"
+        }
+      },
+      "testimonials-slider-bib": {
+        "type": "testimonials-slider-bib",
+        "blocks": {
+          "testimonial_DjWPC4": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "Omg literally the perfect fit and they can grab food without reaching around and getting caught in the bib. Genius!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#cb6b3a"
+            }
+          },
+          "testimonial_nDTDmF": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "These definitely fit better and are less bulky than others. I'm very impressed with how soft they are and easy to clean!",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_eb6he9": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Your Name",
+              "author_color": "",
+              "message": "We have two of these bibs and I love them so much. My baby doesn't try to rip them off as much.",
+              "message_color": "",
+              "by_line": "Your Sub text comes here",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_DjWPC4",
+          "testimonial_nDTDmF",
+          "testimonial_eb6he9"
+        ],
+        "settings": {
+          "section_title": "",
+          "title_color": "#fff",
+          "title_size": 60,
+          "section_caption": "Your caption goes here",
+          "caption_color": "#fff",
+          "caption_size": 22
         }
       }
     },
