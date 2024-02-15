@@ -5864,6 +5864,13 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_yrC3Dd": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
+          },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
@@ -5880,6 +5887,7 @@
           }
         },
         "block_order": [
+          "hero_slide_yrC3Dd",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL"
         ],
