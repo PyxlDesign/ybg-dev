@@ -3140,6 +3140,13 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
+          "hero_slide_BiNY3U": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
+          },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
@@ -3156,6 +3163,7 @@
           }
         },
         "block_order": [
+          "hero_slide_BiNY3U",
           "hero_slide_bQjNr4",
           "hero_slide_fmUcph"
         ],
