@@ -3140,6 +3140,13 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
+          "hero_slide_XkTGfx": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Day_Desktop_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
+            }
+          },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
@@ -3161,20 +3168,13 @@
               "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero_b8c5eb89-9e34-4182-84d6-4eef9262a982.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
             }
-          },
-          "hero_slide_XkTGfx": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Day_Desktop_Hero.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
-            }
           }
         },
         "block_order": [
+          "hero_slide_XkTGfx",
           "hero_slide_bQjNr4",
           "hero_slide_fmUcph",
-          "hero_slide_BiNY3U",
-          "hero_slide_XkTGfx"
+          "hero_slide_BiNY3U"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
@@ -5873,6 +5873,13 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_BfPY3g": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
+            }
+          },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
@@ -5897,6 +5904,7 @@
           }
         },
         "block_order": [
+          "hero_slide_BfPY3g",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL",
           "hero_slide_yrC3Dd"
