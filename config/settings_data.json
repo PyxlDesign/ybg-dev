@@ -3129,7 +3129,7 @@
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>PRESIDENT's DAY SALE 20% OFF EVERYTHING<\/strong><\/p><p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
+          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
           "color_link": "#d69a81",
@@ -3140,13 +3140,6 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
-          "hero_slide_BiNY3U": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero_b8c5eb89-9e34-4182-84d6-4eef9262a982.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
-            }
-          },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
@@ -3160,12 +3153,20 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
+          },
+          "hero_slide_BiNY3U": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero_b8c5eb89-9e34-4182-84d6-4eef9262a982.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
           }
         },
         "block_order": [
-          "hero_slide_BiNY3U",
           "hero_slide_bQjNr4",
-          "hero_slide_fmUcph"
+          "hero_slide_fmUcph",
+          "hero_slide_BiNY3U"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
@@ -5864,13 +5865,6 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
-          "hero_slide_yrC3Dd": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Mobile_Hero.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
-            }
-          },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
@@ -5884,12 +5878,20 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
+          },
+          "hero_slide_yrC3Dd": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
           }
         },
         "block_order": [
-          "hero_slide_yrC3Dd",
           "hero_slide_FzXpjh",
-          "hero_slide_V3BgWL"
+          "hero_slide_V3BgWL",
+          "hero_slide_yrC3Dd"
         ],
         "settings": {
           "testing_field": "",
