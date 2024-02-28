@@ -3140,6 +3140,14 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
+          "hero_slide_RqM7CD": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/04_Mystery_Bundles_Desktop_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/mystery-bundles"
+            }
+          },
           "hero_slide_XkTGfx": {
             "type": "hero_slide",
             "settings": {
@@ -3171,6 +3179,7 @@
           }
         },
         "block_order": [
+          "hero_slide_RqM7CD",
           "hero_slide_XkTGfx",
           "hero_slide_bQjNr4",
           "hero_slide_fmUcph",
@@ -5873,6 +5882,14 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_PRw9Pw": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/04_Mystery_Bundle_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/mystery-bundles"
+            }
+          },
           "hero_slide_BfPY3g": {
             "type": "hero_slide",
             "settings": {
@@ -5904,6 +5921,7 @@
           }
         },
         "block_order": [
+          "hero_slide_PRw9Pw",
           "hero_slide_BfPY3g",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL",
