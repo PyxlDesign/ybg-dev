@@ -3142,7 +3142,6 @@
         "blocks": {
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/04_Mystery_Bundles_Desktop_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/mystery-bundles"
@@ -5884,7 +5883,6 @@
         "blocks": {
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/04_Mystery_Bundle_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/mystery-bundles"
