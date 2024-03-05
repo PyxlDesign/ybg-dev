@@ -1,6 +1,227 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{% assign s = section.settings %}
+{% assign title = s.section_title %}
+{% assign caption = s.section_caption %}
+{% assign title_size = s.title_size %}
+{% assign caption_size = s.caption_size %}
+{% assign title_color = s.title_color %}
+{% assign caption_color = s.caption_color %}
+{% assign blocks_size = section.blocks.size %}
+<style>
+  #shopify-section-{{ section.id }} .limited-edition__title .h1{
+      font-size: {{title_size}}px;
+      color: {{ title_color }};
   }
+  #shopify-section-{{ section.id }} .limited-edition__title p{
+      font-size: {{caption_size}}px;
+      color: {{ caption_color }};
+  }
+</style>
+<section class="testimonials">
+  <div class="container">
+    <div class="limited-edition__title">
+      {% if title != blank %}
+        <h2 class="h1">
+          {{ title }}
+        </h2>
+      {% endif %}
+      {% if caption != blank %}
+        <p class="copy-lg">{{ caption }}</p>
+      {% endif %}
+    </div>
+    {% if blocks_size > 0 %}
+      <div class="row d-flex no-gutters">
+        <div class="cell col-lg-4 testimonial-block-outer">
+          <div class="h-100 p-3">
+            {% for block in section.blocks %}
+              {% assign bs = block.settings %}
+              {% assign index = forloop.index %}
+              {% assign author = bs.author %}
+              {% assign message = bs.message %}
+              {% assign by_line = bs.by_line %}
+              {% assign author_color = bs.author_color %}
+              {% assign message_color = bs.message_color %}
+              {% assign by_line_color = bs.by_line_color %}
+              {% assign block_background = bs.block_background %}
+              {% if index == 1 %}
+                <style>
+                  #testimonial-{{ block.id }} {
+                      background-color: {{ block_background }};
+                  }
+                  #testimonial-{{ block.id }} .content-box h2{
+                      color: {{ message_color }};
+                  }
+                  #testimonial-{{ block.id }} .content-box p{
+                      color: {{ by_line_color }};
+                  }
+                </style>
+                <div id="testimonial-{{ block.id }}" class="testimoinal-block text-white">
+                  <div class="content-box">
+                    <div class="blockquote">
+                      {% render 'comma-icon' %}
+                    </div>
+                    <h2 class="h2 text-white">{{ message }}</h2>
+                  </div>
+                </div>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% if blocks_size > 1 %}
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {% assign bs = block.settings %}
+          {% assign index = forloop.index %}
+          {% assign author = bs.author %}
+          {% assign message = bs.message %}
+          {% assign by_line = bs.by_line %}
+          {% assign author_color = bs.author_color %}
+          {% assign message_color = bs.message_color %}
+          {% assign by_line_color = bs.by_line_color %}
+          {% assign block_background = bs.block_background %}
+          {% if index > 1 %}
+            <style>
+              #testimonial-{{ block.id }} .testimoinal-block{
+                  background-color: {{ block_background }};
+              }
+              #testimonial-{{ block.id }} .content-box h2{
+                  color: {{ message_color }};
+              }
+              #testimonial-{{ block.id }} .content-box p{
+                  color: {{ by_line_color }};
+              }
+            </style>
+            <div id="testimonial-{{ block.id }}" class="testimonial-block-outer p-3 cell col-lg-4">
+              <div class="testimoinal-block text-white">
+                <div class="content-box">
+                  <div class="blockquote">
+                    {% render 'comma-icon' %}
+                  </div>
+                  <h2 class="h2 text-white">{{ message }}</h2>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "testimonials",
+  "class": "testimonails-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Title Settings"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Your Section title goes here",
+      "info": "This will set the text for Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#fff",
+      "info": "This will set color to Title"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title Font Size",
+      "min": 40,
+      "max": 100,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Caption settings"
+    },
+    {
+      "type": "textarea",
+      "id": "section_caption",
+      "label": "Caption",
+      "default": "Your caption goes here",
+      "info": "This will set text for Caption"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#fff",
+      "info": "This will set color to caption"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "label": "Caption Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "default": 22
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content settings"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name",
+          "default": "Your Name"
+        },
+        {
+          "type": "color",
+          "id": "author_color",
+          "label": "Author Color"
+        },
+        {
+          "type": "text",
+          "id": "message",
+          "label": "Message",
+          "default": "Your message goes here"
+        },
+        {
+          "type": "color",
+          "id": "message_color",
+          "label": "Message Color"
+        },
+        {
+          "type": "text",
+          "id": "by_line",
+          "label": "Sub Text",
+          "default": "Your Sub text comes here"
+        },
+        {
+          "type": "color",
+          "id": "by_line_color",
+          "label": "Sub Text Color"
+        },
+        {
+          "type": "header",
+          "content": "style"
+        },
+        {
+          "type": "color",
+          "id": "block_background",
+          "label": "Background Color"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
