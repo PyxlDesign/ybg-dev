@@ -7005,8 +7005,36 @@
       },
       "reasons-to-buy-patterned-VL-cushions": {
         "type": "reasons-to-buy-patterned-VL-cushions",
+        "blocks": {
+          "reason_Eg9aJq": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFE POSITIONING",
+              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position<\/p>"
+            }
+          },
+          "reason_3zycrU": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS GAP",
+              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!)<\/p>"
+            }
+          },
+          "reason_NzUTjG": {
+            "type": "reason",
+            "settings": {
+              "title": "MATCHING BACK SIDE",
+              "content": "<p>Front and back are the same wipeable vegan leather so you can use either side<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_Eg9aJq",
+          "reason_3zycrU",
+          "reason_NzUTjG"
+        ],
         "settings": {
-          "heading": "Heading goes here"
+          "heading": "Why Vegan Leather Cushions?"
         }
       },
       "testimonials-slider-patterned-VL-cushions": {
