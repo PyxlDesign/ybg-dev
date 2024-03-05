@@ -7039,11 +7039,54 @@
       },
       "testimonials-slider-patterned-VL-cushions": {
         "type": "testimonials-slider-patterned-VL-cushions",
+        "blocks": {
+          "testimonial_b8zK67": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "Having so much baby stuff, I love when it actually goes with decor instead of making our house look like a daycare!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": "#cc6b3a"
+            }
+          },
+          "testimonial_T8jwim": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "My twins are 8 months now, and the cushions have helped them become more sturdy and focused on eating. Before the cushions, they moved around a lot and one twin always stuck her leg up on the tray!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_wdB4Dy": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_b8zK67",
+          "testimonial_T8jwim",
+          "testimonial_wdB4Dy"
+        ],
         "settings": {
           "section_title": "Your Section title goes here",
           "title_color": "#fff",
           "title_size": 60,
-          "section_caption": "Your caption goes here",
+          "section_caption": "",
           "caption_color": "#fff",
           "caption_size": 22
         }
