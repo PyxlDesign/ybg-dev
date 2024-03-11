@@ -3142,6 +3142,7 @@
         "blocks": {
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/05_BOGO70_Desktop_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
@@ -5884,6 +5885,7 @@
         "blocks": {
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/05_BOGO70_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
