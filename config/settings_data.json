@@ -6,7 +6,7 @@
     "color_new": "#bac8b6",
     "color_sold_out": "#df9764",
     "enable_mega": true,
-    "color_rgbs": "Desert Sage\/194, 199, 190||Faded Jade\/142, 158, 151||Vintage Blue\/190, 207, 210||Stone Grey\/207, 207, 207||Coconut Cream\/247, 248, 247||Blushing Beige\/242, 228, 217||Dusty Rose\/225, 185, 183||Pale Terracotta\/222, 169, 151||Golden Doe\/196, 159, 111||Boho Brown\/185, 121, 70||Cinder Black\/27, 27, 27||Frosted Lavender\/208, 195, 217||Toasted Marshmallow\/236, 227, 215||Chalky Pink\/237, 223, 222||Tranquil Blue\/188, 212, 222||Brown Speckle\/242, 240, 234||Rainbow Sprinkles\/242, 240, 235||Beach Glass Terrazzo\/247, 248, 246||Terrazzo on Milk\/225, 223, 219||Terrazzo on Midnight\/72, 72, 73||Terrazzo on Stone\/200, 201, 199||Terrazzo on Jade\/142, 158, 150||Terrazzo on Seafoam\/169, 189, 177",
+    "color_rgbs": "Desert Sage\/194, 199, 190||Faded Jade\/142, 158, 151||Vintage Blue\/190, 207, 210||Stone Grey\/207, 207, 207||Coconut Cream\/247, 248, 247||Blushing Beige\/242, 228, 217||Dusty Rose\/225, 185, 183||Pale Terracotta\/222, 169, 151||Toasted Marshmallow\/236, 227, 215||Golden Doe\/196, 159, 111||Boho Brown\/185, 121, 70||Cinder Black\/27, 27, 27||Chalky Pink\/237, 223, 222||Tranquil Blue\/188, 212, 222||Cocoa Mocha\/144, 118, 98||Real Teal\/75, 128, 131||Brown Speckle\/242, 240, 234||Rainbow Sprinkles\/242, 240, 235||Beach Glass Terrazzo\/247, 248, 246||Terrazzo on Milk\/225, 223, 219||Terrazzo on Midnight\/72, 72, 73||Terrazzo on Stone\/200, 201, 199||Terrazzo on Jade\/142, 158, 150||Terrazzo on Seafoam\/169, 189, 177",
     "layout_body": "default",
     "bg_body_boxed": "#f8f8f8",
     "header_layout": "default",
@@ -3140,6 +3140,22 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
+          "hero_slide_RqM7CD": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/05_BOGO70_Desktop_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
+            }
+          },
+          "hero_slide_XkTGfx": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Day_Desktop_Hero_-_2.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
+            }
+          },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
@@ -3153,11 +3169,22 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
+          },
+          "hero_slide_BiNY3U": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero_b8c5eb89-9e34-4182-84d6-4eef9262a982.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
           }
         },
         "block_order": [
+          "hero_slide_RqM7CD",
+          "hero_slide_XkTGfx",
           "hero_slide_bQjNr4",
-          "hero_slide_fmUcph"
+          "hero_slide_fmUcph",
+          "hero_slide_BiNY3U"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
@@ -4627,7 +4654,7 @@
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
           "shipping_returns_title": "Details",
-          "shipping_returns_content": "<ul>\n<li> Easy to wipe clean <\/li>\n<li> Adjust as your baby grows - no tools needed <\/li>\n<li> Sloped cut-outs on the underside of the footrest hide the support clamps and allow the footrest to sit at a 90-degree angle to the seat base.<\/li>\n<li> Quick and simple <strong><a href=\"https:\/\/www.youtube.com\/watch?v=uS-MiG7nQV8\" target=\"_blank\">installation<\/a><\/strong>\n<\/li>\n<\/ul>\n<p><i>WARNING: Foot support is important for safe feeding posture. However, footrests inherently make it easier for children to push themselves up and out of the seat. Therefore, the footrest should be used with the child’s safety harness fastened \ntight. Do not leave your child unattended in the highchair.<\/i><\/p> \n<p><i>Wood naturally varies in hue, saturation and darkness; therefore, these same variances may occur in our footrests. For this reason, some footrests might not be an exact match with our vinyl leg wraps. Footrests may also have a seam where the color and grain vary.<\/i><\/p> \n<p>U.S. Patent No. D964,759<\/p>",
+          "shipping_returns_content": "<ul>\n<li> Easy to wipe clean <\/li>\n<li> Adjust as your baby grows - no tools needed <\/li>\n<li> Sloped cut-outs on the underside of the footrest hide the support clamps and allow the footrest to sit at a 90-degree angle to the seat base.<\/li>\n<li> Quick and simple <strong><a href=\"https:\/\/youtu.be\/7FwH_FhYHLU?si=PfNn2lSyKYDA5mEN\" target=\"_blank\">installation<\/a><\/strong>\n<\/li>\n<\/ul>\n<p><i>WARNING: Foot support is important for safe feeding posture. However, footrests inherently make it easier for children to push themselves up and out of the seat. Therefore, the footrest should be used with the child’s safety harness fastened \ntight. Do not leave your child unattended in the highchair.<\/i><\/p> \n<p><i>Wood naturally varies in hue, saturation and darkness; therefore, these same variances may occur in our footrests. For this reason, some footrests might not be an exact match with our vinyl leg wraps. Footrests may also have a seam where the color and grain vary.<\/i><\/p> \n<p>U.S. Patent No. D964,759<\/p>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "all",
@@ -5856,6 +5883,22 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_PRw9Pw": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/05_BOGO70_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
+            }
+          },
+          "hero_slide_BfPY3g": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Mobile_Hero_-_2.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
+            }
+          },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
@@ -5869,11 +5912,22 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
+          },
+          "hero_slide_yrC3Dd": {
+            "type": "hero_slide",
+            "disabled": true,
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Mobile_Hero.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
+            }
           }
         },
         "block_order": [
+          "hero_slide_PRw9Pw",
+          "hero_slide_BfPY3g",
           "hero_slide_FzXpjh",
-          "hero_slide_V3BgWL"
+          "hero_slide_V3BgWL",
+          "hero_slide_yrC3Dd"
         ],
         "settings": {
           "testing_field": "",
@@ -6834,7 +6888,7 @@
             "settings": {
               "author": "Your Name",
               "author_color": "",
-              "message": "Omg literally the perfect fit and they can grab food without reaching around and getting caught in the bib. Genius!",
+              "message": "Your bibs are AMAZING for smaller babies! My baby is 7 months and the other bibs we tried restricted her range of motion so much and this one doesn’t at all.",
               "message_color": "",
               "by_line": "Your Sub text comes here",
               "by_line_color": "",
@@ -6873,9 +6927,170 @@
         ],
         "settings": {
           "section_title": "",
-          "title_color": "#fff",
+          "title_color": "#ffffff",
           "title_size": 60,
           "section_caption": "Your caption goes here",
+          "caption_color": "#ffffff",
+          "caption_size": 22
+        }
+      },
+      "product-template-default-pattern-VL-cushions": {
+        "type": "product-template-default-pattern-VL-cushions",
+        "settings": {
+          "style_moreview": "horizontal",
+          "enable_zoom_image": false,
+          "video_product": true,
+          "video_product_icon": "#c1c1c1",
+          "enable_payment_button": false,
+          "left_products": true,
+          "show_sold_in": false,
+          "item_prd": "3,5,6,7,8,10,12,15",
+          "item_prds": "sold in last",
+          "hours_prs": "10,15,16,17,18,20,25,35",
+          "item_hours": "hours",
+          "display_vendor": false,
+          "text_vendor": "Vendor:",
+          "display_product_sku": false,
+          "text_product_sku": "SKU:",
+          "display_availability": false,
+          "text_availability": "Availability:",
+          "display_product_type": false,
+          "text_product_type": "Product Type:",
+          "enable_countdown": false,
+          "countdown": "countdown_1",
+          "text_countdown": "Limited-Time Offers, End in:",
+          "option_countdown": "all_product",
+          "count_down_timer": "2020-12-25 22:11:00",
+          "custombox_text": "",
+          "progressbar_1": "Please hurry, only",
+          "progressbar_2": "left in stock",
+          "total_items": "100",
+          "min_items_left": "8",
+          "max_items_left": "26",
+          "progressbar_color": "#f5f5f5",
+          "progressbar_active_color": "#69c69c",
+          "dpl_customers_view": false,
+          "title_view": "customers are viewing this product",
+          "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
+          "show_desc": "no-show",
+          "display_subtotal": false,
+          "display_product_detail_tag": false,
+          "display_product_detail_share": false,
+          "share_text": "Share",
+          "display_trust_img": false,
+          "show_tab": "horizontal",
+          "display_product_detail_description": true,
+          "product_description_title": "Description",
+          "description": "<p>Give your baby comfort and support in the cutest way possible! Our cushions help achieve a <strong><a href=\"https:\/\/www.youtube.com\/watch?v=_lBIOghggKI&amp;t=24s\" target=\"_blank\">safe and supportive position<\/a><\/strong>\nfor your baby, scoot baby closer to the tray and <strong><a href=\"https:\/\/www.youtube.com\/watch?v=rndFYKEBZ2M\" target=\"_blank\">adjust as your baby grows<\/a><\/strong>. The cushion can also be used in restaurant highchairs, baby swings, shopping carts, activity centers and anywhere else your baby needs extra support. Interchangeable covers keep your cushion looking stylish!<\/p>\n<p>Cover can be used with our <strong><a href=\"https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers\/products\/cushion-insert\" target=\"_blank\">cushion insert<\/a><\/strong> or the IKEA Antilop support cushion (insert sold separately).<\/p>",
+          "display_product_reviews": false,
+          "product_review_title": "Customer Reviews",
+          "display_shipping_returns": true,
+          "shipping_returns_title": "Details",
+          "shipping_returns_content": "<ul>\n    <li>Wipeable, soft vegan leather<\/li>\n    <li>Patterns designed by indie artists who directly benefit from each sale<\/li>\n    <li>Machine washable<\/li>\n    <li>Zipper closure<\/li>\n    <li> See our <strong><a href=\"https:\/\/www.yeahbabygoods.com\/pages\/care-instructions-1\">care instructions page<\/a><\/strong> for how to clean<\/li>\n<\/ul><p>\n<i>Our vegan leather has independently tested and certified as free of lead, phthalates and other toxins.<\/i><\/p>",
+          "display_custom_tab": false,
+          "custom_tab_title": "Custom Product Tab",
+          "custom_tab_type": "specified",
+          "custom_tab_content": "",
+          "dpl_lookbook_description": false,
+          "style_lookbook_description": "all_product",
+          "quote_title": "",
+          "quote_des": "",
+          "quote_title_2": "",
+          "quote_des_2": "",
+          "dpl_gallery_lookbook": false,
+          "style_lookbook_gallery": "all_product",
+          "dpl_grouped_product": false,
+          "grouped_title": "Frequently Bought Together",
+          "grouped_choose_options_text": "Please choose options for all selected products",
+          "choose_options": "Choose Options",
+          "enable_bundle_discount": true,
+          "bundle_discount_text": "Get a [discount]% discount buying these products together | Erhalten Sie einen Rabatt von [discount]%, wenn Sie diese Produkte zusammen kaufen"
+        }
+      },
+      "reasons-to-buy-patterned-VL-cushions": {
+        "type": "reasons-to-buy-patterned-VL-cushions",
+        "blocks": {
+          "reason_Eg9aJq": {
+            "type": "reason",
+            "settings": {
+              "title": "SAFE POSITIONING",
+              "content": "<p>Provides support for baby's back and hips and keeps baby in a safe feeding position<\/p>"
+            }
+          },
+          "reason_3zycrU": {
+            "type": "reason",
+            "settings": {
+              "title": "LESS GAP",
+              "content": "<p>Baby sits closer to tray so they can easily reach food (and get less food in their lap!)<\/p>"
+            }
+          },
+          "reason_NzUTjG": {
+            "type": "reason",
+            "settings": {
+              "title": "MATCHING BACK SIDE",
+              "content": "<p>Front and back are the same wipeable vegan leather so you can use either side<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_Eg9aJq",
+          "reason_3zycrU",
+          "reason_NzUTjG"
+        ],
+        "settings": {
+          "heading": "Why Vegan Leather Cushions?"
+        }
+      },
+      "testimonials-slider-patterned-VL-cushions": {
+        "type": "testimonials-slider-patterned-VL-cushions",
+        "blocks": {
+          "testimonial_b8zK67": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "Having so much baby stuff, I love when it actually goes with decor instead of making our house look like a daycare!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": "#cc6b3a"
+            }
+          },
+          "testimonial_T8jwim": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "My twins are 8 months now, and the cushions have helped them become more sturdy and focused on eating. Before the cushions, they moved around a lot and one twin always stuck her leg up on the tray!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": ""
+            }
+          },
+          "testimonial_wdB4Dy": {
+            "type": "testimonial",
+            "settings": {
+              "author": "",
+              "author_color": "",
+              "message": "These vegan leather covers are gooooooooooood. Is there like a scratch and sniff feature you can add to the website, but for touch? They are so soft and are even better in person than I imagined!",
+              "message_color": "",
+              "by_line": "",
+              "by_line_color": "",
+              "block_background": "#bac8b6"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial_b8zK67",
+          "testimonial_T8jwim",
+          "testimonial_wdB4Dy"
+        ],
+        "settings": {
+          "section_title": "Your Section title goes here",
+          "title_color": "#fff",
+          "title_size": 60,
+          "section_caption": "",
           "caption_color": "#fff",
           "caption_size": 22
         }
