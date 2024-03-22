@@ -1,20 +1,20 @@
-console.log('loaded');
-function addItem(form_id) {
+// console.log('loaded');
+function addItem (form_id) {
     var quantity = parseInt($("span#cart-number").data('count'));
     var data = $('#' + form_id).serialize();
-    console.log(quantity);
+    // console.log(quantity);
     $.ajax({
         type: 'POST',
         url: '/cart/add.js',
         dataType: 'json',
         data: data,
         success: function () {
-            console.log("success");
+            // console.log("success");
             addToCartOk(quantity);
             // fetchCart()
         },
         error: function (res) {
-            console.log(res);
+            // console.log(res);
             $("#cart-number").text(quantity);
         }
     });
@@ -56,15 +56,15 @@ const cartSubtotal = document.querySelector(defaults.cartSubtotal);
 let cartQtyInput = document.querySelectorAll(defaults.cartQtyInput);
 const cart_btn = document.querySelector(defaults.cart_btn);
 const body = document.querySelector(defaults.body);
-function fetchCart() {
+function fetchCart () {
     $.ajax({
         type: 'GET',
         url: '/cart.js',
         dataType: 'json',
         success: function (cart) {
             // onCartUpdate(cart);
-            console.log(cart);
-            if (cart.item_count === 0) {
+            // console.log(cart);
+            if(cart.item_count === 0) {
                 cartWrapper.innerHTML = '<h3 class="py-5 text-center">Cart is empty</h3>';
                 cartCounter.classList.add('d-none');
                 cartSubtotal.innerHTML = Shopify.formatMoney(cart.original_total_price);
@@ -83,7 +83,7 @@ function fetchCart() {
     });
 }
 
-function changeItem(line, quantity, callback) {
+function changeItem (line, quantity, callback) {
     // const quantity = 0;
     $.ajax({
         type: 'POST',
@@ -91,7 +91,7 @@ function changeItem(line, quantity, callback) {
         data: 'quantity=' + quantity + '&line=' + line,
         dataType: 'json',
         success: function (cart) {
-            if ((typeof callback) === 'function') {
+            if((typeof callback) === 'function') {
                 callback(cart);
             } else {
                 onCartUpdate(cart);
@@ -102,11 +102,11 @@ function changeItem(line, quantity, callback) {
     });
 }
 
-function onCartUpdate(cart) {
-    console.log('items in the cart?', cart.item_count);
+function onCartUpdate (cart) {
+    // console.log('items in the cart?', cart.item_count);
 }
 
-function addToCartOk() {
+function addToCartOk () {
     // cartModalContent.innerHTML = product.title + ' was added to the cart!';s
     cartCounter.innerHTML = Number(cartCounter.innerHTML) + 1;
     $(document).find('.cart-link span.badge').removeClass('d-none').show();
@@ -116,26 +116,26 @@ function addToCartOk() {
 
 }
 
-function removeProductFromCart() {
+function removeProductFromCart () {
     cartCounter.innerHTML = Number(cartCounter.innerHTML) - 1;
 }
 
-function addToCartFail() {
+function addToCartFail () {
     cartModalContent.innerHTML = 'The product you are trying to add is out of stock.';
     openAddModal();
     // openCartOverlay();
 }
 
-function renderCart(cart) {
+function renderCart (cart) {
 
-    console.log(cart);
+    // console.log(cart);
 
     clearCartDrawer();
 
     cart.items.forEach(function (item, index) {
-        console.log(item);
+        // console.log(item);
         let hidden = ""
-        if (item.product_type == "Seminar") {
+        if(item.product_type == "Seminar") {
             hidden = "visually-hidden"
         }
         //console.log(item.title);
@@ -170,16 +170,16 @@ function renderCart(cart) {
     //     });
 
     removeFromCart = document.querySelectorAll(defaults.removeFromCart);
-    for (let i = 0; i < removeFromCart.length; i++) {
+    for(let i = 0;i < removeFromCart.length;i++) {
         removeFromCart[i].addEventListener('click', function () {
             const line = this.parentNode.getAttribute('data-line');
             var quantity = 0;
-            console.log(line);
+            // console.log(line);
             changeItem(line, quantity);
         });
     }
     cartQtyInput = document.querySelectorAll(defaults.cartQtyInput);
-    for (let i = 0; i < cartQtyInput.length; i++) {
+    for(let i = 0;i < cartQtyInput.length;i++) {
         cartQtyInput[i].addEventListener('change', function () {
             const line = $(this).parents('.cart-block').data('line');
             var quantity = parseInt(this.value);
@@ -189,7 +189,7 @@ function renderCart(cart) {
         })
     }
     min_btn = document.querySelectorAll(defaults.min_btn);
-    for (let i = 0; i < min_btn.length; i++) {
+    for(let i = 0;i < min_btn.length;i++) {
         min_btn[i].addEventListener("click", function () {
             let qty_input = this.nextElementSibling;
             let value = qty_input.value;
@@ -204,7 +204,7 @@ function renderCart(cart) {
         })
     }
     pls_btn = document.querySelectorAll(defaults.pls_btn);
-    for (let i = 0; i < pls_btn.length; i++) {
+    for(let i = 0;i < pls_btn.length;i++) {
         pls_btn[i].addEventListener("click", function () {
             let qty_input = this.previousElementSibling;
             let value = parseInt(qty_input.value);
@@ -228,18 +228,18 @@ function renderCart(cart) {
 //     cartDrawer.classList.remove('is-open');
 // }
 
-function clearCartDrawer() {
+function clearCartDrawer () {
     cartWrapper.innerHTML = '';
 }
 
-function openAddModal() {
+function openAddModal () {
     cartModal = $(document).find('#modalShoppingCart');
     // $(defaults.cartDrawerTrigger).trigger('click');
     // $('#offCanvasShoppingCart').foundation('open');
     cartModal.modal('show');
 }
 
-function closeAddModal() {
+function closeAddModal () {
     cartModal = document.querySelector('#modalShoppingCart');
     body.classList.remove('modal-open');
     cartModal.classList.remove('show');
@@ -291,7 +291,7 @@ $(window).on("load", function () {
 
 
 
-function addItemToCart(variant_id, qty) {
+function addItemToCart (variant_id, qty) {
     // console.log(variant_id, qty + " ++++++++++++++++++++++++++++");
     let quantity = qty;
     var data = {
