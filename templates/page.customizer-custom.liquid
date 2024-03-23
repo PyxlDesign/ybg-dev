@@ -8,7 +8,7 @@
     window._collection.collection.metafields = {};
     window._collection.collection.metafields.global = {{ collection.metafields.global | json }};
 
-    {% paginate collections.customizer.products by 1100 %}
+    {% paginate collections.customizer.products by 1000 %}
         {% for product in collections.customizer.products %}
             window._collection.products[{{ product.id }}] = {{ product | json }};
             window._collection.products[{{ product.id }}].metafields = {{ product.metafields.product | json }};
