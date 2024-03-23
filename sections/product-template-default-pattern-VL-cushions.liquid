@@ -20,7 +20,7 @@
           </div>
 
           {% for collection in product.collections %}
-            {% if collection.handle == 'ikea-highchair-cushion-covers' %}
+            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'pattern-vegan-leather-cushion-covers' %}
               {% if product.handle == 'cushion-insert' %}
                 {% continue %}
               {% else %}
@@ -458,7 +458,7 @@
 
           {% for collection in product.collections %}
             {% comment %} {{ collection.handle }} {% endcomment %}
-            {% if collection.handle == 'ikea-highchair-cushion-covers' %}
+            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'pattern-vegan-leather-cushion-covers' %}
               {% render 'product-colors-block' %}
             {% else %}
               {% continue %}
@@ -478,7 +478,7 @@
               <!-- <input type="hidden" name="properties[Add selected placemat]" value="No"> -->
               <span class="placemat_img mr-3 py-3">
                 <span class="placemat-image-wrapper">
-                  <img src="" alt="selected placemat" width="80px">
+                  <img src="" alt="selected placemat" width="80px" >
                 </span>
                 <span>
                   <span class="d-block font-regular">Add Selected Placemat</span>
