@@ -4260,17 +4260,6 @@
               "cta_url": "shopify:\/\/collections\/ikea-highchair-cushion-covers"
             }
           },
-          "image_eMWepw": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/ybg-2_square.jpg",
-              "title": "Vegan Leather Cushion Covers",
-              "description": "Wipeable covers for your support cushion",
-              "cta_text": "Shop now",
-              "cta_url": "shopify:\/\/collections\/pattern-vegan-leather-cushion-covers"
-            }
-          },
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
@@ -4344,7 +4333,6 @@
         },
         "block_order": [
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72",
-          "image_eMWepw",
           "20816f8a-0727-4067-9917-69b093cf279f",
           "3afad392-0b78-4639-8e1f-ba45f57531e5",
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c",
