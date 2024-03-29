@@ -20,7 +20,7 @@
           </div>
 
           {% for collection in product.collections %}
-            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'pattern-vegan-leather-cushion-covers' %}
+            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'vegan-leather-cushion-covers' %}
               {% if product.handle == 'cushion-insert' %}
                 {% continue %}
               {% else %}
@@ -458,7 +458,7 @@
 
           {% for collection in product.collections %}
             {% comment %} {{ collection.handle }} {% endcomment %}
-            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'pattern-vegan-leather-cushion-covers' %}
+            {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle == 'vegan-leather-cushion-covers' %}
               {% render 'product-colors-block' %}
             {% else %}
               {% continue %}
