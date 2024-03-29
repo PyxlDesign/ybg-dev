@@ -381,24 +381,35 @@
     margin-top: 20px;
   }
 
-  body:not(#cotton-cushion-covers) .sidebar-wrapper,
-  body:not(#cotton-cushion-covers) .wrapper-overlay,
-  body:not(#cotton-cushion-covers) .sidebar-label,
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .sidebar-wrapper,
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .wrapper-overlay,
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .sidebar-label,
   body .toolbar .filters-toolbar__limited-view,
   body .toolbar .filters-toolbar__sortby,
-  body:not(#cotton-cushion-covers) .mat-color-wrapper {
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .mat-color-wrapper {
     display: none !important;
   }
 
-  body:not(#cotton-cushion-covers) .toolbar .column-left {
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .toolbar
+    .column-left,
+  body:not(#vegan-leather-cushion-covers) .toolbar .column-left {
     justify-content: flex-end;
   }
 
-  body:not(#cotton-cushion-covers) .toolbar .column-right {
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers)
+    .toolbar
+    .column-right,
+  body:not(#vegan-leather-cushion-covers) .toolbar .column-right {
     margin-top: 0;
   }
 
-  body:not(#cotton-cushion-covers) .toolbar {
+  body:not(#cotton-cushion-covers):not(#vegan-leather-cushion-covers) .toolbar,
+  body:not(#vegan-leather-cushion-covers) .toolbar {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     padding: 0;
