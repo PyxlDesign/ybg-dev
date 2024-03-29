@@ -70,7 +70,8 @@
               data-sizes="auto"
             >
           {% endif %}
-          {% if collection.handle == 'ikea-highchair-cushion-covers' and product.handle != 'cushion-insert' %}
+          {% if product.handle != 'cushion-insert' %}
+          {% if collection.handle == 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %}
             <span class="svg-fillColor" style="color:transparent">
               <svg
                 viewBox="0 0 3200 3200"
@@ -147,6 +148,7 @@
               </div>
               <img src="{{ 'Mat_CushionAngle_Shadow.png' | asset_url }}" alt="" title="" class="shadow-image d-none">
             </span>
+          {% endif %}
           {% endif %}
         </a>
       </div>

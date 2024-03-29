@@ -75,8 +75,8 @@
   data-section-type="collection-template"
   data-product-show="{{ product_per_page }}">
   {% render 'toolbar' %}
-  <div class="row {% if collection.handle contains 'ikea-highchair-cushion-covers' %} collection-cushion-covers {% endif %}">
-    {% if collection.handle contains 'ikea-highchair-cushion-covers' %}
+  <div class="row {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %} collection-cushion-covers {% endif %}">
+    {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %}
       <div class="grid-item col-md-3">
         <div class="sidebar-wrapper sidebar-filter">
           <div class="sidebar__header d-md-none">
@@ -237,7 +237,7 @@
         </div>
       </div>
     {% endif %}
-    <div class="grid-item {% unless collection.handle contains 'ikea-highchair-cushion-covers' %} col-md-12 {% else %} col-md-9{% endunless %}">
+    <div class="grid-item {% unless collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %} col-md-12 {% else %} col-md-9{% endunless %}">
       <div id="products-container" class="product-collection {{ rows }} row">
         {% if collection.products_count > 0 %}
           {{ productCards }}
