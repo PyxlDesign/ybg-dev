@@ -74,14 +74,16 @@
   data-section-id="{{ section.id }}"
   data-section-type="collection-template"
   data-product-show="{{ product_per_page }}">
+
   {% render 'toolbar' %}
+
   <div class="row {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %} collection-cushion-covers {% endif %}">
     {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %}
       <div class="grid-item col-md-3">
         <div class="sidebar-wrapper sidebar-filter">
           <div class="sidebar__header d-md-none">
             <button class="close-filter btn bg-transparent border-0 text-uppercase font-acumin">
-              CLose Filters
+              Close Filters
               <span class="icon-wrap">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,42 +180,45 @@
                               {% for tag in collection_tags %}
                                 {% unless tag == '' %}
                                   {% if tag contains title %}
-                                    <li>
-                                      {% assign _tag = tag | split: '/' | last %}
-                                      {% comment %} {% assign file_axtention = '.png' %} {% endcomment %}
-                                      {% comment %} {% assign file_name = _tag | append: file_axtention %} {% endcomment %}
-                                      {% comment %} {% assign file = file_name | file_url %} {% endcomment %}
-                                      {% assign background_rgb = '' %}
-                                        {% for rbg in color_bgs %}
+                                    {% assign _tag = tag | split: '/' | last %}
+                                    {% comment %} {% assign file_axtention = '.png' %} {% endcomment %}
+                                    {% comment %} {% assign file_name = _tag | append: file_axtention %} {% endcomment %}
+                                    {% comment %} {% assign file = file_name | file_url %} {% endcomment %}
+                                    {% assign background_rgb = '' %}
+                                    {% for rbg in color_bgs %}
                                         {% assign rgb_color = rbg | split: '/' | first | handleize %}
                                         {% assign rbg_val = rbg | split: '/' | last %}
                                         {% assign filter_color = _tag | handleize %}
                                         {% assign swatchImage = rgb_color | handleize | append: ".jpg" %}
-                                          {% if rgb_color == filter_color %}
-                                          {% assign background_rgb = rbg_val %}
-                                        {% break %}
-                                      {% endif %}
-                                      {% endfor %}
-                                      <input
-                                        type="checkbox"
-                                        data-type="{{ title }}"
-                                        {% if title == 'Color' %}
-                                        data-rgb="{{background_rgb}}"
+                                        {% if rgb_color == filter_color %}
+                                            {% assign background_rgb = rbg_val %}
+                                            {% break %}
                                         {% endif %}
-                                        name="tags"
-                                        id="checkbox_{{ forloop.index }}__{{ tag }}"
-                                        value="{{ _tag | handleize }}"
-                                        class="filterInput d-none"> <label
-                                        title="{{ _tag }}"
-                                        for="checkbox_{{ forloop.index }}__{{ tag }}"
-                                        {% if title == 'Color' %}
-                                        style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
-                                        {% endif %}>
-                                        {% unless title == 'Color' %}
-                                          {{ _tag | capitalize }}
-
-                                        {% endunless %}
-                                      </label>
+                                    {% endfor %}
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            data-type="{{ title }}"
+                                            {% if title == 'Color' %}
+                                            data-rgb="{{background_rgb}}"
+                                            {% endif %}
+                                            name="tags"
+                                            id="checkbox_{{ forloop.index }}__{{ tag }}"
+                                            value="{{ _tag | handleize }}"
+                                            {% if current_tags contains _tag %}
+                                            checked
+                                            {% endif %}
+                                            class="filterInput d-none">
+                                        <label
+                                            title="{{ _tag }}"
+                                            for="checkbox_{{ forloop.index }}__{{ tag }}"
+                                            {% if title == 'Color' %}
+                                            style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
+                                            {% endif %}>
+                                            {% unless title == 'Color' %}
+                                            {{ _tag | capitalize }}
+                                            {% endunless %}
+                                        </label>
                                     </li>
                                   {% endif %}
                                 {% endunless %}

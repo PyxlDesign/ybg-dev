@@ -190,7 +190,7 @@
       {% include 'buddha-crosssell' %}
     {%- endcomment -%}
     <script src="{{ 'ajaxCart.js' | asset_url }}" async="async"></script>
-    <script src="{{ 'products.js' | asset_url }}" async="async"></script>
+    {% comment %} <script src="{{ 'products.js' | asset_url }}" async="async"></script> {% endcomment %}
     <script src="{{ 'utilities.js' | asset_url }}" async="async"></script>
     <script src="{{ 'bundle.js' | asset_url }}" async="async"></script>
     {% include 'smile-initializer' %}
