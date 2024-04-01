@@ -3160,21 +3160,12 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
-          },
-          "hero_slide_BiNY3U": {
-            "type": "hero_slide",
-            "disabled": true,
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Desktop_Hero_b8c5eb89-9e34-4182-84d6-4eef9262a982.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
-            }
           }
         },
         "block_order": [
           "hero_slide_RqM7CD",
           "hero_slide_bQjNr4",
-          "hero_slide_fmUcph",
-          "hero_slide_BiNY3U"
+          "hero_slide_fmUcph"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
@@ -5881,14 +5872,6 @@
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
             }
           },
-          "hero_slide_BfPY3g": {
-            "type": "hero_slide",
-            "disabled": true,
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Mobile_Hero_-_2.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
-            }
-          },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
@@ -5902,22 +5885,12 @@
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
             }
-          },
-          "hero_slide_yrC3Dd": {
-            "type": "hero_slide",
-            "disabled": true,
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/02_President_s_Day_Sale_Mobile_Hero.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/collections"
-            }
           }
         },
         "block_order": [
           "hero_slide_PRw9Pw",
-          "hero_slide_BfPY3g",
           "hero_slide_FzXpjh",
-          "hero_slide_V3BgWL",
-          "hero_slide_yrC3Dd"
+          "hero_slide_V3BgWL"
         ],
         "settings": {
           "testing_field": "",
