@@ -3144,16 +3144,8 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/05_BOGO70_Desktop_Hero.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/ikea-highchair-cushion-covers"
-            }
-          },
-          "hero_slide_XkTGfx": {
-            "type": "hero_slide",
-            "disabled": true,
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/03_St_Patrick_s_Day_Desktop_Hero_-_2.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/2024-st-patricks-collection"
+              "hero_slide_image": "shopify:\/\/shop_images\/06_Patterned_VL_Desktop_Hero.jpg",
+              "hero_slide_url": "shopify:\/\/collections\/vegan-leather-cushion-covers"
             }
           },
           "hero_slide_bQjNr4": {
@@ -3181,7 +3173,6 @@
         },
         "block_order": [
           "hero_slide_RqM7CD",
-          "hero_slide_XkTGfx",
           "hero_slide_bQjNr4",
           "hero_slide_fmUcph",
           "hero_slide_BiNY3U"
