@@ -5872,6 +5872,13 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_QQACGT": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/07_Flash_Sale_Mobile_Hero.jpg",
+              "hero_slide_url": "shopify:\/\/pages\/collections"
+            }
+          },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
             "settings": {
@@ -5895,6 +5902,7 @@
           }
         },
         "block_order": [
+          "hero_slide_QQACGT",
           "hero_slide_PRw9Pw",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL"
