@@ -7128,10 +7128,28 @@
               "heading": "create content and post",
               "content": "Makeover your highchair? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? <br><br>Post a video or picture on eligible social media, tag @yeahbabygoods and use #YBGrebate."
             }
+          },
+          "feature_PmymwC": {
+            "type": "feature",
+            "settings": {
+              "prefix": "2",
+              "heading": "send email",
+              "content": "Screenshot your post and email it along with the post link to hello@yeahbabygoods.com. \n<br><br>(If you are a private account, you will need to send the file as well.)"
+            }
+          },
+          "feature_9aYQ9p": {
+            "type": "feature",
+            "settings": {
+              "prefix": "Prefix",
+              "heading": "Feature heading",
+              "content": "Feature details goes here"
+            }
           }
         },
         "block_order": [
-          "feature_jEQfCg"
+          "feature_jEQfCg",
+          "feature_PmymwC",
+          "feature_9aYQ9p"
         ],
         "settings": {
           "section_heading": "Three Easy Steps",
