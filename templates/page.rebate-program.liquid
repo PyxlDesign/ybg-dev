@@ -1,28 +1,386 @@
-<div class="page-tpl">
-  <div class="container">
-    {% render 'breadcrumb' %}
+{% section 'rebate-program-hero' %}
 
-    <header class="page-header">
-      <h2>
-        {% render 'multilang' with page.title %}
-      </h2>      
-    </header>
+{% section 'rebate-picture' %}
 
-    {% comment %}
-    Regular page content goes here.
-    {% endcomment %}
+{% section 'banner-rebate-program' %}
 
-    {% if settings.enable_multilang and page.content contains '[lang2]' %}
-    <div class="rte lang1">
-      {{ page.content | split: '[lang2]' | first }}
-    </div>
-    <div class="rte lang2">
-      {{ page.content | split: '[lang2]' | last }}
-    </div>
-    {% else %}
-    <div class="rte">
-      {{ page.content | split: '[lang2]' | first }}
-    </div>
-    {% endif %}
-  </div>
-</div>
+{% section 'collections-rebate-program' %}
+
+{% section 'signature-collections' %}
+
+    <!-- <section class="start-step-one">
+        <div class="container-md">
+            <div class="start-step-one__header text-center">
+                <h2 class="mb-6">step 1</h2>
+                <h2 class="h1 text-bronze-2">get the $20 highchair</h2>
+                <p class="font-karla copy-xl">Order from IKEA’s website. You can often find the highchair on Facebook
+                    Marketplace as well. We love
+                    this chair!</p>
+            </div>
+            <div class="start-step-one__showcase">
+                <div class="col-left  content-box">
+                    <h2 class="text-bronze-2">the flaws</h2>
+                    <ul>
+                        <li>Tray is hard to remove</li>
+                        <li>Seat base is too big </li>
+                        <li>Standard cushion didn’t fit our home decor</li>
+                        <li>No foot support</li>
+                    </ul>
+                </div>
+                <div class="col-showcase">
+                    <div class="image-ratio image-ratio--square image-ratio--contain">
+                        {{ 'ikea-chair.png' | asset_img_url:'master' | img_tag }}
+                    </div>
+                </div>
+                <div class="col-right content-box">
+                    <h2 class="text-bronze-2">our solutions</h2>
+                    <ul>
+                        <li>Silicone tray placemats for easy clean-up</li>
+                        <li>Cute support cushions fill the gaps</li>
+                        <li>100+ designer cushion covers</li>
+                        <li>Sturdy adjustable footrests</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-wrapper text-center">
+                <a href="#" class="button button-blue">order on ikea.com</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="display-text bg-bronze-2">
+        <div class="container">
+            <h2 class="display-1">
+                <span class="text-bronze-1">now make it </span><br>
+                cuter <br>
+                safer <br>
+                unique
+            </h2>
+        </div>
+    </section> -->
+
+    <!-- <section class="level-up-product">
+        <div class="container-md">
+            <h2 class="h1 text-bronze-2">Level up with YBGs</h2>
+
+            <div class="row">
+                <div class="cell col-lg-6">
+                    <div class="cell-thumbnail">
+                        <div class="image-ratio image-ratio--square">
+                            {{ 'static-level-up__1.png' | asset_img_url:'master' | img_tag }}
+                        </div>
+                    </div>
+                    <div class="cell-meta">
+                        <h2 class="mb-7">cushion cover</h2>
+                        <p class="copy-lg font-karla">Gives your baby stability, but keeps your home stylish</p>
+                    </div>
+                </div>
+                <div class="cell col-lg-6">
+                    <div class="cell-thumbnail">
+                        <div class="image-ratio image-ratio--square">
+                            {{ 'static-level-up__2.png' | asset_img_url:'master' | img_tag }}
+                        </div>
+                    </div>
+                    <div class="cell-meta">
+                        <h2 class="mb-7">footrest</h2>
+                        <p class="copy-lg font-karla">Makes meal times safer and more comfortable</p>
+                    </div>
+                </div>
+                <div class="cell col-lg-6">
+                    <div class="cell-thumbnail">
+                        <div class="image-ratio image-ratio--square">
+                            {{ 'static-level-up__3.png' | asset_img_url:'master' | img_tag }}
+                        </div>
+                    </div>
+                    <div class="cell-meta">
+                        <h2 class="mb-7">placemat</h2>
+                        <p class="copy-lg font-karla">FDA food-grade silicone fits in tray and makes clean-up a breeze
+                        </p>
+                    </div>
+                </div>
+                <div class="cell col-lg-6">
+                    <div class="cell-thumbnail">
+                        <div class="image-ratio image-ratio--square">
+                            {{ 'static-level-up__4.png' | asset_img_url:'master' | img_tag }}
+                        </div>
+                    </div>
+                    <div class="cell-meta">
+                        <h2 class="mb-7">leg wraps</h2>
+                        <p class="copy-lg font-karla">Adhere to highchair legs for a truly customized look</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="signature-products">
+        <div class="container-md">
+            <h2 class="text-bronze-2 signature-products__title">our signature products</h2>
+
+            <div class="carousel-wrapper">
+                <div class="signature-products__carousel"
+                    data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false, "pageDots": false }'>
+                    <div class="carousel-cell">
+                        <div class="image-wrapper">
+                            <div class="image-ratio image-ratio--square">
+                                {{ 'signature-products__image.png' | asset_img_url:'master' | img_tag }}
+                            </div>
+                        </div>
+                        <div class="cell-meta">
+                            <h2 class="">cushions <span
+                                    class="h5 text-bronze-2 product-price font-karla">$34.00</span>
+                            </h2>
+                            <div class="row font-karla">
+                                <div class="col-lg-6">
+                                    <p>25 Styles Available</p>
+                                    <div class="ratings">
+                                        <div class="rating-stars">
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#E3E8E1" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <span class="text-bronze-2">1,374 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <p>Includeds lorem ipsum set amet lorem conectitur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="image-wrapper">
+                            <div class="image-ratio image-ratio--square">
+                                {{ 'signature-products__image.png' | asset_img_url:'master' | img_tag }}
+                            </div>
+                        </div>
+                        <div class="cell-meta">
+                            <h2 class="">placemat <span
+                                    class="h5 text-bronze-2 product-price font-karla">$34.00</span>
+                            </h2>
+                            <div class="row font-karla">
+                                <div class="col-lg-6">
+                                    <p>25 Styles Available</p>
+                                    <div class="ratings">
+                                        <div class="rating-stars">
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#E3E8E1" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <span class="text-bronze-2">1,374 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <p>Includeds lorem ipsum set amet lorem conectitur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="image-wrapper">
+                            <div class="image-ratio image-ratio--square">
+                                {{ 'signature-products__image.png' | asset_img_url:'master' | img_tag }}
+                            </div>
+                        </div>
+                        <div class="cell-meta">
+                            <h2 class="">footrest <span
+                                    class="h5 text-bronze-2 product-price font-karla">$34.00</span>
+                            </h2>
+                            <div class="row font-karla">
+                                <div class="col-lg-6">
+                                    <p>25 Styles Available</p>
+                                    <div class="ratings">
+                                        <div class="rating-stars">
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#E3E8E1" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <span class="text-bronze-2">1,374 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <p>Includeds lorem ipsum set amet lorem conectitur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="image-wrapper">
+                            <div class="image-ratio image-ratio--square">
+                                {{ 'signature-products__image.png' | asset_img_url:'master' | img_tag }}
+                            </div>
+                        </div>
+                        <div class="cell-meta">
+                            <h2 class="">footrest <span
+                                    class="h5 text-bronze-2 product-price font-karla">$34.00</span>
+                            </h2>
+                            <div class="row font-karla">
+                                <div class="col-lg-6">
+                                    <p>25 Styles Available</p>
+                                    <div class="ratings">
+                                        <div class="rating-stars">
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#DD9864" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.85276 14L4.27914 8.76129L0 5.32903L5.52147 5.05806L7.5 0L9.47853 5.05806L15 5.32903L10.6748 8.71613L12.1472 14L7.5 11.0194L2.85276 14Z"
+                                                        fill="#E3E8E1" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <span class="text-bronze-2">1,374 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <p>Includeds lorem ipsum set amet lorem conectitur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
