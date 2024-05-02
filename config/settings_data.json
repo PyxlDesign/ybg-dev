@@ -3912,6 +3912,22 @@
       "signature-collections": {
         "type": "signature-collections",
         "blocks": {
+          "c5de6d2d-95b2-495a-94e7-cf63fc88a43e": {
+            "type": "collection",
+            "settings": {
+              "featured_collection": "dinnerware",
+              "collection_image": "shopify:\/\/shop_images\/YBG-61_KRK_521f2d69-5d3d-4816-9047-b1dae1b57088.jpg",
+              "col_description": "Silicone table placemats for toddlers and big kids"
+            }
+          },
+          "d42a4fed-fa18-4874-95a9-733ca397041c": {
+            "type": "collection",
+            "settings": {
+              "featured_collection": "restaurant-bags-1",
+              "collection_image": "shopify:\/\/shop_images\/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
+              "col_description": "Easier prep and clean-up for meals at home or on the go"
+            }
+          },
           "2054d530-5034-4a7a-bc27-88825b7427b2": {
             "type": "collection",
             "settings": {
@@ -3927,29 +3943,13 @@
               "collection_image": "shopify:\/\/shop_images\/faded_jade_full.jpg",
               "col_description": "Extra large, multi-purpose silicone mats"
             }
-          },
-          "d42a4fed-fa18-4874-95a9-733ca397041c": {
-            "type": "collection",
-            "settings": {
-              "featured_collection": "restaurant-bags-1",
-              "collection_image": "shopify:\/\/shop_images\/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
-              "col_description": "Easier prep and clean-up for meals at home or on the go"
-            }
-          },
-          "c5de6d2d-95b2-495a-94e7-cf63fc88a43e": {
-            "type": "collection",
-            "settings": {
-              "featured_collection": "table-placemats",
-              "collection_image": "shopify:\/\/shop_images\/50_untitled-172.jpg",
-              "col_description": "Silicone table placemats for toddlers and big kids"
-            }
           }
         },
         "block_order": [
-          "2054d530-5034-4a7a-bc27-88825b7427b2",
-          "00f61c33-c0af-4001-adbe-4f44851037d6",
+          "c5de6d2d-95b2-495a-94e7-cf63fc88a43e",
           "d42a4fed-fa18-4874-95a9-733ca397041c",
-          "c5de6d2d-95b2-495a-94e7-cf63fc88a43e"
+          "2054d530-5034-4a7a-bc27-88825b7427b2",
+          "00f61c33-c0af-4001-adbe-4f44851037d6"
         ],
         "settings": {
           "heading": "Beyond The Highchair"
