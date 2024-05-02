@@ -7137,6 +7137,14 @@
               "content": "Screenshot your post and email it along with the post link to hello@yeahbabygoods.com. \n<br><br>(If you are a private account, you will need to send the file as well.)"
             }
           },
+          "feature_tQfHX3": {
+            "type": "feature",
+            "settings": {
+              "prefix": "Prefix",
+              "heading": "Feature heading",
+              "content": "Feature details goes here"
+            }
+          },
           "feature_9aYQ9p": {
             "type": "feature",
             "settings": {
@@ -7149,11 +7157,38 @@
         "block_order": [
           "feature_jEQfCg",
           "feature_PmymwC",
+          "feature_tQfHX3",
           "feature_9aYQ9p"
         ],
         "settings": {
           "section_heading": "Three Easy Steps",
           "section_paragraph": ""
+        }
+      },
+      "rebate-program-steps2": {
+        "type": "rebate-program-steps2",
+        "blocks": {
+          "review_phT4Lg": {
+            "type": "review",
+            "settings": {
+              "title": "create content and post",
+              "content": "Give your highchair a makeover? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? <br><br>Post a video or picture on eligible social media, tag @yeahbabygoods and use #YBGrebate."
+            }
+          },
+          "review_pUWa8K": {
+            "type": "review",
+            "settings": {
+              "title": "send email",
+              "content": "Screenshot your post and email it along with the post link to hello@yeahbabygoods.com.  <br><br>(If you are a private account, you will need to send the file as well.)"
+            }
+          }
+        },
+        "block_order": [
+          "review_phT4Lg",
+          "review_pUWa8K"
+        ],
+        "settings": {
+          "heading": "Two Easy Steps"
         }
       }
     },
