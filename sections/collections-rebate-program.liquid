@@ -1,6 +1,117 @@
+{% liquid 
+    assign s = section.settings
+    assign blocks = section.blocks
+    assign section_heading = s.section_heading
+    assign pre_heading = s.pre_heading
+    %}
+<section class="level-up-product">
+    <div class="container-md">
+        <div class="header-container text-center">
+            {% if pre_heading != blank %}
+            <h2 class="mb-3">{{ pre_heading }}</h2>
+            {% endif %}
+            {% if section_heading != blank %}
+            <h2 class="h1 text-bronze-2">{{ section_heading }}</h2>
+            {% endif %}
+        </div>
+
+        <div class="row">
+            {% for block in blocks %}
+                {%liquid
+                    assign bs = block.settings
+                    assign collection = collections[bs.collection]
+                    assign image = bs.image
+                    %}
+            <div class="cell col-lg-6">
+                <div class="cell-thumbnail">
+                    <div class="image-ratio image-ratio--square">
+                        {% if image != blank %}
+                        {{ image | img_url:'master' | img_tag }}
+                        {% else %}
+                        {{ collection.image | img_url:'master' | img_tag }}    
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="cell-meta">
+                    <a href="{{ collection.url }}">
+                        {% if bs.collection_title != blank %}
+                        <h2 class="mb-7">{{ bs.collection_title }}</h2>
+                        {% else %}
+                        <h2 class="mb-7">{{ collection.title }}</h2>
+                        {% endif %}
+                    </a>
+                    <div class="copy-lg font-karla">{{ collection.description }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="additional-content mt-20 text-center">
+            {% if section.settings.highchair_link != blank %}
+            <h2 class="signature-products__title">{{ section.settings.highchair_text }}</h2>
+            <div class="button-wrapper mt-5">
+            <a href="{{section.settings.highchair_link}}" class="button">{{ section.settings.btn_text }}</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Collections List",
+    "class": "start-here-collections-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "pre_heading",
+            "label": "Pre header"
+        },
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Section title",
+            "default": "Section Title Goes Here"
+        },
+        {
+            "type": "text",
+            "id": "highchair_text",
+            "label": "Additional link text",
+            "default": "Find Out What Makes a Safe Highchair"
+        },
+        {
+            "type": "url",
+            "id": "highchair_link",
+            "label": "Additional link",
+            "default": "/"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text",
+            "default": "Find out"
+        }
+    ],
+    "blocks":[
+        {
+            "type": "collection",
+            "name": "Collection",
+            "settings": [
+                {
+                    "type": "collection",
+                    "id": "collection",
+                    "label": "Collection"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Collection image"
+                },
+                {
+                    "type": "text",
+                    "id": "collection_title",
+                    "label": "Collection title"
+                }
+            ]
+        }
+    ]
+}
 {% endschema %}
