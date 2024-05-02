@@ -7141,16 +7141,25 @@
           "feature_BXcDNB": {
             "type": "feature",
             "settings": {
-              "prefix": "filler filler",
-              "heading": "filler",
-              "content": "fiklerFeature details goes here"
+              "prefix": "",
+              "heading": "",
+              "content": ""
+            }
+          },
+          "feature_N3GxgE": {
+            "type": "feature",
+            "settings": {
+              "prefix": "Prefix",
+              "heading": "Feature heading",
+              "content": "Feature details goes here"
             }
           }
         },
         "block_order": [
           "feature_k7VbJt",
           "feature_qQ8A8U",
-          "feature_BXcDNB"
+          "feature_BXcDNB",
+          "feature_N3GxgE"
         ],
         "settings": {
           "section_heading": "Want to get 10% cash back?",
