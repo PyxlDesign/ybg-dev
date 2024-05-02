@@ -7121,6 +7121,37 @@
       },
       "rebate-program-steps": {
         "type": "rebate-program-steps",
+        "blocks": {
+          "feature_k7VbJt": {
+            "type": "feature",
+            "settings": {
+              "prefix": "1",
+              "heading": "filler",
+              "content": "filler"
+            }
+          },
+          "feature_qQ8A8U": {
+            "type": "feature",
+            "settings": {
+              "prefix": "filler",
+              "heading": "filler",
+              "content": "fillerFeature details goes here"
+            }
+          },
+          "feature_BXcDNB": {
+            "type": "feature",
+            "settings": {
+              "prefix": "filler filler",
+              "heading": "filler",
+              "content": "fiklerFeature details goes here"
+            }
+          }
+        },
+        "block_order": [
+          "feature_k7VbJt",
+          "feature_qQ8A8U",
+          "feature_BXcDNB"
+        ],
         "settings": {
           "section_heading": "Want to get 10% cash back?",
           "section_paragraph": "Nothing helps a small business more than word of mouth, which is why we want to pay YOU for telling others about Yeah Baby Goods!\n<br>\n<br>\nMake a social media post about your YBG products and we will refund 10% cash back on the order. See below for details.",
