@@ -7113,10 +7113,10 @@
         "type": "collections-rebate-program",
         "settings": {
           "pre_heading": "",
-          "section_heading": "Section Title Goes Here",
-          "highchair_text": "Find Out What Makes a Safe Highchair",
-          "highchair_link": "\/",
-          "btn_text": "Find out"
+          "section_heading": "Want to earn store credit when you post?",
+          "highchair_text": "Sign up for our loyalty program to get a referral link you can share when you post. Your friends will $10 off, and your earn $10 store credit when they purchase.",
+          "highchair_link": "\/https:\/\/www.yeahbabygoods.com\/#smile-home",
+          "btn_text": "Learn More"
         }
       },
       "rebate-program-steps": {
@@ -7151,7 +7151,7 @@
             "settings": {
               "prefix": "3",
               "heading": "get money back",
-              "content": "Rebate will be processed within 5 business days of the email"
+              "content": "Rebate will be processed within 5 business"
             }
           }
         },
