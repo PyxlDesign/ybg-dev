@@ -128,3 +128,59 @@
         </div>
     </div>
 </section>
+{% schema %}
+{
+    "name": "Product Features",
+    "class": "eating-posture-features-section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section header"
+        },
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Heading",
+            "default": "Section heading goes here"
+        },
+        {
+            "type": "textarea",
+            "id": "section_paragraph",
+            "label": "Paragraph",
+            "default": "Paragraph content goes here"
+        },
+        {
+            "type": "image_picker",
+            "id": "section_image",
+            "label": "Image"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks":[
+        {
+            "name": "Feature",
+            "type": "feature",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "prefix",
+                    "label": "Heading prefix",
+                    "default": "Prefix"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Feature heading"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Paragraph",
+                    "default": "Feature details goes here"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
