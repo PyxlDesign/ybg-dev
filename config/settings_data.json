@@ -7126,16 +7126,16 @@
             "type": "feature",
             "settings": {
               "prefix": "1",
-              "heading": "filler",
-              "content": "filler"
+              "heading": "create content and post",
+              "content": "Give your highchair a makeover? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? <br><br>Post a video or picture on eligible social media, tag @yeahbabygoods and use #YBGrebate."
             }
           },
           "feature_qQ8A8U": {
             "type": "feature",
             "settings": {
-              "prefix": "filler",
-              "heading": "filler",
-              "content": "fillerFeature details goes here"
+              "prefix": "2",
+              "heading": "send email",
+              "content": "Screenshot your post and email it along with the post link to hello@yeahbabygoods.com.  <br><br>(If you are a private account, you will need to send the file as well.)"
             }
           },
           "feature_BXcDNB": {
@@ -7149,9 +7149,9 @@
           "feature_N3GxgE": {
             "type": "feature",
             "settings": {
-              "prefix": "Prefix",
-              "heading": "Feature heading",
-              "content": "Feature details goes here"
+              "prefix": "3",
+              "heading": "get money back",
+              "content": "Rebate will be processed within 5 business"
             }
           }
         },
