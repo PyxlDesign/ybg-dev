@@ -7117,6 +7117,26 @@
           "highchair_link": "\/",
           "btn_text": "Find out"
         }
+      },
+      "rebate-program-steps": {
+        "type": "rebate-program-steps",
+        "blocks": {
+          "feature_jEQfCg": {
+            "type": "feature",
+            "settings": {
+              "prefix": "1",
+              "heading": "create content and post",
+              "content": "Makeover your highchair? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? <br><br>Post a video or picture on eligible social media, tag @yeahbabygoods and use #YBGrebate."
+            }
+          }
+        },
+        "block_order": [
+          "feature_jEQfCg"
+        ],
+        "settings": {
+          "section_heading": "Section heading goes here",
+          "section_paragraph": "Paragraph content goes here"
+        }
       }
     },
     "content_for_index": [
