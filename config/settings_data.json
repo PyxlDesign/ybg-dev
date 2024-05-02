@@ -7075,6 +7075,47 @@
           "caption_color": "#ffffff",
           "caption_size": 22
         }
+      },
+      "rebate-program-hero": {
+        "type": "rebate-program-hero",
+        "settings": {
+          "section_heading": "Yeah Baby Goods Rebate Program",
+          "image": "shopify:\/\/shop_images\/ybgLIFESTYLE-142_JKP_SS.jpg",
+          "heading": "Want to get 10% back?",
+          "paragraph": "Nothing helps a small business more than"
+        }
+      },
+      "rebate-picture": {
+        "type": "rebate-picture",
+        "settings": {
+          "prefix": "Heading prefix goes here",
+          "section_heading": "Section heading goes here",
+          "section_paragraph": "Section paragraph goes here",
+          "features_1_heading": "Feature block heading",
+          "features_1": "",
+          "features_2_heading": "Feature block heading",
+          "features_2": "",
+          "cta_text": "Order On IKEA.COM",
+          "cta_url": ""
+        }
+      },
+      "banner-rebate-program": {
+        "type": "banner-rebate-program",
+        "settings": {
+          "highlighter": "Highlighted text goes here",
+          "banner_content": "Your banner content goes here",
+          "background_color": ""
+        }
+      },
+      "collections-rebate-program": {
+        "type": "collections-rebate-program",
+        "settings": {
+          "pre_heading": "",
+          "section_heading": "Section Title Goes Here",
+          "highchair_text": "Find Out What Makes a Safe Highchair",
+          "highchair_link": "\/",
+          "btn_text": "Find out"
+        }
       }
     },
     "content_for_index": [
