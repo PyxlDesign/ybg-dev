@@ -7085,26 +7085,12 @@
           "paragraph": "Nothing helps a small business more than word of mouth, which is why we want to pay YOU for telling others about Yeah Baby Goods!\n<br>\n<br>\nGive your highchair a makeover? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? \n<br><br>\nMake a social media post about your YBG products and we will refund 10% cash back on the order. See below for details."
         }
       },
-      "rebate-picture": {
-        "type": "rebate-picture",
-        "settings": {
-          "prefix": "step one",
-          "section_heading": "create content and post",
-          "section_paragraph": "Sign up for our loyalty program to get a referral link you can share when you post. Your friends will $10 off, and your earn $10 store credit when they purchase.",
-          "features_1_heading": "",
-          "features_1": "",
-          "features_2_heading": "",
-          "features_2": "",
-          "cta_text": "LEARN MORE",
-          "cta_url": "https:\/\/www.yeahbabygoods.com\/#smile-home"
-        }
-      },
       "collections-rebate-program": {
         "type": "collections-rebate-program",
         "settings": {
           "pre_heading": "",
           "section_heading": "Want to earn more?",
-          "highchair_text": "Sign up for our loyalty program to get a referral link you can share when you post. Your friends will $10 off, and your earn $10 store credit when they purchase.",
+          "highchair_text": "Sign up for our loyalty program and get a referral link you can share when you post. Your friends will get $10 off, and you earn $10 store credit when they purchase.",
           "highchair_link": "\/https:\/\/www.yeahbabygoods.com\/#smile-home",
           "btn_text": "Learn More"
         }
@@ -7155,33 +7141,6 @@
           "section_heading": "Three Easy Steps",
           "section_paragraph": "",
           "section_image": "shopify:\/\/shop_images\/yeahbabygoods-25_18e04f51-0508-444b-ba1e-f9ecdc91ed30.jpg"
-        }
-      },
-      "rebate-program-steps2": {
-        "type": "rebate-program-steps2",
-        "blocks": {
-          "review_phT4Lg": {
-            "type": "review",
-            "settings": {
-              "title": "create content and post",
-              "content": "Give your highchair a makeover? Love your restaurant bag or dinnerware? Found a great way to use your floor mat? <br><br>Post a video or picture on eligible social media, tag @yeahbabygoods and use #YBGrebate."
-            }
-          },
-          "review_pUWa8K": {
-            "type": "review",
-            "settings": {
-              "title": "send email",
-              "content": "Screenshot your post and email it along with the post link to hello@yeahbabygoods.com.  <br><br>(If you are a private account, you will need to send the file as well.)"
-            }
-          }
-        },
-        "block_order": [
-          "review_phT4Lg",
-          "review_pUWa8K"
-        ],
-        "settings": {
-          "featured_image": "shopify:\/\/shop_images\/ybgLIFESTYLE-142_JKP_SS.jpg",
-          "heading": "Two Easy Steps"
         }
       },
       "rebate-program-fine-print": {
