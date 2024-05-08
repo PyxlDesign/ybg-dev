@@ -5875,6 +5875,7 @@
         "blocks": {
           "hero_slide_QQACGT": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/08_Mother_s_Day_Sale_Mobile_Hero_4bdc345c-64c9-4d2b-b032-364ba75adf39.jpg",
               "hero_slide_url": "shopify:\/\/pages\/collections"
