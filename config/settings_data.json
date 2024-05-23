@@ -3147,8 +3147,16 @@
               "hero_slide_url": "shopify:\/\/pages\/collections"
             }
           },
+          "hero_slide_fmUcph": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
+              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
+            }
+          },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/06_Patterned_VL_Desktop_Hero.jpg",
               "hero_slide_url": "shopify:\/\/collections\/vegan-leather-cushion-covers"
@@ -3160,20 +3168,13 @@
               "hero_slide_image": "shopify:\/\/shop_images\/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
             }
-          },
-          "hero_slide_fmUcph": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Desktop_Hero_20w.jpg",
-              "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
-            }
           }
         },
         "block_order": [
           "hero_slide_NqTp6e",
+          "hero_slide_fmUcph",
           "hero_slide_RqM7CD",
-          "hero_slide_bQjNr4",
-          "hero_slide_fmUcph"
+          "hero_slide_bQjNr4"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
@@ -5882,7 +5883,7 @@
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/06_Patterned_VL_Mobile_Hero_ce85bbdb-85c9-49b5-8667-867598e6ec10.jpg",
+              "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero_2.jpg",
               "hero_slide_url": "shopify:\/\/collections\/vegan-leather-cushion-covers"
             }
           },
@@ -5895,6 +5896,7 @@
           },
           "hero_slide_V3BgWL": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify:\/\/shop_images\/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/pages\/start-here"
