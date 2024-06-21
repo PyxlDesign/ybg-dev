@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "color_sale": "#cb6b3a",
@@ -3144,7 +3153,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/09_Memorial_Day_Sale_Desktop_Hero.jpg",
+              "hero_slide_image": "shopify:\/\/shop_images\/10_Summer_Sale_Desktop_Hero.jpg",
               "hero_slide_url": "shopify:\/\/pages\/collections"
             }
           },
@@ -3162,6 +3171,12 @@
               "hero_slide_url": "https:\/\/www.yeahbabygoods.com\/collections\/dinnerware"
             }
           },
+          "hero_slide_h87Dc6": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_url": ""
+            }
+          },
           "hero_slide_fmUcph": {
             "type": "hero_slide",
             "disabled": true,
@@ -3175,6 +3190,7 @@
           "hero_slide_NqTp6e",
           "hero_slide_RqM7CD",
           "hero_slide_bQjNr4",
+          "hero_slide_h87Dc6",
           "hero_slide_fmUcph"
         ],
         "settings": {
