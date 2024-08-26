@@ -3138,7 +3138,7 @@
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
+          "message_text": "<p><strong>LABOR DAY SALE - 20% OFF WITH CODE LABORDAY24<\/strong><\/p><p><strong>FREE US SHIPPING ON ORDERS OVER $55<\/strong><\/p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF<\/strong><\/p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
           "color_link": "#d69a81",
@@ -3151,9 +3151,8 @@
         "blocks": {
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/10_Summer_Sale_Desktop_Hero.jpg",
+              "hero_slide_image": "shopify:\/\/shop_images\/11_Labor_Day_Sale_Desktop_Hero_98414e92-de56-416c-9294-6eb03875b55f.jpg",
               "hero_slide_url": "shopify:\/\/pages\/collections"
             }
           },
@@ -5894,7 +5893,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify:\/\/shop_images\/10_Summer_Sale_Mobile_Hero.jpg",
+              "hero_slide_image": "shopify:\/\/shop_images\/11_Labor_Day_Sale_Mobile_Hero.jpg",
               "hero_slide_url": "shopify:\/\/pages\/collections"
             }
           },
