@@ -133,6 +133,12 @@ $('body').on('change', '#mat-colorPicker', function () {
     else {
         $('.Speckle_Brown').addClass('d-none');
     }
+    if (color_name == "Blush Speckle") {
+        $('.Speckle_Blush').removeClass('d-none');
+    }
+    else {
+        $('.Speckle_Blush').addClass('d-none');
+    }
 
     if (!triggeredMatChange) {
         let checked_colors = $('[data-type=Color]:checked');
@@ -291,6 +297,12 @@ $('.product-colors__choice__control input[name="productColorChoice"]').on('chang
     }
     else {
         $('.Speckle_Brown').addClass('d-none');
+    }
+    if (color_name == "Blush Speckle") {
+        $('.Speckle_Blush').removeClass('d-none');
+    }
+    else {
+        $('.Speckle_Blush').addClass('d-none');
     }
     let color_handle = $(this).data('color-handle');
     $('.svg-fillColor').css('color', 'rgba(' + $(this).val() + ')');
