@@ -16,7 +16,7 @@ You will need to add the layers to the following .liquid files
 - product-template-default-patter-VL-cushions.liquid
 - product-grid-item-2.liquid
 
-Now that you have your layers set and the javascript file is properly set you will be all set. One other step which is used for solid colors but also good fo rhte speckles is to add them in the theme settings_data.json I recommend adding this VIA the GUI interface.
+Now that you have your layers set and the javascript file is properly set you have one step left. This last step is mostly done for Solid Colors but also good for the Terrazzo and Speckles - use the base color in RGB and add them in the theme `settings_data.json` I recommend adding this VIA the GUI interface.
 
 Theme Settings -> Collection Siderbar Color filters -> Color with rgb
 
