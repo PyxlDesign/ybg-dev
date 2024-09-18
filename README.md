@@ -22,3 +22,7 @@ Theme Settings -> Collection Siderbar Color filters -> Color with rgb
 
 **If there is a color with the same rgb value like Blush Speckle and Blushing Biege they will both get selected and cause issues in with the javascript**
 
+### Add a Terrazzo or Speckle Swatch
+
+To get the color swatches you will need to go to Content -> Files and upload the image there and make sure that it lines up with the name of the image/color being added. e.g. Blush Speckle ended up being blush-speckle.jpg
+
