@@ -13205,10 +13205,14 @@ div#dd-restock-notification-container #dd-restock-notification-msg {
 }
 
 .pattern-layers {
+    height: 100%;
+    width: 100%;
     z-index: 1;
 }
 
 .patter-overlay {
+    height: 100%;
+    width: 100%;
     z-index: 2;
     opacity: 0.4;
 }
