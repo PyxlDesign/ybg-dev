@@ -5889,6 +5889,13 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
+          "hero_slide_eajNaW": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify://shop_images/12_Black_Friday_Early_Access_2024_Mobile_Hero.jpg",
+              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
+            }
+          },
           "hero_slide_QQACGT": {
             "type": "hero_slide",
             "disabled": true,
@@ -5924,22 +5931,15 @@
             "settings": {
               "hero_slide_url": ""
             }
-          },
-          "hero_slide_eajNaW": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify://shop_images/12_Black_Friday_Early_Access_2024_Mobile_Hero.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
-            }
           }
         },
         "block_order": [
+          "hero_slide_eajNaW",
           "hero_slide_QQACGT",
           "hero_slide_PRw9Pw",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL",
-          "hero_slide_eqVdgU",
-          "hero_slide_eajNaW"
+          "hero_slide_eqVdgU"
         ],
         "settings": {
           "testing_field": "",
