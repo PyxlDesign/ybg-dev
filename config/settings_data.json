@@ -3149,6 +3149,13 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
+          "hero_slide_pWjdq7": {
+            "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify://shop_images/13_Black_Friday_Early_Access_2024_Desktop_Hero.jpg",
+              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
+            }
+          },
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
             "disabled": true,
@@ -3181,6 +3188,7 @@
           }
         },
         "block_order": [
+          "hero_slide_pWjdq7",
           "hero_slide_NqTp6e",
           "hero_slide_RqM7CD",
           "hero_slide_bQjNr4",
