@@ -3149,18 +3149,10 @@
       "1620411795d72a40ce": {
         "type": "hero-banner",
         "blocks": {
-          "hero_slide_pWjdq7": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify://shop_images/13_Black_Friday_Early_Access_2024_Desktop_Hero.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
-            }
-          },
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/12_Veterans_Day_Sale_Desktop_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/14_Black_Friday_2024_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -3188,7 +3180,6 @@
           }
         },
         "block_order": [
-          "hero_slide_pWjdq7",
           "hero_slide_NqTp6e",
           "hero_slide_RqM7CD",
           "hero_slide_bQjNr4",
@@ -5889,18 +5880,10 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d": {
         "type": "hero-mobile-banner",
         "blocks": {
-          "hero_slide_eajNaW": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify://shop_images/12_Black_Friday_Early_Access_2024_Mobile_Hero.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
-            }
-          },
           "hero_slide_QQACGT": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/11_Veterans_Day_Sale_Mobile_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/13_Black_Friday_2024_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -5934,7 +5917,6 @@
           }
         },
         "block_order": [
-          "hero_slide_eajNaW",
           "hero_slide_QQACGT",
           "hero_slide_PRw9Pw",
           "hero_slide_FzXpjh",
