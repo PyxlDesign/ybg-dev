@@ -171,6 +171,11 @@
         <h1 class="product-title">
           {% render 'multilang' with product.title %}
         </h1>
+        <!-- Start of Judge.me code --> 
+          <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> 
+            {{ product.metafields.judgeme.badge }} 
+          </div> 
+        <!-- End of Judge.me code -->
 
         {% if section.settings.display_product_reviews or section.settings.show_sold_in %}
           <div class="group_item">
