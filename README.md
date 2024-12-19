@@ -2,7 +2,7 @@ This repo contains the Yeah Baby Goods theme wrapped around a custom React app f
 
 To start the app run `shopify theme serve` from the root and `npm install && npm run build` from the `react` folder.
 
-## How to add new placemat color dots 
+## How to add new placemat color dots
 
 To add the Speckle or Terrazo color swatches on the side bar you will need to add svg lsyers 1-5 to the collowing pages.
 
@@ -26,3 +26,6 @@ Theme Settings -> Collection Siderbar Color filters -> Color with rgb
 
 To get the color swatches you will need to go to Content -> Files and upload the image there and make sure that it lines up with the name of the image/color being added. e.g. Blush Speckle ended up being blush-speckle.jpg
 
+## Clarity
+
+The Cookie consent has been added to layout->theme.liquid. There is 2 script tags and 1 style in the head. The cookie banner itself is just inside the `body`.

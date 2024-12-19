@@ -1,12 +1,12 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-  <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 no-js"> <![endif]-->
+<!-- [if (gt IE 9)|!(IE)]><! -->
+<html class="no-js">
+  <!-- <![endif] -->
   <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53J66497C0"></script>
     <script>
@@ -19,19 +19,22 @@
       gtag('config', 'G-53J66497C0');
     </script>
 
-
     <!-- Basic page needs ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Title and description ================================================== -->
     <title>
-      {{ page_title }}{% if current_tags %}
-        &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}
+      {{ page_title }}
+      {% if current_tags %}
+        &ndash; tagged "{{ current_tags | join: ', ' }}"
+      {%- endif %}
       {% if current_page != 1 %}
-        &ndash; Page {{ current_page }}{% endif %}
+        &ndash; Page {{ current_page -}}
+      {%- endif %}
       {% unless page_title contains shop.name %}
-        &ndash; {{ shop.name }}{% endunless %}
+        &ndash; {{ shop.name -}}
+      {%- endunless %}
     </title>
 
     {% if page_description %}
@@ -51,7 +54,8 @@
       <link
         rel="shortcut icon"
         href="{{ settings.favicon | img_url: '32x32' }}"
-        type="image/png">
+        type="image/png"
+      >
     {% endif %}
 
     <!-- fonts -->
@@ -67,34 +71,189 @@
     {{ content_for_header }}
     {%- render 'bold-common' -%}
 
-    <!--[if lt IE 9]>
-      {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }}
-    <![endif]-->
+    <!--[if lt IE 9]> {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }} <![endif]-->
 
     {% comment %}
       If you store has customers disabled, you can remove the following JS file
     {% endcomment %}
 
-      {% if template contains 'customers' %}
+    {% if template contains 'customers' %}
       {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
-    {{ 'customer_area.js' | shopify_asset_url | script_tag }}
+      {{ 'customer_area.js' | shopify_asset_url | script_tag }}
     {% endif %}
 
     {% render 'linked-options' %}
 
-  {% render 'zoorix-cart-items' %}
-  <!-- Start Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "pbw7zr0hni");
-</script>
-  <!-- End Clarity -->
+    {% render 'zoorix-cart-items' %}
+    <!-- Start Clarity -->
+
+    <script type="text/javascript">
+      // Initialize Clarity with consent management
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'pbw7zr0hni');
+
+      // Function to check if user is in EEA, UK, or Switzerland
+      function isEuropeanUser() {
+        const europeanTimezones = ['Europe/', 'GMT'];
+        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        return europeanTimezones.some((tz) => userTimezone.includes(tz));
+      }
+
+      function getConsentStatus() {
+        return window.cookieConsent?.getAnalyticsConsent() || false;
+      }
+
+      function initializeClarity() {
+        if (isEuropeanUser()) {
+          const hasConsent = getConsentStatus();
+          if (hasConsent) {
+            clarity('consent');
+          } else {
+            clarity('stop');
+          }
+        } else {
+          clarity('consent');
+        }
+      }
+
+      document.addEventListener('consentStatusChanged', function (event) {
+        if (event.detail.analytics === true) {
+          clarity('consent');
+        } else {
+          clarity('stop');
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', initializeClarity);
+    </script>
+
+    <script>
+      function acceptCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: true },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      function declineCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: false },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      if (isEuropeanUser() && !getConsentStatus()) {
+        document.getElementById('cookie-consent-banner').style.display = 'block';
+      }
+    </script>
+
+    <style>
+      #cookie-consent-banner {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ffffff;
+        padding: 2rem;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+        font-family: 'Avenir Next', sans-serif;
+        border-radius: 12px;
+        max-width: 500px;
+        width: 90%;
+      }
+
+      .cookie-consent-content {
+        text-align: center;
+      }
+
+      .consent-header h2 {
+        color: #2d4550;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-family: 'Editorial New', serif;
+      }
+
+      .consent-body p {
+        color: #666666;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .consent-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .consent-buttons button {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Avenir Next', sans-serif;
+      }
+
+      .accept-button {
+        background: #e6a886;
+        color: #ffffff;
+      }
+
+      .accept-button:hover {
+        background: #d89775;
+      }
+
+      .decline-button {
+        background: #ffffff;
+        color: #2d4550;
+        border: 1px solid #e0e0e0 !important;
+      }
+
+      .decline-button:hover {
+        background: #f5f5f5;
+      }
+
+      @media (max-width: 768px) {
+        #cookie-consent-banner {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          max-width: none;
+          border-radius: 12px 12px 0 0;
+          transform: none;
+        }
+
+        .consent-header h2 {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+
+    <!-- End Clarity -->
   </head>
 
-    {% if settings.layout_body == 'full' %}
+  {% if settings.layout_body == 'full' %}
     {%- assign layout_class = 'body-full' -%}
   {% elsif settings.layout_body == 'boxed' %}
     {%- assign layout_class = 'body-boxed' -%}
@@ -107,7 +266,31 @@
   <body
     data-url-lang="{{ routes.cart_url }}"
     id="{{ page_title | handle }}"
-    class="{{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} header-sticked">
+    class="{{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} header-sticked"
+  >
+    {% comment %}
+      BEGIN Clarity Analytics Consent Banner
+    {% endcomment %}
+    <div id="cookie-consent-banner" style="display: none;">
+      <div class="cookie-consent-content">
+        <div class="consent-header">
+          <h2>Make your choice.</h2>
+        </div>
+        <div class="consent-body">
+          <p>
+            We use cookies to improve your shopping experience and our services. By accepting, you help us make our site
+            cuter.
+          </p>
+          <div class="consent-buttons">
+            <button onclick="acceptCookies()" class="accept-button">Accept All Cookies</button>
+            <button onclick="declineCookies()" class="decline-button">No Thanks</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+      END Clarity Analytics Consent Banner
+    {% endcomment %}
     {% if template contains 'index' %}
       <h1 style="display: none">{{ page_title | split: '|' | first }}</h1>
     {% endif %}
@@ -117,50 +300,51 @@
     {% endunless %}
     {% if settings.header_layout == 'vertical' %}
       <div class="flex-nav-vertical">
+    {% endif %}
+
+    {% if settings.header_layout == 'vertical' %}
+      {% section 'navigation-vertical-menu' %}
+    {% endif %}
+    {% render 'scheme' %}
+    <div class="wrapper-container wrapper-body">
+      <main class="main-content" role="main">
+        {{ content_for_layout }}
+      </main>
+
+      {% if settings.footer_layout == 'default' %}
+        {% section 'footer-custom' %}
+      {% elsif settings.footer_layout == 'parallax' %}
+        {% section 'footer-parallax' %}
+      {% elsif settings.footer_layout == '02' %}
+        {% section 'footer-2' %}
+      {% elsif settings.footer_layout == '03' %}
+        {% section 'footer-3' %}
+      {% elsif settings.footer_layout == '04' %}
+        {% section 'footer-4' %}
+      {% elsif settings.footer_layout == '05' %}
+        {% section 'footer-5' %}
       {% endif %}
 
-      {% if settings.header_layout == 'vertical' %}
-        {% section 'navigation-vertical-menu' %}
+      {% unless template contains 'product' %}
+        <div class="footbar-fixed">
+          {% section 'someone-purchased' %}
+          {% section 'GDPR-modal' %}
+        </div>
+      {% endunless %}
+      {% if settings.enable_backtotop %}
+        <div id="back-top" style="display: none;">
+          <a
+            class="nav_up"
+            href="#top"
+            title="Back to top"
+          >
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </a>
+        </div>
       {% endif %}
-      {% render 'scheme' %}
-      <div class="wrapper-container wrapper-body">
-        <main class="main-content" role="main">
-          {{ content_for_layout }}
-        </main>
+    </div>
 
-        {% if settings.footer_layout == 'default' %}
-          {% section 'footer-custom' %}
-        {% elsif settings.footer_layout == 'parallax' %}
-          {% section 'footer-parallax' %}
-        {% elsif settings.footer_layout == '02' %}
-          {% section 'footer-2' %}
-        {% elsif settings.footer_layout == '03' %}
-          {% section 'footer-3' %}
-        {% elsif settings.footer_layout == '04' %}
-          {% section 'footer-4' %}
-        {% elsif settings.footer_layout == '05' %}
-          {% section 'footer-5' %}
-        {% endif %}
-
-        {% unless template contains 'product' %}
-          <div class="footbar-fixed">
-            {% section 'someone-purchased' %}
-            {% section 'GDPR-modal' %}
-          </div>
-        {% endunless %}
-        {% if settings.enable_backtotop %}
-          <div id="back-top" style="display: none;">
-            <a
-              class="nav_up"
-              href="#top"
-              title="Back to top">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-            </a>
-          </div>
-        {% endif %}
-      </div>
-
-      {% if settings.header_layout == 'vertical' %}
+    {% if settings.header_layout == 'vertical' %}
       </div>
     {% endif %}
     {% if settings.enable_mega %}
@@ -208,7 +392,6 @@
   </body>
 </html>
 
-
 <!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.9) -->
 <script type="text/javascript">
   // Overrides:
@@ -219,7 +402,7 @@
       // var afterpay_product_selector = '#product-price-selector';
       // var afterpay_cart_integration_enabled = true;
       // var afterpay_cart_static_selector = '#cart-subtotal-selector';
-      
+
       // Non-editable fields:
       var afterpay_shop_currency = {{ shop.currency | json }};
   var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
