@@ -7177,6 +7177,55 @@
           "image_content_d4Dgy3"
         ],
         "settings": {}
+      },
+      "featured_collections_UW4fRt": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_FxbKyY": {
+            "type": "collection",
+            "settings": {
+              "collection": "dinnerware",
+              "collection_title": "Dinnerware"
+            }
+          },
+          "collection_U4WfQC": {
+            "type": "collection",
+            "settings": {
+              "collection": "eating-out-essentials",
+              "collection_title": "Placemats"
+            }
+          },
+          "collection_y7PBYz": {
+            "type": "collection",
+            "settings": {
+              "collection": "highchair-footrest",
+              "collection_title": "Footrests"
+            }
+          },
+          "collection_BUFCKE": {
+            "type": "collection",
+            "settings": {
+              "collection": "precut-leg-wraps",
+              "collection_title": "Leg Wraps"
+            }
+          }
+        },
+        "block_order": [
+          "collection_FxbKyY",
+          "collection_U4WfQC",
+          "collection_y7PBYz",
+          "collection_BUFCKE"
+        ],
+        "settings": {
+          "background_color": "#fffcf8",
+          "featured_collection_title": "Make the best-selling highchair even better",
+          "title_color": "#30494d",
+          "title_size": 60,
+          "featured_collection_caption": "Transform the $20 IKEA highchair with our stylish cushion covers, colorful placemats, sturdy footrests and premium leg wraps.",
+          "caption_color": "#30494d",
+          "caption_size": 22,
+          "curved_bottom": false
+        }
       }
     },
     "content_for_index": [
@@ -7184,6 +7233,7 @@
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
       "1620412486d542719c",
       "162041362564bbc4d8",
+      "featured_collections_UW4fRt",
       "1620414500ccfac22f",
       "1620416895faf4570f",
       "16204173073f912002",
