@@ -7181,6 +7181,13 @@
       "featured_collections_UW4fRt": {
         "type": "featured-collections",
         "blocks": {
+          "collection_U4WfQC": {
+            "type": "collection",
+            "settings": {
+              "collection": "eating-out-essentials",
+              "collection_title": "Eating Out Essentials"
+            }
+          },
           "collection_FxbKyY": {
             "type": "collection",
             "settings": {
@@ -7188,40 +7195,33 @@
               "collection_title": "Dinnerware"
             }
           },
-          "collection_U4WfQC": {
-            "type": "collection",
-            "settings": {
-              "collection": "eating-out-essentials",
-              "collection_title": "Placemats"
-            }
-          },
           "collection_y7PBYz": {
             "type": "collection",
             "settings": {
-              "collection": "highchair-footrest",
-              "collection_title": "Footrests"
+              "collection": "silicone-bibs",
+              "collection_title": "Bibs"
             }
           },
           "collection_BUFCKE": {
             "type": "collection",
             "settings": {
-              "collection": "precut-leg-wraps",
-              "collection_title": "Leg Wraps"
+              "collection": "table-placemats",
+              "collection_title": "Table Placemats"
             }
           }
         },
         "block_order": [
-          "collection_FxbKyY",
           "collection_U4WfQC",
+          "collection_FxbKyY",
           "collection_y7PBYz",
           "collection_BUFCKE"
         ],
         "settings": {
           "background_color": "#fffcf8",
-          "featured_collection_title": "Make the best-selling highchair even better",
+          "featured_collection_title": "Beyond The Highchair",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "Transform the $20 IKEA highchair with our stylish cushion covers, colorful placemats, sturdy footrests and premium leg wraps.",
+          "featured_collection_caption": "Lessen the stress and increase the joy of family meal times",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
