@@ -20,7 +20,7 @@
       {% endfor %}
       <h2 class="h1 text-center">
         {{ section_header }}
-        <span class="typer-anim" data-rotate='[{{ wordsArray | remove_first: ',' }}]'></span>
+        <span class="typer-anim" data-rotate="[{{ wordsArray | remove_first: ',' }}]"></span>
       </h2>
 
       {% if paragraph %}
@@ -49,7 +49,10 @@
               {% if block.type == 'product_images' %}
                 <div class="carousel-cell">
                   <div class="image-wrapper">
-                    <img src="{{ block.settings.product_image | img_url: 'master' }}" alt="featured image">
+                    <img
+                      src="{{ block.settings.product_image | img_url: 'master' | append ".webp" }}"
+                      alt="featured image"
+                    >
                   </div>
                 </div>
               {% endif %}
