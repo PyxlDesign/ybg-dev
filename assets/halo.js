@@ -161,6 +161,7 @@
                     this.initBundleProducts();
                 }
                 this.productRecomendation();
+                this.initUpsellAddToCart();
             }
             if(body.hasClass('template-cart')) {
                 this.checkBundleProducts();
@@ -800,6 +801,18 @@
                     });
                 }
             });
+        },
+
+        initUpsellAddToCart: function () {
+            setTimeout(function() {
+                const detailsButtons = document.querySelectorAll('.lb-spc-details-btn');
+                
+                detailsButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        ella.doUpdateDropdownCart();
+                    });
+                });
+            }, 500);
         },
 
         initDropdownColFooter: function () {
