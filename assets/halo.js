@@ -24,10 +24,12 @@
     wishListsArr = JSON.parse(localStorage.getItem("items"));
   }
 
-  doc.ready(function () {
+  document.addEventListener("DOMContentLoaded", function () {
     (iconNav = $("[data-menu-mb-toogle]")),
       (dropdownCart = $("#dropdown-cart")),
       (miniProductList = dropdownCart.find(".mini-products-list"));
+
+    ella.init();
 
     doc.ajaxStart(function () {
       ella.isAjaxLoading = true;
@@ -36,8 +38,6 @@
     doc.ajaxStop(function () {
       ella.isAjaxLoading = false;
     });
-
-    ella.init();
 
     doc
       .on("shopify:section:load", ella.initSlideshow)
@@ -176,7 +176,6 @@
 
       if (body.hasClass("template-product")) {
         this.initSoldOutProductShop();
-        console.log("Body has template-product");
         this.initUpsellAddToCart();
         this.productPageInitProductTabs();
         this.changeSwatch("#add-to-cart-form .swatch :radio");
@@ -889,10 +888,6 @@
     },
 
     initUpsellAddToCart: function () {
-      console.log("initUpsellAddToCart");
-      Shopify.onCartUpdate = function (cart) {
-        console.log("onCartUpdate", cart);
-      };
       setTimeout(function () {
         window.addEventListener("lb-upsell-added", function () {
           console.log("upsell added");
@@ -906,7 +901,7 @@
             ella.doUpdateDropdownCart(cart);
           });
         });
-      }, 1000);
+      }, 500);
     },
 
     initDropdownColFooter: function () {
