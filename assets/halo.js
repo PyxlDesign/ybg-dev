@@ -804,6 +804,10 @@
         },
 
         initUpsellAddToCart: function () { 
+            console.log("initUpsellAddToCart");
+            Shopify.onCartUpdate = function(cart) {
+                console.log("onCartUpdate", cart);
+            }
             setTimeout(function() {
                 window.addEventListener("lb-upsell-added", function() {
                     console.log("upsell added");
