@@ -5,7 +5,8 @@
 }
 
 square-placement {
-    position: absolute;
+    position: relative;
+    width: 100%;
 }
 
 .modal--shopping-cart__modal-dialog button.close {
