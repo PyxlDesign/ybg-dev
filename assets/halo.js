@@ -152,6 +152,7 @@
 
             if(body.hasClass('template-product')) {
                 this.initSoldOutProductShop();
+                this.initUpsellAddToCart();
                 this.productPageInitProductTabs();
                 this.changeSwatch('#add-to-cart-form .swatch :radio');
                 this.initStickyForProductFullWidth();
@@ -161,7 +162,6 @@
                     this.initBundleProducts();
                 }
                 this.productRecomendation();
-                this.initUpsellAddToCart();
             }
             if(body.hasClass('template-cart')) {
                 this.checkBundleProducts();
