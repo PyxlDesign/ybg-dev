@@ -1,4 +1,5 @@
 (function ($) {
+    console.log("Start");
     var body = $('body'),
         doc = $(document),
         html = $('html'),
