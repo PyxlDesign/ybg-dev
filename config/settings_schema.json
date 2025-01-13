@@ -26,6 +26,11 @@
       },
       {
         "type": "color",
+        "id": "color_bundle",
+        "label": "Bundle"
+      },
+      {
+        "type": "color",
         "id": "color_retiring_soon",
         "label": "Retiring Soon"
       },
@@ -43,11 +48,6 @@
         "type": "color",
         "id": "color_sold_out",
         "label": "Sold out"
-      },
-      {
-        "type": "color",
-        "id": "color_bundle",
-        "label": "Bundle"
       }
     ]
   },
