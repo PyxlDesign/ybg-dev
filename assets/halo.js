@@ -890,13 +890,11 @@
     initUpsellAddToCart: function () {
       setTimeout(function () {
         window.addEventListener("lb-upsell-added", function () {
-          console.log("upsell added");
           Shopify.getCart(function (cart) {
             ella.doUpdateDropdownCart(cart);
           });
         });
         window.addEventListener("lb-upsell-cart-updated", function () {
-          console.log("upsell cart updated");
           Shopify.getCart(function (cart) {
             ella.doUpdateDropdownCart(cart);
           });
