@@ -43,6 +43,11 @@
         "type": "color",
         "id": "color_sold_out",
         "label": "Sold out"
+      },
+      {
+        "type": "color",
+        "id": "color_bundle",
+        "label": "Bundle"
       }
     ]
   },
