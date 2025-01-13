@@ -803,16 +803,10 @@
             });
         },
 
-        initUpsellAddToCart: function () {
-            setTimeout(function() {
-                const detailsButtons = document.querySelectorAll('.lb-spc-details-btn');
-                
-                detailsButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        ella.doUpdateDropdownCart();
-                    });
-                });
-            }, 500);
+        initUpsellAddToCart: function () { 
+            window.addEventListener("lb-upsell-added", function() {
+                ella.doUpdateDropdownCart();
+            });
         },
 
         initDropdownColFooter: function () {
