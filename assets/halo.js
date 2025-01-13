@@ -805,12 +805,15 @@
 
         initUpsellAddToCart: function () { 
             setTimeout(function() {
-
                 window.addEventListener("lb-upsell-added", function() {
-                    ella.doUpdateDropdownCart();
+                    Shopify.getCart(function (cart) {
+                        ella.doUpdateDropdownCart(cart);
+                    });
                 });
                 window.addEventListener("lb-upsell-cart-updated", function() {
-                    ella.doUpdateDropdownCart(); 
+                    Shopify.getCart(function (cart) {
+                        ella.doUpdateDropdownCart(cart);
+                    }); 
                 });
             }, 1000);
         },
@@ -2979,7 +2982,9 @@
         getPopupShoppingCart: function (shouldShowModel, handle) {
 
             ella.updateDropdownCart();
-            ella.doUpdateDropdownCart();
+            Shopify.getCart(function (cart) {
+                ella.doUpdateDropdownCart(cart);
+            }
         },
 
         doAjaxUpdatePopupCart: function (quantity, id) {
@@ -2998,7 +3003,9 @@
 
                 success: function (result) {
                     // ella.getPopupShoppingCart(false);
-                    ella.doUpdateDropdownCart();
+                    Shopify.getCart(function (cart) {
+                        ella.doUpdateDropdownCart(cart);
+                    });
                     ella.checkBundleProducts();
                 },
 
