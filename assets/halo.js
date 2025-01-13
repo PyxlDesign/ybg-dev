@@ -152,6 +152,7 @@
 
             if(body.hasClass('template-product')) {
                 this.initSoldOutProductShop();
+                console.log("Body has template-product");
                 this.initUpsellAddToCart();
                 this.productPageInitProductTabs();
                 this.changeSwatch('#add-to-cart-form .swatch :radio');
