@@ -1,33 +1,77 @@
-<div class="quantity">
-  <div class="add-to-cart-group">
-    <div class="quantity">
-      <label
-        for="quantity"
-        {% if settings.enable_multilang %}
-          data-translate="cart.label.quantity"
-        {% endif %}
-      >
-        {{ 'cart.label.quantity' | t }}:
-      </label>
-      <div class="qty-group">
-        <a
-          href="#"
-          data-minus-qtt
-          class="minus button padding-horizontal-1 border-left-0 border-top-0 border-bottom-0"
-        ></a>
-        <input type="text" data-qtt-id="quantity__{{ product.id }}" name="quantity" value="1">
-        <a
-          href="#"
-          data-plus-qtt
-          class="plus button padding-horizontal-1  border-right-0 border-top-0 border-bottom-0"
-        ></a>
+{% assign sold_out = true %}
+{% if product.available %}
+  {% assign sold_out = false %}
+{% endif %}
+
+{% if sold_out %}
+  <button
+    class="btn add-to-cart-btn"
+    type="submit"
+    disabled="disabled"
+    {% if settings.enable_multilang %}
+      data-translate="products.product.sold_out"
+    {% endif %}
+  >
+    {{ 'products.product.sold_out' | t }}
+  </button>
+{% else %}
+  <div class="quantity">
+    <div class="add-to-cart-group">
+      <div class="quantity">
+        <label
+          for="quantity"
+          {% if settings.enable_multilang %}
+            data-translate="cart.label.quantity"
+          {% endif %}
+        >
+          {{ 'cart.label.quantity' | t }}:
+        </label>
+        <div class="qty-group">
+          <a
+            href="#"
+            data-minus-qtt
+            class="minus button padding-horizontal-1 border-left-0 border-top-0 border-bottom-0"
+          ></a>
+          <input type="text" data-qtt-id="quantity__{{ product.id }}" name="quantity" value="1">
+          <a
+            href="#"
+            data-plus-qtt
+            class="plus button padding-horizontal-1  border-right-0 border-top-0 border-bottom-0"
+          ></a>
+        </div>
       </div>
-    </div>
 
-    {% if current_variant.inventory_management %}
-      {% assign first_inventory = current_variant.inventory_quantity %}
+      {% if current_variant.inventory_management %}
+        {% assign first_inventory = current_variant.inventory_quantity %}
 
-      {% if first_inventory > 0 %}
+        {% if first_inventory > 0 %}
+          <input
+            data-btn-addToCart
+            type="submit"
+            name="add"
+            class="btn"
+            {% if settings.enable_multilang %}
+              data-translate="products.product.add_to_cart"
+            {% endif %}
+            id="product-add-to-cart"
+            value="{{ 'products.product.add_to_cart' | t }}"
+            data-form-id="#add-to-cart-form"
+          >
+        {% else %}
+          <input
+            data-btn-addToCart
+            type="submit"
+            name="add"
+            class="btn"
+            {% if settings.enable_multilang %}
+              data-translate="products.product.pre_order"
+            {% endif %}
+            id="product-add-to-cart"
+            value="{{ 'products.product.pre_order' | t }}"
+            data-form-id="#add-to-cart-form"
+          >
+        {% endif %}
+      {% else %}
         <input
           data-btn-addToCart
           type="submit"
@@ -40,36 +84,10 @@
           value="{{ 'products.product.add_to_cart' | t }}"
           data-form-id="#add-to-cart-form"
         >
-      {% else %}
-        <input
-          data-btn-addToCart
-          type="submit"
-          name="add"
-          class="btn"
-          {% if settings.enable_multilang %}
-            data-translate="products.product.pre_order"
-          {% endif %}
-          id="product-add-to-cart"
-          value="{{ 'products.product.pre_order' | t }}"
-          data-form-id="#add-to-cart-form"
-        >
       {% endif %}
-    {% else %}
-      <input
-        data-btn-addToCart
-        type="submit"
-        name="add"
-        class="btn"
-        {% if settings.enable_multilang %}
-          data-translate="products.product.add_to_cart"
-        {% endif %}
-        id="product-add-to-cart"
-        value="{{ 'products.product.add_to_cart' | t }}"
-        data-form-id="#add-to-cart-form"
-      >
-    {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
 
 {% render 'new-sticky-add-to-cart' %}
 
