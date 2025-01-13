@@ -807,6 +807,9 @@
             window.addEventListener("lb-upsell-added", function() {
                 ella.doUpdateDropdownCart();
             });
+            window.addEventListener("lb-upsell-cart-updated", function() {
+                ella.doUpdateDropdownCart(); 
+            });
         },
 
         initDropdownColFooter: function () {
