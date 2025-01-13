@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "current": {
     "color_sale": "#df9764",
     "color_retiring_soon": "#cc6b3a",
@@ -89,7 +89,7 @@
     "new_label_bg": "#fffcf8",
     "new_label_border": "#fffcf8",
     "sold_out_text": "#ffffff",
-    "bg_sold_out": "#e7b99d",
+    "bg_sold_out": "#30494d",
     "color_price": "#31484d",
     "color_price_sale": "#cc6b3a",
     "color_compare_price": "#637175",
