@@ -1,6 +1,11 @@
 .modal--shopping-cart {
     margin: 0;
     padding-right: 0 !important;
+    font-family: Karla, sans-serif;
+}
+
+square-placement {
+    position: absolute;
 }
 
 .modal--shopping-cart__modal-dialog button.close {
@@ -40,7 +45,7 @@
     border-radius: 0;
     border: none;
     height: 100%;
-    display: block;
+display: block;
 }
 
 .modal--shopping-cart__modal-dialog .modal-content__inner {
@@ -206,7 +211,7 @@
 .modal--shopping-cart__modal-dialog .modal-content .modal-body .cart-wrapper .cart-block .product-item .product-meta .product-quantity-block .price {
     font-size: 18px;
     line-height: 22px;
-    color: #DF9764 !important;
+    color: #31484d;
 }
 
 .modal--shopping-cart__modal-dialog .modal-content .modal-footer {
