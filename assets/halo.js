@@ -804,12 +804,15 @@
         },
 
         initUpsellAddToCart: function () { 
-            window.addEventListener("lb-upsell-added", function() {
-                ella.doUpdateDropdownCart();
-            });
-            window.addEventListener("lb-upsell-cart-updated", function() {
-                ella.doUpdateDropdownCart(); 
-            });
+            setTimeout(function() {
+
+                window.addEventListener("lb-upsell-added", function() {
+                    ella.doUpdateDropdownCart();
+                });
+                window.addEventListener("lb-upsell-cart-updated", function() {
+                    ella.doUpdateDropdownCart(); 
+                });
+            }, 1000);
         },
 
         initDropdownColFooter: function () {
