@@ -3011,9 +3011,7 @@
 
                 success: function (result) {
                     // ella.getPopupShoppingCart(false);
-                    Shopify.getCart(function (cart) {
-                        ella.doUpdateDropdownCart(cart);
-                    });
+                    ella.doUpdateDropdownCart(result);
                     ella.checkBundleProducts();
                 },
 

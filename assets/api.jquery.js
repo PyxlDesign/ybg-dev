@@ -26,10 +26,9 @@ void 0 === window.Shopify && (window.Shopify = {}),
       r
     );
   }),
-  //   (Shopify.onCartUpdate = function (t) {
-
-  //     alert("There are now " + t.item_count + " items in the cart.");
-  //   }),
+  (Shopify.onCartUpdate = function (t) {
+    alert("There are now " + t.item_count + " items in the cart.");
+  }),
   (Shopify.onCartShippingRatesUpdate = function (t, r) {
     var o = "";
     r.zip && (o += r.zip + ", "),
