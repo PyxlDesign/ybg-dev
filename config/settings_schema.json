@@ -26,8 +26,28 @@
       },
       {
         "type": "color",
+        "id": "color_sale_text",
+        "label": "Sale Text"
+      },
+      {
+        "type": "color",
+        "id": "color_bundle",
+        "label": "Bundle"
+      },
+      {
+        "type": "color",
+        "id": "color_bundle_text",
+        "label": "Bundle Text"
+      },
+      {
+        "type": "color",
         "id": "color_retiring_soon",
         "label": "Retiring Soon"
+      },
+      {
+        "type": "color",
+        "id": "color_retiring_soon_text",
+        "label": "Retiring Soon Text"
       },
       {
         "type": "color",
@@ -36,13 +56,28 @@
       },
       {
         "type": "color",
+        "id": "color_limited_edition_text",
+        "label": "Limited Edition Text"
+      },
+      {
+        "type": "color",
         "id": "color_new",
         "label": "New"
       },
       {
         "type": "color",
+        "id": "color_new_text",
+        "label": "New Text"
+      },
+      {
+        "type": "color",
         "id": "color_sold_out",
         "label": "Sold out"
+      },
+      {
+        "type": "color",
+        "id": "color_sold_out_text",
+        "label": "Sold out Text"
       }
     ]
   },
