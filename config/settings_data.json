@@ -11,8 +11,8 @@
   "current": {
     "color_sale": "#df9764",
     "color_sale_text": "#ffffff",
-    "color_bundle": "#da9a9a",
-    "color_bundle_text": "#ffffff",
+    "color_bundle": "#e4e8e1",
+    "color_bundle_text": "#637175",
     "color_retiring_soon": "#cc6b3a",
     "color_retiring_soon_text": "#ffffff",
     "color_limited_edition": "#d79a80",
@@ -96,7 +96,7 @@
     "new_label_bg": "#fffcf8",
     "new_label_border": "#fffcf8",
     "sold_out_text": "#ffffff",
-    "bg_sold_out": "#e7b99d",
+    "bg_sold_out": "#30494d",
     "color_price": "#31484d",
     "color_price_sale": "#cc6b3a",
     "color_compare_price": "#637175",
@@ -3142,9 +3142,9 @@
         "settings": {
           "header_bg": "#ffffff",
           "logo_max_width": 315,
-          "left_linklist": "",
-          "right_linklist": "",
-          "mobile_linklist": "",
+          "left_linklist": "left-menu",
+          "right_linklist": "right-menu",
+          "mobile_linklist": "mobile-navigation",
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
@@ -3160,18 +3160,21 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/14_Black_Friday_2024_Desktop_Hero_f29badcb-5ef3-4e11-ae7b-10f0afc3c253.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
             "settings": {
+              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -3179,6 +3182,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           }
@@ -3191,6 +3195,7 @@
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
+          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3261,31 +3266,36 @@
           "1348b1e8-f464-46c5-a185-be87842cd2e5": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#bac8b6"
+              "color_swatch": "#bac8b6",
+              "product_image": "shopify://shop_images/home-001.png"
             }
           },
           "99789124-04e3-422f-9fe4-ad8bda53c97a": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#637175"
+              "color_swatch": "#637175",
+              "product_image": "shopify://shop_images/home-003.png"
             }
           },
           "a4e15931-b8eb-4a78-ae24-036f1add7a84": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#df9764"
+              "color_swatch": "#df9764",
+              "product_image": "shopify://shop_images/home-005_c73bdc58-398a-4f7e-8c7c-347ebce12074.png"
             }
           },
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#d79a80"
+              "color_swatch": "#d79a80",
+              "product_image": "shopify://shop_images/home-004.png"
             }
           },
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#e7b99d"
+              "color_swatch": "#e7b99d",
+              "product_image": "shopify://shop_images/home-002.png"
             }
           }
         },
@@ -3370,7 +3380,8 @@
           "caption_color": "#ffffff",
           "caption_size": 22,
           "cta_url": "shopify://pages/inspirations",
-          "cta_text": "Explore our lookbook"
+          "cta_text": "Explore our lookbook",
+          "image": "shopify://shop_images/rainbow_274cbcfa-3277-4e27-b17d-1fb373078447.png"
         }
       },
       "1620416895faf4570f": {
@@ -3481,19 +3492,27 @@
         "blocks": {
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/babylist2.png"
+            }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/Todays_Parent2.png"
+            }
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/domino2.png"
+            }
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/solids_starts.png"
+            }
           }
         },
         "block_order": [
@@ -3512,6 +3531,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-secondary",
+          "hero_background": "shopify://shop_images/Kruithof-Family-2020-248_KRK.jpg",
           "hero_title": "Meet the<br>Yeah Baby Goods<br>Team",
           "title_color": "#ffffff",
           "title_size": 56,
@@ -3537,7 +3557,7 @@
             "type": "menu",
             "settings": {
               "heading": "Shop",
-              "menu": ""
+              "menu": "shop-menu"
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
@@ -3551,7 +3571,7 @@
             "type": "menu",
             "settings": {
               "heading": "",
-              "menu": ""
+              "menu": "connect"
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -3582,19 +3602,27 @@
         "blocks": {
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/ybgg.jpg"
+            }
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/brown_butter_full.jpg"
+            }
           },
           "42a7df21-d27f-45b2-aec5-a15f5d77c7dc": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/y-10.jpg"
+            }
           },
           "0cc1a2eb-c408-499a-be14-f56bab07e5a0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/restaurantbags-26.jpg"
+            }
           },
           "ac4574ce-dff0-4dca-9d51-7bf15f895288": {
             "type": "image",
@@ -3610,11 +3638,15 @@
           },
           "e6a8ace4-b50c-4489-9801-42b37a06e710": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/vintage_blue_uphighchair.jpg"
+            }
           },
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/y-6.jpg"
+            }
           }
         },
         "block_order": [
@@ -4226,6 +4258,7 @@
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/yeahbabygoods-65.jpg",
               "title": "Cotton Cushion Covers",
               "description": "Cushions for support, covers keep your home stylish",
               "cta_text": "Shop now",
@@ -4235,6 +4268,7 @@
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/ybg-2_square.jpg",
               "title": "Vegan Leather Cushion Covers",
               "description": "Wipeable covers for your support cushion",
               "cta_text": "Shop now",
@@ -4244,6 +4278,7 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/mashta_fam_24_square2.jpg",
               "title": "Highchair Placemats",
               "description": "FDA food grade silicone fits in tray and makes clean-up a breeze",
               "cta_text": "Shop now",
@@ -4253,6 +4288,7 @@
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/yeahbabygoods-5_f9031d4c-4baf-4745-af48-f44226db268e.jpg",
               "title": "Highchair Footrests",
               "description": "Makes meal times safer and more comfortable",
               "cta_text": "Shop now",
@@ -4272,6 +4308,7 @@
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/ybgg.jpg",
               "title": "Feeding Essentials",
               "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
               "cta_text": "Shop now",
@@ -4281,6 +4318,7 @@
           "3210f823-b119-46f3-bc70-9f844926c34e": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/vintage_blue_uphighchair_af3963a5-f8b1-4bd5-9874-5c1918acf208.jpg",
               "title": "Floor Mats",
               "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "cta_text": "Shop now",
@@ -4290,6 +4328,7 @@
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
               "title": "Restaurant Bags",
               "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
               "cta_text": "Shop now",
@@ -5853,18 +5892,21 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/13_Black_Friday_2024_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
             "settings": {
+              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -5872,6 +5914,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
@@ -5892,6 +5935,7 @@
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
+          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "image_link": "shopify://pages/collections",
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
@@ -6211,6 +6255,41 @@
         "settings": {
           "featured_image": "shopify://shop_images/restaurantbags-37_51707b93-8f07-49e6-a4eb-ea664abd2f35.jpg",
           "heading": "Why Restaurant Bags?"
+        }
+      },
+      "reasons-to-buy-all-you-tensil": {
+        "type": "reasons-to-buy-all-you-tensil",
+        "blocks": {
+          "reason_9aBwXL": {
+            "type": "reason",
+            "settings": {
+              "title": "SETS BABY UP FOR SUCCESS",
+              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills</p>"
+            }
+          },
+          "reason_VTjnEA": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Can be used for self-feeding or parent-led feeding with purees</p>"
+            }
+          },
+          "reason_9mitEH": {
+            "type": "reason",
+            "settings": {
+              "title": "HELPS DEVELOP NEW SKILLS",
+              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_9aBwXL",
+          "reason_VTjnEA",
+          "reason_9mitEH"
+        ],
+        "settings": {
+          "featured_image": "shopify://shop_images/YBG-34.jpg",
+          "heading": "Why All You-Tensils?"
         }
       },
       "reasons-to-buy-cushions": {
