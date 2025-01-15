@@ -56,7 +56,7 @@
 
 {% if on_sale or sold_out or custom_label or bundle_label or new_label or retiring_soon or limited_edition %}
   <div class="product-label">
-    {% if bundle_label == false %}
+    {% if bundle_label == true %}
       {% if on_sale %}
         {% if settings.type_label_sale == 'label_sale' %}
           <strong
