@@ -41,22 +41,22 @@
       },
       {
         "type": "color",
-        "id": "color_retiring_soon",
+        "id": "color_retiring",
         "label": "Retiring Soon"
       },
       {
         "type": "color",
-        "id": "color_retiring_soon_text",
+        "id": "color_retiring_text",
         "label": "Retiring Soon Text"
       },
       {
         "type": "color",
-        "id": "color_limited_edition",
+        "id": "color_limited",
         "label": "Limited Edition"
       },
       {
         "type": "color",
-        "id": "color_limited_edition_text",
+        "id": "color_limited_txt",
         "label": "Limited Edition Text"
       },
       {
@@ -71,12 +71,12 @@
       },
       {
         "type": "color",
-        "id": "color_sold_out",
+        "id": "color_sold",
         "label": "Sold out"
       },
       {
         "type": "color",
-        "id": "color_sold_out_text",
+        "id": "color_sold_text",
         "label": "Sold out Text"
       }
     ]
