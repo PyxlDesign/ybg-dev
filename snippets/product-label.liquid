@@ -1,16 +1,16 @@
 {% assign on_sale = false %}
 {% if badge_detail %}
-{% if product.variants[0].compare_at_price > product.variants[0].price %}
-  {% assign on_sale = true %}
-{% endif %}
+  {% if product.variants[0].compare_at_price > product.variants[0].price %}
+    {% assign on_sale = true %}
+  {% endif %}
 {% else %}
-{% if product.compare_at_price_min > product.price_min %}
-  {% assign on_sale = true %}
-{% endif %}
+  {% if product.compare_at_price_min > product.price_min %}
+    {% assign on_sale = true %}
+  {% endif %}
 {% endif %}
 
 {% assign sold_out = true %}
-{% if product.available  %}
+{% if product.available %}
   {% assign sold_out = false %}
 {% endif %}
 
@@ -21,91 +21,134 @@
 <!-- other tags -->
 {% assign retiring_soon = false %}
 {% assign limited_edition = false %}
+{% assign bundle_label = false %}
 
 {% for tag in product.tags %}
-{% assign tag_handle = tag | handleize %}
-{% if tag_handle == 'label' %}
-{% assign custom_label = true %}
-{% endif %}
+  {% assign tag_handle = tag | handleize %}
+  {% if tag_handle == 'label' %}
+    {% assign custom_label = true %}
+  {% endif %}
 
-{% if tag_handle == 'new'  %}
-{% assign new_label = true %}
-{% endif %}
+  {% if tag_handle == 'new' %}
+    {% assign new_label = true %}
+  {% endif %}
 
-{% if tag contains "retiring-soon" or tag contains 'Retiring Soon' or tag contains 'retiring soon' or collection.handle == "retiring-soon" %}
-{% assign retiring_soon = true %}
-{% endif %}
+  {% if tag contains 'retiring-soon'
+    or tag contains 'Retiring Soon'
+    or tag contains 'retiring soon'
+    or collection.handle == 'retiring-soon'
+  %}
+    {% assign retiring_soon = true %}
+  {% endif %}
 
-{% if tag == "limited-edition" or tag == "Limited Edition" or tag == "limited edition" or product.collection.handle contains "limited-edition" %}
-  {% assign limited_edition = true %}
-{% endif %}
+  {% if tag == 'limited-edition'
+    or tag == 'Limited Edition'
+    or tag == 'limited edition'
+    or product.collection.handle contains 'limited-edition'
+  %}
+    {% assign limited_edition = true %}
+  {% endif %}
+
+  {% if tag contains 'bundle' or tag contains 'BUNDLE' or tag contains 'bundle' or collection.handle == 'bundle' %}
+    {% assign bundle_label = true %}
+  {% endif %}
 {% endfor %}
 
-{% assign bundle_label = false %}
-{% if product.metafields.c_f['Grouped Sub Product'] %}
-{% assign bundle_label = true %}
-{% endif %}
-
-
 {% if on_sale or sold_out or custom_label or bundle_label or new_label or retiring_soon or limited_edition %}
-<div class="product-label">
-  {% if on_sale %}
-  {% if settings.type_label_sale == 'label_sale' %}
-  <strong class="label sale-label" style="background-color: {{ settings.color_sale }};" {% if settings.enable_multilang %}data-translate="products.product.sale"{% endif %}>
-    {{ 'products.product.sale' | t }}
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% else %}
-  {% if badge_detail %}
-  <strong class="label sale-label" style="background-color: {{ settings.color_sale }};">
-    -{{ product.variants[0].compare_at_price | minus:product.variants[0].price | times:100 | divided_by:product.variants[0].compare_at_price }}%
-  </strong>
-  {% else %}
-  <strong class="label sale-label" style="background-color: {{ settings.color_sale }};">
-    -{{ product.compare_at_price_min | minus:product.price_min | times:100 | divided_by:product.compare_at_price_min }}%
-  </strong>
-  {% endif %}
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
-  
-  {% endif %}
-  {% if sold_out %}
-  <strong class="label sold-out-label" style="background-color: {{ settings.color_sold_out }};" {% if settings.enable_multilang %}data-translate="products.product.sold_out"{% endif %}>
-    {{ 'products.product.sold_out' | t }}
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
-  {% if limited_edition == true %}
-  <strong class="label limit-edition-label" style="background-color: {{ settings.color_limited_edition }};">
-      Limited edition
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
-  {% if retiring_soon == true %}
-  <strong class="label retiring-soon-label" style="background-color: {{ settings.color_retiring_soon }};">
-      Retiring
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
+  <div class="product-label">
+    {% if bundle_label == false %}
+      {% if on_sale %}
+        {% if settings.type_label_sale == 'label_sale' %}
+          <strong
+            class="label sale-label"
+            {% if settings.enable_multilang %}
+              data-translate="products.product.sale"
+            {% endif %}
+          >
+            {{ 'products.product.sale' | t }}
+          </strong>
+          {% comment %} <br> {% endcomment %}
+        {% else %}
+          {% if badge_detail %}
+            <strong class="label sale-label">
+              -
+              {{-
+                product.variants[0].compare_at_price
+                | minus: product.variants[0].price
+                | times: 100
+                | divided_by: product.variants[0].compare_at_price
+              -}}
+              %
+            </strong>
+          {% else %}
+            <strong class="label sale-label">
+              -
+              {{-
+                product.compare_at_price_min
+                | minus: product.price_min
+                | times: 100
+                | divided_by: product.compare_at_price_min
+              -}}
+              %
+            </strong>
+          {% endif %}
+          {% comment %} <br> {% endcomment %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% if sold_out %}
+      <strong
+        class="label sold-out-label"
+        {% if settings.enable_multilang %}
+          data-translate="products.product.sold_out"
+        {% endif %}
+      >
+        {{ 'products.product.sold_out' | t }}
+      </strong>
+      {% comment %} <br> {% endcomment %}
+    {% endif %}
+    {% if limited_edition == true %}
+      <strong class="label limit-edition-label"> Limited edition </strong>
+      {% comment %} <br> {% endcomment %}
+    {% endif %}
+    {% if retiring_soon == true %}
+      <strong class="label retiring-soon-label"> Retiring </strong>
+      {% comment %} <br> {% endcomment %}
+    {% endif %}
 
-  {% if new_label %}
-  <strong style="background-color: {{ settings.color_new }};" class="label new-label" {% if settings.enable_multilang %}data-translate="products.product.new_label"{% endif %} >
-    {{ 'products.product.new_label' | t }}
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
-  
-  {% if custom_label %}
-  <strong class="label custom-label" {% if settings.enable_multilang %}data-translate="products.product.custom_label"{% endif %} >
-    {{ 'products.product.custom_label' | t }}
-  </strong>
-  {% comment %} <br> {% endcomment %}
-  {% endif %}
-  
-  {% if bundle_label %}
-  <strong class="label bundle-label" {% if settings.enable_multilang %}data-translate="products.product.custom_label"{% endif %} >
-    {{ 'products.product.bundle_label' | t }}
-  </strong>
-  {% endif %}
-</div>
+    {% if new_label %}
+      <strong
+        class="label new-label"
+        {% if settings.enable_multilang %}
+          data-translate="products.product.new_label"
+        {% endif %}
+      >
+        {{ 'products.product.new_label' | t }}
+      </strong>
+      {% comment %} <br> {% endcomment %}
+    {% endif %}
+
+    {% if custom_label %}
+      <strong
+        class="label custom-label"
+        {% if settings.enable_multilang %}
+          data-translate="products.product.custom_label"
+        {% endif %}
+      >
+        {{ 'products.product.custom_label' | t }}
+      </strong>
+      {% comment %} <br> {% endcomment %}
+    {% endif %}
+
+    {% if bundle_label %}
+      <strong
+        class="label bundle-label"
+        {% if settings.enable_multilang %}
+          data-translate="products.product.bundle"
+        {% endif %}
+      >
+        {{ 'products.product.bundle' | t }}
+      </strong>
+    {% endif %}
+  </div>
 {% endif %}
