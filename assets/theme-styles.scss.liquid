@@ -44,9 +44,20 @@
 /* Product  */
 	$product_text_transform : {{ settings.product_name_text_transform }};
 	$product_name_text_align : {{ settings.product_name_text_align }};
-    $color_title_pr: {{settings.color_title_product}};
-    $color_title_pr_hover: {{settings.color_title_product_hover}};
-    $color_vendor : {{ settings.color_vendor }};
+  $color_title_pr: {{settings.color_title_product}};
+  $color_title_pr_hover: {{settings.color_title_product_hover}};
+  $color_vendor : {{ settings.color_vendor }};
+	$sale_text : {{ settings.sale_text }};
+  $bg_sale : {{ settings.bg_sale }};
+	$custom_label_text : {{ settings.custom_label_text }};
+  $custom_label_bg : {{ settings.custom_label_bg }};
+  $bundle_label_text : {{ settings.bundle_label_text }};
+  $bundle_label_bg : {{ settings.bundle_label_bg }};
+  $new_label_text : {{ settings.new_label_text }};
+  $new_label_bg : {{ settings.new_label_bg }};
+  $new_label_border : {{ settings.new_label_border }};
+	$sold_out_text : {{ settings.sold_out_text }};
+	$bg_sold_out : {{ settings.bg_sold_out }};
 	$color_price: {{ settings.color_price }};
 	$color_price_sale: {{ settings.color_price_sale }};
 	$color_compare_price: {{ settings.color_compare_price }};
@@ -760,9 +771,9 @@ table {
 }
 
 .btn[disabled] {
-    background: $color_sold_out !important;
-    border-color: $color_sold_out !important;
-    color: $color_sold_out_text !important;
+    background: $bg_sold_out !important;
+    border-color: $bg_sold_out !important;
+    color: $sold_out_text !important;
     @include opacity(1);
 }
 
@@ -955,7 +966,7 @@ table {
     &.menu-open {
         display: block;
         position: fixed;
-        background: {{ settings.color_sale }};
+        background: {{ settings.bg_sale }};
         z-index: 33;
         top: 0;
         right: 0;
@@ -967,7 +978,7 @@ table {
 
             &:before,
             &:after {
-                background-color: {{ settings.color_sale_text }};
+                background-color: {{ settings.sale_text }};
                 left: 8px;
             }
 
@@ -2060,8 +2071,8 @@ table {
     }
 
     .sale-label {
-        background-color: $color_sale;
-        color: $color_sale_text;
+        background-color: $bg_sale;
+        color: $sale_text;
         margin-bottom: 5px;
     }
 
@@ -2071,26 +2082,20 @@ table {
     }
 
     .bundle-label {
-        background-color: $color_bundle;
-        color: $color_bundle_text;
-    }
-
-    .limited-edition-label {
-        background-color: $color_limited_edition;
-        color: $color_limited_edition_text;
-        padding: 3px 7px 2px;
+        background-color: $bundle_label_bg;
+        color: $bundle_label_text;
     }
 
     .new-label {
-        background-color: $color_new;
-        color: $color_new_text;
+        background-color: $new_label_bg;
+        color: $new_label_text;
         border: 1px solid $new_label_border;
         padding: 3px 7px 2px;
     }
 
     .sold-out-label {
-        background-color: $color_sold_out;
-        color: $color_sold_out_text;
+        background-color: $bg_sold_out;
+        color: $sold_out_text;
         margin-bottom: 5px;
     }
 }
@@ -2460,9 +2465,9 @@ table {
         }
 
         &.disabled {
-            color: $color_sold_out_text !important;
-            background: $color_sold_out !important;
-            border-color: $color_sold_out !important;
+            color: $sold_out_text !important;
+            background: $bg_sold_out !important;
+            border-color: $bg_sold_out !important;
             cursor: default;
             pointer-events: none;
         }
@@ -5552,8 +5557,8 @@ table {
     }
 
     .countdown-grid-item {
-        color: $color_sale_text;
-        background-color: {{ settings.color_sale | color_modify: 'alpha', 0.8  }};
+        color: $sale_text;
+        background-color: {{ settings.bg_sale | color_modify: 'alpha', 0.8  }};
         line-height: $font_size + 8;
         padding: 3px 0 1px;
         position: absolute;
@@ -5846,8 +5851,8 @@ table {
     @include translateY(-50%);
 
     .modal-inner {
-        background-color: $color_sale;
-        color: $color_sale_text;
+        background-color: $bg_sale;
+        color: $sale_text;
         display: inline-block;
         padding: 15px 20px 13px;
         line-height: $font_size + 10;
@@ -6087,7 +6092,7 @@ table {
             }
 
             input[name="quantity"][disabled] {
-                background-color: {{ settings.color_sold_out | color_modify: 'alpha', 0.5 }};
+                background-color: {{ settings.bg_sold_out | color_modify: 'alpha', 0.5 }};
             }
         }
 
@@ -6434,7 +6439,7 @@ table {
     }
 
     .sold_product {
-        color: $color_sale;
+        color: $bg_sale;
         margin-bottom: 20px;
 
         svg {
@@ -6850,7 +6855,7 @@ table {
         margin-bottom: .5rem;
 
         em {
-            color: $color_sale;
+            color: $bg_sale;
         }
     }
 
@@ -7368,7 +7373,7 @@ table {
             font-size: $font_size - 1;
             line-height: $font_size + 8;
             font-weight: 500;
-            color: {{ settings.color_sale | color_modify: 'alpha', 0.8  }};
+            color: {{ settings.bg_sale | color_modify: 'alpha', 0.8  }};
         }
     }
 
@@ -7824,8 +7829,8 @@ table {
                 font-size: $font_size - 2;
                 padding: 4px 5px 3px;
                 line-height: 1em;
-                color: $color_sale_text;
-                background-color: $color_sale;
+                color: $sale_text;
+                background-color: $bg_sale;
                 text-align: center;
                 @include border-radius(1px);
                 margin-right: 10px;
@@ -9795,7 +9800,7 @@ table {
                 padding-left: 15px;
 
                 .sold-out {
-                    color: $color_sold_out;
+                    color: $bg_sold_out;
                 }
             }
 
@@ -11187,7 +11192,7 @@ table {
     font-size: $font_size + 1;
     padding: 4px 18px 2px 20px;
     background-color: #f4572c;
-    color: $color_sale_text;
+    color: $sale_text;
     @include border-radius(13px);
     min-width: 190px;
 
@@ -11266,7 +11271,7 @@ table {
             letter-spacing: normal;
             text-align: center;
             background-color: #f4572c;
-            color: $color_sale_text;
+            color: $sale_text;
             position: relative;
             margin: 0 0 0 10px;
 
