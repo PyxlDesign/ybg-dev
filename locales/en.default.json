@@ -356,6 +356,7 @@
     },
     "product": {
       "sale": "Sale",
+      "bundle": "Bundle",
       "you_save": "You save",
       "custom_label": "Custom Label",
       "bundle_label": "Bundle",
