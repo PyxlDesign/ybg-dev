@@ -777,9 +777,9 @@ table {
 }
 
 .btn[disabled] {
-    background: $bg_sold_out !important;
-    border-color: $bg_sold_out !important;
-    color: $sold_out_text !important;
+    background: $color_sold_out !important;
+    border-color: $color_sold_out !important;
+    color: $color_sold_out_text !important;
     @include opacity(1);
 }
 
@@ -972,7 +972,7 @@ table {
     &.menu-open {
         display: block;
         position: fixed;
-        background: {{ settings.bg_sale }};
+        background: {{ settings.color_sale }};
         z-index: 33;
         top: 0;
         right: 0;
@@ -984,7 +984,7 @@ table {
 
             &:before,
             &:after {
-                background-color: {{ settings.sale_text }};
+                background-color: {{ settings.color_sale_text }};
                 left: 8px;
             }
 
@@ -2077,8 +2077,8 @@ table {
     }
 
     .sale-label {
-        background-color: $bg_sale;
-        color: $sale_text;
+        background-color: $color_sale;
+        color: $color_sale_text;
         margin-bottom: 5px;
     }
 
@@ -2112,8 +2112,8 @@ table {
     }
 
     .sold-out-label {
-        background-color: $bg_sold_out;
-        color: $sold_out_text;
+        background-color: $color_sold_out;
+        color: $color_sold_out_text;
         margin-bottom: 5px;
     }
 }
@@ -2483,9 +2483,9 @@ table {
         }
 
         &.disabled {
-            color: $sold_out_text !important;
-            background: $bg_sold_out !important;
-            border-color: $bg_sold_out !important;
+            color: $color_sold_out_text !important;
+            background: $color_sold_out !important;
+            border-color: $color_sold_out !important;
             cursor: default;
             pointer-events: none;
         }
@@ -5575,8 +5575,8 @@ table {
     }
 
     .countdown-grid-item {
-        color: $sale_text;
-        background-color: {{ settings.bg_sale | color_modify: 'alpha', 0.8  }};
+        color: $color_sale_text;
+        background-color: {{ settings.color_sale | color_modify: 'alpha', 0.8  }};
         line-height: $font_size + 8;
         padding: 3px 0 1px;
         position: absolute;
@@ -5869,8 +5869,8 @@ table {
     @include translateY(-50%);
 
     .modal-inner {
-        background-color: $bg_sale;
-        color: $sale_text;
+        background-color: $color_sale;
+        color: $color_sale_text;
         display: inline-block;
         padding: 15px 20px 13px;
         line-height: $font_size + 10;
@@ -6110,7 +6110,7 @@ table {
             }
 
             input[name="quantity"][disabled] {
-                background-color: {{ settings.bg_sold_out | color_modify: 'alpha', 0.5 }};
+                background-color: {{ settings.color_sold_out | color_modify: 'alpha', 0.5 }};
             }
         }
 
@@ -6457,7 +6457,7 @@ table {
     }
 
     .sold_product {
-        color: $bg_sale;
+        color: $color_sale;
         margin-bottom: 20px;
 
         svg {
@@ -6873,7 +6873,7 @@ table {
         margin-bottom: .5rem;
 
         em {
-            color: $bg_sale;
+            color: $color_sale;
         }
     }
 
@@ -7391,7 +7391,7 @@ table {
             font-size: $font_size - 1;
             line-height: $font_size + 8;
             font-weight: 500;
-            color: {{ settings.bg_sale | color_modify: 'alpha', 0.8  }};
+            color: {{ settings.color_sale | color_modify: 'alpha', 0.8  }};
         }
     }
 
@@ -7847,8 +7847,8 @@ table {
                 font-size: $font_size - 2;
                 padding: 4px 5px 3px;
                 line-height: 1em;
-                color: $sale_text;
-                background-color: $bg_sale;
+                color: $color_sale_text;
+                background-color: $color_sale;
                 text-align: center;
                 @include border-radius(1px);
                 margin-right: 10px;
@@ -9818,7 +9818,7 @@ table {
                 padding-left: 15px;
 
                 .sold-out {
-                    color: $bg_sold_out;
+                    color: $color_sold_out;
                 }
             }
 
@@ -11210,7 +11210,7 @@ table {
     font-size: $font_size + 1;
     padding: 4px 18px 2px 20px;
     background-color: #f4572c;
-    color: $sale_text;
+    color: $color_sale_text;
     @include border-radius(13px);
     min-width: 190px;
 
@@ -11289,7 +11289,7 @@ table {
             letter-spacing: normal;
             text-align: center;
             background-color: #f4572c;
-            color: $sale_text;
+            color: $color_sale_text;
             position: relative;
             margin: 0 0 0 10px;
 
