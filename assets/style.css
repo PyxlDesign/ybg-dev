@@ -1,12 +1,9 @@
 @import url("https://use.typekit.net/mmq5nyf.css");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
-@import url("https://use.typekit.net/mmq5nyf.css");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: 'Avalanche';
-  src: url("AvalancheRegular.eot");
-  src: url("AvalancheRegular.eot?#iefix") format("embedded-opentype"), url("AvalancheRegular.woff2") format("woff2"), url("AvalancheRegular.woff") format("woff"), url("AvalancheRegular.ttf") format("truetype"), url("AvalancheRegular.svg#AvalancheRegular") format("svg");
+  src: url("fonts/AvalancheRegular.eot");
+  src: url("fonts/AvalancheRegular.eot?#iefix") format("embedded-opentype"), url("fonts/AvalancheRegular.woff2") format("woff2"), url("fonts/AvalancheRegular.woff") format("woff"), url("fonts/AvalancheRegular.ttf") format("truetype"), url("fonts/AvalancheRegular.svg#AvalancheRegular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap

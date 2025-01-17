@@ -79,7 +79,13 @@
                     </a>
     			</div>
                 <div class="product-label">
-                  {{if compare_at_price_min > price_min }} 
+                  {{if product.tags && product.tags.indexOf('bundle') !== -1}}
+                    <strong class="label bundle-label">
+                      {% endraw %}{% if settings.enable_multilang %}data-translate="products.product.bundle"{% endif %}>
+                          {{ 'products.product.bundle' | t }}{% raw %}
+                      </span>
+                    </strong>
+                  {{elseif compare_at_price_min > price_min }} 
                   {% endraw %}
                   {% if settings.type_label_sale == 'label_sale' %}
                   {% raw %}
