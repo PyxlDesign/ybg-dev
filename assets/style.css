@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-ExtraLight.ttf") format("truetype");
+  src: url("Karla-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-ExtraLightItalic.ttf") format("truetype"); 
+  src: url("Karla-ExtraLightItalic.woff2") format("woff2"); 
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-Light.ttf") format("truetype");
+  src: url("Karla-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-LightItalic.ttf") format("truetype");
+  src: url("Karla-LightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-Regular.ttf") format("truetype");
+  src: url("Karla-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-Italic.ttf") format("truetype");
+  src: url("Karla-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-Medium.ttf") format("truetype");
+  src: url("Karla-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -66,7 +66,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-MediumItalic.ttf") format("truetype");
+  src: url("Karla-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -74,7 +74,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-SemiBold.ttf") format("truetype");
+  src: url("Karla-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -82,7 +82,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-SemiBoldItalic.ttf") format("truetype");
+  src: url("Karla-SemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -90,7 +90,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-Bold.ttf") format("truetype");
+  src: url("Karla-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -98,7 +98,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-BoldItalic.ttf") format("truetype");
+  src: url("Karla-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -106,7 +106,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-ExtraBold.ttf") format("truetype");
+  src: url("Karla-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -114,7 +114,7 @@
 
 @font-face {
   font-family: 'Karla';
-  src: url("Karla-ExtraBoldItalic.ttf") format("truetype");
+  src: url("Karla-ExtraBoldItalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
