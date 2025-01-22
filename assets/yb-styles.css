@@ -1,7 +1,4 @@
 @import url("https://use.typekit.net/mmq5nyf.css");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
-@import url("https://use.typekit.net/mmq5nyf.css");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
 
 @font-face {
     font-family: 'Avalanche';
@@ -11,7 +8,55 @@
     font-style: normal;
     font-display: swap
 }
-
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url("Karla-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
 .w-16 {
     width: 16.6%
 }
