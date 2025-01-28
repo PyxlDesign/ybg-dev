@@ -118,7 +118,11 @@
         {% assign slide_url = block.settings.hero_slide_url %}
         {% if slide_image != blank and slide_url != blank %}
           <a class="hero-mobile-slide" href="{{ slide_url }}">
-            {{ slide_image | image_url: width: 1500 | image_tag }}
+            {% if forloop.first %}
+              {{ slide_image | image_url: width: 990 | image_tag: preload: true }}
+            {% else %}
+              {{ slide_image | image_url: width: 990 | image_tag: loading: 'lazy' }}
+            {% endif %}
           </a>
         {% endif %}
       {% endfor %}
