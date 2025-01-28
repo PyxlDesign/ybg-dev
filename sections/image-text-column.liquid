@@ -45,7 +45,13 @@
     </div>
     <div class="customer-creations__showcase ml-auto">
       <div class="image-wrapper">
-        <img src="{{image | img_url: 'master'}}" alt="img" loading="lazy">
+        <img
+          src="{{image | img_url: 'master'}}"
+          alt="img"
+          loading="lazy"
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+        >
       </div>
     </div>
   </div>
