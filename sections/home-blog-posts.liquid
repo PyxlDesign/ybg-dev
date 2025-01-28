@@ -55,7 +55,7 @@
                       {{
                         article
                         | image_url: 'x370'
-                        | image_tag: image_alt, class: 'article__image', loading: 'lazy'
+                        | image_tag: article.title, class: 'article__image', loading: 'lazy'
                         | link_to: article.url
                         | replace: '<a', '<a class="animate-scale"'
                       }}
