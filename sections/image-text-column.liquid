@@ -10,139 +10,143 @@
 {% assign cta_text = s.cta_text %}
 {% assign image = s.image %}
 <style>
-    #shopify-section-{{ section.id }} .customer-creations{
-        background-color: {{background}};
-    }
-    #shopify-section-{{ section.id }} .h1{
-        font-size: {{title_size}}px;
-        color: {{ title_color }};
-    }
-    #shopify-section-{{ section.id }} p{
-        font-size: {{caption_size}}px;
-        color: {{ caption_color }};
-    }
+  #shopify-section-{{ section.id }} .customer-creations{
+      background-color: {{background}};
+  }
+  #shopify-section-{{ section.id }} .h1{
+      font-size: {{title_size}}px;
+      color: {{ title_color }};
+  }
+  #shopify-section-{{ section.id }} p{
+      font-size: {{caption_size}}px;
+      color: {{ caption_color }};
+  }
 </style>
 <section class="customer-creations">
-    <div class="container-xl d-flex align-items-center justify-content-between position-relative">
-        <div class="customer-creations__meta absolute-v-center container-fluid">
-            <div class="container">
-                <div class="customer-creations__block">
-                    {% if title != blank %}<h2 class="h1">
-                        {{ title }}
-                    </h2>{% endif %}
-                    {% if caption != blank %}<p class="copy-lg">{{ caption }}</p>{% endif %}
-                    {% if cta_url != blank %}
-                    <div class="button-wrapper">
-                        <a href="{{cta_url}}" class="button">{{cta_text}}</a>
-                    </div>
-                    {% endif %}
-                </div>
+  <div class="container-xl d-flex align-items-center justify-content-between position-relative">
+    <div class="customer-creations__meta absolute-v-center container-fluid">
+      <div class="container">
+        <div class="customer-creations__block">
+          {% if title != blank %}
+            <h2 class="h1">
+              {{ title }}
+            </h2>
+          {% endif %}
+          {% if caption != blank %}
+            <p class="copy-lg">{{ caption }}</p>
+          {% endif %}
+          {% if cta_url != blank %}
+            <div class="button-wrapper">
+              <a href="{{cta_url}}" class="button">{{ cta_text }}</a>
             </div>
+          {% endif %}
         </div>
-        <div class="customer-creations__showcase ml-auto">
-            <div class="image-wrapper">
-                <img src="{{image | img_url: 'master'}}" alt="img">
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="customer-creations__showcase ml-auto">
+      <div class="image-wrapper">
+        <img src="{{image | img_url: 'master'}}" alt="img" loading="lazy">
+      </div>
+    </div>
+  </div>
 </section>
 {% schema %}
 {
-    "name": "Image With Text",
-    "class": "image-text-section",
-    "settings": [
-        {
-            "type": "color",
-            "id": "background_color",
-            "label": "Background",
-            "default": "#F0E4D8",
-            "info": "This will set background color of the section"
-        },
-        {
-            "type": "header",
-            "content": "Title Settings"
-        },
-        {
-            "type": "text",
-            "id": "image_text_title",
-            "label": "Title",
-            "default": "Your Section title goes here",
-            "info": "This will set the text for Heading"
-        },
-        {
-            "type": "color",
-            "id": "title_color",
-            "label": "Title Color",
-            "default": "#fff",
-            "info": "This will set color to Title"
-        },
-        {
-            "type": "range",
-            "id": "title_size",
-            "label": "Title Font Size",
-            "min": 40,
-            "max": 100,
-            "step": 2,
-            "default": 60
-        },
-        {
-            "type": "header",
-            "content": "Caption settings"
-        },
-        {
-            "type": "textarea",
-            "id": "image_text_caption",
-            "label": "Caption",
-            "default": "Your caption goes here",
-            "info": "This will set text for Caption"
-        },
-        {
-            "type": "color",
-            "id": "caption_color",
-            "label": "Caption Color",
-            "default": "#fff",
-            "info": "This will set color to caption"
-        },
-        {
-            "type": "range",
-            "id": "caption_size",
-            "label": "Caption Font Size",
-            "min": 16,
-            "max": 30,
-            "step": 1,
-            "default": 22
-        },
-        {
-            "type": "header",
-            "content": "CTA settings"
-        },
-        {
-            "type": "url",
-            "id": "cta_url",
-            "label": "URL",
-            "info": "Remaining empty will disable the CTA button"
-        },
-        {
-            "type": "text",
-            "id": "cta_text",
-            "label": "Text",
-            "default": "Shop Now"
-        },
-        {
-            "type": "header",
-            "content": "Image Settings"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        }
-    ],
-    "presets": [
-        {
-            "category": "Image",
-            "name":"Image Text Block"
-        }
-    ]
+  "name": "Image With Text",
+  "class": "image-text-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F0E4D8",
+      "info": "This will set background color of the section"
+    },
+    {
+      "type": "header",
+      "content": "Title Settings"
+    },
+    {
+      "type": "text",
+      "id": "image_text_title",
+      "label": "Title",
+      "default": "Your Section title goes here",
+      "info": "This will set the text for Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#fff",
+      "info": "This will set color to Title"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title Font Size",
+      "min": 40,
+      "max": 100,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Caption settings"
+    },
+    {
+      "type": "textarea",
+      "id": "image_text_caption",
+      "label": "Caption",
+      "default": "Your caption goes here",
+      "info": "This will set text for Caption"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#fff",
+      "info": "This will set color to caption"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "label": "Caption Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "header",
+      "content": "CTA settings"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "URL",
+      "info": "Remaining empty will disable the CTA button"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Image Text Block"
+    }
+  ]
 }
 {% endschema %}
