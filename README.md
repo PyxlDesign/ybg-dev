@@ -34,9 +34,17 @@ The Cookie consent has been added to layout->theme.liquid. There is 2 script tag
 
 The Karla Font has been moved to local instead of pulling from fonts.google.com. This leaves halyard the only external font that is being pulled in from adobe fonts.
 
+### Checkout page
+
+Roboto and Montserrat
+
 ## Scripts
 
 ella.min.js
 halo.js
 jquery.currency.min.js
 jquery.products.min.js
+
+### New Currency
+
+new-currency.liquid is reloading every page by adding a currency=USD
