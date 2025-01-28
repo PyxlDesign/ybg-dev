@@ -24,7 +24,7 @@
 <style>
   #shopify-section-{{section.id}} .hero{
         {% if use_hero_slider == false %}
-            {% if s.hero_background != blank  -%} 
+            {% if s.hero_background != blank  -%}
             background: url({{ background | img_url : "master" }});
             {%else%}
             background: url({{ background }})
@@ -111,9 +111,15 @@
         {% assign slide_image = block.settings.hero_slide_image %}
         {% assign slide_url = block.settings.hero_slide_url %}
         {% if slide_image != blank and slide_url != blank %}
-          <a class="hero-slide" href="{{ slide_url }}">
-            {{ slide_image | image_url: width: 1500 | image_tag }}
-          </a>
+          {% if forloop.first %}
+            <a class="hero-slide" href="{{ slide_url }}">
+              {{ slide_image | image_url: width: 1500 | image_tag: preload: true }}
+            </a>
+          {% else %}
+            <a class="hero-slide" href="{{ slide_url }}">
+              {{ slide_image | image_url: width: 1500 | image_tag: loading: 'lazy' }}
+            </a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>
