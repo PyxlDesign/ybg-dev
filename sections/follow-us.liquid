@@ -1,107 +1,126 @@
 <section class="follow-us">
-    <div class="row mx-0">
-        <div class="cell col-md-4 px-0">
-            {% assign block_size = section.blocks | size %}
-            {% if block_size > 0 %}
-            <div class="follow-slider-1" data-flickity = '{"adaptiveHeight": true, "autoplay": 6000, "fade": true, "cellAlign": "left", "autoPlay": true, "wrapAround": true, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.003, "friction": 0.15}'>
-                {% assign limit_1 = block_size | divided_by: 2 | ceil | minus: 1 %}
-                {% for i in (0..limit_1) %}
-                <div class="image-wrapper carousel-cell">
-                    {% if section.blocks[i].settings.image != blank  %}
-                    <img src="{{ section.blocks[i].settings.image | img_url: 'master' }}" alt="" class="image-fill">
-                    {% endif %}
-                </div>
-                {% endfor %}
+  <div class="row mx-0">
+    <div class="cell col-md-4 px-0">
+      {% assign block_size = section.blocks | size %}
+      {% if block_size > 0 %}
+        <div
+          class="follow-slider-1"
+          data-flickity='{"adaptiveHeight": true, "autoplay": 6000, "fade": true, "cellAlign": "left", "autoPlay": true, "wrapAround": true, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.003, "friction": 0.15}'
+        >
+          {% assign limit_1 = block_size | divided_by: 2 | ceil | minus: 1 %}
+          {% for i in (0..limit_1) %}
+            <div class="image-wrapper carousel-cell">
+              {% if section.blocks[i].settings.image != blank %}
+                <img
+                  src="{{ section.blocks[i].settings.image | img_url: '800x800' }}"
+                  alt=""
+                  height="800"
+                  class="image-fill"
+                  loading="lazy"
+                  width="800"
+                >
+              {% endif %}
             </div>
-            {% endif %}
+          {% endfor %}
         </div>
-        <div class="cell col-md-4 px-0">
-            <div class="follow-us__content-block text-center">
-                {% if section.settings.paragraph !=blank %}
-                <p class="copy-lg font-weight-normal">{{ section.settings.paragraph }}</p>
-                {% endif %}
-                {% if section.settings.heading != blank %}
-                <h2 class="mb-6 mt-15">{{ section.settings.heading }}</h2>
-                {% endif %}
-                {% if section.settings.btn_url != blank %}
-                <div class="button-wrapper mt-5">
-                    <a href="{{ section.settings.btn_url }}" class="button">{{ section.settings.btn_text }}</a>
-                </div>
-                {% endif %}
-            </div>
-        </div>
-        <div class="cell col-md-4 px-0">
-            {% assign block_size = section.blocks | size %}
-            {% if block_size > 0 %}
-            <div class="follow-slider-2" data-flickity = '{"adaptiveHeight": true, "autoplay": 6000, "fade": true, "wrapAround": true, "cellAlign": "left", "autoPlay": true, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.003, "friction": 0.15}'>
-                {% assign limit_2 = block_size | divided_by: 2 | ceil %}
-                {% assign boundary = block_size | minus: 1 %}
-                {% for i in (limit_2..boundary) %}
-                <div class="image-wrapper carousel-cell">
-                    {% if section.blocks[i].settings.image != blank  %}
-                    <img src="{{ section.blocks[i].settings.image | img_url: 'master' }}" alt="" class="image-fill">
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div>
+      {% endif %}
     </div>
-    
+    <div class="cell col-md-4 px-0">
+      <div class="follow-us__content-block text-center">
+        {% if section.settings.paragraph != blank %}
+          <p class="copy-lg font-weight-normal">{{ section.settings.paragraph }}</p>
+        {% endif %}
+        {% if section.settings.heading != blank %}
+          <h2 class="mb-6 mt-15">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.btn_url != blank %}
+          <div class="button-wrapper mt-5">
+            <a href="{{ section.settings.btn_url }}" class="button">{{ section.settings.btn_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="cell col-md-4 px-0">
+      {% assign block_size = section.blocks | size %}
+      {% if block_size > 0 %}
+        <div
+          class="follow-slider-2"
+          data-flickity='{"adaptiveHeight": true, "autoplay": 6000, "fade": true, "wrapAround": true, "cellAlign": "left", "autoPlay": true, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.003, "friction": 0.15}'
+        >
+          {% assign limit_2 = block_size | divided_by: 2 | ceil %}
+          {% assign boundary = block_size | minus: 1 %}
+          {% for i in (limit_2..boundary) %}
+            <div class="image-wrapper carousel-cell">
+              {% if section.blocks[i].settings.image != blank %}
+                <img
+                  src="{{ section.blocks[i].settings.image | img_url: '800x800' }}"
+                  alt=""
+                  height="800"
+                  class="image-fill"
+                  loading="lazy"
+                  width="800"
+                >
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
 </section>
 {% schema %}
 {
-    "name": "Follow Us",
-    "class": "section-follow-us",
-    "settings": [
+  "name": "Follow Us",
+  "class": "section-follow-us",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column 2 settings"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Label",
+      "default": "Shop"
+    },
+    {
+      "type": "paragraph",
+      "content": "Block images will be divided into half. i.e. if you add 6 blocks, first 3 images will come in first column and remaining will go to 3rd column"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block image",
+      "type": "image",
+      "settings": [
         {
-            "type": "header",
-            "content": "Column 2 settings"
-        },
-        {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-        },
-        {
-            "type": "textarea",
-            "id": "paragraph",
-            "label": "Paragraph"
-        },
-        {
-            "type": "url",
-            "id": "btn_url",
-            "label": "Button Link"
-        },
-        {
-            "type": "text",
-            "id": "btn_text",
-            "label": "Button Label",
-            "default": "Shop"
-        },
-        {
-            "type": "paragraph",
-            "content": "Block images will be divided into half. i.e. if you add 6 blocks, first 3 images will come in first column and remaining will go to 3rd column"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
-    ],
-    "blocks": [
-        {
-            "name": "block image",
-            "type": "image",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                }
-            ]
-        }  
-    ],
-    "presets": [
-        {
-            "category": "Content",
-            "name":"Follow Us"
-        }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "Follow Us"
+    }
+  ]
 }
 {% endschema %}
