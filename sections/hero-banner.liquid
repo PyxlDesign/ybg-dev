@@ -25,7 +25,7 @@
   #shopify-section-{{section.id}} .hero{
         {% if use_hero_slider == false %}
             {% if s.hero_background != blank  -%}
-            background: url({{ background | image_url : "1500" }});
+            background: url({{ background | img_url : "1500" }});
             {%else%}
             background: url({{ background }})
             {% endif %}
@@ -37,15 +37,15 @@
         min-height: 812px;
         {% endif %}
   }
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     #shopify-section-{{section.id}} .hero {
-      {% if use_hero_slider == false %}
-          {% if s.hero_background != blank  -%}
-          background: url({{ background | image_url : "990" }});
-          {%else%}
-          background: url({{ background }})
-          {% endif %}
-      {% endif %}
+        {% if use_hero_slider == false %}
+            {% if s.hero_background != blank  -%}
+            background: url({{ background | img_url : "1500" }});
+            {%else%}
+            background: url({{ background }})
+            {% endif %}
+        {% endif %}
     }
   }
   #shopify-section-{{section.id}} #hero-slider {
