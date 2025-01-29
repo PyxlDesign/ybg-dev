@@ -41,9 +41,9 @@
     #shopify-section-{{section.id}} .hero {
         {% if use_hero_slider == false %}
             {% if s.hero_background != blank  -%}
-            background: url({{ background | image_url : width: 990 }});
+            background-image: url({{ background | image_url : width: 990 }});
             {%else%}
-            background: url({{ background }})
+            background-image: url({{ background }})
             {% endif %}
         {% endif %}
     }
