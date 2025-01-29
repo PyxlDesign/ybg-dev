@@ -26,9 +26,9 @@
   #shopify-section-{{section.id}} .hero{
         {% if use_hero_slider == false %}
         {% if s.hero_background != blank %}
-        background: url({{ background | img_url : "master" }});
+        background-image: url({{ background | img_url : "master" }});
         {%else%}
-        background: url({{ background }})
+        background-image: url({{ background }})
         {% endif %}
         {% endif %}
         background-position: center center;
