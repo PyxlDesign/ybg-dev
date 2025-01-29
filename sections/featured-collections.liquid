@@ -59,14 +59,11 @@
               <div class="content-block">
                 <div class="image-wrapper">
                   <a href="{{ col_url }}">
-                    <img
-                      src="{{ image | img_url: '300x300' }}"
-                      alt="{{image.alt}}"
-                      class="rounded-circle"
-                      height="300"
-                      loading="lazy"
-                      width="300"
-                    >
+                    {{
+                      image
+                      | image_url: '300x300'
+                      | image_tag: class: 'rounded-circle', widht: '300', height: '300', loading: 'lazy'
+                    }}
                   </a>
                 </div>
                 <div class="title-block">
