@@ -4264,21 +4264,11 @@
       "mega-menu": {
         "type": "mega-menu",
         "blocks": {
-          "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/yeahbabygoods-65.jpg",
-              "title": "Cotton Cushion Covers",
-              "description": "Cushions for support, covers keep your home stylish",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://collections/ikea-highchair-cushion-covers"
-            }
-          },
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/ybg-2_square.jpg",
-              "title": "Vegan Leather Cushion Covers",
+              "title": "Cushion Covers",
               "description": "Wipeable covers for your support cushion",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/vegan-leather-cushion-covers"
@@ -4337,23 +4327,33 @@
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
+              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
               "title": "Restaurant Bags",
               "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/eating-out-essentials"
             }
+          },
+          "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-28_KRK_5d58e0b7-272c-4305-8284-7b1d05f72906.jpg",
+              "title": "Silicone Bibs",
+              "description": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "cta_text": "Shop now",
+              "cta_url": "https://www.yeahbabygoods.com/collections/silicone-bibs"
+            }
           }
         },
         "block_order": [
-          "b481826d-500d-4a1f-a2e7-66bcf2e86e72",
           "20816f8a-0727-4067-9917-69b093cf279f",
           "3afad392-0b78-4639-8e1f-ba45f57531e5",
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c",
           "5ab2538c-ac11-416c-8557-bbdb671aa87e",
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2",
           "3210f823-b119-46f3-bc70-9f844926c34e",
-          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8"
+          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
+          "b481826d-500d-4a1f-a2e7-66bcf2e86e72"
         ],
         "settings": {
           "mega_head": "Shop All"
