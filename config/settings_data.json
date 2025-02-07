@@ -4324,16 +4324,6 @@
               "cta_url": "shopify://pages/feeding-essentials"
             }
           },
-          "3210f823-b119-46f3-bc70-9f844926c34e": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/vintage_blue_uphighchair_af3963a5-f8b1-4bd5-9874-5c1918acf208.jpg",
-              "title": "Floor Mats",
-              "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://collections/floor-mats"
-            }
-          },
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
             "type": "image",
             "settings": {
@@ -4342,6 +4332,16 @@
               "description": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
               "cta_text": "Shop now",
               "cta_url": "https://www.yeahbabygoods.com/collections/silicone-bibs"
+            }
+          },
+          "3210f823-b119-46f3-bc70-9f844926c34e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/vintage_blue_uphighchair_cropped_tight_5df2620e-ad28-4ed6-af07-2b7071a45b52.jpg",
+              "title": "Floor Mats",
+              "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
+              "cta_text": "Shop now",
+              "cta_url": "shopify://collections/floor-mats"
             }
           }
         },
@@ -4352,8 +4352,8 @@
           "5ab2538c-ac11-416c-8557-bbdb671aa87e",
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2",
-          "3210f823-b119-46f3-bc70-9f844926c34e",
-          "b481826d-500d-4a1f-a2e7-66bcf2e86e72"
+          "b481826d-500d-4a1f-a2e7-66bcf2e86e72",
+          "3210f823-b119-46f3-bc70-9f844926c34e"
         ],
         "settings": {
           "mega_head": "Shop All"
