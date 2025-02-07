@@ -3516,6 +3516,7 @@
           },
           "brand_DjpNCY": {
             "type": "brand",
+            "disabled": true,
             "settings": {
               "brand_image": "shopify://shop_images/karrielocher_YBG_2.5H.png"
             }
