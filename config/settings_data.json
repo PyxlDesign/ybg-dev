@@ -3359,7 +3359,7 @@
           "e0a21277-4b31-4175-96b0-925b60fb51ea"
         ],
         "settings": {
-          "background_color": "#f0e4d8",
+          "background_color": "#fffcf8",
           "featured_collection_title": "IKEA Highchair Accessories",
           "title_color": "#30494d",
           "title_size": 60,
@@ -7233,7 +7233,7 @@
           "collection_BUFCKE"
         ],
         "settings": {
-          "background_color": "#fffcf8",
+          "background_color": "#f1e3d7",
           "featured_collection_title": "Beyond The Highchair",
           "title_color": "#30494d",
           "title_size": 60,
@@ -7247,13 +7247,13 @@
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
-      "162041756141531609",
-      "1620412486d542719c",
       "162041362564bbc4d8",
       "featured_collections_UW4fRt",
+      "16204173073f912002",
+      "162041756141531609",
+      "1620412486d542719c",
       "1620414500ccfac22f",
       "1620416895faf4570f",
-      "16204173073f912002",
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "1620417742f3c060ce",
