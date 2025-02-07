@@ -3490,12 +3490,6 @@
       "162041756141531609": {
         "type": "brands",
         "blocks": {
-          "brand_DjpNCY": {
-            "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/karrielocher_YBG_2.5H.png"
-            }
-          },
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
             "settings": {
@@ -3519,14 +3513,20 @@
             "settings": {
               "brand_image": "shopify://shop_images/solids_starts.png"
             }
+          },
+          "brand_DjpNCY": {
+            "type": "brand",
+            "settings": {
+              "brand_image": "shopify://shop_images/karrielocher_YBG_2.5H.png"
+            }
           }
         },
         "block_order": [
-          "brand_DjpNCY",
           "20708083-3635-4fa5-86e7-d482a325b499",
           "526f843d-1855-4065-867a-9d8f2802f5f7",
           "7b7a55ab-2a3c-42f7-871c-6852b583806c",
-          "014b6bd2-602e-4ca4-852b-1c7449975691"
+          "014b6bd2-602e-4ca4-852b-1c7449975691",
+          "brand_DjpNCY"
         ],
         "custom_css": [],
         "settings": {
