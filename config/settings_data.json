@@ -7242,6 +7242,55 @@
           "caption_size": 22,
           "curved_bottom": false
         }
+      },
+      "featured_collections_6FqBwV": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_bgWB9M": {
+            "type": "collection",
+            "settings": {
+              "collection": "restaurant-bags-1",
+              "collection_title": "Restaurant Essentials Kit"
+            }
+          },
+          "collection_nNGYdx": {
+            "type": "collection",
+            "settings": {
+              "collection": "dinnerware-bundles",
+              "collection_title": "Dinnerware Starter Set"
+            }
+          },
+          "collection_DF9rTM": {
+            "type": "collection",
+            "settings": {
+              "collection": "dinnerware-4-pack",
+              "collection_title": "Dinnerware 4-Packs"
+            }
+          },
+          "collection_eTyBUH": {
+            "type": "collection",
+            "settings": {
+              "collection": "bib-3-packs",
+              "collection_title": "Bib 3-Packs"
+            }
+          }
+        },
+        "block_order": [
+          "collection_bgWB9M",
+          "collection_nNGYdx",
+          "collection_DF9rTM",
+          "collection_eTyBUH"
+        ],
+        "settings": {
+          "background_color": "#f1e3d7",
+          "featured_collection_title": "Bundle and Save",
+          "title_color": "#30494d",
+          "title_size": 60,
+          "featured_collection_caption": "Get the best value with these curated sets",
+          "caption_color": "#30494d",
+          "caption_size": 22,
+          "curved_bottom": false
+        }
       }
     },
     "content_for_index": [
@@ -7252,6 +7301,7 @@
       "16204173073f912002",
       "162041756141531609",
       "1620412486d542719c",
+      "featured_collections_6FqBwV",
       "1620414500ccfac22f",
       "1620416895faf4570f",
       "1621362370700970cd",
