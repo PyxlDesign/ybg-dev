@@ -4304,12 +4304,22 @@
               "cta_url": "shopify://collections/precut-leg-wraps"
             }
           },
+          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Restaurant Bags",
+              "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
+              "cta_text": "Shop now",
+              "cta_url": "shopify://collections/eating-out-essentials"
+            }
+          },
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/ybgg.jpg",
+              "image": "shopify://shop_images/YBG-14_KRK_4c21b2f0-6bc6-4f18-a651-f025b850bd4d.jpg",
               "title": "Feeding Essentials",
-              "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
+              "description": "Thoughtfully-designed dinnerware, utensils, placemats and more",
               "cta_text": "Shop now",
               "cta_url": "shopify://pages/feeding-essentials"
             }
@@ -4322,16 +4332,6 @@
               "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/floor-mats"
-            }
-          },
-          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
-              "title": "Restaurant Bags",
-              "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://collections/eating-out-essentials"
             }
           },
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
@@ -4350,9 +4350,9 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5",
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c",
           "5ab2538c-ac11-416c-8557-bbdb671aa87e",
+          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2",
           "3210f823-b119-46f3-bc70-9f844926c34e",
-          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72"
         ],
         "settings": {
