@@ -3160,7 +3160,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/14_Black_Friday_2024_Desktop_Hero_f29badcb-5ef3-4e11-ae7b-10f0afc3c253.jpg",
+              "hero_slide_image": "shopify://shop_images/15_Valentines_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -5901,7 +5901,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/13_Black_Friday_2024_Mobile_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/14_Valentines_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
