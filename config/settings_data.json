@@ -3668,6 +3668,7 @@
           "e6a8ace4-b50c-4489-9801-42b37a06e710",
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0"
         ],
+        "disabled": true,
         "settings": {
           "heading": "Joyful and Innovative Mealtime Essentials",
           "paragraph": "NEW",
@@ -5703,6 +5704,7 @@
       },
       "1629747261e1ca35b0": {
         "type": "home-blog-posts",
+        "disabled": true,
         "settings": {
           "layout": "default",
           "blog_posts": "the-blog",
