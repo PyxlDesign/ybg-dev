@@ -11924,6 +11924,10 @@ body.is-scrolling-down .site-header {
     padding: 0 0 70px
 }
 
+.our-featured.pad-top {
+    padding: 70px 0;
+}
+
 .our-featured__title h5 {
     font-size: 18px;
     line-height: 45px;
@@ -11950,13 +11954,13 @@ body.is-scrolling-down .site-header {
 
 @media (max-width: 991px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 50%
+        width: 40%
     }
 }
 
 @media (max-width: 767px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 100%
+        width: 80%
     }
 }
 

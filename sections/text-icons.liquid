@@ -9,207 +9,216 @@
 {% assign enable_read_more = s.enable_read_more %}
 {% assign cta_url = s.cta_url %}
 <style>
-    #shopify-section-{{ section.id }} .about-policy{
-        background-color: {{background}};
-    }
-    #shopify-section-{{ section.id }} .section_header .h1{
-        font-size: {{title_size}}px;
-        color: {{ title_color }};
-    }
-    #shopify-section-{{ section.id }} .section_header p{
-        font-size: {{caption_size}}px;
-        color: {{ caption_color }};
-    }
-    @media (max-width: 767px) {
-        #shopify-section-{{ section.id }} .section_header .h1{
-        font-size: 32px !important;
-        }
-    }
+  #shopify-section-{{ section.id }} .about-policy{
+      background-color: {{background}};
+  }
+  #shopify-section-{{ section.id }} .section_header .h1{
+      font-size: {{title_size}}px;
+      color: {{ title_color }};
+  }
+  #shopify-section-{{ section.id }} .section_header p{
+      font-size: {{caption_size}}px;
+      color: {{ caption_color }};
+  }
+  @media (max-width: 767px) {
+      #shopify-section-{{ section.id }} .section_header .h1{
+      font-size: 32px !important;
+      }
+  }
 </style>
 <section class="about-policy">
-    <div class="container">
-        <div class="section_header limited-edition__title">
-            {% if title != blank %}<h2 class="h1">{{ title }}</h2>{% endif %}
-            {% if caption != blank %}<p class="copy-lg">{{ caption }}</p>{% endif %}
-        </div>
-        <div class="row d-flex">
-            {% assign block_size = section.blocks.size %}
-            {% if block_size > 0 %}
-            {% for block in section.blocks %}
-                {% assign bs = block.settings %}
-                {% assign icon_img = bs.icon_image | img_url: 'master' %}
-                {% assign icon_svg = bs.icon_svg %}
-                {% assign title = bs.icon_text_title %}
-                {% assign title_color = bs.title_color %}
-                {% assign caption = bs.icon_text_caption %}
-                {% assign caption_color = bs.caption_color %}
-                <style>
-                    #icon-text-{{ block.id }} .about-policy__block--content-box h3{
-                        color: {{ title_color }};
-                    }
-                    #icon-text-{{ block.id }} .about-policy__block--content-box p{
-                        color: {{ caption_color }};
-                    }
-                </style>
-                <div id="icon-text-{{ block.id }}" class="cell col-lg-4 policy-cell">
-                    <div class="about-policy__block">
-                        <div class="policy-icon">
-                            <div class="policy-icon__inner">
-                                {% unless icon_img contains 'no-image' %}
-                                <img src="{{ icon_img }}" alt=" Icon ">
-                                {% else %}
-                                <img src="{{ icon_svg }}" alt=" Icon ">    
-                                {% endunless %}
-                            </div>
-                            {% include 'recycle-icon' %}
-                        </div>
-                        <div class="about-policy__block--content-box">
-                            {% if title != blank %}
-                            <h3>{{ title }}</h3>
-                            {% endif %}
-                            {% if caption != blank %}
-                            <p>{{ caption }}</p>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-            {% endif %}
-        </div>
-        
+  <div class="container">
+    <div class="section_header limited-edition__title">
+      {% if title != blank %}
+        <h2 class="h1">{{ title }}</h2>
+      {% endif %}
+      {% if caption != blank %}
+        <p class="copy-lg">{{ caption }}</p>
+      {% endif %}
     </div>
+    <div class="row d-flex">
+      {% assign block_size = section.blocks.size %}
+      {% if block_size > 0 %}
+        {% for block in section.blocks %}
+          {% assign bs = block.settings %}
+          {% assign icon_img = bs.icon_image | img_url: 'master' %}
+          {% assign icon_svg = bs.icon_svg %}
+          {% assign title = bs.icon_text_title %}
+          {% assign title_color = bs.title_color %}
+          {% assign caption = bs.icon_text_caption %}
+          {% assign caption_color = bs.caption_color %}
+          <style>
+            #icon-text-{{ block.id }} .about-policy__block--content-box h3{
+                color: {{ title_color }};
+            }
+            #icon-text-{{ block.id }} .about-policy__block--content-box p{
+                color: {{ caption_color }};
+            }
+          </style>
+          <div id="icon-text-{{ block.id }}" class="cell col-lg-4 policy-cell">
+            <div class="about-policy__block">
+              <div class="policy-icon">
+                <div class="policy-icon__inner">
+                  {% unless icon_img contains 'no-image' %}
+                    <img src="{{ icon_img }}" alt=" Icon ">
+                  {% else %}
+                    <img src="{{ icon_svg }}" alt=" Icon ">
+                  {% endunless %}
+                </div>
+                {% include 'recycle-icon' %}
+              </div>
+              <div class="about-policy__block--content-box">
+                {% if title != blank %}
+                  <h3>{{ title }}</h3>
+                {% endif %}
+                {% if caption != blank %}
+                  <p>{{ caption }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
 </section>
 {% schema %}
 {
-    "name": "Text with Icon",
-    "class": "icon-text-blocks-section",
-    "settings": [
+  "name": "Text with Icon",
+  "class": "icon-text-blocks-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "pad_top",
+      "label": "Add top padding",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F0E4D8",
+      "info": "This will set background color of the section"
+    },
+    {
+      "type": "header",
+      "content": "Title Settings"
+    },
+    {
+      "type": "text",
+      "id": "icon_text_title",
+      "label": "Title",
+      "default": "Your Section title goes here",
+      "info": "This will set the text for Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#30494d",
+      "info": "This will set color to Title"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title Font Size",
+      "min": 40,
+      "max": 100,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Caption settings"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_text_caption",
+      "label": "Caption",
+      "default": "Your caption goes here",
+      "info": "This will set text for Caption"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#fff",
+      "info": "This will set color to caption"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "label": "Caption Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "default": 22
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon-text",
+      "name": "Text with Icon",
+      "settings": [
         {
-            "type": "color",
-            "id": "background_color",
-            "label": "Background",
-            "default": "#F0E4D8",
-            "info": "This will set background color of the section"
+          "type": "header",
+          "content": "Icon settings"
         },
         {
-            "type": "header",
-            "content": "Title Settings"
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Image"
         },
         {
-            "type": "text",
-            "id": "icon_text_title",
-            "label": "Title",
-            "default": "Your Section title goes here",
-            "info": "This will set the text for Heading"
+          "type": "text",
+          "id": "icon_svg",
+          "label": "SVG",
+          "info": "Please upload your svg to [files](https:\/\/yeah-baby-goods.myshopify.com\/admin\/settings\/files) in Admin settings, copy the generated url and paste it here"
         },
         {
-            "type": "color",
-            "id": "title_color",
-            "label": "Title Color",
-            "default": "#30494d",
-            "info": "This will set color to Title"
+          "type": "header",
+          "content": "Title settings"
         },
         {
-            "type": "range",
-            "id": "title_size",
-            "label": "Title Font Size",
-            "min": 40,
-            "max": 100,
-            "step": 2,
-            "default": 60
+          "type": "text",
+          "id": "icon_text_title",
+          "label": "Title",
+          "default": "Your Block title goes here",
+          "info": "This will set the text for Heading"
         },
         {
-            "type": "header",
-            "content": "Caption settings"
+          "type": "color",
+          "id": "title_color",
+          "label": "Color",
+          "default": "#fff",
+          "info": "This will set color to caption"
         },
         {
-            "type": "textarea",
-            "id": "icon_text_caption",
-            "label": "Caption",
-            "default": "Your caption goes here",
-            "info": "This will set text for Caption"
+          "type": "header",
+          "content": "Caption settings"
         },
         {
-            "type": "color",
-            "id": "caption_color",
-            "label": "Caption Color",
-            "default": "#fff",
-            "info": "This will set color to caption"
+          "type": "text",
+          "id": "icon_text_caption",
+          "label": "Caption",
+          "default": "Your Block caption goes here",
+          "info": "This will set the text for caption/subtext"
         },
         {
-            "type": "range",
-            "id": "caption_size",
-            "label": "Caption Font Size",
-            "min": 16,
-            "max": 30,
-            "step": 1,
-            "default": 22
+          "type": "color",
+          "id": "caption_color",
+          "label": "Color",
+          "default": "#fff",
+          "info": "This will set color to caption"
         }
-    ],
-    "blocks": [
-        {
-            "type": "icon-text",
-            "name": "Text with Icon",
-            "settings": [
-                {
-                    "type": "header",
-                    "content": "Icon settings"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "icon_image",
-                    "label": "Image"
-                },
-                {
-                    "type": "text",
-                    "id": "icon_svg",
-                    "label": "SVG",
-                    "info": "Please upload your svg to [files](https:\/\/yeah-baby-goods.myshopify.com\/admin\/settings\/files) in Admin settings, copy the generated url and paste it here"
-                },
-                {
-                    "type": "header",
-                    "content": "Title settings"
-                },
-                {
-                    "type": "text",
-                    "id": "icon_text_title",
-                    "label": "Title",
-                    "default": "Your Block title goes here",
-                    "info": "This will set the text for Heading"
-                },
-                {
-                    "type": "color",
-                    "id": "title_color",
-                    "label": "Color",
-                    "default": "#fff",
-                    "info": "This will set color to caption"
-                },
-                {
-                    "type": "header",
-                    "content": "Caption settings"
-                },
-                {
-                    "type": "text",
-                    "id": "icon_text_caption",
-                    "label": "Caption",
-                    "default": "Your Block caption goes here",
-                    "info": "This will set the text for caption/subtext"
-                },
-                {
-                    "type": "color",
-                    "id": "caption_color",
-                    "label": "Color",
-                    "default": "#fff",
-                    "info": "This will set color to caption"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "category": "Advanced layout",
-            "name":"Text with Icon"
-        }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced layout",
+      "name": "Text with Icon"
+    }
+  ]
 }
 {% endschema %}
