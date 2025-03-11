@@ -3481,11 +3481,15 @@
         "blocks": {
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/route-package-protection-logoV2_0f579a80-2819-4a82-b335-d38aab251085.jpg"
+            }
           },
           "brand_Ea4KzH": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/route-package-protection-logoV2_0f579a80-2819-4a82-b335-d38aab251085.jpg"
+            }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
@@ -3497,7 +3501,9 @@
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/route-package-protection-logoV2_0f579a80-2819-4a82-b335-d38aab251085.jpg"
+            }
           }
         },
         "block_order": [
