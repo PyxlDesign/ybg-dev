@@ -11234,11 +11234,12 @@ body.is-scrolling-down .site-header {
   width: 100%;
   max-width: 1210px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .our-featured .carousel-wrapper .carousel-cell {
-  width: 25%;
+  width: 22%;
   text-align: center
 }
 
