@@ -422,7 +422,7 @@
             "type": "images",
             "settings": {
               "categories": "Feeding",
-              "thumbernail": "shopify://shop_images/Restaurant_Bags3.jpg",
+              "thumbernail": "shopify://shop_images/RestaurantBagsListing_Check2.jpg",
               "title": "Restaurant Bags",
               "subtitle": "Whether eating out or at home, our restaurant bags make mealtime prep and clean-up easier.",
               "link_to": "shopify://collections/restaurant-bags-1"
@@ -626,7 +626,7 @@
         "type": "contact-us-2-template",
         "settings": {
           "contact_title": "Get in touch with us",
-          "contact_text_desc": "E-mail support@yeahbabygoods.com or fill out the form below",
+          "contact_text_desc": "Questions? Order or product concerns? <br>E-mail support@yeahbabygoods.com or fill out the form below and our support team will get back to you right away!",
           "form_title": "Email Form:",
           "form_subtitle": "",
           "contact_your_name": "",
@@ -3160,7 +3160,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/14_Black_Friday_2024_Desktop_Hero_f29badcb-5ef3-4e11-ae7b-10f0afc3c253.jpg",
+              "hero_slide_image": "shopify://shop_images/15_Valentines_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -3359,7 +3359,7 @@
           "e0a21277-4b31-4175-96b0-925b60fb51ea"
         ],
         "settings": {
-          "background_color": "#f0e4d8",
+          "background_color": "#fffcf8",
           "featured_collection_title": "IKEA Highchair Accessories",
           "title_color": "#30494d",
           "title_size": 60,
@@ -3513,14 +3513,23 @@
             "settings": {
               "brand_image": "shopify://shop_images/solids_starts.png"
             }
+          },
+          "brand_DjpNCY": {
+            "type": "brand",
+            "disabled": true,
+            "settings": {
+              "brand_image": "shopify://shop_images/karrielocher_YBG_2.5H.png"
+            }
           }
         },
         "block_order": [
           "20708083-3635-4fa5-86e7-d482a325b499",
           "526f843d-1855-4065-867a-9d8f2802f5f7",
           "7b7a55ab-2a3c-42f7-871c-6852b583806c",
-          "014b6bd2-602e-4ca4-852b-1c7449975691"
+          "014b6bd2-602e-4ca4-852b-1c7449975691",
+          "brand_DjpNCY"
         ],
+        "custom_css": [],
         "settings": {
           "section_title": "As Featured In",
           "title_color": "#cb6b3a",
@@ -3556,22 +3565,22 @@
           "96e7dc23-70bb-490e-b5c2-b0d1c6bc95c3": {
             "type": "menu",
             "settings": {
-              "heading": "Shop",
+              "heading": "MORE INFO",
               "menu": "shop-menu"
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
             "type": "menu",
             "settings": {
-              "heading": "LEARN MORE",
+              "heading": "SUPPORT",
               "menu": "footer"
             }
           },
           "b3ef4505-234b-4b98-be5c-9a7b8f70c416": {
             "type": "menu",
             "settings": {
-              "heading": "",
-              "menu": "connect"
+              "heading": "RESOURCES",
+              "menu": "footer-resources"
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -3659,6 +3668,7 @@
           "e6a8ace4-b50c-4489-9801-42b37a06e710",
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0"
         ],
+        "disabled": true,
         "settings": {
           "heading": "Joyful and Innovative Mealtime Essentials",
           "paragraph": "NEW",
@@ -4255,22 +4265,12 @@
       "mega-menu": {
         "type": "mega-menu",
         "blocks": {
-          "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/yeahbabygoods-65.jpg",
-              "title": "Cotton Cushion Covers",
-              "description": "Cushions for support, covers keep your home stylish",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://collections/ikea-highchair-cushion-covers"
-            }
-          },
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/ybg-2_square.jpg",
-              "title": "Vegan Leather Cushion Covers",
-              "description": "Wipeable covers for your support cushion",
+              "title": "Highchair Cushions",
+              "description": "Support cushions and wipeable covers for your highchair",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/vegan-leather-cushion-covers"
             }
@@ -4280,7 +4280,7 @@
             "settings": {
               "image": "shopify://shop_images/mashta_fam_24_square2.jpg",
               "title": "Highchair Placemats",
-              "description": "FDA food grade silicone fits in tray and makes clean-up a breeze",
+              "description": "FDA food-grade silicone fits in tray and makes clean-up a breeze",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/highchair-placemats"
             }
@@ -4288,9 +4288,9 @@
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/yeahbabygoods-5_f9031d4c-4baf-4745-af48-f44226db268e.jpg",
+              "image": "shopify://shop_images/untitled-436_JKP_SS_square.jpg",
               "title": "Highchair Footrests",
-              "description": "Makes meal times safer and more comfortable",
+              "description": "Make mealtimes safer and more comfortable for your little one",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/highchair-footrest"
             }
@@ -4300,51 +4300,61 @@
             "settings": {
               "image": "shopify://shop_images/bamboo1.jpg",
               "title": "Highchair Leg Wraps",
-              "description": "Adhere to highchair legs for a truly customized look",
+              "description": "Easily adhere to highchair legs for a high-end, custom look",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/precut-leg-wraps"
-            }
-          },
-          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/ybgg.jpg",
-              "title": "Feeding Essentials",
-              "description": "Improve mealtimes with our thoughtfully-designed collection of dinnerware, placemats and more",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://pages/feeding-essentials"
-            }
-          },
-          "3210f823-b119-46f3-bc70-9f844926c34e": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/vintage_blue_uphighchair_af3963a5-f8b1-4bd5-9874-5c1918acf208.jpg",
-              "title": "Floor Mats",
-              "description": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
-              "cta_text": "Shop now",
-              "cta_url": "shopify://collections/floor-mats"
             }
           },
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
-              "title": "Restaurant Bags",
-              "description": "Designed to make mealtime prep and clean-up easier, whether eating out or at home",
+              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Restaurant Kits",
+              "description": "Easier mealtime prep and clean-up, whether eating out or at home",
               "cta_text": "Shop now",
               "cta_url": "shopify://collections/eating-out-essentials"
+            }
+          },
+          "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_4c21b2f0-6bc6-4f18-a651-f025b850bd4d.jpg",
+              "title": "Feeding Essentials",
+              "description": "Thoughtfully-designed dinnerware, utensils, placemats and more",
+              "cta_text": "Shop now",
+              "cta_url": "shopify://pages/feeding-essentials"
+            }
+          },
+          "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-28_KRK_5d58e0b7-272c-4305-8284-7b1d05f72906.jpg",
+              "title": "Silicone Bibs",
+              "description": "Original, narrow design that won't restrict baby's arm or shoulder movement",
+              "cta_text": "Shop now",
+              "cta_url": "https://www.yeahbabygoods.com/collections/silicone-bibs"
+            }
+          },
+          "3210f823-b119-46f3-bc70-9f844926c34e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/mega_menu_floormat.jpg",
+              "title": "Floor Mats",
+              "description": "Extra large silicone mat can be used under the highchair or for messy activities",
+              "cta_text": "Shop now",
+              "cta_url": "shopify://collections/floor-mats"
             }
           }
         },
         "block_order": [
-          "b481826d-500d-4a1f-a2e7-66bcf2e86e72",
           "20816f8a-0727-4067-9917-69b093cf279f",
           "3afad392-0b78-4639-8e1f-ba45f57531e5",
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c",
           "5ab2538c-ac11-416c-8557-bbdb671aa87e",
+          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8",
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2",
-          "3210f823-b119-46f3-bc70-9f844926c34e",
-          "9bd1fd55-acd1-4be2-b996-c455bc2de6b8"
+          "b481826d-500d-4a1f-a2e7-66bcf2e86e72",
+          "3210f823-b119-46f3-bc70-9f844926c34e"
         ],
         "settings": {
           "mega_head": "Shop All"
@@ -4440,7 +4450,7 @@
           "product_review_title": "Customer Reviews",
           "display_shipping_returns": true,
           "shipping_returns_title": "What's Included",
-          "shipping_returns_content": "<ul>\n    <li>Food scissors with sheath to quickly cut bite-sized pieces</li>\n    <li>9 x 14.8 inch reusable FDA food-grade silicone travel placemat</li>\n    <li>4 x 10 inch wipeable zipper tote with polyester/cotton blend exterior and EVA lining interior</li>\n</ul>\n<p>\n<i>Our scissors have been tested by SGS, an independent leader in testing and certification of juvenile products, for cadmium and lead and pass in accordance with CA Prop 65.  </i></p>",
+          "shipping_returns_content": "<ul>\n    <li>Food scissors with sheath to quickly cut bite-sized pieces</li>\n    <li>9 x 14.8 inch reusable FDA food-grade silicone travel placemat</li>\n    <li>4 x 10 inch wipeable zipper tote with vegan leather exterior and EVA lining interior</li>\n</ul>",
           "display_custom_tab": false,
           "custom_tab_title": "Custom Product Tab",
           "custom_tab_type": "all",
@@ -5694,6 +5704,7 @@
       },
       "1629747261e1ca35b0": {
         "type": "home-blog-posts",
+        "disabled": true,
         "settings": {
           "layout": "default",
           "blog_posts": "the-blog",
@@ -5892,7 +5903,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/13_Black_Friday_2024_Mobile_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/14_Valentines_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -6253,7 +6264,7 @@
           "reason_FkhzzW"
         ],
         "settings": {
-          "featured_image": "shopify://shop_images/restaurantbags-37_51707b93-8f07-49e6-a4eb-ea664abd2f35.jpg",
+          "featured_image": "shopify://shop_images/22_Restaurant_Bags_square.jpg",
           "heading": "Why Restaurant Bags?"
         }
       },
@@ -7224,11 +7235,60 @@
           "collection_BUFCKE"
         ],
         "settings": {
-          "background_color": "#fffcf8",
+          "background_color": "#f1e3d7",
           "featured_collection_title": "Beyond The Highchair",
           "title_color": "#30494d",
           "title_size": 60,
           "featured_collection_caption": "Lessen the stress and increase the joy of family meal times",
+          "caption_color": "#30494d",
+          "caption_size": 22,
+          "curved_bottom": false
+        }
+      },
+      "featured_collections_6FqBwV": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_bgWB9M": {
+            "type": "collection",
+            "settings": {
+              "collection": "restaurant-bags-1",
+              "collection_title": "Restaurant Essentials Kit"
+            }
+          },
+          "collection_nNGYdx": {
+            "type": "collection",
+            "settings": {
+              "collection": "dinnerware-bundles",
+              "collection_title": "Dinnerware Starter Set"
+            }
+          },
+          "collection_DF9rTM": {
+            "type": "collection",
+            "settings": {
+              "collection": "dinnerware-4-pack",
+              "collection_title": "Dinnerware 4-Packs"
+            }
+          },
+          "collection_eTyBUH": {
+            "type": "collection",
+            "settings": {
+              "collection": "bib-3-packs",
+              "collection_title": "Bib 3-Packs"
+            }
+          }
+        },
+        "block_order": [
+          "collection_bgWB9M",
+          "collection_nNGYdx",
+          "collection_DF9rTM",
+          "collection_eTyBUH"
+        ],
+        "settings": {
+          "background_color": "#f1e3d7",
+          "featured_collection_title": "Bundle and Save",
+          "title_color": "#30494d",
+          "title_size": 60,
+          "featured_collection_caption": "Get the best value with these curated sets",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
@@ -7238,13 +7298,14 @@
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
-      "1620412486d542719c",
       "162041362564bbc4d8",
       "featured_collections_UW4fRt",
-      "1620414500ccfac22f",
-      "1620416895faf4570f",
       "16204173073f912002",
       "162041756141531609",
+      "1620412486d542719c",
+      "featured_collections_6FqBwV",
+      "1620414500ccfac22f",
+      "1620416895faf4570f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "1620417742f3c060ce",
@@ -7258,6 +7319,11 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "15685250022964305326": {
+        "type": "shopify://apps/elevar-conversion-tracking/blocks/dataLayerEmbed/bc30ab68-b15c-4311-811f-8ef485877ad6",
         "disabled": false,
         "settings": {}
       }
