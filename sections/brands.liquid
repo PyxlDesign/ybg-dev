@@ -19,7 +19,7 @@
         <div
           class="carousel-init {% if blocks_size < 5 %} row {% endif %}"
           {% if blocks_size > 4 %}
-            data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
+            data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 1500, "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
           {% endif %}
         >
           {% for block in section.blocks %}
