@@ -4,5 +4,6 @@ node_modules
 .env
 npm-debug.log
 ybg-customizer/
+ybg-customizer-2/
 
 .shopify
