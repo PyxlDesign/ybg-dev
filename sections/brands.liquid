@@ -10,7 +10,7 @@
       font-size: {{ title_size }}px;
   }
 </style>
-<section class="our-featured{{ pad_top ? ' pad-top' : '' }}">
+<section class="our-featured{% if pad_top == true %} pad-top{% endif %}">
   <div class="container">
     <div class="our-featured__title text-center">
       <h5>{{ title }}</h5>

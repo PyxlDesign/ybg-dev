@@ -27,7 +27,7 @@
       }
   }
 </style>
-<section class="about-policy{{ pad_top ? ' pad-top' : '' }}">
+<section class="about-policy{% if pad_top == true %} pad-top{% endif %}">
   <div class="container">
     <div class="section_header limited-edition__title">
       {% if title != blank %}
