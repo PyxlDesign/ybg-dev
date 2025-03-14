@@ -1,88 +1,99 @@
 {% assign s = section.settings %}
+{% assign pad_top = s.pad_top %}
 {% assign title = s.section_title %}
 {% assign title_color = s.title_color %}
 {% assign title_size = s.title_size %}
 {% assign blocks_size = section.blocks.size %}
 <style>
-    #shopify-section-{{ section.id }} .our-featured__title h5{
-        color: {{ title_color }};
-        font-size: {{ title_size }}px;
-    }
+  #shopify-section-{{ section.id }} .our-featured__title h5{
+      color: {{ title_color }};
+      font-size: {{ title_size }}px;
+  }
 </style>
-<section class="our-featured">
-    <div class="container">
-        <div class="our-featured__title text-center">
-            <h5>{{ title }}</h5>
-        </div>
-        {% if blocks_size > 0 %}
-        <div class="carousel-wrapper">
-            <div class="carousel-init {% if blocks_size < 5 %} row {% endif %}" {% if blocks_size > 4 %}
-                data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false }' {% endif %}>
-                {% for block in section.blocks %}
-                {% assign bs = block.settings %}
-                {% assign image = bs.brand_image | img_url: "master" %}
-                <div class="carousel-cell{% if blocks_size < 5 %} py-4 col-12 col-md-6 col-lg-3 {% endif %}">
-                    <div class="image-wrapper">
-                        <img src="{{ image }}" alt="Brand Image">
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
+<section class="our-featured{{ pad_top ? ' pad-top' : '' }}">
+  <div class="container">
+    <div class="our-featured__title text-center">
+      <h5>{{ title }}</h5>
     </div>
+    {% if blocks_size > 0 %}
+      <div class="carousel-wrapper">
+        <div
+          class="carousel-init {% if blocks_size < 5 %} row {% endif %}"
+          {% if blocks_size > 4 %}
+            data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": "1500" "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
+          {% endif %}
+        >
+          {% for block in section.blocks %}
+            {% assign bs = block.settings %}
+            {% assign image = bs.brand_image | img_url: 'master' %}
+            <div class="carousel-cell{% if blocks_size < 5 %} py-4 col-12 col-md-6 col-lg-3 {% endif %}">
+              <div class="image-wrapper">
+                <img src="{{ image }}" alt="Brand Image">
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
 </section>
 {% schema %}
 {
-    "name": "Brands",
-    "class": "brands-section",
-    "settings": [
+  "name": "Brands",
+  "class": "brands-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "pad_top",
+      "label": "Add padding top",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Title Settings"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Your Section title goes here",
+      "info": "This will set the text for Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#fff",
+      "info": "This will set color to Title"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 2,
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
         {
-            "type": "header",
-            "content": "Title Settings"
-        },
-        {
-            "type": "text",
-            "id": "section_title",
-            "label": "Title",
-            "default": "Your Section title goes here",
-            "info": "This will set the text for Heading"
-        },
-        {
-            "type": "color",
-            "id": "title_color",
-            "label": "Title Color",
-            "default": "#fff",
-            "info": "This will set color to Title"
-        },
-        {
-            "type": "range",
-            "id": "title_size",
-            "label": "Title Font Size",
-            "min": 16,
-            "max": 30,
-            "step": 2,
-            "default": 16
+          "type": "image_picker",
+          "id": "brand_image",
+          "label": "image"
         }
-    ],
-    "blocks":[
-        {
-            "type": "brand",
-            "name": "Brand",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "brand_image",
-                    "label": "image"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "category": "Content",
-            "name": "Brands"
-        }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "Brands"
+    }
+  ]
 }
 {% endschema %}

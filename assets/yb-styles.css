@@ -11925,6 +11925,10 @@ body.is-scrolling-down .site-header {
     padding: 0 0 70px
 }
 
+.our-featured.pad-top {
+    padding-top: 70px
+}
+
 .our-featured__title h5 {
     font-size: 18px;
     line-height: 45px;

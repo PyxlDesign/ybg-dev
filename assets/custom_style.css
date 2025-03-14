@@ -734,6 +734,9 @@ section.follow-us .cell {
 .about-policy {
     padding-bottom: 35px;
 }
+.about-policy.pad-top {
+    padding-top: 35px;
+}
 
 .testimonials {
     padding-top: 77px;
@@ -793,6 +796,9 @@ section.follow-us .cell {
 
     .about-policy {
         padding-bottom: 20px;
+    }
+    .about-policy.pad-top {
+        padding-top: 20px;
     }
 
     .testimonials {
