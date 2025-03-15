@@ -11959,16 +11959,13 @@ body.is-scrolling-down .site-header {
 
 @media (max-width: 991px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 44%;
+        width: 30%;
     }
 }
 
 @media (max-width: 767px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 75%;
-    }
-    .our-featured .carousel-wrapper .carousel-cell img {
-        max-height: 50px;
+        width: 40%;
     }
 }
 
