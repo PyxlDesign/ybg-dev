@@ -3531,7 +3531,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "pad_top": true,
+          "pad_top": false,
           "section_title": "As Featured In",
           "title_color": "#cb6b3a",
           "title_size": 18
