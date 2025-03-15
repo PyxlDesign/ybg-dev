@@ -11552,7 +11552,6 @@ body.is-scrolling-down .site-header {
 
 .limited-edition__title {
     width: 100%;
-    max-width: 800px;
     margin-left: auto;
     margin-right: auto
 }
