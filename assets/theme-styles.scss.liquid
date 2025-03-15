@@ -528,6 +528,14 @@ input[type="checkbox"]:checked + label:after {
     @include transform(scale(1) rotate(-45deg));
 }
 
+.pw-checkbox-wrapper.customer {
+    min-height: 26px;
+    
+    label:after {
+        display: none;
+    }
+}
+
 // input[type="checkbox"]:checked + label:after,
 // input[type="checkbox"] + label:hover:after {
 //     @include opacity(1);
