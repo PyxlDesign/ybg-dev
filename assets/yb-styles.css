@@ -8986,7 +8986,9 @@ https://flickity.metafizzy.co
 .flickity-slider {
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .flickity-enabled.is-draggable {
@@ -11951,6 +11953,9 @@ body.is-scrolling-down .site-header {
     width: 22%;
     text-align: center;
 }
+.our-featured .carousel-wrapper .carousel-cell img {
+    max-height: 75px;
+}
 
 @media (max-width: 991px) {
     .our-featured .carousel-wrapper .carousel-cell {
@@ -11961,6 +11966,9 @@ body.is-scrolling-down .site-header {
 @media (max-width: 767px) {
     .our-featured .carousel-wrapper .carousel-cell {
         width: 75%;
+    }
+    .our-featured .carousel-wrapper .carousel-cell img {
+        max-height: 50px;
     }
 }
 
