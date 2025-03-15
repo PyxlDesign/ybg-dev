@@ -11952,6 +11952,7 @@ body.is-scrolling-down .site-header {
 .our-featured .carousel-wrapper .carousel-cell {
     width: 22%;
     text-align: center;
+    padding: 0 20px;
 }
 .our-featured .carousel-wrapper .carousel-cell img {
     max-height: 75px;
