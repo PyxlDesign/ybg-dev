@@ -3424,6 +3424,7 @@
           "4750731e-eba9-4443-b3c8-507c1c9aa36f"
         ],
         "settings": {
+          "pad_top": false,
           "background_color": "#ffffff",
           "icon_text_title": "",
           "title_color": "#30494d",
@@ -3493,32 +3494,31 @@
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify://shop_images/babylist2.png"
+              "brand_image": "shopify://shop_images/babylist_c2b1403c-af58-45b4-b308-0b8eb21e83a5.png"
             }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify://shop_images/Todays_Parent2.png"
+              "brand_image": "shopify://shop_images/today_s_parent.png"
             }
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify://shop_images/domino2.png"
+              "brand_image": "shopify://shop_images/domino_517bb9a8-00b9-4724-ba85-17a61321a97a.png"
             }
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
             "settings": {
-              "brand_image": "shopify://shop_images/solids_starts.png"
+              "brand_image": "shopify://shop_images/solid_starts_21db0637-e8e5-4b60-b796-0d32ba1384d3.png"
             }
           },
           "brand_DjpNCY": {
             "type": "brand",
-            "disabled": true,
             "settings": {
-              "brand_image": "shopify://shop_images/karrielocher_YBG_2.5H.png"
+              "brand_image": "shopify://shop_images/karrie.png"
             }
           }
         },
@@ -3531,6 +3531,7 @@
         ],
         "custom_css": [],
         "settings": {
+          "pad_top": false,
           "section_title": "As Featured In",
           "title_color": "#cb6b3a",
           "title_size": 18

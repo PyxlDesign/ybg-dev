@@ -471,7 +471,7 @@
 }
 
 .paginate-show {
-    diplay: block;
+    display: block;
 }
 
 .paginate-hide {
@@ -509,12 +509,12 @@
     margin-top: 60px;
 }
 
-.product-label .sale-label,
+/* .product-label .sale-label,
 .product-label .retiring-soon-label,
 .product-label .limit-edition-label {
     background-color: #eaab88;
     color: #fff;
-}
+} */
 
 .content-slider-section .carousel-cell,
 .testimonials-slider-section .carousel-cell {
