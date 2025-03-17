@@ -3481,6 +3481,7 @@
           "28f8835a-ea04-4d28-81a0-d0073b836014",
           "c8de51e0-8712-4d9d-867f-fd60f95f2d86"
         ],
+        "disabled": true,
         "settings": {
           "section_title": "",
           "title_color": "#ffffff",
