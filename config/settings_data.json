@@ -3372,6 +3372,7 @@
       },
       "1620414500ccfac22f": {
         "type": "image-text-column",
+        "disabled": true,
         "settings": {
           "background_color": "#ffffff",
           "image_text_title": "Get inspired by some of our customers' creations.",
@@ -7286,6 +7287,7 @@
           "collection_DF9rTM",
           "collection_eTyBUH"
         ],
+        "disabled": true,
         "settings": {
           "background_color": "#f1e3d7",
           "featured_collection_title": "Bundle and Save",
@@ -7305,8 +7307,8 @@
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
-      "16204173073f912002",
       "1620412486d542719c",
+      "16204173073f912002",
       "featured_collections_6FqBwV",
       "1620414500ccfac22f",
       "1621362370700970cd",
