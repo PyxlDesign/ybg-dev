@@ -3531,7 +3531,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "pad_top": false,
+          "pad_top": true,
           "section_title": "",
           "title_color": "#cb6b3a",
           "title_size": 18
