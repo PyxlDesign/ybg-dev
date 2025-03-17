@@ -12,9 +12,11 @@
 </style>
 <section class="our-featured{% if pad_top == true %} pad-top{% endif %}">
   <div class="container">
-    <div class="our-featured__title text-center">
-      <h5>{{ title }}</h5>
-    </div>
+    {% if title != blank %}
+      <div class="our-featured__title text-center">
+        <h5>{{ title }}</h5>
+      </div>
+    {% endif %}
     {% if blocks_size > 0 %}
       <div class="carousel-wrapper">
         <div
