@@ -3173,6 +3173,7 @@
           },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
@@ -5917,6 +5918,7 @@
           },
           "hero_slide_FzXpjh": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
