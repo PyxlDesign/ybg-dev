@@ -7299,6 +7299,12 @@
           "caption_size": 22,
           "curved_bottom": false
         }
+      },
+      "judgeme_review_4jtgqG": {
+        "type": "judgeme-review",
+        "settings": {
+          "enable_code": true
+        }
       }
     },
     "content_for_index": [
@@ -7314,6 +7320,7 @@
       "1620414500ccfac22f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
+      "judgeme_review_4jtgqG",
       "1620417742f3c060ce",
       "162990068233f26fb0"
     ],
