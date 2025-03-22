@@ -7302,6 +7302,10 @@
       },
       "judgeme_review_4jtgqG": {
         "type": "judgeme-review",
+        "custom_css": [
+          ".judge-me-review-section {background: #fffcf8;}",
+          ".jdgm-carousel__arrows {display: none;}"
+        ],
         "settings": {
           "enable_code": true
         }
