@@ -3142,6 +3142,11 @@
         "settings": {
           "header_bg": "#ffffff",
           "logo_max_width": 315,
+          "menu_style": "standard",
+          "mega_menu_linklist": "",
+          "mega_menu_title_color": "#000000",
+          "mega_menu_link_color": "#000000",
+          "mega_menu_link_hover_color": "#df9764",
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
@@ -7304,7 +7309,8 @@
         "type": "judgeme-review",
         "custom_css": [
           ".judge-me-review-section {background: #fffcf8;}",
-          ".jdgm-carousel__arrows {display: none;}"
+          ".jdgm-carousel__arrows {display: none;}",
+          ".jdgm-carousel-title-and-link {height: auto; margin-bottom: 10px;}"
         ],
         "settings": {
           "enable_code": true
