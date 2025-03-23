@@ -7309,6 +7309,7 @@
         "type": "judgeme-review",
         "custom_css": [
           ".judge-me-review-section {background: #fffcf8;}",
+          ".jdgm-carousel-wrapper {padding: 80px 0;}",
           ".jdgm-carousel__arrows {display: none;}",
           ".jdgm-carousel-title-and-link {height: auto; margin-bottom: 10px;}"
         ],
