@@ -285,7 +285,7 @@
                                                 {% for sub_sub_link in sub_link.links %}
                                                     
                                                     {% assign title_downcase = sub_sub_link.title | downcase %}
-                                                    {% assign title_check = title_downcase contains "[title]" %}
+                                                    {% assign title_check = title_downcase contains '[title]' %}
                                                     {% assign title_link = title_check and sub_sub_link.url != '#' %}
                                                     {% assign link_color = sub_sub_link.title | split: '#' | last %}
 
