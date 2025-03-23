@@ -58,7 +58,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    {% if s.menu_style %}
+    {% if s.menu_style == "mega" %}
         /* Mega Menu Styles */
         .main-mega-menu {
             display: flex;
@@ -73,9 +73,12 @@
         
         .menu-item a {
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            color: {{ s.mega_menu_link_color }};
             padding: 10px;
+        }
+
+        .menu-item a:hover {
+            color: {{ s.mega_menu_link_hover_color }};
         }
         
         .has-dropdown:hover .mega-menu {
@@ -102,13 +105,14 @@
             padding: 10px;
         }
         
-        .mega-menu-item h4 {
+        .mega-menu-title {
             color: {{ s.mega_menu_title_color }};
             font-size: 16px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
 
-        .mega-menu-item h4::after {
+        .mega-menu-title::after {
             content: '';
             position: absolute;
             top: 50%;
@@ -297,10 +301,10 @@
                                                                     {% endif %} 
                                                                     href="{{ sub_sub_link.url }}"
                                                                 >
-                                                                    <h4>{{ sub_sub_link.title | replace: '[title]', '' }}</h4>
+                                                                    <span class="mega-menu-title">{{ sub_sub_link.title | replace: '[title]', '' }}</span>
                                                                 </a>
                                                             {% else %}
-                                                                <h4>{{ sub_sub_link.title | replace: '[title]', '' }}</h4>
+                                                                <span class="mega-menu-title">{{ sub_sub_link.title | replace: '[title]', '' }}</span>
                                                             {% endif %}
                                                         {% else %}
                                                             <a 
