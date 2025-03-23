@@ -284,7 +284,7 @@
                                                 <ul class="mega-column-list">
                                                 {% for sub_sub_link in sub_link.links %}
 
-                                                    {% assign title_check = sub_sub_link.title | downcase contains '[title]' %}
+                                                    {% assign title_check = sub_sub_link.title | downcase | contains: '[title]' %}
                                                     {% assign title_link = title_check and sub_sub_link.url != '#' %}
                                                     {% assign link_color = sub_sub_link.title | split: '#' | last %}
 
