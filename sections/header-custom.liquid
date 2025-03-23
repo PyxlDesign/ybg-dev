@@ -290,6 +290,7 @@
                                                     
                                                     {% assign title_downcase = sub_sub_link.title | downcase %}
                                                     {% assign link_color = sub_sub_link.title | split: '#' | last %}
+                                                    {% assign link_title = sub_sub_link.title | split: '#' | first %}
 
                                                     <li class="mega-menu-item">
                                                         {% if title_downcase contains '[title]' %}
@@ -301,10 +302,10 @@
                                                                     {% endif %} 
                                                                     href="{{ sub_sub_link.url }}"
                                                                 >
-                                                                    <span class="mega-menu-title">{{ sub_sub_link.title | replace: '[title]', '' }}</span>
+                                                                    <span class="mega-menu-title">{{ link_title | replace: '[title]', '' }}</span>
                                                                 </a>
                                                             {% else %}
-                                                                <span class="mega-menu-title">{{ sub_sub_link.title | replace: '[title]', '' }}</span>
+                                                                <span class="mega-menu-title">{{ link_title | replace: '[title]', '' }}</span>
                                                             {% endif %}
                                                         {% else %}
                                                             <a 
@@ -314,7 +315,7 @@
                                                                 {% endif %} 
                                                                 href="{{ sub_sub_link.url }}"
                                                             >
-                                                                {{ sub_sub_link.title }}
+                                                                {{ link_title }}
                                                             </a>
                                                         {% endif %}
                                                     </li>
