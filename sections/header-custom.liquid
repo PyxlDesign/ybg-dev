@@ -267,7 +267,7 @@
         </div>
     </div>
     {% endif %}
-    <div class="site-header__main-mega">
+    <div class="site-header__main{% if s.menu_style == 'mega' %}-mega{% endif %}">
         <div class="container">
             
             {% if s.menu_style == "mega" %}
