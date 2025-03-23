@@ -60,14 +60,14 @@
     }
     {% if s.menu_style %}
         /* Mega Menu Styles */
-        .main-menu {
+        .main-mega-menu {
             display: flex;
             list-style: none;
             padding: 0;
         }
         
         .menu-item {
-            position: relative;
+            position: unset;
             padding: 15px;
         }
         
@@ -90,7 +90,7 @@
             background: white;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 600px;
+            width: 100vw;
         }
         
         .mega-menu-container {
@@ -270,7 +270,7 @@
                     </div>
                 </div>
                 {% if s.menu_style == "mega" %}
-                    <ul class="main-menu">
+                    <ul class="main-mega-menu">
                         {% for link in linklists[s.mega_menu_linklist].links %}
                             <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
                                 <a href="{{ link.url }}">{{ link.title }}</a>
