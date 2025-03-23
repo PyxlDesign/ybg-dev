@@ -285,13 +285,11 @@
                                                 {% for sub_sub_link in sub_link.links %}
                                                     
                                                     {% assign title_downcase = sub_sub_link.title | downcase %}
-                                                    {% assign title_check = title_downcase contains '[title]' %}
-                                                    {% assign title_link = title_check and sub_sub_link.url != '#' %}
                                                     {% assign link_color = sub_sub_link.title | split: '#' | last %}
 
                                                     <li class="mega-menu-item">
-                                                        {% if title_check %}
-                                                            {% if title_link %}
+                                                        {% if title_downcase contains '[title]' %}
+                                                            {% if sub_sub_link.url != '#' %}
                                                                 <a 
                                                                     class="mega-menu-link" 
                                                                     {% if link_color != blank %}
