@@ -1,874 +1,1138 @@
 {% assign s = section.settings %}
 {% if s.logo != blank %}
-{% assign logo = s.logo %}
+  {% assign logo = s.logo %}
 {% else %}
-{% assign logo = 'site-logo.svg' | asset_url %}
+  {% assign logo = 'site-logo.svg' | asset_url %}
 {% endif %}
 <style>
-    .site-header {
-        background-color: {{s.header_bg}}
-    }
+  .site-header {
+      background-color: {{s.header_bg}}
+  }
 
-    .site-logo img {
-        max-width: {{s.logo_max_width | escape}}px;
-    }
-    {% if s.menu_style == 'standard' %}
-    #shopify-section-{{section.id}} .site-header .notification-bar {
-        background-color: {{s.color_bg}}
-    }
+  .site-logo img {
+      max-width: {{s.logo_max_width | escape}}px;
+  }
+  {% if s.menu_style == 'standard' %}
+  #shopify-section-{{section.id}} .site-header .notification-bar {
+      background-color: {{s.color_bg}}
+  }
 
-    #shopify-section-{{section.id}} .site-header .notification-bar p {
-        color: {{s.color_text}};
-        text-align:center;
-         font-family: 'Karla';
-    }
-    {% endif %}
-    #announcement {
-        padding: 0 20px;
+  #shopify-section-{{section.id}} .site-header .notification-bar p {
+      color: {{s.color_text}};
+      text-align:center;
+       font-family: 'Karla';
+  }
+  {% endif %}
+  #announcement {
+      padding: 0 20px;
+      position: relative;
+      margin: auto;
+      max-width: 1200px;
+      opacity: 0;
+      width: 100%;
+  }
+  @media (max-width: 992px) {
+      .notification-bar .container {
+          padding: 0 25px;
+      }
+      #announcement {
+          max-width: 660px;
+      }
+  }
+  #announcement a {
+      color: {{s.color_link}} !important;
+  }
+  #announcement .slick-arrow {
+      background-color: transparent;
+      border-color: transparent;
+      color: {{s.color_text}};
+  }
+  .slick-arrow-small {
+      height: 1.5rem;
+      width: 1.5rem;
+  }
+  .slick-arrow-small .fa {
+      font-size: 14px;
+      font-weight: 400;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  {% if s.menu_style == "mega" %}
+      /* Mega Menu Styles */
+      .site-header.site-header-mega-menu {
+          position: fixed;
+          background-color: {{ s.header_bg }};
+          left: 0;
+          padding: 0;
+          top: 0;
+          width: 100%;
+          z-index: 99;
+      }
+
+      .site-header-mega-inner {
+          display: flex;
+          align-items: center;
+          padding: 0;
+      }
+
+      .navbar-toggler {
+          width: 42px;
+          height: 32px;
+          border: none;
+          outline: none !important;
+      }
+
+      .navbar-toggler svg {
+          height: 32px;
+          width: 32px;
+      }
+
+      .site-header-mega-menu .notification-bar {
+          background-color: {{s.color_bg}};
+          top: 0;
+      }
+
+      .site-header-mega-menu .notification-bar p {
+          color: {{s.color_text}};
+          text-align:center;
+           font-family: 'Karla';
+      }
+      .site-header-mega-menu .notification-bar {
+          padding: 6px 0;
+          position: relative;
+      }
+      .site-header__main-mega {
+          display: flex;
+          align-items: center;
+      }
+      .main-mega-menu {
+          display: flex;
+          list-style: none;
+          padding: 0;
+      }
+
+      .menu-item {
+          position: unset;
+      }
+
+      .menu-item > a {
+          display: block;
+          text-decoration: none;
+          color: {{ s.mega_menu_link_color }};
+          padding: 25px;
+          text-transform: uppercase;
+          letter-spacing: 2.6px;
+      }
+
+      .menu-item a:hover {
+          color: {{ s.mega_menu_link_hover_color }};
+      }
+
+      .has-dropdown:hover .mega-menu {
+          display: block;
+      }
+
+      .mega-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          width: 100vw;
+      }
+
+      .mega-menu-container {
+          display: flex;
+          padding: 16px;
+      }
+
+      .mega-column {
+          flex: 1;
+          padding: 10px;
+      }
+
+      .mega-menu-title {
+          color: {{ s.mega_menu_title_color }};
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          position: relative;
+      }
+
+      .mega-menu-link .mega-menu-title::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 6px);
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid {{ s.mega_menu_title_color }};
+          border-right: 2px solid {{ s.mega_menu_title_color }};
+          transform: translateY(-50%) rotate(45deg);
+          border-left: none;
+          border-bottom: none;
+          transition: left 0.3s ease-in-out;
+      }
+      .mega-menu-link .mega-menu-title:hover::after {
+          left: calc(100% + 10px);
+      }
+
+      .mega-menu-list {
+          list-style: none;
+          padding: 0;
+      }
+
+      .mega-menu-item {
+          padding: 5px 0;
+      }
+
+      .mega-menu-item:not(:first-child):has(.mega-menu-title) {
+          margin-top: 10px;
+      }
+
+      .mega-menu-link {
+          text-decoration: none;
+          color: {{ s.mega_menu_link_color }};
+      }
+
+      .mega-menu-link:hover {
+          color: {{ s.mega_menu_link_hover_color }};
+          text-decoration: underline;
+      }
+
+      .user-links {
         position: relative;
-        margin: auto;
-        max-width: 1200px;
-        opacity: 0;
-        width: 100%;
-    }
-    @media (max-width: 992px) {
-        .notification-bar .container {
-            padding: 0 25px;
-        }
-        #announcement {
-            max-width: 660px;
-        }
-    }
-    #announcement a {
-        color: {{s.color_link}} !important;
-    }
-    #announcement .slick-arrow {
-        background-color: transparent;
-        border-color: transparent;
-        color: {{s.color_text}};
-    }
-    .slick-arrow-small {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-    .slick-arrow-small .fa {
-        font-size: 14px;
-        font-weight: 400;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    {% if s.menu_style == "mega" %}
-        /* Mega Menu Styles */
-        .site-header.site-header-mega-menu {    
-            position: fixed;
-            background-color: {{ s.header_bg }};
-            left: 0;
-            padding: 0;
-            top: 0;
-            width: 100%;
-            z-index: 99;
-        }
-        
-        .site-header-mega-inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+          justify-self: end;
+          margin: 0 16px 0 auto;
+      }
+
+      .user-links svg {
+          width: 25px;
+          height: 25px
+      }
+
+      .search-btn {
+            background: none;
             display: flex;
             align-items: center;
-            padding: 0;
-        }
-        
-        .navbar-toggler {
-            width: 42px;
-            height: 32px;
             border: none;
-            outline: none !important;
+            cursor: pointer;
+            padding: 5px;
         }
 
-        .navbar-toggler svg {
-            height: 32px;
-            width: 32px;
-        }
-
-        .site-header-mega-menu .notification-bar {
-            background-color: {{s.color_bg}};
-            top: 0;
-        }
-    
-        .site-header-mega-menu .notification-bar p {
-            color: {{s.color_text}};
-            text-align:center;
-             font-family: 'Karla';
-        }
-        .site-header-mega-menu .notification-bar {
-            padding: 6px 0;
-            position: relative;
-        }
-        .site-header__main-mega {
-            display: flex;
-            align-items: center;
-        }
-        .main-mega-menu {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-        
-        .menu-item {
-            position: unset;
-        }
-        
-        .menu-item > a {
-            display: block;
-            text-decoration: none;
-            color: {{ s.mega_menu_link_color }};
-            padding: 25px;
-            text-transform: uppercase;
-            letter-spacing: 2.6px;
-        }
-
-        .menu-item a:hover {
-            color: {{ s.mega_menu_link_hover_color }};
-        }
-        
-        .has-dropdown:hover .mega-menu {
-            display: block;
-        }
-        
-        .mega-menu {
+        svg.close-search {
             display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 100vw;
-        }
-        
-        .mega-menu-container {
-            display: flex;
-            padding: 16px;
-        }
-        
-        .mega-column {
-            flex: 1;
-            padding: 10px;
-        }
-        
-        .mega-menu-title {
-            color: {{ s.mega_menu_title_color }};
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            position: relative;
+            height: 20px;
+            width: 25px;
         }
 
-        .mega-menu-link .mega-menu-title::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: calc(100% + 6px);
-            width: 8px;
-            height: 8px;
-            border-top: 2px solid {{ s.mega_menu_title_color }};
-            border-right: 2px solid {{ s.mega_menu_title_color }};
-            transform: translateY(-50%) rotate(45deg);
-            border-left: none;
-            border-bottom: none;
-            transition: left 0.3s ease-in-out;
-        }
-        .mega-menu-link .mega-menu-title:hover::after {
-            left: calc(100% + 10px);
-        }
-        
-        .mega-menu-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .mega-menu-item {
-            padding: 5px 0;
-        }
-
-        .mega-menu-item:not(:first-child):has(.mega-menu-title) {
-            margin-top: 10px;
-        }
-        
-        .mega-menu-link {
-            text-decoration: none;
-            color: {{ s.mega_menu_link_color }};
-        }
-        
-        .mega-menu-link:hover {
-            color: {{ s.mega_menu_link_hover_color }};
-            text-decoration: underline;
-        }
-
-        .user-links {
-            justify-self: end;
-            margin: 0 16px 0 auto;
-        }
-
-        @media (max-width: 992px) {
-            .site-header-mega-inner {
-                display: grid;
-                grid-template-columns: 1fr 2fr 1fr;
-                padding: 20px 0;
-            }
-
-            .site-header-mega-menu .site-logo {
-                display: flex;
-                justify-content: center;
-            }
-
-            .main-mega-menu {
+        .search-btn.active {
+            .open-search {
                 display: none;
             }
+            .close-search {
+                display: block;
+            }
         }
 
-    {% endif %}
+        .search-form {
+            position: absolute;
+            overflow: hidden;
+            order: -1;
+            width: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 100%;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .search-form.show {
+            width: 200px;
+        }
+
+        .search-input-wrapper {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 0px;
+            border: 1px solid #ccc;
+            padding: 5px 5px 5px 10px;
+            width: 100%;
+        }
+
+        .search-input[type="search"] {
+            border: none;
+            background: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .search-input-wrapper .search-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+      @media (max-width: 992px) {
+          .site-header-mega-inner {
+              display: grid;
+              grid-template-columns: 1fr 2fr 1fr;
+              padding: 20px 0;
+          }
+
+        .user-links {
+            position: unset;
+        }
+
+        .search-form {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100%;
+            background: {{ s.header_bg }};
+            width: 100vw;
+            height: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: height 0.3s ease-in-out;
+        }
+        body:not(.is-scrolling-down) .search-form.show {
+            height: 75px;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .search-input-wrapper {
+            width: 90%;
+        }
+
+          .site-header-mega-menu .site-logo {
+              display: flex;
+              justify-content: center;
+          }
+
+          .user-links svg {
+              width: 18px;
+              height: 18px
+          }
+
+
+          .main-mega-menu {
+              display: none;
+          }
+      }
+
+  {% endif %}
 </style>
+<script>
+  function toggleSearch(element) {
+    const searchForm = document.querySelector('.search-form');
+    if (searchForm.classList.contains('show')) {
+      element.classList.remove('active');
+      closeSearch({ button: element, searchForm });
+    } else {
+      element.classList.add('active');
+      openSearch({ button: element, searchForm });
+    }
+  }
+  function openSearch({ button, searchForm }) {
+    searchForm.classList.toggle('show');
+    searchForm.querySelector('.search-input').setAttribute('tabindex', '0');
+    searchForm.querySelector('.search-input-wrapper .search-btn').setAttribute('tabindex', '0');
+    searchForm.querySelector('.search-input').focus();
+  }
+  function closeSearch({ button, searchForm }) {
+    searchForm.classList.remove('show');
+    searchForm.querySelector('.search-input').setAttribute('tabindex', '-1');
+    searchForm.querySelector('.search-input-wrapper .search-btn').setAttribute('tabindex', '-1');
+  }
+</script>
 <header class="site-header{% if s.menu_style == "mega" %} site-header-mega-menu{% endif %} header-default is-fixed">
-    {% if s.message_text != blank %}
+  {% if s.message_text != blank %}
     <div class="notification-bar">
-        <div class="container d-flex justify-content-center align-items-center">
-            {% comment %} <p class="copy-small">{{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}</p> {% endcomment %}
-            <div id="announcement" class="copy-small">{{ s.message_text }}</div>
-            <script defer>
-                function slickAnnouncements() {
-                    // Count the P tags if there is only one then return
-                    if( $('#announcement').find('p').length <= 1 ) {
-                        $('#announcement').css('opacity', '1');
-                        return;
-                    }
-                    // Make sure that slick is loaded
-                    if( typeof $('#announcement').slick !== 'function' ) {
-                        setTimeout(slickAnnouncements, 100);
-                        return;
-                    }
-                    // Init slick
-                    $('#announcement').slick({
-                        dots: false,
-                        infinite: true,
-                        speed: 500,
-                        cssEase: 'linear',
-                        autoplay: true,
-                        autoplaySpeed: 5000,
-                        arrows: true,
-                        nextArrow: "<button class='slick-next slick-arrow slick-arrow-small'><i class='fa fa-angle-right'></i><span class='sr-only'>Next annoucement</span></button>",
-                        prevArrow: "<button class='slick-prev slick-arrow slick-arrow-small'><i class='fa fa-angle-left'></i><span class='sr-only'>Previous annoucement</span></button>",
-                        pauseOnHover: true,
-                        pauseOnFocus: false,
-                        adaptiveHeight: true
-                    }).css('opacity', '1');
-                }
-                slickAnnouncements();
-            </script>
-        </div>
+      <div class="container d-flex justify-content-center align-items-center">
+        {% comment %} <p class="copy-small">{{ s.message_text  | replace: "<p>", "" | replace: "</p>", "" }}</p> {% endcomment %}
+        <div id="announcement" class="copy-small">{{ s.message_text }}</div>
+        <script defer>
+          function slickAnnouncements() {
+            // Count the P tags if there is only one then return
+            if ($('#announcement').find('p').length <= 1) {
+              $('#announcement').css('opacity', '1');
+              return;
+            }
+            // Make sure that slick is loaded
+            if (typeof $('#announcement').slick !== 'function') {
+              setTimeout(slickAnnouncements, 100);
+              return;
+            }
+            // Init slick
+            $('#announcement')
+              .slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                nextArrow:
+                  "<button class='slick-next slick-arrow slick-arrow-small'><i class='fa fa-angle-right'></i><span class='sr-only'>Next annoucement</span></button>",
+                prevArrow:
+                  "<button class='slick-prev slick-arrow slick-arrow-small'><i class='fa fa-angle-left'></i><span class='sr-only'>Previous annoucement</span></button>",
+                pauseOnHover: true,
+                pauseOnFocus: false,
+                adaptiveHeight: true,
+              })
+              .css('opacity', '1');
+          }
+          slickAnnouncements();
+        </script>
+      </div>
     </div>
-    {% endif %}
-    <div class="site-header__main{% if s.menu_style == 'mega' %}-mega{% endif %}">
-        <div class="container">
-            
-            {% if s.menu_style == "mega" %}
-            <div class="site-header-mega-inner">
-                
-                <div class="menu-icon-wrapper d-lg-none">
-                    <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
-                        {% render 'drawer-icon' %}
-                    </button>
-                </div>
-                <div class="site-navigation d-lg-none" id="site-navigation">
-                    <div class="site-navigation__inner">
-                        <div class="d-lg-none h-100">
-                            <ul class="navbar-nav bg-none ml-0 px-4">
-                                {% if s.mobile_linklist != blank%}
-                                {% for link in linklists[s.mobile_linklist].links %}
-                                <li {% if link.links != blank %}class="dropdown" {% endif %}>
-                                    <a id="dropdown_{{link.title}}"
-                                        {% if link.links != blank %}class="dropdown-toggle" 
-                                         role="button" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false" {% endif %} href="{{ link.url }}">{{ link.title | escape }}</a>
-                                    {% if link.links != blank %}
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
-                                        {% for child_link in link.links %}
-                                        <li {% if child_link.links != blank %}class="dropdown" {% endif %}><a
-                                                href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
-                                        </li>
-                                        {% if child_link.links != blank %}
-                                        <ul class="dropdown-menu">
-                                            {% for g_child_link in child_link.links %}
-                                            <li>
-                                                <a
-                                                    href="{{ g_child_link.url }}">{{ g_child_link.title | escape }}</a>
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                                {% endif %}
-                                {% if customer %}
-                                <li><a href="/account">My Account</a></li>
-                                <li><a href="/account/logout">Logout</a></li>
-                                {% else %}
-                                <li><a href="/account/login">Login</a></li>
-                                <li><a href="/account/register">Register</a></li>
-                                {% endif %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="site-logo justify-content-center">
-                    <a href="{{ routes.root_url }}"> 
-                        <img src={{ 'header-logo.svg' | asset_url }} alt="logo">
-                    </a>
-                </div>
-                <ul class="main-mega-menu">
-                    {% for link in linklists[s.mega_menu_linklist].links %}
-                        <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
-                            <a href="{{ link.url }}">{{ link.title }}</a>
-                    
-                            {% if link.links != blank %}
-                                <!-- Mega Menu Layout -->
-                                <div class="mega-menu">
-                                    <div class="container mega-menu-container">
-                                        {% for sub_link in link.links %}
-                                        <div class="mega-column">
-                                            <ul class="mega-column-list">
-                                            {% for sub_sub_link in sub_link.links %}
-                                                
-                                                {% assign title_downcase = sub_sub_link.title | downcase %}
-
-                                                {%  if sub_sub_link.title contains '#' %}
-                                                    {% assign link_color = sub_sub_link.title | split: '#' | last %}
-                                                {% else %}
-                                                    {% assign link_color = blank %}
-                                                {% endif %}
-
-                                                {% assign link_title = sub_sub_link.title | split: '#' | first %}
-
-                                                <li class="mega-menu-item">
-                                                    {% if title_downcase contains '[title]' %}
-                                                        {% if sub_sub_link.url != '#' %}
-                                                            <a 
-                                                                class="mega-menu-link" 
-                                                                {% if link_color != blank %}
-                                                                    style="color: #{{ link_color }}"
-                                                                {% endif %} 
-                                                                href="{{ sub_sub_link.url }}"
-                                                            >
-                                                                <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
-                                                            </a>
-                                                        {% else %}
-                                                            <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
-                                                        {% endif %}
-                                                    {% else %}
-                                                        <a 
-                                                            class="mega-menu-link" 
-                                                            {% if link_color != blank %}
-                                                                style="color: #{{ link_color }}"
-                                                            {% endif %} 
-                                                            href="{{ sub_sub_link.url }}"
-                                                        >
-                                                            {{ link_title }}
-                                                        </a>
-                                                    {% endif %}
-                                                </li>
-                                            {% endfor %}
-                                            </ul>
-                                        </div>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-                <div class="user-links">
-                    <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
-                        {% if section.settings.wishlist %}
-                        <li>
-                            <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
-                                {% render 'wishlist-icon' %}
-                            </a>
-                        </li>
+  {% endif %}
+  <div class="site-header__main{% if s.menu_style == 'mega' %}-mega{% endif %}">
+    <div class="container">
+      {% if s.menu_style == 'mega' %}
+        <div class="site-header-mega-inner">
+          <div class="menu-icon-wrapper d-lg-none">
+            <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
+              {% render 'drawer-icon' %}
+            </button>
+          </div>
+          <div class="site-navigation d-lg-none" id="site-navigation">
+            <div class="site-navigation__inner">
+              <div class="d-lg-none h-100">
+                <ul class="navbar-nav bg-none ml-0 px-4">
+                  {% if s.mobile_linklist != blank %}
+                    {% for link in linklists[s.mobile_linklist].links %}
+                      <li
+                        {% if link.links != blank %}
+                          class="dropdown"
                         {% endif %}
-                        {% if shop.customer_accounts_enabled %}
-                        <li class="opens-left position-relative d-none d-lg-block">
-                            <a href="#">
-                                {% render 'user-icon' %}
-                            </a>
-                            <ul class="menu dropdown-menu">
-                                {% if customer %}
-                                <li><a href="/account">My Account</a></li>
-                                <li><a href="/account/logout">Logout</a></li>
-                                {% else %}
-                                <li><a href="/account/login">Login</a></li>
-                                <li><a href="/account/register">Register</a></li>
-                                {% endif %}
-                            </ul>
-                        </li>
-                        {% endif %}
-                        <li>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
-                                {% render 'cart-icon' %}
-                                <div hidden data-cart-count-bubble></div>
-                                <span id="cart-number" data-count="{{ cart.item_count }}"
-                                    data-cart-count>{{ cart.item_count }}</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            {% endif %}
-            {% if s.menu_style == "standard" %}
-            <div class="grid d-flex align-items-center">
-                <div class="grid-item col-lg-4 col-sm-4">
-                    <div class="site-header__main--left-items d-flex align-items-center">
-                        <div class="menu-icon-wrapper d-lg-none">
-                            <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
-                                {% render 'drawer-icon' %}
-                            </button>
-                        </div>
-                        <div class="site-navigation d-lg-none" id="site-navigation">
-                            <div class="site-navigation__inner">
-                                <div class="d-lg-none h-100">
-                                    <ul class="navbar-nav bg-none ml-0 px-4">
-                                        {% if s.mobile_linklist != blank%}
-                                        {% for link in linklists[s.mobile_linklist].links %}
-                                        <li {% if link.links != blank %}class="dropdown" {% endif %}>
-                                            <a id="dropdown_{{link.title}}"
-                                                {% if link.links != blank %}class="dropdown-toggle" 
-                                                 role="button" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false" {% endif %} href="{{ link.url }}">{{ link.title | escape }}</a>
-                                            {% if link.links != blank %}
-                                            <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
-                                                {% for child_link in link.links %}
-                                                <li {% if child_link.links != blank %}class="dropdown" {% endif %}><a
-                                                        href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
-                                                </li>
-                                                {% if child_link.links != blank %}
-                                                <ul class="dropdown-menu">
-                                                    {% for g_child_link in child_link.links %}
-                                                    <li>
-                                                        <a
-                                                            href="{{ g_child_link.url }}">{{ g_child_link.title | escape }}</a>
-                                                    </li>
-                                                    {% endfor %}
-                                                </ul>
-                                                {% endif %}
-                                                {% endfor %}
-                                            </ul>
-                                            {% endif %}
-                                        </li>
-                                        {% endfor %}
-                                        {% endif %}
-                                        {% if customer %}
-                                        <li><a href="/account">My Account</a></li>
-                                        <li><a href="/account/logout">Logout</a></li>
-                                        {% else %}
-                                        <li><a href="/account/login">Login</a></li>
-                                        <li><a href="/account/register">Register</a></li>
-                                        {% endif %}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="navigation-wrapper d-md-none d-lg-block d-none">
-                            <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
-                                {% if s.left_linklist != blank%}
-                                {% for link in linklists[s.left_linklist].links limit:3 %}
-                                <li data-dropdown-rel={{link.title | handleize}} {% if settings.enable_mega== true %}class="has-mega-menu position-relative"{% endif %}>
-                                    <a href="{{ link.url }}">{{ link.title | escape }}</a>
-                                    {% if link.links != blank %}
-                                    <ul class="menu dropdown-menu">
-                                        {% for child_link in link.links %}
-                                        <li>
-                                            <a href="{{ child_link.url }}"><span>{{ child_link.title | escape }}</span></a>
-                                        </li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                                {% endif %}
-                            </ul>
-                        </div>
-                        <div class="search-icon-wrapper flex-center">
-                            <button type="button" class="button reset searchModal-cta" data-toggle="modal" data-target="#searchModal">
-                                {% render 'search-icon' %}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell col-lg-4 col-sm-4 text-center">
-                    <div class="site-logo justify-content-center">
-                        <a href="{{ routes.root_url }}"> 
-                            <img src={{ 'header-logo.svg' | asset_url }} alt="logo">
+                      >
+                        <a
+                          id="dropdown_{{link.title}}"
+                          {% if link.links != blank %}
+                            class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"
+                          {% endif %}
+                          href="{{ link.url }}"
+                        >
+                          {{- link.title | escape -}}
                         </a>
-                    </div>
-                </div>
-                <div class="cell col-lg-4 col-sm-4">
-                    <div class="site-header__main--right-items d-flex align-items-center justify-content-end">
-                        <div class="navigation-wrapper d-none d-lg-block">
-                            <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
-                                {% if s.right_linklist != blank%}
-                                {% for link in linklists[s.right_linklist].links %}
-                                <li class=" position-relative">
-                                    <a href="{{ link.url }}">{{ link.title | escape }}</a>
-                                    {% if link.links != blank %}
-                                    <ul class="menu dropdown-menu">
-                                        {% for child_link in link.links %}
-                                        <li><a href="{{ child_link.url }}">{{ child_link.title | escape }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
+                        {% if link.links != blank %}
+                          <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
+                            {% for child_link in link.links %}
+                              <li
+                                {% if child_link.links != blank %}
+                                  class="dropdown"
                                 {% endif %}
-                            </ul>
-                        </div>
-                        <div class="user-links">
-                            <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
-                                {% if section.settings.wishlist %}
-                                <li>
-                                    <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
-                                        {% render 'wishlist-icon' %}
-                                    </a>
-                                </li>
-                                {% endif %}
-                                {% if shop.customer_accounts_enabled %}
-                                <li class="opens-left position-relative d-none d-lg-block">
-                                    <a href="#">
-                                        {% render 'user-icon' %}
-                                    </a>
-                                    <ul class="menu dropdown-menu">
-                                        {% if customer %}
-                                        <li><a href="/account">My Account</a></li>
-                                        <li><a href="/account/logout">Logout</a></li>
-                                        {% else %}
-                                        <li><a href="/account/login">Login</a></li>
-                                        <li><a href="/account/register">Register</a></li>
-                                        {% endif %}
-                                    </ul>
-                                </li>
-                                <li>
-                                    {% endif %}
-                                    <!-- <div class="wrapper-top-cart">
-                                    {% render 'wrapper-top-cart' %}
-                                  </div> -->
-                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
-                                        {% render 'cart-icon' %}
-                                        <div hidden data-cart-count-bubble></div>
-                                        <span id="cart-number" data-count="{{ cart.item_count }}"
-                                            data-cart-count>{{ cart.item_count }}</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                              >
+                                <a
+                                  href="{{ child_link.url }}"
+                                >
+                                  {{- child_link.title | escape -}}
+                                </a>
+                              </li>
+                              {% if child_link.links != blank %}
+                                <ul class="dropdown-menu">
+                                  {% for g_child_link in child_link.links %}
+                                    <li>
+                                      <a
+                                        href="{{ g_child_link.url }}"
+                                      >
+                                        {{- g_child_link.title | escape -}}
+                                      </a>
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  {% endif %}
+                  {% if customer %}
+                    <li><a href="/account">My Account</a></li>
+                    <li><a href="/account/logout">Logout</a></li>
+                  {% else %}
+                    <li><a href="/account/login">Login</a></li>
+                    <li><a href="/account/register">Register</a></li>
+                  {% endif %}
+                </ul>
+              </div>
             </div>
-            {% endif %}
+          </div>
+
+          <div class="site-logo justify-content-center">
+            <a href="{{ routes.root_url }}">
+              <img src="{{ 'header-logo.svg' | asset_url }}" alt="logo">
+            </a>
+          </div>
+
+          <ul class="main-mega-menu">
+            {% for link in linklists[s.mega_menu_linklist].links %}
+              <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+
+                {% if link.links != blank %}
+                  <!-- Mega Menu Layout -->
+                  <div class="mega-menu">
+                    <div class="container mega-menu-container">
+                      {% for sub_link in link.links %}
+                        <div class="mega-column">
+                          <ul class="mega-column-list">
+                            {% for sub_sub_link in sub_link.links %}
+                              {% assign title_downcase = sub_sub_link.title | downcase %}
+
+                              {% if sub_sub_link.title contains '#' %}
+                                {% assign link_color = sub_sub_link.title | split: '#' | last %}
+                              {% else %}
+                                {% assign link_color = blank %}
+                              {% endif %}
+
+                              {% assign link_title = sub_sub_link.title | split: '#' | first %}
+
+                              <li class="mega-menu-item">
+                                {% if title_downcase contains '[title]' %}
+                                  {% if sub_sub_link.url != '#' %}
+                                    <a
+                                      class="mega-menu-link"
+                                      {% if link_color != blank %}
+                                        style="color: #{{ link_color }}"
+                                      {% endif %}
+                                      href="{{ sub_sub_link.url }}"
+                                    >
+                                      <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
+                                    </a>
+                                  {% else %}
+                                    <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
+                                  {% endif %}
+                                {% else %}
+                                  <a
+                                    class="mega-menu-link"
+                                    {% if link_color != blank %}
+                                      style="color: #{{ link_color }}"
+                                    {% endif %}
+                                    href="{{ sub_sub_link.url }}"
+                                  >
+                                    {{ link_title }}
+                                  </a>
+                                {% endif %}
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="user-links">
+            <div class="search-icon-wrapper flex-center">
+              <button
+                class="search-btn"
+                data-target="#search-form"
+                onclick="toggleSearch(this)"
+              >
+                {% render 'search-icon' %}
+                <span class="sr-only">Close search</span>
+                <svg
+                  class="close-search"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M15 1L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1 1L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <form
+              id="search-form"
+              class="search-form"
+              action="/search"
+              method="get"
+              role="search"
+            >
+              <input
+                type="hidden"
+                name="type"
+                value="product"
+              >
+              <div class="search-input-wrapper">
+                <input
+                  type="search"
+                  name="q"
+                  placeholder="Search"
+                  class="search-input"
+                  aria-label="Search Site"
+                  autocomplete="off"
+                  tabindex="-1"
+                >
+                <button type="submit" class="search-btn" tabindex="-1">
+                  <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+                    <path
+                        d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
+              {% if section.settings.wishlist %}
+                <li>
+                  <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
+                    {% render 'wishlist-icon' %}
+                  </a>
+                </li>
+              {% endif %}
+              {% if shop.customer_accounts_enabled %}
+                <li class="opens-left position-relative d-none d-lg-block">
+                  <a href="#">
+                    {% render 'user-icon' %}
+                  </a>
+                  <ul class="menu dropdown-menu">
+                    {% if customer %}
+                      <li><a href="/account">My Account</a></li>
+                      <li><a href="/account/logout">Logout</a></li>
+                    {% else %}
+                      <li><a href="/account/login">Login</a></li>
+                      <li><a href="/account/register">Register</a></li>
+                    {% endif %}
+                  </ul>
+                </li>
+              {% endif %}
+              <li>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
+                  {% render 'cart-icon' %}
+                  <div hidden data-cart-count-bubble></div>
+                  <span
+                    id="cart-number"
+                    data-count="{{ cart.item_count }}"
+                    data-cart-count
+                  >
+                    {{- cart.item_count -}}
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      {% endif %}
+      {% if s.menu_style == 'standard' %}
+        <div class="grid d-flex align-items-center">
+          <div class="grid-item col-lg-4 col-sm-4">
+            <div class="site-header__main--left-items d-flex align-items-center">
+              <div class="menu-icon-wrapper d-lg-none">
+                <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
+                  {% render 'drawer-icon' %}
+                </button>
+              </div>
+              <div class="site-navigation d-lg-none" id="site-navigation">
+                <div class="site-navigation__inner">
+                  <div class="d-lg-none h-100">
+                    <ul class="navbar-nav bg-none ml-0 px-4">
+                      {% if s.mobile_linklist != blank %}
+                        {% for link in linklists[s.mobile_linklist].links %}
+                          <li
+                            {% if link.links != blank %}
+                              class="dropdown"
+                            {% endif %}
+                          >
+                            <a
+                              id="dropdown_{{link.title}}"
+                              {% if link.links != blank %}
+                                class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"
+                              {% endif %}
+                              href="{{ link.url }}"
+                            >
+                              {{- link.title | escape -}}
+                            </a>
+                            {% if link.links != blank %}
+                              <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
+                                {% for child_link in link.links %}
+                                  <li
+                                    {% if child_link.links != blank %}
+                                      class="dropdown"
+                                    {% endif %}
+                                  >
+                                    <a
+                                      href="{{ child_link.url }}"
+                                    >
+                                      {{- child_link.title | escape -}}
+                                    </a>
+                                  </li>
+                                  {% if child_link.links != blank %}
+                                    <ul class="dropdown-menu">
+                                      {% for g_child_link in child_link.links %}
+                                        <li>
+                                          <a
+                                            href="{{ g_child_link.url }}"
+                                          >
+                                            {{- g_child_link.title | escape -}}
+                                          </a>
+                                        </li>
+                                      {% endfor %}
+                                    </ul>
+                                  {% endif %}
+                                {% endfor %}
+                              </ul>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      {% endif %}
+                      {% if customer %}
+                        <li><a href="/account">My Account</a></li>
+                        <li><a href="/account/logout">Logout</a></li>
+                      {% else %}
+                        <li><a href="/account/login">Login</a></li>
+                        <li><a href="/account/register">Register</a></li>
+                      {% endif %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="navigation-wrapper d-md-none d-lg-block d-none">
+                <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
+                  {% if s.left_linklist != blank %}
+                    {% for link in linklists[s.left_linklist].links limit: 3 %}
+                      <li
+                        data-dropdown-rel="{{link.title | handleize}}"
+                        {% if settings.enable_mega == true %}
+                          class="has-mega-menu position-relative"
+                        {% endif %}
+                      >
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                        {% if link.links != blank %}
+                          <ul class="menu dropdown-menu">
+                            {% for child_link in link.links %}
+                              <li>
+                                <a href="{{ child_link.url }}"
+                                  ><span>{{ child_link.title | escape }}</span></a
+                                >
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  {% endif %}
+                </ul>
+              </div>
+              <div class="search-icon-wrapper flex-center">
+                <button
+                  type="button"
+                  class="button reset searchModal-cta"
+                  data-toggle="modal"
+                  data-target="#searchModal"
+                >
+                  {% render 'search-icon' %}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cell col-lg-4 col-sm-4 text-center">
+            <div class="site-logo justify-content-center">
+              <a href="{{ routes.root_url }}">
+                <img src="{{ 'header-logo.svg' | asset_url }}" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="cell col-lg-4 col-sm-4">
+            <div class="site-header__main--right-items d-flex align-items-center justify-content-end">
+              <div class="navigation-wrapper d-none d-lg-block">
+                <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
+                  {% if s.right_linklist != blank %}
+                    {% for link in linklists[s.right_linklist].links %}
+                      <li class=" position-relative">
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                        {% if link.links != blank %}
+                          <ul class="menu dropdown-menu">
+                            {% for child_link in link.links %}
+                              <li>
+                                <a href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  {% endif %}
+                </ul>
+              </div>
+              <div class="user-links">
+                <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
+                  {% if section.settings.wishlist %}
+                    <li>
+                      <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
+                        {% render 'wishlist-icon' %}
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if shop.customer_accounts_enabled %}
+                    <li class="opens-left position-relative d-none d-lg-block">
+                      <a href="#">
+                        {% render 'user-icon' %}
+                      </a>
+                      <ul class="menu dropdown-menu">
+                        {% if customer %}
+                          <li><a href="/account">My Account</a></li>
+                          <li><a href="/account/logout">Logout</a></li>
+                        {% else %}
+                          <li><a href="/account/login">Login</a></li>
+                          <li><a href="/account/register">Register</a></li>
+                        {% endif %}
+                      </ul>
+                    </li>
+                  {% endif %}
+                  <li>
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
+                      {% render 'cart-icon' %}
+                      <div hidden data-cart-count-bubble></div>
+                      <span
+                        id="cart-number"
+                        data-count="{{ cart.item_count }}"
+                        data-cart-count
+                      >
+                        {{- cart.item_count -}}
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
+  </div>
 </header>
 
 <!-- Modal -->
-<div class="modal search-modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
-    aria-hidden="true">
+{% if s.menu_style == 'standard' %}
+  <div
+    class="modal search-modal fade"
+    id="searchModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="searchModalLabel"
+    aria-hidden="true"
+  >
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="dropdown-pane" id="search_dropdown" data-dropdown data-hover="true" data-hover-pane="true">
-                    <div class="search-page collection-template" data-search-page="">
-                        <h2 style="text-align:center">Search for products on our site</h2>
-                        <div class="header-search__form">
-                            <form action="/search" method="get" class="search-bar" role="search">
-                                <input type="hidden" name="type" value="product">
-                                <input type="search" name="q" placeholder="Search" class="input-group-field"
-                                    aria-label="Search Site" autocomplete="off">
-                                <button type="submit" class="btn icon-search">
-                                    <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
-                                        <path
-                                            d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="dropdown-pane" id="search_dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+            <div class="search-page collection-template" data-search-page="">
+              <h2 style="text-align:center">Search for products on our site</h2>
+              <div class="header-search__form">
+                <form action="/search" method="get" class="search-bar" role="search">
+                  <input type="hidden" name="type" value="product">
+                  <input
+                    type="search"
+                    name="q"
+                    placeholder="Search"
+                    class="input-group-field"
+                    aria-label="Search Site"
+                    autocomplete="off"
+                  >
+                  <button type="submit" class="btn icon-search">
+                    <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+                      <path
+                          d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z">
+                      </path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+{% endif %}
 
 {% schema %}
 {
-    "name": {
-        "cs": "Záhlaví",
-        "da": "Overskrift",
-        "de": "Titel",
-        "en": "Header",
-        "es": "Encabezado",
-        "fi": "Ylätunniste",
-        "fr": "En-tête",
-        "it": "Header",
-        "ja": "ヘッダー",
-        "ko": "헤더",
-        "nb": "Header",
-        "nl": "Koptekst",
-        "pl": "Nagłówek",
-        "pt-BR": "Cabeçalho",
-        "pt-PT": "Cabeçalho",
-        "sv": "Rubrik",
-        "th": "ส่วนหัว",
-        "tr": "Üstbilgi",
-        "vi": "Đầu trang",
-        "zh-CN": "标头",
-        "zh-TW": "標頭"
+  "name": {
+    "cs": "Záhlaví",
+    "da": "Overskrift",
+    "de": "Titel",
+    "en": "Header",
+    "es": "Encabezado",
+    "fi": "Ylätunniste",
+    "fr": "En-tête",
+    "it": "Header",
+    "ja": "ヘッダー",
+    "ko": "헤더",
+    "nb": "Header",
+    "nl": "Koptekst",
+    "pl": "Nagłówek",
+    "pt-BR": "Cabeçalho",
+    "pt-PT": "Cabeçalho",
+    "sv": "Rubrik",
+    "th": "ส่วนหัว",
+    "tr": "Üstbilgi",
+    "vi": "Đầu trang",
+    "zh-CN": "标头",
+    "zh-TW": "標頭"
+  },
+  "settings": [
+    {
+      "type": "color",
+      "id": "header_bg",
+      "label": "Header Background",
+      "default": "#fff"
     },
-    "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": {
+        "cs": "Obrázek loga",
+        "da": "Logobillede",
+        "de": "Logo-Foto",
+        "en": "Logo image",
+        "es": "Logo",
+        "fi": "Logokuva",
+        "fr": "Image du logo",
+        "it": "Immagine del logo",
+        "ja": "ロゴ画像",
+        "ko": "로고 이미지",
+        "nb": "Logobilde",
+        "nl": "Afbeelding van logo",
+        "pl": "Obraz logo",
+        "pt-BR": "Imagem do logotipo",
+        "pt-PT": "Imagem do logótipo",
+        "sv": "Logobild",
+        "th": "รูปภาพโลโก้",
+        "tr": "Logo görseli",
+        "vi": "Hình ảnh logo",
+        "zh-CN": "logo 图片",
+        "zh-TW": "標誌圖片"
+      }
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": {
+        "cs": "Šířka vlastního loga",
+        "da": "Tilpasset logobredde",
+        "de": "Logobreite",
+        "en": "Custom logo width",
+        "es": "Ancho del logo personalizado",
+        "fi": "Mukautetun logon leveys",
+        "fr": "Largeur personnalisée du logo",
+        "it": "Larghezza logo personalizzato",
+        "ja": "ロゴの幅をカスタマイズする",
+        "ko": "사용자 지정 로고 폭",
+        "nb": "Tilpasset logobredde",
+        "nl": "Aangepaste logo-breedte",
+        "pl": "Niestandardowa szerokość logo",
+        "pt-BR": "Largura do logotipo personalizado",
+        "pt-PT": "Largura de logótipo personalizada",
+        "sv": "Anpassad logotypsbredd",
+        "th": "ความกว้างของโลโก้แบบกำหนดเอง",
+        "tr": "Özel logo genişliği",
+        "vi": "Chiều rộng logo tùy chỉnh",
+        "zh-CN": "自定义 logo 宽度",
+        "zh-TW": "自訂商標寬度"
+      },
+      "min": 50,
+      "max": 350,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "menu_style",
+      "label": "Menu Style",
+      "info": "Select the menu style this will change the options available below.",
+      "options": [
         {
-            "type": "color",
-            "id": "header_bg",
-            "label": "Header Background",
-            "default": "#fff"
+          "value": "standard",
+          "label": "Standard Dropdown Menu"
         },
         {
-            "type": "image_picker",
-            "id": "logo",
-            "label": {
-                "cs": "Obrázek loga",
-                "da": "Logobillede",
-                "de": "Logo-Foto",
-                "en": "Logo image",
-                "es": "Logo",
-                "fi": "Logokuva",
-                "fr": "Image du logo",
-                "it": "Immagine del logo",
-                "ja": "ロゴ画像",
-                "ko": "로고 이미지", 
-                "nb": "Logobilde",
-                "nl": "Afbeelding van logo",
-                "pl": "Obraz logo",
-                "pt-BR": "Imagem do logotipo",
-                "pt-PT": "Imagem do logótipo",
-                "sv": "Logobild",
-                "th": "รูปภาพโลโก้",
-                "tr": "Logo görseli",
-                "vi": "Hình ảnh logo",
-                "zh-CN": "logo 图片",
-                "zh-TW": "標誌圖片"
-            }
-        },
-        {
-            "type": "range",
-            "id": "logo_max_width",
-            "label": {
-                "cs": "Šířka vlastního loga",
-                "da": "Tilpasset logobredde",
-                "de": "Logobreite",
-                "en": "Custom logo width",
-                "es": "Ancho del logo personalizado",
-                "fi": "Mukautetun logon leveys",
-                "fr": "Largeur personnalisée du logo",
-                "it": "Larghezza logo personalizzato",
-                "ja": "ロゴの幅をカスタマイズする",
-                "ko": "사용자 지정 로고 폭",
-                "nb": "Tilpasset logobredde",
-                "nl": "Aangepaste logo-breedte",
-                "pl": "Niestandardowa szerokość logo",
-                "pt-BR": "Largura do logotipo personalizado",
-                "pt-PT": "Largura de logótipo personalizada",
-                "sv": "Anpassad logotypsbredd",
-                "th": "ความกว้างของโลโก้แบบกำหนดเอง",
-                "tr": "Özel logo genişliği",
-                "vi": "Chiều rộng logo tùy chỉnh",
-                "zh-CN": "自定义 logo 宽度",
-                "zh-TW": "自訂商標寬度"
-            },
-            "min": 50,
-            "max": 350,
-            "step": 5,
-            "unit": "px",
-            "default": 100
-        },
-        {
-            "type": "select",
-            "id": "menu_style",
-            "label": "Menu Style",
-            "info": "Select the menu style this will change the options available below.",
-            "options": [
-              {
-                "value": "standard",
-                "label": "Standard Dropdown Menu"
-              },
-              {
-                "value": "mega",
-                "label": "Mega Menu"
-              }
-            ],
-            "default": "standard"
-        },
-        {
-            "type": "link_list",
-            "id": "mega_menu_linklist",
-            "label": "Mega Menu",
-            "info": "This menu will come to right side of site logo"
-        },
-        {
-            "type": "color",
-            "id": "mega_menu_title_color",
-            "label": "Mega Menu Title Color",
-            "default": "#000000"
-        },
-        {
-            "type": "color",
-            "id": "mega_menu_link_color",
-            "label": "Mega Menu Link Color",
-            "default": "#000000"
-        },
-        {
-            "type": "color",
-            "id": "mega_menu_link_hover_color",
-            "label": "Mega Menu Link Hover Color",
-            "default": "#df9764"
-        },
-        {
-            "type": "link_list",
-            "id": "left_linklist",
-            "label": "Left Menu",
-            "default": "main-menu",
-            "info": "This menu will come to left side of site logo"
-        },
-        {
-            "type": "link_list",
-            "id": "right_linklist", 
-            "label": "Right Menu",
-            "info": "This menu will come to right side of site logo"
-        },
-        {
-            "type": "header",
-            "content": "Mobile Navigation"
-        },
-        {
-            "type": "link_list",
-            "id": "mobile_linklist",
-            "label": "Mobile Menu",
-            "default": "main-menu",
-            "info": "Mobile Navigation for Mobile Drawer"
-        },
-        {
-            "type": "header",
-            "content": {
-                "cs": "Panel oznámení",
-                "da": "Meddelelseslinje",
-                "de": "Ankündigungsbereich",
-                "en": "Announcement bar",
-                "es": "Barra de anuncios",
-                "fi": "Ilmoituspalkki",
-                "fr": "Barre d'annonces",
-                "it": "Barra degli annunci",
-                "ja": "告知バー",
-                "ko": "공지 표시줄",
-                "nb": "Kunngjøringslinje",
-                "nl": "Aankondigingsbalk",
-                "pl": "Pasek ogłoszeń",
-                "pt-BR": "Barra de avisos",
-                "pt-PT": "Barra de comunicado",
-                "sv": "Meddelandefält",
-                "th": "แถบประกาศ",
-                "tr": "Duyuru çubuğu",
-                "vi": "Thanh thông báo",
-                "zh-CN": "公告栏",
-                "zh-TW": "公告列"
-            }
-        },
-        {
-            "type": "richtext",
-            "id": "message_text",
-            "label": "Text"
-        },
-        {
-            "type": "color",
-            "id": "color_bg",
-            "label": {
-                "cs": "Panel",
-                "da": "Bjælke",
-                "de": "Zeile",
-                "en": "Bar color",
-                "es": "Barra",
-                "fi": "Palkki",
-                "fr": "Barre",
-                "it": "Barra",
-                "ja": "バー",
-                "ko": "바",
-                "nb": "Felt",
-                "nl": "Balk",
-                "pl": "Pasek",
-                "pt-BR": "Barra",
-                "pt-PT": "Barra",
-                "sv": "Fält",
-                "th": "แถบ",
-                "tr": "Çubuk",
-                "vi": "Thanh",
-                "zh-CN": "栏",
-                "zh-TW": "橫條"
-            },
-            "default": "#3a3a3a"
-        },
-        {
-            "type": "color",
-            "id": "color_text",
-            "label": {
-                "cs": "Text",
-                "da": "Tekst",
-                "de": "Text",
-                "en": "Text color",
-                "es": "Texto",
-                "fi": "Teksti",
-                "fr": "Texte",
-                "it": "Testo",
-                "ja": "テキスト",
-                "ko": "텍스트",
-                "nb": "Tekst",
-                "nl": "Tekst",
-                "pl": "Tekst",
-                "pt-BR": "Texto",
-                "pt-PT": "Texto",
-                "sv": "Text",
-                "th": "ข้อความ",
-                "tr": "Metin",
-                "vi": "Văn bản",
-                "zh-CN": "文本",
-                "zh-TW": "文字"
-            },
-            "default": "#ffffff"
-        },
-        {
-            "type": "color",
-            "id": "color_link",
-            "label": "Link Color",
-            "default": "#d69a81"
-        },
-        {
-            "type": "checkbox",
-            "id": "wishlist",
-            "label": "Enable Wishlist",
-            "default": true
-        },
-        {
-            "type": "url",
-            "id": "wishlist_url",
-            "label": "Wishlist Page url"
+          "value": "mega",
+          "label": "Mega Menu"
         }
-    ]
+      ],
+      "default": "standard"
+    },
+    {
+      "type": "link_list",
+      "id": "mega_menu_linklist",
+      "label": "Mega Menu",
+      "info": "This menu will come to right side of site logo"
+    },
+    {
+      "type": "color",
+      "id": "mega_menu_title_color",
+      "label": "Mega Menu Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "mega_menu_link_color",
+      "label": "Mega Menu Link Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "mega_menu_link_hover_color",
+      "label": "Mega Menu Link Hover Color",
+      "default": "#df9764"
+    },
+    {
+      "type": "link_list",
+      "id": "left_linklist",
+      "label": "Left Menu",
+      "default": "main-menu",
+      "info": "This menu will come to left side of site logo"
+    },
+    {
+      "type": "link_list",
+      "id": "right_linklist",
+      "label": "Right Menu",
+      "info": "This menu will come to right side of site logo"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "mobile_linklist",
+      "label": "Mobile Menu",
+      "default": "main-menu",
+      "info": "Mobile Navigation for Mobile Drawer"
+    },
+    {
+      "type": "header",
+      "content": {
+        "cs": "Panel oznámení",
+        "da": "Meddelelseslinje",
+        "de": "Ankündigungsbereich",
+        "en": "Announcement bar",
+        "es": "Barra de anuncios",
+        "fi": "Ilmoituspalkki",
+        "fr": "Barre d'annonces",
+        "it": "Barra degli annunci",
+        "ja": "告知バー",
+        "ko": "공지 표시줄",
+        "nb": "Kunngjøringslinje",
+        "nl": "Aankondigingsbalk",
+        "pl": "Pasek ogłoszeń",
+        "pt-BR": "Barra de avisos",
+        "pt-PT": "Barra de comunicado",
+        "sv": "Meddelandefält",
+        "th": "แถบประกาศ",
+        "tr": "Duyuru çubuğu",
+        "vi": "Thanh thông báo",
+        "zh-CN": "公告栏",
+        "zh-TW": "公告列"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "message_text",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": {
+        "cs": "Panel",
+        "da": "Bjælke",
+        "de": "Zeile",
+        "en": "Bar color",
+        "es": "Barra",
+        "fi": "Palkki",
+        "fr": "Barre",
+        "it": "Barra",
+        "ja": "バー",
+        "ko": "바",
+        "nb": "Felt",
+        "nl": "Balk",
+        "pl": "Pasek",
+        "pt-BR": "Barra",
+        "pt-PT": "Barra",
+        "sv": "Fält",
+        "th": "แถบ",
+        "tr": "Çubuk",
+        "vi": "Thanh",
+        "zh-CN": "栏",
+        "zh-TW": "橫條"
+      },
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text color",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      },
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_link",
+      "label": "Link Color",
+      "default": "#d69a81"
+    },
+    {
+      "type": "checkbox",
+      "id": "wishlist",
+      "label": "Enable Wishlist",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "wishlist_url",
+      "label": "Wishlist Page url"
+    }
+  ]
 }
 {% endschema %}
