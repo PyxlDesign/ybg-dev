@@ -345,9 +345,13 @@
     const searchForm = document.querySelector('.search-form');
     if (searchForm.classList.contains('show')) {
       element.classList.remove('active');
+      // change the text of the sr-only to Close search
+      element.querySelector('.sr-only').textContent = 'Close search';
       closeSearch({ button: element, searchForm });
     } else {
       element.classList.add('active');
+      // change the text of the sr-only to Open search
+      element.querySelector('.sr-only').textContent = 'Open search';
       openSearch({ button: element, searchForm });
     }
   }
