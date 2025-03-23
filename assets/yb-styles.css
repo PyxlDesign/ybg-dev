@@ -12579,6 +12579,10 @@ body.is-scrolling-down .site-header {
     .repeatedly-reviews {
         padding: 50px 0
     }
+    .cart-form .pw-variant-optimal-container,
+    .acrt-form route-protect-widget[variant=optimal] .pw-route-protection .pw-container {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
