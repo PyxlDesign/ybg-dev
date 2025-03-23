@@ -12580,7 +12580,7 @@ body.is-scrolling-down .site-header {
         padding: 50px 0
     }
     .cart-form .pw-variant-optimal-container,
-    .acrt-form route-protect-widget[variant=optimal] .pw-route-protection .pw-container {
+    .cart-form route-protect-widget[variant=optimal] .pw-route-protection .pw-container {
         max-width: 100%;
     }
 }
