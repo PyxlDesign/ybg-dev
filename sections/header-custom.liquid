@@ -12,7 +12,7 @@
     .site-logo img {
         max-width: {{s.logo_max_width | escape}}px;
     }
-
+    {% if s.menu_style == 'standard' %}
     #shopify-section-{{section.id}} .site-header .notification-bar {
         background-color: {{s.color_bg}}
     }
@@ -22,6 +22,7 @@
         text-align:center;
          font-family: 'Karla';
     }
+    {% endif %}
     #announcement {
         padding: 0 20px;
         position: relative;
@@ -60,6 +61,52 @@
     }
     {% if s.menu_style == "mega" %}
         /* Mega Menu Styles */
+        .site-header.site-header-mega-menu {    
+            position: fixed;
+            background-color: {{ s.header_bg }};
+            left: 0;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+        }
+        
+        .site-header-mega-inner {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+        
+        .navbar-toggler {
+            width: 42px;
+            height: 32px;
+            border: none;
+            outline: none !important;
+        }
+
+        .navbar-toggler svg {
+            height: 32px;
+            width: 32px;
+        }
+
+        .site-header-mega-menu .notification-bar {
+            background-color: {{s.color_bg}};
+            top: 0;
+        }
+    
+        .site-header-mega-menu .notification-bar p {
+            color: {{s.color_text}};
+            text-align:center;
+             font-family: 'Karla';
+        }
+        .site-header-mega-menu .notification-bar {
+            padding: 6px 0;
+            position: relative;
+        }
+        .site-header__main-mega {
+            display: flex;
+            align-items: center;
+        }
         .main-mega-menu {
             display: flex;
             list-style: none;
@@ -68,13 +115,15 @@
         
         .menu-item {
             position: unset;
-            padding: 15px;
         }
         
-        .menu-item a {
+        .menu-item > a {
+            display: block;
             text-decoration: none;
             color: {{ s.mega_menu_link_color }};
-            padding: 10px;
+            padding: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2.6px;
         }
 
         .menu-item a:hover {
@@ -98,6 +147,7 @@
         
         .mega-menu-container {
             display: flex;
+            padding: 16px;
         }
         
         .mega-column {
@@ -107,22 +157,28 @@
         
         .mega-menu-title {
             color: {{ s.mega_menu_title_color }};
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
+            position: relative;
         }
 
-        .mega-menu-title::after {
+        .mega-menu-link .mega-menu-title::after {
             content: '';
             position: absolute;
             top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 10px solid {{ s.mega_menu_title_color }};
+            left: calc(100% + 6px);
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid {{ s.mega_menu_title_color }};
+            border-right: 2px solid {{ s.mega_menu_title_color }};
+            transform: translateY(-50%) rotate(45deg);
+            border-left: none;
+            border-bottom: none;
+            transition: left 0.3s ease-in-out;
+        }
+        .mega-menu-link .mega-menu-title:hover::after {
+            left: calc(100% + 10px);
         }
         
         .mega-menu-list {
@@ -133,6 +189,10 @@
         .mega-menu-item {
             padding: 5px 0;
         }
+
+        .mega-menu-item:not(:first-child):has(.mega-menu-title) {
+            margin-top: 10px;
+        }
         
         .mega-menu-link {
             text-decoration: none;
@@ -141,10 +201,34 @@
         
         .mega-menu-link:hover {
             color: {{ s.mega_menu_link_hover_color }};
+            text-decoration: underline;
         }
+
+        .user-links {
+            justify-self: end;
+            margin: 0 16px 0 auto;
+        }
+
+        @media (max-width: 992px) {
+            .site-header-mega-inner {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                padding: 20px 0;
+            }
+
+            .site-header-mega-menu .site-logo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .main-mega-menu {
+                display: none;
+            }
+        }
+
     {% endif %}
 </style>
-<header class="site-header header-default is-fixed">
+<header class="site-header{% if s.menu_style == "mega" %} site-header-mega-menu{% endif %} header-default is-fixed">
     {% if s.message_text != blank %}
     <div class="notification-bar">
         <div class="container d-flex justify-content-center align-items-center">
@@ -183,10 +267,167 @@
         </div>
     </div>
     {% endif %}
-    <div class="site-header__main">
+    <div class="site-header__main-mega">
         <div class="container">
+            
+            {% if s.menu_style == "mega" %}
+            <div class="site-header-mega-inner">
+                
+                <div class="menu-icon-wrapper d-lg-none">
+                    <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
+                        {% render 'drawer-icon' %}
+                    </button>
+                </div>
+                <div class="site-navigation d-lg-none" id="site-navigation">
+                    <div class="site-navigation__inner">
+                        <div class="d-lg-none h-100">
+                            <ul class="navbar-nav bg-none ml-0 px-4">
+                                {% if s.mobile_linklist != blank%}
+                                {% for link in linklists[s.mobile_linklist].links %}
+                                <li {% if link.links != blank %}class="dropdown" {% endif %}>
+                                    <a id="dropdown_{{link.title}}"
+                                        {% if link.links != blank %}class="dropdown-toggle" 
+                                         role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" {% endif %} href="{{ link.url }}">{{ link.title | escape }}</a>
+                                    {% if link.links != blank %}
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
+                                        {% for child_link in link.links %}
+                                        <li {% if child_link.links != blank %}class="dropdown" {% endif %}><a
+                                                href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                                        </li>
+                                        {% if child_link.links != blank %}
+                                        <ul class="dropdown-menu">
+                                            {% for g_child_link in child_link.links %}
+                                            <li>
+                                                <a
+                                                    href="{{ g_child_link.url }}">{{ g_child_link.title | escape }}</a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                                {% endif %}
+                                {% if customer %}
+                                <li><a href="/account">My Account</a></li>
+                                <li><a href="/account/logout">Logout</a></li>
+                                {% else %}
+                                <li><a href="/account/login">Login</a></li>
+                                <li><a href="/account/register">Register</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-logo justify-content-center">
+                    <a href="{{ routes.root_url }}"> 
+                        <img src={{ 'header-logo.svg' | asset_url }} alt="logo">
+                    </a>
+                </div>
+                <ul class="main-mega-menu">
+                    {% for link in linklists[s.mega_menu_linklist].links %}
+                        <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                    
+                            {% if link.links != blank %}
+                                <!-- Mega Menu Layout -->
+                                <div class="mega-menu">
+                                    <div class="container mega-menu-container">
+                                        {% for sub_link in link.links %}
+                                        <div class="mega-column">
+                                            <ul class="mega-column-list">
+                                            {% for sub_sub_link in sub_link.links %}
+                                                
+                                                {% assign title_downcase = sub_sub_link.title | downcase %}
+
+                                                {%  if sub_sub_link.title contains '#' %}
+                                                    {% assign link_color = sub_sub_link.title | split: '#' | last %}
+                                                {% else %}
+                                                    {% assign link_color = blank %}
+                                                {% endif %}
+
+                                                {% assign link_title = sub_sub_link.title | split: '#' | first %}
+
+                                                <li class="mega-menu-item">
+                                                    {% if title_downcase contains '[title]' %}
+                                                        {% if sub_sub_link.url != '#' %}
+                                                            <a 
+                                                                class="mega-menu-link" 
+                                                                {% if link_color != blank %}
+                                                                    style="color: #{{ link_color }}"
+                                                                {% endif %} 
+                                                                href="{{ sub_sub_link.url }}"
+                                                            >
+                                                                <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
+                                                            </a>
+                                                        {% else %}
+                                                            <span class="mega-menu-title">{{ link_title | replace: '[Title]', '' }}</span>
+                                                        {% endif %}
+                                                    {% else %}
+                                                        <a 
+                                                            class="mega-menu-link" 
+                                                            {% if link_color != blank %}
+                                                                style="color: #{{ link_color }}"
+                                                            {% endif %} 
+                                                            href="{{ sub_sub_link.url }}"
+                                                        >
+                                                            {{ link_title }}
+                                                        </a>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                            </ul>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="user-links">
+                    <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
+                        {% if section.settings.wishlist %}
+                        <li>
+                            <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
+                                {% render 'wishlist-icon' %}
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if shop.customer_accounts_enabled %}
+                        <li class="opens-left position-relative d-none d-lg-block">
+                            <a href="#">
+                                {% render 'user-icon' %}
+                            </a>
+                            <ul class="menu dropdown-menu">
+                                {% if customer %}
+                                <li><a href="/account">My Account</a></li>
+                                <li><a href="/account/logout">Logout</a></li>
+                                {% else %}
+                                <li><a href="/account/login">Login</a></li>
+                                <li><a href="/account/register">Register</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                        <li>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
+                                {% render 'cart-icon' %}
+                                <div hidden data-cart-count-bubble></div>
+                                <span id="cart-number" data-count="{{ cart.item_count }}"
+                                    data-cart-count>{{ cart.item_count }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+            {% if s.menu_style == "standard" %}
             <div class="grid d-flex align-items-center">
-                {% if s.menu_style == "standard" %}
                 <div class="grid-item col-lg-4 col-sm-4">
                     <div class="site-header__main--left-items d-flex align-items-center">
                         <div class="menu-icon-wrapper d-lg-none">
@@ -265,7 +506,6 @@
                         </div>
                     </div>
                 </div>
-                {% endif %}
                 <div class="cell col-lg-4 col-sm-4 text-center">
                     <div class="site-logo justify-content-center">
                         <a href="{{ routes.root_url }}"> 
@@ -273,64 +513,6 @@
                         </a>
                     </div>
                 </div>
-                {% if s.menu_style == "mega" %}
-                    <ul class="main-mega-menu">
-                        {% for link in linklists[s.mega_menu_linklist].links %}
-                            <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
-                                <a href="{{ link.url }}">{{ link.title }}</a>
-                        
-                                {% if link.links != blank %}
-                                    <!-- Mega Menu Layout -->
-                                    <div class="mega-menu">
-                                        <div class="mega-menu-container">
-                                            {% for sub_link in link.links %}
-                                            <div class="mega-column">
-                                                <ul class="mega-column-list">
-                                                {% for sub_sub_link in sub_link.links %}
-                                                    
-                                                    {% assign title_downcase = sub_sub_link.title | downcase %}
-                                                    {% assign link_color = sub_sub_link.title | split: '#' | last %}
-                                                    {% assign link_title = sub_sub_link.title | split: '#' | first %}
-
-                                                    <li class="mega-menu-item">
-                                                        {% if title_downcase contains '[title]' %}
-                                                            {% if sub_sub_link.url != '#' %}
-                                                                <a 
-                                                                    class="mega-menu-link" 
-                                                                    {% if link_color != blank %}
-                                                                        style="color: #{{ link_color }}"
-                                                                    {% endif %} 
-                                                                    href="{{ sub_sub_link.url }}"
-                                                                >
-                                                                    <span class="mega-menu-title">{{ link_title | replace: '[title]', '' }}</span>
-                                                                </a>
-                                                            {% else %}
-                                                                <span class="mega-menu-title">{{ link_title | replace: '[title]', '' }}</span>
-                                                            {% endif %}
-                                                        {% else %}
-                                                            <a 
-                                                                class="mega-menu-link" 
-                                                                {% if link_color != blank %}
-                                                                    style="color: #{{ link_color }}"
-                                                                {% endif %} 
-                                                                href="{{ sub_sub_link.url }}"
-                                                            >
-                                                                {{ link_title }}
-                                                            </a>
-                                                        {% endif %}
-                                                    </li>
-                                                {% endfor %}
-                                                </ul>
-                                            </div>
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-                {% if s.menu_style == "standard" %}
                 <div class="cell col-lg-4 col-sm-4">
                     <div class="site-header__main--right-items d-flex align-items-center justify-content-end">
                         <div class="navigation-wrapper d-none d-lg-block">
@@ -391,8 +573,8 @@
                         </div>
                     </div>
                 </div>
-                {% endif %}
             </div>
+            {% endif %}
         </div>
     </div>
 </header>
