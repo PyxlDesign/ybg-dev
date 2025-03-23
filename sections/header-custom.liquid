@@ -271,7 +271,7 @@
                 </div>
                 {% if s.menu_style == "mega" %}
                     <ul class="main-menu">
-                        {% for link in linklists[menu].links %}
+                        {% for link in linklists[s.mega_menu_linklist].links %}
                             <li class="menu-item {% if link.links != blank %}has-dropdown{% endif %}">
                                 <a href="{{ link.url }}">{{ link.title }}</a>
                         
