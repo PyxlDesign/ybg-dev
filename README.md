@@ -29,3 +29,7 @@ To get the color swatches you will need to go to Content -> Files and upload the
 ## Clarity
 
 The Cookie consent has been added to layout->theme.liquid. There is 2 script tags and 1 style in the head. The cookie banner itself is just inside the `body`.
+
+## Header Changes
+
+To make changes to the header the one used on the site is `header-custom.liquid`
