@@ -30,21 +30,6 @@ To get the color swatches you will need to go to Content -> Files and upload the
 
 The Cookie consent has been added to layout->theme.liquid. There is 2 script tags and 1 style in the head. The cookie banner itself is just inside the `body`.
 
-## Fonts
+## Header Changes
 
-The Karla Font has been moved to local instead of pulling from fonts.google.com. This leaves halyard the only external font that is being pulled in from adobe fonts.
-
-### Checkout page
-
-Roboto and Montserrat
-
-## Scripts
-
-ella.min.js
-halo.js
-jquery.currency.min.js
-jquery.products.min.js
-
-### New Currency
-
-new-currency.liquid is reloading every page by adding a currency=USD
+To make changes to the header the one used on the site is `header-custom.liquid`

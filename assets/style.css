@@ -11232,7 +11232,7 @@ body.is-scrolling-down .site-header {
 
 .our-featured .carousel-wrapper {
   width: 100%;
-  max-width: 1210px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto
 }

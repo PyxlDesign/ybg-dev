@@ -8985,7 +8985,9 @@ https://flickity.metafizzy.co
 .flickity-slider {
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .flickity-enabled.is-draggable {
@@ -11551,7 +11553,6 @@ body.is-scrolling-down .site-header {
 
 .limited-edition__title {
     width: 100%;
-    max-width: 800px;
     margin-left: auto;
     margin-right: auto
 }
@@ -11924,6 +11925,10 @@ body.is-scrolling-down .site-header {
     padding: 0 0 70px
 }
 
+.our-featured.pad-top {
+    padding-top: 70px
+}
+
 .our-featured__title h5 {
     font-size: 18px;
     line-height: 45px;
@@ -11933,30 +11938,33 @@ body.is-scrolling-down .site-header {
     font-weight: normal;
     font-family: "halyard-display", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     margin-bottom: 29px;
-    padding-left: 21px
 }
 
 .our-featured .carousel-wrapper {
     width: 100%;
-    max-width: 1210px;
+    max-width: 100%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .our-featured .carousel-wrapper .carousel-cell {
-    width: 25%;
-    text-align: center
+    width: 22%;
+    text-align: center;
+    padding: 0 20px;
+}
+.our-featured .carousel-wrapper .carousel-cell img {
+    max-height: 75px;
 }
 
 @media (max-width: 991px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 50%
+        width: 30%;
     }
 }
 
 @media (max-width: 767px) {
     .our-featured .carousel-wrapper .carousel-cell {
-        width: 100%
+        width: 40%;
     }
 }
 
@@ -11965,7 +11973,7 @@ body.is-scrolling-down .site-header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 800px
+    min-height: 800px;
 }
 
 .feeding-accessories__content-block {
@@ -11973,30 +11981,30 @@ body.is-scrolling-down .site-header {
     width: 100%;
     max-width: 565px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 @media (max-width: 767px) {
     .feeding-accessories__content-block {
-        padding: 290px 0 190px
+        padding: 290px 0 190px;
     }
 }
 
 .feeding-accessories__content-block h2 {
-    margin-bottom: 14px
+    margin-bottom: 14px;
 }
 
 .feeding-accessories__content-block .btn-wrapper {
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .follow-us {
-    padding: 19px 0 48px
+    padding: 19px 0 48px;
 }
 
 .follow-us .image-wrapper {
     height: 100%;
-    pointer-events: none !important
+    pointer-events: none !important;
 }
 
 .follow-us__content-block {
@@ -12006,7 +12014,7 @@ body.is-scrolling-down .site-header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100%
+    height: 100%;
 }
 
 .follow-us__content-block .copy-lg,
@@ -12569,6 +12577,10 @@ body.is-scrolling-down .site-header {
 @media (max-width: 991px) {
     .repeatedly-reviews {
         padding: 50px 0
+    }
+    .cart-form .pw-variant-optimal-container,
+    .cart-form route-protect-widget[variant=optimal] .pw-route-protection .pw-container {
+        max-width: 100%;
     }
 }
 

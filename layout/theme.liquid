@@ -1,6 +1,11 @@
 <!doctype html>
-
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 no-js"> <![endif]-->
+<!-- [if (gt IE 9)|!(IE)]><! -->
 <html class="no-js">
+  <!-- <![endif] -->
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53J66497C0"></script>
@@ -13,6 +18,25 @@
 
       gtag('config', 'G-53J66497C0');
       gtag('config', 'AW-393438063');
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+
+    <script>
+      window.renderOptIn = function () {
+        window.gapi.load('surveyoptin', function () {
+          window.gapi.surveyoptin.render({
+            // REQUIRED FIELDS
+            merchant_id: 353492233,
+            order_id: 'ORDER_ID',
+            email: 'CUSTOMER_EMAIL',
+            delivery_country: 'COUNTRY_CODE',
+            estimated_delivery_date: 'YYYY-MM-DD',
+
+            // OPTIONAL FIELDS
+            products: [{ gtin: 'GTIN1' }, { gtin: 'GTIN2' }],
+          });
+        });
+      };
     </script>
 
     <!-- Basic page needs ================================================== -->
@@ -55,7 +79,7 @@
     {% endif %}
 
     <!-- fonts -->
-    {% comment %} {% render 'head_fonts' %} {% endcomment %}
+    {% render 'head_fonts' %}
 
     <!-- Styles -->
     {% render 'head_styles' %}
@@ -84,18 +108,6 @@
     <!-- Start Clarity -->
     <script type="text/javascript">
       // Initialize Clarity with consent management
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = 'https://www.clarity.ms/tag/' + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, 'clarity', 'script', 'pbw7zr0hni');
 
       // Function to check if user is in EEA, UK, or Switzerland using IP geolocation
       async function isEuropeanUser() {
