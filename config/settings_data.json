@@ -3150,7 +3150,7 @@
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
+          "message_text": "<p><strong>SPRING SALE - 15% OFF SITEWIDE</strong></p><p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
           "color_link": "#d69a81",
@@ -3163,14 +3163,14 @@
         "blocks": {
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/15_Valentines_2025_Desktop_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/16_Spring_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
@@ -5910,14 +5910,14 @@
         "blocks": {
           "hero_slide_QQACGT": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/14_Valentines_Mobile_Hero.jpg",
+              "hero_slide_image": "shopify://shop_images/15_Spring_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
