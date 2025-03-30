@@ -367,6 +367,9 @@
     searchForm.querySelector('.search-input-wrapper .search-btn').setAttribute('tabindex', '-1');
   }
 </script>
+{% if s.menu_style == 'mega' %}
+  {% render 'accordion-mobile-menu' with s.mobile_linklist %}
+{% endif %}
 <header class="site-header{% if s.menu_style == "mega" %} site-header-mega-menu{% endif %} header-default is-fixed">
   {% if s.message_text != blank %}
     <div class="notification-bar">
@@ -415,74 +418,14 @@
       {% if s.menu_style == 'mega' %}
         <div class="site-header-mega-inner">
           <div class="menu-icon-wrapper d-lg-none">
-            <button class="menu-icon navbar-toggler" type="button" data-toggle="site-navigation">
+            <button
+              class="menu-icon navbar-toggler"
+              type="button"
+              data-toggle="modal"
+              data-target="#mainMenu"
+            >
               {% render 'drawer-icon' %}
             </button>
-          </div>
-          <div class="site-navigation d-lg-none" id="site-navigation">
-            <div class="site-navigation__inner">
-              <div class="d-lg-none h-100">
-                <ul class="navbar-nav bg-none ml-0 px-4">
-                  {% if s.mobile_linklist != blank %}
-                    {% for link in linklists[s.mobile_linklist].links %}
-                      <li
-                        {% if link.links != blank %}
-                          class="dropdown"
-                        {% endif %}
-                      >
-                        <a
-                          id="dropdown_{{link.title}}"
-                          {% if link.links != blank %}
-                            class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"
-                          {% endif %}
-                          href="{{ link.url }}"
-                        >
-                          {{- link.title | escape -}}
-                        </a>
-                        {% if link.links != blank %}
-                          <ul class="dropdown-menu" aria-labelledby="dropdown_{{link.title}}">
-                            {% for child_link in link.links %}
-                              <li
-                                {% if child_link.links != blank %}
-                                  class="dropdown"
-                                {% endif %}
-                              >
-                                <a
-                                  href="{{ child_link.url }}"
-                                >
-                                  {{- child_link.title | escape -}}
-                                </a>
-                              </li>
-                              {% if child_link.links != blank %}
-                                <ul class="dropdown-menu">
-                                  {% for g_child_link in child_link.links %}
-                                    <li>
-                                      <a
-                                        href="{{ g_child_link.url }}"
-                                      >
-                                        {{- g_child_link.title | escape -}}
-                                      </a>
-                                    </li>
-                                  {% endfor %}
-                                </ul>
-                              {% endif %}
-                            {% endfor %}
-                          </ul>
-                        {% endif %}
-                      </li>
-                    {% endfor %}
-                  {% endif %}
-                  {% if customer %}
-                    <li><a href="/account">My Account</a></li>
-                    <li><a href="/account/logout">Logout</a></li>
-                  {% else %}
-                    <li><a href="/account/login">Login</a></li>
-                    <li><a href="/account/register">Register</a></li>
-                  {% endif %}
-                </ul>
-              </div>
-            </div>
           </div>
 
           <div class="site-logo justify-content-center">
@@ -835,7 +778,7 @@
   </div>
 </header>
 
-<!-- Modal -->
+<!-- Search Modal -->
 {% if s.menu_style == 'standard' %}
   <div
     class="modal search-modal fade"

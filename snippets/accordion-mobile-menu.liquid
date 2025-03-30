@@ -1,0 +1,263 @@
+{% assign logo = section.settings.logo %}
+{% if logo == blank %}
+  {% assign logo = 'site-logo.svg' | asset_url %}
+{% endif %}
+
+<style>
+  .modal.left .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+
+  .modal.left.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+  }
+
+  .modal.left.fade.show .modal-dialog {
+    transform: none;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .modal-header .logo {
+    max-width: 200px
+  }
+  .modal-header .close {
+    color: inherit;
+    margin-left: 0;
+  }
+
+  .submenu-header {
+    background: {{  section.settings.color_bg }};
+    color: {{ section.settings.color_text }};
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+  }
+
+  .submenu-header .btn-link {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0;
+    text-decoration: none;
+  }
+
+  .submenu-title {
+    color: {{ section.settings.mega_menu_link_color }};
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .see-all {
+    font-size: 1.25rem;
+    color: inherit;
+    text-decoration: none;
+    text-wrap: nowrap;
+  }
+  .see-all:hover {
+    text-decoration: underline;
+  }
+</style>
+<script>
+  function closeAllModals() {
+    const navbar_toggler = document.querySelector('.navbar-toggler');
+
+    if (!navbar_toggler.classList.contains('menu-shown')) return;
+
+    navbar_toggler.classList.remove('menu-shown');
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach((modal) => {
+      $(modal).modal('hide');
+    });
+  }
+</script>
+
+{% assign mobile_menu = linklists[section.settings.mobile_linklist].links %}
+
+<div class="modal left fade" id="mainMenu" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" onClick="closeAllModals()" aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="logo">
+          {% if logo %}
+            <img src="{{ 'header-logo.svg' | asset_url }}" height="38" width="315" alt="logo">
+          {% else %}
+            {{ shop.name }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="modal-body">
+        <ul class="nav flex-column">
+          {% for link in mobile_menu %}
+            <li class="nav-item">
+              {% if link.links != blank %}
+                <a
+                  class="nav-link border-bottom py-3 d-flex justify-content-between align-items-center"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#menu-{{ link.title | handle }}"
+                >
+                  {{ link.title }}
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              {% else %}
+                <a class="nav-link border-bottom p-3" href="{{ link.url }}">{{ link.title }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+          {% if customer %}
+            <li><a class="nav-link border-bottom py-3" href="/account">My Account</a></li>
+            <li><a class="nav-link border-bottom py-3" href="/account/logout">Logout</a></li>
+          {% else %}
+            <li><a class="nav-link border-bottom py-3" href="/account/login">Login</a></li>
+            <li><a class="nav-link border-bottom py-3" href="/account/register">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for link in mobile_menu %}
+  {% if link.links != blank %}
+    <div class="modal left fade" id="menu-{{ link.title | handle }}" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" onClick="closeAllModals()">
+              <i class="fa fa-times"></i>
+            </button>
+            <div class="logo">
+              {% if logo %}
+                <img src="{{ 'header-logo.svg' | asset_url }}" height="38" width="315" alt="logo">
+              {% else %}
+                {{ shop.name }}
+              {% endif %}
+            </div>
+          </div>
+          <div class="submenu-header">
+            <button class="btn btn-link" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-chevron-left"></i> Back to Main Menu
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+              <span class="submenu-title">{{ link.title }}</span>
+              <a href="{{ link.url }}" class="see-all">See All</a>
+            </div>
+            <ul class="nav flex-column">
+              {% for childlink in link.links %}
+                <li class="nav-item">
+                  {% if childlink.links != blank %}
+                    <a
+                      class="nav-link py-3 border-bottom d-flex justify-content-between align-items-center"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#menu-{{ childlink.title | handle }}"
+                    >
+                      {{ childlink.title }}
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  {% else %}
+                    {% if childlink.title contains '#' %}
+                      {% assign link_color = childlink.title | split: '#' | last %}
+                    {% else %}
+                      {% assign link_color = blank %}
+                    {% endif %}
+
+                    {% assign link_title = childlink.title | split: '#' | first %}
+
+                    <a
+                      class="nav-link py-3 border-bottom"
+                      {% if link_color != blank %}
+                        style="color: #{{ link_color }}"
+                      {% endif %}
+                      href="{{ childlink.url }}"
+                    >
+                      {{ link_title }}
+                    </a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% for childlink in link.links %}
+      {% if childlink.links != blank %}
+        <div class="modal left fade" id="menu-{{ childlink.title | handle }}" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" onClick="closeAllModals()">
+                  <i class="fa fa-times"></i>
+                </button>
+                <div class="logo">
+                  {% if logo %}
+                    <img src="{{ 'header-logo.svg' | asset_url }}" height="38" width="315" alt="logo">
+                  {% else %}
+                    {{ shop.name }}
+                  {% endif %}
+                </div>
+              </div>
+              <div class="submenu-header">
+                <button class="btn btn-link" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-chevron-left"></i> Back to {{ link.title }}
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+                  <span class="submenu-title">{{ childlink.title }}</span>
+                  <a href="{{ childlink.url }}" class="see-all">See All</a>
+                </div>
+                <ul class="nav flex-column">
+                  {% for grandchildlink in childlink.links %}
+                    {% if grandchildlink.title contains '#' %}
+                      {% assign link_color = grandchildlink.title | split: '#' | last %}
+                    {% else %}
+                      {% assign link_color = blank %}
+                    {% endif %}
+                    {% assign link_title = grandchildlink.title | split: '#' | first %}
+                    <li class="nav-item">
+                      <a
+                        class="nav-link py-3 border-bottom"
+                        href="{{ grandchildlink.url }}"
+                        {% if link_color != blank %}
+                          style="color: #{{ link_color }}"
+                        {% endif %}
+                      >
+                        {{ link_title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
