@@ -3163,6 +3163,7 @@
         "blocks": {
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/16_Spring_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
