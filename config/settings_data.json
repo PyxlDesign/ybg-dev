@@ -3170,10 +3170,9 @@
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_2.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
+              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3.jpg",
+              "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
           "hero_slide_bQjNr4": {
@@ -5917,6 +5916,13 @@
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
+            "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3.jpg",
+              "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
+            }
+          },
+          "hero_slide_adbChD": {
+            "type": "hero_slide",
             "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
@@ -5949,6 +5955,7 @@
         "block_order": [
           "hero_slide_QQACGT",
           "hero_slide_PRw9Pw",
+          "hero_slide_adbChD",
           "hero_slide_FzXpjh",
           "hero_slide_V3BgWL",
           "hero_slide_eqVdgU"
