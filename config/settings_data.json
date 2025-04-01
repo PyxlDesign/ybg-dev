@@ -3163,6 +3163,7 @@
         "blocks": {
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/16_Spring_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
@@ -3170,7 +3171,6 @@
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
@@ -5910,6 +5910,7 @@
         "blocks": {
           "hero_slide_QQACGT": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/15_Spring_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
@@ -5917,7 +5918,6 @@
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
