@@ -121,9 +121,10 @@
           display: block;
           text-decoration: none;
           color: {{ s.mega_menu_link_color }};
-          padding: 25px;
+          padding: 30px 25px;
           text-transform: uppercase;
           letter-spacing: 2.6px;
+          line-height: 1;
       }
 
       .menu-item a:hover {
@@ -132,6 +133,10 @@
 
       .has-dropdown:hover .mega-menu {
           display: block;
+      }
+
+      .main-mega-menu {
+        margin-left: 25px;
       }
 
       .mega-menu {
@@ -291,6 +296,13 @@
         }
 
       @media (max-width: 992px) {
+
+        .main-mega-menu {
+          margin-left: 0;
+        }
+        .site-header .navbar-toggler {
+          margin: 0;
+        }
           .site-header-mega-inner {
               display: grid;
               grid-template-columns: 1fr 2fr 1fr;
