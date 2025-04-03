@@ -62,7 +62,8 @@
   .submenu-title {
     color: {{ section.settings.mega_menu_link_color }};
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
+    font-family:  "Karla", sans-serif;
   }
 
   .see-all {
@@ -169,13 +170,23 @@
               {% for childlink in link.links %}
                 <li class="nav-item">
                   {% if childlink.links != blank %}
+                    {% if childlink.title contains '#' %}
+                      {% assign link_color = childlink.title | split: '#' | last %}
+                    {% else %}
+                      {% assign link_color = blank %}
+                    {% endif %}
+                    {% assign link_title = childlink.title | split: '#' | first %}
+
                     <a
                       class="nav-link py-3 border-bottom d-flex justify-content-between align-items-center"
                       href="#"
+                      {% if link_color != blank %}
+                        style="color: #{{ link_color }}"
+                      {% endif %}
                       data-toggle="modal"
-                      data-target="#menu-{{ childlink.title | handle }}"
+                      data-target="#menu-{{ link_title | handle }}"
                     >
-                      {{ childlink.title }}
+                      {{ link_title }}
                       <i class="fa fa-chevron-right"></i>
                     </a>
                   {% else %}
