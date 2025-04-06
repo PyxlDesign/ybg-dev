@@ -1,21 +1,35 @@
-{% paginate collection.products by 1000 %}
+{% comment %}
   {% case section.settings.collection_results_per_row %}
-    {% when '1' %}
-    {%- assign grid_item_width = 'col-12' -%}
-    {%- assign rows = 'products-list' -%}
-    {% when '2' %}
-    {%- assign grid_item_width = 'col-6' -%}
-    {%- assign rows = 'products-grid' -%}
-    {% when '3' %}
-    {%- assign grid_item_width = 'col-6 col-md-4' -%}
-    {%- assign rows = 'products-grid' -%}
-    {% when '4' %}
-    {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
-    {%- assign rows = 'products-grid' -%}
-    {% when '5' %}
-    {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3 col5' -%}
-    {%- assign rows = 'products-grid' -%}
+   {% when '1' %}
+     {%- assign grid_item_width = 'col-12' -%}
+     {%- assign rows = 'products-list' -%}
+   {% when '2' %}
+     {%- assign grid_item_width = 'col-6' -%}
+     {%- assign rows = 'products-grid' -%}
+   {% when '3' %}
+     {%- assign grid_item_width = 'col-6 col-md-4' -%}
+     {%- assign rows = 'products-grid' -%}
+   {% when '4' %}
+     {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
+     {%- assign rows = 'products-grid' -%}
+   {% when '5' %}
+     {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3 col5' -%}
+     {%- assign rows = 'products-grid' -%}
   {% endcase %}
+{% endcomment %}
+
+{%- if collection.products_count < 3 -%}
+  {%- assign grid_item_width = 'col-6' -%}
+  {%- assign rows = 'products-grid' -%}
+{%- elsif collection.products_count == 3 -%}
+  {%- assign grid_item_width = 'col-6 col-md-4' -%}
+  {%- assign rows = 'products-grid' -%}
+{%- else -%}
+  {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
+  {%- assign rows = 'products-grid' -%}
+{%- endif -%}
+
+{% paginate collection.products by 1000 %}
   {% capture productCards %}
     {% for product in collection.products %}
       {% assign _tags = "" %}
@@ -53,32 +67,17 @@
   {% assign product_per_page = section.settings.collection_results_per_page %}
 {% endif %}
 
-{% case section.settings.collection_results_per_row %}
-  {% when '1' %}
-  {%- assign grid_item_width = 'col-12' -%}
-  {%- assign rows = 'products-list' -%}
-  {% when '2' %}
-  {%- assign grid_item_width = 'col-6' -%}
-  {%- assign rows = 'products-grid' -%}
-  {% when '3' %}
-  {%- assign grid_item_width = 'col-6 col-md-4' -%}
-  {%- assign rows = 'products-grid' -%}
-  {% when '4' %}
-  {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
-  {%- assign rows = 'products-grid' -%}
-  {% when '5' %}
-  {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3 col5' -%}
-  {%- assign rows = 'products-grid' -%}
-{% endcase %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="collection-template"
-  data-product-show="{{ product_per_page }}">
-
+  data-product-show="{{ product_per_page }}"
+>
   {% render 'toolbar' %}
 
   <div class="row {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %} collection-cushion-covers {% endif %}">
-    {% if collection.handle contains 'ikea-highchair-cushion-covers' or collection.handle contains 'vegan-leather-cushion-covers' %}
+    {% if collection.handle contains 'ikea-highchair-cushion-covers'
+      or collection.handle contains 'vegan-leather-cushion-covers'
+    %}
       <div class="grid-item col-md-3">
         <div class="sidebar-wrapper sidebar-filter">
           <div class="sidebar__header d-md-none">
@@ -89,7 +88,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="19.956"
                   height="19.956"
-                  viewBox="0 0 19.956 19.956">
+                  viewBox="0 0 19.956 19.956"
+                >
                   <g
                     id="Group_84"
                     data-name="Group 84"
@@ -126,18 +126,20 @@
                 {% assign rgb_color = rbg | split: '/' | first %}
                 {% assign rbg_val = rbg | split: '/' | last %}
                 {% assign background_rgb = rbg_val %}
-                <option value="{{ background_rgb }}" data-colorss="{{ rgb_color | replace: '-', ' ' }}">{{ rgb_color | replace: '-', ' ' }}</option>
+                <option value="{{ background_rgb }}" data-colorss="{{ rgb_color | replace: '-', ' ' }}">
+                  {{ rgb_color | replace: '-', ' ' }}
+                </option>
               {% endfor %}
             </select>
           </div>
           <div id="accordion">
-            {% assign title_flag = "" %}
+            {% assign title_flag = '' %}
             {% for tag in collection.tags %}
               {% if tag contains '/' %}
                 {% assign _filterTitle = tag | split: '/' | first %}
                 {% if title_flag contains _filterTitle %}
-                  {% else %}
-                    {% assign title_flag = title_flag | append: ',' | append: _filterTitle %}
+                {% else %}
+                  {% assign title_flag = title_flag | append: ',' | append: _filterTitle %}
                 {% endif %}
               {% endif %}
             {% endfor %}
@@ -152,7 +154,8 @@
                         data-toggle="collapse"
                         data-target="#collapse_{{ forloop.index }}__{{title | handleize}}"
                         aria-expanded="false"
-                        aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}">
+                        aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}"
+                      >
                         {% if title == 'Color' %}
                           {{ 'Recommendations by Placemat Color' }}
                         {% else %}
@@ -165,17 +168,24 @@
                   <div
                     id="collapse_{{ forloop.index }}__{{title | handleize}}"
                     class="collapse"
-                    aria-labelledby="headingOne">
+                    aria-labelledby="headingOne"
+                  >
                     <div class="card-body">
                       <div
-                        class='themes-wrapper sidebar-tags
-                        {% if title == 'Color' %}
-                          color-filter
-                        {% endif %}'>
+                        class="
+                          themes-wrapper sidebar-tags
+                          {% if title == 'Color' %}
+                            color-filter
+                          {% endif %}
+                        "
+                      >
                         <div class="widget-content">
                           <div class="scroll-content">
-
-                            <ul {% if title != 'Color' %}class="list-tags"{% endif %}>
+                            <ul
+                              {% if title != 'Color' %}
+                                class="list-tags"
+                              {% endif %}
+                            >
                               {% assign collection_tags = collection.tags | sort | uniq %}
                               {% for tag in collection_tags %}
                                 {% unless tag == '' %}
@@ -186,43 +196,44 @@
                                     {% comment %} {% assign file = file_name | file_url %} {% endcomment %}
                                     {% assign background_rgb = '' %}
                                     {% for rbg in color_bgs %}
-                                        {% assign rgb_color = rbg | split: '/' | first | handleize %}
-                                        {% assign rbg_val = rbg | split: '/' | last %}
-                                        {% assign filter_color = _tag | handleize %}
-                                        {% assign swatchImage = rgb_color | handleize | append: ".jpg" %}
-                                        {% if rgb_color == filter_color %}
-                                            {% assign background_rgb = rbg_val %}
-                                            {% break %}
-                                        {% endif %}
+                                      {% assign rgb_color = rbg | split: '/' | first | handleize %}
+                                      {% assign rbg_val = rbg | split: '/' | last %}
+                                      {% assign filter_color = _tag | handleize %}
+                                      {% assign swatchImage = rgb_color | handleize | append: '.jpg' %}
+                                      {% if rgb_color == filter_color %}
+                                        {% assign background_rgb = rbg_val %}
+                                        {% break %}
+                                      {% endif %}
                                     {% endfor %}
                                     <li>
-                                        <input
-                                            type="checkbox"
-                                            data-type="{{ title }}"
-                                            {% if title == 'Color' %}
-                                            data-rgb="{{background_rgb}}"
-                                            {% endif %}
-                                            name="tags"
-                                            id="checkbox_{{ forloop.index }}__{{ tag }}"
-                                            value="{{ _tag | handleize }}"
-                                            {% if current_tags contains _tag %}
-                                            checked
-                                            {% endif %}
-                                            class="filterInput d-none">
-                                        <label
-                                            title="{{ _tag }}"
-                                            for="checkbox_{{ forloop.index }}__{{ tag }}"
-                                            {% if title == 'Color' %}
-                                            style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
-                                            {% endif %}>
-                                            {% unless title == 'Color' %}
-                                            {{ _tag | capitalize }}
-                                            {% endunless %}
-                                        </label>
+                                      <input
+                                        type="checkbox"
+                                        data-type="{{ title }}"
+                                        {% if title == 'Color' %}
+                                          data-rgb="{{background_rgb}}"
+                                        {% endif %}
+                                        name="tags"
+                                        id="checkbox_{{ forloop.index }}__{{ tag }}"
+                                        value="{{ _tag | handleize }}"
+                                        {% if current_tags contains _tag %}
+                                          checked
+                                        {% endif %}
+                                        class="filterInput d-none"
+                                      >
+                                      <label
+                                        title="{{ _tag }}"
+                                        for="checkbox_{{ forloop.index }}__{{ tag }}"
+                                        {% if title == 'Color' %}
+                                          style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
+                                        {% endif %}
+                                      >
+                                        {% unless title == 'Color' %}
+                                          {{ _tag | capitalize }}
+                                        {% endunless %}
+                                      </label>
                                     </li>
                                   {% endif %}
                                 {% endunless %}
-
                               {% endfor %}
                             </ul>
                           </div>
@@ -235,9 +246,7 @@
             {% endfor %}
           </div>
           <div class="btn-wrapper text-center d-md-none mt-5">
-            <a href="#" class="btn button btn-apply">
-              Apply
-            </a>
+            <a href="#" class="btn button btn-apply"> Apply </a>
           </div>
         </div>
       </div>
@@ -247,98 +256,111 @@
         {% if collection.products_count > 0 %}
           {{ productCards }}
         {% else %}
-          <p class="col-12 text-center" {% if settings.enable_multilang %}data-translate="collections.general.no_matches"{% endif %}>
+          <p
+            class="col-12 text-center"
+            {% if settings.enable_multilang %}
+              data-translate="collections.general.no_matches"
+            {% endif %}
+          >
             {{ 'collections.general.no_matches' | t }}
           </p>
         {% endif %}
       </div>
     </div>
   </div>
-  <!-- <div class="padding">
-    {% render 'pagination-page' paginate: paginate %}
-  </div> --></div>
+  <!--
+    <div class="padding">
+      {% render 'pagination-page' paginate: paginate %}
+    </div>
+  -->
+</div>
 {% schema %}
-  {
-    "name": "Custom Collection",
-    "class": "col-custom-sidebar",
-    "settings": [
-      {
-        "type": "paragraph",
-        "content": "Filters Sidebar is based on tags. Please add tags to products having prefix, labeled title of the filter block, following '/' and then tag label i.e. 'Themes/Burbery' "
-      },
-      {
-        "type": "checkbox",
-        "id": "limited_view",
-        "label": "Enable Limited View",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "view_as_enable",
-        "label": "Enable View As",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "sort_enable",
-        "label": "Enable sorting",
-        "default": true
-      }, {
-        "type": "select",
-        "id": "collection_results_per_row",
-        "label": "Products per row (grid only)",
-        "default": "4",
-        "options": [
-          {
-            "value": "1",
-            "label": "List"
-          },
-          {
-            "value": "2",
-            "label": "2"
-          },
-          {
-            "value": "3",
-            "label": "3"
-          },
-          {
-            "value": "4",
-            "label": "4"
-          }, {
-            "value": "5",
-            "label": "5"
-          }
-        ]
-      }, {
-        "type": "select",
-        "id": "collection_results_per_page",
-        "label": "Products per page",
-        "default": "16",
-        "options": [
-          {
-            "value": "12",
-            "label": "12"
-          },
-          {
-            "value": "16",
-            "label": "16"
-          },
-          {
-            "value": "20",
-            "label": "20"
-          },
-          {
-            "value": "24",
-            "label": "24"
-          }, {
-            "value": "30",
-            "label": "30"
-          }, {
-            "value": "50",
-            "label": "50"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Custom Collection",
+  "class": "col-custom-sidebar",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Filters Sidebar is based on tags. Please add tags to products having prefix, labeled title of the filter block, following '/' and then tag label i.e. 'Themes/Burbery' "
+    },
+    {
+      "type": "checkbox",
+      "id": "limited_view",
+      "label": "Enable Limited View",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "view_as_enable",
+      "label": "Enable View As",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "sort_enable",
+      "label": "Enable sorting",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "collection_results_per_row",
+      "label": "Products per row (grid only)",
+      "default": "4",
+      "options": [
+        {
+          "value": "1",
+          "label": "List"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "collection_results_per_page",
+      "label": "Products per page",
+      "default": "16",
+      "options": [
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "16",
+          "label": "16"
+        },
+        {
+          "value": "20",
+          "label": "20"
+        },
+        {
+          "value": "24",
+          "label": "24"
+        },
+        {
+          "value": "30",
+          "label": "30"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

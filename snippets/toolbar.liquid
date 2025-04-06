@@ -30,12 +30,22 @@
         {{ 'collections.toolbar.view_as' | t}}
       </label>
 
+      {% comment %} 
+      Removed to put in new view requiredments based on products available in collection.
       <div class="view-mode">
         <span class="icon-mode icon-mode-list{% if section.settings.collection_results_per_row == '1' %} active{% endif %}" data-col="1"></span>
         <span class="icon-mode icon-mode-grid grid-2{% if section.settings.collection_results_per_row == '2' %} active{% endif %}" data-col="2"></span>
         <span class="icon-mode icon-mode-grid grid-3{% if section.settings.collection_results_per_row == '3' %} active{% endif %}" data-col="3"></span>
         <span class="icon-mode icon-mode-grid grid-4{% if section.settings.collection_results_per_row == '4' %} active{% endif %}" data-col="4"></span>
         <span class="icon-mode icon-mode-grid grid-5{% if section.settings.collection_results_per_row == '5' %} active{% endif %}" data-col="5"></span>
+      </div>  {% endcomment %}
+
+      <div class="view-mode">
+        <span class="icon-mode icon-mode-list data-col="1"></span>
+        <span class="icon-mode icon-mode-grid grid-2{% if collection.products_count < 3 %} active{% endif %}" data-col="2"></span>
+        <span class="icon-mode icon-mode-grid grid-3{% if collection.products_count == 3 %} active{% endif %}" data-col="3"></span>
+        <span class="icon-mode icon-mode-grid grid-4{% if collection.products_count > 3 %} active{% endif %}" data-col="4"></span>
+        <span class="icon-mode icon-mode-grid grid-5" data-col="5"></span>
       </div> 
     </div>
     {% endif %}
