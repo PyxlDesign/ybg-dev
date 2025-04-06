@@ -1,10 +1,10 @@
 body.header-sticked {
-    padding-top: 105px;
+    padding-top: 100px;
 }
 
 @media screen and (max-width: 63.9375em) {
     body.header-sticked {
-        padding-top: 103px;
+        padding-top: 102px;
     }
 }
 
