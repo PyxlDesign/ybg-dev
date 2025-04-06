@@ -5782,7 +5782,7 @@
       "collection-template-left-sidebar": {
         "type": "collection-template-left-sidebar",
         "settings": {
-          "limited_view": false,
+          "limited_view": true,
           "view_as_enable": true,
           "sort_enable": true,
           "collection_results_per_row": "4",
