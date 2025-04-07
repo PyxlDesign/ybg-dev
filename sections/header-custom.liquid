@@ -597,14 +597,14 @@
             </form>
             <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
               {% if section.settings.wishlist %}
-                <li>
+                <li class="d-flex align-items-center ">
                   <a class="d-flex align-items-center wishlist-icon" href="{{section.settings.wishlist_url}}">
                     {% render 'wishlist-icon' %}
                   </a>
                 </li>
               {% endif %}
               {% if shop.customer_accounts_enabled %}
-                <li class="opens-left position-relative d-none d-lg-block mr-3">
+                <li class="align-items-center opens-left position-relative d-none d-lg-flex mr-3">
                   <a class="d-flex align-items-center " href="#">
                     {% render 'user-icon' %}
                   </a>
