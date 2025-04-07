@@ -619,8 +619,13 @@
                   </ul>
                 </li>
               {% endif %}
-              <li>
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#modalShoppingCart">
+              <li class="d-flex algin-items-center">
+                <a
+                  class="d-flex align-items-center"
+                  href="javascript:void(0)"
+                  data-toggle="modal"
+                  data-target="#modalShoppingCart"
+                >
                   {% render 'cart-icon' %}
                   <div hidden data-cart-count-bubble></div>
                   <span
