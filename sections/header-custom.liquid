@@ -598,14 +598,14 @@
             <ul class="dropdown menu d-flex dropdown-megamenu" data-dropdown-menu>
               {% if section.settings.wishlist %}
                 <li>
-                  <a class="wishlist-icon" href="{{section.settings.wishlist_url}}">
+                  <a class="d-flex align-items-center wishlist-icon" href="{{section.settings.wishlist_url}}">
                     {% render 'wishlist-icon' %}
                   </a>
                 </li>
               {% endif %}
               {% if shop.customer_accounts_enabled %}
                 <li class="opens-left position-relative d-none d-lg-block mr-3">
-                  <a href="#">
+                  <a class="d-flex align-items-center " href="#">
                     {% render 'user-icon' %}
                   </a>
                   <ul class="menu dropdown-menu">
