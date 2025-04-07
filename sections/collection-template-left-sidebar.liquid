@@ -21,11 +21,8 @@
 {%- if collection.products_count < 3 -%}
   {%- assign grid_item_width = 'col-6' -%}
   {%- assign rows = 'products-grid' -%}
-{%- elsif collection.products_count == 3 -%}
-  {%- assign grid_item_width = 'col-6 col-md-4' -%}
-  {%- assign rows = 'products-grid' -%}
 {%- else -%}
-  {%- assign grid_item_width = 'col-6 col-md-4 col-lg-3' -%}
+  {%- assign grid_item_width = 'col-6 col-md-4' -%}
   {%- assign rows = 'products-grid' -%}
 {%- endif -%}
 
