@@ -112,19 +112,30 @@
       <div class="modal-body">
         <ul class="nav flex-column">
           {% for link in mobile_menu %}
+            {% assign link_title = link.title | split: '#' | first %}
+
+            {% if link.title contains '#' %}
+              {% assign link_color = link.title | split: '#' | last %}
+            {% else %}
+              {% assign link_color = blank %}
+            {% endif %}
+
             <li class="nav-item">
               {% if link.links != blank %}
                 <a
                   class="nav-link border-bottom py-3 d-flex justify-content-between align-items-center"
                   href="#"
+                  {% if link_color != blank %}
+                    style="color: #{{ link_color }}"
+                  {% endif %}
                   data-toggle="modal"
-                  data-target="#menu-{{ link.title | handle }}"
+                  data-target="#menu-{{ link_title | handle }}"
                 >
-                  {{ link.title }}
+                  {{ link_title }}
                   <i class="fa fa-chevron-right"></i>
                 </a>
               {% else %}
-                <a class="nav-link border-bottom p-3" href="{{ link.url }}">{{ link.title }}</a>
+                <a class="nav-link border-bottom p-3" href="{{ link_title }}">{{ link_title }}</a>
               {% endif %}
             </li>
           {% endfor %}
@@ -143,7 +154,11 @@
 
 {% for link in mobile_menu %}
   {% if link.links != blank %}
-    <div class="modal left fade" id="menu-{{ link.title | handle }}" tabindex="-1" role="dialog">
+    {% assign link_title = link.title | split: '#' | first %}
+
+    {% assign link_color = childlink.title | split: '#' | last %}
+
+    <div class="modal left fade" id="menu-{{ link_title | handle }}" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -165,7 +180,7 @@
           </div>
           <div class="modal-body">
             <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
-              <span class="submenu-title">{{ link.title }}</span>
+              <span class="submenu-title">{{ link_title }}</span>
               <a href="{{ link.url }}" class="see-all">See All</a>
             </div>
             <ul class="nav flex-column">
