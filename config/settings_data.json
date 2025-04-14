@@ -5793,7 +5793,7 @@
         "type": "instafeed-460",
         "settings": {
           "enable_embed_code": true,
-          "title": "@yeahbabygoods<br>Customer Tags",
+          "title": "@yeahbabygoods<br>on instagram",
           "embed_code": "<script src=\"//foursixty.com/media/scripts/fs.embed.v2.5.js\" data-feed-id=\"yeah-baby-goods\" data-theme=\"lookbook_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"48125,48126\"></script>\n<style>.fs-has-links::after { padding:10px 10.5px;border:2px solid #ffffff;color:#ffffff;content:\"SHOP THE LOOK\"; } .fs-has-links:hover:after { background-color:#ffffff;color:rgba(231, 185, 157, 0.8); } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Karla;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Karla;font-style:normal;font-weight:bold;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(231, 185, 157, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-lookbook_v2_5.fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
         }
       },
