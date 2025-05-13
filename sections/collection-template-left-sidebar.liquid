@@ -144,7 +144,7 @@
             {% for title in titles %}
               {% unless title == '' %}
                 <div class="card">
-                  <div class="card-header" id="headingOne">
+                  <div class="card-header" id="{{ forloop.index }}__{{title | handleize}}">
                     <h5>
                       <button
                         class="btn btn-link collapsed"
@@ -165,7 +165,7 @@
                   <div
                     id="collapse_{{ forloop.index }}__{{title | handleize}}"
                     class="collapse"
-                    aria-labelledby="headingOne"
+                    aria-labelledby="{{ forloop.index }}__{{title | handleize}}"
                   >
                     <div class="card-body">
                       <div
@@ -355,6 +355,18 @@
         {
           "value": "50",
           "label": "50"
+        },
+        {
+          "value": "75",
+          "label": "75"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        },
+        {
+          "value": "10000",
+          "label": "All Products"
         }
       ]
     }
