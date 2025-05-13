@@ -3141,16 +3141,15 @@
         "type": "header-custom",
         "settings": {
           "header_bg": "#ffffff",
-          "logo": "shopify://shop_images/Name_Only_Logo_Orange.png",
           "logo_max_width": 315,
           "menu_style": "mega",
-          "mega_menu_linklist": "new-header-menu-2025",
+          "mega_menu_linklist": "",
           "mega_menu_title_color": "#30494d",
           "mega_menu_link_color": "#637175",
           "mega_menu_link_hover_color": "#d79a80",
-          "left_linklist": "left-menu",
-          "right_linklist": "right-menu",
-          "mobile_linklist": "mobile-navigation",
+          "left_linklist": "",
+          "right_linklist": "",
+          "mobile_linklist": "",
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
@@ -3583,7 +3582,7 @@
             "type": "menu",
             "settings": {
               "heading": "MORE INFO",
-              "menu": "shop-menu"
+              "menu": ""
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
@@ -3597,7 +3596,7 @@
             "type": "menu",
             "settings": {
               "heading": "RESOURCES",
-              "menu": "footer-resources"
+              "menu": ""
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -4285,7 +4284,6 @@
           "20816f8a-0727-4067-9917-69b093cf279f": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/ybg-2_square.jpg",
               "title": "Highchair Cushions",
               "description": "Support cushions and wipeable covers for your highchair",
               "cta_text": "Shop now",
@@ -4295,7 +4293,6 @@
           "3afad392-0b78-4639-8e1f-ba45f57531e5": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/mashta_fam_24_square2.jpg",
               "title": "Highchair Placemats",
               "description": "FDA food-grade silicone fits in tray and makes clean-up a breeze",
               "cta_text": "Shop now",
@@ -4305,7 +4302,6 @@
           "51b9c20f-c49a-45aa-8c07-2f6d9ec4e80c": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/untitled-436_JKP_SS_square.jpg",
               "title": "Highchair Footrests",
               "description": "Make mealtimes safer and more comfortable for your little one",
               "cta_text": "Shop now",
@@ -4325,7 +4321,6 @@
           "9bd1fd55-acd1-4be2-b996-c455bc2de6b8": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
               "title": "Restaurant Kits",
               "description": "Easier mealtime prep and clean-up, whether eating out or at home",
               "cta_text": "Shop now",
@@ -4335,7 +4330,6 @@
           "49e28fb9-efa3-44a0-a7f1-948b55faf1f2": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG-14_KRK_4c21b2f0-6bc6-4f18-a651-f025b850bd4d.jpg",
               "title": "Feeding Essentials",
               "description": "Thoughtfully-designed dinnerware, utensils, placemats and more",
               "cta_text": "Shop now",
@@ -4345,7 +4339,6 @@
           "b481826d-500d-4a1f-a2e7-66bcf2e86e72": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG-28_KRK_5d58e0b7-272c-4305-8284-7b1d05f72906.jpg",
               "title": "Silicone Bibs",
               "description": "Original, narrow design that won't restrict baby's arm or shoulder movement",
               "cta_text": "Shop now",
@@ -4355,7 +4348,6 @@
           "3210f823-b119-46f3-bc70-9f844926c34e": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/mega_menu_floormat.jpg",
               "title": "Floor Mats",
               "description": "Extra large silicone mat can be used under the highchair or for messy activities",
               "cta_text": "Shop now",
@@ -5782,11 +5774,11 @@
       "collection-template-left-sidebar": {
         "type": "collection-template-left-sidebar",
         "settings": {
-          "limited_view": true,
+          "limited_view": false,
           "view_as_enable": true,
           "sort_enable": true,
           "collection_results_per_row": "4",
-          "collection_results_per_page": "16"
+          "collection_results_per_page": "10000"
         }
       },
       "instafeed-460": {
@@ -6293,41 +6285,6 @@
         "settings": {
           "featured_image": "shopify://shop_images/22_Restaurant_Bags_square.jpg",
           "heading": "Why Restaurant Bags?"
-        }
-      },
-      "reasons-to-buy-all-you-tensil": {
-        "type": "reasons-to-buy-all-you-tensil",
-        "blocks": {
-          "reason_9aBwXL": {
-            "type": "reason",
-            "settings": {
-              "title": "SETS BABY UP FOR SUCCESS",
-              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills</p>"
-            }
-          },
-          "reason_VTjnEA": {
-            "type": "reason",
-            "settings": {
-              "title": "VERSATILE",
-              "content": "<p>Can be used for self-feeding or parent-led feeding with purees</p>"
-            }
-          },
-          "reason_9mitEH": {
-            "type": "reason",
-            "settings": {
-              "title": "HELPS DEVELOP NEW SKILLS",
-              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.</p>"
-            }
-          }
-        },
-        "block_order": [
-          "reason_9aBwXL",
-          "reason_VTjnEA",
-          "reason_9mitEH"
-        ],
-        "settings": {
-          "featured_image": "shopify://shop_images/YBG-34.jpg",
-          "heading": "Why All You-Tensils?"
         }
       },
       "reasons-to-buy-cushions": {
@@ -7360,11 +7317,6 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "15685250022964305326": {
-        "type": "shopify://apps/elevar-conversion-tracking/blocks/dataLayerEmbed/bc30ab68-b15c-4311-811f-8ef485877ad6",
         "disabled": false,
         "settings": {}
       }
