@@ -3165,7 +3165,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/16_Spring_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
@@ -3178,7 +3177,6 @@
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
@@ -3186,7 +3184,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -3194,7 +3191,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           }
@@ -3208,7 +3204,6 @@
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
-          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3279,36 +3274,31 @@
           "1348b1e8-f464-46c5-a185-be87842cd2e5": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#bac8b6",
-              "product_image": "shopify://shop_images/home-001.png"
+              "color_swatch": "#bac8b6"
             }
           },
           "99789124-04e3-422f-9fe4-ad8bda53c97a": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#637175",
-              "product_image": "shopify://shop_images/home-003.png"
+              "color_swatch": "#637175"
             }
           },
           "a4e15931-b8eb-4a78-ae24-036f1add7a84": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#df9764",
-              "product_image": "shopify://shop_images/home-005_c73bdc58-398a-4f7e-8c7c-347ebce12074.png"
+              "color_swatch": "#df9764"
             }
           },
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#d79a80",
-              "product_image": "shopify://shop_images/home-004.png"
+              "color_swatch": "#d79a80"
             }
           },
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#e7b99d",
-              "product_image": "shopify://shop_images/home-002.png"
+              "color_swatch": "#e7b99d"
             }
           }
         },
@@ -3394,8 +3384,7 @@
           "caption_color": "#ffffff",
           "caption_size": 22,
           "cta_url": "shopify://pages/inspirations",
-          "cta_text": "Explore our lookbook",
-          "image": "shopify://shop_images/rainbow_274cbcfa-3277-4e27-b17d-1fb373078447.png"
+          "cta_text": "Explore our lookbook"
         }
       },
       "1620416895faf4570f": {
@@ -3508,33 +3497,23 @@
         "blocks": {
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/babylist_c2b1403c-af58-45b4-b308-0b8eb21e83a5.png"
-            }
+            "settings": {}
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/today_s_parent.png"
-            }
+            "settings": {}
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/solid_starts_21db0637-e8e5-4b60-b796-0d32ba1384d3.png"
-            }
+            "settings": {}
           },
           "brand_DjpNCY": {
             "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/karrie.png"
-            }
+            "settings": {}
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
-            "settings": {
-              "brand_image": "shopify://shop_images/domino_517bb9a8-00b9-4724-ba85-17a61321a97a.png"
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -3556,7 +3535,6 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-secondary",
-          "hero_background": "shopify://shop_images/Kruithof-Family-2020-248_KRK.jpg",
           "hero_title": "Meet the<br>Yeah Baby Goods<br>Team",
           "title_color": "#ffffff",
           "title_size": 56,
@@ -3627,27 +3605,19 @@
         "blocks": {
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/ybgg.jpg"
-            }
+            "settings": {}
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/brown_butter_full.jpg"
-            }
+            "settings": {}
           },
           "42a7df21-d27f-45b2-aec5-a15f5d77c7dc": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/y-10.jpg"
-            }
+            "settings": {}
           },
           "0cc1a2eb-c408-499a-be14-f56bab07e5a0": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/restaurantbags-26.jpg"
-            }
+            "settings": {}
           },
           "ac4574ce-dff0-4dca-9d51-7bf15f895288": {
             "type": "image",
@@ -3663,15 +3633,11 @@
           },
           "e6a8ace4-b50c-4489-9801-42b37a06e710": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/vintage_blue_uphighchair.jpg"
-            }
+            "settings": {}
           },
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0": {
             "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/y-6.jpg"
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -5774,11 +5740,11 @@
       "collection-template-left-sidebar": {
         "type": "collection-template-left-sidebar",
         "settings": {
-          "limited_view": false,
+          "limited_view": true,
           "view_as_enable": true,
           "sort_enable": true,
           "collection_results_per_row": "4",
-          "collection_results_per_page": "10000"
+          "collection_results_per_page": "30"
         }
       },
       "instafeed-460": {
@@ -5912,14 +5878,12 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/15_Spring_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
@@ -5927,7 +5891,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
@@ -5935,7 +5898,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -5943,7 +5905,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
@@ -5965,7 +5926,6 @@
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
-          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "image_link": "shopify://pages/collections",
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
