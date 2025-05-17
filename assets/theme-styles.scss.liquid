@@ -2059,6 +2059,9 @@ table {
 
 .product-label {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     top: 0;
     right: 0;
     z-index: 2;
@@ -2087,7 +2090,6 @@ table {
     .sale-label {
         background-color: $color_sale;
         color: $color_sale_text;
-        margin-bottom: 5px;
     }
 
     .custom-label {
@@ -2099,18 +2101,21 @@ table {
         background-color: $color_bundle;
         color: $color_bundle_text;
     }
-    .limited-edition-label {
+
+    .limit-edition-label {
         background-color: $color_limited_edition;
         color: $color_limited_edition_text;
     }
+
     .retiring-soon-label {
         background-color: $color_retiring_soon;
         color: $color_retiring_soon_text;
     }
+    
     .new-label {
+        background-color: $color_new;
         color: $color_new_text;
         border: 1px solid $new_label_border;
-        padding: 3px 7px 2px;
     }
 
     .sold-out-label {
