@@ -124,7 +124,7 @@
         {% if slide_image != blank and slide_url != blank %}
           {% if forloop.first %}
             <a class="hero-slide" href="{{ slide_url }}">
-              {{ slide_image | image_url: width: 1500 | image_tag: preload: true }}
+              {{ slide_image | image_url: width: 1500 }}
             </a>
           {% else %}
             <a class="hero-slide" href="{{ slide_url }}">
