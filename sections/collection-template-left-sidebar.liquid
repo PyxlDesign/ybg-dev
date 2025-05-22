@@ -161,119 +161,121 @@
               {% endfor %}
             </select>
           </div>
-          <div id="accordion">
-            {% assign title_flag = '' %}
-            {% for tag in collection.tags %}
-              {% if tag contains '/' %}
-                {% assign _filterTitle = tag | split: '/' | first %}
-                {% if title_flag contains _filterTitle %}
-                {% else %}
-                  {% assign title_flag = title_flag | append: ',' | append: _filterTitle %}
+          {% comment %}
+            <div id="accordion">
+              {% assign title_flag = '' %}
+              {% for tag in collection.tags %}
+                {% if tag contains '/' %}
+                  {% assign _filterTitle = tag | split: '/' | first %}
+                  {% if title_flag contains _filterTitle %}
+                  {% else %}
+                    {% assign title_flag = title_flag | append: ',' | append: _filterTitle %}
+                  {% endif %}
                 {% endif %}
-              {% endif %}
-            {% endfor %}
-            {% assign titles = title_flag | split: ',' | sort: 'decending' %}
-            {% for title in titles %}
-              {% unless title == '' %}
-                <div class="card">
-                  <div class="card-header" id="{{ forloop.index }}__{{title | handleize}}">
-                    <h5>
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapse_{{ forloop.index }}__{{title | handleize}}"
-                        aria-expanded="false"
-                        aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}"
-                      >
-                        {% if title == 'Color' %}
-                          {{ 'Recommendations by Placemat Color' }}
-                        {% else %}
-                          {{ title }}
-                        {% endif %}
-                      </button>
-                    </h5>
-                  </div>
-
-                  <div
-                    id="collapse_{{ forloop.index }}__{{title | handleize}}"
-                    class="collapse"
-                    aria-labelledby="{{ forloop.index }}__{{title | handleize}}"
-                  >
-                    <div class="card-body">
-                      <div
-                        class="
-                          themes-wrapper sidebar-tags
+              {% endfor %}
+              {% assign titles = title_flag | split: ',' | sort: 'decending' %}
+              {% for title in titles %}
+                {% unless title == '' %}
+                  <div class="card">
+                    <div class="card-header" id="{{ forloop.index }}__{{title | handleize}}">
+                      <h5>
+                        <button
+                          class="btn btn-link collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse_{{ forloop.index }}__{{title | handleize}}"
+                          aria-expanded="false"
+                          aria-controls="collapse_{{ forloop.index }}__{{title | handleize}}"
+                        >
                           {% if title == 'Color' %}
-                            color-filter
+                            {{ 'Recommendations by Placemat Color' }}
+                          {% else %}
+                            {{ title }}
                           {% endif %}
-                        "
-                      >
-                        <div class="widget-content">
-                          <div class="scroll-content">
-                            <ul
-                              {% if title != 'Color' %}
-                                class="list-tags"
-                              {% endif %}
-                            >
-                              {% assign collection_tags = collection.tags | sort | uniq %}
-                              {% for tag in collection_tags %}
-                                {% unless tag == '' %}
-                                  {% if tag contains title %}
-                                    {% assign _tag = tag | split: '/' | last %}
-                                    {% comment %} {% assign file_axtention = '.png' %} {% endcomment %}
-                                    {% comment %} {% assign file_name = _tag | append: file_axtention %} {% endcomment %}
-                                    {% comment %} {% assign file = file_name | file_url %} {% endcomment %}
-                                    {% assign background_rgb = '' %}
-                                    {% for rbg in color_bgs %}
-                                      {% assign rgb_color = rbg | split: '/' | first | handleize %}
-                                      {% assign rbg_val = rbg | split: '/' | last %}
-                                      {% assign filter_color = _tag | handleize %}
-                                      {% assign swatchImage = rgb_color | handleize | append: '.jpg' %}
-                                      {% if rgb_color == filter_color %}
-                                        {% assign background_rgb = rbg_val %}
-                                        {% break %}
-                                      {% endif %}
-                                    {% endfor %}
-                                    <li>
-                                      <input
-                                        type="checkbox"
-                                        data-type="{{ title }}"
-                                        {% if title == 'Color' %}
-                                          data-rgb="{{background_rgb}}"
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapse_{{ forloop.index }}__{{title | handleize}}"
+                      class="collapse"
+                      aria-labelledby="{{ forloop.index }}__{{title | handleize}}"
+                    >
+                      <div class="card-body">
+                        <div
+                          class="
+                            themes-wrapper sidebar-tags
+                            {% if title == 'Color' %}
+                              color-filter
+                            {% endif %}
+                          "
+                        >
+                          <div class="widget-content">
+                            <div class="scroll-content">
+                              <ul
+                                {% if title != 'Color' %}
+                                  class="list-tags"
+                                {% endif %}
+                              >
+                                {% assign collection_tags = collection.tags | sort | uniq %}
+                                {% for tag in collection_tags %}
+                                  {% unless tag == '' %}
+                                    {% if tag contains title %}
+                                      {% assign _tag = tag | split: '/' | last %}
+                                      {% comment %} {% assign file_axtention = '.png' %} {% endcomment %}
+                                      {% comment %} {% assign file_name = _tag | append: file_axtention %} {% endcomment %}
+                                      {% comment %} {% assign file = file_name | file_url %} {% endcomment %}
+                                      {% assign background_rgb = '' %}
+                                      {% for rbg in color_bgs %}
+                                        {% assign rgb_color = rbg | split: '/' | first | handleize %}
+                                        {% assign rbg_val = rbg | split: '/' | last %}
+                                        {% assign filter_color = _tag | handleize %}
+                                        {% assign swatchImage = rgb_color | handleize | append: '.jpg' %}
+                                        {% if rgb_color == filter_color %}
+                                          {% assign background_rgb = rbg_val %}
+                                          {% break %}
                                         {% endif %}
-                                        name="tags"
-                                        id="checkbox_{{ forloop.index }}__{{ tag }}"
-                                        value="{{ _tag | handleize }}"
-                                        {% if current_tags contains _tag %}
-                                          checked
-                                        {% endif %}
-                                        class="filterInput d-none"
-                                      >
-                                      <label
-                                        title="{{ _tag }}"
-                                        for="checkbox_{{ forloop.index }}__{{ tag }}"
-                                        {% if title == 'Color' %}
-                                          style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
-                                        {% endif %}
-                                      >
-                                        {% unless title == 'Color' %}
-                                          {{ _tag | capitalize }}
-                                        {% endunless %}
-                                      </label>
-                                    </li>
-                                  {% endif %}
-                                {% endunless %}
-                              {% endfor %}
-                            </ul>
+                                      {% endfor %}
+                                      <li>
+                                        <input
+                                          type="checkbox"
+                                          data-type="{{ title }}"
+                                          {% if title == 'Color' %}
+                                            data-rgb="{{background_rgb}}"
+                                          {% endif %}
+                                          name="tags"
+                                          id="checkbox_{{ forloop.index }}__{{ tag }}"
+                                          value="{{ _tag | handleize }}"
+                                          {% if current_tags contains _tag %}
+                                            checked
+                                          {% endif %}
+                                          class="filterInput d-none"
+                                        >
+                                        <label
+                                          title="{{ _tag }}"
+                                          for="checkbox_{{ forloop.index }}__{{ tag }}"
+                                          {% if title == 'Color' %}
+                                            style="background-color: rgba({{ background_rgb }}) ; background-image:url({{swatchImage | file_img_url :'master'}}) !important; color:transparent; background-size: cover;"
+                                          {% endif %}
+                                        >
+                                          {% unless title == 'Color' %}
+                                            {{ _tag | capitalize }}
+                                          {% endunless %}
+                                        </label>
+                                      </li>
+                                    {% endif %}
+                                  {% endunless %}
+                                {% endfor %}
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              {% endunless %}
-            {% endfor %}
-          </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+          {% endcomment %}
           <div class="btn-wrapper text-center d-md-none mt-5">
             <a href="#" class="btn button btn-apply"> Apply </a>
           </div>
