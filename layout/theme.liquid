@@ -402,9 +402,13 @@
     {% if settings.header_layout == 'vertical' %}
       </div>
     {% endif %}
-    {% if settings.enable_mega %}
-      {% section 'mega-menu' %}
-    {% endif %}
+
+    {% comment %}
+      {% if settings.enable_mega %}
+        {% section 'mega-menu' %}
+      {% endif %}
+    {% endcomment %}
+
     {% render 'footer_scripts' %}
 
     {% render 'sweettooth-widgets' %}
