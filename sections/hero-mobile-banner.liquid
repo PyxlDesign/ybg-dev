@@ -119,7 +119,7 @@
         {% if slide_image != blank and slide_url != blank %}
           <a class="hero-mobile-slide" href="{{ slide_url }}">
             {% if forloop.first %}
-              {{ slide_image | image_url: width: 990 }}
+              {{ slide_image | image_url: width: 990 | image_tag: preload: true }}
             {% else %}
               {{ slide_image | image_url: width: 990 | image_tag: loading: 'lazy' }}
             {% endif %}
