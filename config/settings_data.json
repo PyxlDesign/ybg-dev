@@ -3151,7 +3151,7 @@
           "left_linklist": "left-menu",
           "right_linklist": "right-menu",
           "mobile_linklist": "mobile-navigation",
-          "message_text": "<p><strong>20% OFF MEMORIAL DAY SALE | CODE MEMORIAL25</strong></p><p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
+          "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
           "color_bg": "#637175",
           "color_text": "#fffcf8",
           "color_link": "#d69a81",
@@ -3164,6 +3164,7 @@
         "blocks": {
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/17_Memorial_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
@@ -3171,7 +3172,6 @@
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
@@ -5919,6 +5919,7 @@
         "blocks": {
           "hero_slide_QQACGT": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/16_Memorial_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
@@ -5926,7 +5927,6 @@
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
