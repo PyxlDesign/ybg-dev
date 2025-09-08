@@ -3885,15 +3885,15 @@
         "type": "ikea-product",
         "settings": {
           "prefix": "step 1",
-          "section_heading": "get the $20 highchair",
-          "section_paragraph": "Order from IKEA’s website.  You can often find the highchair on Facebook Marketplace as well.",
+          "section_heading": "Get The $25 Highchair",
+          "section_paragraph": "Order new from IKEA’s website or find one secondhand!",
           "product_image": "shopify://shop_images/high_chair.png",
           "features_1_heading": "",
           "features_1": "",
           "features_2_heading": "",
           "features_2": "",
           "cta_text": "Order On IKEA.COM",
-          "cta_url": "https://www.ikea.com/us/en/p/antilop-high-chair-with-tray-white-silver-color-s89228434/"
+          "cta_url": "https://www.ikea.com/us/en/p/antilop-high-chair-with-tray-white-white-s39597517/"
         }
       },
       "banner-start-here": {
@@ -3910,8 +3910,8 @@
           "d6bd3ca1-744e-4f8f-9b39-5f95f0ee7c7b": {
             "type": "collection",
             "settings": {
-              "collection": "ikea-highchair-cushion-covers",
-              "image": "shopify://shop_images/yeahbabygoods-55.jpg",
+              "collection": "vegan-leather-cushion-covers",
+              "image": "shopify://shop_images/ybg-11_JKP_SS_0aec97d8-0323-4207-b3c3-2f46d52ca8ff.jpg",
               "collection_title": "Cushion Covers"
             }
           },
@@ -3948,7 +3948,7 @@
         ],
         "settings": {
           "pre_heading": "step 2",
-          "section_heading": "Level up with YBGs",
+          "section_heading": "Level Up With YBGs",
           "highchair_text": "Wondering what makes a safe highchair?",
           "highchair_link": "shopify://pages/safe-eating-posture",
           "btn_text": "Find out"
