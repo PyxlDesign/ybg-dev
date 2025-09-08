@@ -3709,7 +3709,7 @@
         "settings": {
           "section_heading": "safe feeding<br>position",
           "heading": "did you know",
-          "content": "Problems like fussiness at the table, refusing to eat, pickiness, and so many others can often be traced back to the highchair and how they’re sitting for meals."
+          "content": "Problems like fussiness at the table, refusing to eat and pickiness can often be traced back to the highchair"
         }
       },
       "eating-posture-fetures": {
@@ -3764,8 +3764,8 @@
           "b6fe7287-bef8-48bf-be85-021b5efb4654"
         ],
         "settings": {
-          "section_heading": "What makes a good highchair?",
-          "section_paragraph": "Proper positioning provides comfort, improves focus and facilitates a safe swallow.  Here are the important things to consider:",
+          "section_heading": "What To Look For When Buying A Highchair",
+          "section_paragraph": "Stability is key. Proper positioning provides comfort, improves focus and facilitates a safe swallow.  Here's what feeding experts recommend:",
           "section_image": "shopify://shop_images/yeahbabygoods-59b_3d942403-4157-44da-9510-f19caf8792dd.jpg"
         }
       },
@@ -3775,7 +3775,7 @@
           "8be3cb45-faac-48eb-8d4f-507782bd68c1": {
             "type": "content",
             "settings": {
-              "content": "When you are comfortably seated in a chair, you eat better and you can sit longer.",
+              "content": "When you are comfortably seated in a chair, you're able to sit longer.",
               "background_color": "",
               "font_color": "",
               "pointer_color": "#f1e3d7"
@@ -3784,7 +3784,7 @@
           "ea58b275-c2ff-4ae4-8ed2-0876380c53d1": {
             "type": "content",
             "settings": {
-              "content": "Alternatively, if you are unstable and uncomfortable, you are distracted from eating.",
+              "content": "Alternatively, if you don't feel stable, you'll be too distracted to eat.",
               "background_color": "#f0e4d8",
               "font_color": "#627175",
               "pointer_color": ""
