@@ -3900,7 +3900,7 @@
         "type": "banner-start-here",
         "settings": {
           "highlighter": "make it",
-          "banner_content": "cuter &bull;\nsafer &bull; unique",
+          "banner_content": "&bull; cuter \n&bull; safer",
           "background_color": "#dd9864"
         }
       },
