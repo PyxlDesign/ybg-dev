@@ -3899,8 +3899,8 @@
       "banner-start-here": {
         "type": "banner-start-here",
         "settings": {
-          "highlighter": "make it",
-          "banner_content": "&bull; cuter \n&bull; safer",
+          "highlighter": "make it better",
+          "banner_content": "CUTER & SAFER",
           "background_color": "#dd9864"
         }
       },
