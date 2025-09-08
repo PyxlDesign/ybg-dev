@@ -3957,6 +3957,14 @@
       "signature-collections": {
         "type": "signature-collections",
         "blocks": {
+          "2054d530-5034-4a7a-bc27-88825b7427b2": {
+            "type": "collection",
+            "settings": {
+              "featured_collection": "utensils",
+              "collection_image": "shopify://shop_images/ybgg.jpg",
+              "col_description": "Supports mouthing, self-feeding and parent-led feeding"
+            }
+          },
           "c5de6d2d-95b2-495a-94e7-cf63fc88a43e": {
             "type": "collection",
             "settings": {
@@ -3973,14 +3981,6 @@
               "col_description": "Easier prep and clean-up for meals at home or on the go"
             }
           },
-          "2054d530-5034-4a7a-bc27-88825b7427b2": {
-            "type": "collection",
-            "settings": {
-              "featured_collection": "utensils",
-              "collection_image": "shopify://shop_images/ybgg.jpg",
-              "col_description": "Supports mouthing, self-feeding and parent-led feeding"
-            }
-          },
           "00f61c33-c0af-4001-adbe-4f44851037d6": {
             "type": "collection",
             "settings": {
@@ -3991,9 +3991,9 @@
           }
         },
         "block_order": [
+          "2054d530-5034-4a7a-bc27-88825b7427b2",
           "c5de6d2d-95b2-495a-94e7-cf63fc88a43e",
           "d42a4fed-fa18-4874-95a9-733ca397041c",
-          "2054d530-5034-4a7a-bc27-88825b7427b2",
           "00f61c33-c0af-4001-adbe-4f44851037d6"
         ],
         "settings": {
