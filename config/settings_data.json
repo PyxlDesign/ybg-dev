@@ -3877,7 +3877,7 @@
         "settings": {
           "section_heading": "hi, welcome",
           "image": "shopify://shop_images/static-family.png",
-          "heading": "Just discovering<br>Yeah Baby Goods and wondering what we’re all about?",
+          "heading": "Just discovering<br>Yeah Baby Goods<br>and wondering what we’re all about?",
           "paragraph": "We are a husband and wife team who set out to make the best-selling IKEA highchair safer and cuter. Over the years, we expanded our product line to include other feeding essentials that support child development without sacrificing aesthetic. Designed with mental and visual peace in mind, our products make mealtimes less stressful and more joyful."
         }
       },
@@ -3899,7 +3899,7 @@
       "banner-start-here": {
         "type": "banner-start-here",
         "settings": {
-          "highlighter": "now make it",
+          "highlighter": "make it",
           "banner_content": "cuter &bull;\nsafer &bull; unique",
           "background_color": "#dd9864"
         }
