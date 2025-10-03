@@ -7489,6 +7489,16 @@
               "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
               "link_to": "shopify://collections/table-placemats"
             }
+          },
+          "images_zGcp46": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/vintage_blue_uphighchair_cropped_tight.jpg",
+              "title": "Splat Mats",
+              "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
+              "link_to": "shopify://collections/floor-mats"
+            }
           }
         },
         "block_order": [
@@ -7497,7 +7507,8 @@
           "images_p9HBwt",
           "images_k4CPT3",
           "images_iNj9P4",
-          "images_xL9Rzm"
+          "images_xL9Rzm",
+          "images_zGcp46"
         ],
         "settings": {
           "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
