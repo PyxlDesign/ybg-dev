@@ -7366,97 +7366,64 @@
           "link": ""
         }
       },
-      "collection-1-section": {
-        "type": "collection-1-section",
+      "collection-2-section": {
+        "type": "collection-2-section",
         "blocks": {
-          "images_Rg7XCC": {
+          "images_QVFWHa": {
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify://shop_images/YBG-61_KRK.jpg",
-              "title": "Shop All",
-              "subtitle": "Shop all our feeding essentials",
-              "link_to": "shopify://collections/feeding-accessories"
+              "thumbernail": "shopify://shop_images/Footrests.jpg",
+              "title": "Footrests",
+              "subtitle": "Fully adjustable foot support keeps your baby comfortable and safe",
+              "link_to": "shopify://collections/highchair-footrest"
             }
           },
-          "images_CiDMNq": {
+          "images_EJmNFf": {
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify://shop_images/YBG-41_KRK_30a2d418-2ed7-4bd2-bcdf-497d37ee6fa6.jpg",
-              "title": "Dinnerware",
-              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
-              "link_to": "shopify://collections/dinnerware"
+              "thumbernail": "shopify://shop_images/ybg-11_JKP_SS_0aec97d8-0323-4207-b3c3-2f46d52ca8ff.jpg",
+              "title": "Cushions",
+              "subtitle": "Buttery-soft, wipeable vegan leather covers for our support cushions",
+              "link_to": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
-          "images_ycUtC4": {
+          "images_b3Kb9W": {
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify://shop_images/YBG-78_KRK.jpg",
-              "title": "Utensils",
-              "subtitle": "Designed by a feeding specialist to support baby's feeding, motor and oral development",
-              "link_to": "shopify://collections/utensils-1"
+              "thumbernail": "shopify://shop_images/Placemats_d130496d-43dc-4f2d-ac3e-5cdf72d8d5f5.jpg",
+              "title": "Tray Placemats",
+              "subtitle": "Food-grade silicone placemat makes clean-up a breeze",
+              "link_to": "shopify://collections/highchair-placemats"
             }
           },
-          "images_C3qVjp": {
+          "images_MzKEaC": {
             "type": "images",
             "settings": {
               "categories": "",
-              "thumbernail": "shopify://shop_images/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
-              "title": "Better Bibs",
-              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
-              "link_to": "shopify://collections/silicone-bibs"
-            }
-          },
-          "images_6kkYFB": {
-            "type": "images",
-            "settings": {
-              "categories": "",
-              "thumbernail": "shopify://shop_images/13_Restaurant_Bag_3_square_aaa6c93b-9319-4587-8e88-9b8f6843a14d.jpg",
-              "title": "Eating Out Essentials",
-              "subtitle": "Improve on-the-go mealtimes with restaurant bags, food scissors and travel placemats",
-              "link_to": "shopify://collections/eating-out-essentials"
-            }
-          },
-          "images_7FUWay": {
-            "type": "images",
-            "settings": {
-              "categories": "",
-              "thumbernail": "shopify://shop_images/YBG-20_square.jpg",
-              "title": "Silicone Placemats",
-              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
-              "link_to": "shopify://collections/table-placemats"
-            }
-          },
-          "images_zxUJU3": {
-            "type": "images",
-            "settings": {
-              "categories": "",
-              "thumbernail": "shopify://shop_images/vintage_blue_uphighchair_cropped_tight.jpg",
-              "title": "Splat Mats",
-              "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activities",
-              "link_to": "shopify://collections/floor-mats"
+              "thumbernail": "shopify://shop_images/legstogether.jpg",
+              "title": "Leg Wraps",
+              "subtitle": "High-quality vinyl strips adhere to highchair legs for a customized look",
+              "link_to": "shopify://collections/precut-leg-wraps"
             }
           }
         },
         "block_order": [
-          "images_Rg7XCC",
-          "images_CiDMNq",
-          "images_ycUtC4",
-          "images_C3qVjp",
-          "images_6kkYFB",
-          "images_7FUWay",
-          "images_zxUJU3"
+          "images_QVFWHa",
+          "images_EJmNFf",
+          "images_b3Kb9W",
+          "images_MzKEaC"
         ],
         "settings": {
-          "background": "shopify://shop_images/untitled-3_JKP_SS.jpg",
+          "background": "shopify://shop_images/Golden_Doe_Lifestyle9_JKP_SS.jpg",
           "header_text_color": "#ffffff",
           "page_description": "",
           "display_filter": false,
           "filter_list": "",
           "text_color": "#ffffff",
-          "overlay_color": "#df9764",
+          "overlay_color": "#232323",
           "overlay_opacity": "0.7"
         }
       }
