@@ -7449,11 +7449,55 @@
               "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
               "link_to": "shopify://collections/dinnerware"
             }
+          },
+          "images_p9HBwt": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-78_KRK.jpg",
+              "title": "Utensils",
+              "subtitle": "Designed by a feeding specialist to support baby's feeding, motor and oral development",
+              "link_to": "shopify://collections/utensils-1"
+            }
+          },
+          "images_k4CPT3": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
+              "title": "Better Bibs",
+              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "link_to": "shopify://collections/silicone-bibs"
+            }
+          },
+          "images_iNj9P4": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Eating Out Essentials",
+              "subtitle": "Improve on-the-go mealtimes with restaurant bags, food scissors and travel placemats",
+              "link_to": "shopify://collections/eating-out-essentials"
+            }
+          },
+          "images_xL9Rzm": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-20_square.jpg",
+              "title": "Table Placemats",
+              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
+              "link_to": "shopify://collections/table-placemats"
+            }
           }
         },
         "block_order": [
           "images_PELdUn",
-          "images_KjPAHd"
+          "images_KjPAHd",
+          "images_p9HBwt",
+          "images_k4CPT3",
+          "images_iNj9P4",
+          "images_xL9Rzm"
         ],
         "settings": {
           "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
