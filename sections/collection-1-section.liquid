@@ -110,13 +110,7 @@
   /*template 1*/
   .pfl-1-tmpl {}
   .page-header {
-    {% if section.settings.background != blank %}
-      background-image: url('{{section.settings.background | img_url:'master'}}');
-      background-size: cover;
-      background-position: center center;
-    {% else %}
-      background-color: rgba(35, 35, 35, 0.2);
-    {% endif %}
+ 
     color: {{ section.settings.header_text_color}}
     ;
     text-align: center;
