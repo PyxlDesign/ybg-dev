@@ -492,7 +492,7 @@
           "1558323108644": {
             "type": "images",
             "settings": {
-              "categories": "Tableware",
+              "categories": "",
               "thumbernail": "shopify://shop_images/YBG-41_KRK.jpg",
               "title": "Dinnerware",
               "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
@@ -615,8 +615,8 @@
           "1558323651755"
         ],
         "settings": {
-          "display_filter": true,
-          "filter_list": "IKEA Highchair;Tableware;Utensils",
+          "display_filter": false,
+          "filter_list": "",
           "text_color": "#ffffff",
           "overlay_color": "#df9764",
           "overlay_opacity": "0.75"
