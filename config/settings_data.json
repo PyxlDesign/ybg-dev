@@ -7520,12 +7520,67 @@
           "overlay_color": "#232323",
           "overlay_opacity": "0.7"
         }
+      },
+      "featured_collections_jFQtbH": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_jGhYYA": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "vegan-leather-cushion-covers",
+              "collection_title": "IKEA Highchair Accessorites"
+            }
+          },
+          "collection_AXgYdB": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "highchair-placemats",
+              "collection_title": "Placemats"
+            }
+          },
+          "collection_i3AmEd": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "highchair-footrest",
+              "collection_title": "Footrests"
+            }
+          },
+          "collection_Mqkjqf": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "precut-leg-wraps",
+              "collection_title": "Leg Wraps"
+            }
+          }
+        },
+        "block_order": [
+          "collection_jGhYYA",
+          "collection_AXgYdB",
+          "collection_i3AmEd",
+          "collection_Mqkjqf"
+        ],
+        "disabled": true,
+        "settings": {
+          "background_color": "#fffcf8",
+          "featured_collection_title": "Aesthetic and Function<br>Got Married & Had A Baby",
+          "title_color": "#30494d",
+          "title_size": 60,
+          "featured_collection_caption": "Feeding products that support child development without sacrificing style",
+          "caption_color": "#30494d",
+          "caption_size": 22,
+          "curved_bottom": false
+        }
       }
     },
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
       "162041756141531609",
+      "featured_collections_jFQtbH",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
