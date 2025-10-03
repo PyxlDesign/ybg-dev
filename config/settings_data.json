@@ -7426,6 +7426,19 @@
           "overlay_color": "#232323",
           "overlay_opacity": "0.7"
         }
+      },
+      "collection-1-section": {
+        "type": "collection-1-section",
+        "settings": {
+          "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
+          "header_text_color": "",
+          "page_description": "",
+          "display_filter": true,
+          "filter_list": "",
+          "text_color": "#ffffff",
+          "overlay_color": "#232323",
+          "overlay_opacity": "0.7"
+        }
       }
     },
     "content_for_index": [
