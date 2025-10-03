@@ -7429,6 +7429,32 @@
       },
       "collection-1-section": {
         "type": "collection-1-section",
+        "blocks": {
+          "images_PELdUn": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-61_KRK.jpg",
+              "title": "Shop All",
+              "subtitle": "Shop all our feeding essentials",
+              "link_to": "shopify://collections/feeding-accessories"
+            }
+          },
+          "images_KjPAHd": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-41_KRK.jpg",
+              "title": "Dinnerware",
+              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
+              "link_to": "shopify://collections/dinnerware"
+            }
+          }
+        },
+        "block_order": [
+          "images_PELdUn",
+          "images_KjPAHd"
+        ],
         "settings": {
           "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
           "header_text_color": "#ffffff",
