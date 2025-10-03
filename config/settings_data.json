@@ -7365,6 +7365,100 @@
           "button": "",
           "link": ""
         }
+      },
+      "collection-1-section": {
+        "type": "collection-1-section",
+        "blocks": {
+          "images_Rg7XCC": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-61_KRK.jpg",
+              "title": "Shop All",
+              "subtitle": "Shop all our feeding essentials",
+              "link_to": "shopify://collections/feeding-accessories"
+            }
+          },
+          "images_CiDMNq": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-41_KRK_30a2d418-2ed7-4bd2-bcdf-497d37ee6fa6.jpg",
+              "title": "Dinnerware",
+              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
+              "link_to": "shopify://collections/dinnerware"
+            }
+          },
+          "images_ycUtC4": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-78_KRK.jpg",
+              "title": "Utensils",
+              "subtitle": "Designed by a feeding specialist to support baby's feeding, motor and oral development",
+              "link_to": "shopify://collections/utensils-1"
+            }
+          },
+          "images_C3qVjp": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
+              "title": "Better Bibs",
+              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "link_to": "shopify://collections/silicone-bibs"
+            }
+          },
+          "images_6kkYFB": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/13_Restaurant_Bag_3_square_aaa6c93b-9319-4587-8e88-9b8f6843a14d.jpg",
+              "title": "Eating Out Essentials",
+              "subtitle": "Improve on-the-go mealtimes with restaurant bags, food scissors and travel placemats",
+              "link_to": "shopify://collections/eating-out-essentials"
+            }
+          },
+          "images_7FUWay": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-20_square.jpg",
+              "title": "Silicone Placemats",
+              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
+              "link_to": "shopify://collections/table-placemats"
+            }
+          },
+          "images_zxUJU3": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/vintage_blue_uphighchair_cropped_tight.jpg",
+              "title": "Splat Mats",
+              "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activities",
+              "link_to": "shopify://collections/floor-mats"
+            }
+          }
+        },
+        "block_order": [
+          "images_Rg7XCC",
+          "images_CiDMNq",
+          "images_ycUtC4",
+          "images_C3qVjp",
+          "images_6kkYFB",
+          "images_7FUWay",
+          "images_zxUJU3"
+        ],
+        "settings": {
+          "background": "shopify://shop_images/untitled-168_JKP_SS.jpg",
+          "header_text_color": "#ffffff",
+          "page_description": "",
+          "display_filter": false,
+          "filter_list": "",
+          "text_color": "#ffffff",
+          "overlay_color": "#232323",
+          "overlay_opacity": "0.7"
+        }
       }
     },
     "content_for_index": [
