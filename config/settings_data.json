@@ -615,8 +615,8 @@
           "1558323651755"
         ],
         "settings": {
-          "display_filter": false,
-          "filter_list": "",
+          "display_filter": true,
+          "filter_list": "IKEA Highchair;Tableware;Utensils",
           "text_color": "#ffffff",
           "overlay_color": "#df9764",
           "overlay_opacity": "0.75"
@@ -803,7 +803,6 @@
               "title": "Cosmopolis de Milance",
               "content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies. Etiam semper sollicitudin lectus indous scelerisque. Curabitur vel tristique lacus. Nam risus mauris, accumsan et eleifend vitae, dignissim at eros. Vivamus pellentesque dui ex, a interdum orci dignissim vel.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Managing Director",
               "name": "Anne.l",
               "qoute_content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies...",
@@ -817,7 +816,6 @@
               "title": "Excepteur sint occaecat",
               "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Head of Division",
               "name": "Anne.l",
               "qoute_content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies...",
@@ -831,7 +829,6 @@
               "title": "Tortor id aliquet",
               "content": "Vitae purus faucibus ornare suspendisse sed nisi. Tincidunt arcu non sodales neque sodales. Sociis natoque penatibus et magnis dis parturient montes. Mauris augue neque gravida in fermentum et sollicitudin ac. Habitant morbi tristique senectus et netus. Tortor id aliquet lectus proin nibh nisl condimentum. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Sodales ut etiam sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Non odio euismod lacinia at quis risus sed. Nunc pulvinar sapien et ligula ullamcorper. Amet est placerat in egestas erat imperdiet sed euismod.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Managing Director",
               "name": "Anne.l",
               "qoute_content": "Faucibus turpis in eu mi bibendum neque egestas congue quisque. Sodales ut etiam sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.",
@@ -845,7 +842,6 @@
               "title": "Tempor nec feugiat",
               "content": "Ultrices dui sapien eget mi proin sed. Ullamcorper velit sed ullamcorper morbi. Eget sit amet tellus cras adipiscing enim. Quis hendrerit dolor magna eget est. Neque egestas congue quisque egestas. Velit aliquet sagittis id consectetur purus ut faucibus. Egestas purus viverra accumsan in nisl nisi scelerisque. Lacus vestibulum sed arcu non. Sollicitudin nibh sit amet commodo. Odio euismod lacinia at quis risus sed vulputate. Sed pulvinar proin gravida hendrerit lectus.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Tempor nec feugiat",
               "name": "John Doe",
               "qoute_content": "Mi bibendum neque egestas congue quisque egestas diam in. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna.",
@@ -863,15 +859,14 @@
         "settings": {
           "autoplay": true,
           "slideshow_speed": "5000",
-          "background_image": "",
-          "text_color": "#fff",
+          "text_color": "#ffffff",
           "title_size": "40",
           "button_bg_color": "rgba(0,0,0,0)",
-          "button_text_color": "#fff",
-          "button_bd_color": "#fff",
+          "button_text_color": "#ffffff",
+          "button_bd_color": "#ffffff",
           "button_bg_color_h": "rgba(0,0,0,0)",
-          "button_text_color_h": "#fff",
-          "button_bd_color_h": "#fff"
+          "button_text_color_h": "#ffffff",
+          "button_bd_color_h": "#ffffff"
         }
       },
       "navigation": {
@@ -1866,23 +1861,22 @@
           "1546921086313": {
             "type": "image",
             "settings": {
-              "image": "",
-              "title": "Loremous",
+              "image": "shopify://shop_images/desertsage__uphighchair.jpg",
+              "title": "Floor Mats",
               "link": ""
             }
           },
           "1546921152681": {
             "type": "image",
             "settings": {
-              "image": "",
-              "title": "Isablella",
-              "link": ""
+              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Restaurant Bags",
+              "link": "shopify://collections/restaurant-bags"
             }
           },
           "1546921217742": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -1890,7 +1884,6 @@
           "1546921256644": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Fermends",
               "link": ""
             }
@@ -1898,7 +1891,6 @@
           "1546921290795": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "conseqaur",
               "link": ""
             }
@@ -1906,7 +1898,6 @@
           "1546921315910": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -7333,6 +7324,46 @@
         ],
         "settings": {
           "enable_code": true
+        }
+      },
+      "lookbook-custom": {
+        "type": "lookbook-custom",
+        "blocks": {
+          "image_fyeJhf": {
+            "type": "image",
+            "settings": {
+              "dpl_slide_img": true,
+              "image_slide": "shopify://shop_images/Nikki_Phillis_Mealtime_With_Bub.jpg",
+              "size_image": "normal",
+              "lb_product_1": "dinnerware-set-desert-sage-brown-speckle",
+              "top_position_1": "10",
+              "left_position_1": "10",
+              "dots_color_1": "#ffffff",
+              "dots_bg_color_1": "#323232",
+              "dots_shadow_color_1": "#ffffff",
+              "lb_product_2": "all-you-tensil-set-of-2-stone-grey",
+              "top_position_2": "10",
+              "left_position_2": "10",
+              "dots_color_2": "#ffffff",
+              "dots_bg_color_2": "#323232",
+              "dots_shadow_color_2": "#ffffff",
+              "lb_product_3": "",
+              "top_position_3": "10",
+              "left_position_3": "10",
+              "dots_color_3": "#ffffff",
+              "dots_bg_color_3": "#323232",
+              "dots_shadow_color_3": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "image_fyeJhf"
+        ],
+        "settings": {
+          "display_product_detail_share": true,
+          "share_text": "Share",
+          "button": "",
+          "link": ""
         }
       }
     },
