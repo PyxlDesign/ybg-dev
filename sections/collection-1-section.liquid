@@ -108,4 +108,140 @@
   }
 
 
- 
+
+
+
+{% schema %}
+  {
+    "name": "Portfolio Page",
+    "class": "pfl-wrapper pfl-1-tmpl",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Page Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background Image"
+      },
+      {
+        "type": "color",
+        "id": "header_text_color",
+        "label": "Text Color"
+      },
+      {
+        "type": "textarea",
+        "id": "page_description",
+        "label": "Page Description"
+      }, {
+        "type": "header",
+        "content": "Filter"
+      }, {
+        "type": "checkbox",
+        "id": "display_filter",
+        "label": "Display Categories Filter",
+        "default": true
+      }, {
+        "type": "textarea",
+        "id": "filter_list",
+        "label": "List All Categories Here",
+        "info": "Use\";\" to separate each category"
+      }, {
+        "type": "header",
+        "content": "Style"
+      }, {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#fff"
+      }, {
+        "type": "color",
+        "id": "overlay_color",
+        "label": "Overlay Layer Background Color",
+        "default": "#232323"
+      }, {
+        "type": "text",
+        "id": "overlay_opacity",
+        "label": "Overlay Opacity",
+        "default": "0.7",
+        "info": "From 0 to 1"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "portfolio Gallery",
+        "type": "images",
+        "settings": [
+          {
+            "type": "text",
+            "id": "categories",
+            "label": "Categories"
+          },
+          {
+            "type": "image_picker",
+            "id": "thumbernail",
+            "label": "Thumbernail"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Habitasse Molateas"
+          },
+          {
+            "type": "textarea",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Dosuere an morci lobortis scelerisque blandit cosmopolis."
+          }, {
+            "type": "url",
+            "id": "link_to",
+            "label": "Link To",
+            "default": "/collections/all"
+          }, {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+          }, {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+          }, {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+          }, {
+            "type": "image_picker",
+            "id": "image_4",
+            "label": "Image 4"
+          }, {
+            "type": "image_picker",
+            "id": "image_5",
+            "label": "Image 5"
+          }, {
+            "type": "image_picker",
+            "id": "image_6",
+            "label": "Image 6"
+          }, {
+            "type": "image_picker",
+            "id": "image_7",
+            "label": "Image 7"
+          }, {
+            "type": "image_picker",
+            "id": "image_8",
+            "label": "Image 8"
+          }, {
+            "type": "image_picker",
+            "id": "image_9",
+            "label": "Image 9"
+          }, {
+            "type": "image_picker",
+            "id": "image_10",
+            "label": "Image 10"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
