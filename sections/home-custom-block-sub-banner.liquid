@@ -1,12 +1,3 @@
-{% assign s = section.settings %}
-{% assign background = s.background_color %}
-{% assign title = s.featured_collection_title %}
-{% assign caption = s.featured_collection_caption %}
-{% assign title_size = s.title_size %}
-{% assign caption_size = s.caption_size %}
-{% assign title_color = s.title_color %}
-{% assign caption_color = s.caption_color %}
-{% assign curved_bottom = s.curved_bottom %}
 {% if section.settings.display_sub_banner and section.blocks.size > 0 %}
 <div class="home-custom-block-sub-banner home-sub-banner sub-banner-{{ section.blocks.size }}{% unless section.settings.display_padding %} no-padding{% endunless %}" id="custom-sub-banner-{{section.id}}">
     <div class="{% if section.settings.layout == 'default' %}container{% elsif section.settings.layout == 'padd_60' %}container-padd60{% else %}container-fluid{% endif %}">
@@ -356,9 +347,6 @@
 </div>
 
 <style>
-      #shopify-section-{{ section.id }} .limited-edition{
-      background-color: {{background}}
-      }
     {% assign font_size_title =  section.settings.font_size_title %}
     {% assign margin_bottom =  section.settings.margin_bottom %}
 
@@ -388,7 +376,7 @@
             min-width: 190px;
         }      
         {% endunless %}
-    }	
+    }   
 
     {% unless section.settings.display_padding %}
     #custom-sub-banner-{{section.id}} .two-blocks.one_Image {
@@ -398,20 +386,12 @@
 </style>
 {% endif %}
 
-
 {% schema %}
     {
         "name": "Custom: Sub Banner 2",
         "class": "home-custom-block-sub-banner-sections",
         "max_blocks": 2,
         "settings": [
-            {
-                "type": "color",
-                "id": "background_color",
-                "label": "Background",
-                "default": "#F0E4D8",
-                "info": "This will set background color of the section"
-            },
             {
                 "type": "checkbox",
                 "id": "display_sub_banner",
@@ -515,14 +495,14 @@
                 "max": 100,
                 "step": 1,
                 "default": 0
-            }	
+            }   
         ],
 
         "blocks": [
             {
                 "type": "oneImage",
                 "name": "One Image",
-                "settings": [		  	
+                "settings": [           
                     {
                         "type": "image_picker",
                         "id": "image",
@@ -576,13 +556,13 @@
             {
                 "type": "threeImage",
                 "name": "Three Images",
-                "settings": [	
+                "settings": [   
                     {
                         "type" : "checkbox",
                         "id" : "reverse",
                         "label" : "Display Reverse",
                         "default" : false
-                    }, 	
+                    },  
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -659,7 +639,7 @@
             {
                 "type": "fiveImages",
                 "name": "Five Images",
-                "settings": [		  	
+                "settings": [           
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -819,3 +799,4 @@
         ]
     }
 {% endschema %}
+
