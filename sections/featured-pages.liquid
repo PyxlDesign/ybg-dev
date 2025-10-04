@@ -102,7 +102,7 @@
     },
     {
       "type": "text",
-      "id": "featured_collection_title",
+      "id": "featured_page_title",
       "label": "Title",
       "default": "Your Section title goes here",
       "info": "This will set the text for Heading"
@@ -129,7 +129,7 @@
     },
     {
       "type": "textarea",
-      "id": "featured_collection_caption",
+      "id": "featured_page_caption",
       "label": "Caption",
       "default": "Your caption goes here",
       "info": "This will set text for Caption"
@@ -163,28 +163,28 @@
   ],
   "blocks": [
     {
-      "type": "collection",
-      "name": "Collection",
+      "type": "page",
+      "name": "Page",
       "settings": [
         {
-          "type": "collection",
-          "id": "collection",
-          "label": "Collection",
+          "type": "page",
+          "id": "page",
+          "label": "page",
           "info": "This will be used as single block of the carousel"
         },
         {
           "type": "text",
-          "id": "collection_title",
+          "id": "page_title",
           "label": "Title",
-          "info": "This will replace default collection title"
+          "info": "This will replace default page title"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Featured Collections",
-      "category": "Collection"
+      "name": "Featured Pagess",
+      "category": "Page"
     }
   ]
 }
