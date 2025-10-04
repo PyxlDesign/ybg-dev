@@ -345,44 +345,33 @@
         {% endif %}
     </div>
 </div>
-
+{% assign s = section.settings %}
+{% assign background = s.background_color %}
+{% assign title = s.featured_collection_title %}
+{% assign caption = s.featured_collection_caption %}
+{% assign title_size = s.title_size %}
+{% assign caption_size = s.caption_size %}
+{% assign title_color = s.title_color %}
+{% assign caption_color = s.caption_color %}
+{% assign curved_bottom = s.curved_bottom %}
 <style>
-    {% assign font_size_title =  section.settings.font_size_title %}
-    {% assign margin_bottom =  section.settings.margin_bottom %}
+  #shopify-section-{{ section.id }} .limited-edition{
+      background-color: {{background}};
+  }
+  #shopify-section-{{ section.id }} .h1{
+      font-size: {{title_size}}px;
+      color: {{ title_color }};
+  }
+  #shopify-section-{{ section.id }} p{
+      font-size: {{caption_size}}px;
+      color: {{ caption_color }};
+  }
 
-    @media (max-width: 767px) {
-        #custom-sub-banner-{{section.id}}  {
-            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 1199px) {
-        #custom-sub-banner-{{section.id}}  {
-            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
-        }
-    }
-  
-    @media (min-width: 1200px) {
-        #custom-sub-banner-{{section.id}} .banner-title {
-            font-size: {{ font_size_title }};
-        }
-        
-        #custom-sub-banner-{{section.id}} {
-            margin-bottom: {{ margin_bottom }}px;
-        }
-
-        {% unless section.settings.display_padding %}
-        #custom-sub-banner-{{section.id}} .one_Image .btn-img-block {
-            min-width: 190px;
-        }      
-        {% endunless %}
-    }   
-
-    {% unless section.settings.display_padding %}
-    #custom-sub-banner-{{section.id}} .two-blocks.one_Image {
-        margin-bottom: 0;
-    }
-    {% endunless%}
+  @media (max-width:767px) {
+      #shopify-section-{{ section.id }} .h1 {
+          font-size: 32px !important;
+      }
+  }
 </style>
 {% endif %}
 
