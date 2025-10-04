@@ -7523,98 +7523,16 @@
       },
       "featured_collections_jFQtbH": {
         "type": "featured-collections",
-        "blocks": {
-          "collection_jGhYYA": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "vegan-leather-cushion-covers",
-              "collection_title": "IKEA Highchair Accessorites"
-            }
-          },
-          "collection_AXgYdB": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "highchair-placemats",
-              "collection_title": "Placemats"
-            }
-          },
-          "collection_i3AmEd": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "highchair-footrest",
-              "collection_title": "Footrests"
-            }
-          },
-          "collection_Mqkjqf": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "precut-leg-wraps",
-              "collection_title": "Leg Wraps"
-            }
-          }
-        },
-        "block_order": [
-          "collection_jGhYYA",
-          "collection_AXgYdB",
-          "collection_i3AmEd",
-          "collection_Mqkjqf"
-        ],
         "disabled": true,
         "settings": {
-          "background_color": "#fffcf8",
-          "featured_collection_title": "Imagine If<br>Aesthetic & Function<br>Got Married & Had A Baby",
+          "background_color": "#e4e8e1",
+          "featured_collection_title": "It's Like Aesthetic & Function Had A Baby",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "You'd get feeding products that support child development without sacrificing style",
+          "featured_collection_caption": "Feeding products that support child development without sacrificing style",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
-        }
-      },
-      "home_custom_sub_banner_3_eATQdf": {
-        "type": "home-custom-sub-banner-3",
-        "blocks": {
-          "image_NmkKqz": {
-            "type": "image",
-            "settings": {
-              "color": "#fff",
-              "title": "Solades",
-              "des": "",
-              "link_text": "Shop Now",
-              "link": ""
-            }
-          },
-          "image_aEExYW": {
-            "type": "image",
-            "settings": {
-              "color": "#fff",
-              "title": "Solades",
-              "des": "",
-              "link_text": "Shop Now",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "image_NmkKqz",
-          "image_aEExYW"
-        ],
-        "disabled": true,
-        "name": "Custom: Sub Banner 3",
-        "settings": {
-          "layout": "default",
-          "img_results_per_row": "2",
-          "widget_title": "Imagine If Aesthetic and Function Got Married and Had A Baby",
-          "widget_des": "You'd get feeding products that support child development without sacrificing style",
-          "title_style": "style_2",
-          "margin_bottom_mb": 0,
-          "margin_bottom_tab": 0,
-          "margin_bottom": 0,
-          "font_size_title": "30px"
         }
       },
       "home_custom_block_sub_banner_kPdkTh": {
@@ -7625,7 +7543,7 @@
             "settings": {
               "image": "shopify://shop_images/Golden_Doe_Lifestyle9_JKP_SS.jpg",
               "title": "",
-              "color_title": "#fff",
+              "color_title": "#ffffff",
               "button": "Shop IKEA Highchair Accessories",
               "link": "shopify://pages/ikea-highchair-accessories",
               "bg_button": "#fffcf8",
@@ -7638,7 +7556,7 @@
             "settings": {
               "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
               "title": "",
-              "color_title": "#fff",
+              "color_title": "#ffffff",
               "button": "Shop Feeding Essentials",
               "link": "shopify://pages/feeding-essentials",
               "bg_button": "#fffcf8",
@@ -7656,14 +7574,14 @@
         "settings": {
           "display_sub_banner": true,
           "layout": "default",
-          "title": "Imagine If Aesthetic & Function<br>Got Married & Had A Baby",
+          "title": "",
           "title_style": "style_2",
           "desc": "",
           "font_size_title": "16px",
           "display_padding": true,
           "block_des": "",
-          "margin_bottom_mb": 20,
-          "margin_bottom_tab": 20,
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
           "margin_bottom": 0
         }
       }
@@ -7685,8 +7603,7 @@
       "1629747261e1ca35b0",
       "judgeme_review_4jtgqG",
       "1620417742f3c060ce",
-      "162990068233f26fb0",
-      "home_custom_sub_banner_3_eATQdf"
+      "162990068233f26fb0"
     ],
     "blocks": {
       "18228966181090706294": {
