@@ -1,0 +1,191 @@
+{% assign s = section.settings %}
+{% assign background = s.background_color %}
+{% assign title = s.featured_collection_title %}
+{% assign caption = s.featured_collection_caption %}
+{% assign title_size = s.title_size %}
+{% assign caption_size = s.caption_size %}
+{% assign title_color = s.title_color %}
+{% assign caption_color = s.caption_color %}
+{% assign curved_bottom = s.curved_bottom %}
+<style>
+  #shopify-section-{{ section.id }} .limited-edition{
+      background-color: {{background}};
+  }
+  #shopify-section-{{ section.id }} .h1{
+      font-size: {{title_size}}px;
+      color: {{ title_color }};
+  }
+  #shopify-section-{{ section.id }} p{
+      font-size: {{caption_size}}px;
+      color: {{ caption_color }};
+  }
+
+  @media (max-width:767px) {
+      #shopify-section-{{ section.id }} .h1 {
+          font-size: 32px !important;
+      }
+  }
+</style>
+<section class="limited-edition text-center">
+  <div class="container">
+    <div class="limited-edition__title">
+      {% if title != blank %}
+        <h2 class="h1">
+          {{ title }}
+        </h2>
+      {% endif %}
+      {% if caption != blank %}
+        <p class="copy-lg">{{ caption }}</p>
+      {% endif %}
+    </div>
+    <div class="carousel-wrapper">
+      {% if section.blocks.size > 0 %}
+        <div
+          class="carousel-init"
+          data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false, "watchCSS": true }'
+        >
+          {% for block in section.blocks %}
+            {% assign bs = block.settings %}
+            {% assign collection_title = bs.collection_title %}
+            {% assign collection = collections[bs.collection] %}
+            {% assign col_url = collection.url %}
+            {% if collection.image %}
+              {% assign image = collection.image %}
+            {% else %}
+              {% assign image = collection.products.first.featured_media.preview_image %}
+            {% endif %}
+            {% assign title = collection.title %}
+            <div class="carousel-cell">
+              <div class="content-block">
+                <div class="image-wrapper">
+                  <a href="{{ col_url }}">
+                    {{
+                      image
+                      | image_url: width: 300, height: 300
+                      | image_tag: class: 'rounded-circle', width: '300', height: '300', loading: 'lazy'
+                    }}
+                  </a>
+                </div>
+                <div class="title-block">
+                  <h3>
+                    <a href="{{ col_url }}">
+                      {%- if collection_title == blank %}{{ title }} {% else %} {{ collection_title }} {% endif -%}
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% if curved_bottom %}
+  <div class="curve-bg"></div>
+{% endif %}
+{% schema %}
+{
+  "name": "Featured Collections",
+  "class": "featured-collections-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F0E4D8",
+      "info": "This will set background color of the section"
+    },
+    {
+      "type": "header",
+      "content": "Title Settings"
+    },
+    {
+      "type": "text",
+      "id": "featured_collection_title",
+      "label": "Title",
+      "default": "Your Section title goes here",
+      "info": "This will set the text for Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#fff",
+      "info": "This will set color to Title"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title Font Size",
+      "min": 40,
+      "max": 100,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Caption settings"
+    },
+    {
+      "type": "textarea",
+      "id": "featured_collection_caption",
+      "label": "Caption",
+      "default": "Your caption goes here",
+      "info": "This will set text for Caption"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#fff",
+      "info": "This will set color to caption"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "label": "Caption Font Size",
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "header",
+      "content": "Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "curved_bottom",
+      "label": "Enable Curve On Bottom",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "This will be used as single block of the carousel"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Title",
+          "info": "This will replace default collection title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collections",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
