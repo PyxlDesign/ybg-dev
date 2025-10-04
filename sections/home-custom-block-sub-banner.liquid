@@ -347,50 +347,45 @@
 </div>
 
 <style>
-    {% assign font_size_title =  section.settings.font_size_title %}
-    {% assign margin_bottom =  section.settings.margin_bottom %}
+  {% assign margin_bottom =  section.settings.margin_bottom %}
 
+    {% if section.settings.display_padding %}
+    #home-spotlight-slider-{{ section.id }} {
+        padding: 50px 0 90px;
+    }
+
+    @media (max-width: 1199px) and (min-width: 768px) {
         #home-spotlight-slider-{{ section.id }} {
-            background-color: {{ section.settings.bg_color }};    
+            padding: 40px 0 70px;
         }
-
-        #home-spotlight-slider-{{ section.id }} .widget-title .box-title .title {
-            background-color: {{ section.settings.bg_color }};    
-        }
+    }
 
     @media (max-width: 767px) {
-        #custom-sub-banner-{{section.id}}  {
+        #home-spotlight-slider-{{ section.id }} {
+            padding: 30px 0 50px;
+        }
+    }
+    {% endif %}
+  
+    #home-spotlight-slider-{{ section.id }} {
+        background-color: {{ section.settings.bg_color }};    
+    }
+
+    #home-spotlight-slider-{{ section.id }} .widget-title .box-title .title {
+        background-color: {{ section.settings.bg_color }};    
+    }
+
+    @media (max-width: 1199px) {
+        #home-spotlight-slider-{{ section.id }} {
             margin-bottom: {{ section.settings.margin_bottom_mb }}px;
         }
     }
-
-    @media (min-width: 768px) and (max-width: 1199px) {
-        #custom-sub-banner-{{section.id}}  {
-            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
-        }
-    }
-  
+    
     @media (min-width: 1200px) {
-        #custom-sub-banner-{{section.id}} .banner-title {
-            font-size: {{ font_size_title }};
+        #home-spotlight-slider-{{ section.id }} {
+        margin-bottom: {{ margin_bottom }}px;
         }
-        
-        #custom-sub-banner-{{section.id}} {
-            margin-bottom: {{ margin_bottom }}px;
-        }
-
-        {% unless section.settings.display_padding %}
-        #custom-sub-banner-{{section.id}} .one_Image .btn-img-block {
-            min-width: 190px;
-        }      
-        {% endunless %}
-    }   
-
-    {% unless section.settings.display_padding %}
-    #custom-sub-banner-{{section.id}} .two-blocks.one_Image {
-        margin-bottom: 0;
-    }
-    {% endunless%}
+    }	
 </style>
 {% endif %}
 
