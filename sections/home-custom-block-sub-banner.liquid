@@ -1,3 +1,12 @@
+{% assign s = section.settings %}
+{% assign background = s.background_color %}
+{% assign title = s.featured_collection_title %}
+{% assign caption = s.featured_collection_caption %}
+{% assign title_size = s.title_size %}
+{% assign caption_size = s.caption_size %}
+{% assign title_color = s.title_color %}
+{% assign caption_color = s.caption_color %}
+{% assign curved_bottom = s.curved_bottom %}
 {% if section.settings.display_sub_banner and section.blocks.size > 0 %}
 <div class="home-custom-block-sub-banner home-sub-banner sub-banner-{{ section.blocks.size }}{% unless section.settings.display_padding %} no-padding{% endunless %}" id="custom-sub-banner-{{section.id}}">
     <div class="{% if section.settings.layout == 'default' %}container{% elsif section.settings.layout == 'padd_60' %}container-padd60{% else %}container-fluid{% endif %}">
@@ -345,7 +354,6 @@
         {% endif %}
     </div>
 </div>
-
 <style>
   #shopify-section-{{ section.id }} .limited-edition{
       background-color: {{background}};
