@@ -3612,7 +3612,6 @@
         "blocks": {
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/ybgg.jpg"
             }
@@ -3677,7 +3676,6 @@
           "e6a8ace4-b50c-4489-9801-42b37a06e710",
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0"
         ],
-        "disabled": true,
         "settings": {
           "heading": "Joyful and Innovative Mealtime Essentials",
           "paragraph": "NEW",
