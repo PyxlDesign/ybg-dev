@@ -3618,7 +3618,6 @@
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/brown_butter_full.jpg"
             }
