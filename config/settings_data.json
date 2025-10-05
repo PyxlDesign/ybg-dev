@@ -7618,6 +7618,7 @@
           "image_FMiBEB",
           "image_6GrGLU"
         ],
+        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
