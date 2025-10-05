@@ -7582,6 +7582,53 @@
           "margin_bottom_tab": 0,
           "margin_bottom": 0
         }
+      },
+      "home_spotlight_slider_m9tdJN": {
+        "type": "home-spotlight-slider",
+        "blocks": {
+          "image_6L6XtP": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG4-2_KRK_3f99ecf4-811c-4c71-abf5-4d8a99554368.jpg",
+              "title": "",
+              "link_text": "Shop Sage",
+              "link": ""
+            }
+          },
+          "image_FMiBEB": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
+              "title": "",
+              "link_text": "Shop Doe",
+              "link": ""
+            }
+          },
+          "image_6GrGLU": {
+            "type": "image",
+            "settings": {
+              "title": "Lorem De Dorus",
+              "link_text": "Shop Now",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_6L6XtP",
+          "image_FMiBEB",
+          "image_6GrGLU"
+        ],
+        "name": "Spotlight Slider",
+        "settings": {
+          "layout": "default",
+          "display_padding": true,
+          "bg_color": "#e4e8e1",
+          "spotlight_block_title": "Shop By Color",
+          "spotlight_block_des": "",
+          "title_style": "style_2",
+          "margin_bottom_mb": 0,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
@@ -7594,6 +7641,7 @@
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
       "1620412486d542719c",
+      "home_spotlight_slider_m9tdJN",
       "16204173073f912002",
       "featured_collections_6FqBwV",
       "1620414500ccfac22f",
