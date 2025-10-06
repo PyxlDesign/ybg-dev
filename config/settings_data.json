@@ -7541,6 +7541,7 @@
           },
           "image_6GrGLU": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lorem De Dorus",
               "link_text": "Shop Now",
@@ -7549,6 +7550,7 @@
           },
           "image_Bbqx8i": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lorem De Dorus",
               "link_text": "Shop Now",
@@ -7764,6 +7766,7 @@
           "one_image_xaTtV3",
           "two_image_gWrDjp"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 1",
         "settings": {
           "font_size_title": "20px",
@@ -7796,7 +7799,6 @@
           },
           "image_EpDNpz": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/desertsage__uphighchair.jpg",
               "title": "Editor’s Pick",
@@ -7806,7 +7808,6 @@
           },
           "image_mHEpF7": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/AllYou-TensilAmazonImages_DesertSage7.jpg",
               "title": "Editor’s Pick",
