@@ -7503,7 +7503,6 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7563,7 +7562,6 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
-        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7615,7 +7613,6 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7690,7 +7687,6 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7701,48 +7697,174 @@
           "margin_bottom": 0
         }
       },
-      "home_custom_block_spotlight_2_HMgYqr": {
-        "type": "home-custom-block-spotlight-2",
+      "home_custom_sub_banner_EzmRXD": {
+        "type": "home-custom-sub-banner",
         "blocks": {
-          "image_yDbLzT": {
+          "two_image_BzdXyq": {
+            "type": "twoImage",
+            "settings": {
+              "title_1": "Loremous",
+              "color_1": "#fff",
+              "button_1": "SHOP NOW",
+              "link_1": "",
+              "bg_button_1": "#fff",
+              "border_button_1": "#fff",
+              "color_button_1": "#232323",
+              "title_2": "Cosmopolis",
+              "color_2": "#fff",
+              "button_2": "",
+              "link_2": "",
+              "bg_button_2": "#fff",
+              "border_button_2": "#fff",
+              "color_button_2": "#232323"
+            }
+          },
+          "one_image_xaTtV3": {
+            "type": "oneImage",
+            "settings": {
+              "title": "Special Offers",
+              "des": "Sale up to 60% off on selected items. End ins:",
+              "countdown": "2020/01/7 0:0:00",
+              "color": "#fff",
+              "link": "",
+              "title_2": "Special Offers",
+              "des_2": "Sale up to 60% off on selected items. End ins:",
+              "countdown_2": "2020/01/7 0:0:00",
+              "color_2": "#fff",
+              "link_2": ""
+            }
+          },
+          "two_image_gWrDjp": {
+            "type": "twoImage",
+            "disabled": true,
+            "settings": {
+              "title_1": "Loremous",
+              "color_1": "#fff",
+              "button_1": "",
+              "link_1": "",
+              "bg_button_1": "#fff",
+              "border_button_1": "#fff",
+              "color_button_1": "#232323",
+              "title_2": "Cosmopolis",
+              "color_2": "#fff",
+              "button_2": "",
+              "link_2": "",
+              "bg_button_2": "#fff",
+              "border_button_2": "#fff",
+              "color_button_2": "#232323"
+            }
+          }
+        },
+        "block_order": [
+          "two_image_BzdXyq",
+          "one_image_xaTtV3",
+          "two_image_gWrDjp"
+        ],
+        "name": "Custom: Sub Banner 1",
+        "settings": {
+          "font_size_title": "20px",
+          "block_des": "",
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 30
+        }
+      },
+      "home_sub_banner_bA77ra": {
+        "type": "home-sub-banner",
+        "blocks": {
+          "image_J9ifBN": {
             "type": "image",
             "settings": {
-              "title": "Lorem De Dorus",
-              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
+              "title": "Editor’s Pick",
+              "color_title": "#fff",
               "link": ""
             }
           },
-          "image_7EHptb": {
+          "image_wzCaHp": {
             "type": "image",
             "settings": {
-              "title": "Lorem De Dorus",
-              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
+              "title": "Editor’s Pick",
+              "color_title": "#fff",
               "link": ""
             }
           },
-          "image_nWKcP4": {
+          "image_EpDNpz": {
             "type": "image",
             "settings": {
-              "title": "Lorem De Dorus",
-              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "image": "shopify://shop_images/desertsage__uphighchair.jpg",
+              "title": "Editor’s Pick",
+              "color_title": "#fff",
+              "link": ""
+            }
+          },
+          "image_mHEpF7": {
+            "type": "image",
+            "settings": {
+              "title": "Editor’s Pick",
+              "color_title": "#ffffff",
               "link": ""
             }
           }
         },
         "block_order": [
-          "image_yDbLzT",
-          "image_7EHptb",
-          "image_nWKcP4"
+          "image_J9ifBN",
+          "image_wzCaHp",
+          "image_EpDNpz",
+          "image_mHEpF7"
         ],
-        "disabled": true,
-        "name": "Custom Block: Spotlight 2",
+        "name": "Sub Banner",
         "settings": {
+          "display_sub_banner": true,
           "layout": "default",
-          "display_padding": false,
-          "spotlight_block_title": "#Featured On Ella",
-          "spotlight_block_des": "",
-          "title_style": "style_1",
-          "margin_bottom": 0
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0,
+          "font_size_title": "16px",
+          "display_padding": true
+        }
+      },
+      "home_product_tabs_x4e6aY": {
+        "type": "home-product-tabs",
+        "blocks": {
+          "product_tabs_wKrm69": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Restaurant Kit",
+              "collection": "restaurant-bags"
+            }
+          },
+          "product_tabs_g8dEwV": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "IKEA HIGHCHAIR",
+              "collection": "all-highchair-accessories"
+            }
+          },
+          "product_tabs_GrCnaw": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Dinnerware",
+              "collection": "dinnerware"
+            }
+          }
+        },
+        "block_order": [
+          "product_tabs_wKrm69",
+          "product_tabs_g8dEwV",
+          "product_tabs_GrCnaw"
+        ],
+        "name": "Product Tabs",
+        "settings": {
+          "product_tabs_title": "New Arrivals",
+          "product_tabs_des": "",
+          "title_style": "style_2",
+          "collection_results_per_row": "3",
+          "tabs_style": "style_1",
+          "margin_bottom_mb": 40,
+          "margin_bottom_tab": 40,
+          "margin_bottom": 10
         }
       }
     },
@@ -7761,11 +7883,13 @@
       "judgeme_review_4jtgqG",
       "1620417742f3c060ce",
       "162990068233f26fb0",
+      "home_custom_block_sub_banner_kPdkTh",
       "home_spotlight_slider_m9tdJN",
       "home_custom_block_spotlight_VaMqHz",
-      "home_custom_block_sub_banner_kPdkTh",
       "home_custom_block_images_HbDtkF",
-      "home_custom_block_spotlight_2_HMgYqr"
+      "home_custom_sub_banner_EzmRXD",
+      "home_sub_banner_bA77ra",
+      "home_product_tabs_x4e6aY"
     ],
     "blocks": {
       "18228966181090706294": {
