@@ -7802,6 +7802,7 @@
           "image_mHEpF7": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/AllYou-TensilAmazonImages_DesertSage7.jpg",
               "title": "Editor’s Pick",
               "color_title": "#ffffff",
               "link": ""
