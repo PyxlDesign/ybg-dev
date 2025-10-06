@@ -8,6 +8,7 @@
   {% when '5' %}
 	{%- assign row = 'five-items' -%}
 {% endcase %}
+{% assign pad_top = s.pad_top %}
 
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
@@ -51,7 +52,8 @@
 </div>
 
 <style>
-  {% assign margin_bottom =  section.settings.margin_bottom %} 
+<section class="our-featured{% if pad_top == true %} pad-top{% endif %}">
+    {% assign margin_bottom =  section.settings.margin_bottom %} 
 
     @media (max-width: 767px) {
         #product-tabs-{{section.id}} {
@@ -77,6 +79,12 @@
     "name": "Product Tabs",
 	"class": "home-product-tabs-sections",
     "settings": [  
+        {
+            "type": "checkbox",
+            "id": "pad_top",
+            "label": "Add padding top",
+            "default": false
+        },
         {
             "type": "header",
             "content": "Header"
