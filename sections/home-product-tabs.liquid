@@ -9,7 +9,28 @@
   {% when '5' %}
 	{%- assign row = 'five-items' -%}
 {% endcase %}
+<style>
+    {% assign margin_bottom =  section.settings.margin_bottom %} 
 
+    @media (max-width: 767px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ margin_bottom }}px;
+        }
+    }	
+</style>
+<section class="home-product-tabs{% if pad_top == true %} pad-top{% endif %}">
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
         {% if section.settings.product_tabs_title != blank %}
@@ -50,29 +71,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    {% assign margin_bottom =  section.settings.margin_bottom %} 
-
-    @media (max-width: 767px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 1199px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ margin_bottom }}px;
-        }
-    }	
-</style>
-<section class="home-product-tabs{% if pad_top == true %} pad-top{% endif %}">
 
 {% schema %}
   {
