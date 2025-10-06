@@ -7875,51 +7875,77 @@
           "margin_bottom": 10
         }
       },
-      "featured_product_custom_bVjPF9": {
+      "featured_product_custom_UAVq7P": {
         "type": "featured-product-custom",
         "blocks": {
-          "heading_words_AnTY7h": {
+          "heading_words_ECA8EY": {
             "type": "heading_words",
             "settings": {
-              "title": "calmer."
+              "title": "cuter."
             }
           },
-          "heading_words_yXheC9": {
+          "heading_words_3KDzXX": {
             "type": "heading_words",
             "settings": {
               "title": "safer."
             }
           },
-          "heading_words_pyQxcw": {
+          "heading_words_xdye6A": {
             "type": "heading_words",
             "settings": {
-              "title": "happier."
+              "title": "unique."
             }
           },
-          "product_images_9e8EJd": {
+          "product_images_MUW4EG": {
+            "type": "product_images",
+            "settings": {
+              "color_swatch": "#bac8b6",
+              "product_image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg"
+            }
+          },
+          "product_images_xa66Hq": {
             "type": "product_images",
             "settings": {
               "color_swatch": "#637175",
-              "product_image": "shopify://shop_images/untitled-168_JKP_SS.jpg"
+              "product_image": "shopify://shop_images/Nikki_Phillis_film25.jpg"
             }
           },
-          "product_images_qdK4Ey": {
+          "product_images_pHheGK": {
             "type": "product_images",
             "settings": {
+              "color_swatch": "#df9764",
+              "product_image": "shopify://shop_images/legstogether.jpg"
+            }
+          },
+          "product_images_jRhkyc": {
+            "type": "product_images",
+            "disabled": true,
+            "settings": {
               "color_swatch": "#d79a80",
-              "product_image": "shopify://shop_images/YBG-14_KRK_smaller.jpg"
+              "product_image": "shopify://shop_images/home-004.png"
+            }
+          },
+          "product_images_aUUXV8": {
+            "type": "product_images",
+            "disabled": true,
+            "settings": {
+              "color_swatch": "#e7b99d",
+              "product_image": "shopify://shop_images/home-002.png"
             }
           }
         },
         "block_order": [
-          "heading_words_AnTY7h",
-          "heading_words_yXheC9",
-          "heading_words_pyQxcw",
-          "product_images_9e8EJd",
-          "product_images_qdK4Ey"
+          "heading_words_ECA8EY",
+          "heading_words_3KDzXX",
+          "heading_words_xdye6A",
+          "product_images_MUW4EG",
+          "product_images_xa66Hq",
+          "product_images_pHheGK",
+          "product_images_jRhkyc",
+          "product_images_aUUXV8"
         ],
         "settings": {
-          "section_header": "Make meals",
+          "section_header": "Make it",
           "paragraph": "Safe highchair positioning done with style.<br>Mix and match our accessories to create over 50,000 possible combinations!",
           "btn_text": "CUSTOMIZE",
           "btn_url": "shopify://pages/customizer"
@@ -7948,7 +7974,7 @@
       "home_custom_sub_banner_EzmRXD",
       "home_sub_banner_bA77ra",
       "home_product_tabs_x4e6aY",
-      "featured_product_custom_bVjPF9"
+      "featured_product_custom_UAVq7P"
     ],
     "blocks": {
       "18228966181090706294": {
