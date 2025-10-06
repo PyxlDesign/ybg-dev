@@ -7690,6 +7690,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7697,6 +7698,50 @@
           "bg_color": "#e4e8e1",
           "margin_bottom_mb": 0,
           "margin_bottom_tab": 0,
+          "margin_bottom": 0
+        }
+      },
+      "home_custom_block_spotlight_2_HMgYqr": {
+        "type": "home-custom-block-spotlight-2",
+        "blocks": {
+          "image_yDbLzT": {
+            "type": "image",
+            "settings": {
+              "title": "Lorem De Dorus",
+              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "link": ""
+            }
+          },
+          "image_7EHptb": {
+            "type": "image",
+            "settings": {
+              "title": "Lorem De Dorus",
+              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "link": ""
+            }
+          },
+          "image_nWKcP4": {
+            "type": "image",
+            "settings": {
+              "title": "Lorem De Dorus",
+              "sub_title": "NULLAM DAPIBUS LIBEROS",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_yDbLzT",
+          "image_7EHptb",
+          "image_nWKcP4"
+        ],
+        "disabled": true,
+        "name": "Custom Block: Spotlight 2",
+        "settings": {
+          "layout": "default",
+          "display_padding": false,
+          "spotlight_block_title": "#Featured On Ella",
+          "spotlight_block_des": "",
+          "title_style": "style_1",
           "margin_bottom": 0
         }
       }
@@ -7719,7 +7764,8 @@
       "home_spotlight_slider_m9tdJN",
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_sub_banner_kPdkTh",
-      "home_custom_block_images_HbDtkF"
+      "home_custom_block_images_HbDtkF",
+      "home_custom_block_spotlight_2_HMgYqr"
     ],
     "blocks": {
       "18228966181090706294": {
