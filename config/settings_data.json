@@ -7874,6 +7874,40 @@
           "margin_bottom_tab": 40,
           "margin_bottom": 10
         }
+      },
+      "featured_product_custom_bVjPF9": {
+        "type": "featured-product-custom",
+        "blocks": {
+          "heading_words_AnTY7h": {
+            "type": "heading_words",
+            "settings": {
+              "title": "calmer."
+            }
+          },
+          "heading_words_yXheC9": {
+            "type": "heading_words",
+            "settings": {
+              "title": "safer."
+            }
+          },
+          "heading_words_pyQxcw": {
+            "type": "heading_words",
+            "settings": {
+              "title": "happier."
+            }
+          }
+        },
+        "block_order": [
+          "heading_words_AnTY7h",
+          "heading_words_yXheC9",
+          "heading_words_pyQxcw"
+        ],
+        "settings": {
+          "section_header": "Make meals",
+          "paragraph": "Safe highchair positioning done with style.<br>Mix and match our accessories to create over 50,000 possible combinations!",
+          "btn_text": "",
+          "btn_url": "shopify://pages/customizer"
+        }
       }
     },
     "content_for_index": [
@@ -7897,7 +7931,8 @@
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
       "home_sub_banner_bA77ra",
-      "home_product_tabs_x4e6aY"
+      "home_product_tabs_x4e6aY",
+      "featured_product_custom_bVjPF9"
     ],
     "blocks": {
       "18228966181090706294": {
