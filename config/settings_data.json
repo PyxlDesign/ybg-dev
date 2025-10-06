@@ -7835,13 +7835,6 @@
       "home_product_tabs_x4e6aY": {
         "type": "home-product-tabs",
         "blocks": {
-          "product_tabs_wKrm69": {
-            "type": "ProductTabs",
-            "settings": {
-              "title": "Restaurant Kit",
-              "collection": "restaurant-bags"
-            }
-          },
           "product_tabs_g8dEwV": {
             "type": "ProductTabs",
             "settings": {
@@ -7855,16 +7848,23 @@
               "title": "Dinnerware",
               "collection": "dinnerware"
             }
+          },
+          "product_tabs_wKrm69": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Restaurant Kit",
+              "collection": "restaurant-bags"
+            }
           }
         },
         "block_order": [
-          "product_tabs_wKrm69",
           "product_tabs_g8dEwV",
-          "product_tabs_GrCnaw"
+          "product_tabs_GrCnaw",
+          "product_tabs_wKrm69"
         ],
         "name": "Product Tabs",
         "settings": {
-          "product_tabs_title": "New Arrivals",
+          "product_tabs_title": "Our Favorites",
           "product_tabs_des": "",
           "title_style": "style_2",
           "collection_results_per_row": "3",
