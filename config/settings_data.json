@@ -7867,9 +7867,9 @@
           "product_tabs_GrCnaw",
           "product_tabs_wKrm69"
         ],
-        "disabled": true,
         "name": "Product Tabs",
         "settings": {
+          "pad_top": true,
           "product_tabs_title": "Our Favorites",
           "product_tabs_des": "",
           "title_style": "style_2",
