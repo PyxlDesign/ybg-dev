@@ -7262,56 +7262,6 @@
           "curved_bottom": false
         }
       },
-      "featured_collections_6FqBwV": {
-        "type": "featured-collections",
-        "blocks": {
-          "collection_bgWB9M": {
-            "type": "collection",
-            "settings": {
-              "collection": "restaurant-bags",
-              "collection_title": "Restaurant Essentials Kit"
-            }
-          },
-          "collection_nNGYdx": {
-            "type": "collection",
-            "settings": {
-              "collection": "dinnerware-bundles",
-              "collection_title": "Dinnerware Starter Set"
-            }
-          },
-          "collection_DF9rTM": {
-            "type": "collection",
-            "settings": {
-              "collection": "dinnerware-4-pack",
-              "collection_title": "Dinnerware 4-Packs"
-            }
-          },
-          "collection_eTyBUH": {
-            "type": "collection",
-            "settings": {
-              "collection": "bib-3-packs",
-              "collection_title": "Bib 3-Packs"
-            }
-          }
-        },
-        "block_order": [
-          "collection_bgWB9M",
-          "collection_nNGYdx",
-          "collection_DF9rTM",
-          "collection_eTyBUH"
-        ],
-        "disabled": true,
-        "settings": {
-          "background_color": "#f1e3d7",
-          "featured_collection_title": "Bundle and Save",
-          "title_color": "#30494d",
-          "title_size": 60,
-          "featured_collection_caption": "Get the best value with these curated sets",
-          "caption_color": "#30494d",
-          "caption_size": 22,
-          "curved_bottom": false
-        }
-      },
       "judgeme_review_4jtgqG": {
         "type": "judgeme-review",
         "custom_css": [
@@ -7519,20 +7469,6 @@
           "overlay_opacity": "0.7"
         }
       },
-      "featured_collections_jFQtbH": {
-        "type": "featured-collections",
-        "disabled": true,
-        "settings": {
-          "background_color": "#e4e8e1",
-          "featured_collection_title": "It's Like Aesthetic & Function Had A Baby",
-          "title_color": "#30494d",
-          "title_size": 60,
-          "featured_collection_caption": "Feeding products that support child development without sacrificing style",
-          "caption_color": "#30494d",
-          "caption_size": 22,
-          "curved_bottom": false
-        }
-      },
       "home_custom_block_sub_banner_kPdkTh": {
         "type": "home-custom-block-sub-banner",
         "blocks": {
@@ -7618,7 +7554,6 @@
           "image_FMiBEB",
           "image_6GrGLU"
         ],
-        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7630,27 +7565,76 @@
           "margin_bottom_mb": 0,
           "margin_bottom": 0
         }
+      },
+      "home_custom_block_spotlight_VaMqHz": {
+        "type": "home-custom-block-spotlight",
+        "blocks": {
+          "image_dhUfL7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          },
+          "image_VQeKym": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          },
+          "image_78E6rU": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/StoneGrey__uphighchair.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_dhUfL7",
+          "image_VQeKym",
+          "image_78E6rU"
+        ],
+        "name": "Custom Block: Spotlight",
+        "settings": {
+          "layout": "default",
+          "margin_bottom_mb": 25,
+          "margin_bottom_tab": 35,
+          "margin_bottom": 35,
+          "spotlight_block_title": "Collections",
+          "spotlight_block_des": "",
+          "title_style": "style_2"
+        }
       }
     },
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
       "162041756141531609",
-      "featured_collections_jFQtbH",
       "home_custom_block_sub_banner_kPdkTh",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
       "1620412486d542719c",
-      "home_spotlight_slider_m9tdJN",
       "16204173073f912002",
-      "featured_collections_6FqBwV",
       "1620414500ccfac22f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "judgeme_review_4jtgqG",
       "1620417742f3c060ce",
-      "162990068233f26fb0"
+      "162990068233f26fb0",
+      "home_spotlight_slider_m9tdJN",
+      "home_custom_block_spotlight_VaMqHz"
     ],
     "blocks": {
       "18228966181090706294": {
