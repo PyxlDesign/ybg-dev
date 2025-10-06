@@ -7503,6 +7503,7 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7564,6 +7565,7 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
+        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7615,6 +7617,7 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7689,6 +7692,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7821,6 +7825,7 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
+        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
@@ -7862,6 +7867,7 @@
           "product_tabs_GrCnaw",
           "product_tabs_wKrm69"
         ],
+        "disabled": true,
         "name": "Product Tabs",
         "settings": {
           "product_tabs_title": "Our Favorites",
@@ -7876,6 +7882,7 @@
       },
       "home_featured_products_rLjPFV": {
         "type": "home-featured-products",
+        "disabled": true,
         "name": "Featured Products",
         "settings": {
           "display_banner": true,
