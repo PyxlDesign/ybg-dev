@@ -7503,6 +7503,7 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7625,6 +7626,79 @@
           "spotlight_block_des": "",
           "title_style": "style_2"
         }
+      },
+      "home_custom_block_images_HbDtkF": {
+        "type": "home-custom-block-images",
+        "blocks": {
+          "image_6RfBhQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Brown_Speckle_Lifestyle2_JKP_SS.jpg",
+              "color_content": "#fff",
+              "sub_heading": "New Arrivals",
+              "font_size_sub_heading": "13px",
+              "heading": "Da Scarvéro",
+              "font_size_heading": "30px",
+              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+              "font_size_des": "12px",
+              "button": "Shop Now",
+              "link": "",
+              "bg_button": "#fff",
+              "border_button": "#fff",
+              "color_button": "#232323"
+            }
+          },
+          "image_YKB8BH": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4239.jpg",
+              "color_content": "#fff",
+              "sub_heading": "New Arrivals",
+              "font_size_sub_heading": "13px",
+              "heading": "Da Scarvéro",
+              "font_size_heading": "30px",
+              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+              "font_size_des": "12px",
+              "button": "Shop Now",
+              "link": "",
+              "bg_button": "#fff",
+              "border_button": "#fff",
+              "color_button": "#232323"
+            }
+          },
+          "image_CNhiYE": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
+              "color_content": "#fff",
+              "sub_heading": "New Arrivals",
+              "font_size_sub_heading": "13px",
+              "heading": "Da Scarvéro",
+              "font_size_heading": "30px",
+              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+              "font_size_des": "12px",
+              "button": "Shop Now",
+              "link": "",
+              "bg_button": "#fff",
+              "border_button": "#fff",
+              "color_button": "#232323"
+            }
+          }
+        },
+        "block_order": [
+          "image_6RfBhQ",
+          "image_YKB8BH",
+          "image_CNhiYE"
+        ],
+        "name": "Custom Block: Spotlight 1",
+        "settings": {
+          "layout": "default",
+          "display_padding": true,
+          "bg_color": "#f8f8f8",
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
@@ -7644,7 +7718,8 @@
       "162990068233f26fb0",
       "home_spotlight_slider_m9tdJN",
       "home_custom_block_spotlight_VaMqHz",
-      "home_custom_block_sub_banner_kPdkTh"
+      "home_custom_block_sub_banner_kPdkTh",
+      "home_custom_block_images_HbDtkF"
     ],
     "blocks": {
       "18228966181090706294": {
