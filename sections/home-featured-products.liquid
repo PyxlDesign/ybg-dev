@@ -120,7 +120,7 @@
           <div class="products-grid row {{ row }}" data-row="{{ section.settings.collection_results_per_row1 }}">
             {% for product in collections[section.settings.show_slider_featured_collection].products limit:section.settings.slider_featured_limit_all %}
             <div class="grid-item {{ grid_item_width }}{% if settings.product_image_border %} grid-item-border{% endif %} ">
-              {% render 'product-grid-item' with product as product %}
+              {% render 'product-grid-item-2' with product as product %}
             </div>
 
             {% else %}
