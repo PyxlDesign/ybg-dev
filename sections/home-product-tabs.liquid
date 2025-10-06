@@ -1,3 +1,4 @@
+{% assign pad_top = s.pad_top %}
 {% case section.settings.collection_results_per_row %}
   {% when '2' %}
 	{%- assign row = 'two-items' -%}
@@ -8,7 +9,6 @@
   {% when '5' %}
 	{%- assign row = 'five-items' -%}
 {% endcase %}
-{% assign pad_top = s.pad_top %}
 
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
@@ -52,7 +52,7 @@
 </div>
 
 <style>
-<section class="product-tabs{% if pad_top == true %} pad-top{% endif %}">
+<section class="home-product-tabs{% if pad_top == true %} pad-top{% endif %}">
     {% assign margin_bottom =  section.settings.margin_bottom %} 
 
     @media (max-width: 767px) {
