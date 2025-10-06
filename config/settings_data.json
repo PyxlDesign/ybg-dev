@@ -7874,6 +7874,38 @@
           "margin_bottom_tab": 40,
           "margin_bottom": 10
         }
+      },
+      "home_featured_products_rLjPFV": {
+        "type": "home-featured-products",
+        "name": "Featured Products",
+        "settings": {
+          "display_banner": true,
+          "banner_is": "left",
+          "image": "shopify://shop_images/untitled-168_JKP_SS.jpg",
+          "banner_heading": "THE HIGHCHAIR",
+          "font_size_banner_heading": "40px",
+          "color_banner_heading": "#fff",
+          "banner_sub_heading": "IKEA ANTILOP ACCESSORIES",
+          "font_size_banner_sub_heading": "13px",
+          "color_banner_sub_heading": "#fff",
+          "banner_des": "",
+          "font_size_banner_des": "12px",
+          "color_banner_des": "#fff",
+          "banner_button": "Shop All",
+          "link": "shopify://pages/ikea-highchair-accessories",
+          "bg_banner_button": "#fff",
+          "border_banner_button": "#fff",
+          "color_banner_button": "#232323",
+          "featured_products_title": "Trending Now",
+          "featured_products_des": "",
+          "title_style": "style_1",
+          "show_slider_featured_collection": "all-cushion-covers",
+          "slider_featured_limit_all": 10,
+          "collection_results_per_row1": "5",
+          "margin_bottom_mb": 40,
+          "margin_bottom_tab": 40,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
@@ -7897,7 +7929,8 @@
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
       "home_sub_banner_bA77ra",
-      "home_product_tabs_x4e6aY"
+      "home_product_tabs_x4e6aY",
+      "home_featured_products_rLjPFV"
     ],
     "blocks": {
       "18228966181090706294": {
