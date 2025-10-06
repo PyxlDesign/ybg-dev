@@ -7634,7 +7634,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Brown_Speckle_Lifestyle2_JKP_SS.jpg",
-              "color_content": "#fff",
+              "color_content": "#ffffff",
               "sub_heading": "New Arrivals",
               "font_size_sub_heading": "13px",
               "heading": "Da Scarvéro",
@@ -7643,8 +7643,8 @@
               "font_size_des": "12px",
               "button": "Shop Now",
               "link": "",
-              "bg_button": "#fff",
-              "border_button": "#fff",
+              "bg_button": "#ffffff",
+              "border_button": "#ffffff",
               "color_button": "#232323"
             }
           },
@@ -7652,7 +7652,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/026A4239.jpg",
-              "color_content": "#fff",
+              "color_content": "#ffffff",
               "sub_heading": "New Arrivals",
               "font_size_sub_heading": "13px",
               "heading": "Da Scarvéro",
@@ -7661,8 +7661,8 @@
               "font_size_des": "12px",
               "button": "Shop Now",
               "link": "",
-              "bg_button": "#fff",
-              "border_button": "#fff",
+              "bg_button": "#ffffff",
+              "border_button": "#ffffff",
               "color_button": "#232323"
             }
           },
@@ -7670,7 +7670,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
-              "color_content": "#fff",
+              "color_content": "#ffffff",
               "sub_heading": "New Arrivals",
               "font_size_sub_heading": "13px",
               "heading": "Da Scarvéro",
@@ -7679,8 +7679,8 @@
               "font_size_des": "12px",
               "button": "Shop Now",
               "link": "",
-              "bg_button": "#fff",
-              "border_button": "#fff",
+              "bg_button": "#ffffff",
+              "border_button": "#ffffff",
               "color_button": "#232323"
             }
           }
@@ -7708,18 +7708,18 @@
             "type": "twoImage",
             "settings": {
               "title_1": "Loremous",
-              "color_1": "#fff",
+              "color_1": "#ffffff",
               "button_1": "SHOP NOW",
               "link_1": "",
-              "bg_button_1": "#fff",
-              "border_button_1": "#fff",
+              "bg_button_1": "#ffffff",
+              "border_button_1": "#ffffff",
               "color_button_1": "#232323",
               "title_2": "Cosmopolis",
-              "color_2": "#fff",
+              "color_2": "#ffffff",
               "button_2": "",
               "link_2": "",
-              "bg_button_2": "#fff",
-              "border_button_2": "#fff",
+              "bg_button_2": "#ffffff",
+              "border_button_2": "#ffffff",
               "color_button_2": "#232323"
             }
           },
@@ -7729,12 +7729,12 @@
               "title": "Special Offers",
               "des": "Sale up to 60% off on selected items. End ins:",
               "countdown": "2020/01/7 0:0:00",
-              "color": "#fff",
+              "color": "#ffffff",
               "link": "",
               "title_2": "Special Offers",
               "des_2": "Sale up to 60% off on selected items. End ins:",
               "countdown_2": "2020/01/7 0:0:00",
-              "color_2": "#fff",
+              "color_2": "#ffffff",
               "link_2": ""
             }
           },
@@ -7743,18 +7743,18 @@
             "disabled": true,
             "settings": {
               "title_1": "Loremous",
-              "color_1": "#fff",
+              "color_1": "#ffffff",
               "button_1": "",
               "link_1": "",
-              "bg_button_1": "#fff",
-              "border_button_1": "#fff",
+              "bg_button_1": "#ffffff",
+              "border_button_1": "#ffffff",
               "color_button_1": "#232323",
               "title_2": "Cosmopolis",
-              "color_2": "#fff",
+              "color_2": "#ffffff",
               "button_2": "",
               "link_2": "",
-              "bg_button_2": "#fff",
-              "border_button_2": "#fff",
+              "bg_button_2": "#ffffff",
+              "border_button_2": "#ffffff",
               "color_button_2": "#232323"
             }
           }
@@ -7782,7 +7782,7 @@
             "settings": {
               "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
               "title": "Editor’s Pick",
-              "color_title": "#fff",
+              "color_title": "#ffffff",
               "link": ""
             }
           },
@@ -7791,7 +7791,7 @@
             "settings": {
               "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
               "title": "Editor’s Pick",
-              "color_title": "#fff",
+              "color_title": "#ffffff",
               "link": ""
             }
           },
@@ -7800,7 +7800,7 @@
             "settings": {
               "image": "shopify://shop_images/desertsage__uphighchair.jpg",
               "title": "Editor’s Pick",
-              "color_title": "#fff",
+              "color_title": "#ffffff",
               "link": ""
             }
           },
@@ -7874,23 +7874,6 @@
           "margin_bottom_tab": 40,
           "margin_bottom": 10
         }
-      },
-      "content_slider_6zdknt": {
-        "type": "content-slider",
-        "blocks": {
-          "slide_JRPwq3": {
-            "type": "slide",
-            "settings": {
-              "heading": "What Is this?",
-              "subtext": ""
-            }
-          }
-        },
-        "block_order": [
-          "slide_JRPwq3"
-        ],
-        "name": "Content slider",
-        "settings": {}
       }
     },
     "content_for_index": [
@@ -7914,8 +7897,7 @@
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
       "home_sub_banner_bA77ra",
-      "home_product_tabs_x4e6aY",
-      "content_slider_6zdknt"
+      "home_product_tabs_x4e6aY"
     ],
     "blocks": {
       "18228966181090706294": {
