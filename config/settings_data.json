@@ -7503,7 +7503,6 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7563,7 +7562,6 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
-        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7615,7 +7613,6 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7690,7 +7687,6 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7707,6 +7703,7 @@
           "two_image_BzdXyq": {
             "type": "twoImage",
             "settings": {
+              "image_1": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
               "title_1": "Loremous",
               "color_1": "#ffffff",
               "button_1": "SHOP NOW",
@@ -7714,6 +7711,7 @@
               "bg_button_1": "#ffffff",
               "border_button_1": "#ffffff",
               "color_button_1": "#232323",
+              "image_2": "shopify://shop_images/Bib_Listing_Images_3.jpg",
               "title_2": "Cosmopolis",
               "color_2": "#ffffff",
               "button_2": "",
@@ -7726,6 +7724,7 @@
           "one_image_xaTtV3": {
             "type": "oneImage",
             "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
               "title": "Special Offers",
               "des": "Sale up to 60% off on selected items. End ins:",
               "countdown": "2020/01/7 0:0:00",
@@ -7742,6 +7741,7 @@
             "type": "twoImage",
             "disabled": true,
             "settings": {
+              "image_1": "shopify://shop_images/Bib_Listing_Images_4.jpg",
               "title_1": "Loremous",
               "color_1": "#ffffff",
               "button_1": "",
@@ -7764,7 +7764,6 @@
           "one_image_xaTtV3",
           "two_image_gWrDjp"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 1",
         "settings": {
           "font_size_title": "20px",
@@ -7820,7 +7819,6 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
-        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
@@ -7862,7 +7860,6 @@
           "product_tabs_g8dEwV",
           "product_tabs_GrCnaw"
         ],
-        "disabled": true,
         "name": "Product Tabs",
         "settings": {
           "product_tabs_title": "New Arrivals",
@@ -7884,17 +7881,17 @@
           "image": "shopify://shop_images/untitled-168_JKP_SS.jpg",
           "banner_heading": "THE HIGHCHAIR",
           "font_size_banner_heading": "40px",
-          "color_banner_heading": "#fff",
+          "color_banner_heading": "#ffffff",
           "banner_sub_heading": "IKEA ANTILOP ACCESSORIES",
           "font_size_banner_sub_heading": "13px",
-          "color_banner_sub_heading": "#fff",
+          "color_banner_sub_heading": "#ffffff",
           "banner_des": "",
           "font_size_banner_des": "12px",
-          "color_banner_des": "#fff",
+          "color_banner_des": "#ffffff",
           "banner_button": "Shop All",
           "link": "shopify://pages/ikea-highchair-accessories",
-          "bg_banner_button": "#fff",
-          "border_banner_button": "#fff",
+          "bg_banner_button": "#ffffff",
+          "border_banner_button": "#ffffff",
           "color_banner_button": "#232323",
           "featured_products_title": "Trending Now",
           "featured_products_des": "",
