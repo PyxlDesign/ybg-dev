@@ -7503,7 +7503,6 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7563,6 +7562,7 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
+        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7614,6 +7614,7 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7630,7 +7631,6 @@
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
       "162041756141531609",
-      "home_custom_block_sub_banner_kPdkTh",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
@@ -7643,7 +7643,8 @@
       "1620417742f3c060ce",
       "162990068233f26fb0",
       "home_spotlight_slider_m9tdJN",
-      "home_custom_block_spotlight_VaMqHz"
+      "home_custom_block_spotlight_VaMqHz",
+      "home_custom_block_sub_banner_kPdkTh"
     ],
     "blocks": {
       "18228966181090706294": {
