@@ -7503,6 +7503,7 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7562,6 +7563,7 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
+        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7613,6 +7615,7 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7687,6 +7690,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7760,6 +7764,7 @@
           "one_image_xaTtV3",
           "two_image_gWrDjp"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 1",
         "settings": {
           "font_size_title": "20px",
@@ -7815,6 +7820,7 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
+        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
@@ -7856,6 +7862,7 @@
           "product_tabs_g8dEwV",
           "product_tabs_GrCnaw"
         ],
+        "disabled": true,
         "name": "Product Tabs",
         "settings": {
           "product_tabs_title": "New Arrivals",
