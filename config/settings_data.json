@@ -7547,12 +7547,21 @@
               "link_text": "Shop Now",
               "link": ""
             }
+          },
+          "image_Bbqx8i": {
+            "type": "image",
+            "settings": {
+              "title": "Lorem De Dorus",
+              "link_text": "Shop Now",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "image_6L6XtP",
           "image_FMiBEB",
-          "image_6GrGLU"
+          "image_6GrGLU",
+          "image_Bbqx8i"
         ],
         "name": "Spotlight Slider",
         "settings": {
