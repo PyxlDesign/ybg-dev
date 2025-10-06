@@ -7507,9 +7507,9 @@
         "settings": {
           "display_sub_banner": true,
           "layout": "default",
-          "title": "get started",
+          "title": "Shop By Collection",
           "title_style": "style_2",
-          "desc": "Add joy to your IKEA Highchair or entire eating experience",
+          "desc": "",
           "font_size_title": "16px",
           "display_padding": true,
           "block_des": "",
@@ -7741,7 +7741,6 @@
           },
           "two_image_gWrDjp": {
             "type": "twoImage",
-            "disabled": true,
             "settings": {
               "image_1": "shopify://shop_images/Bib_Listing_Images_4.jpg",
               "title_1": "Loremous",
