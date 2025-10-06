@@ -7895,12 +7895,28 @@
             "settings": {
               "title": "happier."
             }
+          },
+          "product_images_9e8EJd": {
+            "type": "product_images",
+            "settings": {
+              "color_swatch": "#637175",
+              "product_image": "shopify://shop_images/untitled-168_JKP_SS.jpg"
+            }
+          },
+          "product_images_qdK4Ey": {
+            "type": "product_images",
+            "settings": {
+              "color_swatch": "#d79a80",
+              "product_image": "shopify://shop_images/12_Veterans_Day_Sale_Desktop_Hero.jpg"
+            }
           }
         },
         "block_order": [
           "heading_words_AnTY7h",
           "heading_words_yXheC9",
-          "heading_words_pyQxcw"
+          "heading_words_pyQxcw",
+          "product_images_9e8EJd",
+          "product_images_qdK4Ey"
         ],
         "settings": {
           "section_header": "Make meals",
