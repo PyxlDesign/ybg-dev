@@ -7783,47 +7783,25 @@
           "image_J9ifBN": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Collection_Images_0e98640a-2892-43d6-8bdb-6d3a6f054857.jpg",
+              "image": "shopify://shop_images/Shop_By_Category_2.jpg",
               "title": "",
               "color_title": "#ffffff",
-              "link": ""
+              "link": "shopify://pages/feeding-essentials"
             }
           },
           "image_wzCaHp": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Collection_Images_2_d59c10f7-6bd2-4e1c-b2d7-c32565ae654b.jpg",
+              "image": "shopify://shop_images/Shop_By_Category.jpg",
               "title": "",
               "color_title": "#ffffff",
-              "link": ""
-            }
-          },
-          "image_EpDNpz": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify://shop_images/Collection_Images_3_147b45f5-8965-4a9e-8719-a52ca9a31fa7.jpg",
-              "title": "",
-              "color_title": "#ffffff",
-              "link": ""
-            }
-          },
-          "image_mHEpF7": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify://shop_images/Collection_Images_4_3a290794-a5aa-4b84-bf50-b177d1185ffa.jpg",
-              "title": "",
-              "color_title": "#ffffff",
-              "link": ""
+              "link": "shopify://pages/ikea-highchair-accessories"
             }
           }
         },
         "block_order": [
           "image_J9ifBN",
-          "image_wzCaHp",
-          "image_EpDNpz",
-          "image_mHEpF7"
+          "image_wzCaHp"
         ],
         "disabled": true,
         "name": "Sub Banner",
