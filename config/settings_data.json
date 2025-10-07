@@ -7618,14 +7618,13 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
           "margin_bottom_mb": 25,
           "margin_bottom_tab": 35,
           "margin_bottom": 35,
-          "spotlight_block_title": "Collections",
+          "spotlight_block_title": "3 Ways To Makeover Your IKEA Highchair",
           "spotlight_block_des": "",
           "title_style": "style_2"
         }
