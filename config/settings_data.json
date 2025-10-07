@@ -3602,11 +3602,11 @@
           "c4ac2b9f-74fa-4396-8012-c244394b705f"
         ],
         "settings": {
-          "footer_background": "#52757d",
-          "link_color": "",
-          "link_hover_color": "",
-          "heading_color": "",
-          "text_color": ""
+          "footer_background": "#31484d",
+          "link_color": "#fffcf8",
+          "link_hover_color": "#eac1a8",
+          "heading_color": "#89a5a2",
+          "text_color": "#fffcf8"
         }
       },
       "1621362370700970cd": {
