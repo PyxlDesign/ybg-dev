@@ -7724,21 +7724,13 @@
               "title": "Bundles",
               "collection": "favorites-bundles"
             }
-          },
-          "product_tabs_QdBtTy": {
-            "type": "ProductTabs",
-            "settings": {
-              "title": "Womens",
-              "collection": ""
-            }
           }
         },
         "block_order": [
           "product_tabs_g8dEwV",
           "product_tabs_GrCnaw",
           "product_tabs_wKrm69",
-          "product_tabs_xzEdMh",
-          "product_tabs_QdBtTy"
+          "product_tabs_xzEdMh"
         ],
         "name": "Product Tabs",
         "settings": {
