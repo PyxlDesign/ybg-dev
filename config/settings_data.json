@@ -7617,6 +7617,7 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7691,6 +7692,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
