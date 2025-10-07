@@ -7865,6 +7865,52 @@
           "cta_text": "",
           "image": "shopify://shop_images/ybgLIFESTYLE-70_JKP_SS_73ed41db-82d9-4d68-a676-fb3e5043165f.jpg"
         }
+      },
+      "home_custom_block_bottom_baner_CtUPV8": {
+        "type": "home-custom-block-bottom-baner",
+        "blocks": {
+          "large_img_fU86KU": {
+            "type": "largeImg",
+            "settings": {
+              "image": "shopify://shop_images/untitled-137_JKP_SS_KRK.jpg",
+              "display_parallax": false,
+              "dpl_down_arrow": false,
+              "height_img_parallax": "970px",
+              "banner_sub_heading": "Metropolis",
+              "font_size_banner_sub_heading": "20px",
+              "color_banner_sub_heading": "#232323",
+              "banner_heading": "Metropólis",
+              "font_size_banner_heading": "40px",
+              "color_banner_heading": "#232323",
+              "banner_des": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an tincidunt risus an consequat delit quisquemos.",
+              "font_size_banner_des": "12px",
+              "color_banner_des": "#232323",
+              "countdown": "",
+              "banner_button": "Shop The Looks",
+              "link": "",
+              "bg_banner_button": "rgba(0,0,0,0)",
+              "border_banner_button": "rgba(0,0,0,0)",
+              "color_banner_button": "#fff",
+              "min_width_banner_button": "248px",
+              "video_link": "eTCtDW7O1aM",
+              "video_icon_color": "#fff"
+            }
+          }
+        },
+        "block_order": [
+          "large_img_fU86KU"
+        ],
+        "name": "Custom Block Bottom Banners",
+        "settings": {
+          "layout": "full",
+          "widget_title": "",
+          "widget_des": "",
+          "title_style": "style_1",
+          "img_align": "center",
+          "margin_bottom_mb": 25,
+          "margin_bottom_tab": 30,
+          "margin_bottom": 30
+        }
       }
     },
     "content_for_index": [
@@ -7890,7 +7936,8 @@
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
-      "additional_tips_bUMXyy"
+      "additional_tips_bUMXyy",
+      "home_custom_block_bottom_baner_CtUPV8"
     ],
     "blocks": {
       "18228966181090706294": {
