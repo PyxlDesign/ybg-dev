@@ -3370,6 +3370,7 @@
       },
       "1620414500ccfac22f": {
         "type": "image-text-column",
+        "disabled": true,
         "settings": {
           "background_color": "#ffffff",
           "image_text_title": "Get inspired by some of our customers' creations.",
@@ -7939,6 +7940,21 @@
           "cta_text": "Shop Now",
           "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg"
         }
+      },
+      "image_text_column_bBNXT9": {
+        "type": "image-text-column",
+        "settings": {
+          "background_color": "#ffffff",
+          "image_text_title": "We Believe",
+          "title_color": "#30494d",
+          "title_size": 60,
+          "image_text_caption": "<br>The table should be a place of connection, where laughter and good conversations happen. Where individuals are refreshed, identity is formed, and family bonds are strengthened.\n<br>\n<br>\nUnfortunately, none of that can happen when babies are fussing, toddlers won't stay seated, self-feeding is frustrating, and clean-up is overwhelming. YBG exists to remove the stress so you can <strong>enjoy mealtime again.</strong>",
+          "caption_color": "#52757d",
+          "caption_size": 22,
+          "cta_url": "",
+          "cta_text": "",
+          "image": "shopify://shop_images/untitled-137_JKP_SS_KRK.jpg"
+        }
       }
     },
     "content_for_index": [
@@ -7950,6 +7966,7 @@
       "home_sub_banner_bA77ra",
       "judgeme_review_4jtgqG",
       "1620416895faf4570f",
+      "image_text_column_bBNXT9",
       "image_text_column_AtUL3m",
       "162041362564bbc4d8",
       "1620412486d542719c",
