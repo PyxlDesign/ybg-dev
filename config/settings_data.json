@@ -3424,7 +3424,7 @@
           "4750731e-eba9-4443-b3c8-507c1c9aa36f"
         ],
         "settings": {
-          "pad_top": true,
+          "pad_top": false,
           "background_color": "#ffffff",
           "icon_text_title": "",
           "title_color": "#30494d",
