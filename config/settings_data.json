@@ -3356,8 +3356,9 @@
           "99dd4423-dc9a-4010-b5f7-74bc143d75d5",
           "e0a21277-4b31-4175-96b0-925b60fb51ea"
         ],
+        "disabled": true,
         "settings": {
-          "background_color": "#f1e3d7",
+          "background_color": "#fffcf8",
           "featured_collection_title": "IKEA Highchair Accessories",
           "title_color": "#30494d",
           "title_size": 60,
@@ -7252,7 +7253,7 @@
           "collection_y7PBYz"
         ],
         "settings": {
-          "background_color": "#fffcf8",
+          "background_color": "#f1e3d7",
           "featured_collection_title": "Enjoy Mealtime Again.",
           "title_color": "#30494d",
           "title_size": 60,
@@ -7940,6 +7941,7 @@
       "featured_collections_UW4fRt",
       "162041756141531609",
       "home_sub_banner_bA77ra",
+      "judgeme_review_4jtgqG",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "1620412486d542719c",
@@ -7947,7 +7949,6 @@
       "1620414500ccfac22f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
-      "judgeme_review_4jtgqG",
       "1620417742f3c060ce",
       "162990068233f26fb0",
       "home_custom_block_sub_banner_kPdkTh",
