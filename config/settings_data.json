@@ -7505,6 +7505,7 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7565,7 +7566,6 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
-        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7585,7 +7585,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
-              "title": "What If",
+              "title": "",
               "des": "",
               "button": "Shop Now",
               "link": ""
@@ -7617,7 +7617,6 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
