@@ -7242,7 +7242,7 @@
             "type": "collection",
             "settings": {
               "collection": "utensils",
-              "collection_title": "Utensils Designed By Feeding Specialist"
+              "collection_title": "Feeding Specialist Designed Utensils"
             }
           }
         },
@@ -7504,6 +7504,7 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
