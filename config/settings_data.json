@@ -7216,47 +7216,47 @@
       "featured_collections_UW4fRt": {
         "type": "featured-collections",
         "blocks": {
+          "collection_BUFCKE": {
+            "type": "collection",
+            "settings": {
+              "collection": "table-placemats",
+              "collection_title": "Highchairs That Add To<br>Your Home  Aesthetic"
+            }
+          },
           "collection_U4WfQC": {
             "type": "collection",
             "settings": {
               "collection": "eating-out-essentials",
-              "collection_title": "Eating Out Essentials"
+              "collection_title": "Kits That Make<br>Eating Out Easier"
             }
           },
           "collection_FxbKyY": {
             "type": "collection",
             "settings": {
               "collection": "dinnerware",
-              "collection_title": "Silicone Dinnerware"
+              "collection_title": "Silicone Tableware Pretty<br>Enough For Adults"
             }
           },
           "collection_y7PBYz": {
             "type": "collection",
             "settings": {
               "collection": "silicone-bibs",
-              "collection_title": "Better-Fit Bibs"
-            }
-          },
-          "collection_BUFCKE": {
-            "type": "collection",
-            "settings": {
-              "collection": "table-placemats",
-              "collection_title": "Table Placemats"
+              "collection_title": "Bibs That Don't<br>Get In The Way"
             }
           }
         },
         "block_order": [
+          "collection_BUFCKE",
           "collection_U4WfQC",
           "collection_FxbKyY",
-          "collection_y7PBYz",
-          "collection_BUFCKE"
+          "collection_y7PBYz"
         ],
         "settings": {
           "background_color": "#f1e3d7",
           "featured_collection_title": "Enjoy Mealtime Again.",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "Remember when sitting down for a meal was fun? Let's do that again.",
+          "featured_collection_caption": "If function and style got married and had a baby, you'd get...",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
