@@ -7927,6 +7927,7 @@
       },
       "image_text_column_AtUL3m": {
         "type": "image-text-column",
+        "disabled": true,
         "name": "Image Text Block",
         "settings": {
           "background_color": "#eac1a8",
@@ -7943,6 +7944,7 @@
       },
       "image_text_column_bBNXT9": {
         "type": "image-text-column",
+        "disabled": true,
         "settings": {
           "background_color": "#ffffff",
           "image_text_title": "We Believe",
