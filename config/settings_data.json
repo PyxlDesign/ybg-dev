@@ -7833,6 +7833,9 @@
           "margin_bottom_mb": 0,
           "margin_bottom_tab": 0,
           "margin_bottom": 0,
+          "margin_top_mb": 10,
+          "margin_top_tab": 10,
+          "margin_top": 10,
           "font_size_title": "16px",
           "display_padding": true
         }
