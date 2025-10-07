@@ -7635,7 +7635,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Brown_Speckle_Lifestyle2_JKP_SS.jpg",
-              "color_content": "#ffffff",
+              "color_content": "#30494d",
               "sub_heading": "IKEA HIGHCHAIR MAKEOVER",
               "font_size_sub_heading": "13px",
               "heading": "Completely Custom",
@@ -7691,7 +7691,6 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
