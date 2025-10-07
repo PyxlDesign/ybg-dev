@@ -3370,7 +3370,6 @@
       },
       "1620414500ccfac22f": {
         "type": "image-text-column",
-        "disabled": true,
         "settings": {
           "background_color": "#ffffff",
           "image_text_title": "Get inspired by some of our customers' creations.",
