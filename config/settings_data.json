@@ -3311,6 +3311,7 @@
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e",
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195"
         ],
+        "disabled": true,
         "settings": {
           "section_header": "Make it",
           "paragraph": "Safe highchair positioning done with style.<br>Mix and match our accessories to create over 50,000 possible combinations!",
@@ -7504,7 +7505,6 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
@@ -7875,13 +7875,13 @@
       "judgeme_review_4jtgqG",
       "image_text_column_bBNXT9",
       "1620416895faf4570f",
+      "1620417742f3c060ce",
       "162041362564bbc4d8",
       "1620412486d542719c",
       "16204173073f912002",
       "1620414500ccfac22f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
-      "1620417742f3c060ce",
       "162990068233f26fb0",
       "home_custom_block_sub_banner_kPdkTh",
       "home_spotlight_slider_m9tdJN",
