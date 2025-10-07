@@ -7542,7 +7542,6 @@
           },
           "image_6GrGLU": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Lorem De Dorus",
               "link_text": "Shop Now",
@@ -7585,8 +7584,8 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
-              "title": "",
-              "des": "",
+              "title": "What If",
+              "des": "This is the text",
               "button": "Shop Now",
               "link": ""
             }
@@ -7617,7 +7616,6 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7692,7 +7690,6 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7769,7 +7766,6 @@
           "one_image_xaTtV3",
           "two_image_gWrDjp"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 1",
         "settings": {
           "font_size_title": "20px",
@@ -7825,7 +7821,6 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
-        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
@@ -7873,7 +7868,7 @@
           "product_tabs_title": "Our Favorites",
           "product_tabs_des": "",
           "title_style": "style_2",
-          "collection_results_per_row": "3",
+          "collection_results_per_row": "4",
           "tabs_style": "style_1",
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
