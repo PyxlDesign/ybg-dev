@@ -7842,12 +7842,20 @@
               "title": "Restaurant Kit",
               "collection": "restaurant-bags"
             }
+          },
+          "product_tabs_xzEdMh": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Bundles",
+              "collection": "dinnerware-bundles"
+            }
           }
         },
         "block_order": [
           "product_tabs_g8dEwV",
           "product_tabs_GrCnaw",
-          "product_tabs_wKrm69"
+          "product_tabs_wKrm69",
+          "product_tabs_xzEdMh"
         ],
         "name": "Product Tabs",
         "settings": {
