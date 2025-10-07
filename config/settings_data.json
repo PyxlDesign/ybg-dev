@@ -3357,7 +3357,7 @@
           "e0a21277-4b31-4175-96b0-925b60fb51ea"
         ],
         "settings": {
-          "background_color": "#fffcf8",
+          "background_color": "#f1e3d7",
           "featured_collection_title": "IKEA Highchair Accessories",
           "title_color": "#30494d",
           "title_size": 60,
@@ -7564,6 +7564,7 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
+        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7690,6 +7691,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
