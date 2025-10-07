@@ -7954,6 +7954,7 @@
           "image_tqqHXF",
           "image_YtQbTJ"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 3",
         "settings": {
           "layout": "default",
@@ -7989,11 +7990,11 @@
       "162990068233f26fb0",
       "home_custom_block_sub_banner_kPdkTh",
       "home_custom_block_spotlight_VaMqHz",
+      "home_custom_sub_banner_3_bGBfAY",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
       "additional_tips_bUMXyy",
-      "home_custom_block_bottom_baner_CtUPV8",
-      "home_custom_sub_banner_3_bGBfAY"
+      "home_custom_block_bottom_baner_CtUPV8"
     ],
     "blocks": {
       "18228966181090706294": {
