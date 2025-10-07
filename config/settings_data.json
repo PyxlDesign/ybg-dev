@@ -7530,7 +7530,7 @@
               "image": "shopify://shop_images/YBG4-2_KRK_3f99ecf4-811c-4c71-abf5-4d8a99554368.jpg",
               "title": "",
               "link_text": "Shop Sage",
-              "link": ""
+              "link": "shopify://collections/shop-by-color-sage"
             }
           },
           "image_FMiBEB": {
@@ -7539,15 +7539,16 @@
               "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
               "title": "",
               "link_text": "Shop Doe",
-              "link": ""
+              "link": "shopify://collections/shop-by-color-doe"
             }
           },
           "image_6GrGLU": {
             "type": "image",
             "settings": {
-              "title": "Lorem De Dorus",
-              "link_text": "Shop Now",
-              "link": ""
+              "image": "shopify://shop_images/YBG.2-24_KRK_tight_square.jpg",
+              "title": "",
+              "link_text": "Shop Terracotta",
+              "link": "shopify://collections/shop-by-color-terracotta"
             }
           },
           "image_Bbqx8i": {
@@ -7873,8 +7874,9 @@
       "162041756141531609",
       "home_sub_banner_bA77ra",
       "judgeme_review_4jtgqG",
-      "image_text_column_bBNXT9",
       "1620416895faf4570f",
+      "home_spotlight_slider_m9tdJN",
+      "image_text_column_bBNXT9",
       "1620417742f3c060ce",
       "162041362564bbc4d8",
       "1620412486d542719c",
@@ -7884,7 +7886,6 @@
       "1629747261e1ca35b0",
       "162990068233f26fb0",
       "home_custom_block_sub_banner_kPdkTh",
-      "home_spotlight_slider_m9tdJN",
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
