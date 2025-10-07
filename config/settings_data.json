@@ -7927,7 +7927,6 @@
       },
       "image_text_column_AtUL3m": {
         "type": "image-text-column",
-        "disabled": true,
         "name": "Image Text Block",
         "settings": {
           "background_color": "#eac1a8",
@@ -7951,8 +7950,9 @@
       "162041756141531609",
       "home_sub_banner_bA77ra",
       "judgeme_review_4jtgqG",
-      "162041362564bbc4d8",
       "1620416895faf4570f",
+      "image_text_column_AtUL3m",
+      "162041362564bbc4d8",
       "1620412486d542719c",
       "16204173073f912002",
       "1620414500ccfac22f",
@@ -7966,8 +7966,7 @@
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
       "home_featured_products_rLjPFV",
-      "additional_tips_bUMXyy",
-      "image_text_column_AtUL3m"
+      "additional_tips_bUMXyy"
     ],
     "blocks": {
       "18228966181090706294": {
