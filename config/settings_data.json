@@ -7724,13 +7724,21 @@
               "title": "Bundles",
               "collection": "favorites-bundles"
             }
+          },
+          "product_tabs_QdBtTy": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Womens",
+              "collection": ""
+            }
           }
         },
         "block_order": [
           "product_tabs_g8dEwV",
           "product_tabs_GrCnaw",
           "product_tabs_wKrm69",
-          "product_tabs_xzEdMh"
+          "product_tabs_xzEdMh",
+          "product_tabs_QdBtTy"
         ],
         "name": "Product Tabs",
         "settings": {
@@ -7923,7 +7931,6 @@
       "1620416895faf4570f",
       "home_spotlight_slider_zYrUTR",
       "image_text_column_bBNXT9",
-      "home_custom_block_spotlight_VaMqHz",
       "1620417742f3c060ce",
       "162041362564bbc4d8",
       "1620412486d542719c",
@@ -7932,6 +7939,7 @@
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "162990068233f26fb0",
+      "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
       "additional_tips_bUMXyy",
