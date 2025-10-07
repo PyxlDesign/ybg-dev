@@ -7826,6 +7826,7 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
+        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
@@ -7833,9 +7834,9 @@
           "margin_bottom_mb": 0,
           "margin_bottom_tab": 0,
           "margin_bottom": 0,
-          "margin_top_mb": 10,
-          "margin_top_tab": 10,
-          "margin_top": 10,
+          "margin_top_mb": 20,
+          "margin_top_tab": 20,
+          "margin_top": 20,
           "font_size_title": "16px",
           "display_padding": true
         }
@@ -7962,6 +7963,7 @@
       "home_product_tabs_x4e6aY",
       "featured_collections_UW4fRt",
       "162041756141531609",
+      "home_sub_banner_bA77ra",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "1620412486d542719c",
@@ -7977,7 +7979,6 @@
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
-      "home_sub_banner_bA77ra",
       "home_featured_products_rLjPFV",
       "additional_tips_bUMXyy",
       "image_text_column_AtUL3m"
