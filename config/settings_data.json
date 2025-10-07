@@ -7585,7 +7585,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
-              "title": "",
+              "title": "Hellow",
               "des": "",
               "button": "Shop Now",
               "link": ""
@@ -7691,7 +7691,6 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
-        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
