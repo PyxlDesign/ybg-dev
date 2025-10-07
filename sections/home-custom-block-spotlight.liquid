@@ -3,11 +3,11 @@
   <div class="{% if section.settings.layout == 'default' %}container{% else %}container-fluid{% endif %}">
     {% if section.settings.spotlight_block_title != blank %}
     <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}{% unless section.settings.spotlight_block_des != blank %} no-des{% endunless %}">   
-      <h3 class="box-title">
+      <h2 class="box-title">
         <span class="title"> 
           {% render 'multilang' with section.settings.spotlight_block_title %}
         </span>
-      </h3>
+      </h2>
       {% if section.settings.spotlight_block_des != blank %}
       <p>
         {% render 'multilang' with section.settings.spotlight_block_des %}
@@ -95,10 +95,9 @@
         #home-spotlight-{{section.id}} {
         margin-bottom: {{ margin_bottom }}px;
         }
-    }	
+    } 
 </style>
 {% endif %}
-
 
 {% schema %}
     {
@@ -153,7 +152,7 @@
                 "max": 100,
                 "step": 1,
                 "default": 35
-            },	
+            },  
             {
                 "type": "header",
                 "content": "Header"
@@ -184,13 +183,13 @@
                     }          
                 ],
                 "default": "style_1"
-            }	  
+            }   
         ],
         "blocks": [
             {
                 "type": "image",
                 "name": "Image",
-                "settings": [		  	
+                "settings": [       
                 {
                     "type": "image_picker",
                     "id": "image",
@@ -242,3 +241,4 @@
         ]
     }
 {% endschema %}
+
