@@ -3,11 +3,11 @@
   <div class="{% if section.settings.layout == 'default' %}container{% else %}container-fluid{% endif %}">
     {% if section.settings.spotlight_block_title != blank %}
     <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}{% unless section.settings.spotlight_block_des != blank %} no-des{% endunless %}">   
-      <h2 class="box-title">
+      <h3 class="box-title">
         <span class="title"> 
           {% render 'multilang' with section.settings.spotlight_block_title %}
         </span>
-      </h2>
+      </h3>
       {% if section.settings.spotlight_block_des != blank %}
       <p>
         {% render 'multilang' with section.settings.spotlight_block_des %}
@@ -51,9 +51,9 @@
           {% if block.settings.title != blank or block.settings.des != blank or block.settings.button != blank %}
           <div class="content spotlight-inner">
             {% if block.settings.title != blank %}
-            <h2 class="title">
+            <h3 class="title">
               {% render 'multilang' with block.settings.title %}               
-            </h2>
+            </h3>
             {% endif %}
             
             {% if block.settings.des != blank %}
