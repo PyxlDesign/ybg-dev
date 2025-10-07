@@ -7227,7 +7227,7 @@
             "type": "collection",
             "settings": {
               "collection": "dinnerware",
-              "collection_title": "Drool-Worthy Silicone Tableware"
+              "collection_title": "Drool-Worthy Tableware"
             }
           },
           "collection_U4WfQC": {
@@ -7503,7 +7503,6 @@
           "one_image_3WYXtW",
           "one_image_aw3rDQ"
         ],
-        "disabled": true,
         "name": "Custom: Sub Banner 2",
         "settings": {
           "display_sub_banner": true,
