@@ -7875,12 +7875,12 @@
               "display_parallax": false,
               "dpl_down_arrow": false,
               "height_img_parallax": "970px",
-              "banner_sub_heading": "Metropolis",
+              "banner_sub_heading": "",
               "font_size_banner_sub_heading": "20px",
               "color_banner_sub_heading": "#232323",
               "banner_heading": "Metropólis",
               "font_size_banner_heading": "40px",
-              "color_banner_heading": "#232323",
+              "color_banner_heading": "#30494d",
               "banner_des": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an tincidunt risus an consequat delit quisquemos.",
               "font_size_banner_des": "12px",
               "color_banner_des": "#232323",
@@ -7899,6 +7899,7 @@
         "block_order": [
           "large_img_fU86KU"
         ],
+        "disabled": true,
         "name": "Custom Block Bottom Banners",
         "settings": {
           "layout": "full",
