@@ -7568,6 +7568,7 @@
           "image_dhUfL7",
           "image_VQeKym"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7802,7 +7803,7 @@
       "image_text_column_bBNXT9": {
         "type": "image-text-column",
         "settings": {
-          "background_color": "#ffffff",
+          "background_color": "#fffcf8",
           "image_text_title": "We Believe",
           "title_color": "#e49662",
           "title_size": 60,
@@ -7901,7 +7902,7 @@
         "settings": {
           "layout": "default",
           "display_padding": true,
-          "bg_color": "#fffcf8",
+          "bg_color": "#f1e3d7",
           "spotlight_block_title": "IKEA Highchair Makeover",
           "spotlight_block_des": "Three ways to make your $25 IKEA ANTILOP cuter & safer",
           "title_style": "style_2",
