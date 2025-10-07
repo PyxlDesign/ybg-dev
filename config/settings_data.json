@@ -7564,7 +7564,6 @@
           "image_6GrGLU",
           "image_Bbqx8i"
         ],
-        "disabled": true,
         "name": "Spotlight Slider",
         "settings": {
           "layout": "default",
@@ -7616,6 +7615,7 @@
           "image_VQeKym",
           "image_78E6rU"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight",
         "settings": {
           "layout": "default",
@@ -7635,17 +7635,17 @@
             "settings": {
               "image": "shopify://shop_images/Brown_Speckle_Lifestyle2_JKP_SS.jpg",
               "color_content": "#ffffff",
-              "sub_heading": "New Arrivals",
+              "sub_heading": "IKEA HIGHCHAIR MAKEOVER",
               "font_size_sub_heading": "13px",
-              "heading": "Da Scarvéro",
+              "heading": "Completely Custom",
               "font_size_heading": "30px",
-              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
-              "font_size_des": "12px",
+              "des": "Build a highchair unlike any other",
+              "font_size_des": "20px",
               "button": "Shop Now",
-              "link": "",
-              "bg_button": "#ffffff",
-              "border_button": "#ffffff",
-              "color_button": "#232323"
+              "link": "shopify://pages/customizer",
+              "bg_button": "#fffcf8",
+              "border_button": "#fffcf8",
+              "color_button": "#30494d"
             }
           },
           "image_YKB8BH": {
