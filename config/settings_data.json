@@ -7691,6 +7691,7 @@
           "image_YKB8BH",
           "image_CNhiYE"
         ],
+        "disabled": true,
         "name": "Custom Block: Spotlight 1",
         "settings": {
           "layout": "default",
@@ -7800,6 +7801,7 @@
           },
           "image_EpDNpz": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/Collection_Images_3_147b45f5-8965-4a9e-8719-a52ca9a31fa7.jpg",
               "title": "",
@@ -7809,6 +7811,7 @@
           },
           "image_mHEpF7": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/Collection_Images_4_3a290794-a5aa-4b84-bf50-b177d1185ffa.jpg",
               "title": "",
@@ -7823,7 +7826,6 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
-        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
