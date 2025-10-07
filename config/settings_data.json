@@ -7840,14 +7840,14 @@
             "type": "ProductTabs",
             "settings": {
               "title": "Restaurant Kit",
-              "collection": "restaurant-bags"
+              "collection": "favorites-restaurant-kits"
             }
           },
           "product_tabs_xzEdMh": {
             "type": "ProductTabs",
             "settings": {
               "title": "Bundles",
-              "collection": "dinnerware-bundles"
+              "collection": "favorites-bundles"
             }
           }
         },
