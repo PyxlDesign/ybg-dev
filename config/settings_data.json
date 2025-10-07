@@ -3603,10 +3603,10 @@
         ],
         "settings": {
           "footer_background": "#31484d",
-          "link_color": "#fffcf8",
-          "link_hover_color": "#eac1a8",
-          "heading_color": "#89a5a2",
-          "text_color": "#fffcf8"
+          "link_color": "",
+          "link_hover_color": "",
+          "heading_color": "",
+          "text_color": ""
         }
       },
       "1621362370700970cd": {
