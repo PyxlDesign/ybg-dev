@@ -7232,26 +7232,26 @@
               "collection_title": "Drool-Worthy Tableware"
             }
           },
-          "collection_U4WfQC": {
-            "type": "collection",
-            "settings": {
-              "collection": "eating-out-essentials",
-              "collection_title": "Handy Kits For Eating Out"
-            }
-          },
           "collection_y7PBYz": {
             "type": "collection",
             "settings": {
               "collection": "utensils",
               "collection_title": "The Perfect First Utensil"
             }
+          },
+          "collection_U4WfQC": {
+            "type": "collection",
+            "settings": {
+              "collection": "eating-out-essentials",
+              "collection_title": "Handy Kits For Eating Out"
+            }
           }
         },
         "block_order": [
           "collection_BUFCKE",
           "collection_FxbKyY",
-          "collection_U4WfQC",
-          "collection_y7PBYz"
+          "collection_y7PBYz",
+          "collection_U4WfQC"
         ],
         "settings": {
           "background_color": "#f1e3d7",
