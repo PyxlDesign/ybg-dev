@@ -7768,6 +7768,7 @@
           "one_image_xaTtV3",
           "two_image_gWrDjp"
         ],
+        "disabled": true,
         "name": "Custom: Sub Banner 1",
         "settings": {
           "font_size_title": "20px",
@@ -7823,6 +7824,7 @@
           "image_EpDNpz",
           "image_mHEpF7"
         ],
+        "disabled": true,
         "name": "Sub Banner",
         "settings": {
           "display_sub_banner": true,
