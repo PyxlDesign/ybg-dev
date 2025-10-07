@@ -7555,8 +7555,9 @@
             "type": "image",
             "disabled": true,
             "settings": {
-              "title": "Lorem De Dorus",
-              "link_text": "Shop Now",
+              "image": "shopify://shop_images/untitled-96_JKP_SS_square.jpg",
+              "title": "",
+              "link_text": "Shop Blush",
               "link": ""
             }
           }
