@@ -7253,10 +7253,10 @@
         ],
         "settings": {
           "background_color": "#f1e3d7",
-          "featured_collection_title": "Beyond The Highchair",
+          "featured_collection_title": "Enjoy Mealtime Again.",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "Family meals with less stress and more joy",
+          "featured_collection_caption": "Remember when sitting down for a meal was fun? Let's do that again.",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
@@ -7867,7 +7867,6 @@
           "product_tabs_GrCnaw",
           "product_tabs_wKrm69"
         ],
-        "disabled": true,
         "name": "Product Tabs",
         "settings": {
           "pad_top": true,
@@ -7913,6 +7912,45 @@
           "margin_bottom_tab": 40,
           "margin_bottom": 0
         }
+      },
+      "additional_tips_bUMXyy": {
+        "type": "additional-tips",
+        "blocks": {
+          "tip_d9b87f": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
+              "title": "What If Babies Liked Their Highchair",
+              "article": ""
+            }
+          }
+        },
+        "block_order": [
+          "tip_d9b87f"
+        ],
+        "disabled": true,
+        "name": "Article",
+        "settings": {
+          "heading": "Section heading goes here",
+          "paragraph": "<p>Text paragraph goes here</p>"
+        }
+      },
+      "image_text_column_AtUL3m": {
+        "type": "image-text-column",
+        "disabled": true,
+        "name": "Image Text Block",
+        "settings": {
+          "background_color": "#eac1a8",
+          "image_text_title": "We Believe",
+          "title_color": "#89a5a2",
+          "title_size": 60,
+          "image_text_caption": "<br>The table should be a place of connection, where laughter and good conversations happen. Where individuals are refreshed, identity is formed, and family bonds are strengthened.\n<br>\n<br>\nUnfortunately, none of that can happen when babies are fussing, toddlers won't stay seated, self-feeding is frustrating, and clean-up is overwhelming. YBG exists to remove the stress so you can <strong>enjoy mealtime again.</strong>",
+          "caption_color": "#52757d",
+          "caption_size": 22,
+          "cta_url": "",
+          "cta_text": "Shop Now",
+          "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg"
+        }
       }
     },
     "content_for_index": [
@@ -7937,7 +7975,9 @@
       "home_custom_block_images_HbDtkF",
       "home_custom_sub_banner_EzmRXD",
       "home_sub_banner_bA77ra",
-      "home_featured_products_rLjPFV"
+      "home_featured_products_rLjPFV",
+      "additional_tips_bUMXyy",
+      "image_text_column_AtUL3m"
     ],
     "blocks": {
       "18228966181090706294": {
