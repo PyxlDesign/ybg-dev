@@ -7636,15 +7636,15 @@
           "image_6RfBhQ": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Brown_Speckle_Lifestyle2_JKP_SS.jpg",
-              "color_content": "#30494d",
-              "sub_heading": "IKEA HIGHCHAIR MAKEOVER",
+              "image": "shopify://shop_images/026A4324.jpg",
+              "color_content": "#fffcf8",
+              "sub_heading": "- 1 -<br>IKEA HIGHCHAIR MAKEOVER",
               "font_size_sub_heading": "13px",
-              "heading": "Completely Custom",
+              "heading": "Complete Customization",
               "font_size_heading": "30px",
-              "des": "Build a highchair unlike any other",
-              "font_size_des": "20px",
-              "button": "Shop Now",
+              "des": "Use our customizer to build a highchair unlike any other",
+              "font_size_des": "15px",
+              "button": "GET STARTED",
               "link": "shopify://pages/customizer",
               "bg_button": "#fffcf8",
               "border_button": "#fffcf8",
@@ -7911,6 +7911,61 @@
           "margin_bottom_tab": 30,
           "margin_bottom": 30
         }
+      },
+      "home_custom_sub_banner_3_bGBfAY": {
+        "type": "home-custom-sub-banner-3",
+        "blocks": {
+          "image_BNQ7if": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4324.jpg",
+              "color": "#fff",
+              "title": "Shop Curated Styles",
+              "des": "We've done the design work for you",
+              "link_text": "Shop Now",
+              "link": ""
+            }
+          },
+          "image_tqqHXF": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4227.jpg",
+              "color": "#fff",
+              "title": "Shop Individual Pieces",
+              "des": "Browse by product category",
+              "link_text": "Shop Now",
+              "link": "shopify://pages/ikea-highchair-accessories"
+            }
+          },
+          "image_YtQbTJ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Customizer_Thumbnail.jpg",
+              "color": "#fff",
+              "title": "Complete Customization",
+              "des": "Use our customizer to build a highchair unlike any other",
+              "link_text": "Get Started",
+              "link": "shopify://pages/customizer"
+            }
+          }
+        },
+        "block_order": [
+          "image_BNQ7if",
+          "image_tqqHXF",
+          "image_YtQbTJ"
+        ],
+        "name": "Custom: Sub Banner 3",
+        "settings": {
+          "layout": "default",
+          "img_results_per_row": "3",
+          "widget_title": "IKEA Highchair Makeover",
+          "widget_des": "Three ways to make your $25 IKEA ANTILOP cuter and safer",
+          "title_style": "style_2",
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0,
+          "font_size_title": "30px"
+        }
       }
     },
     "content_for_index": [
@@ -7937,7 +7992,8 @@
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
       "additional_tips_bUMXyy",
-      "home_custom_block_bottom_baner_CtUPV8"
+      "home_custom_block_bottom_baner_CtUPV8",
+      "home_custom_sub_banner_3_bGBfAY"
     ],
     "blocks": {
       "18228966181090706294": {
