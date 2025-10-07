@@ -3398,16 +3398,6 @@
               "caption_color": "#31484d"
             }
           },
-          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf": {
-            "type": "icon-text",
-            "settings": {
-              "icon_svg": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/icon-finance_449c12c3-cab0-4dec-9d65-e6b4144e01d3.svg?v=1632343829",
-              "icon_text_title": "Financing",
-              "title_color": "#31484d",
-              "icon_text_caption": "Buy now, pay later with Afterpay",
-              "caption_color": "#31484d"
-            }
-          },
           "4750731e-eba9-4443-b3c8-507c1c9aa36f": {
             "type": "icon-text",
             "settings": {
@@ -3417,12 +3407,22 @@
               "icon_text_caption": "Fast & friendly support team is eager to help",
               "caption_color": "#31484d"
             }
+          },
+          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf": {
+            "type": "icon-text",
+            "settings": {
+              "icon_svg": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/icon-heart4.png?v=1759850491",
+              "icon_text_title": "Made With Love",
+              "title_color": "#31484d",
+              "icon_text_caption": "Owned by a family who cares about families",
+              "caption_color": "#31484d"
+            }
           }
         },
         "block_order": [
           "76bec0ba-40d4-4720-ba6b-b4267372a326",
-          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf",
-          "4750731e-eba9-4443-b3c8-507c1c9aa36f"
+          "4750731e-eba9-4443-b3c8-507c1c9aa36f",
+          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf"
         ],
         "settings": {
           "pad_top": true,
