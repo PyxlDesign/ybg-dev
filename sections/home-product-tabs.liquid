@@ -11,26 +11,69 @@
 {% endcase %}
 <style>
     {% assign margin_bottom =  section.settings.margin_bottom %} 
+    {% assign padding_top = section.settings.padding_top %}
+    {% assign margin_top = section.settings.margin_top %}
+    {% assign margin_top_mb = section.settings.margin_top_mb %}
+    {% assign margin_top_tab = section.settings.margin_top_tab %}
+    {% assign margin_bottom_mb = section.settings.margin_bottom_mb %}
+    {% assign margin_bottom_tab = section.settings.margin_bottom_tab %}
+    {% assign padding_top_mb = section.settings.padding_top_mb %}
+    {% assign padding_top_tab = section.settings.padding_top_tab %}
+    {% assign padding_top_desktop = section.settings.padding_top_desktop %}
+
+    .btn-shop-all {
+        background: {{ settings.button_bg_color }};
+        color: {{ settings.button_text_color }};
+        border-radius: {{ settings.button_border_radius }}px;
+        border: 1px solid {{ settings.button_border_color }};
+        padding: {{ settings.button_padding_top }}px {{ settings.button_padding_right }}px {{ settings.button_padding_bottom }}px {{ settings.button_padding_left }}px;
+    }
+    
+
+    {% if section.settings.enable_style_override %}
+    .widget-title-{{ section.id }} .list-product-tabs .tab-links {
+        background: {{ section.settings.tab_inactive_bg_color }};
+        border-color: {{ section.settings.tab_inactive_border_color }};
+        color: {{ section.settings.tab_inactive_color }};
+    }
+    .widget-title-{{ section.id }} .list-product-tabs .tab-links.active {
+        background: {{ section.settings.tab_active_bg_color }};
+        border-color: {{ section.settings.tab_activeborder_color }};
+        color: {{ section.settings.tab_active_color }};
+    }
+    {% endif %}
 
     @media (max-width: 767px) {
+        .widget-title-{{ section.id }}.pad-top {
+            padding-top: {{ padding_top_mb }}px;
+        }
         #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
+            margin-top: {{ margin_top_mb }}px;
+            margin-bottom: {{ margin_bottom_mb }}px;
         }
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
+        .widget-title-{{ section.id }}.pad-top {
+            padding-top: {{ padding_top_tab }}px;
+        }
         #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
+            margin-top: {{ margin_top_tab }}px;
+            margin-bottom: {{ margin_bottom_tab }}px;
         }
     }
 
     @media (min-width: 1200px) {
+        .widget-title-{{ section.id }}.pad-top {
+            padding-top: {{ padding_top_desktop }}px;
+        }
         #product-tabs-{{section.id}} {
+            margin-top: {{ margin_top }}px;
             margin-bottom: {{ margin_bottom }}px;
         }
     }   
 </style>
-<section class="widget-title{% if pad_top == true %} pad-top{% endif %}">
+<section class="widget-title widget-title-{{ section.id }}{% if pad_top == true %} pad-top {% endif %}">
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
         {% if section.settings.product_tabs_title != blank %}
@@ -65,6 +108,13 @@
                     <div class="products-grid row {{ row }}" data-row="{{ section.settings.collection_results_per_row }}">
                         <div class="loading col-12"></div>
                     </div>
+                    {% if collections[block.settings.collection].url != blank and section.settings.use_button %}
+                    <div class="text-center view-all">
+                        <a class="btn btn-shop-all" href="{{ collections[block.settings.collection].url }}">
+                            {{ section.settings.button_prefix }} {{ collections[block.settings.collection].title | remove: section.settings.button_remove_text }}
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -82,6 +132,37 @@
             "id": "pad_top",
             "label": "Add padding top",
             "default": true
+        },
+        {
+            "type": "header",
+            "content": "Section Padding:"
+        },    
+        {
+            "type": "range",
+            "id": "padding_top_mb",
+            "label": "Mobile",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "padding_top_tab",
+            "label": "Tablet",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "padding_top_desktop",
+            "label": "Desktop",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
         },
         {
             "type": "header",
@@ -163,6 +244,153 @@
                 }           
             ],
             "default": "style_1"
+        },
+        {
+            "type": "header",
+            "content": "Horizontal Tab Button Settings:"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_style_override",
+            "label": "Enable Style Override",
+            "default": true
+        },
+        {
+            "type": "color",
+            "id": "tab_inactive_bg_color",
+            "label": "Tab Inactive Background Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "color",
+            "id": "tab_inactive_border_color",
+            "label": "Tab Inactive Border Color",
+            "default": "#df9764"
+        },
+        {
+            "type": "color",
+            "id": "tab_inactive_color",
+            "label": "Tab Inactive Text Color",
+            "default": "#df9764"
+        },
+        {
+            "type": "color",
+            "id": "tab_active_bg_color",
+            "label": "Tab Active Background Color",
+            "default": "#df9764"
+        },
+        {
+            "type": "color",
+            "id": "tab_activeborder_color",
+            "label": "Tab Active Border Color",
+            "default": "#df9764"
+        },
+        {
+            "type": "color",
+            "id": "tab_active_color",
+            "label": "Tab Active Text Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "header",
+            "content": "Button Settings:"
+        },
+        {
+            "type": "checkbox",
+            "id": "use_button",
+            "label": "Use Button",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "button_prefix",
+            "label": "Button Prefix",
+            "default": "Shop"
+        },
+        {
+            "type": "text",
+            "id": "button_remove_text",
+            "label": "Button Text to remove",
+            "default": "Favorites:"
+        },
+        {
+            "type": "header",
+            "content": "Button Styling"
+        },
+        {
+            "type": "color",
+            "id": "button_bg_color",
+            "label": "Button Background Color",
+            "default": "#000000"
+        },
+        {
+            "type": "color",
+            "id": "button_text_color",
+            "label": "Button Text Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "color",
+            "id": "button_border_color",
+            "label": "Button Border Color",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "button_border_radius",
+            "label": "Button Border Radius",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "button_padding_top",
+            "label": "Button Padding Top",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "button_padding_right",
+            "label": "Button Padding Right",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "button_padding_bottom",
+            "label": "Button Padding Bottom",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "button_padding_left",
+            "label": "Button Padding Left",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "default": 20
+        },
+        {
+            "type": "color",
+            "id": "button_hover_bg",
+            "label": "Button Hover Background",
+            "default": "#333333"
+        },
+        {
+            "type": "color",
+            "id": "button_hover_text",
+            "label": "Button Hover Text Color",
+            "default": "#ffffff"
         },
         {
             "type": "header",
