@@ -7709,7 +7709,7 @@
           "tab_activeborder_color": "#30494d",
           "tab_active_color": "#ffffff",
           "use_button": true,
-          "button_prefix": "Shop",
+          "button_prefix": "Shop all",
           "button_remove_text": "Favorites:",
           "button_bg_color": "#000000",
           "button_text_color": "#ffffff",
