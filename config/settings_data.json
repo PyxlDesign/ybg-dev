@@ -7261,12 +7261,47 @@
         "settings": {
           "enable_code": true
         }
+      },
+      "home_product_tabs_iT49Cn": {
+        "type": "home-product-tabs",
+        "blocks": {
+          "product_tabs_wFhxBw": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Cushion Covers",
+              "collection": "ikea-highchair-cushion-covers"
+            }
+          },
+          "product_tabs_K46Ef7": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Highchair Accessories",
+              "collection": "all-highchair-accessories"
+            }
+          }
+        },
+        "block_order": [
+          "product_tabs_wFhxBw",
+          "product_tabs_K46Ef7"
+        ],
+        "name": "Product Tabs",
+        "settings": {
+          "product_tabs_title": "New Arrivals",
+          "product_tabs_des": "",
+          "title_style": "style_1",
+          "collection_results_per_row": "5",
+          "tabs_style": "style_1",
+          "margin_bottom_mb": 40,
+          "margin_bottom_tab": 40,
+          "margin_bottom": 10
+        }
       }
     },
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
       "162041756141531609",
+      "home_product_tabs_iT49Cn",
       "162041362564bbc4d8",
       "1620416895faf4570f",
       "featured_collections_UW4fRt",
