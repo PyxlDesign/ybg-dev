@@ -376,7 +376,7 @@
             min-width: 190px;
         }      
         {% endunless %}
-    }	
+    }   
 
     {% unless section.settings.display_padding %}
     #custom-sub-banner-{{section.id}} .two-blocks.one_Image {
@@ -385,7 +385,6 @@
     {% endunless%}
 </style>
 {% endif %}
-
 
 {% schema %}
     {
@@ -496,14 +495,14 @@
                 "max": 100,
                 "step": 1,
                 "default": 0
-            }	
+            }   
         ],
 
         "blocks": [
             {
                 "type": "oneImage",
                 "name": "One Image",
-                "settings": [		  	
+                "settings": [           
                     {
                         "type": "image_picker",
                         "id": "image",
@@ -557,13 +556,13 @@
             {
                 "type": "threeImage",
                 "name": "Three Images",
-                "settings": [	
+                "settings": [   
                     {
                         "type" : "checkbox",
                         "id" : "reverse",
                         "label" : "Display Reverse",
                         "default" : false
-                    }, 	
+                    },  
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -640,7 +639,7 @@
             {
                 "type": "fiveImages",
                 "name": "Five Images",
-                "settings": [		  	
+                "settings": [           
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -800,3 +799,4 @@
         ]
     }
 {% endschema %}
+

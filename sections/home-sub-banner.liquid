@@ -56,6 +56,7 @@
 <style>
     {% assign font_size_title =  section.settings.font_size_title %}
     {% assign margin_bottom =  section.settings.margin_bottom %}
+    {% assign margin_top =  section.settings.margin_top %}
 
     @media (max-width: 767px) {
         #sub-banner-{{section.id}} {
@@ -76,8 +77,29 @@
         
         #sub-banner-{{section.id}} {
             margin-bottom: {{ margin_bottom }}px;
-        }
+        }    
     }	
+        @media (max-width: 767px) {
+        #sub-banner-{{section.id}} {
+            margin-top: {{ section.settings.margin_top_mb }}px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        #sub-banner-{{section.id}} {
+            margin-top: {{ section.settings.margin_top_tab }}px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        #sub-banner-{{section.id}} .banner-title {
+            font-size: {{ font_size_title }};
+        }
+        
+        #sub-banner-{{section.id}} {
+            margin-top: {{ margin_top }}px;
+        }
+    }
 </style>
 {% endif %}
 
@@ -140,7 +162,38 @@
                 "max": 100,
                 "step": 1,
                 "default": 0
-            },              
+            },   
+            {
+                "type": "header",
+                "content": "Margin Top:"
+            },
+            {
+                "type": "range",
+                "id": "margin_top_mb",
+                "label": "Mobile",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_top_tab",
+                "label": "Tablet",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "margin_top",
+                "label": "Margin Top",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 0
+            },            
             {
                 "type" : "text",
                 "id" : "font_size_title",

@@ -1,14 +1,36 @@
+{% assign pad_top = s.pad_top %}
 {% case section.settings.collection_results_per_row %}
   {% when '2' %}
-	{%- assign row = 'two-items' -%}
+    {%- assign row = 'two-items' -%}
   {% when '3' %}
-	{%- assign row = 'three-items' -%}
+    {%- assign row = 'three-items' -%}
   {% when '4' %}
-	{%- assign row = 'four-items' -%}
+    {%- assign row = 'four-items' -%}
   {% when '5' %}
-	{%- assign row = 'five-items' -%}
+    {%- assign row = 'five-items' -%}
 {% endcase %}
+<style>
+    {% assign margin_bottom =  section.settings.margin_bottom %} 
 
+    @media (max-width: 767px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #product-tabs-{{section.id}} {
+            margin-bottom: {{ margin_bottom }}px;
+        }
+    }   
+</style>
+<section class="widget-title{% if pad_top == true %} pad-top{% endif %}">
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
         {% if section.settings.product_tabs_title != blank %}
@@ -50,37 +72,21 @@
     </div>
 </div>
 
-<style>
-  {% assign margin_bottom =  section.settings.margin_bottom %} 
-
-    @media (max-width: 767px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_mb }}px;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 1199px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ section.settings.margin_bottom_tab }}px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        #product-tabs-{{section.id}} {
-            margin-bottom: {{ margin_bottom }}px;
-        }
-    }	
-</style>
-
 {% schema %}
   {
     "name": "Product Tabs",
-	"class": "home-product-tabs-sections",
+    "class": "home-product-tabs-sections",
     "settings": [  
+        {
+            "type": "checkbox",
+            "id": "pad_top",
+            "label": "Add padding top",
+            "default": true
+        },
         {
             "type": "header",
             "content": "Header"
-        },	  
+        },    
         {
             "type": "text",
             "id": "product_tabs_title",
@@ -188,8 +194,8 @@
             "max": 100,
             "step": 1,
             "default": 10
-        } 	  
-	],
+        }     
+    ],
     "blocks" : [
         {
             "type" : "ProductTabs",
@@ -209,7 +215,7 @@
             ]
         }
     ],
-	"presets": [
+    "presets": [
         {
             "name": "Product Tabs",
             "category": "Collection"     
@@ -217,5 +223,6 @@
     ]
   }
 {% endschema %}
+
 
 

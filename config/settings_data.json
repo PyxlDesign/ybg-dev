@@ -803,7 +803,6 @@
               "title": "Cosmopolis de Milance",
               "content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies. Etiam semper sollicitudin lectus indous scelerisque. Curabitur vel tristique lacus. Nam risus mauris, accumsan et eleifend vitae, dignissim at eros. Vivamus pellentesque dui ex, a interdum orci dignissim vel.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Managing Director",
               "name": "Anne.l",
               "qoute_content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies...",
@@ -817,7 +816,6 @@
               "title": "Excepteur sint occaecat",
               "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Head of Division",
               "name": "Anne.l",
               "qoute_content": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous. Nullam sit amet orci rutrum risus laoreet semper vel non magna. Mauris vel sem a lectus vehicula ultricies...",
@@ -831,7 +829,6 @@
               "title": "Tortor id aliquet",
               "content": "Vitae purus faucibus ornare suspendisse sed nisi. Tincidunt arcu non sodales neque sodales. Sociis natoque penatibus et magnis dis parturient montes. Mauris augue neque gravida in fermentum et sollicitudin ac. Habitant morbi tristique senectus et netus. Tortor id aliquet lectus proin nibh nisl condimentum. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Sodales ut etiam sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Non odio euismod lacinia at quis risus sed. Nunc pulvinar sapien et ligula ullamcorper. Amet est placerat in egestas erat imperdiet sed euismod.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Managing Director",
               "name": "Anne.l",
               "qoute_content": "Faucibus turpis in eu mi bibendum neque egestas congue quisque. Sodales ut etiam sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.",
@@ -845,7 +842,6 @@
               "title": "Tempor nec feugiat",
               "content": "Ultrices dui sapien eget mi proin sed. Ullamcorper velit sed ullamcorper morbi. Eget sit amet tellus cras adipiscing enim. Quis hendrerit dolor magna eget est. Neque egestas congue quisque egestas. Velit aliquet sagittis id consectetur purus ut faucibus. Egestas purus viverra accumsan in nisl nisi scelerisque. Lacus vestibulum sed arcu non. Sollicitudin nibh sit amet commodo. Odio euismod lacinia at quis risus sed vulputate. Sed pulvinar proin gravida hendrerit lectus.",
               "dpl_qoute": true,
-              "profile_picture": "",
               "qoute_heading": "Tempor nec feugiat",
               "name": "John Doe",
               "qoute_content": "Mi bibendum neque egestas congue quisque egestas diam in. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna.",
@@ -863,15 +859,14 @@
         "settings": {
           "autoplay": true,
           "slideshow_speed": "5000",
-          "background_image": "",
-          "text_color": "#fff",
+          "text_color": "#ffffff",
           "title_size": "40",
           "button_bg_color": "rgba(0,0,0,0)",
-          "button_text_color": "#fff",
-          "button_bd_color": "#fff",
+          "button_text_color": "#ffffff",
+          "button_bd_color": "#ffffff",
           "button_bg_color_h": "rgba(0,0,0,0)",
-          "button_text_color_h": "#fff",
-          "button_bd_color_h": "#fff"
+          "button_text_color_h": "#ffffff",
+          "button_bd_color_h": "#ffffff"
         }
       },
       "navigation": {
@@ -1866,23 +1861,22 @@
           "1546921086313": {
             "type": "image",
             "settings": {
-              "image": "",
-              "title": "Loremous",
+              "image": "shopify://shop_images/desertsage__uphighchair.jpg",
+              "title": "Floor Mats",
               "link": ""
             }
           },
           "1546921152681": {
             "type": "image",
             "settings": {
-              "image": "",
-              "title": "Isablella",
-              "link": ""
+              "image": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Restaurant Bags",
+              "link": "shopify://collections/restaurant-bags"
             }
           },
           "1546921217742": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -1890,7 +1884,6 @@
           "1546921256644": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Fermends",
               "link": ""
             }
@@ -1898,7 +1891,6 @@
           "1546921290795": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "conseqaur",
               "link": ""
             }
@@ -1906,7 +1898,6 @@
           "1546921315910": {
             "type": "image",
             "settings": {
-              "image": "",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -3141,17 +3132,18 @@
         "type": "header-custom",
         "settings": {
           "header_bg": "#ffffff",
+          "logo": "shopify://shop_images/Name_Only_Logo_Orange.png",
           "logo_max_width": 315,
           "menu_style": "mega",
-          "mega_menu_linklist": "",
+          "mega_menu_linklist": "new-header-menu-2025",
           "mega_menu_title_color": "#30494d",
           "mega_menu_link_color": "#637175",
           "mega_menu_link_hover_color": "#d79a80",
-          "left_linklist": "",
-          "right_linklist": "",
-          "mobile_linklist": "",
+          "left_linklist": "left-menu",
+          "right_linklist": "right-menu",
+          "mobile_linklist": "mobile-navigation",
           "message_text": "<p><strong>FREE US SHIPPING ON ORDERS OVER $65</strong></p><p><strong>$10 OFF ORDERS OVER $100 WITH THE CODE 10OFF</strong></p>",
-          "color_bg": "#637175",
+          "color_bg": "#52757d",
           "color_text": "#fffcf8",
           "color_link": "#d69a81",
           "wishlist": false,
@@ -3165,20 +3157,14 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/17_Memorial_2025_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
-            }
-          },
-          "hero_slide_6Mbdpd": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_image": "shopify://shop_images/AmazonPlacemat_VintageBlue_7.jpg",
-              "hero_slide_url": ""
             }
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify://shop_images/AmazonPlacemat_BohoBrown_7.jpg",
+              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b_c385cca2-87c1-40a2-8adb-55f667ebcea6.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
@@ -3186,6 +3172,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -3193,19 +3180,20 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           }
         },
         "block_order": [
           "hero_slide_NqTp6e",
-          "hero_slide_6Mbdpd",
           "hero_slide_RqM7CD",
           "hero_slide_bQjNr4",
           "hero_slide_fmUcph"
         ],
         "settings": {
           "custom_class": "hero-desktop-banner",
+          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "hero_title": "Level up your IKEA highchair,<br>oh yeah.",
           "title_color": "#ffffff",
           "title_size": 60,
@@ -3276,31 +3264,36 @@
           "1348b1e8-f464-46c5-a185-be87842cd2e5": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#bac8b6"
+              "color_swatch": "#bac8b6",
+              "product_image": "shopify://shop_images/home-001.png"
             }
           },
           "99789124-04e3-422f-9fe4-ad8bda53c97a": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#637175"
+              "color_swatch": "#637175",
+              "product_image": "shopify://shop_images/home-003.png"
             }
           },
           "a4e15931-b8eb-4a78-ae24-036f1add7a84": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#df9764"
+              "color_swatch": "#df9764",
+              "product_image": "shopify://shop_images/home-005_c73bdc58-398a-4f7e-8c7c-347ebce12074.png"
             }
           },
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#d79a80"
+              "color_swatch": "#d79a80",
+              "product_image": "shopify://shop_images/home-004.png"
             }
           },
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195": {
             "type": "product_images",
             "settings": {
-              "color_swatch": "#e7b99d"
+              "color_swatch": "#e7b99d",
+              "product_image": "shopify://shop_images/home-002.png"
             }
           }
         },
@@ -3318,6 +3311,7 @@
           "d130606a-42e6-4bc5-9fe4-ab1fe0d5ab5e",
           "7fcddb25-ceb9-43ba-9fdd-1ce1bbe4f195"
         ],
+        "disabled": true,
         "settings": {
           "section_header": "Make it",
           "paragraph": "Safe highchair positioning done with style.<br>Mix and match our accessories to create over 50,000 possible combinations!",
@@ -3363,6 +3357,7 @@
           "99dd4423-dc9a-4010-b5f7-74bc143d75d5",
           "e0a21277-4b31-4175-96b0-925b60fb51ea"
         ],
+        "disabled": true,
         "settings": {
           "background_color": "#fffcf8",
           "featured_collection_title": "IKEA Highchair Accessories",
@@ -3386,7 +3381,8 @@
           "caption_color": "#ffffff",
           "caption_size": 22,
           "cta_url": "shopify://pages/inspirations",
-          "cta_text": "Explore our lookbook"
+          "cta_text": "Explore our lookbook",
+          "image": "shopify://shop_images/rainbow_274cbcfa-3277-4e27-b17d-1fb373078447.png"
         }
       },
       "1620416895faf4570f": {
@@ -3402,16 +3398,6 @@
               "caption_color": "#31484d"
             }
           },
-          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf": {
-            "type": "icon-text",
-            "settings": {
-              "icon_svg": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/icon-finance_449c12c3-cab0-4dec-9d65-e6b4144e01d3.svg?v=1632343829",
-              "icon_text_title": "Financing",
-              "title_color": "#31484d",
-              "icon_text_caption": "Buy now, pay later with Afterpay",
-              "caption_color": "#31484d"
-            }
-          },
           "4750731e-eba9-4443-b3c8-507c1c9aa36f": {
             "type": "icon-text",
             "settings": {
@@ -3421,12 +3407,22 @@
               "icon_text_caption": "Fast & friendly support team is eager to help",
               "caption_color": "#31484d"
             }
+          },
+          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf": {
+            "type": "icon-text",
+            "settings": {
+              "icon_svg": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/icon-heart6.png?v=1759851446",
+              "icon_text_title": "Family Owned",
+              "title_color": "#31484d",
+              "icon_text_caption": "Made by a family who cares about families",
+              "caption_color": "#31484d"
+            }
           }
         },
         "block_order": [
           "76bec0ba-40d4-4720-ba6b-b4267372a326",
-          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf",
-          "4750731e-eba9-4443-b3c8-507c1c9aa36f"
+          "4750731e-eba9-4443-b3c8-507c1c9aa36f",
+          "a4093a3f-dd42-4f97-b3a5-3c89cf3889bf"
         ],
         "settings": {
           "pad_top": true,
@@ -3499,23 +3495,33 @@
         "blocks": {
           "20708083-3635-4fa5-86e7-d482a325b499": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/babylist2_595cd01e-774d-4adc-a265-5831974fe994.png"
+            }
           },
           "526f843d-1855-4065-867a-9d8f2802f5f7": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/today_s_parent3_8a4bba4f-fb4a-4e7e-b474-3d0fa4390cd1.png"
+            }
           },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/solid_starts2.png"
+            }
           },
           "brand_DjpNCY": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/karrie2_e0951152-3a0f-49e1-a95a-d0f36613dbea.png"
+            }
           },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
-            "settings": {}
+            "settings": {
+              "brand_image": "shopify://shop_images/domino2_b1759b39-7b79-4ece-9ad7-f6daa16b09e1.png"
+            }
           }
         },
         "block_order": [
@@ -3528,7 +3534,7 @@
         "custom_css": [],
         "settings": {
           "pad_top": true,
-          "section_title": "",
+          "section_title": "Loved By Interior Design and Baby Experts",
           "title_color": "#cb6b3a",
           "title_size": 18
         }
@@ -3537,6 +3543,7 @@
         "type": "hero-banner",
         "settings": {
           "custom_class": "hero-secondary",
+          "hero_background": "shopify://shop_images/Kruithof-Family-2020-248_KRK.jpg",
           "hero_title": "Meet the<br>Yeah Baby Goods<br>Team",
           "title_color": "#ffffff",
           "title_size": 56,
@@ -3562,7 +3569,7 @@
             "type": "menu",
             "settings": {
               "heading": "MORE INFO",
-              "menu": ""
+              "menu": "shop-menu"
             }
           },
           "1866072b-91ad-482c-8657-20df07cde056": {
@@ -3576,7 +3583,7 @@
             "type": "menu",
             "settings": {
               "heading": "RESOURCES",
-              "menu": ""
+              "menu": "footer-resources"
             }
           },
           "c4ac2b9f-74fa-4396-8012-c244394b705f": {
@@ -3595,7 +3602,7 @@
           "c4ac2b9f-74fa-4396-8012-c244394b705f"
         ],
         "settings": {
-          "footer_background": "",
+          "footer_background": "#31484d",
           "link_color": "",
           "link_hover_color": "",
           "heading_color": "",
@@ -3607,39 +3614,57 @@
         "blocks": {
           "cca8e496-5748-40d7-bdcd-26563c5ae25a": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/ybgg.jpg"
+            }
           },
           "631259b6-98fb-49e3-bb1b-c3f908cfd704": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify://shop_images/brown_butter_full.jpg"
+            }
           },
           "42a7df21-d27f-45b2-aec5-a15f5d77c7dc": {
             "type": "image",
-            "settings": {}
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/y-10.jpg"
+            }
           },
           "0cc1a2eb-c408-499a-be14-f56bab07e5a0": {
             "type": "image",
-            "settings": {}
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/restaurantbags-26.jpg"
+            }
           },
           "ac4574ce-dff0-4dca-9d51-7bf15f895288": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/floormats-72.jpg"
             }
           },
           "89612a2a-0175-4a47-b91c-d635007d41d0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/restaurantbags-37.jpg"
             }
           },
           "e6a8ace4-b50c-4489-9801-42b37a06e710": {
             "type": "image",
-            "settings": {}
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/vintage_blue_uphighchair.jpg"
+            }
           },
           "caec4b6a-e73d-47d8-8b4b-d7d799f864e0": {
             "type": "image",
-            "settings": {}
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/y-6.jpg"
+            }
           }
         },
         "block_order": [
@@ -3675,7 +3700,7 @@
         "settings": {
           "section_heading": "safe feeding<br>position",
           "heading": "did you know",
-          "content": "Problems like fussiness at the table, refusing to eat, pickiness, and so many others can often be traced back to the highchair and how they’re sitting for meals."
+          "content": "Problems like fussiness at the table, refusing to eat and pickiness can often be traced back to the highchair"
         }
       },
       "eating-posture-fetures": {
@@ -3730,8 +3755,8 @@
           "b6fe7287-bef8-48bf-be85-021b5efb4654"
         ],
         "settings": {
-          "section_heading": "What makes a good highchair?",
-          "section_paragraph": "Proper positioning provides comfort, improves focus and facilitates a safe swallow.  Here are the important things to consider:",
+          "section_heading": "What To Look For When Buying A Highchair",
+          "section_paragraph": "Proper positioning provides comfort, improves focus and facilitates a safe swallow.  Here's what feeding experts recommend:",
           "section_image": "shopify://shop_images/yeahbabygoods-59b_3d942403-4157-44da-9510-f19caf8792dd.jpg"
         }
       },
@@ -3741,7 +3766,7 @@
           "8be3cb45-faac-48eb-8d4f-507782bd68c1": {
             "type": "content",
             "settings": {
-              "content": "When you are comfortably seated in a chair, you eat better and you can sit longer.",
+              "content": "When you are comfortably seated in a chair, you're able to sit longer.",
               "background_color": "",
               "font_color": "",
               "pointer_color": "#f1e3d7"
@@ -3750,7 +3775,7 @@
           "ea58b275-c2ff-4ae4-8ed2-0876380c53d1": {
             "type": "content",
             "settings": {
-              "content": "Alternatively, if you are unstable and uncomfortable, you are distracted from eating.",
+              "content": "Alternatively, if you don't feel stable, you'll be too distracted to eat.",
               "background_color": "#f0e4d8",
               "font_color": "#627175",
               "pointer_color": ""
@@ -3843,30 +3868,30 @@
         "settings": {
           "section_heading": "hi, welcome",
           "image": "shopify://shop_images/static-family.png",
-          "heading": "Just discovering Yeah Baby Goods and wondering what we’re all about?",
-          "paragraph": "We are a husband and wife team who wanted to make the best-selling highchair even better.  Our accessories not only make the IKEA highchair cuter, but also make it safer by helping establish proper eating posture.  With over 50,000 possible combinations, you can customize to the max and make it uniquely yours!"
+          "heading": "Just discovering<br>Yeah Baby Goods<br>and wondering what we’re all about?",
+          "paragraph": "We are a husband and wife team who set out to make the best-selling IKEA highchair safer and cuter. Over the years, we expanded our product line to include other feeding essentials that support child development without sacrificing aesthetic. Designed with mental and visual peace in mind, our products make mealtimes less stressful and more joyful."
         }
       },
       "ikea-product": {
         "type": "ikea-product",
         "settings": {
           "prefix": "step 1",
-          "section_heading": "get the $20 highchair",
-          "section_paragraph": "Order from IKEA’s website.  You can often find the highchair on Facebook Marketplace as well.",
+          "section_heading": "Get The $25 Highchair",
+          "section_paragraph": "Order new from IKEA’s website or find one secondhand",
           "product_image": "shopify://shop_images/high_chair.png",
           "features_1_heading": "",
           "features_1": "",
           "features_2_heading": "",
           "features_2": "",
           "cta_text": "Order On IKEA.COM",
-          "cta_url": "https://www.ikea.com/us/en/p/antilop-high-chair-with-tray-white-silver-color-s89228434/"
+          "cta_url": "https://www.ikea.com/us/en/p/antilop-high-chair-with-tray-white-white-s39597517/"
         }
       },
       "banner-start-here": {
         "type": "banner-start-here",
         "settings": {
-          "highlighter": "now make it",
-          "banner_content": "cuter &bull;\nsafer &bull; unique",
+          "highlighter": "make it better",
+          "banner_content": "CUTER & SAFER",
           "background_color": "#dd9864"
         }
       },
@@ -3876,8 +3901,8 @@
           "d6bd3ca1-744e-4f8f-9b39-5f95f0ee7c7b": {
             "type": "collection",
             "settings": {
-              "collection": "ikea-highchair-cushion-covers",
-              "image": "shopify://shop_images/yeahbabygoods-55.jpg",
+              "collection": "vegan-leather-cushion-covers",
+              "image": "shopify://shop_images/ybg-11_JKP_SS_0aec97d8-0323-4207-b3c3-2f46d52ca8ff.jpg",
               "collection_title": "Cushion Covers"
             }
           },
@@ -3901,7 +3926,7 @@
             "type": "collection",
             "settings": {
               "collection": "precut-leg-wraps",
-              "image": "shopify://shop_images/IMG_0010_flip.jpg",
+              "image": "shopify://shop_images/walnutlegs.jpg",
               "collection_title": "Leg Wraps"
             }
           }
@@ -3914,7 +3939,7 @@
         ],
         "settings": {
           "pre_heading": "step 2",
-          "section_heading": "Level up with YBGs",
+          "section_heading": "Level Up With YBGs",
           "highchair_text": "Wondering what makes a safe highchair?",
           "highchair_link": "shopify://pages/safe-eating-posture",
           "btn_text": "Find out"
@@ -3923,6 +3948,14 @@
       "signature-collections": {
         "type": "signature-collections",
         "blocks": {
+          "2054d530-5034-4a7a-bc27-88825b7427b2": {
+            "type": "collection",
+            "settings": {
+              "featured_collection": "utensils",
+              "collection_image": "shopify://shop_images/ybgg.jpg",
+              "col_description": "Supports mouthing, self-feeding and parent-led feeding"
+            }
+          },
           "c5de6d2d-95b2-495a-94e7-cf63fc88a43e": {
             "type": "collection",
             "settings": {
@@ -3934,17 +3967,9 @@
           "d42a4fed-fa18-4874-95a9-733ca397041c": {
             "type": "collection",
             "settings": {
-              "featured_collection": "restaurant-bags-1",
-              "collection_image": "shopify://shop_images/restaurantbags-37_95012397-f4fd-44e7-b0dd-b96a7987146c.jpg",
+              "featured_collection": "restaurant-bags",
+              "collection_image": "shopify://shop_images/13_Restaurant_Bag_3_square_aaa6c93b-9319-4587-8e88-9b8f6843a14d.jpg",
               "col_description": "Easier prep and clean-up for meals at home or on the go"
-            }
-          },
-          "2054d530-5034-4a7a-bc27-88825b7427b2": {
-            "type": "collection",
-            "settings": {
-              "featured_collection": "utensils",
-              "collection_image": "shopify://shop_images/ybgg.jpg",
-              "col_description": "Adhere to highchair legs for a truly customized look"
             }
           },
           "00f61c33-c0af-4001-adbe-4f44851037d6": {
@@ -3957,9 +3982,9 @@
           }
         },
         "block_order": [
+          "2054d530-5034-4a7a-bc27-88825b7427b2",
           "c5de6d2d-95b2-495a-94e7-cf63fc88a43e",
           "d42a4fed-fa18-4874-95a9-733ca397041c",
-          "2054d530-5034-4a7a-bc27-88825b7427b2",
           "00f61c33-c0af-4001-adbe-4f44851037d6"
         ],
         "settings": {
@@ -5624,7 +5649,7 @@
             "settings": {
               "title": "Katie",
               "by_liner": "OWNER",
-              "details": "<p>I usually have the vision, then make Brent figure out the logistics, haha! Favorite roles include brainstorming new products, designing graphics and packaging, and connecting with other parents on YBG's social media.</p>",
+              "details": "<p>Constantly throwing out ideas and asking Brent if we can make them happen. Favorite roles include content creation, packaging design, and connecting with other parents on YBG's social media.</p>",
               "image": "shopify://shop_images/owner_picture_katie6.jpg"
             }
           },
@@ -5633,7 +5658,7 @@
             "settings": {
               "title": "Brent",
               "by_liner": "OWNER",
-              "details": "<p>World's greatest daddy, homeschool teacher, and baby-wearing extraordinaire. Works with YBG suppliers, manages marketing efforts and handles all financial aspects.</p>",
+              "details": "<p>The true mastermind behind our business! Brent works with YBG suppliers, manages inventory and handles anything that has to do with numbers...all while homeschooling our four kids!</p>",
               "image": "shopify://shop_images/owner_picture_brent3_e7549cb3-4e21-4b93-a13b-54571edb8e8e.jpg"
             }
           },
@@ -5642,7 +5667,7 @@
             "settings": {
               "title": "Gio",
               "by_liner": "TEAM VISIONARY",
-              "details": "<p>The boy who sold us on the IKEA highchair in the first place is now 10 years old! Loves Pokemon cards, board games and gymnastics. Gio's an amazing big brother and dreams of taking over YBG someday!</p>",
+              "details": "<p>The boy who sold us on the IKEA highchair all those years ago is now 12! Loves board games and gymnastics. Gio's an amazing big brother and dreams of taking over YBG someday!</p>",
               "image": "shopify://shop_images/owner_picture_Gio5_6091c6b7-6d01-47d8-ad28-1245478a4ce4.jpg"
             }
           },
@@ -5651,7 +5676,7 @@
             "settings": {
               "title": "Decker",
               "by_liner": "CREATIVE MUSE",
-              "details": "<p>Our first YBGs product tester stayed in the highchair until he was 2.5 years old (when little sis bumped him out!). Decker is a delightful 8-year-old. He loves reading and keeps us laughing with his awesome dance moves and quirky sense of humor. </p>",
+              "details": "<p>Our first product tester stayed in the highchair until he was 2.5 years old (when little sis bumped him out!). Decker is now a delightful 10-year-old who loves reading and keeps us laughing with his quick wit. </p>",
               "image": "shopify://shop_images/owner_picture_Decker6_8b855a9c-031e-446c-8fc8-e6e893b4f07b.jpg"
             }
           },
@@ -5660,7 +5685,7 @@
             "settings": {
               "title": "Pfeiffer",
               "by_liner": "EMOTIONAL SUPPORT",
-              "details": "<p>The sweetest 6-year-old you'll ever meet! When she was a baby, FiFi tried every footrest prototype until we nailed our innovative design. She brings so much beauty and joy to our home!</p>",
+              "details": "<p>The sweetest 8-year-old you'll ever meet! When she was a baby, FiFi tried every footrest prototype until we nailed our innovative design. She brings so much beauty and joy to our home!</p>",
               "image": "shopify://shop_images/owner_picture_pfeiffer6.jpg"
             }
           },
@@ -5668,8 +5693,8 @@
             "type": "member",
             "settings": {
               "title": "Covey",
-              "by_liner": "CHIEF DISRUPTER",
-              "details": "<p>Our newest team member joined us October 2020. Primary responsibilities include providing comic relief to the rest of team, enforcing mandatory break time and looking adorable in the highchair.</p>",
+              "by_liner": "COMIC RELIEF",
+              "details": "<p>As a toddler, Coco played a huge part in our dinnerware, bib and utensils development. It's hard to believe she's already 4! Covey enjoys baby dolls, doing people's hair and telling Alexa what songs to play.</p>",
               "image": "shopify://shop_images/owner_picture_covey4_624306c3-8773-4ab7-9efc-80b65c35982a.jpg"
             }
           }
@@ -5887,13 +5912,14 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/16_Memorial_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/collections"
             }
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify://shop_images/AmazonPlacemat_VintageBlue_6.jpg",
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
             }
           },
@@ -5901,6 +5927,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
@@ -5908,6 +5935,7 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
             }
           },
@@ -5915,13 +5943,13 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
+              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
           },
           "hero_slide_eqVdgU": {
             "type": "hero_slide",
             "settings": {
-              "hero_slide_image": "shopify://shop_images/AmazonPlacemat_BohoBrown_8.jpg",
               "hero_slide_url": ""
             }
           }
@@ -5937,6 +5965,7 @@
         "settings": {
           "testing_field": "",
           "custom_class": "hero-mobile-banner",
+          "hero_background": "shopify://shop_images/yeahbabygoods-477_flip_ffa8e5e8-20a9-494e-be2a-45ab3e67536c.jpg",
           "image_link": "shopify://pages/collections",
           "hero_title": "Level up <br>your IKEA <br>highchair,<br> oh yeah.",
           "title_color": "#ffffff",
@@ -6256,6 +6285,41 @@
         "settings": {
           "featured_image": "shopify://shop_images/22_Restaurant_Bags_square.jpg",
           "heading": "Why Restaurant Bags?"
+        }
+      },
+      "reasons-to-buy-all-you-tensil": {
+        "type": "reasons-to-buy-all-you-tensil",
+        "blocks": {
+          "reason_9aBwXL": {
+            "type": "reason",
+            "settings": {
+              "title": "SETS BABY UP FOR SUCCESS",
+              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills</p>"
+            }
+          },
+          "reason_VTjnEA": {
+            "type": "reason",
+            "settings": {
+              "title": "VERSATILE",
+              "content": "<p>Can be used for self-feeding or parent-led feeding with purees</p>"
+            }
+          },
+          "reason_9mitEH": {
+            "type": "reason",
+            "settings": {
+              "title": "HELPS DEVELOP NEW SKILLS",
+              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_9aBwXL",
+          "reason_VTjnEA",
+          "reason_9mitEH"
+        ],
+        "settings": {
+          "featured_image": "shopify://shop_images/YBG-34.jpg",
+          "heading": "Why All You-Tensils?"
         }
       },
       "reasons-to-buy-cushions": {
@@ -6835,7 +6899,7 @@
             "type": "reason",
             "settings": {
               "title": "BETTER FIT",
-              "content": "<p>Neckline can be faster smaller for petite babies, then adjusted as the child grows</p>"
+              "content": "<p>Neckline can be fastened smaller for petite babies, then adjusted as the child grows</p>"
             }
           }
         },
@@ -7154,97 +7218,47 @@
       "featured_collections_UW4fRt": {
         "type": "featured-collections",
         "blocks": {
-          "collection_U4WfQC": {
+          "collection_BUFCKE": {
             "type": "collection",
             "settings": {
-              "collection": "eating-out-essentials",
-              "collection_title": "Eating Out Essentials"
+              "collection": "vegan-leather-cushion-covers",
+              "collection_title": "Highchairs That Go Viral"
             }
           },
           "collection_FxbKyY": {
             "type": "collection",
             "settings": {
               "collection": "dinnerware",
-              "collection_title": "Dinnerware"
+              "collection_title": "Drool-Worthy Tableware"
+            }
+          },
+          "collection_U4WfQC": {
+            "type": "collection",
+            "settings": {
+              "collection": "eating-out-essentials",
+              "collection_title": "Handy Kits For Eating Out"
             }
           },
           "collection_y7PBYz": {
             "type": "collection",
             "settings": {
-              "collection": "silicone-bibs",
-              "collection_title": "Bibs"
-            }
-          },
-          "collection_BUFCKE": {
-            "type": "collection",
-            "settings": {
-              "collection": "table-placemats",
-              "collection_title": "Table Placemats"
+              "collection": "utensils",
+              "collection_title": "The Perfect First Utensil"
             }
           }
         },
         "block_order": [
-          "collection_U4WfQC",
+          "collection_BUFCKE",
           "collection_FxbKyY",
-          "collection_y7PBYz",
-          "collection_BUFCKE"
+          "collection_U4WfQC",
+          "collection_y7PBYz"
         ],
         "settings": {
           "background_color": "#f1e3d7",
-          "featured_collection_title": "Beyond The Highchair",
+          "featured_collection_title": "Enjoy Mealtime Again",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "Family meals with less stress and more joy",
-          "caption_color": "#30494d",
-          "caption_size": 22,
-          "curved_bottom": false
-        }
-      },
-      "featured_collections_6FqBwV": {
-        "type": "featured-collections",
-        "blocks": {
-          "collection_bgWB9M": {
-            "type": "collection",
-            "settings": {
-              "collection": "restaurant-bags",
-              "collection_title": "Restaurant Essentials Kit"
-            }
-          },
-          "collection_nNGYdx": {
-            "type": "collection",
-            "settings": {
-              "collection": "dinnerware-bundles",
-              "collection_title": "Dinnerware Starter Set"
-            }
-          },
-          "collection_DF9rTM": {
-            "type": "collection",
-            "settings": {
-              "collection": "dinnerware-4-pack",
-              "collection_title": "Dinnerware 4-Packs"
-            }
-          },
-          "collection_eTyBUH": {
-            "type": "collection",
-            "settings": {
-              "collection": "bib-3-packs",
-              "collection_title": "Bib 3-Packs"
-            }
-          }
-        },
-        "block_order": [
-          "collection_bgWB9M",
-          "collection_nNGYdx",
-          "collection_DF9rTM",
-          "collection_eTyBUH"
-        ],
-        "disabled": true,
-        "settings": {
-          "background_color": "#f1e3d7",
-          "featured_collection_title": "Bundle and Save",
-          "title_color": "#30494d",
-          "title_size": 60,
-          "featured_collection_caption": "Get the best value with these curated sets",
+          "featured_collection_caption": "If function & style had a baby, you'd get...",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
@@ -7262,58 +7276,666 @@
           "enable_code": true
         }
       },
-      "home_product_tabs_iT49Cn": {
-        "type": "home-product-tabs",
+      "lookbook-custom": {
+        "type": "lookbook-custom",
         "blocks": {
-          "product_tabs_wFhxBw": {
-            "type": "ProductTabs",
+          "image_fyeJhf": {
+            "type": "image",
             "settings": {
-              "title": "Cushion Covers",
-              "collection": "ikea-highchair-cushion-covers"
-            }
-          },
-          "product_tabs_K46Ef7": {
-            "type": "ProductTabs",
-            "settings": {
-              "title": "Highchair Accessories",
-              "collection": "all-highchair-accessories"
+              "dpl_slide_img": true,
+              "image_slide": "shopify://shop_images/Nikki_Phillis_Mealtime_With_Bub.jpg",
+              "size_image": "normal",
+              "lb_product_1": "dinnerware-set-desert-sage-brown-speckle",
+              "top_position_1": "10",
+              "left_position_1": "10",
+              "dots_color_1": "#ffffff",
+              "dots_bg_color_1": "#323232",
+              "dots_shadow_color_1": "#ffffff",
+              "lb_product_2": "all-you-tensil-set-of-2-stone-grey",
+              "top_position_2": "10",
+              "left_position_2": "10",
+              "dots_color_2": "#ffffff",
+              "dots_bg_color_2": "#323232",
+              "dots_shadow_color_2": "#ffffff",
+              "lb_product_3": "",
+              "top_position_3": "10",
+              "left_position_3": "10",
+              "dots_color_3": "#ffffff",
+              "dots_bg_color_3": "#323232",
+              "dots_shadow_color_3": "#ffffff"
             }
           }
         },
         "block_order": [
-          "product_tabs_wFhxBw",
-          "product_tabs_K46Ef7"
+          "image_fyeJhf"
+        ],
+        "settings": {
+          "display_product_detail_share": true,
+          "share_text": "Share",
+          "button": "",
+          "link": ""
+        }
+      },
+      "collection-2-section": {
+        "type": "collection-2-section",
+        "blocks": {
+          "images_QVFWHa": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/Footrests.jpg",
+              "title": "Footrests",
+              "subtitle": "Fully adjustable foot support keeps your baby comfortable and safe",
+              "link_to": "shopify://collections/highchair-footrest"
+            }
+          },
+          "images_EJmNFf": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/ybg-11_JKP_SS_0aec97d8-0323-4207-b3c3-2f46d52ca8ff.jpg",
+              "title": "Cushions",
+              "subtitle": "Buttery-soft, wipeable vegan leather covers for our support cushions",
+              "link_to": "shopify://collections/vegan-leather-cushion-covers"
+            }
+          },
+          "images_b3Kb9W": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/Placemats_d130496d-43dc-4f2d-ac3e-5cdf72d8d5f5.jpg",
+              "title": "Tray Placemats",
+              "subtitle": "Food-grade silicone placemat makes clean-up a breeze",
+              "link_to": "shopify://collections/highchair-placemats"
+            }
+          },
+          "images_MzKEaC": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/legstogether.jpg",
+              "title": "Leg Wraps",
+              "subtitle": "High-quality vinyl strips adhere to highchair legs for a customized look",
+              "link_to": "shopify://collections/precut-leg-wraps"
+            }
+          }
+        },
+        "block_order": [
+          "images_QVFWHa",
+          "images_EJmNFf",
+          "images_b3Kb9W",
+          "images_MzKEaC"
+        ],
+        "settings": {
+          "background": "shopify://shop_images/026A4248.jpg",
+          "header_text_color": "#ffffff",
+          "page_description": "",
+          "display_filter": false,
+          "filter_list": "",
+          "text_color": "#ffffff",
+          "overlay_color": "#232323",
+          "overlay_opacity": "0.7"
+        }
+      },
+      "collection-1-section": {
+        "type": "collection-1-section",
+        "blocks": {
+          "images_PELdUn": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-61_KRK.jpg",
+              "title": "Shop All",
+              "subtitle": "Shop all our feeding essentials",
+              "link_to": "shopify://collections/feeding-accessories"
+            }
+          },
+          "images_KjPAHd": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-41_KRK.jpg",
+              "title": "Dinnerware",
+              "subtitle": "Children's dinnerware you won't want to hide in the kids' drawer",
+              "link_to": "shopify://collections/dinnerware"
+            }
+          },
+          "images_p9HBwt": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-78_KRK.jpg",
+              "title": "Utensils",
+              "subtitle": "Designed by a feeding specialist to support baby's feeding, motor and oral development",
+              "link_to": "shopify://collections/utensils-1"
+            }
+          },
+          "images_k4CPT3": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-2_c8fa316f-42e6-4e7b-bacd-494b11c524ee.jpg",
+              "title": "Better-Fit Bibs",
+              "subtitle": "Our original design fits the littlest eaters better, and stays comfy as your child grows",
+              "link_to": "shopify://collections/silicone-bibs"
+            }
+          },
+          "images_iNj9P4": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/13_Restaurant_Bag_3_square.jpg",
+              "title": "Eating Out Essentials",
+              "subtitle": "Improve on-the-go mealtimes with restaurant bags, food scissors and travel placemats",
+              "link_to": "shopify://collections/eating-out-essentials"
+            }
+          },
+          "images_xL9Rzm": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/YBG-20_square.jpg",
+              "title": "Table Placemats",
+              "subtitle": "Placemats for the whole family. Perfect for mealtimes, messy crafts and even under pet bowls",
+              "link_to": "shopify://collections/table-placemats"
+            }
+          },
+          "images_zGcp46": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/vintage_blue_uphighchair_cropped_tight.jpg",
+              "title": "Splat Mats",
+              "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
+              "link_to": "shopify://collections/floor-mats"
+            }
+          }
+        },
+        "block_order": [
+          "images_PELdUn",
+          "images_KjPAHd",
+          "images_p9HBwt",
+          "images_k4CPT3",
+          "images_iNj9P4",
+          "images_xL9Rzm",
+          "images_zGcp46"
+        ],
+        "settings": {
+          "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
+          "header_text_color": "#ffffff",
+          "page_description": "",
+          "display_filter": false,
+          "filter_list": "",
+          "text_color": "#ffffff",
+          "overlay_color": "#232323",
+          "overlay_opacity": "0.7"
+        }
+      },
+      "home_spotlight_slider_m9tdJN": {
+        "type": "home-spotlight-slider",
+        "blocks": {
+          "image_6L6XtP": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG4-2_KRK_3f99ecf4-811c-4c71-abf5-4d8a99554368.jpg",
+              "title": "",
+              "link_text": "Shop Sage",
+              "link": "shopify://collections/shop-by-color-sage"
+            }
+          },
+          "image_FMiBEB": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
+              "title": "",
+              "link_text": "Shop Doe",
+              "link": "shopify://collections/shop-by-color-doe"
+            }
+          },
+          "image_6GrGLU": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG.2-24_KRK_tight_square.jpg",
+              "title": "",
+              "link_text": "Shop Terracotta",
+              "link": "shopify://collections/shop-by-color-terracotta"
+            }
+          },
+          "image_Bbqx8i": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-96_JKP_SS_square.jpg",
+              "title": "",
+              "link_text": "Shop Blush",
+              "link": "shopify://collections/shop-by-color-blush"
+            }
+          }
+        },
+        "block_order": [
+          "image_6L6XtP",
+          "image_FMiBEB",
+          "image_6GrGLU",
+          "image_Bbqx8i"
+        ],
+        "name": "Spotlight Slider",
+        "settings": {
+          "layout": "default",
+          "display_padding": true,
+          "bg_color": "#e4e8e1",
+          "spotlight_block_title": "Shop By Color",
+          "spotlight_block_des": "",
+          "title_style": "style_2",
+          "margin_bottom_mb": 0,
+          "margin_bottom": 0
+        }
+      },
+      "home_custom_block_spotlight_VaMqHz": {
+        "type": "home-custom-block-spotlight",
+        "blocks": {
+          "image_78E6rU": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/StoneGrey__uphighchair.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          },
+          "image_dhUfL7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-436_JKP_SS_square_49b3682a-d15e-4f27-afc5-1a242ca98511.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          },
+          "image_VQeKym": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
+              "title": "",
+              "des": "",
+              "button": "Shop Now",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_78E6rU",
+          "image_dhUfL7",
+          "image_VQeKym"
+        ],
+        "disabled": true,
+        "name": "Custom Block: Spotlight",
+        "settings": {
+          "layout": "default",
+          "margin_bottom_mb": 25,
+          "margin_bottom_tab": 35,
+          "margin_bottom": 35,
+          "spotlight_block_title": "Collections",
+          "spotlight_block_des": "",
+          "title_style": "style_2"
+        }
+      },
+      "home_custom_block_images_HbDtkF": {
+        "type": "home-custom-block-images",
+        "blocks": {
+          "image_6RfBhQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4324.jpg",
+              "color_content": "#fffcf8",
+              "sub_heading": "- 1 -<br>IKEA HIGHCHAIR MAKEOVER",
+              "font_size_sub_heading": "13px",
+              "heading": "Complete Customization",
+              "font_size_heading": "30px",
+              "des": "Use our customizer to build a highchair unlike any other",
+              "font_size_des": "15px",
+              "button": "GET STARTED",
+              "link": "shopify://pages/customizer",
+              "bg_button": "#fffcf8",
+              "border_button": "#fffcf8",
+              "color_button": "#30494d"
+            }
+          },
+          "image_YKB8BH": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4239.jpg",
+              "color_content": "#ffffff",
+              "sub_heading": "New Arrivals",
+              "font_size_sub_heading": "13px",
+              "heading": "Da Scarvéro",
+              "font_size_heading": "30px",
+              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+              "font_size_des": "12px",
+              "button": "Shop Now",
+              "link": "",
+              "bg_button": "#ffffff",
+              "border_button": "#ffffff",
+              "color_button": "#232323"
+            }
+          },
+          "image_CNhiYE": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
+              "color_content": "#ffffff",
+              "sub_heading": "New Arrivals",
+              "font_size_sub_heading": "13px",
+              "heading": "Da Scarvéro",
+              "font_size_heading": "30px",
+              "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+              "font_size_des": "12px",
+              "button": "Shop Now",
+              "link": "",
+              "bg_button": "#ffffff",
+              "border_button": "#ffffff",
+              "color_button": "#232323"
+            }
+          }
+        },
+        "block_order": [
+          "image_6RfBhQ",
+          "image_YKB8BH",
+          "image_CNhiYE"
+        ],
+        "disabled": true,
+        "name": "Custom Block: Spotlight 1",
+        "settings": {
+          "layout": "default",
+          "display_padding": true,
+          "bg_color": "#e4e8e1",
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0
+        }
+      },
+      "home_sub_banner_bA77ra": {
+        "type": "home-sub-banner",
+        "blocks": {
+          "image_J9ifBN": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Shop_By_Category_2.jpg",
+              "title": "",
+              "color_title": "#ffffff",
+              "link": "shopify://pages/feeding-essentials"
+            }
+          },
+          "image_wzCaHp": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Shop_By_Category.jpg",
+              "title": "",
+              "color_title": "#ffffff",
+              "link": "shopify://pages/ikea-highchair-accessories"
+            }
+          }
+        },
+        "block_order": [
+          "image_J9ifBN",
+          "image_wzCaHp"
+        ],
+        "name": "Sub Banner",
+        "settings": {
+          "display_sub_banner": true,
+          "layout": "default",
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0,
+          "margin_top_mb": 20,
+          "margin_top_tab": 20,
+          "margin_top": 20,
+          "font_size_title": "16px",
+          "display_padding": true
+        }
+      },
+      "home_product_tabs_x4e6aY": {
+        "type": "home-product-tabs",
+        "blocks": {
+          "product_tabs_g8dEwV": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "IKEA HIGHCHAIR",
+              "collection": "favorites-ikea-highchair"
+            }
+          },
+          "product_tabs_GrCnaw": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Feeding Essentials",
+              "collection": "favorites-feeding-essentials"
+            }
+          },
+          "product_tabs_wKrm69": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Restaurant Kit",
+              "collection": "favorites-restaurant-kits"
+            }
+          },
+          "product_tabs_xzEdMh": {
+            "type": "ProductTabs",
+            "settings": {
+              "title": "Bundles",
+              "collection": "favorites-bundles"
+            }
+          }
+        },
+        "block_order": [
+          "product_tabs_g8dEwV",
+          "product_tabs_GrCnaw",
+          "product_tabs_wKrm69",
+          "product_tabs_xzEdMh"
         ],
         "name": "Product Tabs",
         "settings": {
-          "product_tabs_title": "New Arrivals",
+          "pad_top": true,
+          "product_tabs_title": "Our Favorites",
           "product_tabs_des": "",
-          "title_style": "style_1",
-          "collection_results_per_row": "5",
+          "title_style": "style_2",
+          "collection_results_per_row": "4",
           "tabs_style": "style_1",
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
           "margin_bottom": 10
+        }
+      },
+      "home_featured_products_rLjPFV": {
+        "type": "home-featured-products",
+        "disabled": true,
+        "name": "Featured Products",
+        "settings": {
+          "display_banner": true,
+          "banner_is": "left",
+          "image": "shopify://shop_images/untitled-168_JKP_SS.jpg",
+          "banner_heading": "THE HIGHCHAIR",
+          "font_size_banner_heading": "40px",
+          "color_banner_heading": "#ffffff",
+          "banner_sub_heading": "IKEA ANTILOP ACCESSORIES",
+          "font_size_banner_sub_heading": "13px",
+          "color_banner_sub_heading": "#ffffff",
+          "banner_des": "",
+          "font_size_banner_des": "12px",
+          "color_banner_des": "#ffffff",
+          "banner_button": "Shop All",
+          "link": "shopify://pages/ikea-highchair-accessories",
+          "bg_banner_button": "#ffffff",
+          "border_banner_button": "#ffffff",
+          "color_banner_button": "#232323",
+          "featured_products_title": "Trending Now",
+          "featured_products_des": "",
+          "title_style": "style_1",
+          "show_slider_featured_collection": "all-cushion-covers",
+          "slider_featured_limit_all": 10,
+          "collection_results_per_row1": "3",
+          "margin_bottom_mb": 40,
+          "margin_bottom_tab": 40,
+          "margin_bottom": 0
+        }
+      },
+      "additional_tips_bUMXyy": {
+        "type": "additional-tips",
+        "blocks": {
+          "tip_d9b87f": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
+              "title": "What If Babies Liked Their Highchair",
+              "article": ""
+            }
+          }
+        },
+        "block_order": [
+          "tip_d9b87f"
+        ],
+        "disabled": true,
+        "name": "Article",
+        "settings": {
+          "heading": "Section heading goes here",
+          "paragraph": "<p>Text paragraph goes here</p>"
+        }
+      },
+      "image_text_column_bBNXT9": {
+        "type": "image-text-column",
+        "settings": {
+          "background_color": "#fffcf8",
+          "image_text_title": "We Believe",
+          "title_color": "#e49662",
+          "title_size": 60,
+          "image_text_caption": "<br>The table should be a place of connection, where laughter and good conversations happen. Where individuals are refreshed, identity is formed, and family bonds are strengthened.\n<br>\n<br>\nUnfortunately, none of that can happen when babies are fussing, toddlers won't stay seated, self-feeding is frustrating, and clean-up is overwhelming. YBG exists to remove the stress so you can <strong>enjoy mealtime again.</strong>",
+          "caption_color": "#52757d",
+          "caption_size": 22,
+          "cta_url": "",
+          "cta_text": "",
+          "image": "shopify://shop_images/ybgLIFESTYLE-70_JKP_SS_73ed41db-82d9-4d68-a676-fb3e5043165f.jpg"
+        }
+      },
+      "home_custom_block_bottom_baner_CtUPV8": {
+        "type": "home-custom-block-bottom-baner",
+        "blocks": {
+          "large_img_fU86KU": {
+            "type": "largeImg",
+            "settings": {
+              "image": "shopify://shop_images/untitled-137_JKP_SS_KRK.jpg",
+              "display_parallax": false,
+              "dpl_down_arrow": false,
+              "height_img_parallax": "970px",
+              "banner_sub_heading": "",
+              "font_size_banner_sub_heading": "20px",
+              "color_banner_sub_heading": "#232323",
+              "banner_heading": "Metropólis",
+              "font_size_banner_heading": "40px",
+              "color_banner_heading": "#30494d",
+              "banner_des": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an tincidunt risus an consequat delit quisquemos.",
+              "font_size_banner_des": "12px",
+              "color_banner_des": "#232323",
+              "countdown": "",
+              "banner_button": "Shop The Looks",
+              "link": "",
+              "bg_banner_button": "rgba(0,0,0,0)",
+              "border_banner_button": "rgba(0,0,0,0)",
+              "color_banner_button": "#fff",
+              "min_width_banner_button": "248px",
+              "video_link": "eTCtDW7O1aM",
+              "video_icon_color": "#fff"
+            }
+          }
+        },
+        "block_order": [
+          "large_img_fU86KU"
+        ],
+        "disabled": true,
+        "name": "Custom Block Bottom Banners",
+        "settings": {
+          "layout": "full",
+          "widget_title": "",
+          "widget_des": "",
+          "title_style": "style_1",
+          "img_align": "center",
+          "margin_bottom_mb": 25,
+          "margin_bottom_tab": 30,
+          "margin_bottom": 30
+        }
+      },
+      "home_spotlight_slider_zYrUTR": {
+        "type": "home-spotlight-slider",
+        "blocks": {
+          "image_FfEncm": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Customizer_Thumbnail.jpg",
+              "title": "Complete Customization",
+              "link_text": "Build a highchair unlike any other",
+              "link": "shopify://pages/customizer"
+            }
+          },
+          "image_kEBt37": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4227.jpg",
+              "title": "Shop Curated Styles",
+              "link_text": "We've done the design work for you",
+              "link": "shopify://collections/curated-highchair-bundles"
+            }
+          },
+          "image_Xj6hE8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/026A4324.jpg",
+              "title": "Shop Individual Pieces",
+              "link_text": "Browse by product category",
+              "link": "shopify://pages/ikea-highchair-accessories"
+            }
+          }
+        },
+        "block_order": [
+          "image_FfEncm",
+          "image_kEBt37",
+          "image_Xj6hE8"
+        ],
+        "name": "Spotlight Slider",
+        "settings": {
+          "layout": "default",
+          "display_padding": true,
+          "bg_color": "#f1e3d7",
+          "spotlight_block_title": "IKEA Highchair Makeover",
+          "spotlight_block_des": "Three ways to make your $25 IKEA ANTILOP cuter & safer",
+          "title_style": "style_2",
+          "margin_bottom_mb": 0,
+          "margin_bottom": 0
         }
       }
     },
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
-      "162041756141531609",
-      "home_product_tabs_iT49Cn",
-      "162041362564bbc4d8",
-      "1620416895faf4570f",
+      "home_product_tabs_x4e6aY",
       "featured_collections_UW4fRt",
+      "162041756141531609",
+      "home_sub_banner_bA77ra",
+      "judgeme_review_4jtgqG",
+      "home_spotlight_slider_m9tdJN",
+      "1620416895faf4570f",
+      "home_spotlight_slider_zYrUTR",
+      "image_text_column_bBNXT9",
+      "1620417742f3c060ce",
+      "162041362564bbc4d8",
       "1620412486d542719c",
       "16204173073f912002",
-      "featured_collections_6FqBwV",
       "1620414500ccfac22f",
       "1621362370700970cd",
       "1629747261e1ca35b0",
-      "judgeme_review_4jtgqG",
-      "1620417742f3c060ce",
-      "162990068233f26fb0"
+      "162990068233f26fb0",
+      "home_custom_block_spotlight_VaMqHz",
+      "home_custom_block_images_HbDtkF",
+      "home_featured_products_rLjPFV",
+      "additional_tips_bUMXyy",
+      "home_custom_block_bottom_baner_CtUPV8"
     ],
     "blocks": {
       "18228966181090706294": {
@@ -7323,6 +7945,16 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "15685250022964305326": {
+        "type": "shopify://apps/elevar-conversion-tracking/blocks/dataLayerEmbed/bc30ab68-b15c-4311-811f-8ef485877ad6",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
