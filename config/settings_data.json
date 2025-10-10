@@ -7839,10 +7839,10 @@
               "link": "",
               "bg_banner_button": "rgba(0,0,0,0)",
               "border_banner_button": "rgba(0,0,0,0)",
-              "color_banner_button": "#fff",
+              "color_banner_button": "#ffffff",
               "min_width_banner_button": "248px",
               "video_link": "eTCtDW7O1aM",
-              "video_icon_color": "#fff"
+              "video_icon_color": "#ffffff"
             }
           }
         },
@@ -7886,7 +7886,7 @@
           "image_Xj6hE8": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/026A4324.jpg",
+              "image": "shopify://shop_images/026A4324_square.jpg",
               "title": "Shop Individual Pieces",
               "link_text": "Browse by product category",
               "link": "shopify://pages/ikea-highchair-accessories"
