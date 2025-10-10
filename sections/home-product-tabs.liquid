@@ -21,12 +21,19 @@
     {% assign padding_top_tab = section.settings.padding_top_tab %}
     {% assign padding_top_desktop = section.settings.padding_top_desktop %}
 
-    .btn-shop-all {
+    .widget-title-{{ section.id }} .btn-shop-all {
         background: {{ settings.button_bg_color }};
         color: {{ settings.button_text_color }};
         border-radius: {{ settings.button_border_radius }}px;
         border: 1px solid {{ settings.button_border_color }};
+        font-family: 'Karla', sans-serif;
         padding: {{ settings.button_padding_top }}px {{ settings.button_padding_right }}px {{ settings.button_padding_bottom }}px {{ settings.button_padding_left }}px;
+    }
+    
+    .widget-title-{{ section.id }} .btn-shop-all:hover {
+        background: {{ settings.button_hover_bg }};
+        color: {{ settings.button_hover_text }};
+        border: 1px solid {{ settings.button_border_color }};
     }
     
 
