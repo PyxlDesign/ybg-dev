@@ -35,6 +35,7 @@
         background: {{ section.settings.tab_inactive_bg_color }};
         border-color: {{ section.settings.tab_inactive_border_color }};
         color: {{ section.settings.tab_inactive_color }};
+        font-family: 'Karla', sans-serif;
     }
     .widget-title-{{ section.id }} .list-product-tabs .tab-links.active {
         background: {{ section.settings.tab_active_bg_color }};
@@ -42,6 +43,15 @@
         color: {{ section.settings.tab_active_color }};
     }
     {% endif %}
+    
+    .widget-title-{{ section.id }} .slick-dots li button {
+        background: {{ section.settings.dots_bg_color }};
+        border-color: {{ section.settings.dots_border_color }};
+    }
+    .widget-title-{{ section.id }} .slick-dots li.slick-active button {
+        background: {{ section.settings.dots_active_bg_color }};
+        border-color: {{ section.settings.dots_active_border_color }};
+    }
 
     @media (max-width: 767px) {
         .widget-title-{{ section.id }}.pad-top {
@@ -50,6 +60,9 @@
         #product-tabs-{{section.id}} {
             margin-top: {{ margin_top_mb }}px;
             margin-bottom: {{ margin_bottom_mb }}px;
+        }
+        .widget-title-{{ section.id }} .slick-dots {
+            margin-bottom: {{ section.settings.dots_margin_bottom_mb }}px;
         }
     }
 
@@ -60,6 +73,9 @@
         #product-tabs-{{section.id}} {
             margin-top: {{ margin_top_tab }}px;
             margin-bottom: {{ margin_bottom_tab }}px;
+        }
+        .widget-title-{{ section.id }} .slick-dots {
+            margin-bottom: {{ section.settings.dots_margin_bottom_tab }}px;
         }
     }
 
@@ -205,22 +221,22 @@
             "id": "collection_results_per_row",
             "label": "Products per row",
             "options": [
-            {
-                "value": "2",
-                "label": "2"
-            },
-            {
-                "value": "3",
-                "label": "3"
-            },
-            {
-                "value": "4",
-                "label": "4"
-            },
-            {
-                "value": "5",
-                "label": "5"
-            }
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                },
+                {
+                    "value": "4",
+                    "label": "4"
+                },
+                {
+                    "value": "5",
+                    "label": "5"
+                }
             ],
             "default": "5"
         },
@@ -422,7 +438,53 @@
             "max": 100,
             "step": 1,
             "default": 10
-        }     
+        },
+        {
+            "type": "header",
+            "content": "Slider Dot Settings:"
+        },
+        {
+            "type": "color",
+            "id": "dots_bg_color",
+            "label": "Background Color",
+            "default": "#a9a9a9"
+        },
+        {
+            "type": "color",
+            "id": "dots_border_color",
+            "label": "Border Color",
+            "default": "#a9a9a9"
+        },
+        {
+            "type": "color",
+            "id": "dots_active_bg_color",
+            "label": "Active Background Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "color",
+            "id": "dots_active_border_color",
+            "label": "Active Border Color",
+            "default": "#a9a9a9"
+        },
+        {
+            "type": "range",
+            "id": "dots_margin_bottom_mb",
+            "label": "Margin bottom Mobile",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "dots_margin_bottom_tab",
+            "label": "Margin bottom Tablet",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 20
+        }
     ],
     "blocks" : [
         {
