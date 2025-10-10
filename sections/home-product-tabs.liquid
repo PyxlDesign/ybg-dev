@@ -98,7 +98,7 @@
         }
     }   
 </style>
-<section class="widget-title widget-title-{{ section.id }}{% if pad_top == true %} pad-top {% endif %}">
+<section class="widget-title widget-title-{{ section.id }}{% if section.settings.pad_top == true %} pad-top {% endif %}">
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs>
     <div class="container">
         {% if section.settings.product_tabs_title != blank %}
@@ -160,7 +160,8 @@
         },
         {
             "type": "header",
-            "content": "Section Padding:"
+            "content": "Section Top Padding:",
+            "info": "Overrides the default padding top for the whole section"
         },    
         {
             "type": "range",
