@@ -27,7 +27,9 @@
         border: 1px solid {{ section.settings.button_border_color }};
         font-family: 'Karla', sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: 22px;
         padding: {{ section.settings.button_padding_top }}px {{ section.settings.button_padding_right }}px {{ section.settings.button_padding_bottom }}px {{ section.settings.button_padding_left }}px;
     }
 
@@ -380,21 +382,12 @@
         },
         {
             "type": "range",
-            "id": "button_border_radius",
-            "label": "Button Border Radius",
-            "min": 0,
-            "max": 50,
-            "step": 1,
-            "default": 0
-        },
-        {
-            "type": "range",
             "id": "button_padding_top",
             "label": "Button Padding Top",
             "min": 0,
             "max": 30,
             "step": 1,
-            "default": 10
+            "default": 5
         },
         {
             "type": "range",
@@ -403,7 +396,7 @@
             "min": 0,
             "max": 50,
             "step": 1,
-            "default": 20
+            "default": 15
         },
         {
             "type": "range",
@@ -412,7 +405,7 @@
             "min": 0,
             "max": 30,
             "step": 1,
-            "default": 10
+            "default": 3
         },
         {
             "type": "range",
@@ -421,7 +414,7 @@
             "min": 0,
             "max": 50,
             "step": 1,
-            "default": 20
+            "default": 15
         },
         {
             "type": "header",
