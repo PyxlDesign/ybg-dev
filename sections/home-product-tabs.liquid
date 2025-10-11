@@ -22,20 +22,19 @@
     {% assign padding_top_desktop = section.settings.padding_top_desktop %}
 
     .widget-title-{{ section.id }} .btn-shop-all {
-        background: {{ settings.button_bg_color }};
-        color: {{ settings.button_text_color }};
-        border-radius: {{ settings.button_border_radius }}px;
-        border: 1px solid {{ settings.button_border_color }};
+        background: {{ section.settings.button_bg_color }};
+        color: {{ section.settings.button_text_color }};
+        border: 1px solid {{ section.settings.button_border_color }};
         font-family: 'Karla', sans-serif;
         font-weight: 400;
         font-size: 14px;
-        padding: {{ settings.button_padding_top }}px {{ settings.button_padding_right }}px {{ settings.button_padding_bottom }}px {{ settings.button_padding_left }}px;
+        padding: {{ section.settings.button_padding_top }}px {{ section.settings.button_padding_right }}px {{ section.settings.button_padding_bottom }}px {{ section.settings.button_padding_left }}px;
     }
 
     .widget-title-{{ section.id }} .btn-shop-all:hover {
-        background: {{ settings.button_hover_bg }};
-        color: {{ settings.button_hover_text }};
-        border: 1px solid {{ settings.button_border_color }};
+        background: {{ section.settings.button_hover_bg_color }};
+        color: {{ section.settings.button_hover_text_color }};
+        border-color: {{ section.settings.button_hover_border_color }};
     }
     
 
@@ -353,13 +352,31 @@
             "type": "color",
             "id": "button_text_color",
             "label": "Button Text Color",
-            "default": "#ffffff"
+            "default": "#FFFFFF"
         },
         {
             "type": "color",
             "id": "button_border_color",
             "label": "Button Border Color",
             "default": "#000000"
+        },
+        {
+            "type": "color",
+            "id": "button_hover_bg_color",
+            "label": "Button Hover Background",
+            "default": "#333333"
+        },
+        {
+            "type": "color",
+            "id": "button_hover_text_color",
+            "label": "Button Hover Text Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "color",
+            "id": "button_hover_border_color",
+            "label": "Button Hover Border Color",
+            "default": "#333333"
         },
         {
             "type": "range",
@@ -405,18 +422,6 @@
             "max": 50,
             "step": 1,
             "default": 20
-        },
-        {
-            "type": "color",
-            "id": "button_hover_bg",
-            "label": "Button Hover Background",
-            "default": "#333333"
-        },
-        {
-            "type": "color",
-            "id": "button_hover_text",
-            "label": "Button Hover Text Color",
-            "default": "#ffffff"
         },
         {
             "type": "header",
