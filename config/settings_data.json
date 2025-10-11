@@ -5946,12 +5946,6 @@
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
             }
-          },
-          "hero_slide_eqVdgU": {
-            "type": "hero_slide",
-            "settings": {
-              "hero_slide_url": ""
-            }
           }
         },
         "block_order": [
@@ -5959,8 +5953,7 @@
           "hero_slide_PRw9Pw",
           "hero_slide_adbChD",
           "hero_slide_FzXpjh",
-          "hero_slide_V3BgWL",
-          "hero_slide_eqVdgU"
+          "hero_slide_V3BgWL"
         ],
         "settings": {
           "testing_field": "",
@@ -6285,41 +6278,6 @@
         "settings": {
           "featured_image": "shopify://shop_images/22_Restaurant_Bags_square.jpg",
           "heading": "Why Restaurant Bags?"
-        }
-      },
-      "reasons-to-buy-all-you-tensil": {
-        "type": "reasons-to-buy-all-you-tensil",
-        "blocks": {
-          "reason_9aBwXL": {
-            "type": "reason",
-            "settings": {
-              "title": "SETS BABY UP FOR SUCCESS",
-              "content": "<p>Mouthing BEFORE babies start solids allows them to practice oral motor skills</p>"
-            }
-          },
-          "reason_VTjnEA": {
-            "type": "reason",
-            "settings": {
-              "title": "VERSATILE",
-              "content": "<p>Can be used for self-feeding or parent-led feeding with purees</p>"
-            }
-          },
-          "reason_9mitEH": {
-            "type": "reason",
-            "settings": {
-              "title": "HELPS DEVELOP NEW SKILLS",
-              "content": "<p>Start with mouthing then pre-load or spoon-feed when babies start solids. As they learn to self-feed, cut-outs on the dipper side help food stay put. Once babies are ready to master scooping, the spoon side is thoughtfully designed to set them up for success.</p>"
-            }
-          }
-        },
-        "block_order": [
-          "reason_9aBwXL",
-          "reason_VTjnEA",
-          "reason_9mitEH"
-        ],
-        "settings": {
-          "featured_image": "shopify://shop_images/YBG-34.jpg",
-          "heading": "Why All You-Tensils?"
         }
       },
       "reasons-to-buy-cushions": {
@@ -7526,7 +7484,11 @@
           "spotlight_block_des": "",
           "title_style": "style_2",
           "margin_bottom_mb": 0,
-          "margin_bottom": 0
+          "margin_bottom": 0,
+          "dots_bg_color": "#52757d",
+          "dots_border_color": "#52757d",
+          "dots_active_bg_color": "#ffffff",
+          "dots_active_border_color": "#52757d"
         }
       },
       "home_custom_block_spotlight_VaMqHz": {
@@ -7735,14 +7697,43 @@
         "name": "Product Tabs",
         "settings": {
           "pad_top": true,
+          "padding_top_mb": 15,
+          "padding_top_tab": 15,
+          "padding_top_desktop": 15,
           "product_tabs_title": "Our Favorites",
           "product_tabs_des": "",
           "title_style": "style_2",
           "collection_results_per_row": "4",
           "tabs_style": "style_1",
+          "enable_style_override": true,
+          "tab_inactive_bg_color": "#ffffff",
+          "tab_inactive_border_color": "#30494d",
+          "tab_inactive_color": "#30494d",
+          "tab_active_bg_color": "#30494d",
+          "tab_activeborder_color": "#30494d",
+          "tab_active_color": "#ffffff",
+          "use_button": true,
+          "button_prefix": "Shop all",
+          "button_remove_text": "Favorites:",
+          "button_bg_color": "#ffffff",
+          "button_text_color": "#30494d",
+          "button_border_color": "#30494d",
+          "button_hover_bg_color": "#30494d",
+          "button_hover_text_color": "#ffffff",
+          "button_hover_border_color": "#30494d",
+          "button_padding_top": 5,
+          "button_padding_right": 15,
+          "button_padding_bottom": 3,
+          "button_padding_left": 20,
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
-          "margin_bottom": 10
+          "margin_bottom": 10,
+          "dots_bg_color": "#30494d",
+          "dots_border_color": "#30494d",
+          "dots_active_bg_color": "#ffffff",
+          "dots_active_border_color": "#30494d",
+          "dots_margin_bottom_mb": 15,
+          "dots_margin_bottom_tab": 20
         }
       },
       "home_featured_products_rLjPFV": {
@@ -7907,7 +7898,11 @@
           "spotlight_block_des": "Three ways to make your $25 IKEA ANTILOP cuter & safer",
           "title_style": "style_2",
           "margin_bottom_mb": 0,
-          "margin_bottom": 0
+          "margin_bottom": 0,
+          "dots_bg_color": "#52757d",
+          "dots_border_color": "#52757d",
+          "dots_active_bg_color": "#ffffff",
+          "dots_active_border_color": "#52757d"
         }
       }
     },
