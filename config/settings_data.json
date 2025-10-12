@@ -7713,7 +7713,7 @@
           "tab_activeborder_color": "#30494d",
           "tab_active_color": "#ffffff",
           "use_button": true,
-          "button_prefix": "Shop",
+          "button_prefix": "Shop All",
           "button_remove_text": "Favorites:",
           "button_bg_color": "#cc6b3a",
           "button_text_color": "#ffffff",
