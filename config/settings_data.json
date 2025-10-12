@@ -7728,10 +7728,10 @@
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
           "margin_bottom": 10,
-          "dots_bg_color": "#52757d",
-          "dots_border_color": "#52757d",
+          "dots_bg_color": "#cc6b3a",
+          "dots_border_color": "#cc6b3a",
           "dots_active_bg_color": "#ffffff",
-          "dots_active_border_color": "#52757d",
+          "dots_active_border_color": "#cc6b3a",
           "dots_margin_bottom_mb": 15,
           "dots_margin_bottom_tab": 20
         }
