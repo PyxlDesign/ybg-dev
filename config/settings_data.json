@@ -7692,7 +7692,7 @@
               "title": "Bundles",
               "collection": "favorites-bundles",
               "button_text": "",
-              "url_link": ""
+              "url_link": "shopify://collections/all-bundles"
             }
           }
         },
