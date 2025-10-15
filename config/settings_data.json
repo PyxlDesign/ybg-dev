@@ -7663,28 +7663,36 @@
             "type": "ProductTabs",
             "settings": {
               "title": "IKEA HIGHCHAIR",
-              "collection": "favorites-ikea-highchair"
+              "collection": "favorites-ikea-highchair",
+              "button_text": "",
+              "url_link": "shopify://pages/ikea-highchair-accessories"
             }
           },
           "product_tabs_GrCnaw": {
             "type": "ProductTabs",
             "settings": {
               "title": "Feeding Essentials",
-              "collection": "favorites-feeding-essentials"
+              "collection": "favorites-feeding-essentials",
+              "button_text": "",
+              "url_link": "shopify://pages/feeding-essentials"
             }
           },
           "product_tabs_wKrm69": {
             "type": "ProductTabs",
             "settings": {
               "title": "Restaurant Kit",
-              "collection": "favorites-restaurant-kits"
+              "collection": "favorites-restaurant-kits",
+              "button_text": "",
+              "url_link": "shopify://collections/eating-out-essentials"
             }
           },
           "product_tabs_xzEdMh": {
             "type": "ProductTabs",
             "settings": {
               "title": "Bundles",
-              "collection": "favorites-bundles"
+              "collection": "favorites-bundles",
+              "button_text": "",
+              "url_link": ""
             }
           }
         },
