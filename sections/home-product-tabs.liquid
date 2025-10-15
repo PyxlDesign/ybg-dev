@@ -136,7 +136,7 @@
                     </div>
                     {% if collections[block.settings.collection].url != blank and section.settings.use_button %}
                     <div class="text-center view-all">
-                        <a class="btn btn-shop-all" href="{% if block.settings.page_link %}{{ block.settings.page_link.url }}{% else %}{{ collections[block.settings.collection].url }}{% endif %}">
+                        <a class="btn btn-shop-all" href="{% if block.settings.url_link %}{{ block.settings.url_link.url }}{% else %}{{ collections[block.settings.collection].url }}{% endif %}">
                             {% if block.settings.button_text != blank %}
                                 {{ block.settings.button_text }}
                             {% else %}
@@ -525,10 +525,10 @@
                     "info": "If set, this will override the default button text"
                 },
                 {
-                    "type": "page",
-                    "id": "page_link",
-                    "label": "Page Link (optional)",
-                    "info": "If a page is selected, the tab title will link to that page instead of switching tabs."
+                    "type": "url",
+                    "id": "url_link",
+                    "label": "URL Link (optional)",
+                    "info": "If a URL is selected, the tab title will link to that URL instead of switching tabs."
                 }
             ]
         }
