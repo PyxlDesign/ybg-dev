@@ -7813,7 +7813,7 @@
         "name": "Article",
         "settings": {
           "heading": "New Blog Posts",
-          "paragraph": ""
+          "paragraph": "<p>We're Here To Help Make Mealtimes Better</p>"
         }
       },
       "image_text_column_bBNXT9": {
@@ -7942,9 +7942,9 @@
       "home_spotlight_slider_m9tdJN",
       "1620416895faf4570f",
       "home_spotlight_slider_zYrUTR",
-      "additional_tips_bUMXyy",
       "image_text_column_bBNXT9",
       "1620417742f3c060ce",
+      "additional_tips_bUMXyy",
       "162041362564bbc4d8",
       "1620412486d542719c",
       "16204173073f912002",
