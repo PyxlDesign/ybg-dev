@@ -7929,6 +7929,19 @@
           "dots_active_bg_color": "#ffffff",
           "dots_active_border_color": "#52757d"
         }
+      },
+      "home_blog_posts_2_pjcgCJ": {
+        "type": "home-blog-posts-2",
+        "name": "Blog posts Style 2",
+        "settings": {
+          "layout": "default",
+          "blog_posts": "the-blog",
+          "blog_results_per_row": "3",
+          "blog_show_author": false,
+          "blog_show_date": false,
+          "margin_bottom_mb": 0,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
@@ -7955,7 +7968,8 @@
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
-      "home_custom_block_bottom_baner_CtUPV8"
+      "home_custom_block_bottom_baner_CtUPV8",
+      "home_blog_posts_2_pjcgCJ"
     ],
     "blocks": {
       "18228966181090706294": {
