@@ -1,6 +1,6 @@
 {% liquid 
     assign s = section.settings
-    assign heading = 'style_2'
+    assign heading = s.heading
     assign paragraph = s.paragraph
     assign blocks = section.blocks
     assign block_size = blocks | size
