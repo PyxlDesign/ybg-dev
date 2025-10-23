@@ -7777,45 +7777,6 @@
           "margin_bottom": 0
         }
       },
-      "additional_tips_bUMXyy": {
-        "type": "additional-tips",
-        "blocks": {
-          "tip_d9b87f": {
-            "type": "tip",
-            "settings": {
-              "image": "shopify://shop_images/yeahbabygoods-29.jpg",
-              "title": "How Can I Tell If My Baby Is Hungry or Full?",
-              "article": "the-blog/set-your-baby-up-for-success-with-solids-by-reading-their-hunger-cues"
-            }
-          },
-          "tip_JUyxRR": {
-            "type": "tip",
-            "settings": {
-              "image": "shopify://shop_images/YBG-68_8dcde381-536c-4bed-9112-827b0f19e66d.jpg",
-              "title": "What Can I Do To Prepare My 4-Month-Old For Solids?",
-              "article": "the-blog/activities-to-prepare-your-3-5-month-old-for-solids"
-            }
-          },
-          "tip_GGBdUD": {
-            "type": "tip",
-            "settings": {
-              "image": "shopify://shop_images/AmazonPlacemat_BlushingBeige_8.jpg",
-              "title": "How Do I Transition From Milk to Solids?",
-              "article": "the-blog/feeding-beyond-the-breast-or-bottle"
-            }
-          }
-        },
-        "block_order": [
-          "tip_d9b87f",
-          "tip_JUyxRR",
-          "tip_GGBdUD"
-        ],
-        "name": "Article",
-        "settings": {
-          "heading": "",
-          "paragraph": ""
-        }
-      },
       "image_text_column_bBNXT9": {
         "type": "image-text-column",
         "settings": {
@@ -7883,40 +7844,44 @@
           "dots_active_border_color": "#52757d"
         }
       },
-      "newsletter_block_AkiAeR": {
-        "type": "newsletter-block",
+      "additional_tips_bUMXyy": {
+        "type": "additional-tips",
         "blocks": {
-          "image_RrcmmJ": {
-            "type": "image",
+          "tip_d9b87f": {
+            "type": "tip",
             "settings": {
-              "image_new": "shopify://shop_images/y-36b_c53e485e-3543-408d-a451-544b63c6ec83.jpg",
-              "banner_title": "Newsletter Sign Up",
-              "font_size_banner_title": "20px",
-              "color_banner_title": "#ffffff",
-              "banner_heading": "Receive our latest updates about our products and promotions.",
-              "font_size_banner_heading": "12px",
-              "color_banner_heading": "#ffffff",
-              "ft_input": "#ffffff",
-              "ft_input_br": "#ffffff",
-              "ft_input_text": "#5f5f5f",
-              "ft_submit": "#0f0f0f",
-              "ft_submit_br": "#0f0f0f",
-              "ft_submit_text": "#ffffff",
-              "ft_submit_hover": "#fff",
-              "ft_submit_br_hover": "#232323",
-              "ft_submit_text_hover": "#232323"
+              "image": "shopify://shop_images/yeahbabygoods-29.jpg",
+              "title": "How Can I Tell If My Baby Is Hungry or Full?",
+              "article": "the-blog/set-your-baby-up-for-success-with-solids-by-reading-their-hunger-cues"
+            }
+          },
+          "tip_JUyxRR": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/YBG-68_8dcde381-536c-4bed-9112-827b0f19e66d.jpg",
+              "title": "What Can I Do To Prepare My 4-Month-Old For Solids?",
+              "article": "the-blog/activities-to-prepare-your-3-5-month-old-for-solids"
+            }
+          },
+          "tip_GGBdUD": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/AmazonPlacemat_BlushingBeige_8.jpg",
+              "title": "How Do I Transition From Milk to Solids?",
+              "article": "the-blog/feeding-beyond-the-breast-or-bottle"
             }
           }
         },
         "block_order": [
-          "image_RrcmmJ"
+          "tip_d9b87f",
+          "tip_JUyxRR",
+          "tip_GGBdUD"
         ],
-        "name": "Custom Block Newsletter",
+        "disabled": true,
+        "name": "Article",
         "settings": {
-          "display_block_newsletter": true,
-          "margin_bottom_mb": 0,
-          "margin_bottom_tab": 0,
-          "margin_bottom": 0
+          "heading": "",
+          "paragraph": ""
         }
       }
     },
@@ -7933,7 +7898,6 @@
       "home_spotlight_slider_zYrUTR",
       "image_text_column_bBNXT9",
       "1620417742f3c060ce",
-      "additional_tips_bUMXyy",
       "162041362564bbc4d8",
       "1620412486d542719c",
       "16204173073f912002",
@@ -7941,10 +7905,10 @@
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "162990068233f26fb0",
+      "additional_tips_bUMXyy",
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
-      "home_featured_products_rLjPFV",
-      "newsletter_block_AkiAeR"
+      "home_featured_products_rLjPFV"
     ],
     "blocks": {
       "18228966181090706294": {
