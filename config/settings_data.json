@@ -7883,42 +7883,40 @@
           "dots_active_border_color": "#52757d"
         }
       },
-      "home_instagram_rQPC7c": {
-        "type": "home-instagram",
+      "newsletter_block_AkiAeR": {
+        "type": "newsletter-block",
         "blocks": {
-          "instagram_Y8ebWy": {
-            "type": "instagram",
-            "disabled": true,
+          "image_RrcmmJ": {
+            "type": "image",
             "settings": {
-              "enable": true,
-              "link": ""
+              "image_new": "shopify://shop_images/y-36b_c53e485e-3543-408d-a451-544b63c6ec83.jpg",
+              "banner_title": "Newsletter Sign Up",
+              "font_size_banner_title": "20px",
+              "color_banner_title": "#ffffff",
+              "banner_heading": "Receive our latest updates about our products and promotions.",
+              "font_size_banner_heading": "12px",
+              "color_banner_heading": "#ffffff",
+              "ft_input": "#ffffff",
+              "ft_input_br": "#ffffff",
+              "ft_input_text": "#5f5f5f",
+              "ft_submit": "#0f0f0f",
+              "ft_submit_br": "#0f0f0f",
+              "ft_submit_text": "#ffffff",
+              "ft_submit_hover": "#fff",
+              "ft_submit_br_hover": "#232323",
+              "ft_submit_text_hover": "#232323"
             }
           }
         },
         "block_order": [
-          "instagram_Y8ebWy"
+          "image_RrcmmJ"
         ],
-        "disabled": true,
-        "name": "Instagram",
+        "name": "Custom Block Newsletter",
         "settings": {
-          "show_instagram": true,
-          "layout": "default",
-          "display_border_top": false,
-          "instagram_bg": "#fffcf8",
-          "instagram_title": "YBG  On Instagram",
-          "instagram_des": "",
-          "title_style": "style_2",
-          "display_instagram_button": true,
-          "instagram_button_text": "Follow Us",
-          "instagram_button_link": "https://www.instagram.com/yeahbabygoods/",
-          "type_instagram": "default",
-          "embed_code": "",
-          "type_instagram_by_gallery": "popup_image",
-          "limit": "10",
-          "images_per_row": "5",
-          "slide_ins": "default_ins",
-          "display_arrow": true,
-          "slide_rows": "1"
+          "display_block_newsletter": true,
+          "margin_bottom_mb": 0,
+          "margin_bottom_tab": 0,
+          "margin_bottom": 0
         }
       }
     },
@@ -7946,7 +7944,7 @@
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
       "home_featured_products_rLjPFV",
-      "home_instagram_rQPC7c"
+      "newsletter_block_AkiAeR"
     ],
     "blocks": {
       "18228966181090706294": {
