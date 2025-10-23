@@ -5713,7 +5713,6 @@
       },
       "1629747261e1ca35b0": {
         "type": "home-blog-posts",
-        "disabled": true,
         "settings": {
           "layout": "default",
           "blog_posts": "the-blog",
