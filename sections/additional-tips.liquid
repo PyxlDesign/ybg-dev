@@ -1,10 +1,19 @@
-{% liquid 
-    assign s = section.settings
-    assign heading = s.heading
-    assign paragraph = s.paragraph
-    assign blocks = section.blocks
-    assign block_size = blocks | size
-    %}
+{% if section.blocks.size > 0 %}
+  <div class="home-spotlight-block home-spotlight-slider" id="home-spotlight-slider-{{section.id}}">
+    <div class="{% if section.settings.layout == 'default' %}container{% elsif section.settings.layout == 'padd_50' %}container-padd60{% else %}container-fluid{% endif %}">
+      {% if section.settings.spotlight_block_title != blank %}
+        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}{% unless section.settings.spotlight_block_des != blank %} no-des{% endunless %}">
+          <h3 class="box-title">
+            {% render 'multilang' with section.settings.spotlight_block_title %}
+          </h3>
+          {% if section.settings.spotlight_block_des != blank %}
+            <p class="copy-lg">
+              {% render 'multilang' with section.settings.spotlight_block_des %}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
 <section class="additional-tips">
     <div class="container">
         {% if heading != blank %}
@@ -40,6 +49,8 @@
         </div>
     </div>
 </section>
+{% endif %}
+
 {% schema %}
 {
     "name": "Additional tips",
