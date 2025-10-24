@@ -7444,7 +7444,7 @@
           "image_FMiBEB": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
+              "image": "shopify://shop_images/YBG-101.jpg",
               "title": "",
               "link_text": "Shop Doe",
               "link": "shopify://collections/shop-by-color-doe"
@@ -7467,13 +7467,33 @@
               "link_text": "Shop Blush",
               "link": "shopify://collections/shop-by-color-blush"
             }
+          },
+          "image_fDULJT": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-94.jpg",
+              "title": "",
+              "link_text": "Shop Jade",
+              "link": "shopify://collections/shop-by-color-jade"
+            }
+          },
+          "image_MiVcxH": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-101_JKP_SSb_1e4ee269-14ae-4795-aba5-26670aa1694b.jpg",
+              "title": "",
+              "link_text": "Shop Brown Speckle",
+              "link": "shopify://collections/shop-by-color-brown-speckle"
+            }
           }
         },
         "block_order": [
           "image_6L6XtP",
           "image_FMiBEB",
           "image_6GrGLU",
-          "image_Bbqx8i"
+          "image_Bbqx8i",
+          "image_fDULJT",
+          "image_MiVcxH"
         ],
         "name": "Spotlight Slider",
         "settings": {
