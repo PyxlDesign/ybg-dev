@@ -3533,7 +3533,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "pad_top": false,
+          "pad_top": true,
           "section_title": "Loved By Parents, Design Enthusiasts & Baby Specialists",
           "title_color": "#cb6b3a",
           "title_size": 18
