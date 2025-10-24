@@ -7736,10 +7736,10 @@
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
           "margin_bottom": 10,
-          "dots_bg_color": "#30494d",
-          "dots_border_color": "#30494d",
+          "dots_bg_color": "#52757d",
+          "dots_border_color": "#52757d",
           "dots_active_bg_color": "#ffffff",
-          "dots_active_border_color": "#30494d",
+          "dots_active_border_color": "#52757d",
           "dots_margin_bottom_mb": 15,
           "dots_margin_bottom_tab": 20
         }
@@ -7834,7 +7834,7 @@
           "display_padding": true,
           "bg_color": "#f1e3d7",
           "spotlight_block_title": "IKEA Highchair Makeover",
-          "spotlight_block_des": "Three ways to make your $25 IKEA ANTILOP cuter & safer",
+          "spotlight_block_des": "Three ways to make the $25 IKEA ANTILOP cuter & safer",
           "title_style": "style_2",
           "margin_bottom_mb": 0,
           "margin_bottom": 0,
