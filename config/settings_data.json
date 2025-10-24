@@ -7407,6 +7407,16 @@
               "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "link_to": "shopify://collections/floor-mats"
             }
+          },
+          "images_EMzMzE": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/HighchairBundleListingGraphics_SweetDaisy_3_347bbe91-1dbb-45fb-af9a-4cc3d2e51271.jpg",
+              "title": "Highchair Accessories",
+              "subtitle": "Make your IKEA ANTILOP safer and cuter with footrests, cushions, placemats and leg wraps",
+              "link_to": "shopify://pages/ikea-highchair-accessories"
+            }
           }
         },
         "block_order": [
@@ -7416,7 +7426,8 @@
           "images_k4CPT3",
           "images_iNj9P4",
           "images_xL9Rzm",
-          "images_zGcp46"
+          "images_zGcp46",
+          "images_EMzMzE"
         ],
         "settings": {
           "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
