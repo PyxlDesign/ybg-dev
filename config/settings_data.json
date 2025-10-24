@@ -7736,10 +7736,10 @@
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
           "margin_bottom": 10,
-          "dots_bg_color": "#df9764",
-          "dots_border_color": "#df9764",
+          "dots_bg_color": "#30494d",
+          "dots_border_color": "#30494d",
           "dots_active_bg_color": "#ffffff",
-          "dots_active_border_color": "#df9764",
+          "dots_active_border_color": "#30494d",
           "dots_margin_bottom_mb": 15,
           "dots_margin_bottom_tab": 20
         }
