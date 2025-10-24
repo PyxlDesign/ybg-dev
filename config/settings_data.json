@@ -7452,24 +7452,6 @@
               "link": "shopify://collections/shop-by-color-sage"
             }
           },
-          "image_fDULJT": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/YBG-94.jpg",
-              "title": "",
-              "link_text": "Shop Jade",
-              "link": "shopify://collections/shop-by-color-jade"
-            }
-          },
-          "image_MiVcxH": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/untitled-101_JKP_SSb_1e4ee269-14ae-4795-aba5-26670aa1694b.jpg",
-              "title": "",
-              "link_text": "Shop Brown Speckle",
-              "link": "shopify://collections/shop-by-color-brown-speckle"
-            }
-          },
           "image_6GrGLU": {
             "type": "image",
             "settings": {
@@ -7500,8 +7482,6 @@
         },
         "block_order": [
           "image_6L6XtP",
-          "image_fDULJT",
-          "image_MiVcxH",
           "image_6GrGLU",
           "image_Bbqx8i",
           "image_FMiBEB"
