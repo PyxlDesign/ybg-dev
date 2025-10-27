@@ -27,9 +27,7 @@
               {%- assign column_size = 'col-12 item' -%}
             {% when 2 %}
               {%- assign column_size = 'col-12 col-md-6 item' -%}
-            {% when 3 %}
-              {%- assign column_size = 'col-12 col-md-6 col-lg-4 item' -%}
-            {% when 4 %}
+            {% when 3, 4, 5, 6, 7, 8 %}
               {%- assign column_size = 'col-12 col-md-6 col-lg-4 item' -%}
           {% endcase %}
 
