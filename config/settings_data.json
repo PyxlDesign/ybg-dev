@@ -7443,25 +7443,7 @@
               "link": "shopify://collections/shop-by-color-sage"
             }
           },
-          "image_r8n4XX": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/YBG4-2_KRK_3f99ecf4-811c-4c71-abf5-4d8a99554368.jpg",
-              "title": "",
-              "link_text": "Shop Sage",
-              "link": "shopify://collections/shop-by-color-sage"
-            }
-          },
           "image_FMiBEB": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
-              "title": "",
-              "link_text": "Shop Doe",
-              "link": "shopify://collections/shop-by-color-doe"
-            }
-          },
-          "image_Akndkz": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
@@ -7479,25 +7461,7 @@
               "link": "shopify://collections/shop-by-color-terracotta"
             }
           },
-          "image_EMVCLr": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/YBG.2-24_KRK_tight_square.jpg",
-              "title": "",
-              "link_text": "Shop Terracotta",
-              "link": "shopify://collections/shop-by-color-terracotta"
-            }
-          },
           "image_Bbqx8i": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/untitled-96_JKP_SS_square.jpg",
-              "title": "",
-              "link_text": "Shop Blush",
-              "link": "shopify://collections/shop-by-color-blush"
-            }
-          },
-          "image_KAHC4E": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/untitled-96_JKP_SS_square.jpg",
@@ -7509,13 +7473,9 @@
         },
         "block_order": [
           "image_6L6XtP",
-          "image_r8n4XX",
           "image_FMiBEB",
-          "image_Akndkz",
           "image_6GrGLU",
-          "image_EMVCLr",
-          "image_Bbqx8i",
-          "image_KAHC4E"
+          "image_Bbqx8i"
         ],
         "name": "Spotlight Slider",
         "settings": {
