@@ -3165,7 +3165,7 @@
             "type": "hero_slide",
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b_c385cca2-87c1-40a2-8adb-55f667ebcea6.jpg",
-              "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
+              "hero_slide_url": "shopify://pages/feeding-essentials"
             }
           },
           "hero_slide_bQjNr4": {
@@ -3534,9 +3534,7 @@
         "custom_css": [],
         "settings": {
           "pad_top": true,
-          "top_padding": 40,
-          "bottom_padding": 40,
-          "section_title": "Loved By Interior Design and Baby Experts",
+          "section_title": "Loved By Parents, Design Enthusiasts & Baby Specialists",
           "title_color": "#cb6b3a",
           "title_size": 18
         }
@@ -5922,7 +5920,7 @@
             "type": "hero_slide",
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
-              "hero_slide_url": "shopify://collections/vegan-leather-cushion-covers"
+              "hero_slide_url": "shopify://pages/feeding-essentials"
             }
           },
           "hero_slide_adbChD": {
@@ -7196,7 +7194,7 @@
             "type": "collection",
             "settings": {
               "collection": "eating-out-essentials",
-              "collection_title": "Handy Kits For Eating Out"
+              "collection_title": "Game-Changer Restaurant Kits"
             }
           },
           "collection_y7PBYz": {
@@ -7218,7 +7216,7 @@
           "featured_collection_title": "Enjoy Mealtime Again",
           "title_color": "#30494d",
           "title_size": 60,
-          "featured_collection_caption": "If function & style had a baby, you'd get...",
+          "featured_collection_caption": "If style & function had a baby...",
           "caption_color": "#30494d",
           "caption_size": 22,
           "curved_bottom": false
@@ -7409,6 +7407,16 @@
               "subtitle": "Extra large, multi-purpose silicone mat can be used under the highchair or for messy activites",
               "link_to": "shopify://collections/floor-mats"
             }
+          },
+          "images_EMzMzE": {
+            "type": "images",
+            "settings": {
+              "categories": "",
+              "thumbernail": "shopify://shop_images/HighchairBundleListingGraphics_GoldenDream2_5.jpg",
+              "title": "Highchair Accessories",
+              "subtitle": "Make your IKEA ANTILOP safer and cuter with footrests, cushions, placemats and leg wraps",
+              "link_to": "shopify://pages/ikea-highchair-accessories"
+            }
           }
         },
         "block_order": [
@@ -7418,7 +7426,8 @@
           "images_k4CPT3",
           "images_iNj9P4",
           "images_xL9Rzm",
-          "images_zGcp46"
+          "images_zGcp46",
+          "images_EMzMzE"
         ],
         "settings": {
           "background": "shopify://shop_images/untitled-3_JKP_SS_7e7aa410-0bd5-40d3-9923-64bcdfd96fc2.jpg",
@@ -7443,15 +7452,6 @@
               "link": "shopify://collections/shop-by-color-sage"
             }
           },
-          "image_FMiBEB": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Amazon_Placemat_Golden_Doe_3.jpg",
-              "title": "",
-              "link_text": "Shop Doe",
-              "link": "shopify://collections/shop-by-color-doe"
-            }
-          },
           "image_6GrGLU": {
             "type": "image",
             "settings": {
@@ -7469,13 +7469,22 @@
               "link_text": "Shop Blush",
               "link": "shopify://collections/shop-by-color-blush"
             }
+          },
+          "image_FMiBEB": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-101.jpg",
+              "title": "",
+              "link_text": "Shop Doe",
+              "link": "shopify://collections/shop-by-color-doe"
+            }
           }
         },
         "block_order": [
           "image_6L6XtP",
-          "image_FMiBEB",
           "image_6GrGLU",
-          "image_Bbqx8i"
+          "image_Bbqx8i",
+          "image_FMiBEB"
         ],
         "name": "Spotlight Slider",
         "settings": {
@@ -7667,7 +7676,7 @@
               "title": "IKEA HIGHCHAIR",
               "collection": "favorites-ikea-highchair",
               "button_text": "",
-              "url_link": ""
+              "url_link": "shopify://pages/ikea-highchair-accessories"
             }
           },
           "product_tabs_GrCnaw": {
@@ -7676,7 +7685,7 @@
               "title": "Feeding Essentials",
               "collection": "favorites-feeding-essentials",
               "button_text": "",
-              "url_link": ""
+              "url_link": "shopify://pages/feeding-essentials"
             }
           },
           "product_tabs_wKrm69": {
@@ -7685,7 +7694,7 @@
               "title": "Restaurant Kit",
               "collection": "favorites-restaurant-kits",
               "button_text": "",
-              "url_link": ""
+              "url_link": "shopify://collections/eating-out-essentials"
             }
           },
           "product_tabs_xzEdMh": {
@@ -7694,7 +7703,7 @@
               "title": "Bundles",
               "collection": "favorites-bundles",
               "button_text": "",
-              "url_link": ""
+              "url_link": "shopify://collections/all-bundles"
             }
           }
         },
@@ -7725,11 +7734,11 @@
           "use_button": true,
           "button_prefix": "Shop All",
           "button_remove_text": "Favorites:",
-          "button_bg_color": "#30494d",
-          "button_text_color": "#ffffff",
+          "button_bg_color": "#e4e8e1",
+          "button_text_color": "#30494d",
           "button_border_color": "#30494d",
-          "button_hover_bg_color": "#ffffff",
-          "button_hover_text_color": "#30494d",
+          "button_hover_bg_color": "#30494d",
+          "button_hover_text_color": "#e4e8e1",
           "button_hover_border_color": "#30494d",
           "button_padding_top": 5,
           "button_padding_right": 15,
@@ -7738,10 +7747,10 @@
           "margin_bottom_mb": 40,
           "margin_bottom_tab": 40,
           "margin_bottom": 10,
-          "dots_bg_color": "#df9764",
-          "dots_border_color": "#df9764",
+          "dots_bg_color": "#30494d",
+          "dots_border_color": "#30494d",
           "dots_active_bg_color": "#ffffff",
-          "dots_active_border_color": "#df9764",
+          "dots_active_border_color": "#30494d",
           "dots_margin_bottom_mb": 15,
           "dots_margin_bottom_tab": 20
         }
@@ -7779,28 +7788,6 @@
           "margin_bottom": 0
         }
       },
-      "additional_tips_bUMXyy": {
-        "type": "additional-tips",
-        "blocks": {
-          "tip_d9b87f": {
-            "type": "tip",
-            "settings": {
-              "image": "shopify://shop_images/YBG-14_KRK_smaller.jpg",
-              "title": "What If Babies Liked Their Highchair",
-              "article": ""
-            }
-          }
-        },
-        "block_order": [
-          "tip_d9b87f"
-        ],
-        "disabled": true,
-        "name": "Article",
-        "settings": {
-          "heading": "Section heading goes here",
-          "paragraph": "<p>Text paragraph goes here</p>"
-        }
-      },
       "image_text_column_bBNXT9": {
         "type": "image-text-column",
         "settings": {
@@ -7814,53 +7801,6 @@
           "cta_url": "",
           "cta_text": "",
           "image": "shopify://shop_images/ybgLIFESTYLE-70_JKP_SS_73ed41db-82d9-4d68-a676-fb3e5043165f.jpg"
-        }
-      },
-      "home_custom_block_bottom_baner_CtUPV8": {
-        "type": "home-custom-block-bottom-baner",
-        "blocks": {
-          "large_img_fU86KU": {
-            "type": "largeImg",
-            "settings": {
-              "image": "shopify://shop_images/untitled-137_JKP_SS_KRK.jpg",
-              "display_parallax": false,
-              "dpl_down_arrow": false,
-              "height_img_parallax": "970px",
-              "banner_sub_heading": "",
-              "font_size_banner_sub_heading": "20px",
-              "color_banner_sub_heading": "#232323",
-              "banner_heading": "Metropólis",
-              "font_size_banner_heading": "40px",
-              "color_banner_heading": "#30494d",
-              "banner_des": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an tincidunt risus an consequat delit quisquemos.",
-              "font_size_banner_des": "12px",
-              "color_banner_des": "#232323",
-              "countdown": "",
-              "banner_button": "Shop The Looks",
-              "link": "",
-              "bg_banner_button": "rgba(0,0,0,0)",
-              "border_banner_button": "rgba(0,0,0,0)",
-              "color_banner_button": "#ffffff",
-              "min_width_banner_button": "248px",
-              "video_link": "eTCtDW7O1aM",
-              "video_icon_color": "#ffffff"
-            }
-          }
-        },
-        "block_order": [
-          "large_img_fU86KU"
-        ],
-        "disabled": true,
-        "name": "Custom Block Bottom Banners",
-        "settings": {
-          "layout": "full",
-          "widget_title": "",
-          "widget_des": "",
-          "title_style": "style_1",
-          "img_align": "center",
-          "margin_bottom_mb": 25,
-          "margin_bottom_tab": 30,
-          "margin_bottom": 30
         }
       },
       "home_spotlight_slider_zYrUTR": {
@@ -7905,7 +7845,7 @@
           "display_padding": true,
           "bg_color": "#f1e3d7",
           "spotlight_block_title": "IKEA Highchair Makeover",
-          "spotlight_block_des": "Three ways to make your $25 IKEA ANTILOP cuter & safer",
+          "spotlight_block_des": "Three ways to make the $25 IKEA ANTILOP cuter & safer",
           "title_style": "style_2",
           "margin_bottom_mb": 0,
           "margin_bottom": 0,
@@ -7914,19 +7854,59 @@
           "dots_active_bg_color": "#ffffff",
           "dots_active_border_color": "#52757d"
         }
+      },
+      "additional_tips_bUMXyy": {
+        "type": "additional-tips",
+        "blocks": {
+          "tip_d9b87f": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/yeahbabygoods-29.jpg",
+              "title": "How Can I Tell If My Baby Is Hungry or Full?",
+              "article": "the-blog/set-your-baby-up-for-success-with-solids-by-reading-their-hunger-cues"
+            }
+          },
+          "tip_JUyxRR": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/YBG-68_8dcde381-536c-4bed-9112-827b0f19e66d.jpg",
+              "title": "What Can I Do To Prepare My 4-Month-Old For Solids?",
+              "article": "the-blog/activities-to-prepare-your-3-5-month-old-for-solids"
+            }
+          },
+          "tip_GGBdUD": {
+            "type": "tip",
+            "settings": {
+              "image": "shopify://shop_images/AmazonPlacemat_BlushingBeige_8.jpg",
+              "title": "How Do I Transition From Milk to Solids?",
+              "article": "the-blog/feeding-beyond-the-breast-or-bottle"
+            }
+          }
+        },
+        "block_order": [
+          "tip_d9b87f",
+          "tip_JUyxRR",
+          "tip_GGBdUD"
+        ],
+        "disabled": true,
+        "name": "Article",
+        "settings": {
+          "heading": "",
+          "paragraph": ""
+        }
       }
     },
     "content_for_index": [
       "1620411795d72a40ce",
       "b9f92b2d-00f9-4b73-ab24-44677bea9f4d",
-      "home_product_tabs_x4e6aY",
-      "featured_collections_UW4fRt",
       "162041756141531609",
+      "featured_collections_UW4fRt",
       "home_sub_banner_bA77ra",
-      "judgeme_review_4jtgqG",
       "home_spotlight_slider_m9tdJN",
-      "1620416895faf4570f",
+      "judgeme_review_4jtgqG",
+      "home_product_tabs_x4e6aY",
       "home_spotlight_slider_zYrUTR",
+      "1620416895faf4570f",
       "image_text_column_bBNXT9",
       "1620417742f3c060ce",
       "162041362564bbc4d8",
@@ -7936,11 +7916,10 @@
       "1621362370700970cd",
       "1629747261e1ca35b0",
       "162990068233f26fb0",
+      "additional_tips_bUMXyy",
       "home_custom_block_spotlight_VaMqHz",
       "home_custom_block_images_HbDtkF",
-      "home_featured_products_rLjPFV",
-      "additional_tips_bUMXyy",
-      "home_custom_block_bottom_baner_CtUPV8"
+      "home_featured_products_rLjPFV"
     ],
     "blocks": {
       "18228966181090706294": {
