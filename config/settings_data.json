@@ -3534,6 +3534,8 @@
         "custom_css": [],
         "settings": {
           "pad_top": true,
+          "top_padding": 40,
+          "bottom_padding": 40,
           "section_title": "Loved By Parents, Design Enthusiasts & Baby Specialists",
           "title_color": "#cb6b3a",
           "title_size": 18
@@ -7215,7 +7217,7 @@
           "background_color": "#f1e3d7",
           "featured_collection_title": "Enjoy Mealtime Again",
           "title_color": "#30494d",
-          "title_size": 60,
+          "title_size": 32,
           "featured_collection_caption": "If style & function had a baby...",
           "caption_color": "#30494d",
           "caption_size": 22,
