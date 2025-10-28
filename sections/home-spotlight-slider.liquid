@@ -77,6 +77,7 @@
 
   <style>
     {% assign margin_bottom =  section.settings.margin_bottom %}
+    {% assign title_size = section.settings.title_size %}
 
         {% if section.settings.display_padding %}
         #home-spotlight-slider-{{ section.id }} {
@@ -125,6 +126,10 @@
             background-color: {{ section.settings.dots_active_bg_color }};
             border: 1px solid {{ section.settings.dots_active_border_color }};
         }
+
+        #home-spotlight-slider-{{ section.id }} .widget-title .box-title {
+            font-size: {{ title_size }}px;
+        }
   </style>
 {% endif %}
 
@@ -171,6 +176,15 @@
       "id": "spotlight_block_title",
       "label": "Title",
       "default": "#Spotlight"
+    },
+    {
+      "type": "range",
+      "label": "Title Size",
+      "id": "title_size",
+      "min": 32,
+      "max": 100,
+      "step": 2,
+      "default": 32
     },
     {
       "type": "textarea",
