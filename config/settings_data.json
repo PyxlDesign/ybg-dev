@@ -3539,7 +3539,7 @@
           "top_padding": 40,
           "bottom_padding": 40,
           "mobile_top_padding": 25,
-          "mobile_bottom_padding": 30,
+          "mobile_bottom_padding": 25,
           "section_title": "Loved By Parents, Design Enthusiasts & Baby Specialists",
           "title_color": "#cb6b3a",
           "title_size": 18
@@ -7186,7 +7186,7 @@
             "type": "collection",
             "settings": {
               "collection": "vegan-leather-cushion-covers",
-              "collection_title": "Highchairs That Go Viral"
+              "collection_title": "Highchairs That<br>Go Viral"
             }
           },
           "collection_FxbKyY": {
