@@ -78,6 +78,7 @@
   <style>
     {% assign margin_bottom =  section.settings.margin_bottom %}
     {% assign title_size = section.settings.title_size %}
+    {% assign mobile_title_size = section.settings.mobile_title_size %}
 
         {% if section.settings.display_padding %}
         #home-spotlight-slider-{{ section.id }} {
@@ -128,7 +129,13 @@
         }
 
         #home-spotlight-slider-{{ section.id }} .widget-title .box-title {
-            font-size: {{ title_size }}px;
+            font-size: {{ mobile_title_size }}px;
+        }
+
+        @media (min-width: 768px) {
+          #home-spotlight-slider-{{ section.id }} .widget-title .box-title {
+              font-size: {{ title_size }}px;
+          }
         }
   </style>
 {% endif %}
@@ -183,6 +190,15 @@
       "id": "title_size",
       "min": 32,
       "max": 100,
+      "step": 2,
+      "default": 32
+    },
+    {
+      "type": "range",
+      "label": "Mobile Title Size",
+      "id": "mobile_title_size",
+      "min": 18,
+      "max": 80,
       "step": 2,
       "default": 32
     },

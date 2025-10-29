@@ -21,6 +21,7 @@
     {% assign padding_top_tab = section.settings.padding_top_tab %}
     {% assign padding_top_desktop = section.settings.padding_top_desktop %}
     {% assign title_size = section.settings.product_tabs_title_size %}
+    {% assign mobile_title_size = section.settings.product_tabs_mobile_title_size %}
 
     .widget-title-{{ section.id }} .btn-shop-all {
         background: {{ section.settings.button_bg_color }};
@@ -98,9 +99,16 @@
             margin-top: {{ margin_top }}px;
             margin-bottom: {{ margin_bottom }}px;
         }
-    }   
+    }
+
     #product-tabs-{{section.id}} .widget-title .box-title .title {
-        font-size: {{ title_size }}px;
+        font-size: {{ mobile_title_size }}px;
+    }
+
+    @media (min-width: 768px) {
+        #product-tabs-{{section.id}} .widget-title .box-title .title {
+            font-size: {{ title_size }}px;
+        }
     }
 </style>
 <section class="widget-title widget-title-{{ section.id }}{% if section.settings.pad_top == true %} pad-top {% endif %}">
@@ -215,6 +223,15 @@
             "label": "Title Size",
             "min": 32,
             "max": 100,
+            "step": 2,
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "product_tabs_mobile_title_size",
+            "label": "Mobile Title Size",
+            "min": 18,
+            "max": 80,
             "step": 2,
             "default": 32
         },
