@@ -7485,13 +7485,33 @@
               "link_text": "Shop Doe",
               "link": "shopify://collections/shop-by-color-doe"
             }
+          },
+          "image_daP88E": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/untitled-101_JKP_SSb_1e4ee269-14ae-4795-aba5-26670aa1694b.jpg",
+              "title": "",
+              "link_text": "Shop Brown Speckle",
+              "link": "shopify://collections/shop-by-color-brown-speckle"
+            }
+          },
+          "image_HJ863M": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/YBG-94.jpg",
+              "title": "",
+              "link_text": "Shop Jade",
+              "link": "shopify://collections/shop-by-color-jade"
+            }
           }
         },
         "block_order": [
           "image_6L6XtP",
           "image_6GrGLU",
           "image_Bbqx8i",
-          "image_FMiBEB"
+          "image_FMiBEB",
+          "image_daP88E",
+          "image_HJ863M"
         ],
         "name": "Spotlight Slider",
         "settings": {
