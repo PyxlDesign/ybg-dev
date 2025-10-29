@@ -112,10 +112,10 @@
 
     <script defer>
       (function () {
-        var CLARITY_PROJECT_ID = 'st772zdski'; // <-- keep yours here
+        var CLARITY_PROJECT_ID = 'st772zdski';
         var clarityLoaded = false;
 
-        // Safe queue stub so clarity('consent') etc. won't throw pre-load
+        // Safe queue stub so calls before load don't throw
         window.clarity =
           window.clarity ||
           function () {
@@ -125,7 +125,6 @@
         function loadClarity() {
           if (clarityLoaded) return;
           clarityLoaded = true;
-
           var s = document.createElement('script');
           s.async = true;
           s.src = 'https://www.clarity.ms/tag/' + CLARITY_PROJECT_ID + '?ref=shopify';
@@ -133,44 +132,134 @@
           x.parentNode.insertBefore(s, x);
         }
 
+        function showBanner() {
+          var el = document.getElementById('cookie-consent-banner');
+          if (el) el.style.display = 'block';
+        }
+        function hideBanner() {
+          var el = document.getElementById('cookie-consent-banner');
+          if (el) el.style.display = 'none';
+        }
+
+        // Single handler for initial + future consent changes
         function onConsentChange() {
           try {
-            if (window.Shopify && Shopify.customerPrivacy) {
-              if (Shopify.customerPrivacy.hasConsented('marketing')) {
-                loadClarity(); // ensure tag is present
-                window.clarity('consent'); // signal allowed
-              } else {
-                window.clarity('stop'); // stop collection if user revokes
-              }
-            } else {
-              // If Shopify API isn't present, default to loading (non-EEA themes may do this)
+            if (!(window.Shopify && Shopify.customerPrivacy)) {
+              // No API: assume non-GDPR; run Clarity
               loadClarity();
-              window.clarity('consent');
+              clarity('consent');
+              hideBanner();
+              return;
+            }
+            var cp = Shopify.customerPrivacy;
+            var marketingOk = cp.marketingAllowed && cp.marketingAllowed();
+            var analyticsOk = cp.analyticsProcessingAllowed && cp.analyticsProcessingAllowed();
+
+            if (marketingOk || analyticsOk) {
+              hideBanner();
+              loadClarity();
+              clarity('consent');
+            } else {
+              // No consent yet in a GDPR region
+              clarity('stop');
+              showBanner();
             }
           } catch (e) {
-            // fail-quietly in case theme sections load out of order
             console && console.warn && console.warn('Clarity consent handling issue:', e);
           }
         }
 
-        // When Shopify's privacy API is ready, evaluate consent
-        function initWhenReady() {
-          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.ready) {
-            Shopify.customerPrivacy.ready(onConsentChange);
-
-            // React to future changes (Shopify fires this event on banner interaction)
-            document.addEventListener('shopify:consent:changed', onConsentChange);
-          } else {
-            // Fallback if the privacy API isn't available
-            if (document.readyState === 'complete' || document.readyState === 'interactive') {
-              onConsentChange();
-            } else {
-              document.addEventListener('DOMContentLoaded', onConsentChange);
-            }
+        // Wire your banner buttons to Shopify consent
+        window.acceptCookies = function () {
+          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent) {
+            Shopify.customerPrivacy.setTrackingConsent(
+              { marketing: true, analytics: true, preferences: true },
+              function () {
+                /* optional callback */
+              }
+            );
           }
-        }
+        };
+        window.declineCookies = function () {
+          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent) {
+            Shopify.customerPrivacy.setTrackingConsent(
+              { marketing: false, analytics: false, preferences: true },
+              function () {
+                /* optional callback */
+              }
+            );
+          }
+        };
 
-        initWhenReady();
+        // Bootstrap: load privacy API, decide if we’re in GDPR, then handle consent
+        window.Shopify = window.Shopify || {};
+        Shopify.loadFeatures([{ name: 'consent-tracking-api', version: '0.1' }], function (err) {
+          if (err) {
+            // If features fail to load, just run Clarity (acts like non-GDPR)
+            loadClarity();
+            clarity('consent');
+            return;
+          }
+
+          var region = Shopify.customerPrivacy.getRegion() || ''; // e.g., "DE", "GB", "CAON"
+          var country = region.slice(0, 2).toUpperCase();
+
+          var GDPR_COUNTRIES = [
+            'AT',
+            'BE',
+            'BG',
+            'HR',
+            'CY',
+            'CZ',
+            'DK',
+            'EE',
+            'FI',
+            'FR',
+            'DE',
+            'GR',
+            'HU',
+            'IS',
+            'IE',
+            'IT',
+            'LV',
+            'LI',
+            'LT',
+            'LU',
+            'MT',
+            'NL',
+            'NO',
+            'PL',
+            'PT',
+            'RO',
+            'SK',
+            'SI',
+            'ES',
+            'SE',
+            'GB',
+            'CH',
+          ];
+          var isGdpr = GDPR_COUNTRIES.includes(country);
+
+          if (!isGdpr) {
+            // Outside GDPR → run immediately
+            loadClarity();
+            clarity('consent');
+            hideBanner();
+            return;
+          }
+
+          // GDPR region: evaluate current consent state and react to changes
+          if (Shopify.customerPrivacy.ready) {
+            Shopify.customerPrivacy.ready(onConsentChange);
+          } else {
+            onConsentChange();
+          }
+
+          // Listen for Shopify’s consent change event and re-evaluate
+          document.addEventListener('visitorConsentCollected', onConsentChange);
+          // Some themes/apps emit this too:
+          document.addEventListener('shopify:consent:changed', onConsentChange);
+        });
       })();
     </script>
 
