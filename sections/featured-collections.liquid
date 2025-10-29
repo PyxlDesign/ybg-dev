@@ -3,6 +3,7 @@
 {% assign title = s.featured_collection_title %}
 {% assign caption = s.featured_collection_caption %}
 {% assign title_size = s.title_size %}
+{% assign mobile_title_size = s.mobile_title_size %}
 {% assign caption_size = s.caption_size %}
 {% assign title_color = s.title_color %}
 {% assign caption_color = s.caption_color %}
@@ -20,9 +21,13 @@
       color: {{ caption_color }};
   }
 
-  @media (max-width:767px) {
+  #shopify-section-{{ section.id }} .h1 {
+      font-size: {{ mobile_title_size }}px !important;
+  }
+
+  @media (min-width:768px) {
       #shopify-section-{{ section.id }} .h1 {
-          font-size: 32px !important;
+          font-size: {{ title_size }}px !important;
       }
   }
 </style>
@@ -118,10 +123,19 @@
       "type": "range",
       "id": "title_size",
       "label": "Title Font Size",
-      "min": 40,
+      "min": 32,
       "max": 100,
       "step": 2,
       "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "label": "Mobile Title Font Size",
+      "min": 18,
+      "max": 80,
+      "step": 2,
+      "default": 32
     },
     {
       "type": "header",
