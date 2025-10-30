@@ -106,105 +106,17 @@
 
     {% render 'zoorix-cart-items' %}
     <!-- Start Clarity -->
-    <!-- Microsoft Clarity (Shopify consent-aware) -->
-    <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
-    <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin>
+    <script type="text/javascript">
+      // Initialize Clarity with consent management
 
-    <script defer>
-      (function () {
-        var CLARITY_PROJECT_ID = 'st772zdski';
-        var clarityLoaded = false;
+      // Function to check if user is in EEA, UK, or Switzerland using IP geolocation
+      async function isEuropeanUser() {
+        try {
+          const response = await fetch('https://ipapi.co/json/');
+          const data = await response.json();
 
-        // Safe queue stub so calls before load don't throw
-        window.clarity =
-          window.clarity ||
-          function () {
-            (window.clarity.q = window.clarity.q || []).push(arguments);
-          };
-
-        function loadClarity() {
-          if (clarityLoaded) return;
-          clarityLoaded = true;
-          var s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.clarity.ms/tag/' + CLARITY_PROJECT_ID + '?ref=shopify';
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-
-        function showBanner() {
-          var el = document.getElementById('cookie-consent-banner');
-          if (el) el.style.display = 'block';
-        }
-        function hideBanner() {
-          var el = document.getElementById('cookie-consent-banner');
-          if (el) el.style.display = 'none';
-        }
-
-        // Single handler for initial + future consent changes
-        function onConsentChange() {
-          try {
-            if (!(window.Shopify && Shopify.customerPrivacy)) {
-              // No API: assume non-GDPR; run Clarity
-              loadClarity();
-              clarity('consent');
-              hideBanner();
-              return;
-            }
-            var cp = Shopify.customerPrivacy;
-            var marketingOk = cp.marketingAllowed && cp.marketingAllowed();
-            var analyticsOk = cp.analyticsProcessingAllowed && cp.analyticsProcessingAllowed();
-
-            if (marketingOk || analyticsOk) {
-              hideBanner();
-              loadClarity();
-              clarity('consent');
-            } else {
-              // No consent yet in a GDPR region
-              clarity('stop');
-              showBanner();
-            }
-          } catch (e) {
-            console && console.warn && console.warn('Clarity consent handling issue:', e);
-          }
-        }
-
-        // Wire your banner buttons to Shopify consent
-        window.acceptCookies = function () {
-          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent) {
-            Shopify.customerPrivacy.setTrackingConsent(
-              { marketing: true, analytics: true, preferences: true },
-              function () {
-                /* optional callback */
-              }
-            );
-          }
-        };
-        window.declineCookies = function () {
-          if (window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent) {
-            Shopify.customerPrivacy.setTrackingConsent(
-              { marketing: false, analytics: false, preferences: true },
-              function () {
-                /* optional callback */
-              }
-            );
-          }
-        };
-
-        // Bootstrap: load privacy API, decide if we’re in GDPR, then handle consent
-        window.Shopify = window.Shopify || {};
-        Shopify.loadFeatures([{ name: 'consent-tracking-api', version: '0.1' }], function (err) {
-          if (err) {
-            // If features fail to load, just run Clarity (acts like non-GDPR)
-            loadClarity();
-            clarity('consent');
-            return;
-          }
-
-          var region = Shopify.customerPrivacy.getRegion() || ''; // e.g., "DE", "GB", "CAON"
-          var country = region.slice(0, 2).toUpperCase();
-
-          var GDPR_COUNTRIES = [
+          // List of EEA countries, UK, and Switzerland
+          const europeanCountries = [
             'AT',
             'BE',
             'BG',
@@ -236,30 +148,71 @@
             'ES',
             'SE',
             'GB',
-            'CH',
+            'CH', // UK and Switzerland
           ];
-          var isGdpr = GDPR_COUNTRIES.includes(country);
 
-          if (!isGdpr) {
-            // Outside GDPR → run immediately
-            loadClarity();
+          return europeanCountries.includes(data.country_code);
+        } catch (error) {
+          console.error('Error detecting location:', error);
+          return false; // Default to non-European in case of error
+        }
+      }
+
+      function getConsentStatus() {
+        return window.cookieConsent?.getAnalyticsConsent() || false;
+      }
+
+      async function initializeClarity() {
+        const isEuropean = await isEuropeanUser();
+        if (isEuropean) {
+          const hasConsent = getConsentStatus();
+          if (hasConsent) {
             clarity('consent');
-            hideBanner();
-            return;
-          }
-
-          // GDPR region: evaluate current consent state and react to changes
-          if (Shopify.customerPrivacy.ready) {
-            Shopify.customerPrivacy.ready(onConsentChange);
           } else {
-            onConsentChange();
+            clarity('stop');
+            document.getElementById('cookie-consent-banner').style.display = 'block';
           }
+        } else {
+          clarity('consent');
+        }
+      }
 
-          // Listen for Shopify’s consent change event and re-evaluate
-          document.addEventListener('visitorConsentCollected', onConsentChange);
-          // Some themes/apps emit this too:
-          document.addEventListener('shopify:consent:changed', onConsentChange);
-        });
+      document.addEventListener('consentStatusChanged', function (event) {
+        if (event.detail.analytics === true) {
+          clarity('consent');
+        } else {
+          clarity('stop');
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', initializeClarity);
+    </script>
+
+    <script>
+      function acceptCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: true },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      function declineCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: false },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      // Initial check for European users
+      (async function () {
+        const isEuropean = await isEuropeanUser();
+        if (isEuropean && !getConsentStatus()) {
+          document.getElementById('cookie-consent-banner').style.display = 'block';
+        }
       })();
     </script>
 
