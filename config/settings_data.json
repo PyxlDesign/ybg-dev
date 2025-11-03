@@ -7453,7 +7453,7 @@
           "image_6L6XtP": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG4-2_KRK_3f99ecf4-811c-4c71-abf5-4d8a99554368.jpg",
+              "image": "shopify://shop_images/Shop_By_Color_4.jpg",
               "title": "",
               "link_text": "Shop Sage",
               "link": "shopify://collections/shop-by-color-sage"
@@ -7462,7 +7462,7 @@
           "image_6GrGLU": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG.2-24_KRK_tight_square.jpg",
+              "image": "shopify://shop_images/Shop_By_Color_2.jpg",
               "title": "",
               "link_text": "Shop Terracotta",
               "link": "shopify://collections/shop-by-color-terracotta"
@@ -7471,7 +7471,7 @@
           "image_Bbqx8i": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/untitled-96_JKP_SS_square.jpg",
+              "image": "shopify://shop_images/Shop_By_Color.jpg",
               "title": "",
               "link_text": "Shop Blush",
               "link": "shopify://collections/shop-by-color-blush"
@@ -7480,7 +7480,7 @@
           "image_FMiBEB": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG-101.jpg",
+              "image": "shopify://shop_images/Shop_By_Color_5.jpg",
               "title": "",
               "link_text": "Shop Doe",
               "link": "shopify://collections/shop-by-color-doe"
@@ -7489,7 +7489,7 @@
           "image_daP88E": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/untitled-101_JKP_SSb_1e4ee269-14ae-4795-aba5-26670aa1694b.jpg",
+              "image": "shopify://shop_images/Shop_By_Color_6.jpg",
               "title": "",
               "link_text": "Shop Brown Speckle",
               "link": "shopify://collections/shop-by-color-brown-speckle"
@@ -7498,10 +7498,19 @@
           "image_HJ863M": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/YBG-94.jpg",
+              "image": "shopify://shop_images/Shop_By_Color_3.jpg",
               "title": "",
               "link_text": "Shop Jade",
               "link": "shopify://collections/shop-by-color-jade"
+            }
+          },
+          "image_V4Fft4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Shop_By_Color_7.jpg",
+              "title": "",
+              "link_text": "Shop Grey",
+              "link": "shopify://collections/shop-by-color-grey"
             }
           }
         },
@@ -7511,7 +7520,8 @@
           "image_Bbqx8i",
           "image_FMiBEB",
           "image_daP88E",
-          "image_HJ863M"
+          "image_HJ863M",
+          "image_V4Fft4"
         ],
         "name": "Spotlight Slider",
         "settings": {
