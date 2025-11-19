@@ -3157,8 +3157,8 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/17_Memorial_2025_Desktop_Hero.jpg",
-              "hero_slide_url": "shopify://pages/collections"
+              "hero_slide_image": "shopify://shop_images/13_Black_Friday_Early_Access_2024_Desktop_Hero.jpg",
+              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
             }
           },
           "hero_slide_RqM7CD": {
@@ -5918,8 +5918,8 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/16_Memorial_Mobile_Hero.jpg",
-              "hero_slide_url": "shopify://pages/collections"
+              "hero_slide_image": "shopify://shop_images/12_Black_Friday_Early_Access_2024_Mobile_Hero.jpg",
+              "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
             }
           },
           "hero_slide_PRw9Pw": {
