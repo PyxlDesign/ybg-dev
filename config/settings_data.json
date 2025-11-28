@@ -3155,7 +3155,6 @@
         "blocks": {
           "hero_slide_aUTdYP": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/14_Black_Friday_2024_Desktop_Hero_f29badcb-5ef3-4e11-ae7b-10f0afc3c253.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -3163,6 +3162,7 @@
           },
           "hero_slide_NqTp6e": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/13_Black_Friday_Early_Access_2024_Desktop_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
@@ -5925,7 +5925,6 @@
         "blocks": {
           "hero_slide_WDwLKw": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/13_Black_Friday_2024_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -5933,6 +5932,7 @@
           },
           "hero_slide_QQACGT": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/12_Black_Friday_Early_Access_2024_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/ybgblackfriday-subscribe-page"
