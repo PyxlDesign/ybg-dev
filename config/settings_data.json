@@ -3155,7 +3155,6 @@
         "blocks": {
           "hero_slide_aUTdYP": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/18_December_Sale_Desktop_Hero.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -3163,6 +3162,7 @@
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b_c385cca2-87c1-40a2-8adb-55f667ebcea6.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -5916,7 +5916,6 @@
         "blocks": {
           "hero_slide_WDwLKw": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/17_December_Sale_Mobile_Hero.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -5924,6 +5923,7 @@
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
