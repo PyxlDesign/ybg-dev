@@ -3507,6 +3507,12 @@
               "brand_image": "shopify://shop_images/today_s_parent3_8a4bba4f-fb4a-4e7e-b474-3d0fa4390cd1.png"
             }
           },
+          "brand_emMpCW": {
+            "type": "brand",
+            "settings": {
+              "brand_image": "shopify://shop_images/chrislovesjulia.png"
+            }
+          },
           "014b6bd2-602e-4ca4-852b-1c7449975691": {
             "type": "brand",
             "settings": {
@@ -3519,6 +3525,12 @@
               "brand_image": "shopify://shop_images/karrie2_e0951152-3a0f-49e1-a95a-d0f36613dbea.png"
             }
           },
+          "brand_Kate9B": {
+            "type": "brand",
+            "settings": {
+              "brand_image": "shopify://shop_images/jennakutcher.png"
+            }
+          },
           "7b7a55ab-2a3c-42f7-871c-6852b583806c": {
             "type": "brand",
             "settings": {
@@ -3529,8 +3541,10 @@
         "block_order": [
           "20708083-3635-4fa5-86e7-d482a325b499",
           "526f843d-1855-4065-867a-9d8f2802f5f7",
+          "brand_emMpCW",
           "014b6bd2-602e-4ca4-852b-1c7449975691",
           "brand_DjpNCY",
+          "brand_Kate9B",
           "7b7a55ab-2a3c-42f7-871c-6852b583806c"
         ],
         "custom_css": [],
