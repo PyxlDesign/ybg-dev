@@ -1,43 +1,13 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "general": {
-    "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
-    },
-    "404": {
-      "title": "404 Page Not Found",
-      "subtext_html": "The page you requested does not exist.",
-      "click_here": "Click here",
-      "continue_shopping": " to continue shopping."
-    },
-    "breadcrumbs": {
-      "home": "Home",
-      "cart": "Shopping cart",
-      "home_link_title": "Back to the frontpage"
-    },
-    "newsletter_form": {
-      "newsletter_email": "your-email@example.com",
-      "submit": "Submit",
-      "newsletter_text": "enter your email address"
-    },
-    "search": {
-      "title": "Search for products on our site",
-      "placeholder": "Search",
-      "submit": "Search",
-      "no_results": "no results",
-      "view_results": "See all results"
-    },
-    "currency": {
-      "change_text": "The store's currency changed to",
-      "currency": "Currency"
-    },
-    "language": {
-      "language": "Language"
-    },
-    "sidebar": {
-      "sidebar_more": "Sidebar"
-    }
-  },
   "blogs": {
     "article": {
       "author_on_date_html": "Posted on {{ date }} by {{ author }}",
@@ -79,7 +49,7 @@
       "checkout": "Check Out",
       "button_checkout": "Proceed to Checkout",
       "empty": "Your cart is currently empty.",
-      "continue_browsing_html": "Continue browsing <a href=\"\/collections\/all\">here<\/a>.",
+      "continue_browsing_html": "Continue browsing <a href=\"/collections/all\">here</a>.",
       "view_cart": "View Cart",
       "close_cart": "Close",
       "shopping_cart": "Shopping Cart",
@@ -118,14 +88,6 @@
       "popup_cart_des": "The following items has been added to your cart:",
       "items_in_your_cart": "items in your shopping cart "
     }
-  },
-  "slideshow": {
-    "next_slide": "Next slide",
-    "previous_slide": "Previous slide",
-    "pause_slideshow": "Pause slideshow",
-    "play_slideshow": "Play slideshow",
-    "play_video": "Play video",
-    "close_video": "Close video"
   },
   "collections": {
     "general": {
@@ -221,7 +183,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal\/Zip Code",
+      "zip": "Postal/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -306,6 +268,60 @@
       "error_message": "Sorry, looks like something went wrong. Please correct the following and submit again:"
     }
   },
+  "date_formats": {
+    "month_day_year": "%B %d, %Y"
+  },
+  "general": {
+    "404": {
+      "title": "404 Page Not Found",
+      "subtext_html": "The page you requested does not exist.",
+      "click_here": "Click here",
+      "continue_shopping": " to continue shopping."
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "breadcrumbs": {
+      "home": "Home",
+      "cart": "Shopping cart",
+      "home_link_title": "Back to the frontpage"
+    },
+    "newsletter_form": {
+      "newsletter_email": "your-email@example.com",
+      "submit": "Submit",
+      "newsletter_text": "enter your email address"
+    },
+    "search": {
+      "title": "Search for products on our site",
+      "placeholder": "Search",
+      "submit": "Search",
+      "no_results": "no results",
+      "view_results": "See all results"
+    },
+    "currency": {
+      "change_text": "The store's currency changed to",
+      "currency": "Currency"
+    },
+    "language": {
+      "language": "Language"
+    },
+    "sidebar": {
+      "sidebar_more": "Sidebar"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Here's your gift card!",
+      "disabled": "Disabled",
+      "expired": "Expired on {{ expiry }}",
+      "active": "Expires on {{ expiry }}",
+      "redeem": "Use this code at checkout to redeem your gift card",
+      "shop_link": "Start shopping",
+      "print": "Print"
+    }
+  },
   "home_page": {
     "sections": {
       "frontpage_title": "Frontpage Collection",
@@ -314,10 +330,10 @@
     },
     "onboarding": {
       "modal_title": "Almost there...",
-      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"\/admin\/collections?tutorial=Frontpage\">add a product to this collection<\/a>.",
+      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"/admin/collections?tutorial=Frontpage\">add a product to this collection</a>.",
       "add_product": "Add a Product",
       "product_title": "Example Product Title",
-      "no_collections_html": "You don't have any collections to show here. <a href=\"\/admin\/custom_collections\">Add some collections<\/a> to go along with the default Frontpage.",
+      "no_collections_html": "You don't have any collections to show here. <a href=\"/admin/custom_collections\">Add some collections</a> to go along with the default Frontpage.",
       "add_collection": "Add a Collection",
       "collection_title": "Example Collection Title"
     },
@@ -362,7 +378,7 @@
       "bundle_label": "Bundle",
       "new_label": "New",
       "sold_out": "Sold Out",
-      "on_sale_from_html": "<strong>On Sale<\/strong> from {{ price }}",
+      "on_sale_from_html": "<strong>On Sale</strong> from {{ price }}",
       "unavailable": "Unavailable",
       "compare_at": "Compare at",
       "quantity": "Quantity",
@@ -387,20 +403,23 @@
       "main_product": "This item"
     }
   },
-  "gift_cards": {
-    "issued": {
-      "title": "Here's your {{ value }} gift card for {{ shop }}!",
-      "subtext": "Here's your gift card!",
-      "disabled": "Disabled",
-      "expired": "Expired on {{ expiry }}",
-      "active": "Expires on {{ expiry }}",
-      "redeem": "Use this code at checkout to redeem your gift card",
-      "shop_link": "Start shopping",
-      "print": "Print"
+  "shopify": {
+    "checkout": {
+      "marketing": {
+        "accept_sms_checkbox_label": "☀️ Text me the best YBG news and deals!"
+      },
+      "customer_account": {
+        "save_my_information_label": "⚡️ Save this information for next time"
+      }
     }
   },
-  "date_formats": {
-    "month_day_year": "%B %d, %Y"
+  "slideshow": {
+    "next_slide": "Next slide",
+    "previous_slide": "Previous slide",
+    "pause_slideshow": "Pause slideshow",
+    "play_slideshow": "Play slideshow",
+    "play_video": "Play video",
+    "close_video": "Close video"
   },
   "wishlist": {
     "general": {
@@ -410,7 +429,7 @@
       "product_name": "Product Name",
       "unit_price": "Price",
       "share_wishlist": "Share my Wishlist Via Email",
-      "no_login_html": "To create a wish list you must <a href=\"\/account\/login\">sign in<\/a> or <a href=\"\/account\/register\">create an account<\/a>.",
+      "no_login_html": "To create a wish list you must <a href=\"/account/login\">sign in</a> or <a href=\"/account/register\">create an account</a>.",
       "add_to_wishlist": "Add to Wish List",
       "remove_wishlist": "Remove Wish List",
       "note": "Already in your wishlist, Go to wishlist",
@@ -421,14 +440,50 @@
       "create_account": "create an account"
     }
   },
-  "shopify": {
-    "checkout": {
-      "marketing": {
-        "accept_sms_checkbox_label": "☀️ Text me the best YBG news and deals!"
-      },
-      "customer_account": {
-        "save_my_information_label": "⚡️ Save this information for next time"
-      }
+  "gempages": {
+    "Carousel": {
+      "no_slider": "No Slider"
+    },
+    "CarouselV3": {
+      "no_slider": "No Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for subscribing"
+    },
+    "IconListV2": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconList": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icons not found"
+    },
+    "Product": {
+      "product_not_found": "Product not found"
+    },
+    "ProductList": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductListV3": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Product Not Found"
+    },
+    "ProductVariants": {
+      "please_select": "Please select an option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>HURRY!</mark> LET BUY NOW"
+    },
+    "Breadcrumb": {
+      "home": "Home"
     }
   }
 }

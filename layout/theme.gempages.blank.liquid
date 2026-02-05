@@ -1,0 +1,328 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 no-js"> <![endif]-->
+<!-- [if (gt IE 9)|!(IE)]><! -->
+<html class="no-js">
+  <!-- <![endif] -->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53J66497C0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-53J66497C0');
+      gtag('config', 'AW-393438063');
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+
+    <script>
+      window.renderOptIn = function () {
+        window.gapi.load('surveyoptin', function () {
+          window.gapi.surveyoptin.render({
+            // REQUIRED FIELDS
+            merchant_id: 353492233,
+            order_id: 'ORDER_ID',
+            email: 'CUSTOMER_EMAIL',
+            delivery_country: 'COUNTRY_CODE',
+            estimated_delivery_date: 'YYYY-MM-DD',
+
+            // OPTIONAL FIELDS
+            products: [{ gtin: 'GTIN1' }, { gtin: 'GTIN2' }],
+          });
+        });
+      };
+    </script>
+
+    <!-- Basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Title and description ================================================== -->
+    <title>
+      {{ page_title }}
+      {% if current_tags %}
+        &ndash; tagged "{{ current_tags | join: ', ' }}"
+      {%- endif %}
+      {% if current_page != 1 %}
+        &ndash; Page {{ current_page -}}
+      {%- endif %}
+      {% unless page_title contains shop.name %}
+        &ndash; {{ shop.name -}}
+      {%- endunless %}
+    </title>
+
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape | split: '[/countdown]' | last | strip_html }}">
+    {% endif %}
+
+    <!-- Product meta ================================================== -->
+    {% render 'fb-open-graph-tags' %}
+    {% render 'twitter-card' %}
+
+    <!-- Helpers ================================================== -->
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+
+    <!-- Favicon -->
+    {% if settings.favicon != blank %}
+      <link
+        rel="shortcut icon"
+        href="{{ settings.favicon | img_url: '32x32' }}"
+        type="image/png"
+      >
+    {% endif %}
+
+    <!-- fonts -->
+    {% render 'head_fonts' %}
+
+    <!-- Styles -->
+    {% render 'head_styles' %}
+
+    <!-- Scripts -->
+    {% render 'head_scripts' %}
+
+    <!-- Header hook for plugins ================================ -->
+    {{ content_for_header }}
+    {%- render 'bold-common' -%}
+
+    <!--[if lt IE 9]> {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }} <![endif]-->
+
+    {% comment %}
+      If you store has customers disabled, you can remove the following JS file
+    {% endcomment %}
+
+    {% if template contains 'customers' %}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+      {{ 'customer_area.js' | shopify_asset_url | script_tag }}
+    {% endif %}
+
+    {% render 'linked-options' %}
+
+    {% render 'zoorix-cart-items' %}
+    <!-- Start Clarity -->
+    <script type="text/javascript">
+      // Initialize Clarity with consent management
+
+      // Function to check if user is in EEA, UK, or Switzerland using IP geolocation
+      async function isEuropeanUser() {
+        try {
+          const response = await fetch('https://ipapi.co/json/');
+          const data = await response.json();
+
+          // List of EEA countries, UK, and Switzerland
+          const europeanCountries = [
+            'AT',
+            'BE',
+            'BG',
+            'HR',
+            'CY',
+            'CZ',
+            'DK',
+            'EE',
+            'FI',
+            'FR',
+            'DE',
+            'GR',
+            'HU',
+            'IS',
+            'IE',
+            'IT',
+            'LV',
+            'LI',
+            'LT',
+            'LU',
+            'MT',
+            'NL',
+            'NO',
+            'PL',
+            'PT',
+            'RO',
+            'SK',
+            'SI',
+            'ES',
+            'SE',
+            'GB',
+            'CH', // UK and Switzerland
+          ];
+
+          return europeanCountries.includes(data.country_code);
+        } catch (error) {
+          console.error('Error detecting location:', error);
+          return false; // Default to non-European in case of error
+        }
+      }
+
+      function getConsentStatus() {
+        return window.cookieConsent?.getAnalyticsConsent() || false;
+      }
+
+      async function initializeClarity() {
+        const isEuropean = await isEuropeanUser();
+        if (isEuropean) {
+          const hasConsent = getConsentStatus();
+          if (hasConsent) {
+            clarity('consent');
+          } else {
+            clarity('stop');
+            document.getElementById('cookie-consent-banner').style.display = 'block';
+          }
+        } else {
+          clarity('consent');
+        }
+      }
+
+      document.addEventListener('consentStatusChanged', function (event) {
+        if (event.detail.analytics === true) {
+          clarity('consent');
+        } else {
+          clarity('stop');
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', initializeClarity);
+    </script>
+
+    <script>
+      function acceptCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: true },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      function declineCookies() {
+        document.dispatchEvent(
+          new CustomEvent('consentStatusChanged', {
+            detail: { analytics: false },
+          })
+        );
+        document.getElementById('cookie-consent-banner').style.display = 'none';
+      }
+
+      // Initial check for European users
+      (async function () {
+        const isEuropean = await isEuropeanUser();
+        if (isEuropean && !getConsentStatus()) {
+          document.getElementById('cookie-consent-banner').style.display = 'block';
+        }
+      })();
+    </script>
+
+    <style>
+      #cookie-consent-banner {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ffffff;
+        padding: 2rem;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+        font-family: 'Avenir Next', sans-serif;
+        border-radius: 12px;
+        max-width: 500px;
+        width: 90%;
+      }
+
+      .cookie-consent-content {
+        text-align: center;
+      }
+
+      .consent-header h2 {
+        color: #2d4550;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-family: 'Editorial New', serif;
+      }
+
+      .consent-body p {
+        color: #666666;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .consent-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .consent-buttons button {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Avenir Next', sans-serif;
+      }
+
+      .accept-button {
+        background: #e6a886;
+        color: #ffffff;
+      }
+
+      .accept-button:hover {
+        background: #d89775;
+      }
+
+      .decline-button {
+        background: #ffffff;
+        color: #2d4550;
+        border: 1px solid #e0e0e0 !important;
+      }
+
+      .decline-button:hover {
+        background: #f5f5f5;
+      }
+
+      @media (max-width: 768px) {
+        #cookie-consent-banner {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          max-width: none;
+          border-radius: 12px 12px 0 0;
+          transform: none;
+        }
+
+        .consent-header h2 {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+
+    <!-- End Clarity -->
+  </head>
+
+  {% if settings.layout_body == 'full' %}
+    {%- assign layout_class = 'body-full' -%}
+  {% elsif settings.layout_body == 'boxed' %}
+    {%- assign layout_class = 'body-boxed' -%}
+  {% endif %}
+
+  {% if settings.header_layout == 'vertical' %}
+    {%- assign header_class = 'header-vertical-tpl' -%}
+  {% endif %}
+
+  <body
+    data-url-lang="{{ routes.cart_url }}"
+    id="{{ page_title | handle }}"
+    class="{{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} header-sticked"
+  ><main class="main-content" role="main">
+        {{ content_for_layout }}
+      </main></body>
+</html>
