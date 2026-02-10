@@ -1,0 +1,490 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_606020064495272858": {
+      "type": "gp-section-606020064495272858",
+      "settings": {
+        "checksum": "85561733fa20b3e01a096f66b2336da106157e19db5ba52f83025af923666b53_1_1_1_0__1",
+        "ggDn72cH3Eb_text": "Lorem ipsum dolor sit amet. <span style=\"color:#5C523D;\">consectetur labore</span>",
+        "gghmOZlfmUi_text": "<p>Sed ut perspiciatis unde omnis</p>",
+        "gg2O3Gi1vXq_label": "At vero",
+        "ggNIlmYkLzC_label": "Dignissimos ducimus",
+        "ggqciKb-xSX_text": "<p>148</p>",
+        "ggp8ixvwLVo_text": "<p>At vero eos et accusamus et iusto odio</p>",
+        "gglBlOoN5Ky_label": "Add to cart",
+        "gglBlOoN5Ky_outOfStockLabel": "Out of stock",
+        "gglBlOoN5Ky_unavailableLabel": "Unavailable",
+        "ggB_S48-Krb_label": "Dignissimos ducimus",
+        "ggtFAs3rhI7_text": "<p>148</p>",
+        "gg_PdvPWaAl_text": "<p>At vero eos et accusamus et iusto odio</p>",
+        "ggrivEDJVCI_label": "Add to cart",
+        "ggrivEDJVCI_outOfStockLabel": "Out of stock",
+        "ggrivEDJVCI_unavailableLabel": "Unavailable",
+        "ggWacwdd_Nq_label": "Dignissimos ducimus",
+        "ggyUlstpyiD_text": "<p>148</p>",
+        "ggOgEoZWkuv_text": "<p>At vero eos et accusamus et iusto odio</p>",
+        "ggE5op1S4Uv_label": "Add to cart",
+        "ggE5op1S4Uv_outOfStockLabel": "Out of stock",
+        "ggE5op1S4Uv_unavailableLabel": "Unavailable",
+        "ggVg12gxLv3_label": "Dignissimos ducimus",
+        "ggbGY5aYUSD_text": "<p>148</p>",
+        "ggsf7Db8x9G_text": "<p>At vero eos et accusamus et iusto odio</p>",
+        "gg12Uv6XOb5_label": "Add to cart",
+        "gg12Uv6XOb5_outOfStockLabel": "Out of stock",
+        "gg12Uv6XOb5_unavailableLabel": "Unavailable",
+        "ggAKyY0LXF0_label": "Dignissimos ducimus",
+        "ggI_98h5PEf_text": "<p>148</p>",
+        "ggAXFM-PjBp_text": "<p>At vero eos et accusamus et iusto odio</p>",
+        "ggZRVSPGKPB_label": "Add to cart",
+        "ggZRVSPGKPB_outOfStockLabel": "Out of stock",
+        "ggZRVSPGKPB_unavailableLabel": "Unavailable"
+      }
+    },
+    "gp_section_606020064495338394": {
+      "type": "gp-section-606020064495338394",
+      "settings": {
+        "checksum": "46a8cf766cef92f310f5fabd0cd4a4baea1d26d38f1311f8d1f6d0ad5e6d118a_1_1_1_0__1",
+        "ggigY6mImXw_text": "The standard Lorem",
+        "gg7du0TO1Mb_text": "<p>Convenience</p>",
+        "ggNzUmm7AxV_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>",
+        "ggU59YSjmPq_text": "<p>Long Shelf Life</p>",
+        "ggxUCAJOXmy_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>",
+        "ggm0ZaR6U5z_text": "<p>Portion Control</p>",
+        "ggCzqVR0JRb_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>",
+        "gg6NvNrwju2_text": "<p>Hydration</p>",
+        "ggsUWtDnrFD_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>",
+        "ggERaM4p2pO_text": "<p>Accessibility</p>",
+        "ggg0OpKHtn6_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>",
+        "ggRpOmwfvdb_text": "<p>Cost-Effective</p>",
+        "ggCD7WCY4me_text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>"
+      }
+    },
+    "gp_section_606020064495403930": {
+      "type": "gp-section-606020064495403930",
+      "settings": {
+        "checksum": "8fc51afe27f50203da6cb20ce4aea244643c424b72b582fa076352693fc8076b_1_1_1_0__1",
+        "ggPoG41CSrU_text": "<p>2,500+ Verified Reviews!</p>",
+        "ggWkNQD9tB4_text": "Customer Testimonials",
+        "ggoxWtOiWMZ_label": "Read the review",
+        "ggQZrHVqnWi_text": "<p>5/5 rating</p>",
+        "gghKFxsYIdI_text": "<p>\"Love it! Great for summer! Good taste, it really owns up to its name “sparkling”, cold with bubbles and lime flavor. When I want that soda feel without drinking a soda, I grab for one of this.\"</p>",
+        "ggq4qOG0L7C_text": "<p>Rita Carroll</p>",
+        "ggDnC9wk_7Z_text": "<p>Strawberry Hibiscus</p>",
+        "ggrODjmJZ2z_text": "<p>5/5 rating</p>",
+        "ggFjY24MoIh_text": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\"</p>",
+        "ggQTWIP-w1l_text": "<p>Dick Rey</p>",
+        "ggLZzrFshCd_text": "<p>Lemonade Ginger</p>",
+        "ggC-zmcD5hC_text": "<p>5/5 rating</p>",
+        "ggUo_Ac17I4_text": "<p>\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.\"</p>",
+        "ggq9M7_9J3n_text": "<p>Emma Zalia</p>",
+        "ggdnlOzvSLw_text": "<p>Orange Squeeze&nbsp;</p>"
+      }
+    },
+    "gp_section_606020064495469466": {
+      "type": "gp-section-606020064495469466",
+      "settings": {
+        "checksum": "80bbfcb8457b21e40561767f88d80c15b65f95759e5b01032223ea40f22c42ac_1_1_1_0__1",
+        "ggEExkhGSrD_text": "<p>Lorem ipsum dolor sit amet</p>",
+        "ggyxvmtCoDT_text": "<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings</p>",
+        "ggaVJv-D_Gk_text": "<p>Sed do eiusmod tempor</p>",
+        "ggtWCxPjNha_text": "<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings</p>",
+        "gg6lCg_VWth_text": "<p>Iste natus error</p>",
+        "ggdObW249PW_text": "<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings</p>"
+      }
+    },
+    "gp_section_606020064495600538": {
+      "type": "gp-section-606020064495600538",
+      "settings": {
+        "checksum": "4262f1f6988deb44b78488478500a46f5ee8d0ec8d7f21cfe9e8d9ab0b1b7476_1_1_1_0__1",
+        "ggGD29mF6ih_text": "Hear from Our Customers",
+        "ggBShGRwrb3_text": "<p>2000+ Customers Who Love Us</p>",
+        "gg7Ztq0sgWF_text": "<p><span style=\"color:#242424;\"><strong>Rita Carroll</strong></span> | Customer &nbsp;</p>",
+        "ggCkFU3jClr_childItem_0": "<p>Verified Buyer</p>",
+        "gge6uPulUy0_text": "<p>“Lorem ipsum dolor”</p>",
+        "gg3efw_QFof_text": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "ggkckkW1ohk_text": "<p><span style=\"color:#242424;\"><strong>Reylo B</strong></span> | Customer &nbsp;</p>",
+        "gg8-2IrfjCS_childItem_0": "<p>Verified Buyer</p>",
+        "ggZ_HMU0tYB_text": "<p>“Sed do eiusmod tempor”</p>",
+        "ggE4Mx_av1j_text": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "ggF25AiRQYL_text": "<p><span style=\"color:#242424;\"><strong>Ken K</strong></span> | Customer &nbsp;</p>",
+        "ggzl3gyZA9D_childItem_0": "<p>Verified Buyer</p>",
+        "ggyMvnMfSkz_text": "<p>“Labore et dolore”</p>",
+        "gg9drUDPRap_text": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      }
+    },
+    "gp_section_606020064495666074": {
+      "type": "gp-section-606020064495666074",
+      "settings": {
+        "checksum": "3ff412b686b6c205b5580957c2925636811adced6940114933455f3a46cb841d_1_1_1_0__1",
+        "ggVGtL-rQ4E_text": "The standard Lorem Ipsum passage",
+        "ggFhxWMrywm_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p><p>&nbsp;</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p><p>&nbsp;</p><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>",
+        "gggJ4bNhN1a_text": "<p>Danny grannick</p>",
+        "ggtjr9V5Cw2_text": "<p>CEO &amp; Co-founder</p>",
+        "gggze_11oeF_label": "Shop - Button"
+      }
+    },
+    "gp_section_606020064495731610": {
+      "type": "gp-section-606020064495731610",
+      "settings": {
+        "checksum": "bb285fb34f6be624ed8b32222fb93d32ee7e1cea93b2b9a1e119be137c8cf0d1_1_1_1_0__1",
+        "ggX2Vf6fIni_text": "<p>What Our Customers Are Saying</p>",
+        "ggbws0Vp7x1_text": "<p>Our customer advocates are standing by 24/7 to support you via email.</p>",
+        "ggMb9MmDpR8_text": "<p>You're walking on a cloud!</p>",
+        "ggEDhHeE8lL_text": "<p>“ These shoes are everything I hoped they would be ! So comfortable so lightweight and absolutely slip on as easily as they say they do - I will definitely be a repeat customer.”</p>",
+        "ggcPfZcEAEm_text": "<p>- Ryan S.</p>",
+        "gghtI2llkui_text": "<p>Work well for my problem feet</p>",
+        "ggqhI0_cuag_text": "<p>\"Delighted to find they are comfortable, easy to put on, and nice-looking. I have bunions and hammer toes. I was advised to try to EE wide and they actually work for me. And I can use them with my.\"</p>",
+        "ggt9F5JBTQJ_text": "<p>- Travis J.</p>",
+        "ggZw0i2ys0o_text": "<p>You're walking on a cloud!</p>",
+        "gg6VfWkppXR_text": "<p>“ These shoes are everything I hoped they would be ! So comfortable so lightweight and absolutely slip on as easily as they say they do - I will definitely be a repeat customer.”</p>",
+        "ggdfhDiMA2D_text": "<p>- Ryan S.</p>",
+        "ggMIvL6X7ks_text": "<p>Work well for my problem feet</p>",
+        "ggw3nr1ewCO_text": "<p>\"Delighted to find they are comfortable, easy to put on, and nice-looking. I have bunions and hammer toes. I was advised to try to EE wide and they actually work for me. And I can use them with my.\"</p>",
+        "ggy0k_QlThC_text": "<p>- Travis J.</p>"
+      }
+    },
+    "gp_section_606020064495862682": {
+      "type": "gp-section-606020064495862682",
+      "settings": {
+        "checksum": "980401966e2f8734b59723e0d450dc8e2997e7952b6c9bad1cd08608210ca03b_1_1_1_0__1",
+        "ggqb8BkfUKq_text": "<p>Lorem ipsum dolor sit amet</p>",
+        "ggx40C6NFZL_text": "Eiusmod tempor incididunt",
+        "gg646Rk8OjQ_text": "<p>Omnis voluptas</p>",
+        "gg-uhhpjqbw_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggY4MQO_zLU_text": "<p>-Maria K.</p>",
+        "ggKXQiUsHCQ_text": "<p>Pain and trouble</p>",
+        "gg4Lp3vqKxF_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggsH-iXHfLG_text": "<p>-Jonh L.</p>",
+        "gghF0i1qiNX_text": "<p>Every pain avoided</p>",
+        "ggHme447BPo_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggx2eBHq_RB_text": "<p>-Reylo Q.</p>",
+        "ggzGiQfCcUb_text": "<p>Sed ut perspiciatis</p>",
+        "ggzLpuI5cR__text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggnMgGWbkLv_text": "<p>-Alisa G.</p>",
+        "ggVcPpT37FT_text": "<p>Sed ut perspiciatis</p>",
+        "ggTtYcD_Ep4_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggikmk7jzlj_text": "<p>-Alisa G.</p>",
+        "gglIyLCytSy_text": "<p>Nemo enim ipsam</p>",
+        "ggAQHFhuhte_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "gg5SXv-QJ6l_text": "<p>-Ken K.</p>",
+        "gg1PuP9xxvn_text": "<p>Atque corrupti</p>",
+        "ggntdzGm36P_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggymhHsRevk_text": "<p>-Dick S.</p>"
+      }
+    },
+    "gp_section_606020064497042330": {
+      "type": "gp-section-606020064497042330",
+      "settings": {
+        "checksum": "037d1864e90735661f16e04cf5068f1903751ce254786c811a1946d21175c346_1_1_1_0__1",
+        "ggJ-mjnLL83_text": "<p>No More Overheating Nights</p>",
+        "ggKE5yMR9B3_text": "<p>I used to wake up sweaty and restless, but Gemnest completely changed that. The fabric feels cool and airy, keeping me comfortable all night long — no more tossing and turning.</p>",
+        "ggMIjboAwxm_text": "<p>David L.</p>",
+        "ggw8obIMpOj_text": "<p>Perfect Balance of Softness &amp; Warmth</p>",
+        "ggrje-G-y8i_text": "<p>The weight feels just right — light enough for hot nights, cozy enough for cool mornings. It’s like sleeping inside a gentle cloud.</p>",
+        "gguFeC3ch9x_text": "<p>Sanda L.</p>",
+        "ggbVQtPVchf_text": "<p>Comfort You Can Feel, Quality You Can Trust</p>",
+        "ggTI_FrPe0J_text": "<p>We both sleep better now. My partner runs warm, I get cold — and Gemnest somehow keeps us both perfectly comfortable. It’s worth every penny.</p>",
+        "ggHBw95Omby_text": "<p>Mai B.</p>"
+      }
+    },
+    "gp_section_606020064497107866": {
+      "type": "gp-section-606020064497107866",
+      "settings": {
+        "checksum": "d89cfb592c3a4045c312bf10d7ed26b288e1e2ed84c7f2e488bb5dcf6dfc63e3_1_1_1_0__1",
+        "gg-iOdGSQ1z_text": "What's really in your bedding?",
+        "gg3Hr59NNdk_text": "<p>Gemnest Bedding</p>",
+        "gg3SfVCdmuA_text": "<p>Typical Bedding</p>",
+        "gglysUh8i___text": "<p>Fiber Source</p>",
+        "ggOU0XSXawa_text": "<p>Natural plant fibers — sustainably grown bamboo, hemp, and organic cotton</p>",
+        "gghg6m_neau_text": "<p>Synthetic fibers made from petroleum</p>",
+        "ggK4Kqd3q59_text": "<p>Dye Process</p>",
+        "ggeU3Wdtoj7_text": "<p>Colored with low-impact, non-toxic dyes that preserve fabric breathability</p>",
+        "ggCze9Ow9ac_text": "<p>Often treated with harsh chemical dyes and bleaches</p>",
+        "ggUh2-Zm5B9_text": "<p>Touch &amp; Feel</p>",
+        "ggHSvfwB2Gb_text": "<p>Naturally soft, temperature-regulating, and breathable year-round</p>",
+        "ggYdwq8VGxo_text": "<p>Can trap heat and feel heavy or sticky on skin</p>",
+        "gg_1MAFpK9l_text": "<p>Impact on Skin</p>",
+        "ggwZSOPk8zW_text": "<p>Hypoallergenic, ideal for sensitive or acne-prone skin</p>",
+        "ggSDNmLSdE-_text": "<p>May cause irritation or dryness over time</p>",
+        "ggmd7eqH42Q_text": "<p>Environmental Footprint</p>",
+        "ggmIYQBdplU_text": "<p>Biodegradable fibers and eco-conscious production</p>",
+        "ggxHHclyenr_text": "<p>High carbon footprint, non-biodegradable materials</p>",
+        "gg9i5SFpFM-_text": "<p>Transparency</p>",
+        "gghIuGEipb6_text": "<p>Full material and dye disclosure on every product page</p>",
+        "ggJIbOGnGkJ_text": "<p>Often no clear information about material sourcing</p>"
+      }
+    },
+    "gp_section_606020064497173402": {
+      "type": "gp-section-606020064497173402",
+      "settings": {
+        "checksum": "7ca4971d91c6a595ed34cace46ab163a1b4aea5c155d650956f814094b92b4ec_1_1_1_0__1",
+        "ggsrcQSZf4Z_text": "Recognized for redefining restful living"
+      }
+    },
+    "gp_section_606020064497238938": {
+      "type": "gp-section-606020064497238938",
+      "settings": {
+        "checksum": "3094e59fa8d3b191b3b73542dd0251ee708fe9b3bbe9a99c37e6d236a918ad47_1_1_1_0__1",
+        "ggXaf4ZDLIe_text": "snug in your gemnest",
+        "ggKalgt-FS3_text": "<p>Follow @gemnest</p>",
+        "ggZZKqZN-nS_text": "<p>@stylewithdan</p>",
+        "ggy5tvp5SYv_text": "<p>@dailymeave</p>",
+        "ggBY9nOk8AH_text": "<p>@drjennifer</p>",
+        "ggeU4eqj0vx_text": "<p>@rbsfamily</p>"
+      }
+    },
+    "gp_section_606020064497304474": {
+      "type": "gp-section-606020064497304474",
+      "settings": {
+        "checksum": "5603b850d8723356b6b8bc8124406389ce02da979d3a21e217aa59be4bf5af57_1_1_1_0__1",
+        "ggBYc99r30T_text": "From Earth’s Finest Fibers to Restful Nights",
+        "ggazmHGM76j_text": "<p>Earthy Comfort</p>",
+        "ggBuTkkd4qX_text": "<p>Woven from a blend of European hemp and linen, relaxed texture that breathes with you.</p>",
+        "ggnAyyR0QZy_text": "<p>Ideal for</p>",
+        "ggJVB90znvp_text": "<p>Year-round comfort</p>",
+        "ggByZWD8PT9_text": "<p>Texture</p>",
+        "ggSTsTaPRV9_text": "<p>Lightly crisp</p>",
+        "ggiVKJTPfZF_text": "<p>Weave</p>",
+        "ggBNgbEWLxH_text": "<p>Plain weave</p>",
+        "ggVvysRvdQ9_label": "<p>View Product</p>",
+        "gg5y6Zflxie_text": "<p>Organic Cotton</p>",
+        "ggFkHQvpYc__text": "<p>Our organic cotton sheets stretch naturally with you, every night feels like a lazy Sunday morning.</p>",
+        "ggmIs9n35_j_text": "<p>Ideal for</p>",
+        "gga96qdIkio_text": "<p>Everyday comfort</p>",
+        "ggDjhqLntzo_text": "<p>Texture</p>",
+        "ggdJQc1VDva_text": "<p>Crisp yet cozy</p>",
+        "ggCpNVazDnx_text": "<p>Weave</p>",
+        "ggWb8F3cW98_text": "<p>Percale</p>",
+        "ggUnPOa7iHE_label": "<p>View Product</p>",
+        "gg1JkAGCLz0_text": "<p>Bamboo Sateen</p>",
+        "ggwQPvoe2P7_text": "<p>Woven from a blend of European hemp and linen, relaxed texture that breathes with you.</p>",
+        "ggw4bT3vFLu_text": "<p>Ideal for</p>",
+        "gg7swdDfSPY_text": "<p>Warm sleepers</p>",
+        "ggsU6vhMSAt_text": "<p>Texture</p>",
+        "gggRNuKv1eu_text": "<p>Silky touch</p>",
+        "gguB_2lJUCS_text": "<p>Weave</p>",
+        "ggv_XOq-LQX_text": "<p>Sateen</p>",
+        "gguu194di7l_label": "<p>View Product</p>"
+      }
+    },
+    "gp_section_606020064497370010": {
+      "type": "gp-section-606020064497370010",
+      "settings": {
+        "checksum": "3b84ed99f55b9e602760a85f928b7db96038e974f2c76b6faa5dbb94719ca69f_1_1_1_0__1",
+        "gg8iaDUBFhT_text": "explore more our bestsellers",
+        "ggZEKH3XnN-_label": "Add to cart",
+        "ggZEKH3XnN-_outOfStockLabel": "Out Of Stock",
+        "ggZEKH3XnN-_unavailableLabel": "Unavailable",
+        "ggZEKH3XnN-_variantSelectionRequiredMessage": "Please select a variant to add product to cart"
+      }
+    },
+    "gp_section_606020064497435546": {
+      "type": "gp-section-606020064497435546",
+      "settings": {
+        "checksum": "92f255c573eb821b4bbe8db015f4570a15260cc321b72de7834ccd3f34bcb3d4_1_1_1_0__1"
+      }
+    },
+    "gp_section_606020064497501082": {
+      "type": "gp-section-606020064497501082",
+      "settings": {
+        "checksum": "e30d390494f7850a286c0dfc66acc45e700f350e5ca56e97c42c05d09a52f6bd_1_1_1_0__1",
+        "ggEtyAlIAzg_text": "<p>Cooling Comfort</p>",
+        "ggblPANrT0b_text": "<p>Moisture Control</p>",
+        "ggA_SPYp0Ng_text": "<p>Skin-Safe Fabric</p>",
+        "ggFRS7uJkhR_text": "<p>Long-Lasting Softness</p>"
+      }
+    },
+    "gp_section_606020064497566618": {
+      "type": "gp-section-606020064497566618",
+      "settings": {
+        "checksum": "c3dc752582d9be6fa14786739e4a766a4061923d9f1dbf5810a116c87231ad46_1_1_1_0__1",
+        "ggF3FcUG6Nm_text": "Quality you can feel",
+        "ggmpynn8XdE_text": "<p>Based on feedback from Gemnest bedding users</p>",
+        "gg1vHS7aAQb_text": "<p>92%</p>",
+        "ggafmBhAcVD_text": "<p>say their skin feels more comfortable against the fabric</p>",
+        "ggfvVL6AKJq_text": "<p>85%</p>",
+        "ggFOWozEgQT_text": "<p>sleep more soundly and peacefully through the night</p>",
+        "gg_SopPE6rQ_text": "<p>78%</p>",
+        "ggZq2GCrTm6_text": "<p>feel cooler and less sweaty while sleeping</p>",
+        "ggQv6ne6UR4_text": "<p>67%</p>",
+        "ggONOGYxBPC_text": "<p>wake up feeling brighter and more refreshed</p>"
+      }
+    },
+    "gp_section_606020064497632154": {
+      "type": "gp-section-606020064497632154",
+      "settings": {
+        "checksum": "62bdf09d0782de8a0096f92c1477e939e6fc590fa31dda1bec995010d37931db_1_1_1_0__1",
+        "ggj6jihN1RT_label": "<p>FAQ&nbsp;</p>",
+        "ggEXTYioiGG_label": "<p>Delivery Information</p>",
+        "ggAI8-0d9i8_label": "<p>Return &amp; Exchange&nbsp;</p>",
+        "ggLX8U46g9W_label": "<p>Contact Us</p>",
+        "gge9uwb91sa_text": "<p>Copyright © 2024 GemPages.&nbsp;</p>"
+      }
+    },
+    "gp_section_606020064497697690": {
+      "type": "gp-section-606020064497697690",
+      "settings": {
+        "checksum": "ae10ed1d91979eccf53557f5a0db01c9e2323dbd1efa59dbcf420e3ec170dc4b_1_1_1_0__1",
+        "ggq8lfXEnm8_text": "why gemnest?",
+        "ggslALW3j1T_text": "premium material",
+        "ggLDAtQO6eW_text": "<p>Crafted from pure, breathable fibers and plant-based dyes for a sleep that feels as natural as it looks.</p>",
+        "ggCP-l3FdPZ_text": "365-night comfort promise",
+        "ggcigCcIiNN_text": "<p>Every night should feel like the first — soft, calm, and restorative. If not, we’ll make it right.</p>",
+        "gg8oz2SinJ4_text": "Fast &amp; free shipping",
+        "ggHtJFEQPJb_text": "<p>Your comfort shouldn’t wait. We pack with care and deliver swiftly from our nest to yours.</p>",
+        "ggj63uJ2gIo_text": "Easy returns, zero stress",
+        "ggmXatJNBK9_text": "<p>If it’s not the perfect match, returning is simple and seamless — we’ll take care of everything.</p>"
+      }
+    },
+    "gp_section_606020064497763226": {
+      "type": "gp-section-606020064497763226",
+      "settings": {
+        "section_preload": "true",
+        "checksum": "68848743e6cd9fee3403721f7ec38f9b8a8241013f16d456e66b7d5a8c4d33bf_1_1_1_0__1",
+        "ggDeVTLkFM__text": "<p>Best in bed. Up to 50% off bundle.</p>"
+      }
+    },
+    "gp_section_606020064497828762": {
+      "type": "gp-section-606020064497828762",
+      "settings": {
+        "checksum": "e0abb07058ce67172170e04054bbdc89fafa5c3bae42d222c7ac7aa7bcc9c0b6_1_1_1_0__1",
+        "gg8CZEcKkS1_text": "sleep better, sustain better",
+        "ggX0SgGvT7x_text": "<p>Trade in your old sheets and <strong>enjoy 15% off your new Gemnest set </strong>because comfort shouldn’t cost the planet.</p>",
+        "gg8hoBCJJkR_label": "<p>Trade In &amp; Save</p>"
+      }
+    },
+    "gp_section_606020064497894298": {
+      "type": "gp-section-606020064497894298",
+      "settings": {
+        "checksum": "d326730d01afc72d548785fa53fdfdc963bd686037eb5cfd8fe3ce72b4159309_1_1_1_0__1",
+        "ggl2paw2Zqk_text": "<p>New Arrivals</p>",
+        "ggB94w3g0O6_label": "See All Collection",
+        "ggtmqk10zsY_displayContent": "{percent_discount} off",
+        "ggGgUQhWxM2_outOfStockLabel": "Out Of Stock",
+        "ggGgUQhWxM2_unavailableLabel": "Unavailable"
+      }
+    },
+    "gp_section_606020064497959834": {
+      "type": "gp-section-606020064497959834",
+      "settings": {
+        "checksum": "1dbf6c0c99707e0589c0619017a2a95587f538281838494fe26285d7fec17b86_1_1_1_0__1",
+        "ggXN1310F5W_text": "<p>Lorem ipsum dolor sit amet</p>",
+        "ggX-a5NAbh-_text": "Essential Skincare Set",
+        "ggwHXob47ny_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem enim ipsam</p>",
+        "ggi2OCtEqK1_text": "<p>42 Reviews</p>",
+        "ggp2zvM1YCg_text": "<p>Free Oil + Free USA Shipping</p>",
+        "gg8ScGqbZxq_label": "Add to cart",
+        "gg8ScGqbZxq_outOfStockLabel": "Out of stock",
+        "gg8ScGqbZxq_unavailableLabel": "Unavailable",
+        "gg0cS5vipHG_text": "<p>Lorem ipsum dolor sit amet</p>",
+        "ggrLyUO1C2B_text": "Complete Skincare Set",
+        "gguEaMhkafQ_text": "<p>At vero eos et<strong> accusamus iusto</strong></p><p>&nbsp;</p>",
+        "ggvv8Z9beTZ_text": "<p>122 Reviews</p>",
+        "ggJ52oWnZiR_text": "<p>Free Oil + Free USA Shipping</p>",
+        "gg-lCCSU0Dk_label": "Add to cart",
+        "gg-lCCSU0Dk_outOfStockLabel": "Out of stock",
+        "gg-lCCSU0Dk_unavailableLabel": "Unavailable",
+        "ggim3zo6aS-_text": "<p>Lorem ipsum dolor sit amet</p>",
+        "ggyvfBMN64W_text": "Ultimate Skincare Set",
+        "ggBOabX2qWb_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem enim ipsam</p>",
+        "ggzPwC1aR0B_text": "<p>54 Reviews</p>",
+        "gglhg0Q2TcJ_text": "<p>Free Oil + Free USA Shipping</p>",
+        "ggAE6BI3B1j_label": "Add to cart",
+        "ggAE6BI3B1j_outOfStockLabel": "Out of stock",
+        "ggAE6BI3B1j_unavailableLabel": "Unavailable"
+      }
+    },
+    "gp_section_606020064498025370": {
+      "type": "gp-section-606020064498025370",
+      "blocks": {
+        "gp_app_selleasy_g8dfQUP0wz": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bac/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "gp_app_selleasy_g8dfQUP0wz"
+      ],
+      "settings": {
+        "checksum": "849a890096db42007d7eb6cb6f3b0a5b0b07727c61cace555e9fdde37c8110ed_1_1_1_0__1",
+        "ggHM3fyDGs1_displayContent": "Best Seller",
+        "gg6tdJcpiXn_displayContent": "Best Seller",
+        "ggGx-TT1iRq_text": "<p>1,242 reviews from happy customers</p>",
+        "ggIvsbCH1Ro_displayContent": "{percent_discount} OFF",
+        "gg7Ji5m4IVN_text": "<p>Crafted from 100% long-staple cotton, our Luxe Cotton Sheet Bundle brings hotel-level softness and breathability to your bedroom.</p>",
+        "ggWR2B-9GZh_childItem_0": "<p>1 Top Sheet</p>",
+        "ggqrnPpHB7y_childItem_0": "<p>1 Pillowcase Set</p>",
+        "gg58HLXHCtb_childItem_0": "<p>1 Fitted Sheet</p>",
+        "ggMN7pyp35U_label": "Add to cart",
+        "ggMN7pyp35U_outOfStockLabel": "Out of stock",
+        "ggMN7pyp35U_unavailableLabel": "Unavailable",
+        "ggyU-kzAGId_childItem_0": "<p>Details</p>",
+        "ggyU-kzAGId_childItem_1": "<p>Care</p>",
+        "ggyU-kzAGId_childItem_2": "<p>Sustainability</p>",
+        "ggXMcOqvp3L_childItem_0": "<p>Includes a <strong>Flat Sheet, Fitted Sheet, Duvet Cover</strong>, and <strong>2 Pillowcases</strong></p>",
+        "ggXMcOqvp3L_childItem_1": "<p><strong>480-thread count</strong> in a silky sateen weave for a smooth, elegant drape</p>",
+        "ggXMcOqvp3L_childItem_2": "<p>Crafted from <strong>100% Long-Staple Cotton</strong>, known for softness and durable strength</p>",
+        "ggXMcOqvp3L_childItem_3": "<p><strong>Ethically woven</strong> and certified by <strong>OEKO-TEX® Standard 100</strong></p>",
+        "ggXMcOqvp3L_childItem_4": "<p><strong>No harsh dyes or harmful chemicals</strong></p>",
+        "ggXMcOqvp3L_childItem_5": "<p>Fitted sheet with <strong>smart side labels</strong> for easy bed-making</p>",
+        "ggXMcOqvp3L_childItem_6": "<p>Designed to fit mattresses up to 35cm deep</p>",
+        "gg9eL8MmR6u_childItem_0": "<p>Machine wash cold using a mild, eco-friendly detergent. Avoid bleach and fabric softeners to keep your sheets naturally soft.</p>",
+        "gg9eL8MmR6u_childItem_1": "<p>Reduce wrinkles by giving your sheets a gentle shake after washing. Tumble dry on low heat and remove promptly while slightly damp for the best texture.</p>",
+        "gg9eL8MmR6u_childItem_2": "<p>Designed for a relaxed fit, Gemnest sheets may experience minimal shrinkage over the first few washes, ensuring a perfectly snug, tailored feel.</p>",
+        "gg9eL8MmR6u_childItem_3": "<p>A natural finish you’ll love: You may notice a soft sheen at first — it’s the mark of our premium fibers. The gloss softens over time, but the comfort only deepens.</p>",
+        "gg9eL8MmR6u_childItem_4": "<p>For any questions or to enhance your Cozy Earth experience, our team is here to help. Discover the effortless luxury of Cozy Earth care—where every detail is crafted for your comfort.</p>",
+        "gg6X1hWkwKa_text": "<p>Since day one, we’ve believed that better sleep starts with better choices — for you, for the planet, and for the people who make your sheets.</p>",
+        "ggCTsIXqjnu_text": "<p><strong>See Our Impact</strong><br>We partner with ethical mills and artisans who share our vision for sustainable comfort. Every Gemnest piece is crafted with low-impact dyes and responsibly sourced fabrics to protect both your skin and the earth.</p>",
+        "ggKts3C4bF1_text": "<p><strong>View Our Certifications</strong><br>Transparency matters. We work with trusted third-party organizations to certify our materials, ensure fair labor practices, and guarantee that every sheet meets our high environmental and social standards.</p>",
+        "ggwdm9yEi6B_text": "<p>Bundle and save</p>",
+        "ggJ3Cz2nuOI_text": "Gemnest Snuggy Pillows",
+        "ggelzy-2sec_text": "<p>$58.75</p>",
+        "gg4MLD_nXXk_label": "<p>View Product</p>",
+        "ggHL4w6Kjvm_text": "Gemnest Creamy Blanket",
+        "ggLuTDo-aES_text": "<p>$128.75</p>",
+        "gg-h3OufZHw_label": "<p>View Product</p>"
+      }
+    },
+    "gp_section_606020064498090906": {
+      "type": "gp-section-606020064498090906",
+      "settings": {
+        "checksum": "53714b4478bcd55ede6a40ff191b957b6702b245fc0a3d8039fcf362ed45d8a3_1_1_1_0__1"
+      }
+    }
+  },
+  "order": [
+    "gp_section_606020064497763226",
+    "gp_section_606020064497435546",
+    "gp_section_606020064498025370",
+    "gp_section_606020064497894298",
+    "gp_section_606020064497501082",
+    "gp_section_606020064497959834",
+    "gp_section_606020064497566618",
+    "gp_section_606020064497828762",
+    "gp_section_606020064497107866",
+    "gp_section_606020064497370010",
+    "gp_section_606020064497697690",
+    "gp_section_606020064497304474",
+    "gp_section_606020064497173402",
+    "gp_section_606020064497042330",
+    "gp_section_606020064498090906",
+    "gp_section_606020064497238938",
+    "gp_section_606020064497632154",
+    "gp_section_606020064495338394",
+    "gp_section_606020064495600538",
+    "gp_section_606020064495862682",
+    "gp_section_606020064495403930",
+    "gp_section_606020064495469466",
+    "gp_section_606020064495666074",
+    "gp_section_606020064495272858",
+    "gp_section_606020064495731610"
+  ]
+}
