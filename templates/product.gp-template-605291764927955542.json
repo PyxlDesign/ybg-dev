@@ -119,7 +119,7 @@
       "type": "gp-section-605291775866700548",
       "blocks": {
         "gp_app_selleasy_g8dfQUP0wz": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bl/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-ba/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "settings": {}
         }
       },
@@ -128,7 +128,7 @@
       ],
       "settings": {
         "section_preload": "true",
-        "checksum": "727caa566f981c2b2a19ce802f7459004a2316aeb629207d0a02565338921a69_1_1_1_0__1",
+        "checksum": "2f8588bddd0cba4b4fa1e3b663af5008793e0b9734051f5c4d4e8de487741485_1_1_1_0__1",
         "ggHM3fyDGs1_displayContent": "Best Seller",
         "gg6tdJcpiXn_displayContent": "Best Seller",
         "ggGx-TT1iRq_text": "<p>1,242 reviews from happy customers</p>",
