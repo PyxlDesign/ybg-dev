@@ -131,26 +131,6 @@
         "gggze_11oeF_label": "Shop - Button"
       }
     },
-    "gp_section_606020064495731610": {
-      "type": "gp-section-606020064495731610",
-      "settings": {
-        "checksum": "bb285fb34f6be624ed8b32222fb93d32ee7e1cea93b2b9a1e119be137c8cf0d1_1_1_1_0__1",
-        "ggX2Vf6fIni_text": "<p>What Our Customers Are Saying</p>",
-        "ggbws0Vp7x1_text": "<p>Our customer advocates are standing by 24/7 to support you via email.</p>",
-        "ggMb9MmDpR8_text": "<p>You're walking on a cloud!</p>",
-        "ggEDhHeE8lL_text": "<p>“ These shoes are everything I hoped they would be ! So comfortable so lightweight and absolutely slip on as easily as they say they do - I will definitely be a repeat customer.”</p>",
-        "ggcPfZcEAEm_text": "<p>- Ryan S.</p>",
-        "gghtI2llkui_text": "<p>Work well for my problem feet</p>",
-        "ggqhI0_cuag_text": "<p>\"Delighted to find they are comfortable, easy to put on, and nice-looking. I have bunions and hammer toes. I was advised to try to EE wide and they actually work for me. And I can use them with my.\"</p>",
-        "ggt9F5JBTQJ_text": "<p>- Travis J.</p>",
-        "ggZw0i2ys0o_text": "<p>You're walking on a cloud!</p>",
-        "gg6VfWkppXR_text": "<p>“ These shoes are everything I hoped they would be ! So comfortable so lightweight and absolutely slip on as easily as they say they do - I will definitely be a repeat customer.”</p>",
-        "ggdfhDiMA2D_text": "<p>- Ryan S.</p>",
-        "ggMIvL6X7ks_text": "<p>Work well for my problem feet</p>",
-        "ggw3nr1ewCO_text": "<p>\"Delighted to find they are comfortable, easy to put on, and nice-looking. I have bunions and hammer toes. I was advised to try to EE wide and they actually work for me. And I can use them with my.\"</p>",
-        "ggy0k_QlThC_text": "<p>- Travis J.</p>"
-      }
-    },
     "gp_section_606020064495862682": {
       "type": "gp-section-606020064495862682",
       "settings": {
@@ -404,17 +384,8 @@
     },
     "gp_section_606020064498025370": {
       "type": "gp-section-606020064498025370",
-      "blocks": {
-        "gp_app_selleasy_g8dfQUP0wz": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-bac/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "gp_app_selleasy_g8dfQUP0wz"
-      ],
       "settings": {
-        "checksum": "849a890096db42007d7eb6cb6f3b0a5b0b07727c61cace555e9fdde37c8110ed_1_1_1_0__1",
+        "checksum": "89e309f4a41751114a71b6d91ca5c0ce7155b776e8769284f9e2e32ce1c91643_1_1_1_0__1",
         "ggHM3fyDGs1_displayContent": "Best Seller",
         "gg6tdJcpiXn_displayContent": "Best Seller",
         "ggGx-TT1iRq_text": "<p>1,242 reviews from happy customers</p>",
@@ -484,7 +455,6 @@
     "gp_section_606020064495403930",
     "gp_section_606020064495469466",
     "gp_section_606020064495666074",
-    "gp_section_606020064495272858",
-    "gp_section_606020064495731610"
+    "gp_section_606020064495272858"
   ]
 }
