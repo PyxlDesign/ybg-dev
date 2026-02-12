@@ -7952,6 +7952,41 @@
           "heading": "",
           "paragraph": ""
         }
+      },
+      "reasons-to-buy-all-you-tensil": {
+        "type": "reasons-to-buy-all-you-tensil",
+        "blocks": {
+          "reason_dMX3Lr": {
+            "type": "reason",
+            "settings": {
+              "title": "Less Frusteration",
+              "content": "<p>Chunky handle and dual-sides help babies have more successful bites</p>"
+            }
+          },
+          "reason_h7tzYW": {
+            "type": "reason",
+            "settings": {
+              "title": "Encourages Development",
+              "content": "<p>From 4-24 months, the All You-Tensil moves babies from mouthing to dipping to scooping.</p>"
+            }
+          },
+          "reason_78J8V6": {
+            "type": "reason",
+            "settings": {
+              "title": "Positively Impacts Oral Structure",
+              "content": "<p>Unlike other baby utensils that are inappropriately sized, the All You-Tensil won't cause oral function issues</p>"
+            }
+          }
+        },
+        "block_order": [
+          "reason_dMX3Lr",
+          "reason_h7tzYW",
+          "reason_78J8V6"
+        ],
+        "settings": {
+          "featured_image": "shopify://shop_images/YBG-68_1.jpg",
+          "heading": "Why All You-Tensils?"
+        }
       }
     },
     "content_for_index": [
