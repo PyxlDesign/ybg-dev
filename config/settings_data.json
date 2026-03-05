@@ -3585,14 +3585,6 @@
       "footer-custom": {
         "type": "footer-custom",
         "blocks": {
-          "c4ac2b9f-74fa-4396-8012-c244394b705f": {
-            "type": "newsletter",
-            "settings": {
-              "social_links": true,
-              "facebook_share": true,
-              "newsletter_heading": "Sign up for our newsletter"
-            }
-          },
           "96e7dc23-70bb-490e-b5c2-b0d1c6bc95c3": {
             "type": "menu",
             "settings": {
@@ -3613,13 +3605,21 @@
               "heading": "RESOURCES",
               "menu": "footer-resources"
             }
+          },
+          "c4ac2b9f-74fa-4396-8012-c244394b705f": {
+            "type": "newsletter",
+            "settings": {
+              "social_links": true,
+              "facebook_share": true,
+              "newsletter_heading": "Sign up for our newsletter"
+            }
           }
         },
         "block_order": [
-          "c4ac2b9f-74fa-4396-8012-c244394b705f",
           "96e7dc23-70bb-490e-b5c2-b0d1c6bc95c3",
           "1866072b-91ad-482c-8657-20df07cde056",
-          "b3ef4505-234b-4b98-be5c-9a7b8f70c416"
+          "b3ef4505-234b-4b98-be5c-9a7b8f70c416",
+          "c4ac2b9f-74fa-4396-8012-c244394b705f"
         ],
         "settings": {
           "footer_background": "#31484d",
