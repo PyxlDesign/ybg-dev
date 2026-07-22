@@ -1,0 +1,649 @@
+
+    {% render 'gp-head', isThemeSection: true %}
+    
+    <style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-629423526947848752.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-629423526947848752.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-629423526947848752.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-629423526947848752.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-629423526947848752.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-629423526947848752.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-629423526947848752.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-629423526947848752.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-629423526947848752.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-629423526947848752.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-629423526947848752.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-629423526947848752.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-629423526947848752.gps.gpsil [style*="--hvr-bb:"]:hover{border-bottom:var(--hvr-bb)}.gps-629423526947848752.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-629423526947848752.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-629423526947848752.gps.gpsil [style*="--hvr-bblr:"]:hover{border-bottom-left-radius:var(--hvr-bblr)}.gps-629423526947848752.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-629423526947848752.gps.gpsil [style*="--hvr-bbrr:"]:hover{border-bottom-right-radius:var(--hvr-bbrr)}.gps-629423526947848752.gps.gpsil [style*="--bl:"]{border-left:var(--bl)}.gps-629423526947848752.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-629423526947848752.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-629423526947848752.gps.gpsil [style*="--hvr-bt:"]:hover{border-top:var(--hvr-bt)}.gps-629423526947848752.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-629423526947848752.gps.gpsil [style*="--hvr-btlr:"]:hover{border-top-left-radius:var(--hvr-btlr)}.gps-629423526947848752.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-629423526947848752.gps.gpsil [style*="--hvr-btrr:"]:hover{border-top-right-radius:var(--hvr-btrr)}.gps-629423526947848752.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-629423526947848752.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-629423526947848752.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-629423526947848752.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-629423526947848752.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-629423526947848752.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-629423526947848752.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-629423526947848752.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-629423526947848752.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-629423526947848752.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-629423526947848752.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-629423526947848752.gps.gpsil [style*="--tdt:"]{text-decoration-thickness:var(--tdt)}.gps-629423526947848752.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-629423526947848752.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-629423526947848752.gps.gpsil [style*="--minw:"]{min-width:var(--minw)}.gps-629423526947848752.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-629423526947848752.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-629423526947848752.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-629423526947848752.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-629423526947848752.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-629423526947848752.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-629423526947848752.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-629423526947848752.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-629423526947848752.gps.gpsil [style*="--rg:"]{row-gap:var(--rg)}.gps-629423526947848752.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-629423526947848752.gps.gpsil [style*="--ts:"]{text-shadow:var(--ts)}.gps-629423526947848752.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-629423526947848752.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-629423526947848752.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-629423526947848752.gps.gpsil [style*="--line-clamp:"]{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp)}@media only screen and (max-width:1024px){.gps-629423526947848752.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-629423526947848752.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-629423526947848752.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-629423526947848752.gps.gpsil [style*="--mb-tablet:"]{margin-bottom:var(--mb-tablet)}.gps-629423526947848752.gps.gpsil [style*="--minw-tablet:"]{min-width:var(--minw-tablet)}.gps-629423526947848752.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-629423526947848752.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-629423526947848752.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-629423526947848752.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-629423526947848752.gps.gpsil [style*="--rg-tablet:"]{row-gap:var(--rg-tablet)}.gps-629423526947848752.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-629423526947848752.gps.gpsil [style*="--line-clamp-tablet:"]{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet)}}@media only screen and (max-width:767px){.gps-629423526947848752.gps.gpsil [style*="--cg-mobile:"]{-moz-column-gap:var(--cg-mobile);column-gap:var(--cg-mobile)}.gps-629423526947848752.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-629423526947848752.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-629423526947848752.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-629423526947848752.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-629423526947848752.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-629423526947848752.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-629423526947848752.gps.gpsil [style*="--minw-mobile:"]{min-width:var(--minw-mobile)}.gps-629423526947848752.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-629423526947848752.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-629423526947848752.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-629423526947848752.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-629423526947848752.gps.gpsil [style*="--rg-mobile:"]{row-gap:var(--rg-mobile)}.gps-629423526947848752.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-629423526947848752.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-629423526947848752.gps.gpsil [style*="--line-clamp-mobile:"]{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile)}}.gps-629423526947848752 .gp-g-subheading-2{font-family:var(--g-sh2-ff);font-size:var(--g-sh2-size);font-style:var(--g-sh2-fs);font-weight:var(--g-sh2-weight);letter-spacing:var(--g-sh2-ls);line-height:var(--g-sh2-lh)}.gps-629423526947848752 .gp-g-paragraph-3{font-family:var(--g-p3-ff);font-size:var(--g-p3-size);font-style:var(--g-p3-fs);font-weight:var(--g-p3-weight);letter-spacing:var(--g-p3-ls);line-height:var(--g-p3-lh)}.gps-629423526947848752 .gp-g-s-medium{padding:8px 24px}.gps-629423526947848752 .gp-fixed{position:fixed}.gps-629423526947848752 .gp-relative{position:relative}.gps-629423526947848752 .gp-top-\[27px\]{top:27px}.gps-629423526947848752 .gp-z-\[100\]{z-index:100}.gps-629423526947848752 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-629423526947848752 .gp-mb-0{margin-bottom:0}.gps-629423526947848752 .gp-flex{display:flex}.gps-629423526947848752 .gp-inline-flex{display:inline-flex}.gps-629423526947848752 .gp-grid{display:grid}.gps-629423526947848752 .\!gp-hidden{display:none!important}.gps-629423526947848752 .gp-hidden{display:none}.gps-629423526947848752 .gp-h-full{height:100%}.gps-629423526947848752 .gp-w-full{width:100%}.gps-629423526947848752 .gp-max-w-full{max-width:100%}.gps-629423526947848752 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-629423526947848752 .gp-flex-col{flex-direction:column}.gps-629423526947848752 .gp-flex-wrap{flex-wrap:wrap}.gps-629423526947848752 .gp-items-center{align-items:center}.gps-629423526947848752 .gp-justify-center{justify-content:center}.gps-629423526947848752 .gp-overflow-hidden{overflow:hidden}.gps-629423526947848752 .gp-break-words{overflow-wrap:break-word}.gps-629423526947848752 .gp-rounded{border-radius:4px}.gps-629423526947848752 .\!gp-bg-none{background-image:none!important}.gps-629423526947848752 .gp-p-\[16px\]{padding:16px}.gps-629423526947848752 .gp-text-\[14px\]{font-size:14px}.gps-629423526947848752 .gp-leading-\[0\]{line-height:0}.gps-629423526947848752 .gp-leading-normal{line-height:1.5}.gps-629423526947848752 .gp-text-g-text-3{color:var(--g-c-text-3)}.gps-629423526947848752 .gp-no-underline{text-decoration-line:none}.gps-629423526947848752 .\!gp-outline-none{outline:2px solid transparent!important;outline-offset:2px!important}.gps-629423526947848752 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-629423526947848752 .gp-duration-200{transition-duration:.2s}.gps-629423526947848752 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-629423526947848752 .disabled\:gp-btn-disabled:disabled{cursor:default}.gps-629423526947848752 .disabled\:gp-opacity-30:disabled{opacity:.3}.gps-629423526947848752 .gp-group\/button:active .group-active\/button\:\!gp-text-inherit{color:inherit!important}.gps-629423526947848752 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-invisible{visibility:hidden}@media (max-width:1024px){.gps-629423526947848752 .tablet\:\!gp-hidden{display:none!important}.gps-629423526947848752 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-629423526947848752 .mobile\:\!gp-hidden{display:none!important}.gps-629423526947848752 .mobile\:gp-hidden{display:none}}.gps-629423526947848752 .\[\&\>svg\]\:\!gp-h-\[var\(--height-desktop\)\]>svg{height:var(--height-desktop)!important}.gps-629423526947848752 .\[\&\>svg\]\:\!gp-w-auto>svg{width:auto!important}@media (max-width:1024px){.gps-629423526947848752 .tablet\:\[\&\>svg\]\:\!gp-h-\[var\(--height-tablet\)\]>svg{height:var(--height-tablet)!important}}@media (max-width:767px){.gps-629423526947848752 .mobile\:\[\&\>svg\]\:\!gp-h-\[var\(--height-mobile\)\]>svg{height:var(--height-mobile)!important}}.gps-629423526947848752 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-629423526947848752 .\[\&_p\]\:gp-whitespace-pre-line p{white-space:pre-line}</style>
+    <style {% if section.settings.section_preload == "false" %} class="gps-link" type="text/disabled-css" {% endif %}>@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v33/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lM.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v33/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlMZbLXGhmRytc.woff) format('woff');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v33/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lMZbLXGhmR.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+  
+    
+    
+    
+
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+
+    
+        <section
+          class="gp-mx-auto gp-max-w-full [&_*]:gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+          style="--w:100%;--w-tablet:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--w-mobile:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--pl:none;--pl-tablet:none;--pl-mobile:none;--pr:none;--pr-tablet:none;--pr-mobile:none"
+        >
+          
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#35404F","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"preload":false,"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gvkCvUrjJw"}' data-id="gvkCvUrjJw" id="gvkCvUrjJw" data-same-height-subgrid-container class="gvkCvUrjJw gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--blockPadding:base;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:var(--g-s-2xl);--pb:0px;--pt-tablet:var(--g-s-2xl);--pb-tablet:0px;--pt-mobile:var(--g-s-2xl);--pb-mobile:0px;--cg:16px;--rg:0px;--gtc:minmax(0, 12fr);--w:100%;--bgc:#35404F;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gdj4DxlE8M gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{},"uid":"gdhudbWrrI"}' data-id="gdhudbWrrI" id="gdhudbWrrI" data-same-height-subgrid-container class="gdhudbWrrI gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:16px;--pt:16px;--pl:16px;--pb:16px;--pr:16px;--mb-mobile:16px;--pt-mobile:16px;--pl-mobile:16px;--pb-mobile:16px;--pr-mobile:16px;--mb-tablet:16px;--pt-tablet:16px;--pl-tablet:16px;--pb-tablet:16px;--pr-tablet:16px;--cg:16px;--rg:16px;--rg-tablet:16px;--rg-mobile:16px;--gtc:minmax(0, 6fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr);--gtc-mobile:minmax(0, 12fr);--w:1360px;--h:auto;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gZYw8-TSjy gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gZUaFOzgNQ"
+        class="gZUaFOzgNQ"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:20px;--mb-tablet:20px;--mb-mobile:20px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:center;--ta-mobile:center;--ff:var(--g-font-fonntscom-Ivy-Presto-Display-Light, 'fonntscom-Ivy-Presto-Display-Light'), var(--g-font-heading, heading);--weight:400;--size:30px;--size-tablet:25px;--size-mobile:32px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#F5E6C4;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:0px;--pr:0px;--pt:0px;--pb:0px;overflow:hidden"
+        >
+          {{ section.settings.ggZUaFOzgNQ_text_-1287424733 | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g0x4CTDpi2"
+        class="g0x4CTDpi2"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--mb-mobile:0px;--mb-tablet:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:center;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:15px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:180%;--lh-mobile:130%;--c:#D9BAB0;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          {{ section.settings.gg0x4CTDpi2_text_-1705812066 | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <div class="gp-mx-auto gp-max-w-full" style="--w:430px;--w-tablet:430px;--w-mobile:280px;--pt:24px;--pb:24px;--pt-tablet:24px;--pb-tablet:24px;--pt-mobile:24px;--pb-mobile:24px;--b:none;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--bs:none;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--mb-mobile:10px;--mb-tablet:10px">
+      <gp-form
+        data-id="g-9oztw5XG" id="g-9oztw5XG" data-submit-action="stay-on-page"
+        data-callback='{"link":"","target":"_self","type":"stay-on-page"}'
+      >
+        <a
+          hidden="true" id="gp-form-callback-g-9oztw5XG"
+        >
+        </a>
+        {% form 'customer', class: 'gp-form-g-9oztw5XG ', id: 'contact_form_g-9oztw5XG' %}
+          {% if form.errors %}
+            <div
+              id="gp-form-error-g-9oztw5XG"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#FFE9E9;left:50%;transform:translateX(-50%);color:#F44336"
+            >
+              {{ section.settings.gg-9oztw5XG_errorMessage_-1125111609 }}
+            </div>
+          {% endif %}
+          <div popover id="my-popover-g-9oztw5XG">
+            <style>
+              
+    #my-popover-g-9oztw5XG::backdrop {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+            </style>
+            <div
+              id="gp-form-success-g-9oztw5XG"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#F2FFEC;left:50%;transform:translateX(-50%);color:#00A042"
+            >
+              {{ section.settings.gg-9oztw5XG_successMessage_-1751361663 }}
+            </div>
+          </div>
+          
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{},"uid":"gIXEbV-FD5"}' data-id="gIXEbV-FD5" id="gIXEbV-FD5" data-same-height-subgrid-container class="gIXEbV-FD5 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--cg:0px;--cg-mobile:0px;--rg:0px;--gtc:minmax(0, 9fr) minmax(0, 3fr);--gtc-mobile:minmax(0, auto) minmax(0, auto);--w:100%;--h:auto;--pc:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="ge7bja90xI gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      
+      data-id="gSSw_08X22"
+      class="gSSw_08X22 flex flex-col"
+      style="--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:left"
+    >
+      
+      <input
+        type="email"
+        class="gp-form-item gp-g-s-medium !gp-outline-none !gp-bg-none email-form-gSSw_08X22"
+        style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:12px;--pr:12px;--pt:12px;--pb:12px;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:180%;--lh-mobile:130%;--b:solid;--bs:none;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--bgc:#FFFFFF;--bgi:url()"
+        placeholder="{{ section.settings.ggSSw_08X22_placeholder_-1187121637 }}"
+        name="contact[email]"
+        required
+        autocomplete="email"
+        
+      ></input>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gUd9Ldoj09 gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    <gp-button
+      gp-data='{}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left" >
+        <style>[data-id="gcySvEuDcm"].gp-button-base::before, [data-id="gcySvEuDcm-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  
+  
+  
+    
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+  
+    }
+  
+      
+  [data-id="gcySvEuDcm"]:hover::before, [data-id="gcySvEuDcm-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <button
+          data-id="gcySvEuDcm" dataId="gcySvEuDcm" data-state="idle" aria-label="Sign Up"
+          
+          type="submit"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:12px;--pb:12px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--hvr-bblr:0px;--hvr-bbrr:0px;--hvr-btlr:0px;--hvr-btrr:0px;--shadow:none;--hvr-bg:#804E4F;--bg:#5A6F7D;--c:var(--g-c-text-3, text-3);--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:180%;--lh-mobile:130%"
+          class="gcySvEuDcm gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 gp-text-g-text-3 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:180%;--lh-mobile:130%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggcySvEuDcm_label_-3815578 }}
+    </span>
+        </div>
+        
+        </button>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+        {% endform %}
+      </gp-form>
+    </div>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-form-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    
+    <div data-id="g7lLPYNKVi"  style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--mb-mobile:30px;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+      <div class="gp-flex gp-flex-wrap" style="--cg:12px;--jc:center;--jc-mobile:center;--ai:start">
+            <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px" class="g2eyrTrulE ">
+      
+    <div  class="gp-flex gp-w-full gp-flex-col gp-items-center">
+      
+    <div id="gH4PpHuZ0o" class="gp-leading-[0] gH4PpHuZ0o" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center">
+      <div data-id="gH4PpHuZ0o" class="icon-wrapper gp-inline-flex gp-overflow-hidden gH4PpHuZ0o " style="--shadow:none">
+      
+        <a href="https://www.instagram.com/yeahbabygoods/" target="_blank" title rel>
+          <span style="--c:#5A6F7D;--t:rotate(0deg);--w:25px;--w-tablet:25px;--w-mobile:25px;--h:25px;--h-tablet:25px;--h-mobile:25px;--minw:25px;--minw-tablet:25px;--minw-mobile:25px;--height-desktop:25px;--height-tablet:25px;--height-mobile:25px" class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] "><svg height="20" width="20" data-name="instagram-logo-light" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817633463304552">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM176,26H80A54.06,54.06,0,0,0,26,80v96a54.06,54.06,0,0,0,54,54h96a54.06,54.06,0,0,0,54-54V80A54.06,54.06,0,0,0,176,26Zm42,150a42,42,0,0,1-42,42H80a42,42,0,0,1-42-42V80A42,42,0,0,1,80,38h96a42,42,0,0,1,42,42ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z" /></svg></span>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+  
+      </div><div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px" class="gJt8j19SLk ">
+      
+    <div  class="gp-flex gp-w-full gp-flex-col gp-items-center">
+      
+    <div id="gR3T0YAj19" class="gp-leading-[0] gR3T0YAj19" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb-mobile:0px;--mb-tablet:0px;--ta:center">
+      <div data-id="gR3T0YAj19" class="icon-wrapper gp-inline-flex gp-overflow-hidden gR3T0YAj19 " style="--shadow:none">
+      
+        <a href="https://www.facebook.com/yeahbabygoodsofficial" target="_blank" title rel>
+          <span style="--c:#5A6F7D;--t:rotate(0deg);--w:25px;--w-tablet:25px;--w-mobile:25px;--h:25px;--h-tablet:25px;--h-mobile:25px;--minw:25px;--minw-tablet:25px;--minw-mobile:25px;--height-desktop:25px;--height-tablet:25px;--height-mobile:25px" class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] "><svg height="20" width="20" data-name="facebook-logo-filled" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817731481043304">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z" /></svg></span>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+  
+      </div><div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px" class="gF-FVLNEs8 ">
+      
+    <div  class="gp-flex gp-w-full gp-flex-col gp-items-center">
+      
+    <div id="g9osKKBUsP" class="gp-leading-[0] g9osKKBUsP" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center">
+      <div data-id="g9osKKBUsP" class="icon-wrapper gp-inline-flex gp-overflow-hidden g9osKKBUsP " style="--shadow:none">
+      
+        <a href="https://www.tiktok.com/@yeahbabygoods" target="_blank" title rel>
+          <span style="--c:#5A6F7D;--t:rotate(0deg);--w:25px;--w-tablet:25px;--w-mobile:25px;--h:25px;--h-tablet:25px;--h-mobile:25px;--minw:25px;--minw-tablet:25px;--minw-mobile:25px;--height-desktop:25px;--height-tablet:25px;--height-mobile:25px" class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] "><svg height="20" width="20" data-name="tiktok-logo-light" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817653383102824">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M224,74a50.06,50.06,0,0,1-50-50,6,6,0,0,0-6-6H128a6,6,0,0,0-6,6V156a22,22,0,1,1-31.43-19.89A6,6,0,0,0,94,130.69V88a6,6,0,0,0-7-5.91C52.2,88.28,26,120.05,26,156a74,74,0,0,0,148,0V112.93A101.28,101.28,0,0,0,224,126a6,6,0,0,0,6-6V80A6,6,0,0,0,224,74Zm-6,39.8a89.13,89.13,0,0,1-46.5-16.69A6,6,0,0,0,162,102v54a62,62,0,0,1-124,0c0-27.72,18.47-52.48,44-60.38v31.53A34,34,0,1,0,134,156V30h28.29A62.09,62.09,0,0,0,218,85.71Z" /></svg></span>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+  
+      </div><div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px" class="gDj6QCq08G ">
+      
+    <div  class="gp-flex gp-w-full gp-flex-col gp-items-center">
+      
+    <div id="g9-m4Iw8HB" class="gp-leading-[0] g9-m4Iw8HB" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center">
+      <div data-id="g9-m4Iw8HB" class="icon-wrapper gp-inline-flex gp-overflow-hidden g9-m4Iw8HB " style="--shadow:none">
+      
+        <a href="https://www.youtube.com/@yeahbabygoods" target="_blank" title rel>
+          <span style="--c:#5A6F7D;--t:rotate(0deg);--w:25px;--w-tablet:25px;--w-mobile:25px;--h:25px;--h-tablet:25px;--h-mobile:25px;--minw:25px;--minw-tablet:25px;--minw-mobile:25px;--height-desktop:25px;--height-tablet:25px;--height-mobile:25px" class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] "><svg height="20" width="20" data-name="youtube-logo-filled" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817766391677288">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z" /></svg></span>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+  
+      </div><div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px" class="gC5O1LdB7g ">
+      
+    <div  class="gp-flex gp-w-full gp-flex-col gp-items-center">
+      
+    <div id="g8NbFW7fWe" class="gp-leading-[0] g8NbFW7fWe" style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center">
+      <div data-id="g8NbFW7fWe" class="icon-wrapper gp-inline-flex gp-overflow-hidden g8NbFW7fWe " style="--shadow:none">
+      
+        <a href="https://www.pinterest.com/yeahbabygoods/" target="_blank" title rel>
+          <span style="--c:#5A6F7D;--t:rotate(0deg);--w:25px;--w-tablet:25px;--w-mobile:25px;--h:25px;--h-tablet:25px;--h-mobile:25px;--minw:25px;--minw-tablet:25px;--minw-mobile:25px;--height-desktop:25px;--height-tablet:25px;--height-mobile:25px" class="gp-inline-flex gp-items-center gp-justify-center gp-overflow-hidden [&>svg]:!gp-h-[var(--height-desktop)] [&>svg]:!gp-w-auto tablet:[&>svg]:!gp-h-[var(--height-tablet)] mobile:[&>svg]:!gp-h-[var(--height-mobile)] "><svg height="20" width="20" data-name="pinterest-logo-bold" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" fill="currentColor" data-id="508817587900711272">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M228,112c0,23.6-8.29,45.23-23.35,60.88C190.52,187.57,171.33,196,152,196c-15.45,0-26.78-4.18-34.89-9.31l-9.43,40.06a12,12,0,1,1-23.36-5.5l32-136a12,12,0,1,1,23.36,5.5l-16.45,69.93C126.72,164.86,135.16,172,152,172c25.56,0,52-22.45,52-60A68,68,0,1,0,77.09,146a12,12,0,0,1-20.77,12A92,92,0,1,1,228,112Z" /></svg></span>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+  
+      </div>
+          </div>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="g66raot7cl gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gl31UfFGy2"
+        class="gl31UfFGy2"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--mb-mobile:10px;--mb-tablet:10px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-subheading-2  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--ta-mobile:center;--size:17px;--size-tablet:18px;--size-mobile:16px;--c:#D9BAB0;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          {{ section.settings.ggl31UfFGy2_text_273093887 | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gwhu9UZgTw"
+        class="gwhu9UZgTw"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/feeding-essentials" target="_blank">{{ section.settings.ggwhu9UZgTw_text_-1683983403 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g-WW7_5dzw"
+        class="g-WW7_5dzw"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/products/gift-card" target="_blank">{{ section.settings.gg-WW7_5dzw_text_1233710701 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gFV4CrlRvu"
+        class="gFV4CrlRvu"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/start-here" target="_blank">{{ section.settings.ggFV4CrlRvu_text_1581991036 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="glqGTUInev"
+        class="glqGTUInev"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/about-us" target="_blank">{{ section.settings.gglqGTUInev_text_178356968 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gqzLvKAGLw"
+        class="gqzLvKAGLw"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb-mobile:10px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/#smile-home" target="_blank">{{ section.settings.ggqzLvKAGLw_text_-1174934208 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gWJckYiSZa gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gsjd5rtTVI"
+        class="gsjd5rtTVI"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--mb-mobile:10px;--mb-tablet:10px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-subheading-2  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--ta-mobile:center;--size:17px;--size-tablet:18px;--size-mobile:16px;--c:#D9BAB0;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          {{ section.settings.ggsjd5rtTVI_text_-1446005928 | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gSuVXOWjng"
+        class="gSuVXOWjng"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/faq" target="_blank">{{ section.settings.ggSuVXOWjng_text_-841311917 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gdgAgskmLW"
+        class="gdgAgskmLW"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/blogs/the-blog" target="_blank">{{ section.settings.ggdgAgskmLW_text_-1597313834 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gZ7-BLXJyM"
+        class="gZ7-BLXJyM"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb-mobile:10px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/safe-eating-posture" target="_blank">{{ section.settings.ggZ7-BLXJyM_text_582574395 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gDhzUAPcxJ gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gs118LpdVe"
+        class="gs118LpdVe"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--mb-mobile:10px;--mb-tablet:10px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-subheading-2  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--ta-mobile:center;--size:17px;--size-tablet:18px;--size-mobile:16px;--c:#D9BAB0;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          {{ section.settings.ggs118LpdVe_text_1337578041 | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="goeiThzNEP"
+        class="goeiThzNEP"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--mb-mobile:0px;--mb-tablet:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/contact-us" target="_blank">{{ section.settings.ggoeiThzNEP_text_1267011995 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g39eHpeq4_"
+        class="g39eHpeq4_"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/video-tutorials" target="_blank">{{ section.settings.gg39eHpeq4__text_516879094 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gS8t-FPBbf"
+        class="gS8t-FPBbf"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/returns-and-exchanges" target="_blank">{{ section.settings.ggS8t-FPBbf_text_1207472956 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gitU4lM-Li"
+        class="gitU4lM-Li"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/shipping-policies" target="_blank">{{ section.settings.ggitU4lM-Li_text_-1472984093 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gN4bz7IX2p"
+        class="gN4bz7IX2p"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class=" gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Karla, 'Karla'), var(--g-font-body, body);--weight:400;--size:14px;--size-tablet:14px;--size-mobile:12px;--lh:150%;--lh-tablet:180%;--lh-mobile:180%;--c:#F8F7F5;--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+          <p><a href="https://www.yeahbabygoods.com/pages/wholesale" target="_blank">{{ section.settings.ggN4bz7IX2p_text_787499838 | replace: '$locationOrigin', locationOrigin }}</a></p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+      
+    </gp-row>
+  
+  
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gF0DxmRQNH"
+        class="gF0DxmRQNH"
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-3  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#5A6F7D;--tt:none;word-break:break-word;--bgc:#35404F;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pl:16px;--pr:0px;--pt:16px;--pb:16px;overflow:hidden"
+        >
+          <p>{{ section.settings.ggF0DxmRQNH_text_968702313 | replace: '$locationOrigin', locationOrigin }}</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+      
+    </gp-row>
+  
+        </section>
+      
+  
+    
+{% schema %}
+  {
+    "presets": [{ "name": "Footer" }],
+    "name": "Footer",
+    "tag": "section",
+    "class": "gps-629423526947848752 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/yeah-baby-goods/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=629423526947848752)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggZUaFOzgNQ_text_-1287424733","label":"ggZUaFOzgNQ_text_-1287424733","default":"Sign up for 15% off&nbsp;<br>your first order!"},{"type":"html","id":"gg0x4CTDpi2_text_-1705812066","label":"gg0x4CTDpi2_text_-1705812066","default":"<p>Be the first to know about new arrivals&nbsp;</p><p>and get access to exclusive sales</p>"},{"type":"html","id":"gg-9oztw5XG_successMessage_-1751361663","label":"gg-9oztw5XG_successMessage_-1751361663","default":"Thanks for subscribing"},{"type":"html","id":"gg-9oztw5XG_errorMessage_-1125111609","label":"gg-9oztw5XG_errorMessage_-1125111609","default":"Can’t send email. Please try again later."},{"type":"html","id":"ggSSw_08X22_placeholder_-1187121637","label":"ggSSw_08X22_placeholder_-1187121637","default":"Email Address"},{"type":"html","id":"ggcySvEuDcm_label_-3815578","label":"ggcySvEuDcm_label_-3815578","default":"Sign Up"},{"type":"html","id":"ggl31UfFGy2_text_273093887","label":"ggl31UfFGy2_text_273093887","default":"Discover"},{"type":"html","id":"ggwhu9UZgTw_text_-1683983403","label":"ggwhu9UZgTw_text_-1683983403","default":"<a href=\"https://www.yeahbabygoods.com/pages/feeding-essentials\" target=\"_blank\">Shop All Collections</a>"},{"type":"html","id":"gg-WW7_5dzw_text_1233710701","label":"gg-WW7_5dzw_text_1233710701","default":"<a href=\"https://www.yeahbabygoods.com/products/gift-card\" target=\"_blank\">Gift Cards</a>"},{"type":"html","id":"ggFV4CrlRvu_text_1581991036","label":"ggFV4CrlRvu_text_1581991036","default":"<a href=\"https://www.yeahbabygoods.com/pages/start-here\" target=\"_blank\">About YBG</a>"},{"type":"html","id":"gglqGTUInev_text_178356968","label":"gglqGTUInev_text_178356968","default":"<a href=\"https://www.yeahbabygoods.com/pages/about-us\" target=\"_blank\">Meet the Family</a>"},{"type":"html","id":"ggqzLvKAGLw_text_-1174934208","label":"ggqzLvKAGLw_text_-1174934208","default":"<a href=\"https://www.yeahbabygoods.com/#smile-home\" target=\"_blank\">Earn Rewards</a>"},{"type":"html","id":"ggsjd5rtTVI_text_-1446005928","label":"ggsjd5rtTVI_text_-1446005928","default":"Learn"},{"type":"html","id":"ggSuVXOWjng_text_-841311917","label":"ggSuVXOWjng_text_-841311917","default":"<a href=\"https://www.yeahbabygoods.com/pages/faq\" target=\"_blank\">FAQ</a>"},{"type":"html","id":"ggdgAgskmLW_text_-1597313834","label":"ggdgAgskmLW_text_-1597313834","default":"<a href=\"https://www.yeahbabygoods.com/blogs/the-blog\" target=\"_blank\">Blog</a>"},{"type":"html","id":"ggZ7-BLXJyM_text_582574395","label":"ggZ7-BLXJyM_text_582574395","default":"<a href=\"https://www.yeahbabygoods.com/pages/safe-eating-posture\" target=\"_blank\">Highchair 101</a>"},{"type":"html","id":"ggs118LpdVe_text_1337578041","label":"ggs118LpdVe_text_1337578041","default":"Support"},{"type":"html","id":"ggoeiThzNEP_text_1267011995","label":"ggoeiThzNEP_text_1267011995","default":"<a href=\"https://www.yeahbabygoods.com/pages/contact-us\" target=\"_blank\">Contact Us</a>"},{"type":"html","id":"gg39eHpeq4__text_516879094","label":"gg39eHpeq4__text_516879094","default":"<a href=\"https://www.yeahbabygoods.com/pages/video-tutorials\" target=\"_blank\">Video Tutorials</a>"},{"type":"html","id":"ggS8t-FPBbf_text_1207472956","label":"ggS8t-FPBbf_text_1207472956","default":"<a href=\"https://www.yeahbabygoods.com/pages/returns-and-exchanges\" target=\"_blank\">Returns and Exchanges</a>"},{"type":"html","id":"ggitU4lM-Li_text_-1472984093","label":"ggitU4lM-Li_text_-1472984093","default":"<a href=\"https://www.yeahbabygoods.com/pages/shipping-policies\" target=\"_blank\">Shipping</a>"},{"type":"html","id":"ggN4bz7IX2p_text_787499838","label":"ggN4bz7IX2p_text_787499838","default":"<a href=\"https://www.yeahbabygoods.com/pages/wholesale\" target=\"_blank\">Wholesale</a>"},{"type":"html","id":"ggF0DxmRQNH_text_968702313","label":"ggF0DxmRQNH_text_968702313","default":"Terms of Service &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Privacy Policy"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}
