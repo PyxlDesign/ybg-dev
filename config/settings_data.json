@@ -3157,7 +3157,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/20_Memorial_Day_2026_Desktop_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/feeding-essentials"
             }
           },
@@ -4029,7 +4028,7 @@
               "prefix": "01",
               "title": "Footrest Installation",
               "content": "Step-by-step instructions on how to install our patented footrests",
-              "video_url": "https://www.youtube.com/watch?v=7FwH_FhYHLU",
+              "video_url": "https://youtu.be/jNY6679d9go",
               "video_thumbnail": "shopify://shop_images/footrest_d6c56f6e-39fc-400b-9908-fbe20ccc4356.jpg"
             }
           },
@@ -5934,7 +5933,6 @@
             "type": "hero_slide",
             "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/19_Memorial_Day_2026_Mobile_Hero.jpg",
               "hero_slide_url": "https://www.yeahbabygoods.com/pages/feeding-essentials"
             }
           },
