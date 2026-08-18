@@ -1,0 +1,457 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_global_section_624421390199554806-1": {
+      "type": "gp-global-section-624421390199554806",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggyMMWArhe__text_-1432444599": "<a href=\"https://www.instagram.com/yeahbabygoods\" target=\"_blank\">In Your Home</a>",
+        "ggmyz5c3oXg_srcSet_desktop_src_1665221833": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/IMG_3232.jpg",
+        "gg54cNy8AAX_text_-1570036252": "madisonviningblog",
+        "gggEuwnATXX_srcSet_desktop_src_1940271196": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/vineandlight.jpg",
+        "gg-9jRmZeYS_text_-1149973547": "vineandlight",
+        "ggGfyeSoCVn_srcSet_desktop_src_-1850036507": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/8D9F9382-D128-4554-8B77-3EB44D89BDB0.jpg",
+        "ggz1H77VDYo_text_-1700981200": "trisha3024",
+        "gghdcu7CX9W_srcSet_desktop_src_1203906292": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/shamkko_square.jpg",
+        "ggraDeX77hH_text_-690814024": "shamkko",
+        "ggyW0xySKK6_srcSet_desktop_src_-662882393": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/merillamama.jpg",
+        "gg5S7X5g91G_text_724928644": "merillamama"
+      }
+    },
+    "gp_global_section_629423526947848752-2": {
+      "type": "gp-global-section-629423526947848752",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggZUaFOzgNQ_text_-1287424733": "Sign up for 15% off&nbsp;<br>your first order!",
+        "gg0x4CTDpi2_text_-1705812066": "<p>Be the first to know about new arrivals&nbsp;</p><p>and get access to exclusive sales</p>",
+        "gg-9oztw5XG_successMessage_-1751361663": "Thanks for subscribing",
+        "gg-9oztw5XG_errorMessage_-1125111609": "Can’t send email. Please try again later.",
+        "ggSSw_08X22_placeholder_-1187121637": "Email Address",
+        "ggcySvEuDcm_label_-3815578": "Sign Up",
+        "ggl31UfFGy2_text_273093887": "Discover",
+        "ggwhu9UZgTw_text_-1683983403": "<a href=\"https://www.yeahbabygoods.com/pages/feeding-essentials\" target=\"_blank\">Shop All Collections</a>",
+        "gg-WW7_5dzw_text_1233710701": "<a href=\"https://www.yeahbabygoods.com/products/gift-card\" target=\"_blank\">Gift Cards</a>",
+        "ggFV4CrlRvu_text_1581991036": "<a href=\"https://www.yeahbabygoods.com/pages/start-here\" target=\"_blank\">About YBG</a>",
+        "gglqGTUInev_text_178356968": "<a href=\"https://www.yeahbabygoods.com/pages/about-us\" target=\"_blank\">Meet the Family</a>",
+        "ggqzLvKAGLw_text_-1174934208": "<a href=\"https://www.yeahbabygoods.com/#smile-home\" target=\"_blank\">Earn Rewards</a>",
+        "ggsjd5rtTVI_text_-1446005928": "Learn",
+        "ggSuVXOWjng_text_-841311917": "<a href=\"https://www.yeahbabygoods.com/pages/faq\" target=\"_blank\">FAQ</a>",
+        "ggdgAgskmLW_text_-1597313834": "<a href=\"https://www.yeahbabygoods.com/blogs/the-blog\" target=\"_blank\">Blog</a>",
+        "ggZ7-BLXJyM_text_582574395": "<a href=\"https://www.yeahbabygoods.com/pages/safe-eating-posture\" target=\"_blank\">Highchair 101</a>",
+        "ggs118LpdVe_text_1337578041": "Support",
+        "ggoeiThzNEP_text_1267011995": "<a href=\"https://www.yeahbabygoods.com/pages/contact-us\" target=\"_blank\">Contact Us</a>",
+        "gg39eHpeq4__text_516879094": "<a href=\"https://www.yeahbabygoods.com/pages/video-tutorials\" target=\"_blank\">Video Tutorials</a>",
+        "ggS8t-FPBbf_text_1207472956": "<a href=\"https://www.yeahbabygoods.com/pages/returns-and-exchanges\" target=\"_blank\">Returns and Exchanges</a>",
+        "ggitU4lM-Li_text_-1472984093": "<a href=\"https://www.yeahbabygoods.com/pages/shipping-policies\" target=\"_blank\">Shipping</a>",
+        "ggN4bz7IX2p_text_787499838": "<a href=\"https://www.yeahbabygoods.com/pages/wholesale\" target=\"_blank\">Wholesale</a>",
+        "ggF0DxmRQNH_text_968702313": "Terms of Service &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Privacy Policy"
+      }
+    },
+    "gp_section_633407305173435370": {
+      "type": "gp-section-633407305173435370",
+      "settings": {
+        "checksum": "34b8e77dc2d18551f56809a0da21e8b0267726bbef06f8261af30f7ff0e1f5d0_1_1_1_0__1"
+      }
+    },
+    "gp_section_633407305173500906": {
+      "type": "gp-section-633407305173500906",
+      "settings": {
+        "checksum": "402097efa54ff4d7caaf67a8613c81028549a378434513dff4efcbbca6a98e83_1_1_1_0__1",
+        "ggBTt0R8Se8_text": "Pairs Well With",
+        "ggQ-754VHnC_displayContent": "{percent_discount} off",
+        "ggY4ma2sc1H_label": "Add to cart",
+        "ggY4ma2sc1H_outOfStockLabel": "Out Of Stock",
+        "ggY4ma2sc1H_unavailableLabel": "Unavailable",
+        "ggY4ma2sc1H_successMessage": "Add product to cart successfully",
+        "ggY4ma2sc1H_errorMessage": "Cannot add product to cart"
+      }
+    },
+    "gp_section_633407305173566442": {
+      "type": "gp-section-633407305173566442",
+      "settings": {
+        "checksum": "9d7bb661cd5061f21f4383082b8b5f4505da798a0dc1973dda35497ec2d149b6_1_1_1_0__1",
+        "ggFreOX0BtW_text": "Featured Collections",
+        "ggmMWqDMyqs_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/178_Lifestyle_811A2192_JKP_SS.jpg",
+        "ggd_9srmsfn_text": "<p>Highchair</p>",
+        "ggT51zS1iL0_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/YBG4-2_KRK_7ed7015a-ee55-455c-b251-d03255695700.jpg",
+        "ggbUmjKWVjL_text": "<p>Feeding</p>",
+        "ggu09R__yRW_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/13_Restaurant_Bag_3_close_square_no_sheath_horizontal_7f153544-a7b7-4d19-adc6-af1f950bdf5b.jpg",
+        "gglX1JR4Ug9_text": "<p>On-the-Go</p>",
+        "ggNMBIXkbfl_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/YBG.1-24_KRK_10b4ae81-1b2b-4350-86ac-00696042cd3f.jpg",
+        "ggQ0z3L0jAJ_text": "<p>Bundles</p>"
+      }
+    },
+    "gp_section_633407305173631978": {
+      "type": "gp-section-633407305173631978",
+      "settings": {
+        "checksum": "f2deec950f8dd19cc60cc22fd66c816e8b461ffb7b9a1c6a94259e34253225d9_1_1_1_0__1",
+        "gg6wVj2WA7K_text": "<p>Trusted By Specialists. Loved By Parents.</p>",
+        "gg0d7k9iGM8_text": "You're walking on a cloud!",
+        "ggPzK-dqJ42_text": "<p>“ Our customer advocates are standing by 24/7 to support you via email and social media.👏We also have a comprehensive, regularly updated help center for those who prefer to find help yourself. Or if you are feeling social, we have a supportive community of creators, small business owners.”😍</p>",
+        "ggN4plq7Pgu_text": "<p><span style=\"color:#152D3B;\"><strong>RYAN S.</strong> / Design Director</span></p>",
+        "gguEQGma_M2_childItem_0": "<p>Verified Buyer</p>",
+        "gg-g_UJt3RE_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/background_settings.jpg",
+        "ggcUVMcv5AW_text": "Loved By All",
+        "gg0BT6Ff1pp_text": "<p>Parents and Pediatric Feeding Specialists Can't Stop Raving</p>",
+        "gg0GnEHF83Y_text": "<p>2,500+ Verified Reviews!</p>",
+        "ggckCifuarL_text": "You're walking on a cloud!",
+        "ggqalS3e_cv_text": "<p>“ Our customer advocates are standing by 24/7 to support you via email and social media.👏We also have a comprehensive, regularly updated help center for those who prefer to find help yourself. Or if you are feeling social, we have a supportive community of creators, small business owners.”😍</p>",
+        "ggrPUHKOLfR_text": "<p><span style=\"color:#152D3B;\"><strong>JAMES D.</strong> / Product Director</span></p>",
+        "gguzeXvLo55_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-fd2fe4dc-43af-458a-83a3-c2b1af1b2639.png?v=1716544385",
+        "ggDBygC683f_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-ac5fa402-322c-421c-a75a-a88496e1c94e.png?v=1716544420",
+        "ggkvadwYhpu_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-27aff68d-a7a5-4c9b-aa54-719b3ed51ee9.png?v=1716544440"
+      }
+    },
+    "gp_section_633407305173697514": {
+      "type": "gp-section-633407305173697514",
+      "settings": {
+        "checksum": "0376b7021bc552a96356af91124d41b3951e629bb38a9f93147cf1869ef7e71f_1_1_1_0__1",
+        "ggCljdqwGZN_text": "Loved by All",
+        "ggyHQZ7ErbY_text": "<p>Parents and Feeding Specialists Can't Stop Raving</p>",
+        "gg5etxI_Oit_text": "<p>I'm Amazed</p>",
+        "ggRS5-Sqloe_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggyujcT-rVc_text": "<p><strong>Maria K.</strong></p>",
+        "ggKJqkBiYtH_childItem_0": "<p>Verified Buyer</p>",
+        "ggySDaNC0rE_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-f132cfa5-ab01-4656-bf4a-f0e5a90a2fb3.png?v=1715673234",
+        "gggf78BNdF3_text": "<p><strong>Maria K.</strong></p>",
+        "ggEfJqL4o-7_childItem_0": "<p>Verified Buyer</p>",
+        "ggIXezaHZCF_text": "<p>\"Omnis voluptas\"</p>",
+        "ggb3bY2DrjA_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>",
+        "ggieMTqL8Au_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-f132cfa5-ab01-4656-bf4a-f0e5a90a2fb3.png?v=1715673234",
+        "ggQb_JVBB7j_text": "<p><strong>Maria K.</strong></p>",
+        "gg9LiKNXT2S_childItem_0": "<p>Verified Buyer</p>",
+        "gg_owyGt2wt_text": "<p>\"Omnis voluptas\"</p>",
+        "ggYmVK5FAy6_text": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>"
+      }
+    },
+    "gp_section_633407305173763050": {
+      "type": "gp-section-633407305173763050",
+      "settings": {
+        "checksum": "9ad67c6614a5af01b9c51953baeb7ffd02b6d4fff8d24c0c38a89ff93d991628_1_1_1_0__1",
+        "ggQ8EGBmVDT_text": "Why Footrests Are The One Item Every Highchair Needs",
+        "gg8ywnOKIwz_text": "<p>Longer, More Relaxed Meals</p>",
+        "gg5h0c7fvoz_text": "<p>Without foot support, babies have to work hard to stay stable. This leads to short, fussy meals. When a footrest is added, babies can sit longer and often show a greater interest in eating.&nbsp;</p>",
+        "ggSpxz1sCKM_text": "<p>Improves Fine Motor Skills</p>",
+        "gg87BzFOJbN_text": "<p>Stable, comfortable babies can focus on fine motor skills like picking up food, chewing and swallowing</p>",
+        "ggfT4nPWNHJ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Desert_Sage_Lifestyle9_JKP_SS.jpg",
+        "ggN7OzTADaU_text": "<p>Decreases Choking Risk</p>",
+        "ggazOuuojLV_text": "<p>Foot support and trunk stability help facilitate a safe swallow</p>",
+        "ggVlObnfEgO_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/untitled-436_JKP_SS_square_27e0788f-687c-4bc1-a119-05d3fd865d64.jpg"
+      }
+    },
+    "gp_section_633407305173828586": {
+      "type": "gp-section-633407305173828586",
+      "settings": {
+        "checksum": "483b1e2fa6689bd2f205285f144a2e07d0817ab09d9c2369da8499322bb96be3_1_1_1_0__1",
+        "gg1UTiLBZim_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/yeahbabygoods-16_croppped.jpg",
+        "gg1UTiLBZim_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/yeahbabygoods-6_7b76b3dd-9731-4030-a6c5-58008e80c159.jpg"
+      }
+    },
+    "gp_section_633407305173894122": {
+      "type": "gp-section-633407305173894122",
+      "settings": {
+        "checksum": "b39ff92e8ec4598ba80a0758a151fefa0dd48d9c8b1d0389de6cde3cc4d2ff15_1_1_1_0__1",
+        "gg6FEVOq6Kj_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Rectangle_3_a7b5822f-015d-4b1e-9c23-561ce00763a6.png",
+        "gg2631kWc5R_label": "<p>New Arrivals</p>",
+        "gg3u8vuKrEn_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Rectangle_6.png",
+        "ggAwKupMCc1_label": "<p>Women</p>",
+        "gg3V7yGGZ6G_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Rectangle_5.png",
+        "gg9CnUOEDFt_label": "<p>Men</p>",
+        "ggI2v91YSgY_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Rectangle_4.png",
+        "ggvmi4ZGBOi_label": "<p>Everyday Carry</p>"
+      }
+    },
+    "gp_section_633407305173959658": {
+      "type": "gp-section-633407305173959658",
+      "settings": {
+        "checksum": "de6819d54a6dd751644820e68400e8168b068667429e508008d3695259154977_1_1_1_0__1",
+        "gg9KWB8qIMd_text": "<p>The number one thing I recommend in a highchair is foot support. It's key to a productive meal time experience.</p>",
+        "ggjfh-kW4Hp_text": "<p>Renae D'Andrea, MS, RDN</p>",
+        "gg7l-ZkPlf4_text": "<p><strong>@newwaysnutrition</strong></p>"
+      }
+    },
+    "gp_section_633407305174025194": {
+      "type": "gp-section-633407305174025194",
+      "settings": {
+        "checksum": "b3c6d46b4646577d71f792ae685cd00604986eb45046f219e1fcc6c862430d5b_1_1_1_0__1",
+        "ggfVlYnhAFz_label": "Add to cart",
+        "ggfVlYnhAFz_outOfStockLabel": "Out of stock",
+        "ggfVlYnhAFz_unavailableLabel": "Unavailable",
+        "ggfVlYnhAFz_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "ggfVlYnhAFz_successMessage": "Add product to cart successfully",
+        "ggfVlYnhAFz_errorMessage": "Cannot add product to cart"
+      }
+    },
+    "gp_section_633407305174090730": {
+      "type": "gp-section-633407305174090730",
+      "settings": {
+        "checksum": "c457ef63739aab4f3d89d46ccfa8dca1c21d3e199e3ecb70cd138eb513413a0d_1_1_1_0__1",
+        "ggSpCjA0kdO_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/untitled-436_JKP_SS_square_27e0788f-687c-4bc1-a119-05d3fd865d64.jpg",
+        "ggSpCjA0kdO_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/026A4307_feet_close_up_8ed221a1-3b86-497c-ad7c-005e7f3315ce.jpg",
+        "ggOBHSyzmRF_text": "Loved By All",
+        "ggUfnrowzD4_text": "<p>Parents &amp; Pediatric Feeding Specialists Can't Stop Raving</p>",
+        "gg4yoixhjmU_text": "<p>I am in TEARS</p>",
+        "ggmIZ3BZL-G_text": "<p>“We've been struggling with solids for a few months. Our daughter was never super engaged or excited about eating. She's always grunting and kicking her legs and just plain looked uncomfortable. I've been feeling so defeated. THIS FOOTREST IS A GAME CHANGER! She devoured her food tonight; I had to give her MORE food. My husband and I honeslty couldn't believe our eyes. There was no resistance, just a happy girl enjoying her pasta.”</p>",
+        "ggDWbyLAjm4_text": "<p>Relief for a Stressed Mama</p>",
+        "gg6UEoKvLn-_text": "<p>\"This is probably the best thing you can purchase for your IKEA highchair. The quality is amazing. My child went from wanting to be in the highchair for very short periods of time to sitting for an entire meal plus allowing me to finish my meal!\"</p>",
+        "ggMMI0RNuxR_text": "<p>OT Approved</p>",
+        "gg5RgknMlB8_text": "<p>\"My son is 14 months and has an oral aversion and feeding difficulties. His OT and Speech Therapist both suggested keeping his feet flat for meals, but I couldn't sink the money for a highchair like the Tripp Trapp. Thank goodness for your footrest!!! I'm SO grateful to you for making high quality, useful products at an accessible price for everyone! I'm telling everyone about this footrest and son's OT is already recommending it to her other clients.\"</p>"
+      }
+    },
+    "gp_section_633407305174156266": {
+      "type": "gp-section-633407305174156266",
+      "settings": {
+        "checksum": "2723aa28a52c3de87a0535eccfb7c403ff1a036391991fbab040e236c717203e_1_1_1_0__1",
+        "gg_klAMm853_text": "Frequently Asked Questions",
+        "ggMtAgKquLF_childItem_0": "<p>How do highchair footrests help prevent choking?</p>",
+        "ggMtAgKquLF_childItem_1": "<p>What are signs my baby needs a footrest?</p>",
+        "ggMtAgKquLF_childItem_2": "<p>What is the 90/90/90 rule I keep hearing about?</p>",
+        "ggMtAgKquLF_childItem_3": "<p>Is the YBG footrest fully adjustable?</p>",
+        "ggMtAgKquLF_childItem_4": "<p>What age should use a footrest?</p>",
+        "ggMtAgKquLF_childItem_5": "<p>Do you need tools to install or adjust?&nbsp;</p>",
+        "ggMtAgKquLF_childItem_6": "<p>How do I position my footrest? What side up? What side facing forward?</p>",
+        "ggMtAgKquLF_childItem_7": "<p>I didn't receive the clamps...what should I do?</p>",
+        "ggMtAgKquLF_childItem_8": "<p>My footrest is slipping. What can I do?</p>",
+        "ggMtAgKquLF_childItem_9": "<p>Why is my baby able to knock off the footrest?</p>",
+        "ggZY2ueO0on_text": "<p>Dangling legs are destabilizing and, for early eaters, can promote a slumping posture that increases choking risk. Your baby’s ability to rest his or her feet flat on a hard surface is key for promoting a safe swallow.&nbsp;</p>",
+        "ggJUJAGgf6v_label": "<p>Read More</p>",
+        "gg7qDCNyFLh_childItem_0": "<p>Kicking legs</p>",
+        "gg7qDCNyFLh_childItem_1": "<p>Crossing ankles</p>",
+        "gg7qDCNyFLh_childItem_2": "<p>Holding onto tray or armrest</p>",
+        "gg7qDCNyFLh_childItem_3": "<p>Constant fidgeting and wobbling</p>",
+        "gg7qDCNyFLh_childItem_4": "<p>Slouching to one side</p>",
+        "gg7qDCNyFLh_childItem_5": "<p>Disinterest in food</p>",
+        "gg7qDCNyFLh_childItem_6": "<p>Showing signs of hunger, but not finishing meals</p>",
+        "gg7qDCNyFLh_childItem_7": "<p>Fussing throughout the meal</p>",
+        "gg7qDCNyFLh_childItem_8": "<p>Resisting getting in the highchair or trying to escape</p>",
+        "gg0n2yCEj-l_label": "<p>Read More</p>",
+        "ggfCUdgaTGx_text": "<p>The 90/90/90 rule means your hips, knees and ankles should all be at 90° angles when eating. This position provides the most core (trunk) stability, which allows for controlled movement in the hands and mouth. Your feet need to rest on a flat, sturdy surface to achieve this ideal positioning.</p>",
+        "ggZ_H9u-bvF_label": "<p>Read More</p>",
+        "gg5uMmhUrw4_text": "<p>Yes, the footrest can be positioned high on the legs for little babies and moved down as they grow to keep the optimal 90/90/90 positioning. If your child is over one-year-old, we recommend adding the <a href=\"https://www.yeahbabygoods.com/collections/highchair-footrest/products/footrest-spacers-set-of-2\" target=\"_blank\"><strong><u>Footrest Spacer</u></strong></a> to keep the footrest from falling at a lower position.</p>",
+        "ggx5IVPnqhN_text": "<p>All ages! Even adults crave a stable place to rest their feet. Picture sitting in a high stool with no foot support. You'd constantly be shifting, trying to get comfortable and stay balanced. Your attention stays on your body more than it should, which we especially don't want for babies who are still learning to eat!</p>",
+        "ggE8Nx1fIhu_text": "<p>No tools needed! Just open the clamp's clasp, position it on the highchair's leg and snap it closed.&nbsp;</p>",
+        "gg5Jvp-Sr5T_text": "<p>It's important to make sure the cut-outs are facing down and oriented correctly. One side of the cut-out is deeper than the other side. Make sure the<strong> side with the deeper cut is facing forward</strong> (closest to you if you're standing in front of the chair). You know it's right if the footrest lays flat and doesn't tilt back.&nbsp;</p>",
+        "ggpuBsqFmih_label": "<p>Watch Installation Video</p>",
+        "gg1muk0fgsW_text": "<p>The clamps can get stuck in the box, so please make sure to check both ends before throwing away the packaging. :)</p>",
+        "gg1LiWis8TZ_text": "<p>We recommend first cleaning the legs with rubbing alcohol to see if natural oils from food or hands are causing it to slip. If that doesn't help, please <a href=\"https://www.yeahbabygoods.com/pages/contact-us\" target=\"_blank\"><strong><u>contact us</u></strong></a> so we can help troubleshoot!</p>",
+        "ggQWYcXox_Y_text": "<p>If the footrest is set low on the highchair legs, it can more easily slide out. Our <a href=\"https://www.yeahbabygoods.com/collections/highchair-footrest/products/footrest-spacers-set-of-2\" target=\"_blank\"><u>footrest spacers</u></a> keep the footrest from sliding back and forth and getting knocked off. If that doesn't seem to be the problem, just send a video to <a href=\"mailto:support@yeahbabygoods.com\">support@yeahbabygoods.com</a> and we'll help troubleshoot!</p>"
+      }
+    },
+    "gp_section_633407305174221802": {
+      "type": "gp-section-633407305174221802",
+      "settings": {
+        "checksum": "b13994e1bf07fa1f040e8a50881f4740ccbf7b970ca7d436a04b0574e35f50bd_1_1_1_0__1",
+        "ggBSkNDlgts_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/baby-in-highchair-with-footrest-and-sage-placemat_8e1d4a91-bae2-415b-8687-4e14e6b2e762.jpg",
+        "ggBSkNDlgts_alt": "Baby in IKEA Highchair with Yeah Baby Goods footrest and Sage placemat",
+        "ggBSkNDlgts_title": "IKEA Highchair with YBG Accessories for Support and Comfort",
+        "ggetBToYcnc_text": "Long, Peaceful Meals",
+        "gg_zEFfcuQI_text": "<p>When babies' feet dangle without support, they expend a lot of energy just trying to stay stable. This leads to short, fussy meals. When a footrest is added, babies sit longer and show a greater interest in eating.&nbsp;</p>",
+        "ggQoozfmIcb_text": "Improves Fine Motor Skills",
+        "ggPGz24MFI0_text": "<p>Stable, comfortable babies can focus on the smaller muscles in their hands and mouth that control fine motor skills like grasping, pinching, hand-to-mouth coordination, biting, chewing and swallowing.&nbsp;</p>",
+        "ggIecTy_s5I_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/girl-in-highchair-with-walnut-footrest.jpg",
+        "ggIecTy_s5I_alt": "Child in ikea high chair with a tray placemat, using a dark wood footrest against a blue paneled wall",
+        "ggIecTy_s5I_title": "Child in Highchair with Dark Wood Footrest",
+        "ggVVeKAnDTS_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/child-in-highchair-with-cushion-placemat-footrest.jpg",
+        "ggVVeKAnDTS_alt": "Child in an IKEA ANTILOP high chair with YBG cushion, footrest, and tray placemat in a home setting with wooden floor and furniture.",
+        "ggVVeKAnDTS_title": "Title",
+        "ggGOZORGXlr_text": "Decreases Choking Risk",
+        "ggm0koQ_6n2_text": "<p>A lack of stability causes a slumping position that increases choking risk. Footrests help stabilize the core, which allows the swallow to work in a timely fashion, closing off the airway so liquid and food go right past the route to the lungs.</p>"
+      }
+    },
+    "gp_section_633407305174287338": {
+      "type": "gp-section-633407305174287338",
+      "settings": {
+        "checksum": "34174831e81dcf74f09336a4169c80873d260f4bb067b79273ff7914554dd1fd_1_1_1_0__1",
+        "ggA2-h6ofeb_text": "How To Style",
+        "ggcSP2GoIwb_text": "LOOK 1/6",
+        "ggbwHT55JJ7_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/178_Lifestyle_811A2192_JKP_SS.jpg",
+        "gghNjIxAMBj_label": "Add to cart",
+        "gghNjIxAMBj_outOfStockLabel": "Out Of Stock",
+        "gghNjIxAMBj_unavailableLabel": "Unavailable",
+        "gghNjIxAMBj_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "gghNjIxAMBj_successMessage": "Add product to cart successfully",
+        "gghNjIxAMBj_errorMessage": "Cannot add product to cart",
+        "ggHBKehV_On_text": "LOOK 2/6",
+        "ggH3YlT5QuQ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/178_Lifestyle_811A2192_JKP_SS.jpg",
+        "ggN6HHPyESK_label": "Add to cart",
+        "ggN6HHPyESK_outOfStockLabel": "Out Of Stock",
+        "ggN6HHPyESK_unavailableLabel": "Unavailable",
+        "ggN6HHPyESK_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "ggN6HHPyESK_successMessage": "Add product to cart successfully",
+        "ggN6HHPyESK_errorMessage": "Cannot add product to cart",
+        "gg1JT-OchHJ_text": "LOOK 3/6",
+        "gg663ae7XJc_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/178_Lifestyle_811A2192_JKP_SS.jpg",
+        "gg1zmdzYEGO_label": "Add to cart",
+        "gg1zmdzYEGO_outOfStockLabel": "Out Of Stock",
+        "gg1zmdzYEGO_unavailableLabel": "Unavailable",
+        "gg1zmdzYEGO_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "gg1zmdzYEGO_successMessage": "Add product to cart successfully",
+        "gg1zmdzYEGO_errorMessage": "Cannot add product to cart"
+      }
+    },
+    "gp_section_633407305174352874": {
+      "type": "gp-section-633407305174352874",
+      "blocks": {
+        "gp_app_selleasy_g4Z7S6rTOU": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pal/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "gp_app_selleasy_g4Z7S6rTOU"
+      ],
+      "settings": {
+        "section_preload": "true",
+        "checksum": "47fc0626abe7cf8b3685cf22369576d6a529c0e49f2312dd2714ed701e423833_1_1_1_0__1",
+        "ggHM3fyDGs1_displayContent": "Best Seller",
+        "gg6tdJcpiXn_displayContent": "Best Seller",
+        "ggIvsbCH1Ro_displayContent": "{percent_discount} OFF",
+        "gg7Ji5m4IVN_text": "<p>Our patented, fully-adjustable IKEA highchair footrest gives babies the stability they need for safe, comfortable mealtimes</p>",
+        "ggMN7pyp35U_label": "Add to cart",
+        "ggMN7pyp35U_outOfStockLabel": "Out of stock",
+        "ggMN7pyp35U_unavailableLabel": "Unavailable",
+        "ggMN7pyp35U_successMessage": "Add product to cart successfully",
+        "ggMN7pyp35U_errorMessage": "Cannot add product to cart",
+        "ggwdm9yEi6B_text": "<p>Bundle and save</p>",
+        "ggsK6BuyxpO_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Link.png",
+        "ggJ3Cz2nuOI_text": "Gemnest Snuggy Pillows",
+        "ggelzy-2sec_text": "<p>$58.75</p>",
+        "gg4MLD_nXXk_label": "<p>View Product</p>",
+        "ggUvqhojvm1_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Link.png",
+        "ggVKBTa9SQn_text": "Gemnest Snuggy Pillows",
+        "gg4BWuwyCzM_text": "<p>$58.75</p>",
+        "ggkCBLHKjKD_label": "<p>View Product</p>",
+        "ggjWnt8y-hQ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Piccalio-InYourHome-FT_3.webp",
+        "ggWs9U0rsNY_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Piccalio-InYourHome-FT_4.webp",
+        "ggO9SSp0oZ7_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/Piccalio-InYourHome-FT_5.webp",
+        "ggvZjON05Z-_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/3_0a5f0591-454a-4c9a-8736-342fc0ac0fd7.webp",
+        "ggOypuGu_ve_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/6_daac77fa-e4a1-4510-87b6-36c80df3cdb0.webp",
+        "ggPPM2SDfoe_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/4_b3d7833f-02a9-4091-aa80-614f4a8476e5.webp",
+        "ggQvbAG4KG7_childItem_0": "<p>What&#039;s Included</p>",
+        "ggQvbAG4KG7_childItem_1": "<p>DETAILS</p>",
+        "ggQvbAG4KG7_childItem_2": "<p>CARE</p>",
+        "gg4LiIG13D2_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/footresttogether.jpg",
+        "gg4LiIG13D2_alt": "5 Different IKEA Highchair Footrests Lined Up",
+        "gg4LiIG13D2_title": "5 YBG IKEA Highchair Highchair Options",
+        "gg_22LlbPjn_childItem_0": "<p>Wooden Footrest</p>",
+        "ggQlinjzYqf_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/yeah-baby-goods-footrest-support-clamps.jpg",
+        "ggQlinjzYqf_alt": "White IKEA Highchair Footrest Clamps with Rubber Inside",
+        "ggQlinjzYqf_title": "IKEA Highchair Footrest Support Clamps For Extra Stability",
+        "gggNUYbXCx0_childItem_0": "<p>2 Support Clamps</p>",
+        "ggzeqGDswRz_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/ikea-highchair-footrest-support-o-rings.jpg",
+        "ggzeqGDswRz_alt": "Thick Black IKEA Highchair Footrest O-Rings",
+        "ggzeqGDswRz_title": "IKEA Highchair Footrest O-Rings For Double Support",
+        "gg4pr2bvKIK_childItem_0": "<p>4 Rubber O-Rings</p>",
+        "ggbPg0rYgbc_childItem_0": "<p>Includes sturdy wooden <strong>Footrest,</strong> <strong>2 Support Clamps </strong>with built-in rubber grips and &nbsp;<strong>4 Black O-Rings</strong> for extra stability</p>",
+        "ggbPg0rYgbc_childItem_1": "<p>Quick and simple installation - <strong>no tools needed</strong></p>",
+        "ggbPg0rYgbc_childItem_2": "<p><strong>Adjust to any height </strong>as baby grows</p>",
+        "ggbPg0rYgbc_childItem_3": "<p><strong>Smart, patented design:</strong> Sloped cut-outs on the underside hide support clamps and angle the footrest for ideal 90° positioning&nbsp;</p>",
+        "ggbPg0rYgbc_childItem_4": "<p>Easy to clean</p>",
+        "ggjJ__igsrU_text": "<p><i>Wood naturally varies in hue, saturation and darkness; therefore, these same variances may occur in our footrests. For this reason, some footrests might not be an exact match with our vinyl leg wraps. Footrests may also have a seam where the color and grain vary.</i></p>",
+        "gg6IooVyTsj_text": "<p><i>WARNING: Foot support is important for safe feeding posture. However, footrests inherently make it easier for children to push themselves up and out of the seat. Therefore, the footrest should be used with the child’s safety harness fastened tight. Do not leave your child unattended in the highchair.</i></p>",
+        "gg1pAr9c0sw_text": "<p>U.S. Patent No. D964,759</p>",
+        "ggwfOJHa3WG_childItem_0": "<p>Wipe clean with wet cloth</p>",
+        "gg6cuY_mXe-_childItem_0": "<p>Free US Shipping on Orders $65+</p>",
+        "ggf2-Nk_a6-_childItem_0": "<p>Fast, Friendly Customer Support</p>"
+      }
+    },
+    "gp_section_633407305174418410": {
+      "type": "gp-section-633407305174418410",
+      "settings": {
+        "checksum": "283b89a7b0d29f21b534429d30192ba8d37663b6cbbc0c536cc67a45ea7323ec_1_1_1_0__1",
+        "ggtsl8sE_uO_text": "Unique Patented Design",
+        "ggU7QlRMu3r_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/ikea-highchair-footrest-support-clamps-open.jpg",
+        "ggU7QlRMu3r_alt": "Yeah Baby Goods white support clamps for IKEA highchair footrest on white background",
+        "ggU7QlRMu3r_title": "Yeah Baby Goods Footrest Support Clamps for IKEA Highchair",
+        "gglf0qcC_AX_text": "<p>&nbsp;No Hassle Clamps</p>",
+        "ggEyvqhP7Tc_text": "<p>Simple all-in-one design with grippy, ribbed rubber interior and easy-to-use snap closure</p>",
+        "ggZTWouAOfj_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/underside-walnut-footrest-clamp.jpg",
+        "ggZTWouAOfj_alt": "Underside of YBG walnut wooden footrest with a white plastic support clamp on a light background",
+        "ggZTWouAOfj_title": "Yeah Baby Goods IKEA Highchair Footrest Patented Design",
+        "gg3gzoJaC-a_text": "<p>Unseen Support</p>",
+        "ggi8z9ZM4Rs_text": "<p>Smart underside cut-outs hide support clamps from view for a seamless look</p>",
+        "ggxtIKbGzAC_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/walnut_clamp.jpg",
+        "ggM1gEvAH0z_text": "<p>Optimal Positioning</p>",
+        "ggvC69wnxIo_text": "<p>Angled cut-outs keep the footrest flat, ensuring babies' hips, knees and ankles are at 90° angles</p>"
+      }
+    },
+    "gp_section_633407305174483946": {
+      "type": "gp-section-633407305174483946",
+      "settings": {
+        "checksum": "4ce3c6cbb7558fbef61af7ebcd9280f4493efa7baa2ed142f7c775bbcb079ef4_1_1_1_0__1",
+        "ggnfIOXO6zS_text": "Pairs Well With",
+        "ggqxhPtDuBk_displayContent": "{percent_discount} off",
+        "ggd_L-V5vyG_label": "Add to cart",
+        "ggd_L-V5vyG_outOfStockLabel": "Out of stock",
+        "ggd_L-V5vyG_unavailableLabel": "Unavailable",
+        "ggd_L-V5vyG_successMessage": "Add product to cart successfully",
+        "ggd_L-V5vyG_errorMessage": "Cannot add product to cart",
+        "ggLQ9O8-IwJ_displayContent": "{percent_discount} off",
+        "ggl3gun-_DH_label": "Add to cart",
+        "ggl3gun-_DH_outOfStockLabel": "Out of stock",
+        "ggl3gun-_DH_unavailableLabel": "Unavailable",
+        "ggl3gun-_DH_successMessage": "Add product to cart successfully",
+        "ggl3gun-_DH_errorMessage": "Cannot add product to cart",
+        "ggh7Op5S2wU_displayContent": "{percent_discount} off",
+        "ggSMYOW1XNF_label": "Add to cart",
+        "ggSMYOW1XNF_outOfStockLabel": "Out of stock",
+        "ggSMYOW1XNF_unavailableLabel": "Unavailable",
+        "ggSMYOW1XNF_successMessage": "Add product to cart successfully",
+        "ggSMYOW1XNF_errorMessage": "Cannot add product to cart",
+        "ggBRLgiGt8u_displayContent": "{percent_discount} off",
+        "ggb3GuNoD9U_label": "Add to cart",
+        "ggb3GuNoD9U_outOfStockLabel": "Out of stock",
+        "ggb3GuNoD9U_unavailableLabel": "Unavailable",
+        "ggb3GuNoD9U_successMessage": "Add product to cart successfully",
+        "ggb3GuNoD9U_errorMessage": "Cannot add product to cart"
+      }
+    },
+    "gp_section_633407305174549482": {
+      "type": "gp-section-633407305174549482",
+      "settings": {
+        "checksum": "5d1f82fed9f2fb27b65bd5cc3c9548c80c085fe0696faf84f8b9402ac39c9a0e_1_1_1_0__1",
+        "gg4t6ktWhgH_text": "<p>Featured COLLECTIONS</p>",
+        "ggiIwYRGTGj_childItem_0": "<p>IKEA Highchair</p>",
+        "ggiIwYRGTGj_childItem_1": "<p>Feeding Essentials</p>",
+        "ggiIwYRGTGj_childItem_2": "<p>On The Go</p>",
+        "ggiIwYRGTGj_childItem_3": "<p>Bundles</p>",
+        "ggtCRrvyoJL_label": "<p>All IKEA HIGHCHAIR</p>",
+        "gg5-CGbTimH_label": "<p>All Feeding essentials</p>",
+        "ggzPYp19Mj__label": "<p>All On the go</p>",
+        "ggwpgMwmsNa_label": "<p>All Bundles</p>"
+      }
+    }
+  },
+  "order": [
+    "gp_section_633407305174352874",
+    "gp_section_633407305173959658",
+    "gp_section_633407305174221802",
+    "gp_section_633407305173763050",
+    "gp_section_633407305174418410",
+    "gp_section_633407305173631978",
+    "gp_section_633407305173697514",
+    "gp_section_633407305174090730",
+    "gp_section_633407305174156266",
+    "gp_section_633407305173500906",
+    "gp_section_633407305174483946",
+    "gp_section_633407305174287338",
+    "gp_section_633407305173828586",
+    "gp_section_633407305173435370",
+    "gp_section_633407305174549482",
+    "gp_section_633407305173894122",
+    "gp_section_633407305173566442",
+    "gp_global_section_624421390199554806-1",
+    "gp_global_section_629423526947848752-2",
+    "gp_section_633407305174025194"
+  ]
+}
