@@ -4124,13 +4124,6 @@
       "care-instructions": {
         "type": "care-instructions",
         "blocks": {
-          "7365d0eb-ab92-4457-9d66-f64ef1271f4b": {
-            "type": "question",
-            "settings": {
-              "question_faqs": "Cotton Cushion Covers",
-              "answer_faqs": "Machine wash in cold water on gentle cycle setting. Avoid harsh spot-scrubbing, and use a phosphate-free detergent for longer color life. Tumble dry low  or line-dry."
-            }
-          },
           "68d96b15-48e8-4e99-805e-bdc4c51bf9be": {
             "type": "question",
             "settings": {
@@ -4175,7 +4168,6 @@
           }
         },
         "block_order": [
-          "7365d0eb-ab92-4457-9d66-f64ef1271f4b",
           "68d96b15-48e8-4e99-805e-bdc4c51bf9be",
           "5c1bddfd-6e1e-45a7-8d04-6908b2e81705",
           "4a3fb2e0-c8a1-4a1e-b6ac-2c6477219361",
