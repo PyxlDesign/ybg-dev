@@ -3537,6 +3537,12 @@
             "settings": {
               "brand_image": "shopify://shop_images/domino2_b1759b39-7b79-4ece-9ad7-f6daa16b09e1.png"
             }
+          },
+          "brand_RkFXmh": {
+            "type": "brand",
+            "settings": {
+              "brand_image": "shopify://shop_images/101beforeone-logo.png"
+            }
           }
         },
         "block_order": [
@@ -3546,7 +3552,8 @@
           "014b6bd2-602e-4ca4-852b-1c7449975691",
           "brand_DjpNCY",
           "brand_Kate9B",
-          "7b7a55ab-2a3c-42f7-871c-6852b583806c"
+          "7b7a55ab-2a3c-42f7-871c-6852b583806c",
+          "brand_RkFXmh"
         ],
         "custom_css": [],
         "settings": {
