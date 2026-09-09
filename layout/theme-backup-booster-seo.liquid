@@ -7,7 +7,6 @@
 <html class="no-js">
   <!-- <![endif] -->
   <head>
-{% include 'booster-seo' %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53J66497C0"></script>
     <script>
@@ -45,7 +44,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Title and description ================================================== -->
-    {% comment %}<title>
+    <title>
       {{ page_title }}
       {% if current_tags %}
         &ndash; tagged "{{ current_tags | join: ', ' }}"
@@ -56,10 +55,10 @@
       {% unless page_title contains shop.name %}
         &ndash; {{ shop.name -}}
       {%- endunless %}
-    </title>{% endcomment %}
+    </title>
 
     {% if page_description %}
-      {% comment %}<meta name="description" content="{{ page_description | escape | split: '[/countdown]' | last | strip_html }}">{% endcomment %}
+      <meta name="description" content="{{ page_description | escape | split: '[/countdown]' | last | strip_html }}">
     {% endif %}
 
     <!-- Product meta ================================================== -->
