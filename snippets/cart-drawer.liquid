@@ -28,7 +28,7 @@
                                 <p>Customers usually also buy this prouduct</p>
                             </div>
                             <div class="upsell-product__block white-bg">
-                                {% include 'product-item-price' , product%}
+                                {% include 'product-item-price' %}
                                 <div class="product-item d-flex align-items-md-center">
                                     <div class="cart-product bg-dark">
                                         <a href="{{ product.url | within: collection }}">
@@ -229,4 +229,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-item-price' , product%}"
+  to: "{% include 'product-item-price' %}"
+  position: 2056..2090
+{%- endcomment -%}

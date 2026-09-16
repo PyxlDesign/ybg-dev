@@ -170,7 +170,7 @@
       {% if block.settings.title != blank %}
       <div class="widget-title">   
         <h3 class="sidebar-title font-karla">
-          {% render 'multilang' with block.settings.title | escape  %}
+          {% render 'multilang' with block.settings.title %}
         </h3>
       </div>
       {% endif %}
@@ -408,3 +408,13 @@
     ]
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'multilang' with block.settings.title | escape  %}"
+  to: "{% render 'multilang' with block.settings.title %}"
+  position: 7079..7129
+{% endcomment %}

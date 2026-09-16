@@ -141,7 +141,7 @@
       {% if block.settings.title != blank %}
       <div class="widget-title">   
         <h3 class="sidebar-title">
-          {% render 'multilang' with block.settings.title | escape  %}
+          {% render 'multilang' with block.settings.title %}
         </h3>
       </div>
       {% endif %}
@@ -373,3 +373,13 @@
   });  
 </script> -->
 {% endif %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'multilang' with block.settings.title | escape  %}"
+  to: "{% render 'multilang' with block.settings.title %}"
+  position: 6207..6257
+{% endcomment %}
