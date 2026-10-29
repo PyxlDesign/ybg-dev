@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_643840127688246065": {
+      "settings": {
+        "checksum": "31458774d1e6076490ff91fb4cd64230dbc28a6828e650168ab8d1051a8697f0_1_1_1_0__1",
+        "gg5SuvgDLe7_text": "<p>Buy a cushion cover, get one free with code:</p><p>&nbsp;</p><p><strong>BOGOCOVER</strong></p>",
+        "ggAIbgc3-bQ_text": "<p>Add 2 or more to cart, then use these codes at check out:</p>",
+        "ggEENDE2tfW_text": "<p>Buy a placemat,&nbsp;</p><p>get one free with code:</p><p>&nbsp;</p><p><strong>BOGOPLACEMAT</strong></p>",
+        "ggTTCXSUsLG_text": "BOGO Free Sale",
+        "ggU-ZgcGg_x_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/vintage-blue-ikea-high-chair-placemat.jpg",
+        "ggkWmPe6_-5_label": "<p>Shop Placemats</p>",
+        "gglzjOrIDNo_text": "<p>EXCLUSIVE EMAIL SUBSCRIBER SALE</p>",
+        "ggpqmcTeAcv_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/ikea_highchair_accessory_bogo_sale.jpg",
+        "ggpqmcTeAcv_background_desktop_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "ggpqmcTeAcv_background_mobile_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "ggrKFKTGYAC_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/ikea-highchair-cushion-cover-fruit.jpg",
+        "ggs4c13GkDM_label": "<p>Shop Cushion Covers</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-643840127688246065"
+    },
+    "gp_section_643845272169874089": {
+      "settings": {
+        "checksum": "67c1347fc27cfb19306c4c6ef8cd492cc227c3e482264bcdc0f52dbf781c2083_1_1_1_0__1",
+        "gg18L66GV7U_dayLabel": "Days",
+        "gg18L66GV7U_hourLabel": "Hours",
+        "gg18L66GV7U_minuteLabel": "Mins",
+        "gg18L66GV7U_secondLabel": "Secs",
+        "gg18L66GV7U_weekLabel": "Weeks",
+        "ggDW2nlIFH7_text": "<p>Sale Ends Sunday, November 1 &nbsp;| &nbsp;11:59 PM</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-643845272169874089"
+    },
+    "gp_section_643845817764938435": {
+      "settings": {
+        "checksum": "69168cc09ec6b27d99913fcb6a7563e6acd9ef240e591fb14f1fc8f74c96d058_1_1_1_0__1",
+        "gg7j7_1Pqo__displayContent": "{percent_discount} off",
+        "ggADpTg0kIC_displayContent": "{percent_discount} off",
+        "ggE6qCZNgB9_label": "<p>Shop All Table Placemats</p>",
+        "ggF6Ns-aim9_displayContent": "{percent_discount} off",
+        "ggFx07rpZzb_errorMessage": "Cannot add product to cart",
+        "ggFx07rpZzb_label": "Add to cart",
+        "ggFx07rpZzb_outOfStockLabel": "Out of stock",
+        "ggFx07rpZzb_successMessage": "Add product to cart successfully",
+        "ggFx07rpZzb_unavailableLabel": "Unavailable",
+        "ggMLp0pW-D7_label": "<p>Shop All Cushions</p>",
+        "ggMNe4tMBSB_label": "<p>Shop All Footrests</p>",
+        "ggRQdanVuCF_errorMessage": "Cannot add product to cart",
+        "ggRQdanVuCF_label": "Add to cart",
+        "ggRQdanVuCF_outOfStockLabel": "Out of stock",
+        "ggRQdanVuCF_successMessage": "Add product to cart successfully",
+        "ggRQdanVuCF_unavailableLabel": "Unavailable",
+        "gga833uLB2V_errorMessage": "Cannot add product to cart",
+        "gga833uLB2V_label": "Add to cart",
+        "gga833uLB2V_outOfStockLabel": "Out of stock",
+        "gga833uLB2V_successMessage": "Add product to cart successfully",
+        "gga833uLB2V_unavailableLabel": "Unavailable",
+        "ggeTUMccb30_errorMessage": "Cannot add product to cart",
+        "ggeTUMccb30_label": "Add to cart",
+        "ggeTUMccb30_outOfStockLabel": "Out of stock",
+        "ggeTUMccb30_successMessage": "Add product to cart successfully",
+        "ggeTUMccb30_unavailableLabel": "Unavailable",
+        "gghaeR0m4v3_text": "Trending Now",
+        "ggsI6fSvpGA_label": "<p>Shop All Highchair Placemats</p>",
+        "ggv0ed-eTIG_displayContent": "{percent_discount} off"
+      },
+      "type": "gp-section-643845817764938435"
+    },
+    "gp_section_643845977618252457": {
+      "settings": {
+        "checksum": "d237ca4419c41cc4697778e9fc22c0ee6682710af980dfc9acc1618dd6c0da2a_1_1_1_0__1",
+        "ggAnQbd7AmG_text": "Sale FAQ",
+        "ggFJ1GD7BUN_text": "<p>Yes, you can apply both codes at check out - BOGOCOVER and BOGOPLACEMAT</p>",
+        "ggLPrPExhjQ_childItem_0": "<p>Will you be doing a Black Friday sale?</p>",
+        "ggLPrPExhjQ_childItem_1": "<p>Can I buy a cushion cover and get a placemat for free?</p>",
+        "ggLPrPExhjQ_childItem_2": "<p>Can I use the cushion cover and placemat discount codes in the same order?</p>",
+        "ggLPrPExhjQ_childItem_3": "<p>Are table placemats included in this sale?</p>",
+        "ggLPrPExhjQ_childItem_4": "<p>Why isn't the discount showing up?</p>",
+        "ggQQh-bqZml_text": "<p>Yes, you can get BOGO <a href=\"https://www.yeahbabygoods.com/collections/table-placemats\" target=\"_blank\"><strong><u>table placemats</u></strong></a>! You can also buy a table placemat and get a highchair placemat for free.</p>",
+        "ggYU4FukeDs_text": "<p>Make sure you have two items from the same product category (ie two cushion covers or two placemats) in your cart. Enter the code (BOGOCOVER and/or BOGOPLACEMAT) and the discount will be applied.</p>",
+        "ggl28qBr4dt_text": "<p>Yes, it will be a 30% off sitewide discount. So if you are wanting cushion covers or placemats, this BOGO sale will save you more!</p>",
+        "gguKvBnUdiv_text": "<p>No, this BOGO sale only applies when it is two items from the same product category.</p>"
+      },
+      "type": "gp-section-643845977618252457"
+    },
+    "gp_section_643853935169241795": {
+      "settings": {
+        "checksum": "c3fb04bdd63c24ed66709b7f31ebc4b503234d0d94ba661f3da54691370d6703_1_1_1_0__1",
+        "gg5AaSnJf3p_label": "<p>Shop Table Placemats</p>",
+        "ggAmI3zY0gj_text": "<p>Large silicone table mats are included in the BOGO sale! Perfect for meals, crafts, under pet bowls, and more!</p>",
+        "ggArR9BysBC_text": "<p>DON'T HAVE A HIGHCHAIR?</p>",
+        "ggThJ0Ey-LH_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/large-silicone-mat_9e7a73d2-f9ab-43a2-b927-8ee923130448.jpg",
+        "ggU6wIbkUqB_text": "Stock Up On Silicone Mats"
+      },
+      "type": "gp-section-643853935169241795"
+    }
+  },
+  "order": [
+    "gp_section_643840127688246065",
+    "gp_section_643845272169874089",
+    "gp_section_643845977618252457",
+    "gp_section_643853935169241795",
+    "gp_section_643845817764938435"
+  ]
+}
