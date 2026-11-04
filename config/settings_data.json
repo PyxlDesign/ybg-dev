@@ -3162,6 +3162,7 @@
           },
           "hero_slide_RqM7CD": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Desktop_Hero_20w_3b_c385cca2-87c1-40a2-8adb-55f667ebcea6.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -3169,10 +3170,9 @@
           },
           "hero_slide_bQjNr4": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/01_Silicone_Dinnerware_Desktop_Hero_c8b392c6-c99d-49b7-9945-38d066066161.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/collections/dinnerware"
+              "hero_slide_image": "shopify://shop_images/21_Nov_Sales_Calendar_2026_Desktop_Hero_143da090-0797-4f1a-9d1c-d7a1d1492071.jpg",
+              "hero_slide_url": "https://yeahbabygoods.myflodesk.com/ybg-nov26-sales-calendar"
             }
           },
           "hero_slide_fmUcph": {
@@ -5937,6 +5937,7 @@
           },
           "hero_slide_PRw9Pw": {
             "type": "hero_slide",
+            "disabled": true,
             "settings": {
               "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_3_9551ffb4-2f06-459a-bc4e-043d8ec9e4b9.jpg",
               "hero_slide_url": "shopify://pages/feeding-essentials"
@@ -5944,10 +5945,9 @@
           },
           "hero_slide_adbChD": {
             "type": "hero_slide",
-            "disabled": true,
             "settings": {
-              "hero_slide_image": "shopify://shop_images/00_Default_Mobile_Hero_2.jpg",
-              "hero_slide_url": "https://www.yeahbabygoods.com/pages/start-here"
+              "hero_slide_image": "shopify://shop_images/20_Nov_Sales_Calendar_2026_Mobile_Hero_5b88e14c-d55b-4dfe-803c-3580f1514028.jpg",
+              "hero_slide_url": "https://yeahbabygoods.myflodesk.com/ybg-nov26-sales-calendar"
             }
           },
           "hero_slide_FzXpjh": {
