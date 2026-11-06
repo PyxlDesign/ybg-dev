@@ -1,0 +1,95 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_645009370928776001": {
+      "settings": {
+        "checksum": "5735bfd20a2095d63ced9a3fcdfc9118b6628c52194f34e9c9a2233674b71b22_1_1_1_0__1",
+        "ggAIbgc3-bQ_text": "<p>Use the calendar below to plan ahead!</p>",
+        "ggTTCXSUsLG_text": "'Tis the Season<br>for Sales",
+        "gglzjOrIDNo_text": "<p>SALES EVERY DAY IN NOVEMBER</p>",
+        "ggpqmcTeAcv_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/13_Restaurant_Bag_3_long_9d78fde6-1dde-4fa7-bd4f-78ad36db8c03.jpg",
+        "ggpqmcTeAcv_background_desktop_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "ggpqmcTeAcv_background_mobile_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "section_preload": "true"
+      },
+      "type": "gp-section-645009370928776001"
+    },
+    "gp_section_645009370928841537": {
+      "settings": {
+        "checksum": "3789a0220f369f557f8a7b6be187886b0dc41ef8fd72f22b6f483599800247f9_1_1_1_0__1",
+        "gg7j7_1Pqo__displayContent": "{percent_discount} off",
+        "ggADpTg0kIC_displayContent": "{percent_discount} off",
+        "ggE6qCZNgB9_label": "<p>Shop All Table Placemats</p>",
+        "ggF6Ns-aim9_displayContent": "{percent_discount} off",
+        "ggFx07rpZzb_errorMessage": "Cannot add product to cart",
+        "ggFx07rpZzb_label": "Add to cart",
+        "ggFx07rpZzb_outOfStockLabel": "Out of stock",
+        "ggFx07rpZzb_successMessage": "Add product to cart successfully",
+        "ggFx07rpZzb_unavailableLabel": "Unavailable",
+        "ggMLp0pW-D7_label": "<p>Shop All Cushions</p>",
+        "ggMNe4tMBSB_label": "<p>Shop All Footrests</p>",
+        "ggRQdanVuCF_errorMessage": "Cannot add product to cart",
+        "ggRQdanVuCF_label": "Add to cart",
+        "ggRQdanVuCF_outOfStockLabel": "Out of stock",
+        "ggRQdanVuCF_successMessage": "Add product to cart successfully",
+        "ggRQdanVuCF_unavailableLabel": "Unavailable",
+        "gga833uLB2V_errorMessage": "Cannot add product to cart",
+        "gga833uLB2V_label": "Add to cart",
+        "gga833uLB2V_outOfStockLabel": "Out of stock",
+        "gga833uLB2V_successMessage": "Add product to cart successfully",
+        "gga833uLB2V_unavailableLabel": "Unavailable",
+        "ggeTUMccb30_errorMessage": "Cannot add product to cart",
+        "ggeTUMccb30_label": "Add to cart",
+        "ggeTUMccb30_outOfStockLabel": "Out of stock",
+        "ggeTUMccb30_successMessage": "Add product to cart successfully",
+        "ggeTUMccb30_unavailableLabel": "Unavailable",
+        "gghaeR0m4v3_text": "Trending Now",
+        "ggsI6fSvpGA_label": "<p>Shop All Highchair Placemats</p>",
+        "ggv0ed-eTIG_displayContent": "{percent_discount} off"
+      },
+      "type": "gp-section-645009370928841537"
+    },
+    "gp_section_645009370928972609": {
+      "settings": {
+        "checksum": "45fc764ac39b4f51b1d74de8e71ecce11fdb7b8d403151372eeb36a67bbdfe11_1_1_1_0__1",
+        "ggAnQbd7AmG_text": "Sale FAQ",
+        "ggLPrPExhjQ_childItem_0": "<p>Will you be doing a Black Friday sale?</p>",
+        "ggLPrPExhjQ_childItem_1": "<p>Why isn&#039;t the sale working?</p>",
+        "ggYU4FukeDs_text": "<p>Make sure you have the items you need in the cart (if you are getting free items, they need to be in the cart too). Enter the code and the discount will be applied.</p><p>&nbsp;</p><p>The code YoVIP Nov 20-26 will only work if you are an email or SMS subscriber.</p>",
+        "ggl28qBr4dt_text": "<p>Yes, everything on the site will automatically be 25% off Black Friday through Cyber Monday. Email and SMS Subscribers can use the code YoVIP to get 30% off everything the week before Black Friday.&nbsp;</p>"
+      },
+      "type": "gp-section-645009370928972609"
+    },
+    "gp_section_645009729273201335": {
+      "settings": {
+        "checksum": "cd6f13ebabd1361243ba491960ae144fa69a1a828b59e77c41b6256dea37276f_1_1_1_0__1",
+        "ggskt73PvJD_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0306/4076/7108/files/November_Sale_Calendar_500kb.jpg",
+        "section_preload": "true"
+      },
+      "type": "gp-section-645009729273201335"
+    },
+    "gp_section_645013179977433621": {
+      "settings": {
+        "checksum": "972c4a47f0ea7eefb4b18e8891312228d37116e528343e1d4e2bb71925d7f9a0_1_1_1_0__1",
+        "ggcTcuJvM8f_label": "<p>SHOP COLLECTIONS</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-645013179977433621"
+    }
+  },
+  "order": [
+    "gp_section_645009370928776001",
+    "gp_section_645009729273201335",
+    "gp_section_645013179977433621",
+    "gp_section_645009370928972609",
+    "gp_section_645009370928841537"
+  ]
+}
