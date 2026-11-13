@@ -140,7 +140,7 @@
     "show_vendor": false,
     "display_product_reviews": false,
     "display_item_size": false,
-    "display_item_swatch": true,
+    "display_item_swatch": false,
     "display_button": false,
     "collection_infinite_scrolling": true,
     "infinity_scroll_feature": true,
